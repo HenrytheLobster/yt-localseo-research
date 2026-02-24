@@ -1,0 +1,232 @@
+{
+  "source_type": "youtube",
+  "video_id": "EFD8mOVCCHA",
+  "title": "KDP Low Content Books Tutorial KDP Keyword Revealed Low Competition High Demand #kdpkeywords",
+  "extracted_at": "2026-02-18T21:53:30.218906",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6955,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Score & Competition Analysis",
+      "description": "Focus on keywords with keyword scores over 45 and total results under 1000 for low competition.",
+      "steps": [
+        "Use spreadsheet to track keywords",
+        "Analyze BSR and review counts",
+        "Incorporate related keywords in title/description"
+      ],
+      "signals_used": [
+        "keyword_score",
+        "total_results",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "self-publishing titans extension",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid saturated keywords with low keyword scores"
+      ],
+      "example_niches": [
+        "genealogy workbook",
+        "family tree planner"
+      ],
+      "source_quotes": [
+        "anything that has a keyword score of 45 and uh over and has a total result of under 1 000 is a great keyword score"
+      ],
+      "id": "637f380e-4ee6-4e08-bfd4-fa6e15c89bda",
+      "type": "tactic",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:54.525374",
+      "last_seen": "2026-02-18T21:52:54.525374"
+    },
+    {
+      "name": "custom_cover_design",
+      "description": "Customize book covers using graphic templates and design tools",
+      "steps": [
+        "Use Canva to upload graphics as PDF/PNG",
+        "Add borders and elements to templates",
+        "Integrate quote graphics for covers"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Graphics may require optimization for KDP formatting"
+      ],
+      "example_niches": [
+        "genealogy",
+        "family history"
+      ],
+      "source_quotes": [
+        "you've got also the the bundle which is kind of funny to incorporate um in a way if you are doing um some like a quote uh cover"
+      ],
+      "id": "4cc0b239-cd28-4396-a4f1-d63f364aef69",
+      "type": "tactic",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:53:30.218786",
+      "last_seen": "2026-02-18T21:53:30.218786"
+    },
+    {
+      "name": "interior_content_creation",
+      "description": "Develop practical content for low-content books with examples",
+      "steps": [
+        "Include page examples for beginners",
+        "Explain benefits of tracking family history",
+        "Demonstrate organizer usage"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 100
+      },
+      "caveats": [
+        "Requires clear instructional examples"
+      ],
+      "example_niches": [
+        "geology organizer",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "how important it is it is and also how to use this book so maybe include inside your interior at a page of a example"
+      ],
+      "id": "e3e871dc-68e3-4de4-afd2-5c164ed039e2",
+      "type": "tactic",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:53:30.218786",
+      "last_seen": "2026-02-18T21:53:30.218786"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review/BSR Boost",
+      "condition": "If median reviews are below 200 and BSR under 50,000, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we've got a couple of key like products that are saying quite well um and this one is a genealogy planner and workbook"
+      ],
+      "id": "4bbf2def-cede-44d2-97f0-bd4828bcb8fe",
+      "type": "heuristic",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:54.525374",
+      "last_seen": "2026-02-18T21:52:54.525374"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize low-competition niches",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this one's geology organizer the benefits of tracking your family history"
+      ],
+      "id": "9e2749ca-d899-4911-a5c0-c5c87c4b647e",
+      "type": "heuristic",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:53:30.218786",
+      "last_seen": "2026-02-18T21:53:30.218786"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keywords with scores over 45 and total results under 1000 indicate low competition opportunities",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "anything that has a keyword score of 45 and uh over and has a total result of under 1 000 is a great keyword score"
+      ],
+      "id": "09901f5a-0aed-4ca4-9c6d-325536908d2b",
+      "type": "claim",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:54.525374",
+      "last_seen": "2026-02-18T21:52:54.525374"
+    },
+    {
+      "statement": "KDP allows uploading graphics as PDF/PNG for cover and interior design",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can upload pdfs that are less than 100 pages or more or you can if there are over 100 pages you can easily upload the a gpg file"
+      ],
+      "id": "64c31747-1b19-4133-aa49-de75b82075b6",
+      "type": "claim",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:53:30.218786",
+      "last_seen": "2026-02-18T21:53:30.218786"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "genealogy enthusiasts + family history tracking + low competition",
+      "description": "Target specific audiences with clear needs and market gaps",
+      "why_it_works": "Combines niche identity with problem-solving potential in underserved markets",
+      "signals": [
+        "low review counts",
+        "high keyword score"
+      ],
+      "source_quotes": [
+        "this has a wonderful keyword score of 52 and for me anything that has a keyword score of 45 and uh over..."
+      ],
+      "id": "12dd842a-8963-43a8-ad45-caec5be589d6",
+      "type": "niche_pattern",
+      "provenance": [
+        "EFD8mOVCCHA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:54.525374",
+      "last_seen": "2026-02-18T21:52:54.525374"
+    }
+  ]
+}

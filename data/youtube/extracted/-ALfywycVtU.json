@@ -1,0 +1,444 @@
+{
+  "source_type": "youtube",
+  "video_id": "-ALfywycVtU",
+  "title": "I Researched Amazon KDP Niches for You (My Honest Findings)",
+  "extracted_at": "2026-02-18T14:41:06.475661",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 30087,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 3,
+    "claims": 6,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "keyword editioning",
+      "description": "create targeted editions of popular keywords to reduce competition",
+      "steps": [
+        "append demographic modifiers like 'teen edition' to keywords"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "katie spy",
+        "amz expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "may not work for highly saturated keywords"
+      ],
+      "example_niches": [
+        "teen self-esteem workbook"
+      ],
+      "source_quotes": [
+        "I would use the words stop self-sabotage mom edition or dad edition"
+      ],
+      "id": "829cc333-16fb-4f74-bd07-22efbc82c38a",
+      "type": "tactic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:16.095339",
+      "last_seen": "2026-02-18T14:39:16.095339"
+    },
+    {
+      "name": "keyword variation",
+      "description": "Create new titles by altering 1-2 words in existing popular titles",
+      "steps": [
+        "Modify keywords like '10 days to self-esteem' to '10 minutes a day self-esteem journey'"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition in core self-esteem niches"
+      ],
+      "example_niches": [
+        "self-esteem for teen boys"
+      ],
+      "source_quotes": [
+        "You can easily change one word, one or two words, but it can have the same keywords"
+      ],
+      "id": "5b8cfe2f-4df3-46ed-bec6-0dcbdeb8c9ed",
+      "type": "tactic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:49.851898",
+      "last_seen": "2026-02-18T14:39:49.851898"
+    },
+    {
+      "name": "audiobook synergy",
+      "description": "Leverage existing print book niches by creating complementary audiobooks",
+      "steps": [
+        "Publish Kindle version",
+        "Create paperback version",
+        "Launch audiobook variant"
+      ],
+      "signals_used": [
+        "monthly_revenue"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Requires content creation for audio format"
+      ],
+      "example_niches": [
+        "self-esteem workbook for teens"
+      ],
+      "source_quotes": [
+        "If you can write a book, create the Kindle version, the paperback version, and then launch it as an audio book"
+      ],
+      "id": "8b157479-6b45-4470-a9fa-46d8b997a7d9",
+      "type": "tactic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:49.851898",
+      "last_seen": "2026-02-18T14:39:49.851898"
+    },
+    {
+      "name": "Add Twist to Niche",
+      "description": "Modify existing niches with specific angles to create unique demand.",
+      "steps": [
+        "Identify base niche",
+        "Add demographic or situational twist",
+        "Check keyword demand"
+      ],
+      "signals_used": [
+        "BSR",
+        "competition"
+      ],
+      "tools_mentioned": [
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid over-saturation with narrow twists"
+      ],
+      "example_niches": [
+        "empowered stay-at-home wife",
+        "awakened woman"
+      ],
+      "source_quotes": [
+        "You have to add a twist... empowered stay-at-home wife"
+      ],
+      "id": "9e95038d-1d8e-4d6f-a0ec-d8346277b3c5",
+      "type": "tactic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:40:32.765509",
+      "last_seen": "2026-02-18T14:40:32.765509"
+    },
+    {
+      "name": "Workbook Bundling",
+      "description": "Pair main content with complementary workbooks for expanded offerings.",
+      "steps": [
+        "Research standalone niche",
+        "Add workbook variant",
+        "Analyze combined demand"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 500,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Requires additional production effort"
+      ],
+      "example_niches": [
+        "perfectionism workbook",
+        "self-leadership workbook"
+      ],
+      "source_quotes": [
+        "Workbooks are amazing... include that in your book"
+      ],
+      "id": "413322e5-10dc-4a95-a25c-89c0b8ba976a",
+      "type": "tactic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:40:32.765509",
+      "last_seen": "2026-02-18T14:40:32.765509"
+    },
+    {
+      "name": "Niche Angle Refinement",
+      "description": "Identify undersaturated sub-niches by combining broad keywords with specific contexts (e.g., 'self leadership' + 'church').",
+      "steps": [
+        "Use keyword tools to find related terms",
+        "Filter results by BSR and review count thresholds",
+        "Add contextual modifiers like 'in the church' or 'with a narcissist'"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition may require unique value propositions"
+      ],
+      "example_niches": [
+        "co-parenting with a narcissist"
+      ],
+      "source_quotes": [
+        "Self leadership for women in the church... competition you can easily rank on the first page."
+      ],
+      "id": "6e2c0e8b-4121-41bd-acd3-cfe10ca5901d",
+      "type": "tactic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:41:06.475545",
+      "last_seen": "2026-02-18T14:41:06.475545"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low competition boost",
+      "condition": "If keyword has fewer than 200 reviews and BSR over 50,000, prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Self-esteem workbook 14 boys... competition is healthy"
+      ],
+      "id": "03c796cd-31ca-46b1-abe6-9a9cc1d7169d",
+      "type": "heuristic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:16.095339",
+      "last_seen": "2026-02-18T14:39:16.095339"
+    },
+    {
+      "name": "Low Competition Signal",
+      "condition": "If niche has <500 competitors and >100 reviews, prioritize",
+      "machine_rule": {
+        "field": "competition",
+        "op": "lt",
+        "value": 500
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "Competition is healthy... want low competition"
+      ],
+      "id": "d3d688bf-9cf5-473e-97c7-d3fb9290e279",
+      "type": "heuristic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:40:32.765509",
+      "last_seen": "2026-02-18T14:40:32.765509"
+    },
+    {
+      "name": "Low-Competition Boost",
+      "condition": "If niche has fewer than 200 reviews, prioritize it for lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Co-parenting after divorcing a narcissist... 97 competitors."
+      ],
+      "id": "cb0a0e16-9750-43b5-9d30-aa00e5681a19",
+      "type": "heuristic",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:41:06.475545",
+      "last_seen": "2026-02-18T14:41:06.475545"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "self-esteem workbooks for teens show healthy competition and high revenue potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Self-esteem workbook 14 boys... potential for revenue looks very good"
+      ],
+      "id": "bc783c76-44e6-4e55-824f-283c17fb31c0",
+      "type": "claim",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:16.095339",
+      "last_seen": "2026-02-18T14:39:16.095339"
+    },
+    {
+      "statement": "Audiobooks in the perfectionism niche can generate $96,000 monthly revenue",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "The revenue looks insane. $96,000 is the estimated revenue for the month"
+      ],
+      "id": "256b9357-cae7-4544-b3f7-0828e3b2b6b7",
+      "type": "claim",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:49.851898",
+      "last_seen": "2026-02-18T14:39:49.851898"
+    },
+    {
+      "statement": "Audio books require voice talent but are viable KDP products",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Audio book... pay someone to do the voice"
+      ],
+      "id": "903deac1-5397-4152-98f4-d0e1a781e4c3",
+      "type": "claim",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:40:32.765509",
+      "last_seen": "2026-02-18T14:40:32.765509"
+    },
+    {
+      "statement": "Seasonal trends like New Year resolutions drive self-development demand",
+      "category": "market_dynamics",
+      "confidence": "high",
+      "source_quotes": [
+        "People are seeking to be better... January and February"
+      ],
+      "id": "2485fd93-f18f-46a5-a6dc-1814c64aba95",
+      "type": "claim",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:40:32.765509",
+      "last_seen": "2026-02-18T14:40:32.765509"
+    },
+    {
+      "statement": "Co-parenting niches show 3,000+ competitors but 97 specific sub-niches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Co-parenting as a whole has uh 3,000 competitors."
+      ],
+      "id": "37f31a63-3f64-471f-8aa1-488e8b995d57",
+      "type": "claim",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:41:06.475545",
+      "last_seen": "2026-02-18T14:41:06.475545"
+    },
+    {
+      "statement": "Audiobooks in co-parenting niche generate $11k monthly revenue",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Audiobooks... total monthly revenue is $11,000."
+      ],
+      "id": "972bb663-b321-4599-ab4c-bf19ef9fd6f3",
+      "type": "claim",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:41:06.475545",
+      "last_seen": "2026-02-18T14:41:06.475545"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + SOLUTION",
+      "example": "teen boys + self-esteem issues + workbook",
+      "description": "target underserved demographics with specific problems",
+      "why_it_works": "creates niche demand with low content saturation",
+      "signals": [
+        "low review counts",
+        "specific demographic modifiers"
+      ],
+      "source_quotes": [
+        "I see an opportunity... for teen boys"
+      ],
+      "id": "e62de86f-4580-41c0-8f2e-f31412b7f5e7",
+      "type": "niche_pattern",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:16.095339",
+      "last_seen": "2026-02-18T14:39:16.095339"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + self-esteem + Christian",
+      "description": "Combine specific audience identities with problems and constraints for niche opportunities",
+      "why_it_works": "Creates targeted content with lower competition and higher monetization potential",
+      "signals": [
+        "low review counts",
+        "specific audience targeting"
+      ],
+      "source_quotes": [
+        "Think in terms of target audiences. Think in terms of who is going to be your audience"
+      ],
+      "id": "c923dc75-cc5a-4385-96bf-9ab117c3e344",
+      "type": "niche_pattern",
+      "provenance": [
+        "-ALfywycVtU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:39:49.851898",
+      "last_seen": "2026-02-18T14:39:49.851898"
+    }
+  ]
+}

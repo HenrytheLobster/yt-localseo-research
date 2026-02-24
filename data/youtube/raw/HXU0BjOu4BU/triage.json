@@ -1,0 +1,19 @@
+{
+  "video_id": "HXU0BjOu4BU",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.5,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "keyword",
+    "self-publish",
+    "competition",
+    "coloring book"
+  ],
+  "transcript_word_count": 4305,
+  "triaged_at": "2026-02-17T22:19:11.144591"
+}

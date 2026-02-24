@@ -1,0 +1,381 @@
+{
+  "source_type": "youtube",
+  "video_id": "_s5HJP52FGo",
+  "title": "How I Find $5k+/Month Book Topics (Amazon KDP Keyword Research)",
+  "extracted_at": "2026-02-18T13:12:30.115400",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 26498,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "bestseller_category_scanning",
+      "description": "Identify potential book topics by analyzing Amazon bestseller categories and recording relevant keywords.",
+      "steps": [
+        "Open incognito browser to avoid search result skewing",
+        "Browse Amazon bestseller categories",
+        "Record potential topics from book titles in spreadsheet"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "spreadsheet"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid shallow research; spend time to find undervalued topics"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we do not create a book and then find a keywords for our book to rank hunter. Do not do this."
+      ],
+      "id": "336af5f2-ce92-4a79-a845-85961bf42b9e",
+      "type": "tactic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:10:47.256053",
+      "last_seen": "2026-02-18T13:10:47.256053"
+    },
+    {
+      "name": "validate_demand",
+      "description": "Use BSR and review counts to identify topics with proven sales potential",
+      "steps": [
+        "Search for keywords on Amazon",
+        "Identify books with 250 reviews or less and BSR under 25,000",
+        "Look for balance between winning books and dead books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Beam",
+        "DS Amazon Quick View"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "No winning books = reject topic"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "The biggest thing I see with people who their books just aren't selling is the demand is too low."
+      ],
+      "id": "e02e6d13-f9b2-4d23-8e71-fec54217c10e",
+      "type": "tactic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:18.624798",
+      "last_seen": "2026-02-18T13:11:18.624798"
+    },
+    {
+      "name": "dead_book_check",
+      "description": "Identify non-selling books with reviews to gauge keyword viability",
+      "steps": [
+        "Count reviews on first page of search results",
+        "Exclude books with 25+ reviews but no sales"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Fails in saturated markets with 15+ pages of books"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "There's 15 dead books... no world would this be a good topic"
+      ],
+      "id": "b73a5a43-c813-4099-bd74-0e0673682397",
+      "type": "tactic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:53.515932",
+      "last_seen": "2026-02-18T13:11:53.515932"
+    },
+    {
+      "name": "authority_figure_analysis",
+      "description": "Evaluate competition from high-review books",
+      "steps": [
+        "Identify books with 500+ reviews",
+        "Assess their relevance to search terms"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_min": 500
+      },
+      "caveats": [
+        "Experts with low reviews are still beatable"
+      ],
+      "example_niches": [
+        "keto diet"
+      ],
+      "source_quotes": [
+        "If an expert has 150 reviews, I'll beat them"
+      ],
+      "id": "c5dc20a7-affe-4464-aec1-d5782d485faf",
+      "type": "tactic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:53.515932",
+      "last_seen": "2026-02-18T13:11:53.515932"
+    },
+    {
+      "name": "metric-based keyword validation",
+      "description": "Use spreadsheet metrics to determine keyword viability by analyzing search volume, BSR rank, review counts, and book-topic alignment",
+      "steps": [
+        "Input keyword metrics into spreadsheet",
+        "Identify authority figures (500+ reviews)",
+        "Compare winning vs dead books",
+        "Assess BSR rank thresholds"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Book Beam"
+      ],
+      "thresholds": {
+        "reviews_max": 1000,
+        "bsr_max": 100000
+      },
+      "caveats": [
+        "Does not account for new releases"
+      ],
+      "example_niches": [
+        "teen planner",
+        "survival skills for kids"
+      ],
+      "source_quotes": [
+        "an authority figure is a book that has over 500 to 1,000 reviews where we cannot compete with them",
+        "the reason I like the book beam tool is it actually tells you how much money this book is making"
+      ],
+      "id": "1f6d51e4-9989-48fa-b2e6-f3eee72e14f6",
+      "type": "tactic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:12:30.115231",
+      "last_seen": "2026-02-18T13:12:30.115231"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "review_volume_filter",
+      "condition": "If median reviews are below 200, prioritize topic",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we want to prove that people are already buying that topic"
+      ],
+      "id": "b3288b6a-3eff-4e6c-aad3-82f047d861e8",
+      "type": "heuristic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:10:47.256053",
+      "last_seen": "2026-02-18T13:10:47.256053"
+    },
+    {
+      "name": "winning_book_heuristic",
+      "condition": "If median reviews are less than 200, boost topic",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "We want to find some books with lower reviews with a low bestseller rank telling us that it is possible to sell"
+      ],
+      "id": "e079074b-1129-41c8-a3e2-c8f732af6545",
+      "type": "heuristic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:18.624798",
+      "last_seen": "2026-02-18T13:11:18.624798"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews < 200, prioritize topic",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "These are books with literally thousands of reviews... making no money"
+      ],
+      "id": "17940243-0265-48fd-bd05-3319a155785b",
+      "type": "heuristic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:53.515932",
+      "last_seen": "2026-02-18T13:11:53.515932"
+    },
+    {
+      "name": "low review filter",
+      "condition": "If median reviews are below 200, prioritize keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "there are a ton of books with low reviews that aren't selling",
+        "there's no books with low reviews selling"
+      ],
+      "id": "3255b94e-b978-4891-89aa-e73e107d06b9",
+      "type": "heuristic",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:12:30.115231",
+      "last_seen": "2026-02-18T13:12:30.115231"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon customers search for specific problem-solution pairs when purchasing books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they are shopping specifically searching up what they are looking for or the problem they're looking to solve"
+      ],
+      "id": "50d9d6a9-6e6c-42fa-bb72-e18844aa0d91",
+      "type": "claim",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:10:47.256053",
+      "last_seen": "2026-02-18T13:10:47.256053"
+    },
+    {
+      "statement": "Demand is the single most important factor for book success on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Demand is the single most important thing when it comes to finding a winning book topic on Amazon"
+      ],
+      "id": "ec4383dd-3362-4fc1-8f14-315db0adfb8f",
+      "type": "claim",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:18.624798",
+      "last_seen": "2026-02-18T13:11:18.624798"
+    },
+    {
+      "statement": "Books with thousands of reviews often generate less than $16/day",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "$2 a day, $16 a day, $12 a day... thousands of reviews"
+      ],
+      "id": "1a4040c6-2ca2-4aad-9490-6f52b4f891b4",
+      "type": "claim",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:11:53.515932",
+      "last_seen": "2026-02-18T13:11:53.515932"
+    },
+    {
+      "statement": "Topics with 7+ authority figures (500+ reviews) are saturated and cannot be competed",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "there are over seven authority figures, books that have over 500 reviews",
+        "in no actual world would you ever sell on this topic"
+      ],
+      "id": "e2de4216-723c-4cba-8b55-7696a82e0010",
+      "type": "claim",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:12:30.115231",
+      "last_seen": "2026-02-18T13:12:30.115231"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets underserved audiences with specific needs and limitations",
+      "why_it_works": "Creates niche demand with limited competition",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "we want to prove that it's not too competitive and we can actually sell"
+      ],
+      "id": "1632940b-446a-4a47-bee5-8e8a026c4a17",
+      "type": "niche_pattern",
+      "provenance": [
+        "_s5HJP52FGo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:10:47.256053",
+      "last_seen": "2026-02-18T13:10:47.256053"
+    }
+  ]
+}

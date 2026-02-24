@@ -1,0 +1,383 @@
+{
+  "source_type": "youtube",
+  "video_id": "StZ67ae3mh4",
+  "title": "Audiobook Keyword Research - Kindle Publishing",
+  "extracted_at": "2026-02-18T13:57:08.860579",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 29496,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Refinement",
+      "description": "Use category filters to narrow down audiobook keywords and analyze top-performing self-published titles.",
+      "steps": [
+        "Filter by category (e.g., 'dark magic for audiobooks')",
+        "Check BSR and review counts",
+        "Identify self-published success cases"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Self-published titles may face competition from established authors"
+      ],
+      "example_niches": [
+        "empath",
+        "dark magic"
+      ],
+      "source_quotes": [
+        "'I feel like everyone's done an astrology book...`"
+      ],
+      "id": "02a4a5dc-f57d-46ef-80c3-1cdb6d21247e",
+      "type": "tactic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:55:40.675332",
+      "last_seen": "2026-02-18T13:55:40.675332"
+    },
+    {
+      "name": "Bundle Strategy Analysis",
+      "description": "Evaluate bundled audiobooks for keyword saturation and sales potential.",
+      "steps": [
+        "Identify bundled content (e.g., astrology + numerology)",
+        "Assess bundle pricing and sales velocity",
+        "Check individual book performance"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 100,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Bundles may dilute individual book visibility"
+      ],
+      "example_niches": [
+        "tarot reading",
+        "numerology"
+      ],
+      "source_quotes": [
+        "'It's a bundle a three in one it's a box set actually'"
+      ],
+      "id": "a4b49195-1567-4d7b-ad51-ced5d693acce",
+      "type": "tactic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:55:40.675332",
+      "last_seen": "2026-02-18T13:55:40.675332"
+    },
+    {
+      "name": "keyword_ranking_analysis",
+      "description": "Analyze audiobook rankings and review counts to identify profitable keywords",
+      "steps": [
+        "Check BSR rankings",
+        "Evaluate review volume",
+        "Cross-reference with keyword tools"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Keyword saturation can reduce effectiveness"
+      ],
+      "example_niches": [
+        "dark psychology manipulation"
+      ],
+      "source_quotes": [
+        "this is ranked 7504 that's a really solid rating"
+      ],
+      "id": "9fa4beac-bb11-4d63-9d99-35c3b31b4567",
+      "type": "tactic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:56:08.896316",
+      "last_seen": "2026-02-18T13:56:08.896316"
+    },
+    {
+      "name": "fake review boosting",
+      "description": "Using fake accounts to manipulate rankings and reviews",
+      "steps": [
+        "create multiple accounts",
+        "purchase fake reviews",
+        "boost BSR rank"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "leads to long-term sales failure",
+        "publishers risk being flagged"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you can't use fake reviews to get by... fake reviews don't work"
+      ],
+      "id": "5357f1d2-acb9-490a-955d-dcea1479c2a6",
+      "type": "tactic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:56:37.489366",
+      "last_seen": "2026-02-18T13:56:37.489366"
+    },
+    {
+      "name": "Low Review Targeting",
+      "description": "Focus on keywords with few reviews to identify underserved niches",
+      "steps": [
+        "Filter keywords with <200 reviews",
+        "Check BSR rankings",
+        "Analyze self-published competitors"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Self-published books may lack visibility against big publishers"
+      ],
+      "example_niches": [
+        "dating",
+        "male self-development"
+      ],
+      "source_quotes": [
+        "flirting how to flirt with women get what you want what do you want to get huh I want to get a sugar mama"
+      ],
+      "id": "565609cd-3e13-4266-96b9-628b4e8e6ee3",
+      "type": "tactic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:57:08.860447",
+      "last_seen": "2026-02-18T13:57:08.860447"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are below 200, prioritize keywords with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'I feel like everyone's done an astrology book...`"
+      ],
+      "id": "b8d3d6a1-10c4-49b9-beba-e69ae3014bff",
+      "type": "heuristic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:55:40.675332",
+      "last_seen": "2026-02-18T13:55:40.675332"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this has 70 reviews mix ratings"
+      ],
+      "id": "de8b6737-64a4-462c-bff7-4cb464597854",
+      "type": "heuristic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:56:08.896316",
+      "last_seen": "2026-02-18T13:56:08.896316"
+    },
+    {
+      "name": "low review threshold",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "your book doesn't sell they were too lazy they put a paperb up"
+      ],
+      "id": "12b5c32a-6a48-4bed-a5be-e85bf36e2691",
+      "type": "heuristic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:56:37.489366",
+      "last_seen": "2026-02-18T13:56:37.489366"
+    },
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "flirting how to flirt with women get what you want what do you want to get huh I want to get a sugar mama"
+      ],
+      "id": "a06b6958-d190-46a5-8427-82b0710407f8",
+      "type": "heuristic",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:57:08.860447",
+      "last_seen": "2026-02-18T13:57:08.860447"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Self-published audiobooks can achieve top BSR rankings despite competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'It is self-published... from 2016 that's really impressive'"
+      ],
+      "id": "b99b7f54-8925-4f83-b68e-e3a0d335ae4e",
+      "type": "claim",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:55:40.675332",
+      "last_seen": "2026-02-18T13:55:40.675332"
+    },
+    {
+      "statement": "Self-published audiobooks can achieve high BSR rankings with effective keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is self-published and ranked 7504"
+      ],
+      "id": "1c05f0d5-4d92-4010-b004-45247a8dd56c",
+      "type": "claim",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:56:08.896316",
+      "last_seen": "2026-02-18T13:56:08.896316"
+    },
+    {
+      "statement": "Fake reviews do not contribute to long-term sales success",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "fake reviews don't work... no longevity or any sales"
+      ],
+      "id": "7a442091-5316-4f45-af61-3c3145cc9707",
+      "type": "claim",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:56:37.489366",
+      "last_seen": "2026-02-18T13:56:37.489366"
+    },
+    {
+      "statement": "Self-help is the number one niche for audiobooks",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "to my knowledge I believe self-help is the the number one Niche for audiobooks"
+      ],
+      "id": "4fb41fa3-8998-44b4-b12e-3805e38f657f",
+      "type": "claim",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:57:08.860447",
+      "last_seen": "2026-02-18T13:57:08.860447"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "empaths + narcissism + self-help",
+      "description": "Target specific audience identities with niche problems and content constraints",
+      "why_it_works": "Combines targeted keywords with limited competition",
+      "signals": [
+        "low review counts",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "'Judy Dyer has all the empath and narcissist books covered'"
+      ],
+      "id": "bbfaca94-6ac0-46a4-b1ee-5f1c3bdb1f37",
+      "type": "niche_pattern",
+      "provenance": [
+        "StZ67ae3mh4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:55:40.675332",
+      "last_seen": "2026-02-18T13:55:40.675332"
+    }
+  ]
+}

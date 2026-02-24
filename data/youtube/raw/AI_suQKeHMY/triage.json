@@ -1,0 +1,15 @@
+{
+  "video_id": "AI_suQKeHMY",
+  "decision": "filter",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "amazon",
+    "category",
+    "competition"
+  ],
+  "transcript_word_count": 559,
+  "triaged_at": "2026-02-18T03:38:09.449528"
+}

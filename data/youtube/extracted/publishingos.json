@@ -1,0 +1,328 @@
+{
+  "source_type": "youtube",
+  "video_id": "publishingos",
+  "title": "Course: Picking a KDP Topic (Transcript)",
+  "extracted_at": "2026-02-18T02:48:51.407015",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 47197,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "apple_strategic_entry",
+      "description": "Enter market with significantly better product than existing options",
+      "steps": [
+        "Identify existing market products",
+        "Assess their quality",
+        "Develop superior alternative"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires substantial R&D investment"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Our objective is never to be first. Our objective is to be best"
+      ],
+      "id": "d4fd3c96-dff8-4ed3-8297-9da285d8baa0",
+      "type": "tactic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:10.222507",
+      "last_seen": "2026-02-18T02:47:10.222507"
+    },
+    {
+      "name": "profitability_first",
+      "description": "Prioritize topics with proven market demand by analyzing Amazon sales data and BSR",
+      "steps": [
+        "Check Amazon BSR <100k",
+        "Verify profitability through sales metrics",
+        "Ensure scalability with high profit margins"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "sales_rank"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid saturated niches with low price points"
+      ],
+      "example_niches": [
+        "teen planner",
+        "Christian ADHD guide"
+      ],
+      "source_quotes": [
+        "The most important thing you realize that the mark will ignore everything that isn't what they want"
+      ],
+      "id": "449be91e-de94-4962-80e7-782628ec2026",
+      "type": "tactic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:43.751928",
+      "last_seen": "2026-02-18T02:47:43.751928"
+    },
+    {
+      "name": "BSR and Sales Estimation",
+      "description": "Use Amazon's Best Seller Rank and sales calculators to evaluate profitability of a niche",
+      "steps": [
+        "Select 'Books' category on Amazon.com",
+        "Search for a specific topic (e.g., 'Mediterranean diet cookbook')",
+        "Check BSR and product details",
+        "Use Book Beam Sales Calculator with BSR and marketplace",
+        "Estimate daily/monthly sales and revenue"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Beam Sales Calculator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Estimates are approximations",
+        "Requires accurate BSR input"
+      ],
+      "example_niches": [
+        "Mediterranean diet",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "The searches will be much more accurate and the majority of the sales that you're gonna make will come from the US"
+      ],
+      "id": "4870e702-3d7f-4779-9f27-363c52f185dd",
+      "type": "tactic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:48:18.075582",
+      "last_seen": "2026-02-18T02:48:18.075582"
+    },
+    {
+      "name": "Bestseller List Analysis",
+      "description": "Identify profitable niches by analyzing Amazon's bestseller lists and subcategories to find trending topics with high demand.",
+      "steps": [
+        "Check Amazon bestseller lists for real-time demand signals",
+        "Drill into subcategories to find specific niches",
+        "Look for patterns in bestselling books within categories"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may lag behind current trends"
+      ],
+      "example_niches": [
+        "fitness",
+        "nutrition"
+      ],
+      "source_quotes": [
+        "Amazon in suggesting the real time what people want through a list with all the best selling books of the moment"
+      ],
+      "id": "5c605554-3d0c-4b8a-a03a-6ca5e5302759",
+      "type": "tactic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:48:51.406890",
+      "last_seen": "2026-02-18T02:48:51.406890"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "review_threshold_heuristic",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "We want to have a very very similar approach in the market"
+      ],
+      "id": "f47abe66-e781-4656-8f5c-7dfad5ea870b",
+      "type": "heuristic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:10.222507",
+      "last_seen": "2026-02-18T02:47:10.222507"
+    },
+    {
+      "name": "review_threshold",
+      "condition": "If median reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "It's very important even the pricing in this equation"
+      ],
+      "id": "575e0980-3c2c-4894-aa51-1dc80f711561",
+      "type": "heuristic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:43.751928",
+      "last_seen": "2026-02-18T02:47:43.751928"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize niches with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If it's less than one hundred thousand then it's probably very profitable"
+      ],
+      "id": "b4a4dd9b-feca-40fd-b676-642e2a2ad99f",
+      "type": "heuristic",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:48:18.075582",
+      "last_seen": "2026-02-18T02:48:18.075582"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP success depends on selling books people want, not what authors like",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "We only sell book the people books that people want"
+      ],
+      "id": "652be9c9-9879-4f98-9215-458db85265e7",
+      "type": "claim",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:10.222507",
+      "last_seen": "2026-02-18T02:47:10.222507"
+    },
+    {
+      "statement": "KDP allows verification of profitability through Amazon sales data",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "If it's something is profitable it means that a lot of people want that product"
+      ],
+      "id": "0b7adcb8-f0aa-476a-be5a-df0056f78978",
+      "type": "claim",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:43.751928",
+      "last_seen": "2026-02-18T02:47:43.751928"
+    },
+    {
+      "statement": "The US market is the most profitable for KDP authors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "The majority of the sales that you're gonna make will come from the US"
+      ],
+      "id": "6071951a-c50a-4838-a07e-f5169c3833fa",
+      "type": "claim",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:48:18.075582",
+      "last_seen": "2026-02-18T02:48:18.075582"
+    },
+    {
+      "statement": "Kindle Unlimited subscribers pay a monthly fee but authors still receive royalties for books accessed through the service.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "The price of the kindle unlimited subscribe meaning that people that pay a monthly fee can take the book basically for free, but we still get the royalties"
+      ],
+      "id": "0545adb1-3d21-4718-b863-bc8dc84e980b",
+      "type": "claim",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:48:51.406890",
+      "last_seen": "2026-02-18T02:48:51.406890"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific audience identity with problem and unique constraint",
+      "why_it_works": "Creates underserved niche with clear demand signals",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "We want to have a very very similar approach in the market"
+      ],
+      "id": "963bff0c-50fc-4968-98ca-9d2e0e49eb69",
+      "type": "niche_pattern",
+      "provenance": [
+        "publishingos"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T02:47:10.222507",
+      "last_seen": "2026-02-18T02:47:10.222507"
+    }
+  ]
+}

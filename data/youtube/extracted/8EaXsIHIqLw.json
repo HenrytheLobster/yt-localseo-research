@@ -1,0 +1,331 @@
+{
+  "source_type": "youtube",
+  "video_id": "8EaXsIHIqLw",
+  "title": "How to Find Profitable Keywords and Niches With Publisher Rocket",
+  "extracted_at": "2026-02-18T22:34:21.704713",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 16713,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Spreadsheet Tracking",
+      "description": "Track keywords using a spreadsheet with fields like niche, keyword type, BSR ranking, and book count under 150k BSR.",
+      "steps": [
+        "Create spreadsheet with keyword categories",
+        "Drill into Amazon categories for niche keywords",
+        "Extract trending keywords from bestsellers"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Amazon"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 150000
+      },
+      "caveats": [
+        "Avoid overly broad categories with high competition"
+      ],
+      "example_niches": [
+        "ABC coloring book for kids ages 3 to 5",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I've got this one that I've made up it's got either Niche or main keyword... number of books under 150,000 BSR on the first page"
+      ],
+      "id": "d9bc8489-67d6-45d2-8d61-a0e286a153e7",
+      "type": "tactic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:19.696773",
+      "last_seen": "2026-02-18T22:33:19.696773"
+    },
+    {
+      "name": "Keyword Search",
+      "description": "Use Publisher Rocket's keyword search to analyze competition and volume.",
+      "steps": [
+        "Input keywords into Publisher Rocket",
+        "Filter results by competition score",
+        "Identify long-tail keywords with lower competition"
+      ],
+      "signals_used": [
+        "competition score",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competition_score": "high"
+      },
+      "caveats": [
+        "Avoid keywords with over 20,000 results initially"
+      ],
+      "example_niches": [
+        "animals ABC coloring book",
+        "ADHD teen planner"
+      ],
+      "source_quotes": [
+        "ABC coloring book... we need to reduce that down to two 2,000 or so"
+      ],
+      "id": "52b37726-a9e5-4b1c-a6fe-6e1c4635842f",
+      "type": "tactic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:19.696773",
+      "last_seen": "2026-02-18T22:33:19.696773"
+    },
+    {
+      "name": "Keyword Refinement",
+      "description": "Reduce search results to 2,000 by balancing keyword length and search volume",
+      "steps": [
+        "Search for broad keywords like 'animals'",
+        "Filter to medium-tail keywords like 'farm animals coloring book'",
+        "Check competitive scores and monthly search volume"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid overly long-tail keywords with <100 monthly searches"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if we look at these books here there's there's plenty that are that are doing quite well but I just feel there's far too many"
+      ],
+      "id": "b017e516-40e5-4a66-9051-e8aa80a1642c",
+      "type": "tactic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:49.237358",
+      "last_seen": "2026-02-18T22:33:49.237358"
+    },
+    {
+      "name": "Keyword-Niche Mapping",
+      "description": "Identify profitable niches by analyzing top-performing books' titles, descriptions, and reviews to extract keywords and themes",
+      "steps": [
+        "Use Publisher Rocket to filter books by category and sales rank",
+        "Analyze titles and descriptions for recurring keywords",
+        "Check review counts and ratings for validation",
+        "Create content around validated keywords and themes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires content creation effort for sustained income"
+      ],
+      "example_niches": [
+        "baseball stories for kids",
+        "inspirational sports tales"
+      ],
+      "source_quotes": [
+        "these books are making um where are we further up 3,000 $35,000 per month"
+      ],
+      "id": "6845a378-6922-4632-9f65-d2946f8a1ed5",
+      "type": "tactic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:34:21.704602",
+      "last_seen": "2026-02-18T22:34:21.704602"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Filter",
+      "condition": "If median_reviews is less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we need to reduce that down to two 2,000 or so because if we look at these books here there's there's plenty that are that are doing quite well but I just feel there's far too"
+      ],
+      "id": "928cecba-0d9c-433c-b4f8-44f0d902d122",
+      "type": "heuristic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:19.696773",
+      "last_seen": "2026-02-18T22:33:19.696773"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we can have a look at the monthly sales we can see the number of pages"
+      ],
+      "id": "0211e6bf-08cf-4fc0-94bf-2ff3c96887db",
+      "type": "heuristic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:49.237358",
+      "last_seen": "2026-02-18T22:33:49.237358"
+    },
+    {
+      "name": "Low-Competition Boost",
+      "condition": "If a niche has low review counts but high growth potential, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "children's and youth sports category is currently tracking up"
+      ],
+      "id": "5aae42f6-2c1c-4123-b621-f410cc2dc735",
+      "type": "heuristic",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:34:21.704602",
+      "last_seen": "2026-02-18T22:34:21.704602"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket costs $199 for lifetime access with continuous updates.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Publisher Rocket $199 it's a oneoff payment and you get lifetime access"
+      ],
+      "id": "2444be73-402e-49ab-8975-38864b326505",
+      "type": "claim",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:19.696773",
+      "last_seen": "2026-02-18T22:33:19.696773"
+    },
+    {
+      "statement": "Board books cannot be created on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we can't create board books on Amazon"
+      ],
+      "id": "6ac04f1f-c8ac-4174-bb51-81c5ce54d4ba",
+      "type": "claim",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:49.237358",
+      "last_seen": "2026-02-18T22:33:49.237358"
+    },
+    {
+      "statement": "Children and Youth Sports category shows 8% monthly growth with low competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "children's and youth sports category is currently tracking up"
+      ],
+      "id": "3ff2aee6-7b64-4c71-83fd-184c97e670d1",
+      "type": "claim",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:34:21.704602",
+      "last_seen": "2026-02-18T22:34:21.704602"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "ABC coloring book + kids ages 3 to 5",
+      "description": "Combine product type with specific audience needs and limitations to create targeted niches.",
+      "why_it_works": "Reduces competition while targeting underserved markets",
+      "signals": [
+        "low review counts",
+        "specific age ranges"
+      ],
+      "source_quotes": [
+        "ABC coloring book for kid kids Age 3 to 5... we need to reduce that down to two 2,000 or so"
+      ],
+      "id": "49d801b5-195c-4f49-9ae5-e7275738417d",
+      "type": "niche_pattern",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:33:19.696773",
+      "last_seen": "2026-02-18T22:33:19.696773"
+    },
+    {
+      "pattern_template": "IDENTITY + SPORT + AUDIENCE",
+      "example": "baseball + inspirational stories + kids",
+      "description": "Combine sports themes with audience-specific content for targeted niches",
+      "why_it_works": "Leverages popular sports keywords with audience-specific engagement",
+      "signals": [
+        "low review counts",
+        "high category growth"
+      ],
+      "source_quotes": [
+        "inspirational baseball stories for kids so they're popular"
+      ],
+      "id": "4208f6d1-e535-4933-a8bb-b1dd9533daa5",
+      "type": "niche_pattern",
+      "provenance": [
+        "8EaXsIHIqLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:34:21.704602",
+      "last_seen": "2026-02-18T22:34:21.704602"
+    }
+  ]
+}

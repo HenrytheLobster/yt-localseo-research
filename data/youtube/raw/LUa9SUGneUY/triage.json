@@ -1,0 +1,18 @@
+{
+  "video_id": "LUa9SUGneUY",
+  "decision": "filter",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "coloring book"
+  ],
+  "transcript_word_count": 1236,
+  "triaged_at": "2026-02-18T12:34:10.279843"
+}

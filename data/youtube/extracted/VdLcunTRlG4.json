@@ -1,0 +1,169 @@
+{
+  "source_type": "youtube",
+  "video_id": "VdLcunTRlG4",
+  "title": "7 Kindle Keywords: Use all 50 Characters or Not?",
+  "extracted_at": "2026-02-18T04:46:06.444111",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9519,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Expansion",
+      "description": "Filling Kindle keyword boxes to index more phrases by using all 50 characters for broader keyword coverage.",
+      "steps": [
+        "Enter multiple keywords in each box",
+        "Use combinations of words for indexing"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May lower rankings for specific phrases"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Amazon takes all combinations of words... index for all of them"
+      ],
+      "id": "087abea5-76be-46d8-8ca9-f69bcf6a2698",
+      "type": "tactic",
+      "provenance": [
+        "VdLcunTRlG4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:45:30.814742",
+      "last_seen": "2026-02-18T04:45:30.814742"
+    },
+    {
+      "name": "Target Key Phrases",
+      "description": "Prioritize specific high-value keywords in title/subtitle for better search visibility.",
+      "steps": [
+        "Place 3-4 target keywords in keyword boxes",
+        "Fill remaining boxes with descriptive terms"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid irrelevant keywords that may harm rankings"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you've done proper keyword research... use those particular phrases inside of it"
+      ],
+      "id": "f86a91cd-cd02-413c-87ca-4a300d3151d8",
+      "type": "tactic",
+      "provenance": [
+        "VdLcunTRlG4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:46:06.443892",
+      "last_seen": "2026-02-18T04:46:06.443892"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Optimization",
+      "condition": "If median reviews are below 200, prioritize keyword expansion for indexing",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If your book ranks number one... 27% of all people"
+      ],
+      "id": "984bb394-b357-4f78-b184-7640b48fad30",
+      "type": "heuristic",
+      "provenance": [
+        "VdLcunTRlG4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:45:30.814742",
+      "last_seen": "2026-02-18T04:45:30.814742"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon indexes all keyword combinations in Kindle keyword boxes, not just exact phrases.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon takes all the different combinations... index for all of them"
+      ],
+      "id": "461bfcea-930d-4f88-a121-57884198c428",
+      "type": "claim",
+      "provenance": [
+        "VdLcunTRlG4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:45:30.814742",
+      "last_seen": "2026-02-18T04:45:30.814742"
+    },
+    {
+      "statement": "Amazon indexes keywords based on content, title, category, and book description",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon looked at the content of the book... keywords that the author put in"
+      ],
+      "id": "038d7057-d0c6-4714-a76d-c0b6ec49aa8f",
+      "type": "claim",
+      "provenance": [
+        "VdLcunTRlG4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:46:06.443892",
+      "last_seen": "2026-02-18T04:46:06.443892"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche targeting combines audience identity, specific problems, and unique constraints for differentiation.",
+      "why_it_works": "Leverages low-competition niches with clear keyword opportunities",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "If you get your book indexed... you're not going to benefit from it"
+      ],
+      "id": "f88b4c0f-9305-42c2-a41f-f3e5d1636561",
+      "type": "niche_pattern",
+      "provenance": [
+        "VdLcunTRlG4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:45:30.814742",
+      "last_seen": "2026-02-18T04:45:30.814742"
+    }
+  ]
+}

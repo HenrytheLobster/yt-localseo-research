@@ -1,0 +1,119 @@
+{
+  "source_type": "youtube",
+  "video_id": "I_gKg3s4aQw",
+  "title": "What Does Amazon's BSR mean? || Amazon BSR",
+  "extracted_at": "2026-02-19T00:17:45.109050",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2860,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "BSR Niche Analysis",
+      "description": "Use BSR rankings to identify profitable niches by comparing subcategory performance",
+      "steps": [
+        "Check subcategory BSR rankings",
+        "Prioritize niches with low BSR (recent sales)",
+        "Avoid products with no BSR (zero sales)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Quick View"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "BSR may not reflect new products"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the lower the ratings the more recently the product is sold"
+      ],
+      "id": "c018829d-93d9-40b2-ad1e-7b0df9152206",
+      "type": "tactic",
+      "provenance": [
+        "I_gKg3s4aQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:45.108884",
+      "last_seen": "2026-02-19T00:17:45.108884"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Recent Sales Indicator",
+      "condition": "If BSR is below 500,000 then prioritize",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "lt",
+        "value": 500000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "lower rating of about two hundred thousand in the clothing and shoes rally means that it has recently sold"
+      ],
+      "id": "24642ae8-929a-4b73-919f-45148b3c47cf",
+      "type": "heuristic",
+      "provenance": [
+        "I_gKg3s4aQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:45.108884",
+      "last_seen": "2026-02-19T00:17:45.108884"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's BSR is calculated based on sales data and updated hourly",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "amazon's algorithm automatically generates this number and assigns it to a product based on its most recent and historical sales data"
+      ],
+      "id": "f49c9b54-5cd8-4df6-8858-702fb851d222",
+      "type": "claim",
+      "provenance": [
+        "I_gKg3s4aQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:45.108884",
+      "last_seen": "2026-02-19T00:17:45.108884"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience needs with niche constraints",
+      "why_it_works": "Combines identity (target audience), problem (unmet need), and constraint (specific criteria)",
+      "signals": [
+        "low review counts",
+        "low BSR"
+      ],
+      "source_quotes": [
+        "make sure you're looking at the bsr ratings as well because the lower the ratings the more recently the product is sold"
+      ],
+      "id": "18d5be2b-0909-4a36-b96b-29703dc4f9f0",
+      "type": "niche_pattern",
+      "provenance": [
+        "I_gKg3s4aQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:45.108884",
+      "last_seen": "2026-02-19T00:17:45.108884"
+    }
+  ]
+}

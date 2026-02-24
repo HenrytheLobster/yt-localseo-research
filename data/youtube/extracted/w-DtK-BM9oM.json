@@ -1,0 +1,119 @@
+{
+  "source_type": "youtube",
+  "video_id": "w-DtK-BM9oM",
+  "title": "How to Spy on Your Competitor\u2019s Keywords (Amazon KDP)",
+  "extracted_at": "2026-02-18T03:57:26.094155",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 8791,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "reverse_as_lookup",
+      "description": "Identify keywords your book is actually ranking for by inputting ISBN10 via Publisher Rocket's reverse AS lookup",
+      "steps": [
+        "Input your book's AS/ISBN10 into Publisher Rocket",
+        "Analyze which keywords Amazon is associating with your book",
+        "Compare results to your metadata (title, categories, description)"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 50,
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Irrelevant keywords indicate metadata confusion"
+      ],
+      "example_niches": [
+        "teen_planner"
+      ],
+      "source_quotes": [
+        "you can see which keywords your book is actually ranking for",
+        "Amazon's looking at all of your metadata collectively"
+      ],
+      "id": "589c3dd8-1c41-432b-aa01-675f79af782f",
+      "type": "tactic",
+      "provenance": [
+        "w-DtK-BM9oM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:26.093997",
+      "last_seen": "2026-02-18T03:57:26.093997"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competitive_score_filter",
+      "condition": "If competitive score > 50, penalize",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "gt",
+        "value": 50
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "stay away from all of these moderately competitive keywords"
+      ],
+      "id": "4ca12a54-b979-47f2-98fe-4072c30e1db9",
+      "type": "heuristic",
+      "provenance": [
+        "w-DtK-BM9oM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:26.093997",
+      "last_seen": "2026-02-18T03:57:26.093997"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon uses collective metadata (title, categories, description) to determine book rankings, not just keyword slots",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon's looking at all of your metadata collectively"
+      ],
+      "id": "f6fa6061-d576-4b05-ab04-4c15b4a410b9",
+      "type": "claim",
+      "provenance": [
+        "w-DtK-BM9oM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:26.093997",
+      "last_seen": "2026-02-18T03:57:26.093997"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen_boys + ADHD + Christian",
+      "description": "Targets specific audience segments with unique constraints",
+      "why_it_works": "Narrows competition and identifies underserved niches",
+      "signals": [
+        "low_review_counts"
+      ],
+      "source_quotes": [
+        "If this is the case, not only do you want to have another look at your keywords..."
+      ],
+      "id": "3556372f-d072-4c7c-884d-e580b5f1b43d",
+      "type": "niche_pattern",
+      "provenance": [
+        "w-DtK-BM9oM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:26.093997",
+      "last_seen": "2026-02-18T03:57:26.093997"
+    }
+  ]
+}

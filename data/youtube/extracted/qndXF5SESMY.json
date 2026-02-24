@@ -1,0 +1,125 @@
+{
+  "source_type": "youtube",
+  "video_id": "qndXF5SESMY",
+  "title": "BookBolt 2.0 Movers and Shakers + KDP Spy, Amazon KDP Easy Keyword Research",
+  "extracted_at": "2026-02-18T12:57:51.783597",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 3586,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Movers and Shakers + KDP Spy Keyword Research",
+      "description": "Use BookBolt 2.0's Movers and Shakers to identify top-performing books, then leverage KDP Spy for keyword discovery and volume analysis.",
+      "steps": [
+        "Select a category and time frame (daily/weekly/monthly) in Movers and Shakers",
+        "Analyze BSR rank, sales estimates, and ICN number for top books",
+        "Use Book Scout (reverse search) to extract keywords from successful titles",
+        "Filter keywords by search volume and competition score in KDP Spy",
+        "Iterate by searching related keywords to find unique opportunities"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_volume",
+        "competition_score"
+      ],
+      "tools_mentioned": [
+        "BookBolt 2.0",
+        "KDP Spy",
+        "Book Scout"
+      ],
+      "thresholds": {
+        "search_volume_min": 1000,
+        "competition_score_max": 50
+      },
+      "caveats": [
+        "Requires manual filtering to avoid keyword saturation"
+      ],
+      "example_niches": [
+        "budget planning",
+        "health tracking"
+      ],
+      "source_quotes": [
+        "You can see the estimate monthly sales, the BSR rank, the ICN number..."
+      ],
+      "id": "fee46b24-6dbb-4cd2-ab74-149504ab68f7",
+      "type": "tactic",
+      "provenance": [
+        "qndXF5SESMY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:51.783379",
+      "last_seen": "2026-02-18T12:57:51.783379"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "High-Volume Keyword Prioritization",
+      "condition": "If a keyword has monthly search volume > 1000 and competition score < 50, prioritize it",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "We can filter them by total items count or search volume."
+      ],
+      "id": "d7a29345-35af-494c-ac23-ba129c179cd6",
+      "type": "heuristic",
+      "provenance": [
+        "qndXF5SESMY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:51.783379",
+      "last_seen": "2026-02-18T12:57:51.783379"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP Spy provides related keywords with monthly search volume and competition data",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You can see the estimate monthly search volume and the competition score..."
+      ],
+      "id": "af5c85e7-ed4c-44be-a87b-f430ce177653",
+      "type": "claim",
+      "provenance": [
+        "qndXF5SESMY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:51.783379",
+      "last_seen": "2026-02-18T12:57:51.783379"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "budget planner + financial tracking + monthly goals",
+      "description": "Target specific niches with clear problem-solution constraints for keyword optimization",
+      "why_it_works": "Aligns with high-intent search terms and low-competition keyword opportunities",
+      "signals": [
+        "low review counts",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "We can find unique keywords just for this search term."
+      ],
+      "id": "e455dfb5-7144-4a2b-8564-7dc15122a6f5",
+      "type": "niche_pattern",
+      "provenance": [
+        "qndXF5SESMY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:51.783379",
+      "last_seen": "2026-02-18T12:57:51.783379"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "source_type": "youtube",
+  "video_id": "JfflQGMV6ts",
+  "title": "Amazon KDP Niche Research for Low Content Books | Low Content Books #15",
+  "extracted_at": "2026-02-18T20:37:23.714463",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 11912,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "foreign_language_notebooks",
+      "description": "Target niches with low competition and high demand by focusing on foreign language practice notebooks",
+      "steps": [
+        "Check Amazon BSR and review counts for niche validation",
+        "Use Publisher Rocket to identify high-potential keywords",
+        "Leverage seasonal discounts (e.g., Easter seal) for cost-effective interiors"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Risk of saturation as niche gains popularity"
+      ],
+      "example_niches": [
+        "korean_practice_notebook",
+        "japanese_practice_notebook"
+      ],
+      "source_quotes": [
+        "anything foreign not only does it have less results or less competition but is also very profitable"
+      ],
+      "id": "7a4ce4c7-5287-497f-95ae-a1f26fc48157",
+      "type": "tactic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:19.581385",
+      "last_seen": "2026-02-18T20:36:19.581385"
+    },
+    {
+      "name": "Analyze Bestseller Interiors",
+      "description": "Study top-selling book interiors to identify design elements that drive demand.",
+      "steps": [
+        "Compare interior layouts of bestsellers",
+        "Check for unique features like contact info or specific formatting"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if niche is oversaturated"
+      ],
+      "example_niches": [
+        "Engineering graph paper notebook",
+        "Coin inventory log book"
+      ],
+      "source_quotes": [
+        "this interior so you can see right here that means it's a really great interior"
+      ],
+      "id": "49269659-bf73-4928-a28e-d6ec04dc6586",
+      "type": "tactic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:55.210962",
+      "last_seen": "2026-02-18T20:36:55.210962"
+    },
+    {
+      "name": "Price Under Bestsellers",
+      "description": "Position products at a lower price than top competitors to attract price-sensitive buyers.",
+      "steps": [
+        "Identify bestseller prices",
+        "Set lower price point for own product"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May reduce profit margins"
+      ],
+      "example_niches": [
+        "Engineering graph paper notebook"
+      ],
+      "source_quotes": [
+        "we have to put a price that is less than the best sellers"
+      ],
+      "id": "a30bd6c9-934e-4433-8122-a362fe73ac73",
+      "type": "tactic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:55.210962",
+      "last_seen": "2026-02-18T20:36:55.210962"
+    },
+    {
+      "name": "publisher_rocket_template_search",
+      "description": "Use Publisher Rocket to find low-content book templates with specific niche attributes",
+      "steps": [
+        "Search for coin inventory logbook templates",
+        "Filter by BSR and review counts",
+        "Download editable PDF versions"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When templates fail to meet niche-specific constraints"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Publisher Rocket coin inventory logbook... 90 off for the easter seal"
+      ],
+      "id": "0bce1177-93b2-416e-aa5b-b23952676bbf",
+      "type": "tactic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:37:23.714357",
+      "last_seen": "2026-02-18T20:37:23.714357"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "review_based_niche_selection",
+      "condition": "If median reviews are below 200, prioritize niches with high BSR potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "look at nearly all of them have reviews and all the first four are being sponsored"
+      ],
+      "id": "26010af6-2f82-4d68-aa57-07ec2afdb0a3",
+      "type": "heuristic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:19.581385",
+      "last_seen": "2026-02-18T20:36:19.581385"
+    },
+    {
+      "name": "Boost Low-Review Niche",
+      "condition": "If median reviews are below 200, prioritize niches with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "no reviews yet so nobody has pretty ceo they've purchased it"
+      ],
+      "id": "95a78732-8ac3-4414-b06d-aae76a4aa8aa",
+      "type": "heuristic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:55.210962",
+      "last_seen": "2026-02-18T20:36:55.210962"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median_reviews is less than 200, boost score",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "...available in pdf is in designer 4. for you to edit it"
+      ],
+      "id": "aca0b126-506a-4d14-bbc7-56ee974ef013",
+      "type": "heuristic",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:37:23.714357",
+      "last_seen": "2026-02-18T20:37:23.714357"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Foreign language niches exhibit lower competition and higher profitability on Amazon KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "anything foreign not only does it have less results or less competition but is also very profitable"
+      ],
+      "id": "bac0ad9e-e8d0-4291-b421-8633ddc4cdd3",
+      "type": "claim",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:19.581385",
+      "last_seen": "2026-02-18T20:36:19.581385"
+    },
+    {
+      "statement": "Coin inventory log books often feature leather covers and prices around $5.92",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "coin eventually logbook red and i'm guessing it's a leather cover"
+      ],
+      "id": "cf7067c1-20a7-4260-9bd1-eae4eaca0169",
+      "type": "claim",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:55.210962",
+      "last_seen": "2026-02-18T20:36:55.210962"
+    },
+    {
+      "statement": "Publisher Rocket can be used to find editable low-content book templates",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Publisher Rocket coin inventory logbook... 90 off for the easter seal"
+      ],
+      "id": "7c46f12c-3680-4234-be60-d2802bdd9fa8",
+      "type": "claim",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:37:23.714357",
+      "last_seen": "2026-02-18T20:37:23.714357"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "korean_language_learning + language_practice + limited_suppliers",
+      "description": "Niche targeting specific language learners with unmet demand for practice materials",
+      "why_it_works": "Combines high search volume with low supply, creating profit potential",
+      "signals": [
+        "low_review_counts",
+        "high_bsr_potential"
+      ],
+      "source_quotes": [
+        "this niche is just 354 results on amazon"
+      ],
+      "id": "df9a3e00-5d8f-4775-86dc-344dbc3f5771",
+      "type": "niche_pattern",
+      "provenance": [
+        "JfflQGMV6ts"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:36:19.581385",
+      "last_seen": "2026-02-18T20:36:19.581385"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "source_type": "youtube",
+  "video_id": "jfeBktp940Y",
+  "title": "Amazon Sales Rank KDP Calculator",
+  "extracted_at": "2026-02-19T00:16:37.680363",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 3329,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 0,
+    "claims": 1,
+    "niche_patterns": 0
+  },
+  "tactics": [
+    {
+      "name": "Amazon Sales Rank Calculator",
+      "description": "Converts Amazon bestseller rank into estimated daily sales figures for KDP authors",
+      "steps": [
+        "Input Amazon bestseller rank into the calculator",
+        "Receive estimated daily sales output"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Amazon Sales Rank Calculator",
+        "WordPress plugin"
+      ],
+      "thresholds": {},
+      "caveats": [],
+      "example_niches": [],
+      "source_quotes": [
+        "the calculator will pop up with a number that gives you a rough estimate of how many books per day that person is selling"
+      ],
+      "id": "8266d5b2-46eb-4653-9e02-19a9bebfa195",
+      "type": "tactic",
+      "provenance": [
+        "jfeBktp940Y"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:16:37.680193",
+      "last_seen": "2026-02-19T00:16:37.680193"
+    }
+  ],
+  "heuristics": [],
+  "claims": [
+    {
+      "statement": "Amazon bestseller rank is not a direct indicator of sales volume",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the Amazon bestseller rank is really just a ranking... the number means nothing to you"
+      ],
+      "id": "705c25a2-841d-476e-a2c3-c769d5911597",
+      "type": "claim",
+      "provenance": [
+        "jfeBktp940Y"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:16:37.680193",
+      "last_seen": "2026-02-19T00:16:37.680193"
+    }
+  ],
+  "niche_patterns": []
+}

@@ -1,0 +1,216 @@
+{
+  "source_type": "youtube",
+  "video_id": "zCuhW6XUndk",
+  "title": "KDP Niche Research - The Publication That Does All The Hard Work For You! EZ Pub Profits",
+  "extracted_at": "2026-02-18T20:20:36.976413",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7757,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "EZ Pub Profits Subscription",
+      "description": "Monthly niche research tool providing keywords, search volumes, BSR rankings, and interior templates for KDP publishing.",
+      "steps": [
+        "Subscribe to EZ Pub Profits",
+        "Access monthly publications with niche data",
+        "Use provided interiors for book creation"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "EZ Pub Profits"
+      ],
+      "thresholds": {
+        "bsr_max": 50000,
+        "search_volume_min": 1000
+      },
+      "caveats": [
+        "Data is time-sensitive and requires modification for uniqueness"
+      ],
+      "example_niches": [
+        "baseball scorekeeping notebook",
+        "horror movie log book"
+      ],
+      "source_quotes": [
+        "this publication will give you all the niches for that month and for the next couple of months"
+      ],
+      "id": "f0afd308-4b49-4524-b25f-0183c15b94e4",
+      "type": "tactic",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:05.052363",
+      "last_seen": "2026-02-18T20:20:05.052363"
+    },
+    {
+      "name": "use_publication_guide",
+      "description": "Leverage the Kindle Direct Publishing success guide to identify niche ideas and book interiors",
+      "steps": [
+        "Access the PDF guide via provided affiliate link",
+        "Review sections on low-content book ideas and event calendars",
+        "Modify templates before publishing"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Kindle Direct publishing success guide",
+        "Easy Pub profits newsletter"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires customization of templates for publication"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the Kindle Direct publishing success guide it will go through all information that's included in each of the Publications"
+      ],
+      "id": "eacfb5db-a90a-44df-843a-04ed568277c0",
+      "type": "tactic",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:36.976285",
+      "last_seen": "2026-02-18T20:20:36.976285"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Niche Filter",
+      "condition": "If BSR ranking is below 50,000 and search volume exceeds 1,000, prioritize niche",
+      "machine_rule": {
+        "field": "bsr_rank",
+        "op": "lt",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "this could be a really good Niche or a keyword that you'd like to investigate further"
+      ],
+      "id": "72d9b1a8-d7df-4e0a-b4fb-307c2961301c",
+      "type": "heuristic",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:05.052363",
+      "last_seen": "2026-02-18T20:20:05.052363"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are less than 200, prioritize this niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "check out the links below the link is an affiliate link"
+      ],
+      "id": "ecccf370-cd5f-4a6b-a17c-61ef8523c265",
+      "type": "heuristic",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:36.976285",
+      "last_seen": "2026-02-18T20:20:36.976285"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "EZ Pub Profits provides KDP authors with pre-researched niches, keywords, and interior templates.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they also provide plenty of different dates and most importantly they provide some interiors"
+      ],
+      "id": "a18f72c3-a316-4e01-affb-9bc313dd81b1",
+      "type": "claim",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:05.052363",
+      "last_seen": "2026-02-18T20:20:05.052363"
+    },
+    {
+      "statement": "The Kindle Direct Publishing success guide includes sections on low-content book ideas and event calendars",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the Kindle Direct publishing success guide it will go through all information that's included in each of the Publications"
+      ],
+      "id": "33337771-b745-4015-963e-796aa3ec2f42",
+      "type": "claim",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:36.976285",
+      "last_seen": "2026-02-18T20:20:36.976285"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "HOBBY + LOGBOOK + NICHESPECIFIC",
+      "example": "cycling + log book + National Movie Night",
+      "description": "Target underserved niches with seasonal relevance and low competition",
+      "why_it_works": "Combines recurring interests with specific events for targeted content",
+      "signals": [
+        "seasonal dates",
+        "low review counts"
+      ],
+      "source_quotes": [
+        "this is for June National movie night so it again talks about information about that particular Niche"
+      ],
+      "id": "860f8c17-983a-4bb5-a133-5ed6b1ce56e7",
+      "type": "niche_pattern",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:05.052363",
+      "last_seen": "2026-02-18T20:20:05.052363"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche targeting specific demographics with unique challenges and preferences",
+      "why_it_works": "Low review counts indicate underserved markets",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "low content book ideas a book A Day schedule topic uh topics relevant to KDP Publishers"
+      ],
+      "id": "8f902f93-13fd-4aa3-a9c1-4e6f828b1ed1",
+      "type": "niche_pattern",
+      "provenance": [
+        "zCuhW6XUndk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:20:36.976285",
+      "last_seen": "2026-02-18T20:20:36.976285"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "source_type": "youtube",
+  "video_id": "LVSRbshg6Y0",
+  "title": "How I tripled my Amazon KDP sales in 1 month ( Keyword Research For Beginners )",
+  "extracted_at": "2026-02-18T03:42:34.819410",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8351,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Bookbeam",
+      "description": "Identify profitable niches using Bookbeam's filters and keyword analysis tools.",
+      "steps": [
+        "Select marketplace and preset filters (e.g., top-selling self-published books)",
+        "Filter by book age (e.g., 8 months) to find newly successful titles",
+        "Analyze keyword volume, competitors, and BSR data"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Bookbeam"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual verification of keyword relevance"
+      ],
+      "example_niches": [
+        "Mediterranean diet cookbook"
+      ],
+      "source_quotes": [
+        "I use Bookbeam to find keywords with low competitors and high search volume."
+      ],
+      "id": "90c29580-28f0-4974-bf05-88c7734ecdd0",
+      "type": "tactic",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:41:54.875659",
+      "last_seen": "2026-02-18T03:41:54.875659"
+    },
+    {
+      "name": "Category Selection Strategy",
+      "description": "Choose categories with achievable top rank thresholds and manageable competition.",
+      "steps": [
+        "Use Category Explorer to select marketplaces and book formats",
+        "Filter categories by top rank ranges (e.g., 20K-40K BSR)",
+        "Prioritize categories with low review counts and high sales potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "sales_volume"
+      ],
+      "tools_mentioned": [
+        "Bookbeam"
+      ],
+      "thresholds": {
+        "bsr_max": 80000
+      },
+      "caveats": [
+        "Requires ongoing sales tracking to validate assumptions"
+      ],
+      "example_niches": [
+        "Teen planner"
+      ],
+      "source_quotes": [
+        "Categories with 20K-40K BSR are manageable to compete in."
+      ],
+      "id": "5392c26d-eec5-4641-9e43-13cbba92dabd",
+      "type": "tactic",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:41:54.875659",
+      "last_seen": "2026-02-18T03:41:54.875659"
+    },
+    {
+      "name": "Book Tracker Analysis",
+      "description": "Monitor books using Book Tracker to analyze bestseller rankings, reviews, and keywords",
+      "steps": [
+        "Add books to tracker",
+        "Analyze bestseller rankings over time",
+        "Check estimated daily royalties and reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Tracker"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Less effective for niche markets with low competition"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the first look at the book tracker this tool is used to Monitor and analyze data on books"
+      ],
+      "id": "9c6a84b1-0cd2-4be9-9963-86a1afcb19e7",
+      "type": "tactic",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:42:34.819291",
+      "last_seen": "2026-02-18T03:42:34.819291"
+    },
+    {
+      "name": "Keyword Generator",
+      "description": "Find related keywords for Amazon listings using a keyword generator tool",
+      "steps": [
+        "Enter primary keyword",
+        "Copy relevant related keywords"
+      ],
+      "signals_used": [
+        "keyword_volume"
+      ],
+      "tools_mentioned": [
+        "Keyword Generator"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "May generate irrelevant keywords for niche topics"
+      ],
+      "example_niches": [
+        "Christian self-help"
+      ],
+      "source_quotes": [
+        "now when crafting an Amazon listing you need keywords for the books title description"
+      ],
+      "id": "4fce27a8-a2f3-4d24-8145-d66572e7f115",
+      "type": "tactic",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:42:34.819291",
+      "last_seen": "2026-02-18T03:42:34.819291"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median_reviews is less than 200, then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I pay attention to recently published books with lower reviews indicating potential demand."
+      ],
+      "id": "5581b759-3df8-430b-8da9-c06caa979e5b",
+      "type": "heuristic",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:41:54.875659",
+      "last_seen": "2026-02-18T03:41:54.875659"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this tool shows you the average person number of competitors and set volume of that keyword"
+      ],
+      "id": "6b83e7cc-e3d0-44e0-b088-a8498281a39a",
+      "type": "heuristic",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:42:34.819291",
+      "last_seen": "2026-02-18T03:42:34.819291"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon bestseller badges signal trust and product quality to shoppers.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon's best seller badge signals to shoppers that the product sells well."
+      ],
+      "id": "75288fc8-2f05-4a66-a49e-b7da8c6cd4f5",
+      "type": "claim",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:41:54.875659",
+      "last_seen": "2026-02-18T03:41:54.875659"
+    },
+    {
+      "statement": "Bookbeam provides estimated daily sales and royalty data for Amazon listings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this tool shows you the estimated daily sales estimated royalties and the age of the listing"
+      ],
+      "id": "7516683c-8930-48d7-91cc-a5783715fcb8",
+      "type": "claim",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:42:34.819291",
+      "last_seen": "2026-02-18T03:42:34.819291"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target underserved subniches with specific identity, problem, and constraint combinations.",
+      "why_it_works": "Creates focused demand with lower competition and higher monetization potential",
+      "signals": [
+        "low review counts",
+        "high keyword volume"
+      ],
+      "source_quotes": [
+        "I look for subniches that appear more than three times in the list."
+      ],
+      "id": "48668526-cfb7-4eec-85b2-bbd0ace82a00",
+      "type": "niche_pattern",
+      "provenance": [
+        "LVSRbshg6Y0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:41:54.875659",
+      "last_seen": "2026-02-18T03:41:54.875659"
+    }
+  ]
+}

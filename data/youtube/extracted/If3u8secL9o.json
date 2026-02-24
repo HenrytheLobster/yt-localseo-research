@@ -1,0 +1,216 @@
+{
+  "source_type": "youtube",
+  "video_id": "If3u8secL9o",
+  "title": "Tips for Simple KDP Low-Content Research Using Publisher Rocket + How to Make Your Book Stand Out!",
+  "extracted_at": "2026-02-18T22:57:17.736875",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8030,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Niche Down",
+      "description": "Start with broad keywords, filter by search volume and competition, then refine with specific modifiers.",
+      "steps": [
+        "Use Publisher Rocket's keyword search tool with general terms like 'coloring book'.",
+        "Filter results by estimated Amazon searches (green) and low competitive score (yellow).",
+        "Refine keywords with modifiers like 'for kids' or 'cute dogs' to find underserved niches."
+      ],
+      "signals_used": [
+        "estimated_amazon_searches",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 50,
+        "estimated_amazon_searches_min": 1000
+      },
+      "caveats": [
+        "Avoid overly broad terms like 'log books' without specific modifiers"
+      ],
+      "example_niches": [
+        "cute dogs coloring book",
+        "logbooks for truck drivers"
+      ],
+      "source_quotes": [
+        "'I like to start with a really general keyword and niche it down from there'"
+      ],
+      "id": "f63589fe-52e2-4a8e-8ac8-4fbe4cd37f5d",
+      "type": "tactic",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:56:47.261177",
+      "last_seen": "2026-02-18T22:56:47.261177"
+    },
+    {
+      "name": "Competitor Analysis with Publisher Rocket",
+      "description": "Use Publisher Rocket to identify top-performing books in a niche and analyze their features to differentiate your own product.",
+      "steps": [
+        "Check BSR and review counts of competing titles",
+        "Evaluate cover design and interior layout",
+        "Identify unique selling propositions (USPs) like hardcover options or color interiors"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if niche is oversaturated"
+      ],
+      "example_niches": [
+        "truck driver logbook"
+      ],
+      "source_quotes": [
+        "this one has a BSR in the 500 000 which is all right not amazing but um still definitely making sales"
+      ],
+      "id": "51aa5253-c00b-47c5-87cd-0a99ccc4dbb0",
+      "type": "tactic",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:57:17.736700",
+      "last_seen": "2026-02-18T22:57:17.736700"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low-Competition Niche Filter",
+      "condition": "If competitive score is yellow (moderate) and Amazon searches are green (high), prioritize",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 60
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'less competitive is better because that means your book will have a higher chance of ranking'"
+      ],
+      "id": "5345876e-a312-49f4-9c2a-07d0d5270073",
+      "type": "heuristic",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:56:47.261177",
+      "last_seen": "2026-02-18T22:56:47.261177"
+    },
+    {
+      "name": "Low-Review Niche Opportunity",
+      "condition": "If median reviews are below 200, prioritize niches with untapped demand",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "could it be a better layout could it be offering more pages"
+      ],
+      "id": "0b8bf41e-7333-410c-a9b6-64ac23a5543c",
+      "type": "heuristic",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:57:17.736700",
+      "last_seen": "2026-02-18T22:57:17.736700"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Books with 1,000 or fewer Amazon search results have better ranking potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'my sweet spot is around a thousand... anything at about 1,000 results or fewer is where you want to be'"
+      ],
+      "id": "3ccd3648-8815-4403-90e2-5e0bd96186ae",
+      "type": "claim",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:56:47.261177",
+      "last_seen": "2026-02-18T22:56:47.261177"
+    },
+    {
+      "statement": "Funny or edgy covers with swear words can drive sales in niche markets",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "covers with swear words tend to do really well"
+      ],
+      "id": "cfe4cbf7-c23e-406c-a968-2adcef04d526",
+      "type": "claim",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:57:17.736700",
+      "last_seen": "2026-02-18T22:57:17.736700"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + SPECIFICITY + USE_CASE",
+      "example": "coloring book + cute dogs + for kids",
+      "description": "Combine core identity with specific attributes and targeted use cases to create unique niches",
+      "why_it_works": "Balances broad appeal with specific targeting to reduce competition",
+      "signals": [
+        "estimated_amazon_searches",
+        "competitive_score"
+      ],
+      "source_quotes": [
+        "'I would then go to amazon.com... type in that keyword so I can learn more about it'"
+      ],
+      "id": "e6a6fe6f-79a3-49ae-944e-a601028eb5f6",
+      "type": "niche_pattern",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:56:47.261177",
+      "last_seen": "2026-02-18T22:56:47.261177"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "truck drivers + logbook needs + professional design",
+      "description": "Target specific audience pain points with tailored solutions",
+      "why_it_works": "Addresses clear needs while differentiating from generic options",
+      "signals": [
+        "low review counts",
+        "BSR benchmarks"
+      ],
+      "source_quotes": [
+        "this one has a BSR in the 500 000 which is all right not amazing but um still definitely making sales"
+      ],
+      "id": "79a23a09-f899-4ae9-aad0-6d7271a1b337",
+      "type": "niche_pattern",
+      "provenance": [
+        "If3u8secL9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:57:17.736700",
+      "last_seen": "2026-02-18T22:57:17.736700"
+    }
+  ]
+}

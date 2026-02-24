@@ -1,0 +1,217 @@
+{
+  "source_type": "youtube",
+  "video_id": "8MMS7Gc20tQ",
+  "title": "Using Publisher Rocket to Find Keywords for Your Book",
+  "extracted_at": "2026-02-18T23:54:09.924958",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10721,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket to find and analyze keywords for book marketing",
+      "steps": [
+        "Enter a general idea or phrase",
+        "Select ebook format",
+        "Analyze keyword metrics like competitors and search volume"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competitive scores and search data should be contextualized"
+      ],
+      "example_niches": [
+        "shifter romance",
+        "reverse harem romance"
+      ],
+      "source_quotes": [
+        "these suggestions come from amazon's kindle store"
+      ],
+      "id": "70b09f4f-e747-43c8-b592-d4cf00b31c78",
+      "type": "tactic",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:53:33.510116",
+      "last_seen": "2026-02-18T23:53:33.510116"
+    },
+    {
+      "name": "Keyword Category Analysis",
+      "description": "Use Publisher Rocket to identify high-performing categories and keywords by analyzing BSR ranks and sales data",
+      "steps": [
+        "Search for niche keywords like 'shifter academy romances'",
+        "Review book covers and categories",
+        "Check BSR ranks and sales figures",
+        "Export competition data to Excel for sorting"
+      ],
+      "signals_used": [
+        "BSR",
+        "daily_sales"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000,
+        "daily_sales_min": 14
+      },
+      "caveats": [
+        "Sales figures are approximate"
+      ],
+      "example_niches": [
+        "shifter academy romances"
+      ],
+      "source_quotes": [
+        "the lower the number the more sales it's making"
+      ],
+      "id": "d521f263-319a-48ab-8f43-d913f229f79e",
+      "type": "tactic",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:54:09.924786",
+      "last_seen": "2026-02-18T23:54:09.924786"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitive Score Threshold",
+      "condition": "If competitive score is 20-50, prioritize keyword",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "competitive score this tells you how hard it would be to rank your book"
+      ],
+      "id": "f94f392f-1753-4ffd-8038-2910c9bcef72",
+      "type": "heuristic",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:53:33.510116",
+      "last_seen": "2026-02-18T23:53:33.510116"
+    },
+    {
+      "name": "Low Competition Targeting",
+      "condition": "If BSR rank is below 10,000 and daily sales are under 50, prioritize keyword",
+      "machine_rule": {
+        "field": "bsr_rank",
+        "op": "lt",
+        "value": 10000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "number 10 in the category so the number 10 book"
+      ],
+      "id": "05a5a632-db4f-4292-b7d1-1595cf559e29",
+      "type": "heuristic",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:54:09.924786",
+      "last_seen": "2026-02-18T23:54:09.924786"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides keyword data from Amazon's Kindle store",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "these suggestions come from amazon if you've ever typed something into the search bar on amazon"
+      ],
+      "id": "ad5532ab-5b47-45cd-86ea-ea2deb1c7a4e",
+      "type": "claim",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:53:33.510116",
+      "last_seen": "2026-02-18T23:53:33.510116"
+    },
+    {
+      "statement": "KDP BSR rank correlates with sales volume and category competitiveness",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the lower this number is the more sales it's making"
+      ],
+      "id": "29e2e0d7-b37d-4ae4-aa3d-01279416c942",
+      "type": "claim",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:54:09.924786",
+      "last_seen": "2026-02-18T23:54:09.924786"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "shifter academy + reverse harem + niche subgenre",
+      "description": "Identify specific subgenres with constrained market opportunities",
+      "why_it_works": "Narrow niches reduce competition while maintaining search volume",
+      "signals": [
+        "low competitor count",
+        "specific subgenre tags"
+      ],
+      "source_quotes": [
+        "shifter academy reverse harem romance for those who don't know reverse harem means"
+      ],
+      "id": "e801cf29-05e0-4770-af8b-502f940c683e",
+      "type": "niche_pattern",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:53:33.510116",
+      "last_seen": "2026-02-18T23:53:33.510116"
+    },
+    {
+      "pattern_template": "IDENTITY + MAGIC + SETTING",
+      "example": "schoolgirl + sacred geometry + moonlit academy",
+      "description": "Combine character identity, magical elements, and specific settings for niche keywords",
+      "why_it_works": "Creates unique marketable combinations with lower competition",
+      "signals": [
+        "low BSR ranks",
+        "specific color schemes"
+      ],
+      "source_quotes": [
+        "woman in a schoolgirl outfit holding like magic like fire"
+      ],
+      "id": "04294a14-5720-4d05-9fe4-5a65d9a0981a",
+      "type": "niche_pattern",
+      "provenance": [
+        "8MMS7Gc20tQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:54:09.924786",
+      "last_seen": "2026-02-18T23:54:09.924786"
+    }
+  ]
+}

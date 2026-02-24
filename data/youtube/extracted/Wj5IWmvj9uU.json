@@ -1,0 +1,313 @@
+{
+  "source_type": "youtube",
+  "video_id": "Wj5IWmvj9uU",
+  "title": "Amazon KDP Keyword Research Helium 10 Tutorial - Steal Your Competitors Keywords, Low & No Content",
+  "extracted_at": "2026-02-18T21:14:44.182393",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 26865,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 4,
+    "claims": 5,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Competitor Keyword Analysis",
+      "description": "Use Helium 10's X-ray tool to analyze competitors' book listings and extract keyword data.",
+      "steps": [
+        "Install Helium 10 chrome plug-in",
+        "Perform Amazon search and use X-ray to aggregate competitor data",
+        "Analyze ASINs, BSR, revenue, and sponsored ads"
+      ],
+      "signals_used": [
+        "BSR",
+        "revenue",
+        "sponsored_ads"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "revenue_min": 250000,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Does not include sponsored listings in aggregate totals"
+      ],
+      "example_niches": [
+        "coloring books",
+        "teen planners"
+      ],
+      "source_quotes": [
+        "'the term unicorn coloring book gets searched for 7,751 times'"
+      ],
+      "id": "9f79d17f-df89-4e87-b3eb-8d6156376235",
+      "type": "tactic",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:01.930998",
+      "last_seen": "2026-02-18T21:13:01.930998"
+    },
+    {
+      "name": "Competitor Keyword Stealing",
+      "description": "Analyze top-selling books in your niche to steal their keywords and replicate their keyword strategy using Helium 10 and Cerebro.",
+      "steps": [
+        "Select top-selling ASINs based on sales volume",
+        "Use Helium 10 to gather keywords from competitors",
+        "Filter keywords by search volume and competition",
+        "Prioritize keywords with low competition and high search volume"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_volume",
+        "competition"
+      ],
+      "tools_mentioned": [
+        "Helium 10",
+        "Cerebro"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "competition_max": 2
+      },
+      "caveats": [
+        "Avoid analyzing low-performing books with no sales"
+      ],
+      "example_niches": [
+        "coloring books",
+        "teen planners"
+      ],
+      "source_quotes": [
+        "we want keywords that people are actually searching for"
+      ],
+      "id": "9395bf3e-d179-4bff-a9fb-13fdd94b6b15",
+      "type": "tactic",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:39.233923",
+      "last_seen": "2026-02-18T21:13:39.233923"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Sponsored Ad Detection",
+      "condition": "If a listing appears in the bottom results but has high revenue, it's likely running sponsored ads",
+      "machine_rule": {
+        "field": "position",
+        "op": "gte",
+        "value": 10
+      },
+      "action": "flag",
+      "weight": 0.7,
+      "source_quotes": [
+        "'these are the books that are running ads quite often'"
+      ],
+      "id": "476798c6-ba6c-4751-afa9-6579b8851ea9",
+      "type": "heuristic",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:01.930998",
+      "last_seen": "2026-02-18T21:13:01.930998"
+    },
+    {
+      "name": "Low-Competition Targeting",
+      "condition": "If a keyword has less than 2 competitors and 500+ monthly searches, prioritize it",
+      "machine_rule": {
+        "field": "competition",
+        "op": "lte",
+        "value": 2
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we want the ones that have two books or less ranking in the top 10 results"
+      ],
+      "id": "563cec0b-c4f8-4a07-adbc-20cdfc8d60ae",
+      "type": "heuristic",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:39.233923",
+      "last_seen": "2026-02-18T21:13:39.233923"
+    },
+    {
+      "name": "Spanish Keyword Advantage",
+      "condition": "If a keyword has a Spanish translation with lower competition, prioritize it",
+      "machine_rule": {
+        "field": "language_variation",
+        "op": "contains",
+        "value": "spanish"
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "search results to be in different languages in particular in spanish"
+      ],
+      "id": "d6ba2c54-4aef-4fac-abf9-79890ef55ff8",
+      "type": "heuristic",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:14:11.365775",
+      "last_seen": "2026-02-18T21:14:11.365775"
+    },
+    {
+      "name": "High Search Volume/Low Competition",
+      "condition": "If a keyword has high search volume and low competition, prioritize it",
+      "machine_rule": {
+        "field": "iq_score",
+        "op": "gt",
+        "value": 1500
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "anger management workbook for women it's got a huge iq score"
+      ],
+      "id": "5a2de48a-8a39-4ff6-9da6-d3275c4bae9d",
+      "type": "heuristic",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:14:44.182258",
+      "last_seen": "2026-02-18T21:14:44.182258"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP differs from FBA in that books aren't printed until sold",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'amazon doesn't actually print your book until you make the sale'"
+      ],
+      "id": "f19458c0-3d29-4262-8f7c-d146e71b7323",
+      "type": "claim",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:01.930998",
+      "last_seen": "2026-02-18T21:13:01.930998"
+    },
+    {
+      "statement": "70% of shoppers never click past the first page of Amazon search results",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "70 percent of shoppers never click past the first page"
+      ],
+      "id": "8e0fda1b-ede4-4659-a17e-e06a7f349e0a",
+      "type": "claim",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:39.233923",
+      "last_seen": "2026-02-18T21:13:39.233923"
+    },
+    {
+      "statement": "Books ranking for Spanish keywords can achieve top positions despite high competition in English searches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this book is targeting spanish keywords same with these animals for toddler"
+      ],
+      "id": "a26d9a66-fa79-4923-9f59-51fe4daf7c78",
+      "type": "claim",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:14:11.365775",
+      "last_seen": "2026-02-18T21:14:11.365775"
+    },
+    {
+      "statement": "Amazon provides recommended keywords for top-ranking books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this search or this filter brings up 10 keywords that this particular book ranks for that amazon agrees are good keywords to use"
+      ],
+      "id": "ab93c947-7767-4ee1-9ceb-a5edbb3262ca",
+      "type": "claim",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:14:44.182258",
+      "last_seen": "2026-02-18T21:14:44.182258"
+    },
+    {
+      "statement": "Non-KDP books compete directly with KDP books for keyword rankings",
+      "category": "market_dynamics",
+      "confidence": "high",
+      "source_quotes": [
+        "this is not a kdp book it is published elsewhere but i don't think that that even matters"
+      ],
+      "id": "a8e35bbf-a1f8-4aab-a5ca-310dc6a5e927",
+      "type": "claim",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:14:44.182258",
+      "last_seen": "2026-02-18T21:14:44.182258"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with niche constraints for low-content books",
+      "why_it_works": "Combines identity (teen boys) with problem (ADHD) and constraint (Christian values) for focused keyword opportunities",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "'low & no content'"
+      ],
+      "id": "c8782e56-a308-45a6-a14d-42b0532f61ed",
+      "type": "niche_pattern",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:13:01.930998",
+      "last_seen": "2026-02-18T21:13:01.930998"
+    },
+    {
+      "pattern_template": "Niche + Language Variation",
+      "example": "coloring books for girls + Spanish keywords",
+      "description": "Target underserved language markets with niche products to reduce competition",
+      "why_it_works": "Leverages multilingual search demand while avoiding crowded English keyword spaces",
+      "signals": [
+        "low competition in language variants",
+        "high search volume in target language"
+      ],
+      "source_quotes": [
+        "look at using keywords in different languages starting with spanish"
+      ],
+      "id": "73b28edc-d7ef-448f-b01c-bf48b020cedd",
+      "type": "niche_pattern",
+      "provenance": [
+        "Wj5IWmvj9uU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:14:11.365775",
+      "last_seen": "2026-02-18T21:14:11.365775"
+    }
+  ]
+}

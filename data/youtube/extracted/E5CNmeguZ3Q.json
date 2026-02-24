@@ -1,0 +1,189 @@
+{
+  "source_type": "youtube",
+  "video_id": "E5CNmeguZ3Q",
+  "title": "Improve your book description with Publisher Rocket AI tools",
+  "extracted_at": "2026-02-18T23:34:21.897278",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6284,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "AI Blurb Generation",
+      "description": "Use Publisher Rocket's AI to generate book blurbs and improve descriptions",
+      "steps": [
+        "Input genre and title",
+        "Copy generated description before editing"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Tool may alter formatting",
+        "Generated blurbs require tweaking"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I'm going to click here I'm gonna put fiction and I'm going to see what it pulls up for me"
+      ],
+      "id": "bbe5a9b3-5ecd-4047-8e9d-fdea0a0de8ab",
+      "type": "tactic",
+      "provenance": [
+        "E5CNmeguZ3Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:33:38.557797",
+      "last_seen": "2026-02-18T23:33:38.557797"
+    },
+    {
+      "name": "Formatting Optimization",
+      "description": "Reformat book descriptions with headers, bullets, and visual hierarchy",
+      "steps": [
+        "Remove existing formatting",
+        "Apply bold/italic headers",
+        "Use bullet points"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Some formatting options may be restricted"
+      ],
+      "example_niches": [
+        "romance novel"
+      ],
+      "source_quotes": [
+        "I want this to be bold and italic um let's see pretty much there's not a whole lot of things that I'm putting in here"
+      ],
+      "id": "71fd643c-fa10-457e-99b1-1ad5b04651fa",
+      "type": "tactic",
+      "provenance": [
+        "E5CNmeguZ3Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:33:38.557797",
+      "last_seen": "2026-02-18T23:33:38.557797"
+    },
+    {
+      "name": "use_publisher_rockets_hashtags",
+      "description": "Leverage Publisher Rocket's hashtag suggestions to enhance book descriptions with unknown tags",
+      "steps": [
+        "Check Publisher Rocket resources for tools",
+        "Utilize their hashtag recommendations"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When hashtag suggestions fail to improve visibility"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "it's just giving you all kinds of great hashtags that you can use that you may not have known about"
+      ],
+      "id": "35bd620f-0482-4360-bc59-2b2544b1becb",
+      "type": "tactic",
+      "provenance": [
+        "E5CNmeguZ3Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:34:21.896934",
+      "last_seen": "2026-02-18T23:34:21.896934"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Optimization",
+      "condition": "If median reviews are below 200, prioritize description improvements",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I will look at where my sales are on this particular date and then see if anything happens after changing the description"
+      ],
+      "id": "b61f2788-2bb8-4af9-a290-c42112cb356b",
+      "type": "heuristic",
+      "provenance": [
+        "E5CNmeguZ3Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:33:38.557797",
+      "last_seen": "2026-02-18T23:33:38.557797"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides free keyword and category tools for KDP authors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they're giving this free tool to us to use they have other tools for you to use"
+      ],
+      "id": "8c45f779-3830-4c39-acc7-83528c285484",
+      "type": "claim",
+      "provenance": [
+        "E5CNmeguZ3Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:33:38.557797",
+      "last_seen": "2026-02-18T23:33:38.557797"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with clear pain points and boundaries",
+      "why_it_works": "Aligns with low review count niches requiring precise marketing",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "I'm not sure if I love this piece although then you sort of love this heartwarming Story of Friendship love and self-discovery"
+      ],
+      "id": "55f0505a-c30f-4b04-bb5d-c341e25ce42c",
+      "type": "niche_pattern",
+      "provenance": [
+        "E5CNmeguZ3Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:33:38.557797",
+      "last_seen": "2026-02-18T23:33:38.557797"
+    }
+  ]
+}

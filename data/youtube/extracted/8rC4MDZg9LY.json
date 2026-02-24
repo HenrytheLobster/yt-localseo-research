@@ -1,0 +1,226 @@
+{
+  "source_type": "youtube",
+  "video_id": "8rC4MDZg9LY",
+  "title": "3 Critical Factors to Research for Amazon KDP Using Publisher Rocket | Deep Dive Publishers",
+  "extracted_at": "2026-02-18T23:50:56.679195",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6151,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research",
+      "description": "Identify relevant keywords for discoverability by analyzing Kindle-only searches and top-performing books in your niche.",
+      "steps": [
+        "Search Kindle-only keywords",
+        "Analyze top 10 books in your category",
+        "Study successful book elements"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Keyword research may fail if niche is too broad"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "people type in certain things and the algorithm gives them stuff that matches"
+      ],
+      "id": "328ab776-39b7-427d-890e-8a2874d0f680",
+      "type": "tactic",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:26.020488",
+      "last_seen": "2026-02-18T23:50:26.020488"
+    },
+    {
+      "name": "Category Optimization",
+      "description": "Ensure accurate categorization to align with Amazon's requirements and target the right audience.",
+      "steps": [
+        "Research optimal categories",
+        "Validate category accuracy against book content",
+        "Limit to three categories"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Incorrect categories may delay approval"
+      ],
+      "example_niches": [
+        "mystery"
+      ],
+      "source_quotes": [
+        "Amazon does not consider the physical copy of the book and the digital copy of the book as the same book"
+      ],
+      "id": "fffc74a3-970f-42d3-98ab-04563d279700",
+      "type": "tactic",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:26.020488",
+      "last_seen": "2026-02-18T23:50:26.020488"
+    },
+    {
+      "name": "bundle_discount_tactic",
+      "description": "Promote self-publishing bundle with discounted price via Publisher Rocket",
+      "steps": [
+        "Direct viewers to purchase bundle at discounted rate"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When market saturation occurs"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we would sell it for 497 dollars but lucky you you'll get it for 97"
+      ],
+      "id": "6cdcbd8f-4ce3-49ec-b779-050f4b42e9cb",
+      "type": "tactic",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:56.679034",
+      "last_seen": "2026-02-18T23:50:56.679034"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Top Seller Analysis",
+      "condition": "If median_reviews is less than 200, then boost the book's visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "study those books and see why that book is doing well"
+      ],
+      "id": "db1a0012-0113-4ddd-939d-9f0a06ebb9ad",
+      "type": "heuristic",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:26.020488",
+      "last_seen": "2026-02-18T23:50:26.020488"
+    },
+    {
+      "name": "review_threshold_heuristic",
+      "condition": "If median_reviews is less than 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we would sell it for 497 dollars but lucky you you'll get it for 97"
+      ],
+      "id": "1d91ec23-76d0-4e3b-ae3d-0e04427526de",
+      "type": "heuristic",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:56.679034",
+      "last_seen": "2026-02-18T23:50:56.679034"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon treats Kindle and physical book editions as separate entities with distinct rankings and values.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon does not consider the physical copy of the book and the digital copy of the book as the same book"
+      ],
+      "id": "ce4a565d-d9f7-4fd5-97ed-3395966650fd",
+      "type": "claim",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:26.020488",
+      "last_seen": "2026-02-18T23:50:26.020488"
+    },
+    {
+      "statement": "Publisher Rocket helps identify profitable niches with low review counts",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we would sell it for 497 dollars but lucky you you'll get it for 97"
+      ],
+      "id": "e668368e-98b8-483d-910a-c822c07e4197",
+      "type": "claim",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:56.679034",
+      "last_seen": "2026-02-18T23:50:56.679034"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with clear identity, problem, and constraint parameters.",
+      "why_it_works": "Niche alignment improves discoverability and relevance for targeted buyers.",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "you want people who are searching those categories to be the people who would enjoy reading your book"
+      ],
+      "id": "573ee36f-a2ca-416f-b7c2-3384d302c8b7",
+      "type": "niche_pattern",
+      "provenance": [
+        "8rC4MDZg9LY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:50:26.020488",
+      "last_seen": "2026-02-18T23:50:26.020488"
+    }
+  ]
+}

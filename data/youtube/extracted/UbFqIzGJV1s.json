@@ -1,0 +1,387 @@
+{
+  "source_type": "youtube",
+  "video_id": "UbFqIzGJV1s",
+  "title": "How to get profitable Amazon KDP Keywords | Find Unlimited Topics That Sell!",
+  "extracted_at": "2026-02-18T22:16:13.782586",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15364,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Auto Complete & Keyword Suggestion",
+      "description": "Use Amazon's auto-complete feature and keyword suggestion tools to identify trending topics.",
+      "steps": [
+        "Install keyword research tools like AMZ Suggestion Expander",
+        "Type niche keywords into Amazon search bar",
+        "Niche down by filtering search results",
+        "Analyze BSR and review counts for profitability"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "AMZ Suggestion Expander",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual niching down for accuracy"
+      ],
+      "example_niches": [
+        "self-help journals",
+        "mental health journals"
+      ],
+      "source_quotes": [
+        "You have to Niche down the way I'm doing now"
+      ],
+      "id": "dba31938-ac65-4d4d-8e42-98a769dfc6af",
+      "type": "tactic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:14:59.143717",
+      "last_seen": "2026-02-18T22:14:59.143717"
+    },
+    {
+      "name": "Frequently Bought Together",
+      "description": "Identify complementary products through Amazon's frequently bought together feature.",
+      "steps": [
+        "Search for existing products in target niche",
+        "Check 'Frequently Bought Together' section",
+        "Analyze co-purchased products for topic opportunities",
+        "Verify profitability through BSR and reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon search bar"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual verification of product relevance"
+      ],
+      "example_niches": [
+        "mental health journals",
+        "self-help workbooks"
+      ],
+      "source_quotes": [
+        "Any of these books you can open it and go and check whether it is profitable"
+      ],
+      "id": "df3107c5-e412-4cc4-a6c1-1bf7d2ff1c53",
+      "type": "tactic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:14:59.143717",
+      "last_seen": "2026-02-18T22:14:59.143717"
+    },
+    {
+      "name": "Amazon Search Validation",
+      "description": "Check existing books' review counts and BSR to assess profitability",
+      "steps": [
+        "Search Amazon for a book title",
+        "Copy the title and check review counts",
+        "Filter results to find topics with <1,000 reviews",
+        "Remove subtitles and search again"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon search bar"
+      ],
+      "thresholds": {
+        "reviews_max": 1000,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail for highly saturated niches"
+      ],
+      "example_niches": [
+        "self-help workbook for women"
+      ],
+      "source_quotes": [
+        "you can check how many persons have written on that topic"
+      ],
+      "id": "77268141-d793-452a-b0a0-3817c4eceacd",
+      "type": "tactic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:15:38.992764",
+      "last_seen": "2026-02-18T22:15:38.992764"
+    },
+    {
+      "name": "Author Central Page Analysis",
+      "description": "Evaluate an author's other works to identify profitable niches",
+      "steps": [
+        "Visit an author's Central Page",
+        "Review their published books",
+        "Analyze BSR and review data across their titles"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_min": 100,
+        "bsr_max": 100000
+      },
+      "caveats": [
+        "Requires manual data aggregation"
+      ],
+      "example_niches": [
+        "self-help",
+        "personal development"
+      ],
+      "source_quotes": [
+        "look at the books this author have written"
+      ],
+      "id": "e6bacc6f-0e0b-4201-affb-9bc6bb9bc874",
+      "type": "tactic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:15:38.992764",
+      "last_seen": "2026-02-18T22:15:38.992764"
+    },
+    {
+      "name": "ChatGPT Topic Generation",
+      "description": "Use AI prompts to generate untapped niche topics",
+      "steps": [
+        "Prompt ChatGPT with niche-specific criteria",
+        "Request 50+ low-competition topics",
+        "Validate each generated keyword via Amazon search"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "ChatGPT"
+      ],
+      "thresholds": {
+        "reviews_max": 1000,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Dependent on AI output quality"
+      ],
+      "example_niches": [
+        "somatic therapy for beginners"
+      ],
+      "source_quotes": [
+        "I need to assist me provide about 50 profitable topics"
+      ],
+      "id": "fe9719c2-bc4f-4528-86cb-5c7956a08462",
+      "type": "tactic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:15:38.992764",
+      "last_seen": "2026-02-18T22:15:38.992764"
+    },
+    {
+      "name": "metric-based topic validation",
+      "description": "Evaluate KDP topics using competition, reviews, BSR, niche score, and publisher type",
+      "steps": [
+        "Check competition < 1,000",
+        "Verify customer reviews exist",
+        "Ensure BSR < 300,000",
+        "Confirm niche score > 50",
+        "Confirm independent publisher"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 300000
+      },
+      "caveats": [
+        "Tools like Productor forage may have loading delays"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "competition has to be less than 1,000"
+      ],
+      "id": "62cd1b7b-5b1f-4ec3-98ad-cc8297e127a2",
+      "type": "tactic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:16:13.782377",
+      "last_seen": "2026-02-18T22:16:13.782377"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Filter",
+      "condition": "If median reviews are below 200, prioritize the topic",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You have to Niche down the way I'm doing now"
+      ],
+      "id": "49759d29-c92b-4c8d-b761-0b8175e6bee4",
+      "type": "heuristic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:14:59.143717",
+      "last_seen": "2026-02-18T22:14:59.143717"
+    },
+    {
+      "name": "Low-Review Niche Boost",
+      "condition": "If median reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we advise you should get something less than 1,000"
+      ],
+      "id": "9acd06c3-b247-49eb-af55-021ba86d0c77",
+      "type": "heuristic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:15:38.992764",
+      "last_seen": "2026-02-18T22:15:38.992764"
+    },
+    {
+      "name": "search_volume_opportunity",
+      "condition": "If high search volume with low competition and opportunity score >5, then prioritize",
+      "machine_rule": {
+        "field": "opportunity_score",
+        "op": "gt",
+        "value": 5
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you have high s volume with low competition... sell like crazy"
+      ],
+      "id": "1f02a6ad-7ee9-4272-8eb3-aab43173d7de",
+      "type": "heuristic",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:16:13.782377",
+      "last_seen": "2026-02-18T22:16:13.782377"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Niche down reduces competition by filtering search results",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You have to Niche down the way I'm doing now"
+      ],
+      "id": "2e814b5b-3a3b-49c0-a2b7-ed962a008260",
+      "type": "claim",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:14:59.143717",
+      "last_seen": "2026-02-18T22:14:59.143717"
+    },
+    {
+      "statement": "ChatGPT can generate 50+ untapped niche topics for KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I will have it all right now"
+      ],
+      "id": "943efbb1-7d39-4bf0-9299-8c120c1e88b9",
+      "type": "claim",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:15:38.992764",
+      "last_seen": "2026-02-18T22:15:38.992764"
+    },
+    {
+      "statement": "High search volume with low competition and opportunity score >5 correlates with sales success",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if you have high s volume with low competition... sell like crazy"
+      ],
+      "id": "ee018958-4a97-4748-9d36-54738becb0e4",
+      "type": "claim",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:16:13.782377",
+      "last_seen": "2026-02-18T22:16:13.782377"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific identity groups with problems and constraints for targeted niches",
+      "why_it_works": "Creates underserved markets with high search volume",
+      "signals": [
+        "low review counts",
+        "high BSR reduction potential"
+      ],
+      "source_quotes": [
+        "You have to Niche down the way I'm doing now"
+      ],
+      "id": "f65ac5b2-59d9-46ac-814d-b3a00e3b8397",
+      "type": "niche_pattern",
+      "provenance": [
+        "UbFqIzGJV1s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:14:59.143717",
+      "last_seen": "2026-02-18T22:14:59.143717"
+    }
+  ]
+}

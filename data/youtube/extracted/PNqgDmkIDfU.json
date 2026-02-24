@@ -1,0 +1,425 @@
+{
+  "source_type": "youtube",
+  "video_id": "PNqgDmkIDfU",
+  "title": "FULL VIDEO ON BOOK AND KEYWORD RESEARCH FOR AMAZON KDP - PART 1",
+  "extracted_at": "2026-02-18T13:23:40.155605",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 21594,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Cross-Marketplace Research",
+      "description": "Analyze book performance across multiple Amazon marketplaces by checking new releases and bestsellers",
+      "steps": [
+        "Search Amazon.it/uk/other regions for new releases",
+        "Filter for bestsellers to identify trending topics",
+        "Translate keywords for regional markets",
+        "Check BSR and review counts for viability"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Titans Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Low review counts may indicate poor sales potential"
+      ],
+      "example_niches": [
+        "Pakistan travel guide",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you want to make sales fast, new releases, if you want your sales to be sustainable for long-term best sellers"
+      ],
+      "id": "f0c1c02b-267d-4008-a2dd-78ad69292e09",
+      "type": "tactic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:21:59.834230",
+      "last_seen": "2026-02-18T13:21:59.834230"
+    },
+    {
+      "name": "translate_titles",
+      "description": "Use translated book titles to understand content and extract keywords for new book ideas",
+      "steps": [
+        "Copy top-selling book titles",
+        "Translate titles to English",
+        "Identify common themes or keywords",
+        "Create new book titles incorporating these keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Google Trends",
+        "translation tools"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Market saturation may require unique angles"
+      ],
+      "example_niches": [
+        "scientific facts",
+        "smartphone guides"
+      ],
+      "source_quotes": [
+        "You want to get an idea of what the book is all about right",
+        "You can use the title here something like par li in your keywords"
+      ],
+      "id": "006289d4-6cd3-4791-8963-4750ae0ac9c3",
+      "type": "tactic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:22:33.497091",
+      "last_seen": "2026-02-18T13:22:33.497091"
+    },
+    {
+      "name": "category_analysis",
+      "description": "Research categories to identify profitable niches for book creation",
+      "steps": [
+        "Browse Amazon categories (e.g., food, health, romance)",
+        "Identify trending subcategories",
+        "Create content aligned with category themes",
+        "Test multiple category approaches"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 100
+      },
+      "caveats": [
+        "Requires ongoing market validation"
+      ],
+      "example_niches": [
+        "cookbooks",
+        "travel guides"
+      ],
+      "source_quotes": [
+        "If you are a cookbook writer, you can look for your category around food",
+        "You can write travel guides when you're writing travel guide"
+      ],
+      "id": "d169642b-fb72-414f-b718-2df9ea2db339",
+      "type": "tactic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:22:33.497091",
+      "last_seen": "2026-02-18T13:22:33.497091"
+    },
+    {
+      "name": "model_successful_books",
+      "description": "Identify and replicate content from high-performing books by analyzing BSR and review data",
+      "steps": [
+        "Check Amazon bestsellers for niche categories",
+        "Analyze BSR and review counts of top-performing titles",
+        "Modify content to create unique value propositions",
+        "Test variations without merging multiple concepts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon bestsellers",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail in saturated niches with high competition"
+      ],
+      "example_niches": [
+        "teen planner",
+        "dog training"
+      ],
+      "source_quotes": [
+        "You want your book to sell by leveraging on an already established author book right?",
+        "Check all the books here what's similar between these books right"
+      ],
+      "id": "c81af916-b7f8-49c9-8037-6fbb23ed6306",
+      "type": "tactic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:03.379343",
+      "last_seen": "2026-02-18T13:23:03.379343"
+    },
+    {
+      "name": "Niche Down to Target Audience",
+      "description": "Identify a specific target audience within a broader niche to improve competitiveness",
+      "steps": [
+        "Define a target person",
+        "Drill down into specific sub-niches like 'dog owners'"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDP BSR calculator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "BSR fluctuates daily, avoid using single-day data"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "You looking for a target person, a target audience inside them."
+      ],
+      "id": "ae0d8787-1e3e-4b4b-81e6-7fc64ea52547",
+      "type": "tactic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:40.155428",
+      "last_seen": "2026-02-18T13:23:40.155428"
+    },
+    {
+      "name": "Competitor Analysis",
+      "description": "Evaluate existing books in your niche to identify opportunities",
+      "steps": [
+        "Check Amazon bestsellers",
+        "Analyze titles and authors",
+        "Verify trademark/copyright status"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Trademark search",
+        "Amazon search"
+      ],
+      "thresholds": {
+        "results_max": 300
+      },
+      "caveats": [
+        "Avoid saturated niches with >300 results"
+      ],
+      "example_niches": [
+        "forgiving what you can't forget"
+      ],
+      "source_quotes": [
+        "I prefer something that is less than 300..."
+      ],
+      "id": "a88ec446-7c1c-4bcc-b550-a586a76ea7d3",
+      "type": "tactic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:40.155428",
+      "last_seen": "2026-02-18T13:23:40.155428"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "these are three. But you check here now. You see this one. No bestseller rank. No bestseller rank. No bestseller rank."
+      ],
+      "id": "d934dd61-6d3f-4490-9c59-f59bbb1d01db",
+      "type": "heuristic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:21:59.834230",
+      "last_seen": "2026-02-18T13:21:59.834230"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize this niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You can make your title pass the brew something something don't include the authing the book"
+      ],
+      "id": "75a8e850-452e-4ab9-a639-d54dbb40e2ba",
+      "type": "heuristic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:22:33.497091",
+      "last_seen": "2026-02-18T13:22:33.497091"
+    },
+    {
+      "name": "boost_low_review_niches",
+      "condition": "If median reviews are below 200, prioritize niches with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You don't want to go out of the mood and create something um I don't know go like just create something nobody's looking for"
+      ],
+      "id": "a4db6cf5-3797-43b6-a301-01750cc397f6",
+      "type": "heuristic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:03.379343",
+      "last_seen": "2026-02-18T13:23:03.379343"
+    },
+    {
+      "name": "Low Review Boost",
+      "condition": "If a niche has low review counts, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I prefer something that is less than 300..."
+      ],
+      "id": "802a611b-8808-4a94-acad-4215a5e3a3fa",
+      "type": "heuristic",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:40.155428",
+      "last_seen": "2026-02-18T13:23:40.155428"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Bestseller rankings indicate current market demand",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "these are what are selling in bestsellers on Amazon"
+      ],
+      "id": "0f46e886-c835-44cc-83af-9cbcf2174059",
+      "type": "claim",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:21:59.834230",
+      "last_seen": "2026-02-18T13:21:59.834230"
+    },
+    {
+      "statement": "Books with low review counts can still succeed through keyword optimization",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You can use the title here something like par li in your keywords so that when they search for it your book is going to show"
+      ],
+      "id": "0d0298f0-4a57-4244-afe7-7aeba4e2c776",
+      "type": "claim",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:22:33.497091",
+      "last_seen": "2026-02-18T13:22:33.497091"
+    },
+    {
+      "statement": "Japanese marketplace remains profitable despite limited translation efforts",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Japanese marketplace is still profitable many people don't translate the book to Japanese transl if you translate to Japanese are going to make crazy money"
+      ],
+      "id": "306199e2-c87c-4028-af84-bd37349641a9",
+      "type": "claim",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:03.379343",
+      "last_seen": "2026-02-18T13:23:03.379343"
+    },
+    {
+      "statement": "Amazon handles copyright enforcement, while publishers manage trademarks",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon take care of the copyright the publisher takes care of the trademark."
+      ],
+      "id": "494816ca-f1eb-420b-bdff-bca1e5ceb0f9",
+      "type": "claim",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:23:40.155428",
+      "last_seen": "2026-02-18T13:23:40.155428"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with unique constraints",
+      "why_it_works": "Niche constraints reduce competition and increase relevance",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "you're going to use a translated. So you're going to translate them"
+      ],
+      "id": "644a977e-6952-4cb1-94ba-ed354dea2135",
+      "type": "niche_pattern",
+      "provenance": [
+        "PNqgDmkIDfU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:21:59.834230",
+      "last_seen": "2026-02-18T13:21:59.834230"
+    }
+  ]
+}

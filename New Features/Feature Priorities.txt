@@ -1,0 +1,7 @@
+If I Rank Your Next 5 High-Leverage Moves
+
+1 Negative keyword bias control
+2 Reddit ingestion
+3 A/B dataset comparison
+4 Policy simulation sandbox
+5 Then — macro trend injection (Exploding Topics / Google Trends API / etc.)

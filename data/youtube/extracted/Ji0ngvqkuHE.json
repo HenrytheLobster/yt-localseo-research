@@ -1,0 +1,193 @@
+{
+  "source_type": "youtube",
+  "video_id": "Ji0ngvqkuHE",
+  "title": "KDP Rocket Tutorial: Introduction and Review",
+  "extracted_at": "2026-02-18T22:39:40.209229",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8099,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Book Idea Search",
+      "description": "Identify profitable niches using Amazon and Google search data to assess market demand and competition",
+      "steps": [
+        "Click book idea search button",
+        "Enter keyword/book idea",
+        "Analyze term data including competitors, earnings, and search volume"
+      ],
+      "signals_used": [
+        "bsr_max",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDP Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Amazon suggested searches may be overly competitive"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "KDP Rocket will get to work finding other book idea suggestions"
+      ],
+      "id": "34917b97-0082-4a14-8d13-517cc41ec5f5",
+      "type": "tactic",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:08.315550",
+      "last_seen": "2026-02-18T22:39:08.315550"
+    },
+    {
+      "name": "Competitor Analysis",
+      "description": "Evaluate top-ranking books to identify strengths/weaknesses and uncover market opportunities",
+      "steps": [
+        "Use competitor analysis button to pull top Amazon results",
+        "Compare metrics across top 5 books",
+        "Identify gaps to differentiate your book"
+      ],
+      "signals_used": [
+        "competitor_score",
+        "average_earnings"
+      ],
+      "tools_mentioned": [
+        "KDP Rocket"
+      ],
+      "thresholds": {
+        "competitor_score": 50
+      },
+      "caveats": [
+        "Results vary based on Amazon's personalization algorithms"
+      ],
+      "example_niches": [
+        "Christian self-help"
+      ],
+      "source_quotes": [
+        "KDP Rocket gives you the basic book information for each"
+      ],
+      "id": "ea08180f-6afc-4c53-8251-d836c6d45add",
+      "type": "tactic",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:08.315550",
+      "last_seen": "2026-02-18T22:39:08.315550"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitive Advantage",
+      "condition": "If average earnings are high but competitor score is low, then prioritize this term",
+      "machine_rule": {
+        "field": "competitor_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "KDP Rocket figures out exactly how hard it would be to compete"
+      ],
+      "id": "24971f73-fbb4-4b66-be8d-05f4ee0fbcc6",
+      "type": "heuristic",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:08.315550",
+      "last_seen": "2026-02-18T22:39:08.315550"
+    },
+    {
+      "name": "Review Threshold Heuristic",
+      "condition": "If median_reviews is less than 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Fire the mouse over the particular information...benefits that that number set provides"
+      ],
+      "id": "caccee7a-3e30-4163-b777-952520fa128e",
+      "type": "heuristic",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:40.209074",
+      "last_seen": "2026-02-18T22:39:40.209074"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP Rocket provides competitor scores to quantify market difficulty",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "KDP Rocket creates a competition score from 1 to 99"
+      ],
+      "id": "4c5912e8-1ff7-4b7d-8ac0-a402303a0196",
+      "type": "claim",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:08.315550",
+      "last_seen": "2026-02-18T22:39:08.315550"
+    },
+    {
+      "statement": "KDP Rocket provides support and bug reporting features",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Click our support button...send us a message"
+      ],
+      "id": "fa991f05-cc07-4f10-b794-e3ffeb745bab",
+      "type": "claim",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:40.209074",
+      "last_seen": "2026-02-18T22:39:40.209074"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific audience identities with unmet needs and unique constraints for niche targeting",
+      "why_it_works": "Creates underserved markets with lower competition and higher pricing potential",
+      "signals": [
+        "low review counts",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "You might be able to find a brand new topic but highly searched for book idea"
+      ],
+      "id": "a9c46ef3-5f66-47d6-b8fc-53c2e3f2747f",
+      "type": "niche_pattern",
+      "provenance": [
+        "Ji0ngvqkuHE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:39:08.315550",
+      "last_seen": "2026-02-18T22:39:08.315550"
+    }
+  ]
+}

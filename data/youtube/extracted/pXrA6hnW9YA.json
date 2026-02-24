@@ -1,0 +1,120 @@
+{
+  "source_type": "youtube",
+  "video_id": "pXrA6hnW9YA",
+  "title": "EASIEST $4,037 Amazon KDP Low Content Niche with Publisher Rocket | Passive Income",
+  "extracted_at": "2026-02-18T23:09:41.838828",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 1993,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "keyword_search_analysis",
+      "description": "Use Publisher Rocket's keyword search to identify niches with low competition and high earnings potential",
+      "steps": [
+        "Open Publisher Rocket and navigate to keyword search",
+        "Input a keyword (e.g., '5 minutes journal')",
+        "Analyze metrics like competitors, average price, and monthly earnings",
+        "Check BSR and review count thresholds"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When niche metrics fail to align with earnings potential"
+      ],
+      "example_niches": [
+        "5 minute journal"
+      ],
+      "source_quotes": [
+        "click on keyword search and type in a keyword let's take for example 5 minutes journal"
+      ],
+      "id": "cb14f500-aeb3-4c75-84c4-353ec501cdb8",
+      "type": "tactic",
+      "provenance": [
+        "pXrA6hnW9YA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:09:41.838675",
+      "last_seen": "2026-02-18T23:09:41.838675"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_review_threshold",
+      "condition": "If median reviews are below 200, prioritize niches with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average monthly earnings shows us the amount of money we can earn in a month"
+      ],
+      "id": "77ccb873-f0db-41aa-ab46-dccec3dd227f",
+      "type": "heuristic",
+      "provenance": [
+        "pXrA6hnW9YA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:09:41.838675",
+      "last_seen": "2026-02-18T23:09:41.838675"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket is a one-time paid tool with free lifetime updates",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you only have to pay a one-time 97 updates are from then on forever for free"
+      ],
+      "id": "28590dde-0168-41bc-a926-ce3df15ccd2e",
+      "type": "claim",
+      "provenance": [
+        "pXrA6hnW9YA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:09:41.838675",
+      "last_seen": "2026-02-18T23:09:41.838675"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "5 minute journal",
+      "description": "Target time-sensitive productivity niches with low competition",
+      "why_it_works": "Combines specific identity (journaling) with problem-solving (time management) and constraint (short duration)",
+      "signals": [
+        "low review counts",
+        "low BSR"
+      ],
+      "source_quotes": [
+        "average page this bar shows us how many average pages a book has in this niche number of competitors is obvious and the lower this number this easier it will be for you to succeed in this niche"
+      ],
+      "id": "c2afa29b-9c0e-42da-86a3-ce3f0c5ee618",
+      "type": "niche_pattern",
+      "provenance": [
+        "pXrA6hnW9YA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:09:41.838675",
+      "last_seen": "2026-02-18T23:09:41.838675"
+    }
+  ]
+}

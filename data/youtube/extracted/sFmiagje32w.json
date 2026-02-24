@@ -1,0 +1,365 @@
+{
+  "source_type": "youtube",
+  "video_id": "sFmiagje32w",
+  "title": "Kindle Spy v5 - How To Quickly Do Kindle Keyword Research And Find Big Money \ud83d\udcb0\ud83d\udcb0",
+  "extracted_at": "2026-02-18T13:35:40.044712",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 24652,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Profitability Analysis",
+      "description": "Use Kindle Spy to quickly evaluate if a keyword is profitable by checking rankings and competition.",
+      "steps": [
+        "Search keywords in Kindle Spy's search box",
+        "Check if top 6 results have BSR below 100,000",
+        "Analyze book covers and descriptions for optimization"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Kindle Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Inaccurate rankings may occur with new releases"
+      ],
+      "example_niches": [
+        "yoga for beginners"
+      ],
+      "source_quotes": [
+        "if the first six results appearing in this listing are below the 100,000 paid in Kindle Store"
+      ],
+      "id": "3a214506-e20b-4cfa-8a34-f0de6230059d",
+      "type": "tactic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:33:29.560323",
+      "last_seen": "2026-02-18T13:33:29.560323"
+    },
+    {
+      "name": "Kindle Spy Quick Analysis",
+      "description": "Use Kindle Spy v5 to rapidly gather keyword data by clicking a button for all results and metrics.",
+      "steps": [
+        "Click button to load all keyword data",
+        "Scroll through results to identify profitable keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Kindle Spy",
+        "Amazon app (es Amazon)"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Traditional tab-based analysis is time-consuming for 100+ keywords"
+      ],
+      "example_niches": [
+        "yoga",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "this is very probably from a famous author inside of this niche of yoga"
+      ],
+      "id": "0e461ca4-d372-4c34-a6ed-aa6f11d3e456",
+      "type": "tactic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:33:59.034343",
+      "last_seen": "2026-02-18T13:33:59.034343"
+    },
+    {
+      "name": "bulk keyword analysis",
+      "description": "analyze multiple keywords simultaneously using Kindle Spy to identify profitable niches",
+      "steps": [
+        "open multiple tabs with different keywords",
+        "click Kindle Spy button to generate results",
+        "compare BSR and review data across keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Kindle Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "second page results may contain less competitive keywords"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the first paging is very profitable but the first results and actually the the first paging is very profitable"
+      ],
+      "id": "bb845e8a-9ff6-44aa-97d4-7d04b32bb395",
+      "type": "tactic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:02.423361",
+      "last_seen": "2026-02-18T13:35:02.423361"
+    },
+    {
+      "name": "Keyword Cloud Analysis",
+      "description": "Use word clouds from Kindle Spy to generate keyword ideas by analyzing titles and subtitles of bestselling books.",
+      "steps": [
+        "Generate word cloud from keyword tool",
+        "Combine high-frequency terms for new keyword ideas",
+        "Check profitability and competition of generated keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Kindle Spy",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid overly competitive niches like 'paleo' with high BSR and review counts"
+      ],
+      "example_niches": [
+        "paleo recipes",
+        "keto meals"
+      ],
+      "source_quotes": [
+        "this allows you to sometimes you can get ideas for other keywords by using this word cloud"
+      ],
+      "id": "6ef521a4-106b-462e-9cba-547a4a75f2ba",
+      "type": "tactic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:40.044541",
+      "last_seen": "2026-02-18T13:35:40.044541"
+    },
+    {
+      "name": "Competitive Keyword Filtering",
+      "description": "Evaluate keyword competitiveness by analyzing search volume, pricing, and page count of top-ranking books.",
+      "steps": [
+        "Check pricing trends of top 6 results",
+        "Assess page count for Kindle version feasibility",
+        "Compare review counts and BSR rankings"
+      ],
+      "signals_used": [
+        "price",
+        "page_count",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Kindle Spy",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Be cautious of niches with too many results like 'paleo'"
+      ],
+      "example_niches": [
+        "poly meals",
+        "keto recipes"
+      ],
+      "source_quotes": [
+        "it's so competitive you can see just by the number of your views that you get over here"
+      ],
+      "id": "00703105-eb6a-4930-a658-88d9dfbecb5d",
+      "type": "tactic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:40.044541",
+      "last_seen": "2026-02-18T13:35:40.044541"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this one is actually below 100 thousand"
+      ],
+      "id": "b1d80673-253a-4b69-8e29-b01a565e017a",
+      "type": "heuristic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:33:29.560323",
+      "last_seen": "2026-02-18T13:33:29.560323"
+    },
+    {
+      "name": "review count filter",
+      "condition": "If median_reviews is less than 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this number of reviews is just crazy... it would be very very hard for you to maintain your book in the front page of results"
+      ],
+      "id": "8abd81e1-8f9e-488f-b20c-88f8fd2c6516",
+      "type": "heuristic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:02.423361",
+      "last_seen": "2026-02-18T13:35:02.423361"
+    },
+    {
+      "name": "Low-Competition Keyword Boost",
+      "condition": "If median reviews are below 200 and BSR over 50,000, prioritize keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this is a good keyword and what I want to do is see if there are other publishers over here"
+      ],
+      "id": "a3703edd-5d03-41c7-8920-8a2dc57eb105",
+      "type": "heuristic",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:40.044541",
+      "last_seen": "2026-02-18T13:35:40.044541"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Kindle Spy streamlines keyword research by automating ranking checks",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the more quickly you can do this process the more quickly you can get to those really good keywords"
+      ],
+      "id": "fd50081b-b77e-4823-86c0-42a7489f1582",
+      "type": "claim",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:33:29.560323",
+      "last_seen": "2026-02-18T13:33:29.560323"
+    },
+    {
+      "statement": "Non-famous authors struggle to achieve high review counts and BSR rankings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "a publisher typically doesn't get so many reviews for their books"
+      ],
+      "id": "9693e1d0-f163-4b28-9d49-8da7c1dd2ea9",
+      "type": "claim",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:33:59.034343",
+      "last_seen": "2026-02-18T13:33:59.034343"
+    },
+    {
+      "statement": "Publishers struggle to compete with authors who have high review counts",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this number of reviews is just crazy... a publisher simply can't compete against him"
+      ],
+      "id": "c90f23aa-6a64-4226-9903-36c7e554e78e",
+      "type": "claim",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:02.423361",
+      "last_seen": "2026-02-18T13:35:02.423361"
+    },
+    {
+      "statement": "Kindle versions of niche books with high page counts face significant pricing challenges.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's very hard for you to to rank your books over and once again as I said the pricing"
+      ],
+      "id": "5ec2bbab-d9bd-449c-b547-a92bfb6e520c",
+      "type": "claim",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:35:40.044541",
+      "last_seen": "2026-02-18T13:35:40.044541"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "yoga for beginners + niche market + low competition",
+      "description": "Target underserved niches with specific identity and constraints",
+      "why_it_works": "Low competition and targeted keywords increase profitability",
+      "signals": [
+        "low review counts",
+        "BSR below 100,000"
+      ],
+      "source_quotes": [
+        "this is actually below 100 thousand paid in Kindle Store"
+      ],
+      "id": "2f995095-3aa2-465b-9f3c-1b27b569948b",
+      "type": "niche_pattern",
+      "provenance": [
+        "sFmiagje32w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:33:29.560323",
+      "last_seen": "2026-02-18T13:33:29.560323"
+    }
+  ]
+}

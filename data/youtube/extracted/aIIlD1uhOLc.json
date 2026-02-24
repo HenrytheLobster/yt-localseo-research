@@ -1,0 +1,227 @@
+{
+  "source_type": "youtube",
+  "video_id": "aIIlD1uhOLc",
+  "title": "Amazon KDP Pricing Strategy For MAXIMUM Profits",
+  "extracted_at": "2026-02-18T04:39:39.765303",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9256,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Price Optimization",
+      "description": "Adjust pricing based on print costs and competitor analysis to maximize royalties",
+      "steps": [
+        "Conduct market research on competitors' pricing",
+        "Calculate print costs using Amazon's royalty calculator",
+        "Test price increases to improve royalty per unit",
+        "Target niche audiences willing to pay premium prices"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Royalty Calculator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Low prices may devalue product perception"
+      ],
+      "example_niches": [
+        "teen planner",
+        "homeschooling resources"
+      ],
+      "source_quotes": [
+        "$1 extra...can make a tremendous difference for you"
+      ],
+      "id": "2cf704e8-efe2-4636-bbb9-1beafd866a31",
+      "type": "tactic",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:56.687943",
+      "last_seen": "2026-02-18T04:38:56.687943"
+    },
+    {
+      "name": "Royalty Threshold Pricing",
+      "description": "Set a minimum royalty per unit to ensure profitability by adjusting list prices based on print costs and desired royalty rates.",
+      "steps": [
+        "Use a royalty calculator to determine target royalty",
+        "Adjust list prices according to print costs and desired royalty threshold"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDP royalty calculator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Pricing below $2/unit reduces profitability"
+      ],
+      "example_niches": [
+        "self-help",
+        "niche markets"
+      ],
+      "source_quotes": [
+        "I've always aimed for a minimum royalty of $2 per unit sold"
+      ],
+      "id": "6b195320-64ff-447e-b8e2-c41a8f83bd24",
+      "type": "tactic",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:39:39.765141",
+      "last_seen": "2026-02-18T04:39:39.765141"
+    },
+    {
+      "name": "Price Formatting Optimization",
+      "description": "Standardize prices to end in .99 for psychological pricing appeal across regions.",
+      "steps": [
+        "Set initial price for primary marketplace",
+        "Manually adjust regional prices to end in .99"
+      ],
+      "signals_used": [
+        "price_point"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "Automated pricing may create awkward price formats"
+      ],
+      "example_niches": [
+        "digital products",
+        "e-books"
+      ],
+      "source_quotes": [
+        "I usually adjust everything... to end in a 99 Cents"
+      ],
+      "id": "b762c1a1-6219-4e67-af13-6b3bc8d80596",
+      "type": "tactic",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:39:39.765141",
+      "last_seen": "2026-02-18T04:39:39.765141"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Price Floor Adjustment",
+      "condition": "If median reviews are below 200, adjust pricing strategy",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "$1 extra...can make a tremendous difference for you"
+      ],
+      "id": "a8bd4110-c81e-4711-9cf0-6a882de96ee4",
+      "type": "heuristic",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:56.687943",
+      "last_seen": "2026-02-18T04:38:56.687943"
+    },
+    {
+      "name": "Price Test Isolation",
+      "condition": "If multiple books are tested simultaneously, it may negatively impact sales momentum",
+      "machine_rule": {
+        "field": "books_tested",
+        "op": "gt",
+        "value": 15
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "I changed the price on about 15 books at a time... had a negative impact on my sales"
+      ],
+      "id": "9a0c3f9e-9f00-4531-a4e9-d7341c2ce798",
+      "type": "heuristic",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:39:39.765141",
+      "last_seen": "2026-02-18T04:39:39.765141"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP offers 60% fixed royalty for paperbacks and hardcovers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon KDP offers a 60% fixed royalty"
+      ],
+      "id": "a0861984-2482-4ea9-8ebc-ab17292ab69b",
+      "type": "claim",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:56.687943",
+      "last_seen": "2026-02-18T04:38:56.687943"
+    },
+    {
+      "statement": "Pricing all books at $5.99 significantly reduces potential royalties",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "If you price all of your books at $5.99 it's going to be really really difficult to earn any sort of a livable income"
+      ],
+      "id": "0f9bf73c-eec3-4085-bd73-458f2fdfa8db",
+      "type": "claim",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:39:39.765141",
+      "last_seen": "2026-02-18T04:39:39.765141"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "homeschooling parents + curriculum gaps + budget constraints",
+      "description": "Target specific audience segments with unique needs and willingness to pay",
+      "why_it_works": "Niche audiences value specialized solutions and are willing to pay premiums",
+      "signals": [
+        "low review counts",
+        "specific problem statements"
+      ],
+      "source_quotes": [
+        "people will spend more for something created specifically for them"
+      ],
+      "id": "c3590eae-f505-4d9f-9584-6abafb33974e",
+      "type": "niche_pattern",
+      "provenance": [
+        "aIIlD1uhOLc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:56.687943",
+      "last_seen": "2026-02-18T04:38:56.687943"
+    }
+  ]
+}

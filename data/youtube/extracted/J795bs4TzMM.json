@@ -1,0 +1,297 @@
+{
+  "source_type": "youtube",
+  "video_id": "J795bs4TzMM",
+  "title": "Low Content Publishing Keyword Research Strategies",
+  "extracted_at": "2026-02-18T04:28:10.689941",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 17753,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Back-End Stuffing",
+      "description": "Fill back-end keywords with as many relevant terms as possible to maximize indexing opportunities",
+      "steps": [
+        "Find a niche on Amazon (e.g., recipe books, journals)",
+        "Research competition and profitability",
+        "Use generic keywords in first 4 boxes (e.g., 'blank recipe book')",
+        "Add specific keywords in last 2-3 boxes (e.g., 'let it go journal')"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Ahrefs Keyword Expander",
+        "Amazon Quick View"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Overstuffing may trigger algorithm penalties"
+      ],
+      "example_niches": [
+        "recipe book",
+        "journal"
+      ],
+      "source_quotes": [
+        "you don't have to put just one key word blank family recipe book and then stop there and then put another one here you can actually fill this up as much as you can"
+      ],
+      "id": "641ff430-a23a-4a02-9178-519d6222be79",
+      "type": "tactic",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:53.195182",
+      "last_seen": "2026-02-18T04:26:53.195182"
+    },
+    {
+      "name": "Amazon Suggestion Expander",
+      "description": "Uses Amazon's keyword suggestion tools to generate longtail keywords and identify niche opportunities",
+      "steps": [
+        "Type base keyword into Amazon search bar",
+        "Use suggestion tool to expand keywords",
+        "Check BSR and review counts for competitiveness"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Quick View",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May not show niche keywords with low search volume"
+      ],
+      "example_niches": [
+        "backgammon journal",
+        "celestial journal"
+      ],
+      "source_quotes": [
+        "this can give you other ideas and other longtail keywords"
+      ],
+      "id": "10815b71-fdbc-4645-bc95-35de7e99ade1",
+      "type": "tactic",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:24.382752",
+      "last_seen": "2026-02-18T04:27:24.382752"
+    },
+    {
+      "name": "low_competition_niche_hunting",
+      "description": "Identify niches with minimal competition by checking search results and review counts",
+      "steps": [
+        "Check search result count (under 1 million)",
+        "Evaluate BSR and review counts",
+        "Prioritize keywords with low competition and moderate review counts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with no sales data even if low competition"
+      ],
+      "example_niches": [
+        "blacksmithing journal",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "there was only 587 results... not competitive",
+        "I would stay away from this one"
+      ],
+      "id": "be312507-62fc-4b7f-a486-23c9a8fb95ed",
+      "type": "tactic",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:54.705468",
+      "last_seen": "2026-02-18T04:27:54.705468"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I will show you those things as well but for the most part the first some a couple of the strategies are the same"
+      ],
+      "id": "2cd7f757-8e7f-4926-9460-c423bf58a3ce",
+      "type": "heuristic",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:53.195182",
+      "last_seen": "2026-02-18T04:26:53.195182"
+    },
+    {
+      "name": "Low Competition Filter",
+      "condition": "If keyword has under 200 reviews and BSR over 50,000, then prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I look for things that are under a million"
+      ],
+      "id": "55ce1a1c-f987-40a9-875d-08ebfce6ad77",
+      "type": "heuristic",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:24.382752",
+      "last_seen": "2026-02-18T04:27:24.382752"
+    },
+    {
+      "name": "review_based_niche_selection",
+      "condition": "If median reviews are below 200, prioritize the niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I would try this one because there are a couple right at that cusp of a million"
+      ],
+      "id": "8a4fdd4e-0a6c-4de1-8da3-7914d03b1ba1",
+      "type": "heuristic",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:54.705468",
+      "last_seen": "2026-02-18T04:27:54.705468"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP indexes books for every keyword entered in back-end keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "your book will get an index for every key word you put in here"
+      ],
+      "id": "d6c69f76-63a7-4ed4-a8b5-b808c9873045",
+      "type": "claim",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:53.195182",
+      "last_seen": "2026-02-18T04:26:53.195182"
+    },
+    {
+      "statement": "Longtail keywords can have high search volume but may lack niche specificity",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this one actually surprisingly even though it's a longtail keyword it actually has 40,000 results"
+      ],
+      "id": "0e2c5581-2c63-42d2-a3aa-b88013ac218b",
+      "type": "claim",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:24.382752",
+      "last_seen": "2026-02-18T04:27:24.382752"
+    },
+    {
+      "statement": "Tools like Publisher Rocket and Book Bolt can accelerate keyword research",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I use Publisher Rocket and Book Bolt as well"
+      ],
+      "id": "c6be532b-e68d-4ba1-b37d-103b9a0700d9",
+      "type": "claim",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:54.705468",
+      "last_seen": "2026-02-18T04:27:54.705468"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target underserved niches with low competition by combining identity, problem, and constraint",
+      "why_it_works": "Captures specific audience needs with minimal saturation",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "I find a topic either on amazon or a hobby list and I'm gonna demo and show you all this in a in a minute or two"
+      ],
+      "id": "7720ee7f-eaf8-4e5d-8dc5-6a716179a895",
+      "type": "niche_pattern",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:53.195182",
+      "last_seen": "2026-02-18T04:26:53.195182"
+    },
+    {
+      "pattern_template": "HOBBY + NICHED SPECIFICATION",
+      "example": "amateur astronomy + journal",
+      "description": "Combines specific hobbies with specialized content formats",
+      "why_it_works": "Reduces competition while maintaining search volume",
+      "signals": [
+        "low review counts",
+        "specific keyword combinations"
+      ],
+      "source_quotes": [
+        "take some more obscure things like Aero modeling amateur astronomy"
+      ],
+      "id": "7b0d1b82-bc11-460c-a55e-0de34335572b",
+      "type": "niche_pattern",
+      "provenance": [
+        "J795bs4TzMM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:27:24.382752",
+      "last_seen": "2026-02-18T04:27:24.382752"
+    }
+  ]
+}

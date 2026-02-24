@@ -1,0 +1,315 @@
+{
+  "source_type": "youtube",
+  "video_id": "9kxg4nBy9R0",
+  "title": "Title & Subtitle For Amazon KDP Low Content Books - KDP Keyword Research & Strategy",
+  "extracted_at": "2026-02-18T13:14:05.535243",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15095,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "keyword title",
+      "description": "use main keyword phrase in title for ranking",
+      "steps": [
+        "enter title as cover/spine text",
+        "include primary keyword",
+        "keep under 200 characters total"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "avoid subjective claims like 'best-selling'"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Amazon readers tend to skip past titles that are more than 60 characters in length"
+      ],
+      "id": "e2a1a9c0-80af-40c6-90eb-cefdfb7ffa66",
+      "type": "tactic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:05.469815",
+      "last_seen": "2026-02-18T13:13:05.469815"
+    },
+    {
+      "name": "subtitle keywords",
+      "description": "add secondary, relevant keywords in subtitle",
+      "steps": [
+        "use longer tail keywords",
+        "include book purpose/benefits",
+        "avoid page size/price details"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "must match cover text if used"
+      ],
+      "example_niches": [
+        "adult coloring book"
+      ],
+      "source_quotes": [
+        "subtitle should explain book content without repeating cover details"
+      ],
+      "id": "d1872f83-14fd-422a-a605-6ad55dc9e390",
+      "type": "tactic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:05.469815",
+      "last_seen": "2026-02-18T13:13:05.469815"
+    },
+    {
+      "name": "natural_title_construction",
+      "description": "Create titles and subtitles that sound like natural customer searches by avoiding keyword stuffing and using fluent language.",
+      "steps": [
+        "Use phrases customers would naturally type into Amazon search bars",
+        "Capitalize each word in titles",
+        "Avoid repetitive keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid spammy keyword repetition like 'tattoos tattoos tattoos'"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if they're on the amazon website that's what they're going to type into the search bar"
+      ],
+      "id": "95066a77-8c39-4c7f-91f1-61a97eeadf2f",
+      "type": "tactic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:35.570236",
+      "last_seen": "2026-02-18T13:13:35.570236"
+    },
+    {
+      "name": "title_subtitle_alignment",
+      "description": "Ensure titles and subtitles match the book's content and target niche",
+      "steps": [
+        "Use exact cover text in listings",
+        "Avoid keyword stuffing",
+        "Target specific demographics"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid generic terms like 'for everyone'"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you can't target everybody pick one"
+      ],
+      "id": "ba75afbe-cafb-4a37-b383-51ed511f0713",
+      "type": "tactic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:05.535029",
+      "last_seen": "2026-02-18T13:14:05.535029"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "title length",
+      "condition": "If title exceeds 60 characters, prioritize brevity",
+      "machine_rule": {
+        "field": "title_length",
+        "op": "gt",
+        "value": 60
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "Amazon readers tend to skip past titles that are more than 60 characters in length"
+      ],
+      "id": "eb50da25-fbc4-4986-af7a-e755fede6217",
+      "type": "heuristic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:05.469815",
+      "last_seen": "2026-02-18T13:13:05.469815"
+    },
+    {
+      "name": "newest_first_sort",
+      "condition": "If sorting by newest first, prioritize books with lower review counts and potential spammy titles",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "i sorted them from the newest first because i feel like there's a lot of low content books being uploaded"
+      ],
+      "id": "9dadf563-4cef-4953-9afe-0dcde862ca28",
+      "type": "heuristic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:35.570236",
+      "last_seen": "2026-02-18T13:13:35.570236"
+    },
+    {
+      "name": "review_based_boost",
+      "condition": "If median reviews are below 200, prioritize title optimization",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "they've just keyword stuffed the subtitle"
+      ],
+      "id": "dfae2051-187e-4b02-abd6-93dcc80e35bb",
+      "type": "heuristic",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:05.535029",
+      "last_seen": "2026-02-18T13:14:05.535029"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon requires title to match cover/spine text exactly",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Title field must only contain what is written on the cover or on the spine"
+      ],
+      "id": "5b34ee4a-a5b9-44f7-a249-f7f84041a5cc",
+      "type": "claim",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:05.469815",
+      "last_seen": "2026-02-18T13:13:05.469815"
+    },
+    {
+      "statement": "Titles longer than 200 characters won't display in search results",
+      "category": "platform_behavior",
+      "confidence": "high",
+      "source_quotes": [
+        "Books with titles longer than 200 characters will not display in search results"
+      ],
+      "id": "de3747b3-af5b-4b11-bab4-06d012c9a838",
+      "type": "claim",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:05.469815",
+      "last_seen": "2026-02-18T13:13:05.469815"
+    },
+    {
+      "statement": "Amazon KDP has become stricter with title/subtitle formatting rules since the shift from Createspace",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they've started to enforce some rules"
+      ],
+      "id": "def06e40-7978-49cf-83b8-0aed0143c67a",
+      "type": "claim",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:35.570236",
+      "last_seen": "2026-02-18T13:13:35.570236"
+    },
+    {
+      "statement": "Amazon fluctuates prices automatically, making price-inclusion in descriptions risky",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "amazon actually fluctuate the prices themselves"
+      ],
+      "id": "17fe72cb-1988-48a3-baf2-bf2956817fa1",
+      "type": "claim",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:05.535029",
+      "last_seen": "2026-02-18T13:14:05.535029"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "adult learners + language barriers + budget-friendly",
+      "description": "targets specific audience needs with constraints",
+      "why_it_works": "combines keyword relevance with marketability",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "subtitle should explain book content without repeating cover details"
+      ],
+      "id": "c202d1bc-5e38-4136-afa1-30b4ec8ec650",
+      "type": "niche_pattern",
+      "provenance": [
+        "9kxg4nBy9R0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:13:05.469815",
+      "last_seen": "2026-02-18T13:13:05.469815"
+    }
+  ]
+}

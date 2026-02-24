@@ -1,0 +1,377 @@
+{
+  "source_type": "youtube",
+  "video_id": "VHjyQn69djc",
+  "title": "Top 5 Kdp Niche Research 2022 #3",
+  "extracted_at": "2026-02-18T20:26:34.181045",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 27568,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Safari Nature Niche",
+      "description": "Create travel journals and coloring books using safari-themed designs with low barrier to entry",
+      "steps": [
+        "Use existing assets from Amazon merch/Redbubble/Etsy",
+        "Leverage safari-themed visuals",
+        "Publish on KDP with low BSR"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Saturate niche with similar products"
+      ],
+      "example_niches": [
+        "Safari coloring books",
+        "Travel journals"
+      ],
+      "source_quotes": [
+        "These bsrs are making consistent cells pretty much every month"
+      ],
+      "id": "e8e8fceb-d308-4746-93dd-14bca9171cad",
+      "type": "tactic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:24:58.723379",
+      "last_seen": "2026-02-18T20:24:58.723379"
+    },
+    {
+      "name": "BSR & Review Analysis",
+      "description": "Identify consistent sellers by analyzing Best Seller Rank and review counts",
+      "steps": [
+        "Check BSR trends",
+        "Evaluate review volume",
+        "Monitor algorithmic visibility"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Celebro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When BSR drops despite reviews"
+      ],
+      "example_niches": [
+        "yoga lesson plans"
+      ],
+      "source_quotes": [
+        "we want consistent selling...turns into ten dollars a month"
+      ],
+      "id": "e135ca1e-bbbb-40d7-8ed6-d011c3c76a98",
+      "type": "tactic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:25:29.852924",
+      "last_seen": "2026-02-18T20:25:29.852924"
+    },
+    {
+      "name": "BSR and Review Analysis",
+      "description": "Evaluate bestseller rank and customer reviews to identify underserved niches",
+      "steps": [
+        "Check BSR trends",
+        "Analyze review feedback",
+        "Identify content gaps"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When niche saturation exceeds thresholds"
+      ],
+      "example_niches": [
+        "science experiment notebooks"
+      ],
+      "source_quotes": [
+        "look at the inside real fast to see what's going on"
+      ],
+      "id": "6194089f-6d1a-46eb-bd96-2a1776d3cd23",
+      "type": "tactic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:25:59.794263",
+      "last_seen": "2026-02-18T20:25:59.794263"
+    },
+    {
+      "name": "Focus on Teacher Niche",
+      "description": "Target teacher-related products like attendance books and lesson planners with consistent demand.",
+      "steps": [
+        "Research seasonal demand",
+        "Analyze BSR trends",
+        "Design practical features"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Seasonal dips may affect sales"
+      ],
+      "example_niches": [
+        "teacher attendance book"
+      ],
+      "source_quotes": [
+        "this Niche is cranking and crushing okay this guy can see it doing good pretty much all year round"
+      ],
+      "id": "55b14de6-549c-4f7c-8a36-ab77386d92c1",
+      "type": "tactic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:26:34.180914",
+      "last_seen": "2026-02-18T20:26:34.180914"
+    },
+    {
+      "name": "Leverage Visual Design",
+      "description": "Incorporate color schemes and thematic elements to differentiate products.",
+      "steps": [
+        "Use school-themed imagery",
+        "Experiment with cover designs",
+        "Highlight functional features"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "Avoid dirty-prone designs like white covers"
+      ],
+      "example_niches": [
+        "lesson planner"
+      ],
+      "source_quotes": [
+        "different color ideas color schemes for the covers"
+      ],
+      "id": "bf2cd8fe-2b34-481c-a973-1230469320ac",
+      "type": "tactic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:26:34.180914",
+      "last_seen": "2026-02-18T20:26:34.180914"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are below 200, prioritize niches with high demand",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Low barrier to entry into the market and then if you're making sales with it which is really cool"
+      ],
+      "id": "f59a43c3-bf2b-45f9-aa9c-1374f291f618",
+      "type": "heuristic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:24:58.723379",
+      "last_seen": "2026-02-18T20:24:58.723379"
+    },
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "look at the reviews...no customer reviews"
+      ],
+      "id": "580d9818-63a3-4a59-89bb-fde0313f95dc",
+      "type": "heuristic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:25:29.852924",
+      "last_seen": "2026-02-18T20:25:29.852924"
+    },
+    {
+      "name": "Review-Driven Content",
+      "condition": "If median reviews < 200, prioritize content that addresses review feedback",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "people are liking it the reviews are okay maybe they're expecting something else"
+      ],
+      "id": "aec084a6-c376-4789-a66c-ef17a751eb89",
+      "type": "heuristic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:25:59.794263",
+      "last_seen": "2026-02-18T20:25:59.794263"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize boosting visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "71 ratings it has to have let's say it has to have some reviews"
+      ],
+      "id": "1e9dd274-f477-40b8-8a42-398b62942f64",
+      "type": "heuristic",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:26:34.180914",
+      "last_seen": "2026-02-18T20:26:34.180914"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's book category is the largest and most trafficked on the platform",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon started off with selling books"
+      ],
+      "id": "92e06acc-9a38-4303-b0d2-37a05e1b98f9",
+      "type": "claim",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:24:58.723379",
+      "last_seen": "2026-02-18T20:24:58.723379"
+    },
+    {
+      "statement": "KDP niches with low review counts can become consistent sellers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they need you in here...they're buying this"
+      ],
+      "id": "7e76a80a-8ec6-4ea6-b8a2-cf564c3df615",
+      "type": "claim",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:25:29.852924",
+      "last_seen": "2026-02-18T20:25:29.852924"
+    },
+    {
+      "statement": "BSR approaching 1 million indicates potential for sustained sales",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "BSR getting a little bit closer to 1 million"
+      ],
+      "id": "26b86174-fea6-4481-9f1c-a59f3e9553dc",
+      "type": "claim",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:25:59.794263",
+      "last_seen": "2026-02-18T20:25:59.794263"
+    },
+    {
+      "statement": "Newer KDP products can achieve consistent sales with strong niche targeting",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is a newer book that's list Ed on Amazon you can see"
+      ],
+      "id": "be4497ef-72f6-4aea-9d0d-317a71431113",
+      "type": "claim",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:26:34.180914",
+      "last_seen": "2026-02-18T20:26:34.180914"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Teen boys + ADHD + Christian",
+      "description": "Target specific demographics with unique problems and constraints",
+      "why_it_works": "Combines niche identity with actionable solutions",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "Low barrier to entry into the market and then if you're making sales with it which is really cool"
+      ],
+      "id": "2d16a40d-5b88-4040-98e1-4efdb884391c",
+      "type": "niche_pattern",
+      "provenance": [
+        "VHjyQn69djc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:24:58.723379",
+      "last_seen": "2026-02-18T20:24:58.723379"
+    }
+  ]
+}

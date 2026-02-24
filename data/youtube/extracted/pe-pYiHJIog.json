@@ -1,0 +1,200 @@
+{
+  "source_type": "youtube",
+  "video_id": "pe-pYiHJIog",
+  "title": "Profitable KDP Keyword Research Method - Easy and free, great for beginners",
+  "extracted_at": "2026-02-18T12:54:52.316065",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10390,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "niching_down_with_extensions",
+      "description": "Use chrome extensions to expand keyword suggestions and narrow search niches to reduce competition",
+      "steps": [
+        "Decide on a broad niche (e.g. activity books)",
+        "Use Amz Suggestion Expander to find customer search terms",
+        "Filter results by niche (e.g. activity books for adults)",
+        "Check BSR and review counts for competitiveness",
+        "Further narrow niches (e.g. activity books for dementia patients)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "DS Amazon Quick View",
+        "Amz Suggestion Expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires incognito mode to avoid search bias"
+      ],
+      "example_niches": [
+        "activity books for adults",
+        "notebooks for teachers"
+      ],
+      "source_quotes": [
+        "we want to search in all categories not books because this is where most our customers on amazon search"
+      ],
+      "id": "c1052ee0-5547-4f5e-947d-eda8c74396aa",
+      "type": "tactic",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:19.238431",
+      "last_seen": "2026-02-18T12:54:19.238431"
+    },
+    {
+      "name": "BSR Analysis",
+      "description": "Use Amazon Best Seller Rank (BSR) to identify profitable niches by finding books with low BSR numbers and high search result visibility.",
+      "steps": [
+        "Install Amazon Quick View extension for instant product details",
+        "Check BSR numbers (lower is better)",
+        "Look for 3-4 books with BSR under 300,000 in target niche",
+        "Verify search results under 1,000 for keyword"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_result_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Quick View Chrome Extension",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 300000,
+        "search_result_max": 1000
+      },
+      "caveats": [
+        "Requires manual checking of multiple niches"
+      ],
+      "example_niches": [
+        "Activity books for adults with dementia"
+      ],
+      "source_quotes": [
+        "we want to find books that have a bsr of under 300 000 on average"
+      ],
+      "id": "e6ab1456-d62c-4140-8cdb-17f999e15d37",
+      "type": "tactic",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:52.315909",
+      "last_seen": "2026-02-18T12:54:52.315909"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competition_filter",
+      "condition": "If BSR exceeds 50,000 then penalize",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "gt",
+        "value": 50000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "60 000 is quite a lot we really ideally want to find niches where the results are less than a thousand"
+      ],
+      "id": "c8f93f17-51b4-4f08-9d8c-6783968b17b8",
+      "type": "heuristic",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:19.238431",
+      "last_seen": "2026-02-18T12:54:19.238431"
+    },
+    {
+      "name": "Niche Validation",
+      "condition": "If multiple books in a niche have low BSR and visible search results, then it's a viable niche",
+      "machine_rule": {
+        "field": "bsr_count",
+        "op": "gte",
+        "value": 3
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if we have thousand results or less and three or four books on the first page that have a bsl of under 300 000 then that is a good niche"
+      ],
+      "id": "52b77b05-cff4-490f-849a-c84e45c0704a",
+      "type": "heuristic",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:52.315909",
+      "last_seen": "2026-02-18T12:54:52.315909"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon search results are influenced by customer search history and displayed search terms",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "amazon then shows them a selection of what they think is a good match for their search"
+      ],
+      "id": "d7bbd792-c12d-4a64-aef2-7a212b157e65",
+      "type": "claim",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:19.238431",
+      "last_seen": "2026-02-18T12:54:19.238431"
+    },
+    {
+      "statement": "Amazon does not provide search volume data directly to sellers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "amazon doesn't tell that number to anybody"
+      ],
+      "id": "8c080dc4-9d84-43c3-b286-9ab97e53a0f1",
+      "type": "claim",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:52.315909",
+      "last_seen": "2026-02-18T12:54:52.315909"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "activity books + dementia + adult audience",
+      "description": "Target specific audience needs with specialized content",
+      "why_it_works": "Reduces competition while addressing niche demand",
+      "signals": [
+        "low review counts",
+        "specific age demographics"
+      ],
+      "source_quotes": [
+        "activity book for adults with dementia i know it says over 1 000 results but this is pretty good"
+      ],
+      "id": "88106c92-a7a1-4326-a39d-fa845ec66f7e",
+      "type": "niche_pattern",
+      "provenance": [
+        "pe-pYiHJIog"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:54:19.238431",
+      "last_seen": "2026-02-18T12:54:19.238431"
+    }
+  ]
+}

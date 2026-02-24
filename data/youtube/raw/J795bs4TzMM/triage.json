@@ -1,0 +1,22 @@
+{
+  "video_id": "J795bs4TzMM",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "publisher rocket",
+    "low content",
+    "reviews",
+    "competition",
+    "profitable",
+    "journal"
+  ],
+  "transcript_word_count": 3504,
+  "triaged_at": "2026-02-18T03:35:02.767034"
+}

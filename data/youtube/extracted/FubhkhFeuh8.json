@@ -1,0 +1,300 @@
+{
+  "source_type": "youtube",
+  "video_id": "FubhkhFeuh8",
+  "title": "Helium 10 Cerebro Tutorial; How to Find KDP Keywords and Low Competition Niches",
+  "extracted_at": "2026-02-18T04:36:10.053571",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 13867,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Filtering with Helium 10",
+      "description": "Use Helium 10 X-Ray to identify long-tail keywords and filter by search volume and competition",
+      "steps": [
+        "Input a base keyword (e.g., 'gratitude journal')",
+        "Use X-Ray to analyze keyword variations and competition",
+        "Filter results by search volume (>=500/month) and competing products (<=1200)",
+        "Sort by Cerebro IQ score (high = better opportunity)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Helium 10 X-Ray",
+        "Helium 10 Cerebro"
+      ],
+      "thresholds": {
+        "reviews_max": 1200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Slow internet may delay data loading"
+      ],
+      "example_niches": [
+        "gratitude journal for women",
+        "self-love workbook"
+      ],
+      "source_quotes": [
+        "I want to make sure that I get keywords for books that get at least 500 searches a month"
+      ],
+      "id": "e1ac13bf-d489-4cc8-a768-2e806094668f",
+      "type": "tactic",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:34:59.993124",
+      "last_seen": "2026-02-18T04:34:59.993124"
+    },
+    {
+      "name": "Keyword Discovery with Cerebro",
+      "description": "Use Cerebro to extract keyword ideas from existing books, filter by search volume and competition, and prioritize high-IQ keywords.",
+      "steps": [
+        "Input selected books to generate keyword ideas",
+        "Filter keywords by search volume (700+)",
+        "Exclude trademarked terms",
+        "Sort by IQ score for relevance",
+        "Refine further by competition range (1000+ products)"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition"
+      ],
+      "tools_mentioned": [
+        "Cerebro",
+        "Magnet"
+      ],
+      "thresholds": {
+        "search_volume_min": 700,
+        "competition_min": 1000
+      },
+      "caveats": [
+        "Some keywords may be trademarked and require manual filtering"
+      ],
+      "example_niches": [
+        "teen planner",
+        "gratitude journal for kids"
+      ],
+      "source_quotes": [
+        "'I'm going to narrow it down... at least 700 search volume'"
+      ],
+      "id": "5b640428-2477-483f-8e7f-e6ceaf4b29b1",
+      "type": "tactic",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:35:36.801621",
+      "last_seen": "2026-02-18T04:35:36.801621"
+    },
+    {
+      "name": "Cerebro Keyword Research",
+      "description": "Use Helium 10 Cerebro to find low-competition niches by filtering criteria like price range and monthly revenue.",
+      "steps": [
+        "Input category (e.g., books)",
+        "Set competition range",
+        "Define price and revenue thresholds",
+        "Generate niche ideas"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Cerebro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail to find niches if criteria are too narrow"
+      ],
+      "example_niches": [
+        "gratitude journal",
+        "mindfulness meditation coloring book"
+      ],
+      "source_quotes": [
+        "volume you can put in the category here I'm gonna put in books um you can put in the competition range..."
+      ],
+      "id": "a000c442-7e99-4675-ae60-d7817f90cd96",
+      "type": "tactic",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:10.053312",
+      "last_seen": "2026-02-18T04:36:10.053312"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Cerebro IQ Prioritization",
+      "condition": "If a keyword has high search volume and low competition, prioritize it",
+      "machine_rule": {
+        "field": "cerebro_iq",
+        "op": "gt",
+        "value": 70
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "The higher this cerebral IQ score the better"
+      ],
+      "id": "e78fa08b-6556-4a7e-9fc4-2107d98c4ce5",
+      "type": "heuristic",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:34:59.993124",
+      "last_seen": "2026-02-18T04:34:59.993124"
+    },
+    {
+      "name": "IQ Score Prioritization",
+      "condition": "If a keyword has a high IQ score (indicating balance between search volume and competition), prioritize it for listing optimization",
+      "machine_rule": {
+        "field": "iq_score",
+        "op": "gt",
+        "value": 80
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'Sort it by IQ score... gives you a lot of information'"
+      ],
+      "id": "c02dc155-befc-4da5-9132-2c274fbfaa4f",
+      "type": "heuristic",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:35:36.801621",
+      "last_seen": "2026-02-18T04:35:36.801621"
+    },
+    {
+      "name": "Low Review Boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I want low competition I want to sell the product for between zero and thirty dollars..."
+      ],
+      "id": "61441371-037b-43c9-9afc-5060693ccb5c",
+      "type": "heuristic",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:10.053312",
+      "last_seen": "2026-02-18T04:36:10.053312"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR numbers closer to zero indicate higher sales volume on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "If this number were 2 million this is not a keyword that I would want to Target"
+      ],
+      "id": "5863115b-76d1-4628-a512-f32a8ba4d7fc",
+      "type": "claim",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:34:59.993124",
+      "last_seen": "2026-02-18T04:34:59.993124"
+    },
+    {
+      "statement": "Cerebro and Magnet tools can identify high-search-volume, low-competition keywords for KDP listings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'These are all keywords you can use... get a lot of traffic'"
+      ],
+      "id": "dfed1ba0-5fe4-4062-82af-e92203b3b8b3",
+      "type": "claim",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:35:36.801621",
+      "last_seen": "2026-02-18T04:35:36.801621"
+    },
+    {
+      "statement": "Helium 10 Cerebro generates niche ideas across diverse categories by filtering sales and competition data.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it'll give you just ideas not in one particular Niche It's Just Books..."
+      ],
+      "id": "bf3c3693-8f06-427b-831c-1e9db27a02b1",
+      "type": "claim",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:10.053312",
+      "last_seen": "2026-02-18T04:36:10.053312"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "women + gratitude journal + 2023",
+      "description": "Combine specific audience identities with problem-solving keywords and temporal constraints",
+      "why_it_works": "Balances search volume with niche specificity",
+      "signals": [
+        "low review counts",
+        "time-sensitive modifiers"
+      ],
+      "source_quotes": [
+        "I'm looking at it and I think it's let's say it's a doable keyword"
+      ],
+      "id": "aa6e7456-1c50-4559-b2ad-79c7bd4ae137",
+      "type": "niche_pattern",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:34:59.993124",
+      "last_seen": "2026-02-18T04:34:59.993124"
+    },
+    {
+      "pattern_template": "IDENTITY + NICHES + CONSTRAINT",
+      "example": "teen girls + habit tracker + low competition",
+      "description": "Combine specific audience identities with niche interests and competition filters to identify underserved markets",
+      "why_it_works": "Balances targeted demand with reduced competition for better ranking potential",
+      "signals": [
+        "low competition",
+        "specific audience segments"
+      ],
+      "source_quotes": [
+        "'Many habits for teens... never thought of as a book idea'"
+      ],
+      "id": "31337a50-a4aa-4aab-b4b0-c9ccb4506923",
+      "type": "niche_pattern",
+      "provenance": [
+        "FubhkhFeuh8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:35:36.801621",
+      "last_seen": "2026-02-18T04:35:36.801621"
+    }
+  ]
+}

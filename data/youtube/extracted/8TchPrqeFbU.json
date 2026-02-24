@@ -1,0 +1,228 @@
+{
+  "source_type": "youtube",
+  "video_id": "8TchPrqeFbU",
+  "title": "FREE Amazon KDP Keyword Research Tools. Easily Find Hidden Low Content Book Niches.",
+  "extracted_at": "2026-02-18T13:42:57.727550",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11010,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "A-Z Keyword Expansion",
+      "description": "Systematically explore keywords by iterating through the alphabet to uncover niche variations and long-tail opportunities.",
+      "steps": [
+        "Use Amazon's auto-suggestions with broad niches like 'coloring books'.",
+        "Iterate through the alphabet (A-Z) to generate keyword ideas.",
+        "Filter out branded terms (e.g., 'Disney') to avoid copyright risks."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "DS Amazon Quick View"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Branded keywords may trigger copyright issues"
+      ],
+      "example_niches": [
+        "coloring books for kids aged 4-8"
+      ],
+      "source_quotes": [
+        "we want to emulate the natural way a customer coming onto amazon looking for something to buy is likely to do"
+      ],
+      "id": "ef6b50c5-8249-48ca-aad8-96ea707369db",
+      "type": "tactic",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:18.970277",
+      "last_seen": "2026-02-18T13:42:18.970277"
+    },
+    {
+      "name": "Product Detail Aggregation",
+      "description": "Aggregate critical product data (BSR, categories, ISBN) without manual clicks using browser extensions.",
+      "steps": [
+        "Install DS Amazon Quick View to display product details on search results.",
+        "Hover over product images to view BSR, categories, and publisher info.",
+        "Analyze aggregated data to assess niche viability."
+      ],
+      "signals_used": [
+        "BSR",
+        "categories"
+      ],
+      "tools_mentioned": [
+        "DS Amazon Quick View"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires refresh for full data loading"
+      ],
+      "example_niches": [
+        "adult coloring books by numbers"
+      ],
+      "source_quotes": [
+        "this tool allows us to see the publisher, isbn, categories, and best sellers rank without clicking each book"
+      ],
+      "id": "6790e797-cd6a-4b34-8f4a-3b257ed1ac95",
+      "type": "tactic",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:18.970277",
+      "last_seen": "2026-02-18T13:42:18.970277"
+    },
+    {
+      "name": "hover_analysis",
+      "description": "Use hover to extract BSR, publisher, page count, and review data without clicking books",
+      "steps": [
+        "Hover over book to view BSR",
+        "Check publisher type (independent vs. corporate)",
+        "Note page count and review numbers"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we can see that the bsr is 113...hover over the book i'm now able to see the publisher"
+      ],
+      "id": "f496949b-35e7-4abb-a2ad-15ce1a93d872",
+      "type": "tactic",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:57.727391",
+      "last_seen": "2026-02-18T13:42:57.727391"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are below 200, prioritize niches with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we see the categories they went for and all that sort of information"
+      ],
+      "id": "92705910-4226-4f8b-b6a8-e3940dad1d5b",
+      "type": "heuristic",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:18.970277",
+      "last_seen": "2026-02-18T13:42:18.970277"
+    },
+    {
+      "name": "review_volume_heuristic",
+      "condition": "If book has fewer than 200 reviews, prioritize for niche validation",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this book has 35 reviews...look at probably even better ranking books like this one with 108 reviews"
+      ],
+      "id": "ffda3345-50f2-4cb0-8064-912c13463624",
+      "type": "heuristic",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:57.727391",
+      "last_seen": "2026-02-18T13:42:57.727391"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Books with BSR under 100,000 are considered top-performing on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "anything less than a hundred thousand is amazing"
+      ],
+      "id": "e64970ac-f9b5-4482-9367-08fe4dc060bc",
+      "type": "claim",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:18.970277",
+      "last_seen": "2026-02-18T13:42:18.970277"
+    },
+    {
+      "statement": "Books published by corporate entities like Rockbridge Press indicate professional production teams",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "when you see the publisher is something like rockbridge press...it's a big company with a massive budget"
+      ],
+      "id": "b3e882d7-9443-4212-b86c-7ac144c5cc25",
+      "type": "claim",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:57.727391",
+      "last_seen": "2026-02-18T13:42:57.727391"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific audience identities with unmet needs and limiting factors to identify underserved niches",
+      "why_it_works": "Balances demand with niche specificity to avoid oversaturation",
+      "signals": [
+        "low review counts",
+        "high BSR variance"
+      ],
+      "source_quotes": [
+        "we want to emulate the natural way a customer coming onto amazon looking for something to buy is likely to do"
+      ],
+      "id": "06c2e3f9-9acd-4574-beea-e618df223ba7",
+      "type": "niche_pattern",
+      "provenance": [
+        "8TchPrqeFbU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:42:18.970277",
+      "last_seen": "2026-02-18T13:42:18.970277"
+    }
+  ]
+}

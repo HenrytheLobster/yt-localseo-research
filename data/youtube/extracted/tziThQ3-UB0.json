@@ -1,0 +1,200 @@
+{
+  "source_type": "youtube",
+  "video_id": "tziThQ3-UB0",
+  "title": "KDP Niche Research - How to Find Low Content Book Niches on Amazon for FREE in 2021 (NO PAID TOOLS!)",
+  "extracted_at": "2026-02-18T14:33:01.889466",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11066,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Search + Customer Bought",
+      "description": "Use Amazon's search to find independently published books with high review counts, then leverage 'Customers who bought this item also bought' to discover related niches.",
+      "steps": [
+        "Search for a starting niche (e.g., 'logbook notebook')",
+        "Filter independently published books with >2000 reviews",
+        "Check BSR rank (e.g., rank 3000)",
+        "Scroll to 'Customers who bought this item also bought' section",
+        "Add low-content book ideas from top-selling related items"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "DS Amazon Quick View",
+        "Downl Everywhere"
+      ],
+      "thresholds": {
+        "reviews_max": 2400,
+        "bsr_max": 3000
+      },
+      "caveats": [
+        "May miss niche overlap if starting point is too broad"
+      ],
+      "example_niches": [
+        "password logbook",
+        "meal planner",
+        "accounting ledger"
+      ],
+      "source_quotes": [
+        "'the first book that you find when using this method is to make sure that this book is popular'"
+      ],
+      "id": "ed4ded81-e302-4c1c-9173-25d340be865c",
+      "type": "tactic",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:32:21.298821",
+      "last_seen": "2026-02-18T14:32:21.298821"
+    },
+    {
+      "name": "Amazon Cross-Sell Analysis",
+      "description": "Use 'Customers who bought this item also bought' to identify related niches",
+      "steps": [
+        "Check independently published books in 'Also bought' sections",
+        "Filter out sponsored listings and focus on rankings",
+        "Prioritize books with low review counts but strong rankings"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Keywords Everywhere"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if niche has excessive competition"
+      ],
+      "example_niches": [
+        "mileage log book",
+        "account ledger"
+      ],
+      "source_quotes": [
+        "if someone's looking for a meal planner and they haven't bought this one it probably means they're just going to be looking for other meal planners"
+      ],
+      "id": "66e51e5d-def0-4105-912c-7fe7dd54bba4",
+      "type": "tactic",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:33:01.889304",
+      "last_seen": "2026-02-18T14:33:01.889304"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Filter",
+      "condition": "If median_reviews < 200, boost niche potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'the first book that you find when using this method is to make sure that this book is popular'"
+      ],
+      "id": "cc5f3b5f-4c54-4541-b070-076fd6652daa",
+      "type": "heuristic",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:32:21.298821",
+      "last_seen": "2026-02-18T14:32:21.298821"
+    },
+    {
+      "name": "Ranking Density Check",
+      "condition": "If multiple books in a niche are ranked under 100,000, the niche is viable",
+      "machine_rule": {
+        "field": "median_rank",
+        "op": "lt",
+        "value": 100000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you can find like four or five that are ranked say below 100 000 then your niche is golden"
+      ],
+      "id": "63032270-1d05-4b82-9630-068e21762e82",
+      "type": "heuristic",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:33:01.889304",
+      "last_seen": "2026-02-18T14:33:01.889304"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Organic Amazon traffic can drive sales without ad spend",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'these are all paid for orders as well and the great thing... none of these sales here are driven by ad spend'"
+      ],
+      "id": "c41b5492-5ae8-4c55-99de-b47a341aedaf",
+      "type": "claim",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:32:21.298821",
+      "last_seen": "2026-02-18T14:32:21.298821"
+    },
+    {
+      "statement": "Low review count books can succeed if niche demand is strong",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if someone's willing to buy a book with a cover that isn't particularly um then it's a really good sign that the niche is very very strong"
+      ],
+      "id": "7f97b234-141a-4325-b481-338f0923e390",
+      "type": "claim",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:33:01.889304",
+      "last_seen": "2026-02-18T14:33:01.889304"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "logbook + tracking + low-content",
+      "description": "Combine a core identity (logbook) with a functional problem (tracking) and a constraint (low-content format) to identify underserved niches",
+      "why_it_works": "Leverages existing demand while exploiting content gaps in niche markets",
+      "signals": [
+        "low review counts",
+        "high BSR rank"
+      ],
+      "source_quotes": [
+        "'the first book that you find when using this method is to make sure that this book is popular'"
+      ],
+      "id": "e50ae7da-b725-454d-88db-5f528d509763",
+      "type": "niche_pattern",
+      "provenance": [
+        "tziThQ3-UB0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:32:21.298821",
+      "last_seen": "2026-02-18T14:32:21.298821"
+    }
+  ]
+}

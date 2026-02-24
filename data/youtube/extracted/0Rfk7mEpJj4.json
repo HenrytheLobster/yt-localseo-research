@@ -1,0 +1,223 @@
+{
+  "source_type": "youtube",
+  "video_id": "0Rfk7mEpJj4",
+  "title": "Discover the SECRET Keywords Your Amazon KDP Competitors Don't Want You to Know",
+  "extracted_at": "2026-02-18T21:45:25.044146",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10704,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Competitor Keyword Reverse Engineering",
+      "description": "Use Helium 10 Cerebro to extract keywords from competitor ASINs and filter for low competition opportunities",
+      "steps": [
+        "Copy competitor ASIN",
+        "Paste into Cerebro keyword research tool",
+        "Apply filters: 200+ search volume, 1-40 organic rank, <2000 competitors"
+      ],
+      "signals_used": [
+        "search_volume",
+        "organic_rank",
+        "competitor_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Cerebro"
+      ],
+      "thresholds": {
+        "search_volume_min": 200,
+        "organic_rank_max": 40,
+        "competitor_max": 2000
+      },
+      "caveats": [
+        "Filters may reduce keyword quantity but improve targeting accuracy"
+      ],
+      "example_niches": [
+        "toddlers coloring books",
+        "jumbo coloring books"
+      ],
+      "source_quotes": [
+        "we will apply these filters i am interested in minimum searches per month 200",
+        "competing products at max i am interested in 2 000"
+      ],
+      "id": "43defca6-722f-4e51-a02b-b4899057169f",
+      "type": "tactic",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:44:55.492027",
+      "last_seen": "2026-02-18T21:44:55.492027"
+    },
+    {
+      "name": "keyword_filtering",
+      "description": "Use Publisher Rocket to filter keywords by search volume, rank, and competition.",
+      "steps": [
+        "Search for keywords using ISBN or product title",
+        "Apply filters: minimum searches 100, rank 1-40, competing products max 1500",
+        "Sort by cerebral IQ score to prioritize low competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Filters may exclude niche keywords"
+      ],
+      "example_niches": [
+        "baby coloring book",
+        "toddlers mechanical toys"
+      ],
+      "source_quotes": [
+        "apply some filters like minimum searches 100"
+      ],
+      "id": "3f99e9b1-f736-498c-baff-07c005a11e87",
+      "type": "tactic",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:45:25.043938",
+      "last_seen": "2026-02-18T21:45:25.043938"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Keyword Prioritization",
+      "condition": "If keyword competitors < 2000 and search volume > 200, prioritize for market entry",
+      "machine_rule": {
+        "field": "competitor_count",
+        "op": "lt",
+        "value": 2000
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "competing products at max i am interested in 2 000",
+        "these are really really low competition keywords"
+      ],
+      "id": "c5380913-ba52-4689-b39f-26f493bf7b8b",
+      "type": "heuristic",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:44:55.492027",
+      "last_seen": "2026-02-18T21:44:55.492027"
+    },
+    {
+      "name": "trend_analysis",
+      "condition": "If keyword trend shows recent growth, prioritize it",
+      "machine_rule": {
+        "field": "trend",
+        "op": "gt",
+        "value": "0"
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "check the trend by clicking here"
+      ],
+      "id": "5c8b45a0-6a20-450d-8093-007008351d8f",
+      "type": "heuristic",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:45:25.043938",
+      "last_seen": "2026-02-18T21:45:25.043938"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Helium 10 Cerebro can identify 2129 organic keywords per ASIN with proper filtering",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "total 2129 keywords organic keywords are 1625",
+        "we will get a lot of related keywords"
+      ],
+      "id": "84c8118b-909f-443d-b5ad-e57f512be0ec",
+      "type": "claim",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:44:55.492027",
+      "last_seen": "2026-02-18T21:44:55.492027"
+    },
+    {
+      "statement": "Publisher Rocket can identify low-competition keywords with <1500 competitors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "competing products maximum 1500"
+      ],
+      "id": "594381ff-a39e-4d4b-a52a-b0830f08f82d",
+      "type": "claim",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:45:25.043938",
+      "last_seen": "2026-02-18T21:45:25.043938"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "AGE_GROUP + PRODUCT_TYPE + CONSTRAINT",
+      "example": "toddlers + coloring books + low competition",
+      "description": "Identify underserved niches with specific keyword constraints",
+      "why_it_works": "Combines demographic targeting with competitive advantage",
+      "signals": [
+        "search_volume",
+        "competitor_count"
+      ],
+      "source_quotes": [
+        "jumbo coloring book for toddlers",
+        "my first coloring book one year old"
+      ],
+      "id": "02a96556-921b-4f30-8525-7fcff91c3dd5",
+      "type": "niche_pattern",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:44:55.492027",
+      "last_seen": "2026-02-18T21:44:55.492027"
+    },
+    {
+      "pattern_template": "AGE + PRODUCT + CONSTRAINT",
+      "example": "one year old + coloring book + low competition",
+      "description": "Target specific age groups with niche products",
+      "why_it_works": "Combines demographic targeting with low-competition keywords",
+      "signals": [
+        "low review counts",
+        "specific age targeting"
+      ],
+      "source_quotes": [
+        "baby coloring book one year old"
+      ],
+      "id": "738285f5-e466-429b-8312-0bb23145a51f",
+      "type": "niche_pattern",
+      "provenance": [
+        "0Rfk7mEpJj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:45:25.043938",
+      "last_seen": "2026-02-18T21:45:25.043938"
+    }
+  ]
+}

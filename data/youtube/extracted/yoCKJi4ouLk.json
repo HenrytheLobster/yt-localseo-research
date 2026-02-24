@@ -1,0 +1,310 @@
+{
+  "source_type": "youtube",
+  "video_id": "yoCKJi4ouLk",
+  "title": "How to use Publisher Rocket - A tutorial for authors",
+  "extracted_at": "2026-02-18T23:11:59.753950",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 28766,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket to find keywords and categories for books by inputting general terms and analyzing search data.",
+      "steps": [
+        "Enter a general keyword or phrase related to the book",
+        "Select ebook/book format for targeted search",
+        "Click 'Analyze' to retrieve competitor data, monthly searches, and competitive scores"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Initial data appears as dashes until 'Analyze' is clicked"
+      ],
+      "example_niches": [
+        "mermaid books"
+      ],
+      "source_quotes": [
+        "you type in the word click go get a rocket and then what it does is it starts searching the database of words from amazon"
+      ],
+      "id": "2d28288e-a769-45d5-8a75-e4b77e3b1dcc",
+      "type": "tactic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:10:16.642760",
+      "last_seen": "2026-02-18T23:10:16.642760"
+    },
+    {
+      "name": "Category Selection via Competition Analysis",
+      "description": "Use Publisher Rocket to identify profitable categories by analyzing top-selling books and their sales thresholds.",
+      "steps": [
+        "Input keywords into Publisher Rocket's competition analyzer",
+        "Sort results by sales volume and bestseller rank",
+        "Select categories with achievable sales targets (e.g., 15/day for #10 BSR)",
+        "Export category data and cross-reference with book content"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid mismatched categories that could lead to negative reports"
+      ],
+      "example_niches": [
+        "young adult paranormal",
+        "mermaid romance"
+      ],
+      "source_quotes": [
+        "you can gather a list of pathways that suit you",
+        "if your book doesn't actually fit in that category people are going to get pissed"
+      ],
+      "id": "35f34864-bc28-4ab0-987c-f98e27051f44",
+      "type": "tactic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:11:26.081522",
+      "last_seen": "2026-02-18T23:11:26.081522"
+    },
+    {
+      "name": "Organize by Bestseller Rank",
+      "description": "Sort books by bestseller rank to identify visibility opportunities",
+      "steps": [
+        "Use Publisher Rocket to sort by least sales",
+        "Filter through results to find matching books",
+        "Check Amazon page for top 50 visibility"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Books outside top 50 may still gain visibility"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you can organize it so the lowest uh bestseller rank to the highest"
+      ],
+      "id": "b701c4e8-bae1-4ddc-b10a-79adb94cd34c",
+      "type": "tactic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:11:59.753813",
+      "last_seen": "2026-02-18T23:11:59.753813"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Threshold Boost",
+      "condition": "If median_reviews is less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "i've only started using it relatively recently within the last couple of months"
+      ],
+      "id": "3b947f11-9561-4559-b1e8-0a20efd04477",
+      "type": "heuristic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:10:16.642760",
+      "last_seen": "2026-02-18T23:10:16.642760"
+    },
+    {
+      "name": "Low Competition Boost",
+      "condition": "If competitive score is below 40, prioritize keywords for ad campaigns",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 40
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "anything under 40 would be good... lower competition"
+      ],
+      "id": "9f5363ff-b314-4e1f-835f-e392389a0726",
+      "type": "heuristic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:10:51.098951",
+      "last_seen": "2026-02-18T23:10:51.098951"
+    },
+    {
+      "name": "Low Review Threshold Optimization",
+      "condition": "If median reviews are below 200, prioritize categories with achievable sales targets",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "for a new author... not very achievable whereas for example 15... is doable"
+      ],
+      "id": "60446402-404f-40e9-8d4a-05b95bec90bf",
+      "type": "heuristic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:11:26.081522",
+      "last_seen": "2026-02-18T23:11:26.081522"
+    },
+    {
+      "name": "Keyword Volume Optimization",
+      "condition": "If keyword volume is higher than 100, prioritize",
+      "machine_rule": {
+        "field": "keyword_volume",
+        "op": "gt",
+        "value": 100
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "200 keywords having 200 keywords is better than having 100"
+      ],
+      "id": "b35f5698-1f37-4fe3-8725-b3578c450d1c",
+      "type": "heuristic",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:11:59.753813",
+      "last_seen": "2026-02-18T23:11:59.753813"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides estimated Amazon search data for keyword analysis",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "estimated amazon searches will give you a rough idea"
+      ],
+      "id": "a835a01f-9d28-4786-81c7-2f551b4c60ff",
+      "type": "claim",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:10:16.642760",
+      "last_seen": "2026-02-18T23:10:16.642760"
+    },
+    {
+      "statement": "Books with lower competitive scores gain better ad visibility",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if you use that keyword... better chance of getting your ad shown"
+      ],
+      "id": "be0ccb5e-5e75-4439-ad96-7f2d312d863d",
+      "type": "claim",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:10:51.098951",
+      "last_seen": "2026-02-18T23:10:51.098951"
+    },
+    {
+      "statement": "Amazon allows up to 10 categories per book format (ebook/physical)",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "i think it's i don't know if it's 10 categories overall or if it's 10 per ebook"
+      ],
+      "id": "6d63b7fe-5b93-40a9-80cc-2dbf604490f3",
+      "type": "claim",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:11:26.081522",
+      "last_seen": "2026-02-18T23:11:26.081522"
+    },
+    {
+      "statement": "Bestseller rank updates hourly",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the overall best seller rank number is updated hourly"
+      ],
+      "id": "47a0065d-f3e4-42f2-b546-dd7de363d80c",
+      "type": "claim",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:11:59.753813",
+      "last_seen": "2026-02-18T23:11:59.753813"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "mermaid books + niche market + low competition",
+      "description": "Target specific niches with constrained competition using keyword analysis",
+      "why_it_works": "Low review counts and competitive scores indicate underserved markets",
+      "signals": [
+        "low review counts",
+        "competitive score < 65"
+      ],
+      "source_quotes": [
+        "competitive score of 65"
+      ],
+      "id": "29dcfff8-64ba-4271-953c-5ac413240dcd",
+      "type": "niche_pattern",
+      "provenance": [
+        "yoCKJi4ouLk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:10:16.642760",
+      "last_seen": "2026-02-18T23:10:16.642760"
+    }
+  ]
+}

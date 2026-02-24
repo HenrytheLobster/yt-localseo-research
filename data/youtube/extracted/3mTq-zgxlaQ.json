@@ -1,0 +1,232 @@
+{
+  "source_type": "youtube",
+  "video_id": "3mTq-zgxlaQ",
+  "title": "Top 3 Low Competition High Demand Keywords KDP Low Content Books #kdp #kdpkeywords",
+  "extracted_at": "2026-02-18T20:48:21.776257",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7317,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "childrens_storybook_creation",
+      "description": "Create short children's storybooks with activity pages for niche targeting",
+      "steps": [
+        "Develop a short children's storybook with creative writing prompts",
+        "Use Canva for book design with commercial-use images",
+        "Convert to paperback and eBook for KDP Select eligibility"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires creative content to stand out in competitive niches"
+      ],
+      "example_niches": [
+        "children's storybooks",
+        "activity books"
+      ],
+      "source_quotes": [
+        "create a short children's storybook and use Canva for design"
+      ],
+      "id": "3a394de0-753a-4347-bceb-a1e8e58ad38d",
+      "type": "tactic",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:47:47.400819",
+      "last_seen": "2026-02-18T20:47:47.400819"
+    },
+    {
+      "name": "affirmation_activity_books",
+      "description": "Develop affirmation-based activity books for confidence-building",
+      "steps": [
+        "Create coloring books with affirmations",
+        "Design planners/journals for creative writing prompts",
+        "Include line sheets for child expression"
+      ],
+      "signals_used": [
+        "BSR",
+        "total_results"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Needs age-specific customization for niche appeal"
+      ],
+      "example_niches": [
+        "confidence-building books",
+        "mindful activity books"
+      ],
+      "source_quotes": [
+        "create affirmations book or coloring book for confidence"
+      ],
+      "id": "8e7c6603-8053-4e57-b03c-b5570329cd8c",
+      "type": "tactic",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:47:47.400819",
+      "last_seen": "2026-02-18T20:47:47.400819"
+    },
+    {
+      "name": "bedtime_meditation_books",
+      "description": "Create small children's books focused on bedtime meditations to help kids relax and manage emotions, targeting nightmare avoidance and confidence building.",
+      "steps": [
+        "Develop a series of bedtime meditation exercises for children",
+        "Link content to emotional regulation and sleep independence"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires creative differentiation from existing titles"
+      ],
+      "example_niches": [
+        "books to help kids with nightmares"
+      ],
+      "source_quotes": [
+        "books to help kids with Nightmare and the keyword Niche score is 61 total results of 532"
+      ],
+      "id": "269eced1-adae-4d78-afe1-af5ad3bf9fcd",
+      "type": "tactic",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:48:21.776100",
+      "last_seen": "2026-02-18T20:48:21.776100"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "review_count_threshold",
+      "condition": "If median reviews are less than 200, prioritize for growth",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "total results is 252 average price is 16.38"
+      ],
+      "id": "cc9c6be6-795e-41fe-843c-45072a06f5f6",
+      "type": "heuristic",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:47:47.400819",
+      "last_seen": "2026-02-18T20:47:47.400819"
+    },
+    {
+      "name": "low_review_niche_expansion",
+      "condition": "If niche has low review counts and high BSR potential, expand with related emotional themes",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "expand for example right here I've got books to help kids with I'm going to take the nightmares away"
+      ],
+      "id": "63b9904c-f61d-48f0-ba52-9c1800742b60",
+      "type": "heuristic",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:48:21.776100",
+      "last_seen": "2026-02-18T20:48:21.776100"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Children's books with activity pages show high demand in low-competition niches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "total results is amazing under 500"
+      ],
+      "id": "ce57fa74-bfbd-4b1e-b203-3d743f65862e",
+      "type": "claim",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:47:47.400819",
+      "last_seen": "2026-02-18T20:47:47.400819"
+    },
+    {
+      "statement": "Children's bedtime meditation books have an average price of $11.93 and a niche score of 61 with 532 total results",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average price sits down at 11.93 cents"
+      ],
+      "id": "776f2c81-1c82-4978-a684-9cac23bb1c5d",
+      "type": "claim",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:48:21.776100",
+      "last_seen": "2026-02-18T20:48:21.776100"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "children's books + making good choices + specific age groups",
+      "description": "Target age-specific behavioral guidance with low competition",
+      "why_it_works": "Combines universal parental needs with niche customization",
+      "signals": [
+        "low review counts",
+        "BSR under 5000"
+      ],
+      "source_quotes": [
+        "niche down to specific ages such as from five to seven"
+      ],
+      "id": "9af47551-96c9-48f0-9a12-eb185a83c69d",
+      "type": "niche_pattern",
+      "provenance": [
+        "3mTq-zgxlaQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:47:47.400819",
+      "last_seen": "2026-02-18T20:47:47.400819"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "source_type": "youtube",
+  "video_id": "voZtrGnxK74",
+  "title": "KDSPY Tutorial | Keyword Research Using KDSPY Pro for Amazon KDP",
+  "extracted_at": "2026-02-18T13:18:24.357385",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7748,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Filtering",
+      "description": "Use KDSPY Pro to filter out high BSR outliers and focus on keywords with strong potential and low competition",
+      "steps": [
+        "Input keyword into KDSPY Pro's keyword search tool",
+        "Analyze competition, popularity, and revenue potential",
+        "Remove top 3 outliers with extreme BSR numbers",
+        "Track remaining keywords in spreadsheet"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "monthly_revenue"
+      ],
+      "tools_mentioned": [
+        "KDSPY Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Outliers may skew data if not removed"
+      ],
+      "example_niches": [
+        "vegetable gardening in Pacific West"
+      ],
+      "source_quotes": [
+        "remove just by filtering here the last one 2 3 so they're what we call outliners"
+      ],
+      "id": "a5910d52-a1aa-4fab-ae25-1abee344ea0e",
+      "type": "tactic",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:17:50.517848",
+      "last_seen": "2026-02-18T13:17:50.517848"
+    },
+    {
+      "name": "filter_high_bsr_books",
+      "description": "Filter out books with high BSR rankings to focus on lower-competition keywords",
+      "steps": [
+        "Search for keywords in KDSPY",
+        "Filter out top 3 competitors",
+        "Analyze remaining books with under 150 reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDSPY Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May miss high-performing books with niche appeal"
+      ],
+      "example_niches": [
+        "raised bed gardening"
+      ],
+      "source_quotes": [
+        "we wait for these to go up then what I'm going to do in a moment I'm going to get rid of those three that are just too high in regards to the BSR ranking"
+      ],
+      "id": "448c1169-ab4f-48d5-9699-dfe5f0ed0111",
+      "type": "tactic",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:18:24.357242",
+      "last_seen": "2026-02-18T13:18:24.357242"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Outlier Removal",
+      "condition": "If keyword has extreme BSR outliers, filter them out",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "gte",
+        "value": 50000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "remove just by filtering here the last one 2 3 so they're what we call outliners"
+      ],
+      "id": "ef0c04f3-de01-45ea-bd83-ccb530b66088",
+      "type": "heuristic",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:17:50.517848",
+      "last_seen": "2026-02-18T13:17:50.517848"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we can filter that get rid of one 2 3 then we can actually start to look at books that maybe have under 150 reviews"
+      ],
+      "id": "826b54a7-c08c-445c-a4c8-03aedf234458",
+      "type": "heuristic",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:18:24.357242",
+      "last_seen": "2026-02-18T13:18:24.357242"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDSPY Pro provides average monthly revenue data for keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average monthly Revenue if we go get"
+      ],
+      "id": "8a02f962-63e1-4acb-aa8a-ea1372ad9aa3",
+      "type": "claim",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:17:50.517848",
+      "last_seen": "2026-02-18T13:17:50.517848"
+    },
+    {
+      "statement": "KDSPY Pro enables keyword analysis for Amazon KDP niche research",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is one of the many different tools that KD spy offer"
+      ],
+      "id": "ba66cf41-7c1e-45ae-82d7-818cf4b3181d",
+      "type": "claim",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:18:24.357242",
+      "last_seen": "2026-02-18T13:18:24.357242"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "REGION + NICHES + SPECIFIC_TOPIC",
+      "example": "Pacific Northwest + medicinal plants + gardening",
+      "description": "Target hyper-specific regional niches with low competition",
+      "why_it_works": "Reduces competition while maintaining search volume",
+      "signals": [
+        "low review counts",
+        "specific geographic modifiers"
+      ],
+      "source_quotes": [
+        "Pacific Northwest medicinal plants we've also got"
+      ],
+      "id": "c4dc0d4c-5425-4dd7-800a-6a68e846a7c4",
+      "type": "niche_pattern",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:17:50.517848",
+      "last_seen": "2026-02-18T13:17:50.517848"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "gardening + seasonal tasks + low reviews",
+      "description": "Targets specific niches with lower competition and review thresholds",
+      "why_it_works": "Balances keyword relevance with marketability",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "we can start to look at books that maybe have under 150 reviews"
+      ],
+      "id": "a7ccb04e-23f7-435b-ad27-d5c9dab4384c",
+      "type": "niche_pattern",
+      "provenance": [
+        "voZtrGnxK74"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:18:24.357242",
+      "last_seen": "2026-02-18T13:18:24.357242"
+    }
+  ]
+}

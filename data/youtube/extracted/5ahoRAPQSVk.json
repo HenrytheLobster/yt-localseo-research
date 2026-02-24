@@ -1,0 +1,363 @@
+{
+  "source_type": "youtube",
+  "video_id": "5ahoRAPQSVk",
+  "title": "Publisher Rocket Step by Step Tutorial for Amazon KDP Publishing",
+  "extracted_at": "2026-02-18T22:49:46.160326",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 17595,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Competitor Analysis",
+      "description": "Use Publisher Rocket to evaluate niche viability by analyzing competitors' metrics",
+      "steps": [
+        "Search for niche keywords like '101 story starters'",
+        "Review average pages, price, and monthly earnings",
+        "Check competitive score and Amazon search volume"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 50,
+        "reviews_min": 100
+      },
+      "caveats": [
+        "May not account for seasonal trends"
+      ],
+      "example_niches": [
+        "teen planner",
+        "story starters for kids"
+      ],
+      "source_quotes": [
+        "'competitive score is pretty good this one here now look...`"
+      ],
+      "id": "ded70692-902d-4156-83df-fa04b12c9eb3",
+      "type": "tactic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:20.538629",
+      "last_seen": "2026-02-18T22:48:20.538629"
+    },
+    {
+      "name": "Keyword Research Analysis",
+      "description": "Use Publisher Rocket to analyze keywords and check competitor books' performance metrics",
+      "steps": [
+        "Input keywords into Publisher Rocket's keyword research tool",
+        "Export data to spreadsheet for detailed analysis",
+        "Check competitor books' BSR, daily sales, and categories"
+      ],
+      "signals_used": [
+        "BSR",
+        "daily_sales",
+        "categories"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may not reflect real-time market changes"
+      ],
+      "example_niches": [
+        "children's educational books"
+      ],
+      "source_quotes": [
+        "we can actually find out more about it"
+      ],
+      "id": "9aca6f59-9ea7-4f8f-89a2-a1774eb7d896",
+      "type": "tactic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:54.450855",
+      "last_seen": "2026-02-18T22:48:54.450855"
+    },
+    {
+      "name": "Category Optimization",
+      "description": "Identify and add multiple categories to improve book discoverability",
+      "steps": [
+        "Check existing categories of successful books",
+        "Add up to 8 categories during KDP upload",
+        "Use Publisher Rocket to find trending categories"
+      ],
+      "signals_used": [
+        "category_performance"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "Over-categorization may dilute focus"
+      ],
+      "example_niches": [
+        "early reader books"
+      ],
+      "source_quotes": [
+        "you can add a further six categories"
+      ],
+      "id": "bdb1962e-b60f-4498-ba78-3e8fbfa88b22",
+      "type": "tactic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:54.450855",
+      "last_seen": "2026-02-18T22:48:54.450855"
+    },
+    {
+      "name": "Category Search for Rankings",
+      "description": "Use Publisher Rocket to analyze category rankings and sales thresholds for bestseller positions.",
+      "steps": [
+        "Search for target categories (e.g., children's books)",
+        "Check sales numbers required for top rankings (e.g., 250 sales for #1 in paper crafts)",
+        "Contact KDP customer service to add extra categories"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid categories with irrelevant keywords (e.g., 'roblox story starters' for kids' books)"
+      ],
+      "example_niches": [
+        "children's books",
+        "education and teaching"
+      ],
+      "source_quotes": [
+        "this is suggesting that for this paper crafts you to get to number one you'd need to do 2 250 sales"
+      ],
+      "id": "ee132863-3d6b-4171-a5b9-8717b3c4d7c1",
+      "type": "tactic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:49:32.098696",
+      "last_seen": "2026-02-18T22:49:32.098696"
+    },
+    {
+      "name": "Keyword Search for Ads",
+      "description": "Export Amazon search terms for keyword campaigns using Publisher Rocket's IMS keyword tool.",
+      "steps": [
+        "Run keyword searches (e.g., 'story starters')",
+        "Export data to spreadsheet and filter relevant keywords",
+        "Include ASINs and author names for targeted campaigns"
+      ],
+      "signals_used": [
+        "BSR",
+        "asin"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 1000,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Remove duplicates and irrelevant terms (e.g., 'volume 11')"
+      ],
+      "example_niches": [
+        "kids' books",
+        "self-help guides"
+      ],
+      "source_quotes": [
+        "this will provide the information that we're wanting for that and it just helps to get the keywords"
+      ],
+      "id": "d764aa46-a578-448e-b584-881eeedefbfc",
+      "type": "tactic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:49:32.098696",
+      "last_seen": "2026-02-18T22:49:32.098696"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Targeting",
+      "condition": "If competitive score is below 50 and review count is above 100",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'competitive score is pretty good this one here now look...`"
+      ],
+      "id": "cc6dff60-90d5-4b2c-9c4c-951b62d562ce",
+      "type": "heuristic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:20.538629",
+      "last_seen": "2026-02-18T22:48:20.538629"
+    },
+    {
+      "name": "Sales Threshold Heuristic",
+      "condition": "If daily sales are below $200, consider market saturation",
+      "machine_rule": {
+        "field": "daily_sales",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "flag",
+      "weight": 0.6,
+      "source_quotes": [
+        "daily sales are 240 dollars"
+      ],
+      "id": "836a56c0-ccae-47a1-a17d-14b477e7e430",
+      "type": "heuristic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:54.450855",
+      "last_seen": "2026-02-18T22:48:54.450855"
+    },
+    {
+      "name": "Low-Review Category Boost",
+      "condition": "If median reviews are less than 200, prioritize categories with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if we did for example education and teaching if we went down to this one here we check it out we want to find out the ranking of the number one book"
+      ],
+      "id": "328e8513-7239-49b6-952a-4a9a64038f98",
+      "type": "heuristic",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:49:32.098696",
+      "last_seen": "2026-02-18T22:49:32.098696"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides lifetime access with a one-time payment under $100",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'it's just under 100 us dollars...`"
+      ],
+      "id": "60a9ffed-86be-4896-900c-d4325d158f4c",
+      "type": "claim",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:20.538629",
+      "last_seen": "2026-02-18T22:48:20.538629"
+    },
+    {
+      "statement": "KDP allows publishers to add up to 8 categories per book",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can actually choose you can just follow the link"
+      ],
+      "id": "b5af1bbf-dd1b-468b-be7a-2a8c911e4786",
+      "type": "claim",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:54.450855",
+      "last_seen": "2026-02-18T22:48:54.450855"
+    },
+    {
+      "statement": "KDP allows adding extra categories via customer service for books not already listed",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can contact kdp customer service to add the extra category to your book"
+      ],
+      "id": "4c00b52e-7fd8-4e1a-b875-14a73f17f596",
+      "type": "claim",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:49:32.098696",
+      "last_seen": "2026-02-18T22:49:32.098696"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "children + storytelling + educational",
+      "description": "Target underserved niches with specific constraints",
+      "why_it_works": "Balances market demand with niche specificity",
+      "signals": [
+        "low competitive score",
+        "moderate review counts"
+      ],
+      "source_quotes": [
+        "'we've got a heap of different things that we can find out...`"
+      ],
+      "id": "d6eb894f-bef8-4762-84e0-3327c20ccb46",
+      "type": "niche_pattern",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:20.538629",
+      "last_seen": "2026-02-18T22:48:20.538629"
+    },
+    {
+      "pattern_template": "EDUCATIONAL + DEVELOPMENTAL + AGE_GROUP",
+      "example": "phonics + reading skills + 5-8 years",
+      "description": "Target specific learning needs with age-appropriate content",
+      "why_it_works": "Combines educational value with developmental milestones",
+      "signals": [
+        "low competition categories",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "phonics storybook that looks uh like um"
+      ],
+      "id": "2ee88e6f-18fd-4cff-90fc-a54b82cc8917",
+      "type": "niche_pattern",
+      "provenance": [
+        "5ahoRAPQSVk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:48:54.450855",
+      "last_seen": "2026-02-18T22:48:54.450855"
+    }
+  ]
+}

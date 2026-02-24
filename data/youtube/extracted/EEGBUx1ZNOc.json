@@ -1,0 +1,382 @@
+{
+  "source_type": "youtube",
+  "video_id": "EEGBUx1ZNOc",
+  "title": "Publisher Rocket Tutorial | The Complete 2025 Guide With NEW Tool!",
+  "extracted_at": "2026-02-18T04:00:11.745266",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 35116,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Search Analysis",
+      "description": "Use Publisher Rocket's keyword search to identify profitable niches by analyzing competition, pricing, and search volume.",
+      "steps": [
+        "Enter target keywords (e.g., 'life skills')",
+        "Filter results by book/Kindle/Audible",
+        "Analyze columns like competitive score, average price, and monthly earnings",
+        "Click magnifying glass for deeper keyword research"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score": "green",
+        "reviews_max": 200
+      },
+      "caveats": [
+        "May miss long-tail keywords without manual filtering"
+      ],
+      "example_niches": [
+        "teen life skills",
+        "adult gardening"
+      ],
+      "source_quotes": [
+        "Publisher Rocket will give us some core data...create a book"
+      ],
+      "id": "ec59da56-0ab1-48b3-a6c7-a6851b93044b",
+      "type": "tactic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:55.416807",
+      "last_seen": "2026-02-18T03:57:55.416807"
+    },
+    {
+      "name": "Competition Analyzer",
+      "description": "Evaluate competitor books using Publisher Rocket's competition analyzer to assess pricing, sales, and keyword usage.",
+      "steps": [
+        "Input keywords to retrieve competing books",
+        "Analyze BSR, daily sales, and keyword targeting",
+        "Compare cover designs and category trends"
+      ],
+      "signals_used": [
+        "BSR",
+        "daily_sales"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires accurate ISBN/ASIN input for precise data"
+      ],
+      "example_niches": [
+        "life skills for teens",
+        "gardening books for kids"
+      ],
+      "source_quotes": [
+        "we can scroll down here and we can see all the books are listed so far on the search results of Amazon"
+      ],
+      "id": "a3365a45-04dd-4800-a5d5-fcab561effe2",
+      "type": "tactic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:58:33.279718",
+      "last_seen": "2026-02-18T03:58:33.279718"
+    },
+    {
+      "name": "Competitor Analysis",
+      "description": "Use Publisher Rocket to analyze competitor books' BSR rankings, review counts, and category placements",
+      "steps": [
+        "Search keywords via Rocket's keyword tool",
+        "Transition to category search from keyword results",
+        "Identify top-performing books with low page counts",
+        "Check category placements and publisher distribution"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "category"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 5000
+      },
+      "caveats": [
+        "Ghost categories may require manual verification"
+      ],
+      "example_niches": [
+        "teen planner",
+        "life skills for teens"
+      ],
+      "id": "c5cf52df-f217-4dcc-8d6a-5c2714db10ef",
+      "type": "tactic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:59:36.904268",
+      "last_seen": "2026-02-18T03:59:36.904268"
+    },
+    {
+      "name": "Category Optimization",
+      "description": "Leverage Rocket's category search to identify high-potential Amazon categories",
+      "steps": [
+        "Use keyword search to find relevant books",
+        "Transition to category search for category insights",
+        "Analyze category growth rates and publisher dominance",
+        "Select categories with declining competition"
+      ],
+      "signals_used": [
+        "category_growth",
+        "publisher_distribution"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "category_growth": "-1"
+      },
+      "caveats": [
+        "Requires validation of category visibility"
+      ],
+      "example_niches": [
+        "children's gardening",
+        "teen life skills"
+      ],
+      "id": "21611094-892e-4fc4-b71a-8299c34c9112",
+      "type": "tactic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:59:36.904268",
+      "last_seen": "2026-02-18T03:59:36.904268"
+    },
+    {
+      "name": "Category Search for Growth",
+      "description": "Use Publisher Rocket to identify categories with increasing sales and low competition.",
+      "steps": [
+        "Search for categories using keyword filters",
+        "Check sales growth metrics and publisher data",
+        "Select categories with 4-5x sales growth potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Categories with high publisher saturation may require more effort"
+      ],
+      "example_niches": [
+        "child care",
+        "parenting relationships"
+      ],
+      "source_quotes": [
+        "this category has a high variation only a few best sellers might be driving its growth"
+      ],
+      "id": "4a7e54b6-eb4a-49ef-9cdd-8a74a4dd880f",
+      "type": "tactic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:11.745008",
+      "last_seen": "2026-02-18T04:00:11.745008"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitive Score Filter",
+      "condition": "If competitive score is green (low competition) and BSR < 50,000, prioritize niche",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "eq",
+        "value": "green"
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Green is what we're looking for...competitive score of a green"
+      ],
+      "id": "d41b1d8d-43c5-4737-8f3a-d397315087a9",
+      "type": "heuristic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:55.416807",
+      "last_seen": "2026-02-18T03:57:55.416807"
+    },
+    {
+      "name": "Page One Click Advantage",
+      "condition": "If a book ranks on page one, it receives 270 clicks vs 60 clicks for page six results",
+      "machine_rule": {
+        "field": "bsr_position",
+        "op": "lte",
+        "value": 10
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "statistically speaking 270 people will click on the book that shows up at the top"
+      ],
+      "id": "63694b58-a2a8-4fc7-8cc0-2204d9d60ddb",
+      "type": "heuristic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:58:33.279718",
+      "last_seen": "2026-02-18T03:58:33.279718"
+    },
+    {
+      "name": "Review Threshold",
+      "condition": "If median reviews are below 200, prioritize content optimization",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this book here... only 26 pages... ranking right now"
+      ],
+      "id": "f45ca255-defd-4d05-b3ac-42a24ea6151b",
+      "type": "heuristic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:59:36.904268",
+      "last_seen": "2026-02-18T03:59:36.904268"
+    },
+    {
+      "name": "Low Competition Targeting",
+      "condition": "If a category shows 4+ sales growth with <200 reviews, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "expect low competition making it easy to rank as a bestseller"
+      ],
+      "id": "d3b3a7f5-d680-4f81-a21c-52d1c738e9b7",
+      "type": "heuristic",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:11.745008",
+      "last_seen": "2026-02-18T04:00:11.745008"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket offers a $197 free course with affiliate link",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you get the exclusive $197 12-hour course absolutely free"
+      ],
+      "id": "9c4f8064-e560-48df-802e-cf7d2392eaec",
+      "type": "claim",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:55.416807",
+      "last_seen": "2026-02-18T03:57:55.416807"
+    },
+    {
+      "statement": "Books on page one of Amazon search results receive significantly more clicks than those on subsequent pages.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if people were to type in life skills for teens... 270 people will click on the book that shows up at the top"
+      ],
+      "id": "bb04cffb-6145-4cfc-b671-610f8c5ee831",
+      "type": "claim",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:58:33.279718",
+      "last_seen": "2026-02-18T03:58:33.279718"
+    },
+    {
+      "statement": "Amazon has over 12,000 categories and subcategories",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "there are over 12,000 categories and subcategories on Amazon"
+      ],
+      "id": "55e6a6e8-01c7-44c6-b5c5-116826973b86",
+      "type": "claim",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:59:36.904268",
+      "last_seen": "2026-02-18T03:59:36.904268"
+    },
+    {
+      "statement": "52% of Publishers in parenting/relationships categories use Kindle Unlimited",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "52 are in Kindle unlimited"
+      ],
+      "id": "73dfac24-5c6e-493e-bda0-44e9477cb292",
+      "type": "claim",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:11.745008",
+      "last_seen": "2026-02-18T04:00:11.745008"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen girls + life skills + budget-friendly",
+      "description": "Identify underserved niches with specific audience constraints",
+      "why_it_works": "Balances demand with low competition and pricing potential",
+      "signals": [
+        "low review counts",
+        "moderate BSR"
+      ],
+      "source_quotes": [
+        "life skills for teens...average price $3"
+      ],
+      "id": "700f0f4b-f15b-4060-9dbb-010ee0d0ab34",
+      "type": "niche_pattern",
+      "provenance": [
+        "EEGBUx1ZNOc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:57:55.416807",
+      "last_seen": "2026-02-18T03:57:55.416807"
+    }
+  ]
+}

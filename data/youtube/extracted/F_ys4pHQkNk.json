@@ -1,0 +1,119 @@
+{
+  "source_type": "youtube",
+  "video_id": "F_ys4pHQkNk",
+  "title": "Kdp Keyword Research TRICK 2022...I Should Have Found This Before..",
+  "extracted_at": "2026-02-18T13:51:53.020800",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 5818,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Number-Based Keyword Expansion",
+      "description": "Use numbers instead of letters to generate low-competition keywords by appending numerical values to main keywords.",
+      "steps": [
+        "Type main keyword followed by numbers (e.g., 'notebook 100 pages')",
+        "Check drop-down menu for relevant keywords",
+        "Prioritize keywords with <2000 average reviews and BSR <50,000"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 2000,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail in niches without numerical variations"
+      ],
+      "example_niches": [
+        "teen planner",
+        "soft notebook"
+      ],
+      "source_quotes": [
+        "type numbers instead of letter of alphabets type 1"
+      ],
+      "id": "9c9e2f99-925c-495d-8d04-c6c61fa9e59e",
+      "type": "tactic",
+      "provenance": [
+        "F_ys4pHQkNk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:51:53.020637",
+      "last_seen": "2026-02-18T13:51:53.020637"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median reviews are less than 200, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "don't go for the keyword that has above 2000 average reviews"
+      ],
+      "id": "31fed908-9f0b-479f-93f1-4c4b0ac79ef7",
+      "type": "heuristic",
+      "provenance": [
+        "F_ys4pHQkNk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:51:53.020637",
+      "last_seen": "2026-02-18T13:51:53.020637"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Number-based keyword variations can uncover low-competition niches in KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "notebook 250 pages...sketchbook 200 pages"
+      ],
+      "id": "c7f6c0c9-3115-408b-80c4-fc370328d85d",
+      "type": "claim",
+      "provenance": [
+        "F_ys4pHQkNk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:51:53.020637",
+      "last_seen": "2026-02-18T13:51:53.020637"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combines target audience, specific need, and unique qualifier to isolate underserved niches",
+      "why_it_works": "Leverages low-review-count signals for discoverability",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "type 1 to 12 column...52 weeks six six into nine"
+      ],
+      "id": "1c44ccc4-2360-4e02-9c84-174ed91bb460",
+      "type": "niche_pattern",
+      "provenance": [
+        "F_ys4pHQkNk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:51:53.020637",
+      "last_seen": "2026-02-18T13:51:53.020637"
+    }
+  ]
+}

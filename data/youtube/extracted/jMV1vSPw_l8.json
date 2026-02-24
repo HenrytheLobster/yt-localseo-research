@@ -1,0 +1,229 @@
+{
+  "source_type": "youtube",
+  "video_id": "jMV1vSPw_l8",
+  "title": "5 Amazon KDP Niches to Avoid at All Costs",
+  "extracted_at": "2026-02-18T04:10:11.144486",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6500,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Poetry Journal Integration",
+      "description": "Avoid standalone poetry collections by combining poetry with practical content in high-demand niches.",
+      "steps": [
+        "Create prompt-based journals",
+        "Use public domain poets with thematic collections"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires keyword research for discoverability"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Readers aren't actively searching for unknown indie poetry collections."
+      ],
+      "id": "a9ab4710-0217-45df-a572-f47c84bc5049",
+      "type": "tactic",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:09:36.388340",
+      "last_seen": "2026-02-18T04:09:36.388340"
+    },
+    {
+      "name": "Marketable Genre Focus",
+      "description": "Prioritize mainstream fiction genres over niche literary fiction for better sales potential.",
+      "steps": [
+        "Start with romance/mystery/fantasy",
+        "Layer unique storytelling onto popular formats"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May dilute artistic uniqueness"
+      ],
+      "example_niches": [
+        "sci-fi romance"
+      ],
+      "source_quotes": [
+        "Literary fiction... underperform for new authors."
+      ],
+      "id": "335bc22b-596d-4d4b-a3b6-87405229ca97",
+      "type": "tactic",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:09:36.388340",
+      "last_seen": "2026-02-18T04:09:36.388340"
+    },
+    {
+      "name": "validate_demand",
+      "description": "Use tools to check monthly searches and competitive score before creating a book",
+      "steps": [
+        "Check estimated monthly searches",
+        "Evaluate competitive score"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "AMZ Suggestion Expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Tools may not account for seasonal trends"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "make sure that you validate demand before you create"
+      ],
+      "id": "fa52daa2-e2ae-4af4-9ec1-6eb657cdbc0a",
+      "type": "tactic",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:10:11.144323",
+      "last_seen": "2026-02-18T04:10:11.144323"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Threshold",
+      "condition": "If median reviews are below 200, prioritize boosting niches with higher demand signals",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Self-published children's books... without professional illustrations..."
+      ],
+      "id": "7c717f33-6f2a-4fa2-9504-56dbecefa405",
+      "type": "heuristic",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:09:36.388340",
+      "last_seen": "2026-02-18T04:09:36.388340"
+    },
+    {
+      "name": "low_review_threshold",
+      "condition": "If median reviews are below 200, prioritize niches with higher demand signals",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "nothing under 100, cuz that just means nobody's looking for it"
+      ],
+      "id": "8a8618c7-147f-4703-a272-5650305fd959",
+      "type": "heuristic",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:10:11.144323",
+      "last_seen": "2026-02-18T04:10:11.144323"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Low-content books are oversaturated unless they solve specific problems",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "These niches are flooded... impossible to rank without external traffic."
+      ],
+      "id": "81955cd2-e670-4b8f-bec0-6d4a53a4ba8b",
+      "type": "claim",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:09:36.388340",
+      "last_seen": "2026-02-18T04:09:36.388340"
+    },
+    {
+      "statement": "Publisher Rocket is recommended for analyzing competitive scores and monthly searches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Publisher Rocket is my absolute favorite"
+      ],
+      "id": "d6caab6a-a74d-4a05-b705-f3b38fa4645a",
+      "type": "claim",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:10:11.144323",
+      "last_seen": "2026-02-18T04:10:11.144323"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific audience identities with targeted problems and constraints for differentiation",
+      "why_it_works": "Creates niche demand while avoiding oversaturation",
+      "signals": [
+        "low review counts",
+        "high competition scores"
+      ],
+      "source_quotes": [
+        "Focus on Christian kids or ADHD kids... make sure you're not too broad."
+      ],
+      "id": "0c3ccb71-3c89-463a-bda8-79c8f1fa857e",
+      "type": "niche_pattern",
+      "provenance": [
+        "jMV1vSPw_l8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:09:36.388340",
+      "last_seen": "2026-02-18T04:09:36.388340"
+    }
+  ]
+}

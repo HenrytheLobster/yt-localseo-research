@@ -1,0 +1,381 @@
+{
+  "source_type": "youtube",
+  "video_id": "5mhZC1sdIAk",
+  "title": "Publisher Rocket - Full Tutorial on How to Use Publisher Rocket for KDP 2024",
+  "extracted_at": "2026-02-18T04:02:42.348450",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 30571,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket's keyword search tool to analyze market data and identify profitable niches.",
+      "steps": [
+        "Enter target keywords into the keyword search feature",
+        "Filter results by book/Kindle/Audible",
+        "Analyze metrics like competitors, price, and search volume",
+        "Select keywords with optimal competitive scores"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "estimated_amazon_searches"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 60,
+        "estimated_amazon_searches_min": 1000
+      },
+      "caveats": [
+        "May not capture long-tail keyword opportunities"
+      ],
+      "example_niches": [
+        "life skills for teens",
+        "ADHD teen planners"
+      ],
+      "source_quotes": [
+        "Publisher Rocket will give us some core data...create a book"
+      ],
+      "id": "a7931b8b-f5e8-47e9-84cd-0054e395f126",
+      "type": "tactic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:43.233317",
+      "last_seen": "2026-02-18T04:00:43.233317"
+    },
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Use Publisher Rocket to evaluate keyword competitiveness via color-coded scores (green=low competition, red=high competition).",
+      "steps": [
+        "Input keywords into Publisher Rocket's keyword search tool",
+        "Filter data by average pages, price, and monthly earnings",
+        "Identify green-scored keywords with low competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When keyword search returns insufficient data"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if we get a match of a green here and compare this score of a green that's great competitive score we have say green which is low competition"
+      ],
+      "id": "36da8ca8-7296-467c-9b57-6b49a5267607",
+      "type": "tactic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:01:17.160027",
+      "last_seen": "2026-02-18T04:01:17.160027"
+    },
+    {
+      "name": "Competitor Analysis",
+      "description": "Use Publisher Rocket to identify competing books, check their rankings, sales, and categories.",
+      "steps": [
+        "Search keywords on Rocket",
+        "View competitor books' BSR (Book Sales Rank) and sales",
+        "Analyze category placements",
+        "Export data for further study"
+      ],
+      "signals_used": [
+        "BSR",
+        "review count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 5000
+      },
+      "caveats": [
+        "Data may lag behind real-time Amazon updates"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "id": "82b9c6dd-1ce4-4f39-975b-73163695b8da",
+      "type": "tactic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:04.243552",
+      "last_seen": "2026-02-18T04:02:04.243552"
+    },
+    {
+      "name": "Category Growth Analysis",
+      "description": "Identify categories with declining or rising sales using Publisher Rocket insights to inform KDP book selection.",
+      "steps": [
+        "Use Publisher Rocket's category search to filter niches",
+        "Check monthly sales growth metrics",
+        "Analyze BSR (Best Seller Rank) trends",
+        "Prioritize categories with low competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "sales_per_month"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "sales_per_month": 267,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid categories with 7% monthly decline"
+      ],
+      "example_niches": [
+        "parenting relationships",
+        "child care"
+      ],
+      "source_quotes": [
+        "this category has a high variation only a few best sellers might be driving its growth"
+      ],
+      "id": "a503f245-7a9b-44f1-b583-36bdd2519eac",
+      "type": "tactic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:42.348306",
+      "last_seen": "2026-02-18T04:02:42.348306"
+    },
+    {
+      "name": "Keyword Research",
+      "description": "Leverage Publisher Rocket's keyword tool to identify high-potential search terms for Amazon ads and book optimization.",
+      "steps": [
+        "Input niche categories into keyword search",
+        "Analyze keyword competition and search volume",
+        "Select keywords with low competition",
+        "Integrate keywords into Amazon ad campaigns"
+      ],
+      "signals_used": [
+        "keyword_volume",
+        "competition_level"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competition_level": "low"
+      },
+      "caveats": [
+        "Avoid over-saturated keywords"
+      ],
+      "example_niches": [
+        "Kindle books",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "these are keywords that you might like to use in your seven back-ended keywords"
+      ],
+      "id": "9145cd10-bf55-4b08-98e7-97db5c31535d",
+      "type": "tactic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:42.348306",
+      "last_seen": "2026-02-18T04:02:42.348306"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Opportunity",
+      "condition": "If estimated_amazon_searches < 1000 and competitive_score < 60, then flag as low competition",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 60
+      },
+      "action": "flag",
+      "weight": 0.6,
+      "source_quotes": [
+        "competitive score 56...estimated Amazon searches 1,798"
+      ],
+      "id": "d235edc1-ce5e-4cfb-a478-883e46908f74",
+      "type": "heuristic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:43.233317",
+      "last_seen": "2026-02-18T04:00:43.233317"
+    },
+    {
+      "name": "Page One Ranking Priority",
+      "condition": "If a book appears on page one of search results, it receives 270% more clicks than a book on position six",
+      "machine_rule": {
+        "field": "page_rank",
+        "op": "lte",
+        "value": 1
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "270 people will click on the book that shows up at the top but only 60 will click on a book that shows up at number six"
+      ],
+      "id": "c2a65342-8556-4842-b348-f795561c2c24",
+      "type": "heuristic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:01:17.160027",
+      "last_seen": "2026-02-18T04:01:17.160027"
+    },
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If a book has fewer than 200 reviews, prioritize it for optimization.",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "id": "e19d1c9a-2a53-4be5-a8bb-f46127129d08",
+      "type": "heuristic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:04.243552",
+      "last_seen": "2026-02-18T04:02:04.243552"
+    },
+    {
+      "name": "Low Competition Filter",
+      "condition": "If a category has fewer than 200 reviews and BSR over 50,000, prioritize it for KDP publishing",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this category has a high variation only a few best sellers might be driving its growth"
+      ],
+      "id": "6bc76a36-0d29-49c2-bf45-6e337ea490f5",
+      "type": "heuristic",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:42.348306",
+      "last_seen": "2026-02-18T04:02:42.348306"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket offers a free 12-hour KDP course with purchase",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "exclusive 12-hour Amazon KDP course...get for free"
+      ],
+      "id": "5ddb4d31-9d39-418f-94f9-1ed6facfae75",
+      "type": "claim",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:43.233317",
+      "last_seen": "2026-02-18T04:00:43.233317"
+    },
+    {
+      "statement": "Books on page one of Amazon search results receive significantly more clicks than those on subsequent pages",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "270 people will click on the book that shows up at the top but only 60 will click on a book that shows up at number six"
+      ],
+      "id": "05d83502-3f8b-4a71-9432-5e1b114b4372",
+      "type": "claim",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:01:17.160027",
+      "last_seen": "2026-02-18T04:01:17.160027"
+    },
+    {
+      "statement": "Amazon has over 12,000 categories and subcategories.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "there are over 12,000 categories and subcategories on Amazon"
+      ],
+      "id": "6e37c83a-7a77-496a-bb40-bae1b20ce002",
+      "type": "claim",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:04.243552",
+      "last_seen": "2026-02-18T04:02:04.243552"
+    },
+    {
+      "statement": "52% of Publishers in the 'parenting relationships' category are part of Kindle Unlimited",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "49% of Publishers 52 are in Kindle unlimited"
+      ],
+      "id": "7d722d5f-f0df-4283-95b0-a23d8e7520db",
+      "type": "claim",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:02:42.348306",
+      "last_seen": "2026-02-18T04:02:42.348306"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with unique challenges and preferences",
+      "why_it_works": "Combines identity (teen boys) with problem (ADHD) and constraint (Christian values)",
+      "signals": [
+        "low review counts",
+        "narrow keyword focus"
+      ],
+      "source_quotes": [
+        "life skills for teenage girls...young adults Twins"
+      ],
+      "id": "24dabcec-9bd0-487d-a3ba-cdf6983c8f7f",
+      "type": "niche_pattern",
+      "provenance": [
+        "5mhZC1sdIAk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:00:43.233317",
+      "last_seen": "2026-02-18T04:00:43.233317"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "source_type": "youtube",
+  "video_id": "cEdFymJJbg4",
+  "title": "5 Ways to Use Publisher Rocket for Your Author Business",
+  "extracted_at": "2026-02-18T04:38:24.191642",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 52856,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Reverse Engineering",
+      "description": "Identify keywords by analyzing buyer intent rather than book content",
+      "steps": [
+        "Research target audience search terms",
+        "Align keywords with buyer intent",
+        "Test keyword effectiveness"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if target audience is too niche"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "her book was for educators... we had to use the keywords that those types of people would use"
+      ],
+      "id": "e67bbbf2-8fd5-4fa0-93f0-cebf0407348a",
+      "type": "tactic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:41.796411",
+      "last_seen": "2026-02-18T04:36:41.796411"
+    },
+    {
+      "name": "reverse_engineer_keywords",
+      "description": "Focus on buyer search terms rather than book content to optimize metadata for Amazon searches",
+      "steps": [
+        "Use AI to generate keyword lists based on book content and target audience",
+        "Refine keywords to match buyer search behavior",
+        "Create separate keyword sets for Kindle and print formats"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Chat GPT"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "AI-generated keywords may require manual refinement"
+      ],
+      "example_niches": [
+        "teen planner",
+        "self-publishing guide"
+      ],
+      "source_quotes": [
+        "you want to make sure that yes they are on target for what your book is you don't want to misrepresent your content but you are looking at it from a consumer perspective"
+      ],
+      "id": "1191da15-f6cd-4bc0-8132-a8715ccf362f",
+      "type": "tactic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:13.935838",
+      "last_seen": "2026-02-18T04:37:13.935838"
+    },
+    {
+      "name": "Keyword Categorization",
+      "description": "Group keywords into Amazon optimization, Google SEO, pain points, solutions, emotive amplifiers, and demographics to create targeted metadata.",
+      "steps": [
+        "Input manuscript for keyword density analysis",
+        "Categorize keywords into Amazon-specific, Google SEO, content-aligned, pain points, solutions, demographics",
+        "Use Publisher Rocket to validate keyword viability"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual refinement of raw keyword lists"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we've been able to narrow it down into certain types of categories"
+      ],
+      "id": "55396a62-e8bd-4257-b76d-24b3a89bcc52",
+      "type": "tactic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:51.380152",
+      "last_seen": "2026-02-18T04:37:51.380152"
+    },
+    {
+      "name": "Market Viability Check",
+      "description": "Use Publisher Rocket to assess keyword search volume, competition, and BSR to determine market potential.",
+      "steps": [
+        "Enter keyword phrases into Publisher Rocket",
+        "Analyze search volume, competition, and BSR metrics",
+        "Adjust content based on market demand signals"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Low search volume may indicate niche viability"
+      ],
+      "example_niches": [
+        "lawn care solutions"
+      ],
+      "source_quotes": [
+        "using something like publisher rocket is actually really going to help you decide if your book has a market"
+      ],
+      "id": "deab0428-6913-44bc-8a44-56aac8410893",
+      "type": "tactic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:51.380152",
+      "last_seen": "2026-02-18T04:37:51.380152"
+    },
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket to identify viable keywords by analyzing search volume, competition, and category potential.",
+      "steps": [
+        "Input a general keyword phrase (e.g., 'lawn care')",
+        "Filter results by format (Kindle, Audible, books)",
+        "Analyze BSR, search volume, and competitor data",
+        "Refine to niche keywords with balanced market size"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail to capture long-tail keywords without manual refinement"
+      ],
+      "example_niches": [
+        "lawn care business",
+        "how to start a lawn care business"
+      ],
+      "source_quotes": [
+        "one of the things about key about publisher rocket is it's going to give you ideally it's mainly focus on the books"
+      ],
+      "id": "6fa3495e-bb32-4224-8311-678549be8eee",
+      "type": "tactic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:24.191434",
+      "last_seen": "2026-02-18T04:38:24.191434"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Optimization",
+      "condition": "If median_reviews < 200 then boost keyword visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "can make or break your book"
+      ],
+      "id": "5e776bbf-e93e-4f3d-9cee-19fddf2d08d9",
+      "type": "heuristic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:41.796411",
+      "last_seen": "2026-02-18T04:36:41.796411"
+    },
+    {
+      "name": "boost_low_review_titles",
+      "condition": "If a title has low review counts, prioritize boosting its visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I have so many books I could make like a table I could make a bed"
+      ],
+      "id": "c5aeed86-793e-4c31-b3c7-e31141b0c9d6",
+      "type": "heuristic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:13.935838",
+      "last_seen": "2026-02-18T04:37:13.935838"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize keywords with higher review counts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we want to get into the demographics that could describe your target reader"
+      ],
+      "id": "c18774b8-ee68-456a-b842-8edc87e01ae0",
+      "type": "heuristic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:51.380152",
+      "last_seen": "2026-02-18T04:37:51.380152"
+    },
+    {
+      "name": "Boost Low-Review Niche Categories",
+      "condition": "If a niche has low review counts but moderate BSR, prioritize it for content creation",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "what's the average monthly earnings do books about how to start a lawn care business earn"
+      ],
+      "id": "7b828ce7-dd32-4177-98b9-5800002168ce",
+      "type": "heuristic",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:24.191434",
+      "last_seen": "2026-02-18T04:38:24.191434"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Metadata keywords significantly impact book discoverability",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "keywords are basically the way to make that happen"
+      ],
+      "id": "946b79cf-557f-4319-b3f1-7619757b8a2f",
+      "type": "claim",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:41.796411",
+      "last_seen": "2026-02-18T04:36:41.796411"
+    },
+    {
+      "statement": "Amazon allows different keyword sets for Kindle and print formats due to differing buyer search behaviors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "people buy different types of books on eBook than they do in print book"
+      ],
+      "id": "f7b5f04a-343d-4410-9497-7cc25f8597e8",
+      "type": "claim",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:13.935838",
+      "last_seen": "2026-02-18T04:37:13.935838"
+    },
+    {
+      "statement": "Publisher Rocket provides metrics to assess keyword viability and market potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "using something like publisher rocket is actually really going to help you decide if your book has a market"
+      ],
+      "id": "af3b2207-1ffa-46d8-a066-4296cc82a57d",
+      "type": "claim",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:37:51.380152",
+      "last_seen": "2026-02-18T04:37:51.380152"
+    },
+    {
+      "statement": "Publisher Rocket provides estimated search volume data for Amazon keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is telling me that under a hundred searches per month are how to start a lawn care business"
+      ],
+      "id": "44d657fc-8457-495b-8765-9c7175473b07",
+      "type": "claim",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:38:24.191434",
+      "last_seen": "2026-02-18T04:38:24.191434"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with tailored keywords",
+      "why_it_works": "Increases relevance for niche markets",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "her book was for educators... we had to use the keywords that those types of people would use"
+      ],
+      "id": "47643b7f-7e5a-4018-a930-60281c46200e",
+      "type": "niche_pattern",
+      "provenance": [
+        "cEdFymJJbg4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:36:41.796411",
+      "last_seen": "2026-02-18T04:36:41.796411"
+    }
+  ]
+}

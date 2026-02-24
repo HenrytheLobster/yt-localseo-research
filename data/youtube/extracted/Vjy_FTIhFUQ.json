@@ -1,0 +1,296 @@
+{
+  "source_type": "youtube",
+  "video_id": "Vjy_FTIhFUQ",
+  "title": "How To Do Amazon Keyword Research Using Helium 10 | FULL TUTORIAL 2026!",
+  "extracted_at": "2026-02-18T04:52:37.193009",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 16644,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Cerebro Keyword Analysis",
+      "description": "Use Helium 10's Cerebro tool to analyze top-selling products' keywords by filtering organic listings and applying search volume/competitor filters.",
+      "steps": [
+        "Select top 10 organic products using X-ray (exclude sponsored)",
+        "Run Cerebro to extract 2,288+ keywords",
+        "Apply filters: min search volume (200-400), min 3 competitors, top 20 organic rank"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Cerebro",
+        "X-ray"
+      ],
+      "thresholds": {
+        "search_volume_min": 200,
+        "competitors_min": 3,
+        "competitor_rank_max": 20
+      },
+      "caveats": [
+        "Filters may reduce keyword volume but improve quality"
+      ],
+      "example_niches": [
+        "chopping board"
+      ],
+      "source_quotes": [
+        "'we only care about products ranked well organically'"
+      ],
+      "id": "bd34bb14-9967-42e5-9b0c-f6d8b548724f",
+      "type": "tactic",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:51:29.639728",
+      "last_seen": "2026-02-18T04:51:29.639728"
+    },
+    {
+      "name": "filter_by_indexed_products",
+      "description": "Filter keywords by ensuring at least three products/sellers are indexed in top 20 organic results for relevance",
+      "steps": [
+        "Apply filter to reduce keyword list from 200+ to 38",
+        "Manually review remaining terms for relevance",
+        "Exclude terms like 'silicon chopping board' if product doesn't match"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Cerebro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Too strict filters may leave fewer than 10 terms"
+      ],
+      "example_niches": [
+        "kitchenware"
+      ],
+      "source_quotes": [
+        "ast three of these products or at least three of these sellers are indexed..."
+      ],
+      "id": "043f15d1-cfe4-4374-b422-56d0f69c9514",
+      "type": "tactic",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:00.720623",
+      "last_seen": "2026-02-18T04:52:00.720623"
+    },
+    {
+      "name": "Cerebro + Magnet Keyword Filtering",
+      "description": "Combine Cerebro's reverse ASIN analysis with Magnet's database to capture high-volume keywords while filtering noise.",
+      "steps": [
+        "Use Cerebro for reverse ASIN analysis",
+        "Run Magnet with Helium 10's keyword database",
+        "Apply minimum search volume filter (200-300)",
+        "Set minimum word count filter (2+ words)",
+        "Manually vet remaining keywords for relevance"
+      ],
+      "signals_used": [
+        "search_volume",
+        "word_count"
+      ],
+      "tools_mentioned": [
+        "Cerebro",
+        "Magnet"
+      ],
+      "thresholds": {
+        "search_volume_min": 200,
+        "word_count_min": 2
+      },
+      "caveats": [
+        "Magnet returns more irrelevant keywords requiring manual filtering"
+      ],
+      "example_niches": [
+        "kitchenware",
+        "vape accessories"
+      ],
+      "source_quotes": [
+        "'Magnet returns a lot more keywords and many of them aren't as relevant'"
+      ],
+      "id": "ebb62c2f-9c11-42d1-8668-c7c92607506b",
+      "type": "tactic",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:37.192868",
+      "last_seen": "2026-02-18T04:52:37.192868"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitor Filter Heuristic",
+      "condition": "If keywords are used by at least 3 competitors in top 20 rank, prioritize them",
+      "machine_rule": {
+        "field": "competitors_count",
+        "op": "gte",
+        "value": 3
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'we want at least three of these products to have included this search term'"
+      ],
+      "id": "7cc0bad1-8de6-4c94-a9f5-971c2f45e957",
+      "type": "heuristic",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:51:29.639728",
+      "last_seen": "2026-02-18T04:51:29.639728"
+    },
+    {
+      "name": "sort_by_search_volume",
+      "condition": "If keywords remain after filtering, prioritize those with highest search volume",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gt",
+        "value": 100
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "sort them by search volume with the highest at the top"
+      ],
+      "id": "3c4ff403-4c90-4c2c-8f81-f27513f2fcbd",
+      "type": "heuristic",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:00.720623",
+      "last_seen": "2026-02-18T04:52:00.720623"
+    },
+    {
+      "name": "Volume-Filtered Keyword Boost",
+      "condition": "If search volume exceeds 300, prioritize keyword",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gte",
+        "value": 300
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'bump the search volume to 300 to get rid of more noise'"
+      ],
+      "id": "067eedc6-cb0f-4e18-8190-7a559ad1fe39",
+      "type": "heuristic",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:37.192868",
+      "last_seen": "2026-02-18T04:52:37.192868"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Cerebro's reverse acing technique is used in paid courses and mentorship programs",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'this is the exact method I teach in my course'"
+      ],
+      "id": "5b99ab2b-cc09-4fb2-a376-76ebca6531de",
+      "type": "claim",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:51:29.639728",
+      "last_seen": "2026-02-18T04:51:29.639728"
+    },
+    {
+      "statement": "Cerebro allows exporting up to 150 keywords to a folder for later reference",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "scroll down to the very bottom... change this up to 150"
+      ],
+      "id": "483f0c3c-e894-4778-a2ee-a4010b7c4468",
+      "type": "claim",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:00.720623",
+      "last_seen": "2026-02-18T04:52:00.720623"
+    },
+    {
+      "statement": "Helium 10's Magnet tool generates broader keyword lists but requires manual filtering to remove irrelevant terms.",
+      "category": "research_method",
+      "confidence": "medium",
+      "source_quotes": [
+        "'Magnet instead of doing a reverse acing... pulls from Helium 10's own database'"
+      ],
+      "id": "bfc7fb64-d4a3-481d-86d9-5f9d82259b19",
+      "type": "claim",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:37.192868",
+      "last_seen": "2026-02-18T04:52:37.192868"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "chopping board + kitchen use + durable material",
+      "description": "Target specific buyer needs with product attributes",
+      "why_it_works": "Filters out irrelevant keywords by focusing on organic top sellers",
+      "signals": [
+        "low review counts",
+        "BSR positioning"
+      ],
+      "source_quotes": [
+        "'we want to find the search terms that are most relevant'"
+      ],
+      "id": "3745fe48-fd55-4b01-a6be-46d7825337e5",
+      "type": "niche_pattern",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:51:29.639728",
+      "last_seen": "2026-02-18T04:51:29.639728"
+    },
+    {
+      "pattern_template": "PRODUCT + FUNCTION + CONSTRAINT",
+      "example": "chopping board + cutting surface + commercial use",
+      "description": "Identify product-specific keywords with functional constraints for better targeting",
+      "why_it_works": "Filters out generic terms like 'kitchen' while retaining actionable keywords",
+      "signals": [
+        "search_volume",
+        "keyword_specificity"
+      ],
+      "source_quotes": [
+        "'vape guard or vape board, tighter, chef, commercial, kitchen'"
+      ],
+      "id": "910bb9f4-842d-4a67-9cab-ba1c2d1dfb3c",
+      "type": "niche_pattern",
+      "provenance": [
+        "Vjy_FTIhFUQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:52:37.192868",
+      "last_seen": "2026-02-18T04:52:37.192868"
+    }
+  ]
+}

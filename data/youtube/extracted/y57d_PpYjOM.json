@@ -1,0 +1,232 @@
+{
+  "source_type": "youtube",
+  "video_id": "y57d_PpYjOM",
+  "title": "3 Free Amazon KDP Keyword Research Tools",
+  "extracted_at": "2026-02-18T12:59:54.095699",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6104,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Keyword Suggestions",
+      "description": "Use Amazon's search bar to find long-tail keywords by typing a keyword and analyzing suggested phrases with search volume indicators.",
+      "steps": [
+        "Type a keyword into Amazon's search bar",
+        "Identify suggested long-tail keywords",
+        "Check competition via product count and review data"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon"
+      ],
+      "thresholds": {
+        "reviews_max": 25000,
+        "bsr_max": 687
+      },
+      "caveats": [
+        "Limited to Amazon's suggested keywords"
+      ],
+      "example_niches": [
+        "dog training"
+      ],
+      "source_quotes": [
+        "'Amazon is suggesting us discovered long tail keyword'"
+      ],
+      "id": "45afd059-00ee-420a-927f-a1d356789e03",
+      "type": "tactic",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:25.188169",
+      "last_seen": "2026-02-18T12:59:25.188169"
+    },
+    {
+      "name": "SellerApp Keyword Analysis",
+      "description": "Use SellerApp to analyze search volume, CPC, and keyword difficulty for Amazon keywords.",
+      "steps": [
+        "Input keyword into SellerApp",
+        "Review search volume and CPC data",
+        "Assess keyword difficulty score"
+      ],
+      "signals_used": [
+        "search_volume",
+        "cpc",
+        "keyword_difficulty"
+      ],
+      "tools_mentioned": [
+        "sellerapp.com"
+      ],
+      "thresholds": {
+        "reviews_max": 25000,
+        "bsr_max": 120000
+      },
+      "caveats": [
+        "Requires premium subscription for full data"
+      ],
+      "example_niches": [
+        "dog training color"
+      ],
+      "source_quotes": [
+        "'cost per click is 1.77 1.37'"
+      ],
+      "id": "c47a875f-4701-4900-b632-2f2836826772",
+      "type": "tactic",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:25.188169",
+      "last_seen": "2026-02-18T12:59:25.188169"
+    },
+    {
+      "name": "free_tool_trial",
+      "description": "Use free KDP keyword research tools with a seven-day trial period to evaluate their effectiveness",
+      "steps": [
+        "Check seven-day free trial",
+        "Assess tool performance",
+        "Decide on premium tool usage"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When trial period expires"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "they have seven day free trial so you can check it out for seven days"
+      ],
+      "id": "73363434-df60-47e1-949b-3b68343354b8",
+      "type": "tactic",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:54.095472",
+      "last_seen": "2026-02-18T12:59:54.095472"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Signal",
+      "condition": "If keyword difficulty score is below 70, prioritize it",
+      "machine_rule": {
+        "field": "keyword_difficulty",
+        "op": "lt",
+        "value": 70
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'keyword difficulty as you can see it's 72'"
+      ],
+      "id": "b4d16dbd-9cb0-4d69-a315-1b894b7b4794",
+      "type": "heuristic",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:25.188169",
+      "last_seen": "2026-02-18T12:59:25.188169"
+    },
+    {
+      "name": "trial_based_decision",
+      "condition": "If free trial tool shows low review counts, then boost premium tool consideration",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you are then you should use one of these premium tools"
+      ],
+      "id": "814c2ad1-05fe-4609-87b1-f11aac6d8e18",
+      "type": "heuristic",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:54.095472",
+      "last_seen": "2026-02-18T12:59:54.095472"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keyword Tool.io has weekly limits on free searches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'you can do only one free search every week'"
+      ],
+      "id": "fcafe441-9f67-4d8c-85ff-581e10704ae7",
+      "type": "claim",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:25.188169",
+      "last_seen": "2026-02-18T12:59:25.188169"
+    },
+    {
+      "statement": "Amazon KDP offers free keyword research tools with seven-day trial periods",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they have seven day free trial so you can check it out for seven days"
+      ],
+      "id": "283d6902-c6fb-4262-baf3-35d1032709fb",
+      "type": "claim",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:54.095472",
+      "last_seen": "2026-02-18T12:59:54.095472"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "large dogs + training difficulty + waterproof",
+      "description": "Combine product identity with specific use cases and constraints to target niche keywords",
+      "why_it_works": "Captures specific buyer intent with technical requirements",
+      "signals": [
+        "low review counts",
+        "specific features"
+      ],
+      "source_quotes": [
+        "'dog training color with remote for large dogs'"
+      ],
+      "id": "0739ea59-79bd-4b48-8cd5-151fdbecb283",
+      "type": "niche_pattern",
+      "provenance": [
+        "y57d_PpYjOM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:59:25.188169",
+      "last_seen": "2026-02-18T12:59:25.188169"
+    }
+  ]
+}

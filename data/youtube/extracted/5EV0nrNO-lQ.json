@@ -1,0 +1,287 @@
+{
+  "source_type": "youtube",
+  "video_id": "5EV0nrNO-lQ",
+  "title": "Should You Buy Publisher Rocket? (My Take After 19 Books)",
+  "extracted_at": "2026-02-18T22:28:49.549393",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15566,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket to identify high-potential keywords for Amazon publishing by filtering Kindle-only searches and analyzing competition scores.",
+      "steps": [
+        "Search for keywords related to your niche (e.g., 'business coaching').",
+        "Sort results by estimated monthly searches and competition score.",
+        "Analyze top-ranking books using the competition analyzer tool."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Estimated search data is not exact and fluctuates over time."
+      ],
+      "example_niches": [
+        "business coaching",
+        "self-help"
+      ],
+      "source_quotes": [
+        "I look for anything under 65 [competition score], but new authors might want under 40."
+      ],
+      "id": "b48e23ca-ec35-4979-965f-06078b67e473",
+      "type": "tactic",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:27:30.247339",
+      "last_seen": "2026-02-18T22:27:30.247339"
+    },
+    {
+      "name": "Category Rank Analysis",
+      "description": "Use Publisher Rocket to identify categories with low sales thresholds for ranking.",
+      "steps": [
+        "Check competition analyzer for category sales data",
+        "Filter categories requiring 10-14 sales to rank #1",
+        "Select niched topics for Kindle/paperback/hardcover formats"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires accurate sales data from Amazon"
+      ],
+      "example_niches": [
+        "business coaching",
+        "sales strategies"
+      ],
+      "source_quotes": [
+        "'This category only took 10 sales to hit number one'"
+      ],
+      "id": "9c92e4b7-dfe2-4a76-8d9d-2ac36b3b70cd",
+      "type": "tactic",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:28:08.185983",
+      "last_seen": "2026-02-18T22:28:08.185983"
+    },
+    {
+      "name": "Keyword Brainstorming",
+      "description": "Generate keyword ideas by analyzing successful book categories.",
+      "steps": [
+        "Use category search with seed terms like 'coach'",
+        "Filter out irrelevant categories (e.g., sports)",
+        "Select high-intent keywords like 'business for beginners'"
+      ],
+      "signals_used": [
+        "BSR",
+        "category_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 100,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Avoid overly broad terms"
+      ],
+      "example_niches": [
+        "marketing strategies",
+        "profitable business"
+      ],
+      "source_quotes": [
+        "'Sales, marketing, profit for businesses'"
+      ],
+      "id": "76f9f93e-119a-4c04-acdd-f664007d86ed",
+      "type": "tactic",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:28:08.185983",
+      "last_seen": "2026-02-18T22:28:08.185983"
+    },
+    {
+      "name": "keyword_research_for_ads",
+      "description": "Use Publisher Rocket to identify and export high-relevancy keywords for Amazon ads targeting specific niches.",
+      "steps": [
+        "Find search terms related to seven Kindle keywords",
+        "Add preferred keywords to a list",
+        "Export keywords for Amazon ads targeting specific phrases"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When keyword relevance fails to align with product niche"
+      ],
+      "example_niches": [
+        "online_business_plan"
+      ],
+      "source_quotes": [
+        "you can go through here and you just continue to build out this very highly targeted list of keywords"
+      ],
+      "id": "f7b72523-badd-4ecb-b6f9-5177dc735e41",
+      "type": "tactic",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:28:49.549239",
+      "last_seen": "2026-02-18T22:28:49.549239"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low-Competition Targeting",
+      "condition": "If a keyword has low competition and moderate search volume, prioritize it for Amazon ads or descriptions.",
+      "machine_rule": {
+        "field": "competition_score",
+        "op": "lt",
+        "value": 65
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I look for anything under 65 [competition score]..."
+      ],
+      "id": "6eb50de4-40aa-44e0-a296-64b9b3c2ed25",
+      "type": "heuristic",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:27:30.247339",
+      "last_seen": "2026-02-18T22:27:30.247339"
+    },
+    {
+      "name": "cost_efficiency_heuristic",
+      "condition": "If monthly subscription costs exceed one-time purchase value, prioritize one-time tools",
+      "machine_rule": {
+        "field": "tool_cost",
+        "op": "gt",
+        "value": 47
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Publisher Rocket is a onetime purchase... Book Beam will run you about $47 per month"
+      ],
+      "id": "4c5a3ac3-f43b-4bf3-a8c8-04777fcba365",
+      "type": "heuristic",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:28:49.549239",
+      "last_seen": "2026-02-18T22:28:49.549239"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides estimated Amazon search data for keywords, which is useful for ranking analysis but not exact.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "This is just an estimation. It changes and fluctuates."
+      ],
+      "id": "57d5c44e-7ad5-493a-98f3-6758fcbbaa44",
+      "type": "claim",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:27:30.247339",
+      "last_seen": "2026-02-18T22:27:30.247339"
+    },
+    {
+      "statement": "Publisher Rocket can identify categories with 10-14 sales needed to rank #1",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'This category only took 10 sales to hit number one'"
+      ],
+      "id": "b8f08abb-0bd2-4700-94d2-e05e277876f6",
+      "type": "claim",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:28:08.185983",
+      "last_seen": "2026-02-18T22:28:08.185983"
+    },
+    {
+      "statement": "Publisher Rocket provides unlimited research access after a one-time purchase",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I bought this several years ago, and they just keep adding new features"
+      ],
+      "id": "9908c0c5-157b-4748-b5ca-b332e5cd3696",
+      "type": "claim",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:28:49.549239",
+      "last_seen": "2026-02-18T22:28:49.549239"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "business coaching + low competition + new author",
+      "description": "Target niches with specific identity and constraints to maximize keyword effectiveness.",
+      "why_it_works": "Combines niche relevance with low competition for better ranking potential.",
+      "signals": [
+        "low review counts",
+        "low competition scores"
+      ],
+      "source_quotes": [
+        "New authors might want to go under 40 [competition score]."
+      ],
+      "id": "75825dd6-8535-4158-8f9c-9e83772dfb2d",
+      "type": "niche_pattern",
+      "provenance": [
+        "5EV0nrNO-lQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:27:30.247339",
+      "last_seen": "2026-02-18T22:27:30.247339"
+    }
+  ]
+}

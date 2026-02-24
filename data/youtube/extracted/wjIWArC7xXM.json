@@ -1,0 +1,216 @@
+{
+  "source_type": "youtube",
+  "video_id": "wjIWArC7xXM",
+  "title": "Amazon BSR Explained - What Is Best Seller Rank?",
+  "extracted_at": "2026-02-18T04:06:41.405429",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6280,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "BSR Analysis with Tools",
+      "description": "Use Amazon's Best Seller Rank and third-party tools to evaluate product performance and sales estimates.",
+      "steps": [
+        "Search for products on Amazon",
+        "Use Amazon DS Quick View plugin to view BSR on product pages",
+        "Input BSR and category into Jungle Scout for sales estimation"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon DS Quick View plugin",
+        "Jungle Scout"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "BSR is fluid and changes hourly",
+        "Does not reflect real-time sales velocity"
+      ],
+      "example_niches": [
+        "t-shirts",
+        "print-on-demand products"
+      ],
+      "source_quotes": [
+        "the lower the number the more it's selling in general"
+      ],
+      "id": "9563130e-333d-4934-9dd3-5803a02713fb",
+      "type": "tactic",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:10.737012",
+      "last_seen": "2026-02-18T04:06:10.737012"
+    },
+    {
+      "name": "BSR Sales Estimation",
+      "description": "Use Best Seller Rank to estimate monthly sales by dividing units sold by 30 days",
+      "steps": [
+        "Calculate monthly units from BSR",
+        "Divide by 30 for daily sales"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Keepa"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Numbers fluctuate frequently"
+      ],
+      "example_niches": [
+        "print on demand products"
+      ],
+      "source_quotes": [
+        "we're going to hit calculate sales and it'll tell us how many units approximately per month that this is selling"
+      ],
+      "id": "aa5985f8-da56-44de-afa7-ecc5d68efaac",
+      "type": "tactic",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:41.405208",
+      "last_seen": "2026-02-18T04:06:41.405208"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "BSR Threshold Boost",
+      "condition": "If BSR is below 50,000, prioritize product",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "lt",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the lower the number the better"
+      ],
+      "id": "daf0eb04-86b7-43b8-89fd-50989380ac7c",
+      "type": "heuristic",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:10.737012",
+      "last_seen": "2026-02-18T04:06:10.737012"
+    },
+    {
+      "name": "Consistency Check",
+      "condition": "If BSR fluctuates widely over time",
+      "machine_rule": {
+        "field": "bsr_change",
+        "op": "gte",
+        "value": 20000
+      },
+      "action": "flag",
+      "weight": 0.7,
+      "source_quotes": [
+        "we can look at the data tab we can look at the product details and we can see the sales rank"
+      ],
+      "id": "2d3cc467-cf27-4992-974c-4f7e61b73f62",
+      "type": "heuristic",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:41.405208",
+      "last_seen": "2026-02-18T04:06:41.405208"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon Best Seller Rank is calculated based on sales data and updates hourly.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the calculation is based on amazon sales and is updated hourly"
+      ],
+      "id": "717ea53d-94ed-4487-8e4f-731f1cf4b0e4",
+      "type": "claim",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:10.737012",
+      "last_seen": "2026-02-18T04:06:10.737012"
+    },
+    {
+      "statement": "BSR can predict sales performance across platforms",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can use the best seller ranking as a really good gauge on how well that it's going to sell"
+      ],
+      "id": "a46f693d-ac75-4956-b479-755909cdcb68",
+      "type": "claim",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:41.405208",
+      "last_seen": "2026-02-18T04:06:41.405208"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "product_type + sales_rank + niche",
+      "example": "t-shirts + BSR 13,586 + print-on-demand",
+      "description": "Identify niches with high BSR in specific categories for competitive advantage",
+      "why_it_works": "High BSR indicates established demand, while niche specificity reduces competition",
+      "signals": [
+        "low BSR",
+        "category-specific sales data"
+      ],
+      "source_quotes": [
+        "you want to look at the top level category"
+      ],
+      "id": "eda0339d-e91e-400d-b070-ba6f98263d3d",
+      "type": "niche_pattern",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:10.737012",
+      "last_seen": "2026-02-18T04:06:10.737012"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen planners + organization struggles + budget-friendly",
+      "description": "Identify underserved niches with low competition",
+      "why_it_works": "Low review counts indicate untapped market potential",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "when it comes to like print on demand products"
+      ],
+      "id": "81d44b24-c50a-4a8b-ba68-1adf87c6c044",
+      "type": "niche_pattern",
+      "provenance": [
+        "wjIWArC7xXM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:06:41.405208",
+      "last_seen": "2026-02-18T04:06:41.405208"
+    }
+  ]
+}

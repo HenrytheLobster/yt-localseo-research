@@ -1,0 +1,124 @@
+{
+  "source_type": "youtube",
+  "video_id": "ojUiUkLvSjI",
+  "title": "How to Check BSR of a Profitable Book on Amazon that you want to Model",
+  "extracted_at": "2026-02-19T00:19:22.059668",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2885,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "BSR Profit Analysis",
+      "description": "Use BSR rank and sales data to evaluate book profitability",
+      "steps": [
+        "Access Amazon KDP sales calculator",
+        "Input BSR rank (e.g., 32,736)",
+        "Calculate daily/monthly sales",
+        "Multiply by price per unit ($12 example)",
+        "Convert to local currency (Naira)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Kiwi",
+        "Amazon KDP sales calculator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires accurate BSR input",
+        "Does not account for price changes"
+      ],
+      "example_niches": [
+        "teen planner",
+        "self-help"
+      ],
+      "source_quotes": [
+        "this book is making 1.1 20 million naira in it"
+      ],
+      "id": "ad3d2f24-f792-462b-a1b3-1480643928d5",
+      "type": "tactic",
+      "provenance": [
+        "ojUiUkLvSjI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:19:22.059540",
+      "last_seen": "2026-02-19T00:19:22.059540"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are below 200, prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this book was three thousand right it was 32 000 rather"
+      ],
+      "id": "291c8673-4aef-4a57-bed0-34509cd8bb97",
+      "type": "heuristic",
+      "provenance": [
+        "ojUiUkLvSjI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:19:22.059540",
+      "last_seen": "2026-02-19T00:19:22.059540"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Books with BSR <50,000 can generate $1,600/month at $12 price point",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this book is making 1 600 US dollars in a month"
+      ],
+      "id": "1f3618b3-354d-46c0-a6fc-ecc1d5d9a7a3",
+      "type": "claim",
+      "provenance": [
+        "ojUiUkLvSjI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:19:22.059540",
+      "last_seen": "2026-02-19T00:19:22.059540"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with niche constraints",
+      "why_it_works": "Creates focused market opportunity",
+      "signals": [
+        "low review counts",
+        "specific BSR thresholds"
+      ],
+      "source_quotes": [
+        "this book said 75 000 naira every day"
+      ],
+      "id": "b51cd2db-d1d9-4af3-8423-781104fb9bca",
+      "type": "niche_pattern",
+      "provenance": [
+        "ojUiUkLvSjI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:19:22.059540",
+      "last_seen": "2026-02-19T00:19:22.059540"
+    }
+  ]
+}

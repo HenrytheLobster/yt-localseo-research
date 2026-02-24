@@ -1,0 +1,411 @@
+{
+  "source_type": "youtube",
+  "video_id": "AVS-qVZCRhQ",
+  "title": "BOOK BOLT Amazon Research Tools Step-by-Step Training Tutorial",
+  "extracted_at": "2026-02-18T12:57:18.478924",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 23894,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Amazon Keyword Research",
+      "description": "Use Book Bolt's real-time Amazon search to find top-selling books in specific categories.",
+      "steps": [
+        "Enter keywords and select a category",
+        "View top 100 bestselling books",
+        "Analyze keywords and reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may not reflect real-time Amazon rankings"
+      ],
+      "example_niches": [
+        "food log",
+        "baby food log"
+      ],
+      "source_quotes": [
+        "this tool will help you look at the top 100 books based on something related to what you're thinking about creating"
+      ],
+      "id": "a87ca1f8-b0c3-420d-954f-c5669d55971b",
+      "type": "tactic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:25.615640",
+      "last_seen": "2026-02-18T12:55:25.615640"
+    },
+    {
+      "name": "Seller Tab Analysis",
+      "description": "Research brand names and book stats for marketing analysis by searching Amazon bestsellers and reviewing seller performance.",
+      "steps": [
+        "Search Amazon bestsellers by category",
+        "Identify brand/author names from top sellers",
+        "Paste brand names into Book Bolt's Seller tab",
+        "Review current bestsellers and statistics for the brand"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May not show all books from a brand, only trending bestsellers"
+      ],
+      "example_niches": [
+        "activity books",
+        "diaries"
+      ],
+      "source_quotes": [
+        "'take notice of the brand name... paste into book bolt'"
+      ],
+      "id": "e3903587-3904-4e6d-ab6c-3ce0639d8d3a",
+      "type": "tactic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:58.970166",
+      "last_seen": "2026-02-18T12:55:58.970166"
+    },
+    {
+      "name": "Cloud Tab Research",
+      "description": "Filter top-selling books by category, price range, and keywords to analyze pricing trends and sales rank history.",
+      "steps": [
+        "Select category and BSR range",
+        "Adjust price range filters",
+        "Enter optional keywords",
+        "Review BSR price history and sales trends"
+      ],
+      "signals_used": [
+        "BSR",
+        "price_history"
+      ],
+      "tools_mentioned": [
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "price_max": 25
+      },
+      "caveats": [
+        "Provides 30-day historical data, not real-time"
+      ],
+      "example_niches": [
+        "notebooks",
+        "planners"
+      ],
+      "source_quotes": [
+        "'see estimated sales for the month and history for the past 30 days'"
+      ],
+      "id": "a48f7b67-e1c8-4c7f-a3d5-d4e6b309f2b8",
+      "type": "tactic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:58.970166",
+      "last_seen": "2026-02-18T12:55:58.970166"
+    },
+    {
+      "name": "Keyword Research with ASIN Lookup",
+      "description": "Extract keywords from bestselling books by searching for ASINs and analyzing keyword data.",
+      "steps": [
+        "Search for top 100 bestsellers using keywords like 'planes train and Automobiles'",
+        "Copy ASIN numbers from bestselling books",
+        "Paste ASINs into KDP categories tab for keyword analysis",
+        "Review search volume, competition, and related keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "KDP categories tab"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May miss long-tail keywords",
+        "Requires manual filtering of irrelevant terms"
+      ],
+      "example_niches": [
+        "teen planner",
+        "dog training guides"
+      ],
+      "source_quotes": [
+        "'16,184 people search using this particular keyword phrase within a month'"
+      ],
+      "id": "e3c34c6a-28fb-4de3-9cfc-b9e7a1321449",
+      "type": "tactic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:56:39.358429",
+      "last_seen": "2026-02-18T12:56:39.358429"
+    },
+    {
+      "name": "Category Optimization",
+      "description": "Use Book Bolt's KDP Categories Tool to identify high-traffic, low-competition categories for your book",
+      "steps": [
+        "Enter a broad niche keyword in the search box",
+        "Review suggested categories and their performance metrics",
+        "Select categories that are popular but not overly competitive"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Bolt KDP Categories Tool"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May not account for seasonal trends"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "this book is number one in this first flowers and Landscaping coloring books for grown-ups"
+      ],
+      "id": "a1109895-a217-4758-8930-acd08229956c",
+      "type": "tactic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:18.478805",
+      "last_seen": "2026-02-18T12:57:18.478805"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Filter",
+      "condition": "If a book has fewer than 200 reviews, prioritize it for niche targeting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "when you create your book that you want to get ideas but then make your book cover even better"
+      ],
+      "id": "608df6a2-8eba-445a-a6af-5586a140bbec",
+      "type": "heuristic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:25.615640",
+      "last_seen": "2026-02-18T12:55:25.615640"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are less than 200, prioritize books with higher BSR rankings",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'check their ranking... see more information'"
+      ],
+      "id": "386a68f3-61f6-4424-96b2-9b85b1234a01",
+      "type": "heuristic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:58.970166",
+      "last_seen": "2026-02-18T12:55:58.970166"
+    },
+    {
+      "name": "High-Volume Keyword Prioritization",
+      "condition": "If keyword search volume exceeds 10,000 monthly searches, prioritize for optimization",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gt",
+        "value": 10000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'8,000 searches per month for people looking for 101 dog tricks'"
+      ],
+      "id": "fb8c9f4a-41a4-4432-af5d-361cf13ecf91",
+      "type": "heuristic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:56:39.358429",
+      "last_seen": "2026-02-18T12:56:39.358429"
+    },
+    {
+      "name": "Review-Driven Visibility",
+      "condition": "If a book has fewer than 200 reviews, prioritize boosting its visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it has 608 reviews let's click on this book"
+      ],
+      "id": "228e2612-a8ea-4f77-bf56-53c0b3530340",
+      "type": "heuristic",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:18.478805",
+      "last_seen": "2026-02-18T12:57:18.478805"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Book Bolt provides real-time Amazon keyword research and book creation tools for KDP authors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "book bolt has all the tools you need to help you succeed"
+      ],
+      "id": "9b8f6189-75dd-4874-8b89-56c5ee890d0e",
+      "type": "claim",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:25.615640",
+      "last_seen": "2026-02-18T12:55:25.615640"
+    },
+    {
+      "statement": "Book Bolt's Cloud tab provides daily updated sales rank history for the past 30 days.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'provides statistics on the past 30 days'"
+      ],
+      "id": "982d0928-ee8c-4306-8ac5-23cfbc64f332",
+      "type": "claim",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:58.970166",
+      "last_seen": "2026-02-18T12:55:58.970166"
+    },
+    {
+      "statement": "KDP categories tab provides keyword suggestions based on Amazon search trends",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'Keywords tab provides keyword suggestions to help your book get found'"
+      ],
+      "id": "9b31ee3c-dd75-4f07-bd7e-5951e5a5f60b",
+      "type": "claim",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:56:39.358429",
+      "last_seen": "2026-02-18T12:56:39.358429"
+    },
+    {
+      "statement": "KDP Spy provides detailed analytics on book performance including estimated sales and revenue",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it also shows the average rating the number of ratings estimated sales estimated Revenue"
+      ],
+      "id": "5796ce23-b8fd-4846-9a29-7f165756da28",
+      "type": "claim",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:57:18.478805",
+      "last_seen": "2026-02-18T12:57:18.478805"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "food log + dietary restrictions + low review count",
+      "description": "Target underserved niches with specific constraints using low-review keywords",
+      "why_it_works": "Identifies gaps in existing market offerings",
+      "signals": [
+        "low review counts",
+        "specific categories"
+      ],
+      "source_quotes": [
+        "you want to remember that when you create your book that you want to get ideas but then make your book cover even better"
+      ],
+      "id": "8a2cc036-25eb-4044-8832-7e62884aa62f",
+      "type": "niche_pattern",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:55:25.615640",
+      "last_seen": "2026-02-18T12:55:25.615640"
+    },
+    {
+      "pattern_template": "ACTIVITY + AGE_GROUP + FORMAT",
+      "example": "coloring books + 6-8 years + activity guide",
+      "description": "Target specific age groups with activity-based content for higher engagement",
+      "why_it_works": "Aligns with Amazon's category filtering and parental search behavior",
+      "signals": [
+        "low review counts",
+        "high BSR in activity categories"
+      ],
+      "source_quotes": [
+        "'Add a category for coloring books'"
+      ],
+      "id": "21f00748-f827-408b-825e-c3342ad14407",
+      "type": "niche_pattern",
+      "provenance": [
+        "AVS-qVZCRhQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:56:39.358429",
+      "last_seen": "2026-02-18T12:56:39.358429"
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "source_type": "youtube",
+  "video_id": "yK0vQiajiU0",
+  "title": "Publisher Rocket: The Ultimate Author Tool?",
+  "extracted_at": "2026-02-18T22:36:53.975582",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 18748,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "keyword research optimization",
+      "description": "tool for optimizing book listings via keyword and category research",
+      "steps": [
+        "type keyword into tool",
+        "analyze competitive score",
+        "select keywords based on metrics"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "when regional keyword differences are overlooked"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Publisher Rocket will help you get your book in front of more Amazon shoppers..."
+      ],
+      "id": "3c1692b2-70cf-4138-a71b-05e5b9c88f06",
+      "type": "tactic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:19.807727",
+      "last_seen": "2026-02-18T22:35:19.807727"
+    },
+    {
+      "name": "Keyword Search Volume Threshold",
+      "description": "Prioritize keywords with estimated search volume above 1000 to ensure sufficient audience reach.",
+      "steps": [
+        "Check estimated Amazon searches per month",
+        "Filter keywords with volume > 1000"
+      ],
+      "signals_used": [
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 1000
+      },
+      "caveats": [
+        "Volume alone doesn't guarantee sales"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I like to see search volume above a thousand"
+      ],
+      "id": "69b3fc9f-3b5a-46e6-9ebf-3fa27679d0b1",
+      "type": "tactic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:51.980390",
+      "last_seen": "2026-02-18T22:35:51.980390"
+    },
+    {
+      "name": "Competitive Score Analysis",
+      "description": "Evaluate keywords based on competitive score and compare with top-ranking books.",
+      "steps": [
+        "Use competition analyzer tool",
+        "Compare book metadata with competitors"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Authors often skip this step"
+      ],
+      "example_niches": [
+        "Christian fiction"
+      ],
+      "source_quotes": [
+        "Does your book match those books?"
+      ],
+      "id": "a81e2be3-9760-418e-a73c-b9f2fd7e5388",
+      "type": "tactic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:51.980390",
+      "last_seen": "2026-02-18T22:35:51.980390"
+    },
+    {
+      "name": "Category Optimization",
+      "description": "Selecting optimal Amazon categories to improve discoverability through browse paths and bestseller lists",
+      "steps": [
+        "Input keywords to identify relevant categories",
+        "Check browse paths via Amazon's browser",
+        "Analyze BSR and sales data for top positions"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When categories fail to align with target audience"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "You can select two categories with inside your KDP dashboard... up to 10 categories per ebook"
+      ],
+      "id": "2341edcd-a233-4475-82dc-3b4d86dd9345",
+      "type": "tactic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:36:24.364434",
+      "last_seen": "2026-02-18T22:36:24.364434"
+    },
+    {
+      "name": "Publisher Rocket Optimization",
+      "description": "A long-term tool for saving time by optimizing listings across multiple regions.",
+      "steps": [
+        "Check if multiple books generate enough revenue",
+        "Optimize listings in US, UK, Germany",
+        "Use 30-day money-back guarantee if unsatisfied"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Not life-changing in short-term",
+        "Requires discretionary spending"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "It's a long game type tool. It's something that's going to help you save a lot of time."
+      ],
+      "id": "d4775277-8aef-417b-8d88-d9e59fc866af",
+      "type": "tactic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:36:53.975463",
+      "last_seen": "2026-02-18T22:36:53.975463"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low review boost",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "It saves time and removes guesswork..."
+      ],
+      "id": "feef4333-a85e-4291-8cc7-6be992f2af48",
+      "type": "heuristic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:19.807727",
+      "last_seen": "2026-02-18T22:35:19.807727"
+    },
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are below 200, prioritize keywords with higher review counts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I don't know if that means there's not enough proof of concept"
+      ],
+      "id": "242ffa93-3856-4e93-900e-8f822c11419b",
+      "type": "heuristic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:51.980390",
+      "last_seen": "2026-02-18T22:35:51.980390"
+    },
+    {
+      "name": "Review-BSR Correlation",
+      "condition": "If median reviews are below 200, prioritize BSR optimization",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Check it out feature... analyze BSR and sales data"
+      ],
+      "id": "96256a18-875f-4208-8a6b-e069796ddb3e",
+      "type": "heuristic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:36:24.364434",
+      "last_seen": "2026-02-18T22:36:24.364434"
+    },
+    {
+      "name": "Low Review Boost",
+      "condition": "If median_reviews is less than 200, boost optimization potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If you have multiple books and bringing enough revenue right now to afford it, say yes, get it for sure."
+      ],
+      "id": "0a3b7544-bc9b-42be-bc4e-fe3c228b8227",
+      "type": "heuristic",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:36:53.975463",
+      "last_seen": "2026-02-18T22:36:53.975463"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket optimizes Amazon book listings via keyword/category research",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "It's for optimizing your book listings..."
+      ],
+      "id": "2b59bedc-9893-4fa6-ba74-4c9527b66927",
+      "type": "claim",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:19.807727",
+      "last_seen": "2026-02-18T22:35:19.807727"
+    },
+    {
+      "statement": "Amazon categories are frequently updated with name changes and new classifications.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Categories are always changing on Amazon"
+      ],
+      "id": "31dbdac1-469b-4958-ab42-fe53ea72b677",
+      "type": "claim",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:51.980390",
+      "last_seen": "2026-02-18T22:35:51.980390"
+    },
+    {
+      "statement": "KDP allows up to 10 categories per ebook and print book",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You can select two categories... up to 10 categories per ebook"
+      ],
+      "id": "ddce8933-fe34-48d1-9745-9cff4198ce6a",
+      "type": "claim",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:36:24.364434",
+      "last_seen": "2026-02-18T22:36:24.364434"
+    },
+    {
+      "statement": "Publisher Rocket helps authors save time by optimizing listings across US, UK, and Germany.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You can go back through and optimize all of your listings and you'll thank me because you can do it over in US, UK, Germany"
+      ],
+      "id": "48d5b053-8464-4df4-8152-cbf0787d4aa0",
+      "type": "claim",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:36:53.975463",
+      "last_seen": "2026-02-18T22:36:53.975463"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "targets underserved niche markets with specific constraints",
+      "why_it_works": "low competition and high specificity",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Each region has its own set of relevant keywords..."
+      ],
+      "id": "9ba26a8f-480d-48b0-8715-3b6c36c0f0aa",
+      "type": "niche_pattern",
+      "provenance": [
+        "yK0vQiajiU0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:35:19.807727",
+      "last_seen": "2026-02-18T22:35:19.807727"
+    }
+  ]
+}

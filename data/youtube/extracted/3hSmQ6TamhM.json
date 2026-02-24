@@ -1,0 +1,197 @@
+{
+  "source_type": "youtube",
+  "video_id": "3hSmQ6TamhM",
+  "title": "Publisher Rocket - Keyword Research for Book Titles - Bitcoin / Crypto",
+  "extracted_at": "2026-02-18T22:40:42.452939",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11047,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "keyword competitiveness analysis",
+      "description": "Evaluate keyword viability using Publisher Rocket metrics to identify low-competition opportunities",
+      "steps": [
+        "Input target keyword (e.g., 'Bitcoin')",
+        "Filter for book titles with 800+ monthly searches",
+        "Analyze BSR, competitor count, and price ranges",
+        "Avoid trademarked terms like 'Dummies' series"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Main keyword 'Bitcoin' is oversaturated"
+      ],
+      "example_niches": [
+        "Bitcoin investing"
+      ],
+      "source_quotes": [
+        "Bitcoin has over 40,000 competitors using that term"
+      ],
+      "id": "56b9ad8a-0d8a-4c02-b6a7-6a66138de3c5",
+      "type": "tactic",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:11.574651",
+      "last_seen": "2026-02-18T22:40:11.574651"
+    },
+    {
+      "name": "Alternative Keyword Strategy",
+      "description": "Use broader terms like 'cryptocurrency' instead of oversaturated keywords like 'Bitcoin' to reduce competition while maintaining search volume.",
+      "steps": [
+        "Search for alternative keywords",
+        "Analyze competitor scores",
+        "Test longtail keywords in subtitles"
+      ],
+      "signals_used": [
+        "competitor_score",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitor_score_max": 66,
+        "search_volume_min": 500
+      },
+      "caveats": [
+        "Avoid four-dummies language",
+        "Ensure keyword relevance"
+      ],
+      "example_niches": [
+        "cryptocurrency for beginners",
+        "Bitcoin demystified"
+      ],
+      "source_quotes": [
+        "'You could lean either way, but still with cryptocurrency as the title of the book, you are getting a lot less on the competitive side here.'"
+      ],
+      "id": "3de86353-18ff-4973-b5e3-d4ed54f56699",
+      "type": "tactic",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:42.452819",
+      "last_seen": "2026-02-18T22:40:42.452819"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low competition boost",
+      "condition": "If keyword has <200 reviews and BSR <50000, prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Bitcoin standard has 756 books... moderately competitive"
+      ],
+      "id": "c3002e34-be51-4c7e-820a-6d10aa45ff1f",
+      "type": "heuristic",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:11.574651",
+      "last_seen": "2026-02-18T22:40:11.574651"
+    },
+    {
+      "name": "Low Competition Boost",
+      "condition": "If competitor score is below 66 and search volume exceeds 500, prioritize the keyword",
+      "machine_rule": {
+        "field": "competitor_score",
+        "op": "lt",
+        "value": 66
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'cryptocurrency 588 monthly searches on Amazon, a 66 moderately competitive um competitor score'"
+      ],
+      "id": "478f9d53-bc5c-48a9-91cb-70a99d1c60e9",
+      "type": "heuristic",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:42.452819",
+      "last_seen": "2026-02-18T22:40:42.452819"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Bitcoin keyword has 40,000+ competitors in KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Bitcoin has over 40,000 competitors using that term"
+      ],
+      "id": "7d5dc4dd-5409-4d14-828c-d55d37df1858",
+      "type": "claim",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:11.574651",
+      "last_seen": "2026-02-18T22:40:11.574651"
+    },
+    {
+      "statement": "Books with 'cryptocurrency day trading' in titles average $3,399 monthly revenue despite low search volume",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'they're still averaging at least $3,399'"
+      ],
+      "id": "1bd5fd9b-3094-49db-becf-c457ca6069c8",
+      "type": "claim",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:42.452819",
+      "last_seen": "2026-02-18T22:40:42.452819"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Bitcoin investors + market volatility + 2025 update",
+      "description": "Target niche with specific time-sensitive constraints",
+      "why_it_works": "Captures demand for updated crypto investment strategies",
+      "signals": [
+        "low review counts",
+        "time-sensitive keywords"
+      ],
+      "source_quotes": [
+        "Bitcoin Books 2025... people looking for updated strategies"
+      ],
+      "id": "e8a2d4d9-70da-4753-bfee-cf64973d3ca4",
+      "type": "niche_pattern",
+      "provenance": [
+        "3hSmQ6TamhM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:40:11.574651",
+      "last_seen": "2026-02-18T22:40:11.574651"
+    }
+  ]
+}

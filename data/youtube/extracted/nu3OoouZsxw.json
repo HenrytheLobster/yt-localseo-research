@@ -1,0 +1,118 @@
+{
+  "source_type": "youtube",
+  "video_id": "nu3OoouZsxw",
+  "title": "Secret Publisher Category Data",
+  "extracted_at": "2026-02-18T23:13:07.488259",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 3505,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "category_insights",
+      "description": "Use Publisher Rocket to analyze category trends and sales data for informed publishing decisions",
+      "steps": [
+        "Navigate to the category feature",
+        "Click 'insights' for detailed metrics",
+        "Explore related categories for niche opportunities"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may lag behind real-time trends"
+      ],
+      "example_niches": [
+        "teen_planner"
+      ],
+      "source_quotes": [
+        "see related categories clicking it will list other categories related to this one"
+      ],
+      "id": "2b5f8a69-8e7a-4b73-802c-9e41df9924ce",
+      "type": "tactic",
+      "provenance": [
+        "nu3OoouZsxw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:13:07.488079",
+      "last_seen": "2026-02-18T23:13:07.488079"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize categories",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average ratings average length of books and more"
+      ],
+      "id": "71d9350d-2556-48a6-bc4c-d7714a291de3",
+      "type": "heuristic",
+      "provenance": [
+        "nu3OoouZsxw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:13:07.488079",
+      "last_seen": "2026-02-18T23:13:07.488079"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides access to category trends and sales data previously exclusive to traditional publishers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "sadly this was something only big publishing companies had access to but not anymore"
+      ],
+      "id": "22ba99ff-0d0c-47fa-ae5e-d0be6192dbce",
+      "type": "claim",
+      "provenance": [
+        "nu3OoouZsxw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:13:07.488079",
+      "last_seen": "2026-02-18T23:13:07.488079"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen_boys + ADHD + Christian",
+      "description": "Identify underserved niches with specific constraints",
+      "why_it_works": "Combines targeted identity with problem-solving constraints",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "see related categories clicking it will list other categories related to this one"
+      ],
+      "id": "9998ab77-8618-4281-9404-d9ca6d574daf",
+      "type": "niche_pattern",
+      "provenance": [
+        "nu3OoouZsxw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:13:07.488079",
+      "last_seen": "2026-02-18T23:13:07.488079"
+    }
+  ]
+}

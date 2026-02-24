@@ -1,0 +1,276 @@
+{
+  "source_type": "youtube",
+  "video_id": "314JoSQrKfc",
+  "title": "3 Profitable Amazon KDP Keywords Low Competition High Demand #kdp  #kdpkeywords  #makemoneyonline",
+  "extracted_at": "2026-02-18T21:51:49.620228",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 14098,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Minimalistic Logbook Design",
+      "description": "Create logbooks with straightforward, minimalistic covers to attract construction workers seeking direct solutions.",
+      "steps": [
+        "Use tools like Creative Fabrica to design covers",
+        "Incorporate interior page layouts into cover designs",
+        "Ensure large size (8.5x11) for detailed record-keeping"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "total_results"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 40,
+        "bsr_max": 431276
+      },
+      "caveats": [
+        "Avoid sponsored listings in top positions"
+      ],
+      "example_niches": [
+        "construction site daily logbook"
+      ],
+      "source_quotes": [
+        "this one has a bestseller rank of 431 276"
+      ],
+      "id": "4c2e625e-93f2-49a7-a52d-8ba0d333807a",
+      "type": "tactic",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:50:47.896222",
+      "last_seen": "2026-02-18T21:50:47.896222"
+    },
+    {
+      "name": "Keyword Niche Validation",
+      "description": "Verify keyword profitability using analytics tools and platform data",
+      "steps": [
+        "Check Amazon Scout Pro and self-publishing Titans analytics",
+        "Validate BSR, price, and review data",
+        "Confirm trademark availability for sub-niches"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro",
+        "self-publishing Titans"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid trademarked names to prevent account bans"
+      ],
+      "example_niches": [
+        "Greek mythology coloring book",
+        "Civil War coloring book"
+      ],
+      "source_quotes": [
+        "this data needs to be considered and taken into consideration"
+      ],
+      "id": "233ce5a6-3ed2-4d78-a90b-b870e1c14d5d",
+      "type": "tactic",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:51:19.043924",
+      "last_seen": "2026-02-18T21:51:19.043924"
+    },
+    {
+      "name": "BSR & Review Analysis",
+      "description": "Evaluate keywords using bestseller rank and review counts to identify low-competition, high-demand niches.",
+      "steps": [
+        "Check BSR and review counts for target keywords",
+        "Modify templates from Creative Fabrica/Etsy with commercial licenses",
+        "Upload redesigned templates to KDP"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Creative Fabrica",
+        "Amazon Scout Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with BSR over 1 million"
+      ],
+      "example_niches": [
+        "Greek mythology coloring book",
+        "Civil War coloring book"
+      ],
+      "source_quotes": [
+        "the previous keyword which is Greek mythology coloring book to be an ideal keyword"
+      ],
+      "id": "03c6be4d-5ada-4a0a-8d1f-dd94062fe1a0",
+      "type": "tactic",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:51:49.619929",
+      "last_seen": "2026-02-18T21:51:49.619929"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low-Competition Niche Targeting",
+      "condition": "If total_results < 1000 and BSR < 400000, then prioritize niche",
+      "machine_rule": {
+        "field": "total_results",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "ideally we would aim for anything that is a total results of 1000 or less"
+      ],
+      "id": "4ebad406-3f5c-4151-a351-915d523b13db",
+      "type": "heuristic",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:50:47.896222",
+      "last_seen": "2026-02-18T21:50:47.896222"
+    },
+    {
+      "name": "Low Competition Boost",
+      "condition": "If median reviews are below 200 and BSR exceeds 50,000, prioritize keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this keyword has a bestseller rank of 328,961"
+      ],
+      "id": "a859d340-fa3b-4e44-8da2-b5bf834c1ce0",
+      "type": "heuristic",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:51:19.043924",
+      "last_seen": "2026-02-18T21:51:19.043924"
+    },
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are less than 200, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "total results are under 1688 so personally I would consider the previous keyword"
+      ],
+      "id": "a1dee659-4903-4e22-98bf-180444d48e5d",
+      "type": "heuristic",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:51:49.619929",
+      "last_seen": "2026-02-18T21:51:49.619929"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon Scout Pro identifies niches with keyword scores 35-7 for profitability",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the bottom corner as you can see that Circle in the yellow this is by the keyword Niche score given by Amazon Scout Pro"
+      ],
+      "id": "2e3385ca-99ac-4505-9fbd-908551fac840",
+      "type": "claim",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:50:47.896222",
+      "last_seen": "2026-02-18T21:50:47.896222"
+    },
+    {
+      "statement": "Greek mythology coloring books have a bestseller rank of 328,961",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this keyword has a bestseller rank of 328,961"
+      ],
+      "id": "9941b986-39fb-4513-9497-0e60ac156498",
+      "type": "claim",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:51:19.043924",
+      "last_seen": "2026-02-18T21:51:19.043924"
+    },
+    {
+      "statement": "Keywords with BSR over 1 million and low review counts indicate high competition and low demand.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "bestseller rank being 1 million and sixty seven thousand... I would not be diving into this Niche"
+      ],
+      "id": "30a0762d-c86a-490a-8903-b10b00d2f720",
+      "type": "claim",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:51:49.619929",
+      "last_seen": "2026-02-18T21:51:49.619929"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "construction workers + daily task tracking + minimalistic design",
+      "description": "Target specific professional identities with practical problem-solving constraints",
+      "why_it_works": "Balances niche specificity with functional utility for busy industries",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "this Niche is still profitable and you can create two to three books minimum"
+      ],
+      "id": "4f76078b-951b-4059-9e73-5a9fbf0888e9",
+      "type": "niche_pattern",
+      "provenance": [
+        "314JoSQrKfc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:50:47.896222",
+      "last_seen": "2026-02-18T21:50:47.896222"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "source_type": "youtube",
+  "video_id": "0ZN6GiLe0ck",
+  "title": "3 KDP Keywords Low Competition #KDP #KDPKeywords",
+  "extracted_at": "2026-02-18T21:19:03.995965",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 18096,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research & Book Analysis",
+      "description": "Identify low competition keywords, analyze top-ranking KDP books, and create unique content by combining elements from successful titles.",
+      "steps": [
+        "Identify keywords with niche scores 45+ and low total results",
+        "Analyze top-ranking books' covers, descriptions, and interiors",
+        "Use templates from Tangent or Creative Fabrica for design",
+        "Avoid copied content by creating unique value propositions"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Tangent templates",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid dedicated copyright pages that irritate customers"
+      ],
+      "example_niches": [
+        "intermittent fasting logbook"
+      ],
+      "source_quotes": [
+        "Customers get irritated when seeing copyright pages..."
+      ],
+      "id": "0baee6eb-5b7e-4dfa-9bcd-ee94175ad983",
+      "type": "tactic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:19.287473",
+      "last_seen": "2026-02-18T21:17:19.287473"
+    },
+    {
+      "name": "keyword_niche_analysis",
+      "description": "Use Chrome extensions to analyze keyword niches and identify low-competition opportunities",
+      "steps": [
+        "Check keyword Niche scores and total results",
+        "Look for recently published books with high BSR rankings",
+        "Extract keywords from titles for additional research"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "keyword_niche_score"
+      ],
+      "tools_mentioned": [
+        "self-publishing Titans Chrome extension"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 1021000
+      },
+      "caveats": [
+        "Verify trademark status for terms like 'Bunko'"
+      ],
+      "example_niches": [
+        "Bunko score pads",
+        "home renovation planner"
+      ],
+      "source_quotes": [
+        "this Niche has a growing demand and a growing amount of books being published in there"
+      ],
+      "id": "cb1eefc9-27c3-4315-8b8f-eba9fef6c8a1",
+      "type": "tactic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:51.630799",
+      "last_seen": "2026-02-18T21:17:51.630799"
+    },
+    {
+      "name": "bsr_filter",
+      "description": "Filter books sold by Amazon using BSR scores to identify low-competition niches",
+      "steps": [
+        "Filter by 'sold by Amazon' sticker",
+        "Focus on logbooks/planners",
+        "Analyze BSR rankings"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Amazon's page repetition issue"
+      ],
+      "example_niches": [
+        "home renovation planner"
+      ],
+      "source_quotes": [
+        "sold by Amazon but just focus on log books"
+      ],
+      "id": "b2968662-7666-453f-a66f-aa1fa71af285",
+      "type": "tactic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:18:25.087763",
+      "last_seen": "2026-02-18T21:18:25.087763"
+    },
+    {
+      "name": "interior_analysis",
+      "description": "Use book interiors as inspiration for content structure and customer targeting",
+      "steps": [
+        "Inspect interior sections",
+        "Identify target audience demographics",
+        "Customize layout templates"
+      ],
+      "signals_used": [
+        "review_count",
+        "content_structure"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 100
+      },
+      "caveats": [
+        "Requires customization beyond templates"
+      ],
+      "example_niches": [
+        "apartment renovation planner"
+      ],
+      "source_quotes": [
+        "help to organize things and make it easier for the customer"
+      ],
+      "id": "b49ecb25-77bc-4808-a814-39efc48f922c",
+      "type": "tactic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:18:25.087763",
+      "last_seen": "2026-02-18T21:18:25.087763"
+    },
+    {
+      "name": "simple_kdp_interior_design",
+      "description": "Create a minimalist interior layout for KDP books using Canva",
+      "steps": [
+        "Upload PDF/PNG to Canva",
+        "Adjust sizing to 8.5x11",
+        "Make necessary design modifications"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When design fails to meet formatting requirements"
+      ],
+      "example_niches": [
+        "teen_planner"
+      ],
+      "source_quotes": [
+        "the interior is really really simple so in this case if it is over 100 Pages which it is usually they have a gpg or PNG format which I can upload to canva as a single upload and make the sizing correct which is usually an 8.5 times 11 and then I would upload that to canva and make a couple of changes and it would be good to go"
+      ],
+      "id": "c86bca30-cf69-409d-b0d7-8a06f799a4f7",
+      "type": "tactic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:19:03.995857",
+      "last_seen": "2026-02-18T21:19:03.995857"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Analysis Heuristic",
+      "condition": "If median reviews are below 200, prioritize boosting content quality",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Pay attention to negative reviews..."
+      ],
+      "id": "acc12587-9858-42b6-8f20-3d5dc1270514",
+      "type": "heuristic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:19.287473",
+      "last_seen": "2026-02-18T21:17:19.287473"
+    },
+    {
+      "name": "low_competition_signal",
+      "condition": "If keyword_niche_score is below 50 and total_results under 5000, prioritize",
+      "machine_rule": {
+        "field": "keyword_niche_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this Niche is one of the most easiest niche is that I've seen so far"
+      ],
+      "id": "bad2659e-5f6d-4f20-be74-1838cffa7b37",
+      "type": "heuristic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:51.630799",
+      "last_seen": "2026-02-18T21:17:51.630799"
+    },
+    {
+      "name": "review_threshold",
+      "condition": "If median reviews are below 200, prioritize niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this one here says return Lorry says it has been returned why because every page is the same"
+      ],
+      "id": "29000ea7-c859-4a38-b673-0d64cf3e986d",
+      "type": "heuristic",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:18:25.087763",
+      "last_seen": "2026-02-18T21:18:25.087763"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon KDP books with dedicated copyright pages may irritate customers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Customers most of their complaints is that they get irritated..."
+      ],
+      "id": "83f04d31-2cf1-478c-8297-b274a2e59385",
+      "type": "claim",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:19.287473",
+      "last_seen": "2026-02-18T21:17:19.287473"
+    },
+    {
+      "statement": "Home renovation planner has 450 total results under 500",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "home renovation planner and it currently has a keyword underscore of 43 and the total results a really outstanding 450"
+      ],
+      "id": "161a1291-4b3a-4c12-afae-6dc5659af209",
+      "type": "claim",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:51.630799",
+      "last_seen": "2026-02-18T21:17:51.630799"
+    },
+    {
+      "statement": "Amazon allows customization of templates despite platform limitations",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you do want to make some changes some simple things such as adding some elements"
+      ],
+      "id": "517b9ec1-24b3-4091-b79a-ae77aacbfeb3",
+      "type": "claim",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:18:25.087763",
+      "last_seen": "2026-02-18T21:18:25.087763"
+    },
+    {
+      "statement": "Canva is used for KDP interior design formatting",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "upload that to canva and make a couple of changes and it would be good to go"
+      ],
+      "id": "c3ba196b-71ce-4e7d-af54-b4fc6403f587",
+      "type": "claim",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:19:03.995857",
+      "last_seen": "2026-02-18T21:19:03.995857"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "intermittent fasting logbook + tracking fasting + low competition",
+      "description": "Combine a specific identity with a problem-solving approach in a low-competition niche",
+      "why_it_works": "Leverages high demand for tracking tools while avoiding saturated markets",
+      "signals": [
+        "low review counts",
+        "high niche score"
+      ],
+      "source_quotes": [
+        "This keyword can expand to so many other keywords..."
+      ],
+      "id": "c6b32d8d-8c34-45ba-b239-10ac75cec34f",
+      "type": "niche_pattern",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:19.287473",
+      "last_seen": "2026-02-18T21:17:19.287473"
+    },
+    {
+      "pattern_template": "GAME + TOOL + NICHES",
+      "example": "Bunko game + scorekeeping tool + interior design",
+      "description": "Target specific game-related tools with cross-niche applications",
+      "why_it_works": "Combines game-specific utility with broader interior design appeal",
+      "signals": [
+        "low review counts",
+        "high keyword scores"
+      ],
+      "source_quotes": [
+        "this Niche does expand to other sub niches and they have much better keyword in each score"
+      ],
+      "id": "8fe12253-ea70-4033-b15a-2615584bf8d6",
+      "type": "niche_pattern",
+      "provenance": [
+        "0ZN6GiLe0ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:17:51.630799",
+      "last_seen": "2026-02-18T21:17:51.630799"
+    }
+  ]
+}

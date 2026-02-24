@@ -1,0 +1,176 @@
+{
+  "source_type": "youtube",
+  "video_id": "c2_1abuZ0Hs",
+  "title": "3 Profitable Amazon KDP Keywords: Workbooks: Low Competition High Demand #KDP #kdpkeywords",
+  "extracted_at": "2026-02-18T21:42:18.390304",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9790,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Niche Down for BSR Optimization",
+      "description": "Target specific demographics or workbook formats to lower bestseller rank competition",
+      "steps": [
+        "Identify niche demographics (e.g., age groups, genders, specific identities)",
+        "Focus on workbook formats (daily/weekly prompts, specific therapeutic applications)",
+        "Combine niche demographics with format (e.g., 'black women + 365-day DBT journal')"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Self-Publishing Titans",
+        "Amazon's Capital",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May require additional content creation for niche specificity"
+      ],
+      "example_niches": [
+        "teen boys + ADHD + Christian",
+        "seniors + DBT weekly check-ins"
+      ],
+      "source_quotes": [
+        "One way we could be able to Niche down... for example for a black woman"
+      ],
+      "id": "f91568b7-eb2b-4f31-823c-47986708aed5",
+      "type": "tactic",
+      "provenance": [
+        "c2_1abuZ0Hs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:41:45.228169",
+      "last_seen": "2026-02-18T21:41:45.228169"
+    },
+    {
+      "name": "Niche Long-Tail Keywords",
+      "description": "Target specific niches with long-tail keywords to reduce competition and increase profitability",
+      "steps": [
+        "Identify specific demographics (e.g., neurodivergent kids)",
+        "Combine with therapeutic methods (e.g., DBT)",
+        "Add use cases (e.g., life skills for autism)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May have limited audience reach"
+      ],
+      "example_niches": [
+        "teen autism planner"
+      ],
+      "source_quotes": [
+        "niche down as much as possible we have the type of people which is neurodivergent"
+      ],
+      "id": "3306d546-68f7-4c9e-ac29-9b9b34c2b5fa",
+      "type": "tactic",
+      "provenance": [
+        "c2_1abuZ0Hs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:42:18.390188",
+      "last_seen": "2026-02-18T21:42:18.390188"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold",
+      "condition": "If average reviews are below 200, prioritize for growth potential",
+      "machine_rule": {
+        "field": "average_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Average reviews 787 and the average price is 16.29"
+      ],
+      "id": "a3bfbd9c-db80-447d-b6b5-583db12fa16d",
+      "type": "heuristic",
+      "provenance": [
+        "c2_1abuZ0Hs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:41:45.228169",
+      "last_seen": "2026-02-18T21:41:45.228169"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "DBT workbook keywords show low competition with under 1000 total results",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Total results are under 1000 which is ideal"
+      ],
+      "id": "94338fd0-8d8d-436d-8f15-b8340bc44580",
+      "type": "claim",
+      "provenance": [
+        "c2_1abuZ0Hs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:41:45.228169",
+      "last_seen": "2026-02-18T21:41:45.228169"
+    },
+    {
+      "statement": "Niche scores of 6 or higher indicate optimal keyword profitability",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "niche score given by Amazon's Cut Pro Chrome extension which gives us a nice deep score of number six"
+      ],
+      "id": "3e792981-23e3-4093-b7f7-43958966ccde",
+      "type": "claim",
+      "provenance": [
+        "c2_1abuZ0Hs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:42:18.390188",
+      "last_seen": "2026-02-18T21:42:18.390188"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "black women + emotional relief + self-care",
+      "description": "Combine specific identities with therapeutic needs and lifestyle constraints",
+      "why_it_works": "Leverages underserved markets with high demand for targeted solutions",
+      "signals": [
+        "low review counts",
+        "high keyword news curve"
+      ],
+      "source_quotes": [
+        "Specifically here we're focusing on DBT workbook and you could also be able to create a specific type of DVD workbook for emotional really"
+      ],
+      "id": "6e73fcc6-988d-4b82-a3cf-a43f1f865a9f",
+      "type": "niche_pattern",
+      "provenance": [
+        "c2_1abuZ0Hs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:41:45.228169",
+      "last_seen": "2026-02-18T21:41:45.228169"
+    }
+  ]
+}

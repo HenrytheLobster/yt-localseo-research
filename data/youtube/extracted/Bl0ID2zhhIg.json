@@ -1,0 +1,269 @@
+{
+  "source_type": "youtube",
+  "video_id": "Bl0ID2zhhIg",
+  "title": "What is Book ABSR? Amazon Book Sales Rank EXPLAINED",
+  "extracted_at": "2026-02-18T04:08:55.241060",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 14456,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Track ABSR for Sales Estimation",
+      "description": "Use ABSR data with calculators to estimate daily sales for Kindle and physical books.",
+      "steps": [
+        "Find ABSR on product pages",
+        "Input ABSR into sales calculators",
+        "Compare Kindle vs physical book performance"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Calculators may not account for regional sales variations"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you can use this abr to gauge how well a book is doing"
+      ],
+      "id": "c99f3c52-5d26-4915-907e-dd0c28eb8cf7",
+      "type": "tactic",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:51.037659",
+      "last_seen": "2026-02-18T04:07:51.037659"
+    },
+    {
+      "name": "Set Realistic Goals",
+      "description": "Use ABSR data to compare with top-performing books and establish achievable sales targets.",
+      "steps": [
+        "Analyze ABSR trends of competing books",
+        "Calculate daily sales benchmarks",
+        "Adjust goals based on category difficulty"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bs, r_max": 50000
+      },
+      "caveats": [
+        "Competing with traditionally published authors is exceptionally challenging"
+      ],
+      "example_niches": [
+        "mystery police procedurals"
+      ],
+      "source_quotes": [
+        "these are the players that i'm up against how many books do they sell"
+      ],
+      "id": "1c1a697c-738e-4dd4-8c19-bf510bccf65a",
+      "type": "tactic",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:08:24.447189",
+      "last_seen": "2026-02-18T04:08:24.447189"
+    },
+    {
+      "name": "ABSR Emulation Strategy",
+      "description": "Identify successful books in your niche by analyzing ABSR and review counts to emulate their strategies.",
+      "steps": [
+        "Check ABSR and review counts of top books",
+        "Use Excel spreadsheets for data analysis"
+      ],
+      "signals_used": [
+        "ABSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Not effective for extremely niche topics with low demand"
+      ],
+      "example_niches": [
+        "home organization",
+        "budgeting"
+      ],
+      "source_quotes": [
+        "the top number one book is only ranked at 61,000"
+      ],
+      "id": "2f621eed-3697-4a13-8ade-9f747debf979",
+      "type": "tactic",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:08:55.240905",
+      "last_seen": "2026-02-18T04:08:55.240905"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Prioritize High-BSR Niches",
+      "condition": "If a niche has low BSR thresholds, it indicates higher competition",
+      "machine_rule": {
+        "field": "bsr_max",
+        "op": "lte",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "a book at the absr 20,000 is selling a lot better"
+      ],
+      "id": "b79ad008-a07c-46ee-ad37-39409f520818",
+      "type": "heuristic",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:51.037659",
+      "last_seen": "2026-02-18T04:07:51.037659"
+    },
+    {
+      "name": "Bestseller Threshold Heuristic",
+      "condition": "If median_reviews < 200 then boost visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we need to sell 526 books within the 24-hour period"
+      ],
+      "id": "a90bc1e2-a96d-4069-b715-9f17ea1f0198",
+      "type": "heuristic",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:08:24.447189",
+      "last_seen": "2026-02-18T04:08:24.447189"
+    },
+    {
+      "name": "Review Threshold Rule",
+      "condition": "If median reviews are below 200, prioritize books with higher ABSR",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "would it make sense to sell four kindle books a day"
+      ],
+      "id": "325d92a0-b98d-4f1f-932e-3514e164a9e3",
+      "type": "heuristic",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:08:55.240905",
+      "last_seen": "2026-02-18T04:08:55.240905"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "ABSR is publicly visible on Amazon product pages",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's completely public knowledge"
+      ],
+      "id": "8d8c8022-3620-4da6-815d-bee919e2dd5d",
+      "type": "claim",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:51.037659",
+      "last_seen": "2026-02-18T04:07:51.037659"
+    },
+    {
+      "statement": "Becoming a bestseller in a category requires selling 526 books within 24 hours in the mystery category",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we need to sell 526 books 526 books within the 20 uh a 24-hour period"
+      ],
+      "id": "26d46368-e14f-4773-bc57-e32c73f77c10",
+      "type": "claim",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:08:24.447189",
+      "last_seen": "2026-02-18T04:08:24.447189"
+    },
+    {
+      "statement": "Bestseller status on Amazon is achievable in niche categories with lower ABSR thresholds",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "very easy to get best seller status on the amazon.com site"
+      ],
+      "id": "80242dd8-b392-4a33-a425-7f2872c42657",
+      "type": "claim",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:08:55.240905",
+      "last_seen": "2026-02-18T04:08:55.240905"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche segments with specific audience needs and content constraints",
+      "why_it_works": "Allows targeted ABSR analysis for under-served markets",
+      "signals": [
+        "low review counts",
+        "high BSR variance"
+      ],
+      "source_quotes": [
+        "this book is absolutely killing it in kindle but paperback they're not doing so well"
+      ],
+      "id": "77811db9-6e2c-4045-a366-21cf9d0c79b3",
+      "type": "niche_pattern",
+      "provenance": [
+        "Bl0ID2zhhIg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:51.037659",
+      "last_seen": "2026-02-18T04:07:51.037659"
+    }
+  ]
+}

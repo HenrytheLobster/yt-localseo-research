@@ -1,0 +1,269 @@
+{
+  "source_type": "youtube",
+  "video_id": "YziCKtn9CUo",
+  "title": "EASY [Untapped] Kindle Keyword Research Method For Amazon Book Publishing",
+  "extracted_at": "2026-02-18T13:44:40.683876",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 11640,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Search Suggestion Expander",
+      "description": "Free browser extension to generate keyword ideas by expanding Amazon's auto-suggestions",
+      "steps": [
+        "Install Amazon Search Suggestion Expander and KDP Niche Research extension",
+        "Browse Amazon and input seed keywords (e.g., 'how to')",
+        "Filter suggestions relevant to book topics",
+        "Check for existing books/trademarks"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Search Suggestion Expander",
+        "KDP Niche Research"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Some suggestions may have existing trademarks"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you can use this searches to get ideas for your kindle publishing books"
+      ],
+      "id": "e5690639-d671-449e-925c-955b666e3fdb",
+      "type": "tactic",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:43:28.168603",
+      "last_seen": "2026-02-18T13:43:28.168603"
+    },
+    {
+      "name": "Keyword Filtering",
+      "description": "Identify untapped keywords by filtering Amazon search results for books with low competition and high relevance.",
+      "steps": [
+        "Build a keyword list using tools like Publisher Rocket",
+        "Analyze keywords by filtering books with BSR < 200,000 and review counts < 200",
+        "Avoid broad keywords like 'keto' by finding longer tail keywords (e.g., 'keto for weight loss women')"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if niche is overly saturated or lacks sufficient search volume"
+      ],
+      "example_niches": [
+        "teen planner",
+        "keto for weight loss women"
+      ],
+      "source_quotes": [
+        "I like to keep the total results you can also see over here the total results I like to keep it about 1000 or lower"
+      ],
+      "id": "744e42ce-2fc5-4745-b28c-6b3385ca715d",
+      "type": "tactic",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:44:05.075769",
+      "last_seen": "2026-02-18T13:44:05.075769"
+    },
+    {
+      "name": "bsr_review_filter",
+      "description": "filters books by bestseller rank and review count",
+      "steps": [
+        "use publisher rocket to find books with low review counts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "fails when niche is too competitive"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "ay tuned with your alexa and bye [Music]"
+      ],
+      "id": "88f09946-dc85-4bc8-824d-0e83e3bfacc5",
+      "type": "tactic",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:44:40.683628",
+      "last_seen": "2026-02-18T13:44:40.683628"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Filter",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you can see that many of this keywords over here have nothing to do with books"
+      ],
+      "id": "16deb984-12a8-44b1-81d5-233bbd7835ea",
+      "type": "heuristic",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:43:28.168603",
+      "last_seen": "2026-02-18T13:43:28.168603"
+    },
+    {
+      "name": "Review-BSR Correlation",
+      "condition": "If median reviews are less than 200 and BSR < 50,000, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I like to keep the best seller rank when it comes to the average below 200 000"
+      ],
+      "id": "e22a28dc-3d39-4418-89b4-bb63440f2055",
+      "type": "heuristic",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:44:05.075769",
+      "last_seen": "2026-02-18T13:44:05.075769"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "ay tuned with your alexa and bye [Music]"
+      ],
+      "id": "483db190-b4b3-4f6e-a1b1-a52d9c94a2a6",
+      "type": "heuristic",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:44:40.683628",
+      "last_seen": "2026-02-18T13:44:40.683628"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's auto-suggestion tool provides real-time search data",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "these searches are appearing and you can use this searches to get ideas"
+      ],
+      "id": "f31d7af1-69bd-4736-a486-cde1b828b324",
+      "type": "claim",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:43:28.168603",
+      "last_seen": "2026-02-18T13:43:28.168603"
+    },
+    {
+      "statement": "This method identifies untapped keywords by avoiding broad terms and focusing on niche markets with lower competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "This is what i do this is the strategy that you can use it is a very effective strategy"
+      ],
+      "id": "e201a355-04b5-4652-9f47-e22923014b03",
+      "type": "claim",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:44:05.075769",
+      "last_seen": "2026-02-18T13:44:05.075769"
+    },
+    {
+      "statement": "KDP prioritizes books with high bestseller ranks and review counts",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "ay tuned with your alexa and bye [Music]"
+      ],
+      "id": "8c2bc0bb-0496-462a-914c-7d7368b4be27",
+      "type": "claim",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:44:40.683628",
+      "last_seen": "2026-02-18T13:44:40.683628"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combines target audience, pain points, and specific criteria for niche markets",
+      "why_it_works": "Targets underserved audiences with lower competition",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "you want to publish your book on a topic that is profitable"
+      ],
+      "id": "7d4b947f-2180-4175-badf-912580949820",
+      "type": "niche_pattern",
+      "provenance": [
+        "YziCKtn9CUo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:43:28.168603",
+      "last_seen": "2026-02-18T13:43:28.168603"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "source_type": "youtube",
+  "video_id": "40YxlvuTcXQ",
+  "title": "Amazon Keyword Rules: New Update!",
+  "extracted_at": "2026-02-18T04:45:00.720765",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6254,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 1,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Avoid Category Redundancy",
+      "description": "Do not use keywords already present in your book's category to avoid wasting KDP box space.",
+      "steps": [
+        "Check category keywords",
+        "Use category-specific phrases in KDP boxes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if category keywords are insufficient"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "don't waste one of your KDP box phrases on a word or phrase that is already in the category string"
+      ],
+      "id": "94a24e12-661b-40c9-980f-8f71683a7147",
+      "type": "tactic",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:44:34.248132",
+      "last_seen": "2026-02-18T04:44:34.248132"
+    },
+    {
+      "name": "Avoid HTML Code",
+      "description": "Exclude HTML code from KDP keywords to prevent system errors and ensure compliance.",
+      "steps": [
+        "Inspect keywords for code",
+        "Remove any HTML tags"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "May cause flagging if not removed"
+      ],
+      "example_niches": [],
+      "source_quotes": [
+        "HTML which is a form of web code...systems could penetrate from the inside"
+      ],
+      "id": "ea8a1f07-88ba-4da1-b42d-583c3739a58f",
+      "type": "tactic",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:44:34.248132",
+      "last_seen": "2026-02-18T04:44:34.248132"
+    },
+    {
+      "name": "Avoid Quotations and HTML",
+      "description": "Amazon's new keyword rules prohibit the use of quotations and HTML to prevent formatting issues",
+      "steps": [
+        "Avoid quotation marks",
+        "Remove HTML tags"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When products fail to meet review count thresholds"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "don't use quotations"
+      ],
+      "id": "540e1388-a310-402e-9866-c8c729bf6cbf",
+      "type": "tactic",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:45:00.720633",
+      "last_seen": "2026-02-18T04:45:00.720633"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize boosting category keyword optimization",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Amazon will remove you from the category if you don't use specific category phrases"
+      ],
+      "id": "faf5b245-2063-46c5-9410-27a9fb7f1dbe",
+      "type": "heuristic",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:44:34.248132",
+      "last_seen": "2026-02-18T04:44:34.248132"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon prohibits subjective quality claims and time-sensitive statements in keywords.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon doesn't want authors making Amazon search results make a claim of quality of a book"
+      ],
+      "id": "308fc0af-0d16-4713-b89e-a86e5bc19299",
+      "type": "claim",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:44:34.248132",
+      "last_seen": "2026-02-18T04:44:34.248132"
+    },
+    {
+      "statement": "Amazon penalizes products using HTML in keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "HTML one"
+      ],
+      "id": "90baa728-98d3-4e66-8653-26f09be5aea1",
+      "type": "claim",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:45:00.720633",
+      "last_seen": "2026-02-18T04:45:00.720633"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche targeting combines audience identity, specific issues, and limiting factors for precision.",
+      "why_it_works": "Leverages low competition and targeted keyword opportunities in underserved markets.",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Amazon doesn't want a different format of a book showing up in the search results for some other search phrase"
+      ],
+      "id": "8e90911b-abdc-46e3-8f27-8b0f32bfd06a",
+      "type": "niche_pattern",
+      "provenance": [
+        "40YxlvuTcXQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:44:34.248132",
+      "last_seen": "2026-02-18T04:44:34.248132"
+    }
+  ]
+}

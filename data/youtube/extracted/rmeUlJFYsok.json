@@ -1,0 +1,228 @@
+{
+  "source_type": "youtube",
+  "video_id": "rmeUlJFYsok",
+  "title": "Amazon KDP Niche research for low content book | Publisher rocket review | Publisher rocket tutorial",
+  "extracted_at": "2026-02-18T23:27:02.018238",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 6479,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Use Publisher Rocket to evaluate keyword competition and profitability by checking monthly sales, search volume, and competitor count.",
+      "steps": [
+        "Enter target keyword in Publisher Rocket's competition analyzer",
+        "Compare monthly sales and search volume metrics",
+        "Identify keywords with higher earnings potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Tool may not account for seasonal demand fluctuations"
+      ],
+      "example_niches": [
+        "halloween coloring books"
+      ],
+      "source_quotes": [
+        "the keyword halloween korean book 1944 people are searching on amazon per month"
+      ],
+      "id": "14985840-6439-427a-af6d-20e76a6f0999",
+      "type": "tactic",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:26:32.423756",
+      "last_seen": "2026-02-18T23:26:32.423756"
+    },
+    {
+      "name": "Category Optimization",
+      "description": "Select Amazon categories with lower sales thresholds to increase bestseller potential using Publisher Rocket's category analysis.",
+      "steps": [
+        "Use Publisher Rocket to analyze category sales requirements",
+        "Prioritize categories with lower sales thresholds",
+        "Update book categories to align with optimal categories"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Category performance may change with algorithm updates"
+      ],
+      "example_niches": [
+        "books at photography painting"
+      ],
+      "source_quotes": [
+        "it is estimated that if i make 41 sales i can make it to the best seller position"
+      ],
+      "id": "b25d5743-7fac-46cc-bb2b-859ea39f87c2",
+      "type": "tactic",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:26:32.423756",
+      "last_seen": "2026-02-18T23:26:32.423756"
+    },
+    {
+      "name": "one_time_payment",
+      "description": "Purchasing a tool with a one-time fee for lifetime access",
+      "steps": [
+        "Pay for tool once",
+        "Own it for life"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When niche saturation exceeds thresholds"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "97 one time payment meaning you pay once and you own it for life"
+      ],
+      "id": "12a7c475-877d-4b1b-aa9f-9a6877b4b1be",
+      "type": "tactic",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:02.018115",
+      "last_seen": "2026-02-18T23:27:02.018115"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Category Sales Threshold Heuristic",
+      "condition": "If a category requires fewer sales to reach bestseller status, prioritize it",
+      "machine_rule": {
+        "field": "sales_threshold",
+        "op": "lt",
+        "value": 500
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it is estimated that if i make 41 sales i can make it to the best seller position"
+      ],
+      "id": "e1acdcac-0225-4233-a04f-554e34f654f7",
+      "type": "heuristic",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:26:32.423756",
+      "last_seen": "2026-02-18T23:26:32.423756"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize niches",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "run profitable amazon kdp ads for low content books"
+      ],
+      "id": "30dc525a-6bb4-498a-9639-be521daca067",
+      "type": "heuristic",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:02.018115",
+      "last_seen": "2026-02-18T23:27:02.018115"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon allows books to be listed in up to 10 categories through category optimization.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can update your book to show up for additional eight slots making it a total of ten categories"
+      ],
+      "id": "d2652e71-8482-44ee-ac8c-a4ff08f6952b",
+      "type": "claim",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:26:32.423756",
+      "last_seen": "2026-02-18T23:26:32.423756"
+    },
+    {
+      "statement": "Publisher Rocket offers one-time payment for lifetime access",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "97 one time payment meaning you pay once and you own it for life"
+      ],
+      "id": "f637102d-8107-40a2-bb3c-79b10401a57f",
+      "type": "claim",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:02.018115",
+      "last_seen": "2026-02-18T23:27:02.018115"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "halloween coloring books for girls",
+      "description": "Niche targeting specific audience segments with unique constraints",
+      "why_it_works": "Higher search volume and profitability compared to general keywords",
+      "signals": [
+        "low review counts",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "the keyword halloween coloring book for girls is more profitable"
+      ],
+      "id": "00086cf4-d39f-4677-8cb8-592eab4f9021",
+      "type": "niche_pattern",
+      "provenance": [
+        "rmeUlJFYsok"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:26:32.423756",
+      "last_seen": "2026-02-18T23:26:32.423756"
+    }
+  ]
+}

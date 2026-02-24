@@ -1,0 +1,257 @@
+{
+  "source_type": "youtube",
+  "video_id": "snumh-jQRUU",
+  "title": "#1 Best Keyword Research Tool For Amazon KDP - Bookbolt Review",
+  "extracted_at": "2026-02-18T13:05:28.343453",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11526,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Amazon BSR Analysis",
+      "description": "Use Bookbolt's cloud section to analyze top-selling niches by filtering Amazon's bestseller ranks and categories.",
+      "steps": [
+        "Access the 'cloud' section and select bestseller rank ranges (e.g., top 100-500).",
+        "Filter by categories like puzzle books, coloring books, or planners.",
+        "Save high-performing products as favorites for keyword research."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Bookbolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may lag behind real-time Amazon updates"
+      ],
+      "example_niches": [
+        "puzzle books",
+        "coloring books"
+      ],
+      "source_quotes": [
+        "you can choose the various categories over here because it's all low content stuff",
+        "the lower the ranking the higher sales they have"
+      ],
+      "id": "431116df-71ee-4de9-a854-ebd8c9f50f7c",
+      "type": "tactic",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:04:39.784904",
+      "last_seen": "2026-02-18T13:04:39.784904"
+    },
+    {
+      "name": "Price-Sales Correlation Analysis",
+      "description": "Use Bookbolt to track how price changes impact sales and BSR rankings over time.",
+      "steps": [
+        "Input keywords like 'puppy' and 'notebook' to fetch top 100 results",
+        "Analyze monthly search volumes and estimated sales metrics",
+        "Monitor BSR trends when adjusting product prices",
+        "Optimize product details using high-traffic keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "estimated_sales"
+      ],
+      "tools_mentioned": [
+        "Bookbolt"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may lag behind real-time market changes"
+      ],
+      "example_niches": [
+        "puppy products",
+        "teen planners"
+      ],
+      "source_quotes": [
+        "lower the ranking the better because that means they're making more sales"
+      ],
+      "id": "737acf3c-28f5-48e3-8018-c8d9dae4fc21",
+      "type": "tactic",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:05:28.343334",
+      "last_seen": "2026-02-18T13:05:28.343334"
+    },
+    {
+      "name": "Keyword Research for Product Optimization",
+      "description": "Leverage Bookbolt's keyword data to refine product titles, descriptions, and images.",
+      "steps": [
+        "Search for high-traffic keywords like 'puppies' with 619 monthly searches",
+        "Identify related terms (e.g., 'puppy collars', 'small puppies')",
+        "Match keywords to product features in descriptions",
+        "Use visual elements to align with popular search terms"
+      ],
+      "signals_used": [
+        "monthly_search_volume",
+        "keyword_relevance"
+      ],
+      "tools_mentioned": [
+        "Bookbolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Requires manual validation of keyword effectiveness"
+      ],
+      "example_niches": [
+        "dog accessories",
+        "educational books"
+      ],
+      "source_quotes": [
+        "the more keywords you can put in the title... the better chance of being caught"
+      ],
+      "id": "486bdd31-e2c1-43f1-bd2e-7650c26bedc4",
+      "type": "tactic",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:05:28.343334",
+      "last_seen": "2026-02-18T13:05:28.343334"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Price Sensitivity Signal",
+      "condition": "If a product maintains low BSR despite price changes, it may indicate strong demand",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "lte",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the lower the ranking the higher sales they have"
+      ],
+      "id": "77e546f9-baaa-4adc-84ae-d924950a386d",
+      "type": "heuristic",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:04:39.784904",
+      "last_seen": "2026-02-18T13:04:39.784904"
+    },
+    {
+      "name": "BSR-Driven Pricing Strategy",
+      "condition": "If BSR exceeds 50,000, prioritize price adjustments to improve sales",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "gte",
+        "value": 50000
+      },
+      "action": "flag",
+      "weight": 0.6,
+      "source_quotes": [
+        "as you can see it's kind of going up instead of down and you want it going down"
+      ],
+      "id": "25e0cfb6-cf86-47ac-b404-ae1aec899ff0",
+      "type": "heuristic",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:05:28.343334",
+      "last_seen": "2026-02-18T13:05:28.343334"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Bookbolt's data sources are directly pulled from Amazon's bestseller rankings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is straight from amazon itself"
+      ],
+      "id": "4f2db17f-18e8-4782-a340-78a6943c4f7a",
+      "type": "claim",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:04:39.784904",
+      "last_seen": "2026-02-18T13:04:39.784904"
+    },
+    {
+      "statement": "Amazon KDP rankings (BSR) correlate with sales volume, with lower rankings indicating higher visibility.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "lower the ranking the better because that means they're making more sales"
+      ],
+      "id": "b3b35c7f-d4c0-4f01-98d5-25a256ea7dc8",
+      "type": "claim",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:05:28.343334",
+      "last_seen": "2026-02-18T13:05:28.343334"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "CATEGORY + PERFORMANCE SIGNAL",
+      "example": "puzzle books + low review counts",
+      "description": "Identify niches with high BSR but limited reviews to find underserved markets",
+      "why_it_works": "High BSR indicates demand, while low reviews suggest less competition",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "you can choose the various categories over here because it's all low content stuff",
+        "the lower the ranking the higher sales they have"
+      ],
+      "id": "ea5b85f1-c034-4b78-a870-0c057a9498ec",
+      "type": "niche_pattern",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:04:39.784904",
+      "last_seen": "2026-02-18T13:04:39.784904"
+    },
+    {
+      "pattern_template": "PRODUCT + USE_CASE + AUDIENCE",
+      "example": "puppy books + educational content + teen readers",
+      "description": "Combine product type with specific use cases and target audiences to capture niche search intent.",
+      "why_it_works": "Aligns with keyword clusters like 'puppies for teens' and 'educational dog books'",
+      "signals": [
+        "high search volume keywords",
+        "audience-specific terms"
+      ],
+      "source_quotes": [
+        "you can have a look and see what they've got here they've got this crossword"
+      ],
+      "id": "d0286b38-6511-4f5f-b329-0b8c4b69a4cd",
+      "type": "niche_pattern",
+      "provenance": [
+        "snumh-jQRUU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:05:28.343334",
+      "last_seen": "2026-02-18T13:05:28.343334"
+    }
+  ]
+}

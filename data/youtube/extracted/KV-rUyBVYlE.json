@@ -1,0 +1,199 @@
+{
+  "source_type": "youtube",
+  "video_id": "KV-rUyBVYlE",
+  "title": "My Successful KDP Keyword Research Method for Amazon Book Publishing",
+  "extracted_at": "2026-02-18T13:41:37.131922",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9400,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "manual_keyword_research",
+      "description": "Create a spreadsheet of keywords by gathering Amazon search suggestions and analyzing search volume/competition",
+      "steps": [
+        "Use Chrome plugins (DS Amazon Quick View, AMZ Suggestion Expander) to collect keyword suggestions",
+        "Input niche terms into Amazon search bar to get search result counts",
+        "Record keywords and their search volume in a spreadsheet",
+        "Filter keywords with <1000 search results for low competition"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition"
+      ],
+      "tools_mentioned": [
+        "DS Amazon Quick View",
+        "AMZ Suggestion Expander",
+        "Keywords Everywhere"
+      ],
+      "thresholds": {
+        "search_volume_max": 1000
+      },
+      "caveats": [
+        "Avoid keywords with high competition unless using Amazon Ads"
+      ],
+      "example_niches": [
+        "adult coloring books",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Keyword research is vital if you want to be successful and profitable in this online publishing business."
+      ],
+      "id": "cff427bd-5392-4023-84af-ea327c0d438f",
+      "type": "tactic",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:40:46.861481",
+      "last_seen": "2026-02-18T13:40:46.861481"
+    },
+    {
+      "name": "BSR and Search Volume Analysis",
+      "description": "Evaluate keyword viability using bestseller ranks and Amazon search volume data from tools like Publisher Rocket.",
+      "steps": [
+        "Use Keywords Everywhere to check Google search volume",
+        "Check Amazon Quickview for BSR of top books",
+        "Use Publisher Rocket for estimated Amazon searches per month"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Helium 10",
+        "Amazon Quickview"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 300000
+      },
+      "caveats": [
+        "BSR may reflect sales from other keywords"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if there are three or more books with bestsellers ranks of less than 300,000 on the first page"
+      ],
+      "id": "c2a2706a-77a9-4eb8-ab61-bb6f03bf85b2",
+      "type": "tactic",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:41:37.131730",
+      "last_seen": "2026-02-18T13:41:37.131730"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competition_filter",
+      "condition": "If search results < 1000, then prioritize for organic ranking chances",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If the search results are less than a thousand... the competition is low enough to give you a good chance"
+      ],
+      "id": "e25cbf65-8471-454d-b6cb-4aaafc4f9732",
+      "type": "heuristic",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:40:46.861481",
+      "last_seen": "2026-02-18T13:40:46.861481"
+    },
+    {
+      "name": "Sort by Search Volume",
+      "condition": "If keywords have higher Amazon searches and lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the better, more potentially profitable keywords, will be those that have more searches per month and less competition"
+      ],
+      "id": "a484341c-aead-4d3e-a295-541ee85d36b1",
+      "type": "heuristic",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:41:37.131730",
+      "last_seen": "2026-02-18T13:41:37.131730"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Successful Amazon book publishing begins with keyword research before book creation",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "The success of your book starts before you've even created and published your book. It starts in the keyword research phase"
+      ],
+      "id": "db223e88-99eb-41c4-bd12-c34cb3c50fc8",
+      "type": "claim",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:40:46.861481",
+      "last_seen": "2026-02-18T13:40:46.861481"
+    },
+    {
+      "statement": "Amazon search volume metrics are derived from a formula but are reasonably accurate.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "These are figures for amazon.com. The US site. It will give you the estimated Amazon searches per month and other useful metrics."
+      ],
+      "id": "a1a69324-b7e6-4ecb-810f-d44683965d49",
+      "type": "claim",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:41:37.131730",
+      "last_seen": "2026-02-18T13:41:37.131730"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints for niche profitability",
+      "why_it_works": "Combines identity (target audience), problem (ADHD), and constraint (Christian) for precise keyword targeting",
+      "signals": [
+        "low review counts",
+        "specific search terms"
+      ],
+      "source_quotes": [
+        "Take a look at my videos I've already uploaded. I've done many videos on them. In fact, I'll tell you about some very profitable ones at the end of the video."
+      ],
+      "id": "621596b4-8032-4ef8-abda-faffb6e00d16",
+      "type": "niche_pattern",
+      "provenance": [
+        "KV-rUyBVYlE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:40:46.861481",
+      "last_seen": "2026-02-18T13:40:46.861481"
+    }
+  ]
+}

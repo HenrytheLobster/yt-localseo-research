@@ -1,0 +1,185 @@
+{
+  "source_type": "youtube",
+  "video_id": "x7kq3IiF5X4",
+  "title": "Amazon KDP Keyword Research What Actually Matters Before You Publish",
+  "extracted_at": "2026-02-18T13:52:35.304887",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4130,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Buyer Intent Focus",
+      "description": "Prioritize keywords that reflect specific buyer intent rather than broad, competitive terms.",
+      "steps": [
+        "Identify clear buyer intent",
+        "Avoid overly broad keywords like 'coloring book'"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail in niche markets with low search volume"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Buyer's intent to me is more important than big numbers."
+      ],
+      "id": "599f8a07-50a3-48a5-b665-7d2c52db95ba",
+      "type": "tactic",
+      "provenance": [
+        "x7kq3IiF5X4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:52:35.304726",
+      "last_seen": "2026-02-18T13:52:35.304726"
+    },
+    {
+      "name": "Relevance Over Competition Obsession",
+      "description": "Focus on keywords with actual demand rather than zero-competition niches.",
+      "steps": [
+        "Check for demand instead of competition",
+        "Align with marketplace trends"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 100
+      },
+      "caveats": [
+        "Ignoring market trends may lead to low profitability"
+      ],
+      "example_niches": [
+        "turtle diet book"
+      ],
+      "source_quotes": [
+        "If there's zero competition, that usually means there's no demand."
+      ],
+      "id": "c94b7ca3-cc9f-4885-893b-10234c149a23",
+      "type": "tactic",
+      "provenance": [
+        "x7kq3IiF5X4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:52:35.304726",
+      "last_seen": "2026-02-18T13:52:35.304726"
+    },
+    {
+      "name": "Focused Longtail Keywords",
+      "description": "Use specific, related keywords to avoid algorithm confusion and improve relevance.",
+      "steps": [
+        "Select a longtail keyword",
+        "Avoid unrelated keyword spamming"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 50,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Unrelated keywords suppress visibility"
+      ],
+      "example_niches": [
+        "Christian ADHD planner"
+      ],
+      "source_quotes": [
+        "Don't slap 12 keywords together on a book... they have no connection."
+      ],
+      "id": "0f9567d1-fb4b-45dc-abe5-c22ff4aa19a6",
+      "type": "tactic",
+      "provenance": [
+        "x7kq3IiF5X4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:52:35.304726",
+      "last_seen": "2026-02-18T13:52:35.304726"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Boost Low-Review Niche Books",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Don't publish stuff in corners of the internet waiting for strangers..."
+      ],
+      "id": "a9a43d42-352d-41df-a4cf-ec7ed81af948",
+      "type": "heuristic",
+      "provenance": [
+        "x7kq3IiF5X4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:52:35.304726",
+      "last_seen": "2026-02-18T13:52:35.304726"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon prioritizes relevance over competition in keyword rankings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Relevance is more important than competition obsession."
+      ],
+      "id": "6ca1aefb-37f6-4e50-b2d9-a0f13a0e011a",
+      "type": "claim",
+      "provenance": [
+        "x7kq3IiF5X4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:52:35.304726",
+      "last_seen": "2026-02-18T13:52:35.304726"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with unique constraints for higher relevance",
+      "why_it_works": "Combines identity, problem, and constraint to reduce competition",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Don't publish stuff in corners of the internet waiting for strangers..."
+      ],
+      "id": "2fb0ef2e-6c27-4e2d-98d7-71e871592952",
+      "type": "niche_pattern",
+      "provenance": [
+        "x7kq3IiF5X4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:52:35.304726",
+      "last_seen": "2026-02-18T13:52:35.304726"
+    }
+  ]
+}

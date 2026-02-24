@@ -1,0 +1,232 @@
+{
+  "source_type": "youtube",
+  "video_id": "frN6FPlspC0",
+  "title": "Amazon KDP Step by Step Low Content Book Niche Research Tutorial for Q3 July 2023",
+  "extracted_at": "2026-02-19T00:56:03.249799",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11545,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "target niche variations",
+      "description": "Identify underserved sub-niches by adding demographic or interest-based modifiers to broad search terms",
+      "steps": [
+        "Check Amazon search results for broad terms",
+        "Look for sponsored products and customer reviews",
+        "Use stock image sites for cover design",
+        "Run ads to boost visibility"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Adobe Stock"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition in broad terms"
+      ],
+      "example_niches": [
+        "hiking log book for women"
+      ],
+      "source_quotes": [
+        "If you want to take part in this competition... the only ways are spending money for ads"
+      ],
+      "id": "6011ab87-e38d-40bd-85ac-95e44dadf3b7",
+      "type": "tactic",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:55:16.466447",
+      "last_seen": "2026-02-19T00:55:16.466447"
+    },
+    {
+      "name": "patriotic holiday niches",
+      "description": "Leverage 4th of July celebrations by creating low-content books with patriotic themes and relevant keywords.",
+      "steps": [
+        "Identify holiday-related keywords (e.g., 'American Flag', 'Independence Day')",
+        "Check Amazon search results for keyword variations",
+        "Design covers with flag motifs and patriotic colors"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Adobe Stock",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Search term demand may be seasonal"
+      ],
+      "example_niches": [
+        "patriotic workout journal",
+        "BBQ travel planner"
+      ],
+      "source_quotes": [
+        "According to a survey conducted in 2022, 84% of American respondents stated they were planning to celebrate the 4th of July."
+      ],
+      "id": "85e87811-93d2-4e2d-b64f-b6f5a8aaad41",
+      "type": "tactic",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:03.249583",
+      "last_seen": "2026-02-19T00:56:03.249583"
+    },
+    {
+      "name": "seasonal event targeting",
+      "description": "Create low-content books around July holidays like World Chocolate Day and National Ice Cream Day.",
+      "steps": [
+        "Map July holidays to relevant niches (e.g., chocolate lovers, ice cream enthusiasts)",
+        "Analyze Google Trends for search volume patterns",
+        "Develop niche-specific cover designs"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Google Trends"
+      ],
+      "thresholds": {
+        "bsr_max": 400
+      },
+      "caveats": [
+        "Lower traffic compared to major holidays"
+      ],
+      "example_niches": [
+        "chocolate-themed journal",
+        "ice cream recipe planner"
+      ],
+      "source_quotes": [
+        "World Chocolate Day on July 7th, National Ice Cream Day on July 16th..."
+      ],
+      "id": "c97bf0c2-533d-4cda-b536-c2ec230aaf70",
+      "type": "tactic",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:03.249583",
+      "last_seen": "2026-02-19T00:56:03.249583"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "honeymoon period boost",
+      "condition": "If niche has low review counts and high search volume, prioritize for rapid growth",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "By the way, if you don't know about the honeymoon period..."
+      ],
+      "id": "625db4ea-f67e-4ec9-b84d-2d7ac0a8b366",
+      "type": "heuristic",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:55:16.466447",
+      "last_seen": "2026-02-19T00:55:16.466447"
+    },
+    {
+      "name": "seasonal demand boost",
+      "condition": "If search volume peaks around July holidays, prioritize related niches",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "The peak point [for BBQ searches] is on the 4th of July."
+      ],
+      "id": "c3e88f10-a681-4320-9186-9cc6c3d780b8",
+      "type": "heuristic",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:03.249583",
+      "last_seen": "2026-02-19T00:56:03.249583"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Q3 Amazon net revenues are higher than Q2",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "In 2022, the net revenues of online stores in Q3 were higher than in Q2"
+      ],
+      "id": "23960a25-8a0c-438f-9b14-6bff682eec56",
+      "type": "claim",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:55:16.466447",
+      "last_seen": "2026-02-19T00:55:16.466447"
+    },
+    {
+      "statement": "84% of American adults plan to celebrate Independence Day in 2022",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "According to a survey conducted in 2022, 84% of American respondents stated they were planning to celebrate the 4th of July."
+      ],
+      "id": "86a52840-5b06-4710-8b8d-fcba6e3e3d3e",
+      "type": "claim",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:03.249583",
+      "last_seen": "2026-02-19T00:56:03.249583"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "female hikers + goal tracking + summer season",
+      "description": "Combine specific identities with problem-solving needs aligned with seasonal trends",
+      "why_it_works": "Leverages seasonal demand and demographic targeting",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "If you publish a hiking log book with a female hiker on its cover..."
+      ],
+      "id": "17aee17c-c7ec-414b-8318-add0c105194f",
+      "type": "niche_pattern",
+      "provenance": [
+        "frN6FPlspC0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:55:16.466447",
+      "last_seen": "2026-02-19T00:55:16.466447"
+    }
+  ]
+}

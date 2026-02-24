@@ -1,0 +1,122 @@
+{
+  "source_type": "youtube",
+  "video_id": "xkkR4vJrh2w",
+  "title": "How to use Keywords Everywhere to find low competition keywords",
+  "extracted_at": "2026-02-18T21:52:20.321795",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4542,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "forum-based keyword research",
+      "description": "identify low competition keywords by analyzing user-generated content platforms like forums, quora, and reddit",
+      "steps": [
+        "install keywords everywhere chrome extension",
+        "search for keywords in google and analyze search results",
+        "prioritize keywords with 20-100 monthly search volume",
+        "locate forums and user content on first page results",
+        "use related searches and google auto-suggestions for additional terms"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition_level"
+      ],
+      "tools_mentioned": [
+        "keywords everywhere"
+      ],
+      "thresholds": {
+        "search_volume_max": 100,
+        "competition_min": "low"
+      },
+      "caveats": [
+        "zero search volume keywords may still attract traffic through long-tail queries"
+      ],
+      "example_niches": [
+        "soccer drills",
+        "bodybuilding"
+      ],
+      "source_quotes": [
+        "forums are not specifically optimized for seo so if they rank on first page they're likely low competition"
+      ],
+      "id": "f21cf078-ef77-494d-b7b4-53d328dc2284",
+      "type": "tactic",
+      "provenance": [
+        "xkkR4vJrh2w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:20.321595",
+      "last_seen": "2026-02-18T21:52:20.321595"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low-volume keyword prioritization",
+      "condition": "if search volume is between 20-100, prioritize for low competition",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt",
+        "value": 100
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "i like to be between 20 and 30 or around 100"
+      ],
+      "id": "26277df0-9d79-4516-8378-458eaff85644",
+      "type": "heuristic",
+      "provenance": [
+        "xkkR4vJrh2w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:20.321595",
+      "last_seen": "2026-02-18T21:52:20.321595"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "keywords everywhere is the only paid tool used for keyword research",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "keywords everywhere is the only paid tool that i use"
+      ],
+      "id": "d992ec5b-af7f-4c30-9b79-5c2c50de5493",
+      "type": "claim",
+      "provenance": [
+        "xkkR4vJrh2w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:20.321595",
+      "last_seen": "2026-02-18T21:52:20.321595"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "niche + problem + solution",
+      "example": "soccer drills + conditioning + bodybuilding",
+      "description": "combine specific niches with targeted solutions to identify underserved markets",
+      "why_it_works": "targets specific audience needs with minimal competition",
+      "signals": [
+        "low review counts",
+        "user-generated content"
+      ],
+      "source_quotes": [
+        "how to build a soccer conditioning base this might be good"
+      ],
+      "id": "211d2d7f-2d5b-4e39-bb8d-f09fe585f7c4",
+      "type": "niche_pattern",
+      "provenance": [
+        "xkkR4vJrh2w"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:52:20.321595",
+      "last_seen": "2026-02-18T21:52:20.321595"
+    }
+  ]
+}

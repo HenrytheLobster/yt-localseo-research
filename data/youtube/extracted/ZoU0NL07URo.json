@@ -1,0 +1,196 @@
+{
+  "source_type": "youtube",
+  "video_id": "ZoU0NL07URo",
+  "title": "How to Use Publisher Rocket to Conduct Keyword Research For Your Low-Content Books",
+  "extracted_at": "2026-02-18T23:30:30.085836",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10735,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket to analyze keywords for low-content books by checking competitors, search volume, and earnings.",
+      "steps": [
+        "Search for keywords using the keyword search tool",
+        "Analyze competitive score and number of competitors",
+        "Filter keywords based on estimated search volume and earnings"
+      ],
+      "signals_used": [
+        "competitors",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Amazon search data is estimated, not exact"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Publisher Rocket shows estimated monthly search volume and average monthly earnings."
+      ],
+      "id": "a67e78c5-1cb3-423b-afbb-e6f3d5e1ec69",
+      "type": "tactic",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:29:53.488251",
+      "last_seen": "2026-02-18T23:29:53.488251"
+    },
+    {
+      "name": "Competitive Score Analysis",
+      "description": "Evaluate keyword competitiveness using Publisher Rocket's score metric",
+      "steps": [
+        "Check competitive score thresholds (under 40 for new authors, up to 60 for low-content books)",
+        "Compare with average monthly earnings of top books",
+        "Analyze Amazon search volume to validate market demand"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "average_monthly_earnings"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 60,
+        "earnings_min": 1000
+      },
+      "caveats": [
+        "High search volume with low earnings may indicate poor quality books"
+      ],
+      "example_niches": [
+        "gratitude journal",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the closer to one you can get the less and less competitive it gets",
+        "you can go for a competitive score of 60 and maybe even a bit higher"
+      ],
+      "id": "803b4ad9-c9ad-4f00-80d7-dd277893dd8b",
+      "type": "tactic",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:30:30.085719",
+      "last_seen": "2026-02-18T23:30:30.085719"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitive Score Threshold",
+      "condition": "If competitive score is below 50, prioritize the keyword",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Competitive score out of 100 indicates battle intensity."
+      ],
+      "id": "0f5e1df1-7903-480c-b523-98e1ac44ecf6",
+      "type": "heuristic",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:29:53.488251",
+      "last_seen": "2026-02-18T23:29:53.488251"
+    },
+    {
+      "name": "Earnings vs. Search Volume",
+      "condition": "If low average monthly earnings but high search volume, investigate quality issues",
+      "machine_rule": {
+        "field": "average_monthly_earnings",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "flag",
+      "weight": 0.6,
+      "source_quotes": [
+        "if you see any really low numbers that could mean one of two things"
+      ],
+      "id": "e8989efa-1269-4995-852e-6c98521a58db",
+      "type": "heuristic",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:30:30.085719",
+      "last_seen": "2026-02-18T23:30:30.085719"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon does not release exact search data, so Publisher Rocket provides estimates.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon doesn't actually release its search data."
+      ],
+      "id": "08137ad7-2c3d-48c1-8657-78f9bf029bbf",
+      "type": "claim",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:29:53.488251",
+      "last_seen": "2026-02-18T23:29:53.488251"
+    },
+    {
+      "statement": "Low-content books can tolerate higher competitive scores than traditional fiction",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "with these low content books that are fairly easy and quick to create the risk really isn't that high"
+      ],
+      "id": "1777ed8e-96e9-4c64-92c8-0375198058fe",
+      "type": "claim",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:30:30.085719",
+      "last_seen": "2026-02-18T23:30:30.085719"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with niche constraints for lower competition.",
+      "why_it_works": "Combines identity (teen boys), problem (ADHD), and constraint (Christian) for precise targeting.",
+      "signals": [
+        "low review counts",
+        "high competition score"
+      ],
+      "source_quotes": [
+        "Look for keywords with lower competition and relevant niches."
+      ],
+      "id": "267c28ba-3b73-40ca-b3c9-8ca4a569d2d5",
+      "type": "niche_pattern",
+      "provenance": [
+        "ZoU0NL07URo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:29:53.488251",
+      "last_seen": "2026-02-18T23:29:53.488251"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "source_type": "youtube",
+  "video_id": "So7fALwgg0U",
+  "title": "Testing KDP Keywords From Creative Fabrica + Revealing 2 Profitable KDP Niches #kdp   #kdpkeywords",
+  "extracted_at": "2026-02-18T21:54:33.634053",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8252,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Creative Fabrica Latest KDP Interiors",
+      "description": "Use Creative Fabrica's KDP Interiors sorted by latest uploads to discover new niches and avoid saturated markets.",
+      "steps": [
+        "Navigate to Creative Fabrica's KDP Interiors section",
+        "Sort results by 'latest' instead of popularity",
+        "Filter for under-saturated niches with low competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Some niches may lack sufficient data for validation"
+      ],
+      "example_niches": [
+        "Diamond painting logbook",
+        "Debt tracker snowball"
+      ],
+      "source_quotes": [
+        "Sort by the latest and you will have results of endless pages of the most updated KDP Interiors"
+      ],
+      "id": "a9fd141e-6e71-4718-8454-6ece27f7e0e8",
+      "type": "tactic",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:05.075270",
+      "last_seen": "2026-02-18T21:54:05.075270"
+    },
+    {
+      "name": "competition_filtering",
+      "description": "Filter keywords by competition level to identify low-competition niches for KDP.",
+      "steps": [
+        "Open keyword data in Google Sheets",
+        "Filter by competition metric",
+        "Cross-check niche scores and search volumes"
+      ],
+      "signals_used": [
+        "niche_score",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Google Sheets",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "niche_score_max": 50,
+        "search_volume_min": 1000
+      },
+      "caveats": [
+        "Keywords require regular updates due to market shifts"
+      ],
+      "example_niches": [
+        "addiction recovery journal"
+      ],
+      "source_quotes": [
+        "we're going to filter based on the competition"
+      ],
+      "id": "14ca0200-449f-4bc9-b715-e95a435a1776",
+      "type": "tactic",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:33.633873",
+      "last_seen": "2026-02-18T21:54:33.633873"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Niche Boost",
+      "condition": "If a niche has low review counts, it may indicate undersaturation",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Diamond painting logbook had low results until refined with keywords"
+      ],
+      "id": "9507f45e-1313-4f7a-b4b9-a77b658e2b78",
+      "type": "heuristic",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:05.075270",
+      "last_seen": "2026-02-18T21:54:05.075270"
+    },
+    {
+      "name": "high_niche_score_boost",
+      "condition": "If niche score exceeds 40, prioritize for KDP",
+      "machine_rule": {
+        "field": "niche_score",
+        "op": "gt",
+        "value": 40
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "keyword Niche score of 47"
+      ],
+      "id": "d2793d55-df59-4014-b9be-ff0e78c677da",
+      "type": "heuristic",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:33.633873",
+      "last_seen": "2026-02-18T21:54:33.633873"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Creative Fabrica's KDP Interiors can reveal profitable niches through recent uploads",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "This is the majority of the reason why sellers take advantage of a new Niche"
+      ],
+      "id": "9c1a5c8a-144c-48e8-807c-6cc4a242b171",
+      "type": "claim",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:05.075270",
+      "last_seen": "2026-02-18T21:54:05.075270"
+    },
+    {
+      "statement": "KDP niches with high niche scores (47+) show strong market potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "keyword Niche score of 47"
+      ],
+      "id": "2d15d6e8-998c-4f97-b00b-270abd1e4dec",
+      "type": "claim",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:33.633873",
+      "last_seen": "2026-02-18T21:54:33.633873"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Diamond painting enthusiasts + tracking progress + budget constraints",
+      "description": "Combine specific identities with problem-solving needs in constrained environments",
+      "why_it_works": "Balances niche specificity with practicality for KDP audiences",
+      "signals": [
+        "low review counts",
+        "language-specific variations"
+      ],
+      "source_quotes": [
+        "Diamond painting Journal had a keyword score of 44 with 1072 results"
+      ],
+      "id": "08dc566c-a6a2-4929-8856-8475e75ee8e8",
+      "type": "niche_pattern",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:05.075270",
+      "last_seen": "2026-02-18T21:54:05.075270"
+    },
+    {
+      "pattern_template": "PROBLEM + SOLUTION",
+      "example": "addiction recovery + journal",
+      "description": "Target specific pain points with actionable solutions",
+      "why_it_works": "High search volume paired with low competition",
+      "signals": [
+        "high search volume",
+        "low competition"
+      ],
+      "source_quotes": [
+        "addiction recovery journal gave us 1000 search volume"
+      ],
+      "id": "8052e954-ac71-4d83-b200-af60123f5f22",
+      "type": "niche_pattern",
+      "provenance": [
+        "So7fALwgg0U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:54:33.633873",
+      "last_seen": "2026-02-18T21:54:33.633873"
+    }
+  ]
+}

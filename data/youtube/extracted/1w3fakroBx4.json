@@ -1,0 +1,405 @@
+{
+  "source_type": "youtube",
+  "video_id": "1w3fakroBx4",
+  "title": "Amazon KDP Niche Research for Low Content Books | Low Content Books #23",
+  "extracted_at": "2026-02-18T20:16:39.996622",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15088,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "high_search_niche_promotion",
+      "description": "Promote books in high search volume niches by leveraging YouTube influencers and Amazon Associates links for dual revenue.",
+      "steps": [
+        "Identify trending niches with high search volume using tools like Iraq",
+        "Collaborate with influencers by sending sample books",
+        "Use Amazon Associates links for affiliate income"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Iraq",
+        "Amazon Associates"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires active promotion to capitalize on search trends"
+      ],
+      "example_niches": [
+        "personalized Father's Day books"
+      ],
+      "source_quotes": [
+        "create books for niches that people are searching for right now"
+      ],
+      "id": "b18f7399-3bf7-43e9-8c6d-9443868f0e14",
+      "type": "tactic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:15:28.444935",
+      "last_seen": "2026-02-18T20:15:28.444935"
+    },
+    {
+      "name": "target underserved niches",
+      "description": "Identify trending niches with limited KDP content to capitalize on market gaps",
+      "steps": [
+        "research trending keywords",
+        "analyze top-ranking KDP books",
+        "validate niche saturation"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "requires active monitoring for new competitors"
+      ],
+      "example_niches": [
+        "kawaii notebook",
+        "baby shower guest book"
+      ],
+      "source_quotes": [
+        "there's a gap that we can fill",
+        "not many people are uploading to it"
+      ],
+      "id": "bb1698d6-e31d-4ba1-a9f6-9a455909a3b1",
+      "type": "tactic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:07.468181",
+      "last_seen": "2026-02-18T20:16:07.468181"
+    },
+    {
+      "name": "leverage keyword research",
+      "description": "Use keyword trends to identify high-potential niches for KDP publishing",
+      "steps": [
+        "scroll through trending keywords",
+        "cross-reference with Amazon search data",
+        "prioritize low-competition terms"
+      ],
+      "signals_used": [
+        "review_count",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Amazon search bar",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_min": 50,
+        "bsr_min": 10000
+      },
+      "caveats": [
+        "avoid oversaturated terms"
+      ],
+      "example_niches": [
+        "coloring book",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "scroll for keywords",
+        "there's a lot of caliper books"
+      ],
+      "id": "1602a83f-285a-4953-9c72-083289312de0",
+      "type": "tactic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:07.468181",
+      "last_seen": "2026-02-18T20:16:07.468181"
+    },
+    {
+      "name": "affiliate_promotion",
+      "description": "Use Amazon Associates link to earn double income from book sales",
+      "steps": [
+        "Promote book",
+        "Use Associates link"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When design quality is poor"
+      ],
+      "example_niches": [
+        "adult coloring book"
+      ],
+      "source_quotes": [
+        "if your design...get some good reviews"
+      ],
+      "id": "427039bf-ad76-4963-a6b6-f1ed95809a68",
+      "type": "tactic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:39.996498",
+      "last_seen": "2026-02-18T20:16:39.996498"
+    },
+    {
+      "name": "keyword_research",
+      "description": "Identify high-demand keywords for niche markets",
+      "steps": [
+        "Scroll through keywords",
+        "Analyze search volume"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Keyword saturation may reduce profitability"
+      ],
+      "example_niches": [
+        "baby memory book"
+      ],
+      "source_quotes": [
+        "so many keywords for coloring books...other coloring book zombies"
+      ],
+      "id": "1d89dace-13b3-45c4-9e30-dd2657c55add",
+      "type": "tactic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:39.996498",
+      "last_seen": "2026-02-18T20:16:39.996498"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "prioritize_high_search",
+      "condition": "If niche has high search volume, prioritize it over low competition niches",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "look for high search niches because it's more important"
+      ],
+      "id": "b7d7f2a1-1f9c-4e06-9073-febe428f21c6",
+      "type": "heuristic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:15:28.444935",
+      "last_seen": "2026-02-18T20:15:28.444935"
+    },
+    {
+      "name": "low competition signal",
+      "condition": "If niche has fewer than 200 reviews and BSR over 50,000, it indicates low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "not many people are uploading to it",
+        "very limited amount of books"
+      ],
+      "id": "f9a67d50-cf0c-484e-8493-71851d68f20c",
+      "type": "heuristic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:07.468181",
+      "last_seen": "2026-02-18T20:16:07.468181"
+    },
+    {
+      "name": "review_threshold_heuristic",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if your book cover...get some good reviews"
+      ],
+      "id": "a54fb7ee-e407-44ef-a8d4-6f554c7383bf",
+      "type": "heuristic",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:39.996498",
+      "last_seen": "2026-02-18T20:16:39.996498"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP niches with high search volume can be profitable even if they have moderate competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "high search niches are more important than low competition"
+      ],
+      "id": "455809ad-d42c-4b71-a7f5-ad0132fbcd93",
+      "type": "claim",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:15:28.444935",
+      "last_seen": "2026-02-18T20:15:28.444935"
+    },
+    {
+      "statement": "KDP does not require postal codes for multi-country publishing",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "i've never come across any postal codes on any amazon kdp platform"
+      ],
+      "id": "eef8086d-2f02-43db-b666-4f46d12f2c11",
+      "type": "claim",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:07.468181",
+      "last_seen": "2026-02-18T20:16:07.468181"
+    },
+    {
+      "statement": "Baby memory books are Amazon's curated choice",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this one is amazon's amazon kdp's choice"
+      ],
+      "id": "13722ee0-2454-4539-a892-aa5ecd6058fb",
+      "type": "claim",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:39.996498",
+      "last_seen": "2026-02-18T20:16:39.996498"
+    },
+    {
+      "statement": "Coloring book niches show persistent demand",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is lasting forever...so many keywords"
+      ],
+      "id": "b554968f-d1d7-4b75-8e8b-f43ce8946e74",
+      "type": "claim",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:39.996498",
+      "last_seen": "2026-02-18T20:16:39.996498"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + TIMING + PERSONALIZATION",
+      "example": "Father's Day + personalized book templates",
+      "description": "Trending niches combine specific identities with time-sensitive personalization opportunities",
+      "why_it_works": "Leverages seasonal demand and customizable content for mass appeal",
+      "signals": [
+        "low review counts",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "personalized book for that is trending for Father's Day"
+      ],
+      "id": "52be7c18-390c-4c23-a21f-c9a4c22876dc",
+      "type": "niche_pattern",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:15:28.444935",
+      "last_seen": "2026-02-18T20:15:28.444935"
+    },
+    {
+      "pattern_template": "TRENDING_TOPIC + LOW_CONTENT",
+      "example": "kawaii notebook + low-content book",
+      "description": "Trending topics with minimal existing KDP content create high opportunity niches",
+      "why_it_works": "Combines viral interest with low competition for new publishers",
+      "signals": [
+        "low review counts",
+        "limited BSR entries"
+      ],
+      "source_quotes": [
+        "kawaii notebook is trending but very limited",
+        "not many people are uploading to it"
+      ],
+      "id": "12343d80-adc5-4c18-9549-dadbfea3c71c",
+      "type": "niche_pattern",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:07.468181",
+      "last_seen": "2026-02-18T20:16:07.468181"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "adult coloring book + keyword competition + low review counts",
+      "description": "Niche markets with high search volume but limited competition",
+      "why_it_works": "Balances demand with lower entry barriers",
+      "signals": [
+        "low review counts",
+        "high keyword volume"
+      ],
+      "source_quotes": [
+        "so many keywords...don't let that detail you"
+      ],
+      "id": "80faab24-b2e3-4377-a591-0b7e02cfb96e",
+      "type": "niche_pattern",
+      "provenance": [
+        "1w3fakroBx4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:16:39.996498",
+      "last_seen": "2026-02-18T20:16:39.996498"
+    }
+  ]
+}

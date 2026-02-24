@@ -1,0 +1,273 @@
+{
+  "video_id": "57QNGdvsKhE",
+  "title": "Bookbeam KDP Keyword Research Tool Big Update! - Review and Tutorial",
+  "extracted_at": "2026-02-17T22:26:08.721116",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 12834,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Niche Finder Filter",
+      "description": "Identify low-competition, high-potential niches using BSR and review thresholds",
+      "steps": [
+        "Select marketplace and sort by self-published books",
+        "Set BSR below 30,000 and review count under 20",
+        "Analyze 270 filtered results for profitable keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Bookbeam"
+      ],
+      "thresholds": {
+        "reviews_max": 20,
+        "bsr_max": 30000
+      },
+      "caveats": [
+        "Filters may exclude emerging trends"
+      ],
+      "example_niches": [
+        "Mental toughness for boy athletes",
+        "Road trip game book for teens"
+      ],
+      "source_quotes": [
+        "'we want books that are below 30,000 BSR... less than 20 reviews'"
+      ],
+      "id": "ff80b21a-b0d8-49c0-997a-2154b3942ff3",
+      "type": "tactic",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:07.391199",
+      "last_seen": "2026-02-17T22:25:07.391199"
+    },
+    {
+      "name": "Competitor Keyword Spying",
+      "description": "Use reverse keyword tool to analyze competitors' rankings and target high-volume keywords",
+      "steps": [
+        "Input multiple ASINs into reverse keyword tool",
+        "Identify high-search-volume keywords competitors rank for",
+        "Create Amazon ad campaigns targeting those keywords",
+        "Aim for organic ranking through paid traffic"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Bookbeam",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 100000,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Monthly subscription cost may outweigh benefits for some users"
+      ],
+      "example_niches": [
+        "coloring books",
+        "joke books"
+      ],
+      "source_quotes": [
+        "\"this is where it gets important, right?\""
+      ],
+      "id": "6033730a-ef97-4b71-9976-d4be14c77e03",
+      "type": "tactic",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:38.690894",
+      "last_seen": "2026-02-17T22:25:38.690894"
+    },
+    {
+      "name": "tool_trial_strategy",
+      "description": "Start with a single keyword research tool to test effectiveness before committing to a subscription",
+      "steps": [
+        "Try Book Beam for one month",
+        "Evaluate tool performance",
+        "Upgrade to annual plan if satisfied"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When budget constraints limit tool options"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "If you do want to get it, maybe just start with one month, try it out..."
+      ],
+      "id": "29370cd3-2a96-402f-aef9-696b16505ec9",
+      "type": "tactic",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:26:08.720901",
+      "last_seen": "2026-02-17T22:26:08.720901"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median_reviews < 200 then boost score",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'books with less than 20 reviews... very easy to compete'"
+      ],
+      "id": "59b35cf4-6d7e-48e9-8959-e5751b0b27e1",
+      "type": "heuristic",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:07.391199",
+      "last_seen": "2026-02-17T22:25:07.391199"
+    },
+    {
+      "name": "Seasonal Niche Capitalization",
+      "condition": "If a niche shows consistent top 1,000 seasonal rankings across multiple years, then prioritize publishing in that niche during relevant seasons",
+      "machine_rule": {
+        "field": "seasonal_ranking_consistency",
+        "op": "gte",
+        "value": 3
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "\"these are evergreen topics...sell every single year\""
+      ],
+      "id": "1d0c048f-7bed-4a7a-a18c-2d34c7131341",
+      "type": "heuristic",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:38.690894",
+      "last_seen": "2026-02-17T22:25:38.690894"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize tools with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If budget is not the issue, then this is the best one"
+      ],
+      "id": "d8d63fb1-6ea4-4fcb-b7b4-8223a7212664",
+      "type": "heuristic",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:26:08.720901",
+      "last_seen": "2026-02-17T22:26:08.720901"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Bookbeam is the only keyword research tool with a niche finder feature",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'Bookbeam is the only one that has this feature out of all the keyword research tool out there'"
+      ],
+      "id": "f8eb0d8e-91f3-4677-867b-53ba862e819c",
+      "type": "claim",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:07.391199",
+      "last_seen": "2026-02-17T22:25:07.391199"
+    },
+    {
+      "statement": "Bookbeam is the most expensive KDP keyword research tool with monthly subscription model",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"it is also the most expensive keyword research tool out there\""
+      ],
+      "id": "1deed29d-48c1-42e0-9802-b2ba83e70554",
+      "type": "claim",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:38.690894",
+      "last_seen": "2026-02-17T22:25:38.690894"
+    },
+    {
+      "statement": "Book Beam's annual plan costs $29/month before discounts",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the basic one is 29 bucks per month"
+      ],
+      "id": "fb2788cc-e059-46a6-a27e-ed045d21cba8",
+      "type": "claim",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:26:08.720901",
+      "last_seen": "2026-02-17T22:26:08.720901"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "boy athletes + mental toughness + zero reviews",
+      "description": "Target underserved niches with low competition signals",
+      "why_it_works": "Low review counts indicate minimal competition while high BSR shows demand",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "'mental toughness for boy athletes... zero reviews at 2,400 BSR'"
+      ],
+      "id": "24cd0afb-0c8e-4400-9eb4-5a84b361c188",
+      "type": "niche_pattern",
+      "provenance": [
+        "57QNGdvsKhE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-17T22:25:07.391199",
+      "last_seen": "2026-02-17T22:25:07.391199"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "source_type": "youtube",
+  "video_id": "Zj-RO4Kbzm0",
+  "title": "Percent of KU and Big Publishers on Amazon: New Feature!!",
+  "extracted_at": "2026-02-18T23:52:54.046118",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2627,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 0
+  },
+  "tactics": [
+    {
+      "name": "Category Competition Analysis",
+      "description": "Authors can assess market competition by checking KU and big publisher dominance in categories using Publisher Rocket's new feature.",
+      "steps": [
+        "Access Publisher Rocket's category feature",
+        "Review percentages of KU and big publisher books in top 100",
+        "Decide KU participation based on competition data"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data changes over time"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Authors can now look at their respective categories and see whether or not it's predominantly held by large Publishing Company"
+      ],
+      "id": "d79d4729-d3ee-4233-9ee2-0566e87d98cc",
+      "type": "tactic",
+      "provenance": [
+        "Zj-RO4Kbzm0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:52:54.045989",
+      "last_seen": "2026-02-18T23:52:54.045989"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "KU Dominance Heuristic",
+      "condition": "If a category has high KU percentage, authors should consider KU participation",
+      "machine_rule": {
+        "field": "ku_percentage",
+        "op": "gt",
+        "value": 30
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Seeing a large percentage of books in KU in your categories can help you with your decision of whether to enter KU or to go wide"
+      ],
+      "id": "1617855d-2d64-4c15-b36c-54aad7c06bf3",
+      "type": "heuristic",
+      "provenance": [
+        "Zj-RO4Kbzm0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:52:54.045989",
+      "last_seen": "2026-02-18T23:52:54.045989"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KU books receive an indirect benefit on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "KU books get an indirect benefit on Amazon which I've covered previously"
+      ],
+      "id": "92035569-cdfe-44b4-a8d6-0bd1b653f03c",
+      "type": "claim",
+      "provenance": [
+        "Zj-RO4Kbzm0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:52:54.045989",
+      "last_seen": "2026-02-18T23:52:54.045989"
+    }
+  ],
+  "niche_patterns": []
+}

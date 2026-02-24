@@ -1,0 +1,156 @@
+{
+  "source_type": "youtube",
+  "video_id": "KBtArBPxXWI",
+  "title": "Publisher Rocket Keyword Feature Update! 2021",
+  "extracted_at": "2026-02-18T23:12:37.603240",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 5246,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Enhanced Keyword Suggestions",
+      "description": "Improved keyword discovery by analyzing both primary and tertiary search terms on Amazon",
+      "steps": [
+        "Analyze primary keyword",
+        "Extract tertiary terms",
+        "Generate comprehensive keyword list"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Less effective for niche markets with low search volume"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we found a way to also look behind the term and other tertiary ways to be able to pull even more keyword suggestions"
+      ],
+      "id": "36e6a8f0-89f9-4745-b07d-8de40c780001",
+      "type": "tactic",
+      "provenance": [
+        "KBtArBPxXWI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:12:37.602943",
+      "last_seen": "2026-02-18T23:12:37.602943"
+    },
+    {
+      "name": "Color-Coded Competitiveness",
+      "description": "Visual indicators for keyword quality based on search volume and competition",
+      "steps": [
+        "Assign color codes to keywords",
+        "Filter by color categories",
+        "Prioritize high-value terms"
+      ],
+      "signals_used": [
+        "estimated_searches",
+        "competition_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires accurate data input for reliable coloring"
+      ],
+      "example_niches": [
+        "Christian fiction"
+      ],
+      "source_quotes": [
+        "we've now given it a color system to let you know right off the bat if that's good or bad"
+      ],
+      "id": "2e6949de-c5f2-40f2-b031-8025f84eb585",
+      "type": "tactic",
+      "provenance": [
+        "KBtArBPxXWI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:12:37.602943",
+      "last_seen": "2026-02-18T23:12:37.602943"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Price/Length Filtering",
+      "condition": "If average price is below $1.00 or pages exceed 500, prioritize alternative keywords",
+      "machine_rule": {
+        "field": "average_price",
+        "op": "lt",
+        "value": 1.0
+      },
+      "action": "flag",
+      "weight": 0.6,
+      "source_quotes": [
+        "would you really want to tailor towards a market that the average price is like 67 cents"
+      ],
+      "id": "66866a6c-a9fd-4e8f-b476-df1ce20a5f26",
+      "type": "heuristic",
+      "provenance": [
+        "KBtArBPxXWI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:12:37.602943",
+      "last_seen": "2026-02-18T23:12:37.602943"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket now crawls Amazon for historical data collection",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we have a system that's going through and crawling amazon and pulling more information"
+      ],
+      "id": "7d7ccdbd-b1ee-41cf-80b8-36bc8380c02b",
+      "type": "claim",
+      "provenance": [
+        "KBtArBPxXWI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:12:37.602943",
+      "last_seen": "2026-02-18T23:12:37.602943"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche targeting with specific audience needs and content restrictions",
+      "why_it_works": "Combines demographic targeting with content-specific constraints",
+      "signals": [
+        "low review counts",
+        "specific BSR ranges"
+      ],
+      "source_quotes": [
+        "would you really want to tailor towards a market that the average price is like 67 cents"
+      ],
+      "id": "c1633a9f-663a-4511-a372-a4865b0eca8c",
+      "type": "niche_pattern",
+      "provenance": [
+        "KBtArBPxXWI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:12:37.602943",
+      "last_seen": "2026-02-18T23:12:37.602943"
+    }
+  ]
+}

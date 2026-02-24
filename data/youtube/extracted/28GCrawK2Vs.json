@@ -1,0 +1,193 @@
+{
+  "source_type": "youtube",
+  "video_id": "28GCrawK2Vs",
+  "title": "Book Category Research Like a Pro for Amazon KDP with Publisher Rocket",
+  "extracted_at": "2026-02-18T22:31:23.833558",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11018,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "category_search",
+      "description": "Use Publisher Rocket to identify optimal book categories by analyzing sales thresholds and category visibility",
+      "steps": [
+        "Access Publisher Rocket's category search tool",
+        "Filter categories by main topic (e.g., business and money)",
+        "Differentiate selectable categories from ghost categories",
+        "Evaluate sales thresholds for ranking potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Ghost categories prevent bestseller status"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Categories are essentially your book shelf placement..."
+      ],
+      "id": "b79bcfab-43aa-46a9-9a03-a0e24dce8f05",
+      "type": "tactic",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:30:53.934990",
+      "last_seen": "2026-02-18T22:30:53.934990"
+    },
+    {
+      "name": "category_sales_threshold_analysis",
+      "description": "Use Publisher Rocket to identify categories with achievable sales thresholds for top rankings",
+      "steps": [
+        "Check daily sales requirements for top positions",
+        "Compare publisher dominance percentages"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Categories with high publisher presence may require more marketing spend"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you would have to sell 178 books a day to be number one"
+      ],
+      "id": "adc0ab21-ae86-4c97-a5db-f255adefb6e4",
+      "type": "tactic",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:23.833382",
+      "last_seen": "2026-02-18T22:31:23.833382"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "sales_threshold_heuristic",
+      "condition": "If category sales thresholds are excessively high, prioritize lower competition categories",
+      "machine_rule": {
+        "field": "sales_to_10",
+        "op": "gt",
+        "value": 10
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "You would need to sell 13 books a day..."
+      ],
+      "id": "4e7dc7c3-0fcb-4bec-8b7f-f1f859ae2b9d",
+      "type": "heuristic",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:30:53.934990",
+      "last_seen": "2026-02-18T22:30:53.934990"
+    },
+    {
+      "name": "low_competition_niche_boost",
+      "condition": "If category has low review counts and publisher dominance < 50%, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "commercial policy only has 21% of it taken up by publishers"
+      ],
+      "id": "841b9d24-a0fe-44e4-820b-cf29221eec4b",
+      "type": "heuristic",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:23.833382",
+      "last_seen": "2026-02-18T22:31:23.833382"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon KDP categories determine book visibility and ranking potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Categories differ between paperbacks and ebooks..."
+      ],
+      "id": "bcb51b91-b87b-4161-a5c0-414b5ae7d34e",
+      "type": "claim",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:30:53.934990",
+      "last_seen": "2026-02-18T22:30:53.934990"
+    },
+    {
+      "statement": "Major publishers dominate 85% of economics category books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "economics, that's 85% of major publishers"
+      ],
+      "id": "a173ea8f-53be-4862-a8bc-758169f1f21b",
+      "type": "claim",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:23.833382",
+      "last_seen": "2026-02-18T22:31:23.833382"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche combinations with low review counts and specific constraints",
+      "why_it_works": "Targets underserved markets with minimal competition",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Ghost categories are difficult for shoppers to find..."
+      ],
+      "id": "48181f9f-c818-4a66-93dd-583b94215326",
+      "type": "niche_pattern",
+      "provenance": [
+        "28GCrawK2Vs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:30:53.934990",
+      "last_seen": "2026-02-18T22:30:53.934990"
+    }
+  ]
+}

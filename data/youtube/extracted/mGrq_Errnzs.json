@@ -1,0 +1,148 @@
+{
+  "source_type": "youtube",
+  "video_id": "mGrq_Errnzs",
+  "title": "Improve Your Book BSR",
+  "extracted_at": "2026-02-18T04:07:19.164407",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4157,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Rank Score Accumulation",
+      "description": "Each book sale/download adds a point to the rank score, with daily decay of previous points.",
+      "steps": [
+        "Drive sales/downloads for 4-5 days",
+        "Maintain consistent marketing without price changes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Decay rate reduces effectiveness after 5 days"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "each seller download of a product counts as one point towards that hypothetical like rank score"
+      ],
+      "id": "59ccee9a-a068-4799-9a93-c0b0fbe08615",
+      "type": "tactic",
+      "provenance": [
+        "mGrq_Errnzs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:19.164096",
+      "last_seen": "2026-02-18T04:07:19.164096"
+    },
+    {
+      "name": "Subcategory Focus",
+      "description": "Target low-competition subcategories to avoid direct competition with top authors.",
+      "steps": [
+        "Research subcategories with low BSR",
+        "Position books in niche markets"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires ongoing market analysis"
+      ],
+      "example_niches": [
+        "Christian ADHD resources"
+      ],
+      "source_quotes": [
+        "understanding how to rank it's by sub category that's really empowering"
+      ],
+      "id": "d6e6750e-ca75-48bc-a4b3-405b7b10beab",
+      "type": "tactic",
+      "provenance": [
+        "mGrq_Errnzs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:19.164096",
+      "last_seen": "2026-02-18T04:07:19.164096"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Decay Optimization",
+      "condition": "If sales are driven over 4-5 days, the rank score accumulates more effectively",
+      "machine_rule": {
+        "field": "days_active",
+        "op": "gte",
+        "value": 4
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "each day the preceding day score decreases by half and is added to today's points"
+      ],
+      "id": "03a2554a-6a97-46e3-adab-2108267024a5",
+      "type": "heuristic",
+      "provenance": [
+        "mGrq_Errnzs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:19.164096",
+      "last_seen": "2026-02-18T04:07:19.164096"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's BSR algorithm prioritizes recent sales/downloads with exponential decay",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "each day the preceding day score decreases by half and is added to today's points"
+      ],
+      "id": "5c4ccdd0-621d-4778-ba0f-029ac716b601",
+      "type": "claim",
+      "provenance": [
+        "mGrq_Errnzs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:19.164096",
+      "last_seen": "2026-02-18T04:07:19.164096"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets underserved niches with low competition and high demand",
+      "why_it_works": "Combines specific identity with problem-solving potential in constrained markets",
+      "signals": [
+        "low review counts",
+        "BSR"
+      ],
+      "source_quotes": [
+        "being able to rank books and other categories along with low content has been really great"
+      ],
+      "id": "38fb955b-4768-4c4a-be70-fba9895bd856",
+      "type": "niche_pattern",
+      "provenance": [
+        "mGrq_Errnzs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:07:19.164096",
+      "last_seen": "2026-02-18T04:07:19.164096"
+    }
+  ]
+}

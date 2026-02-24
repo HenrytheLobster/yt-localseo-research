@@ -1,0 +1,371 @@
+{
+  "source_type": "youtube",
+  "video_id": "ZrnRqllRrrk",
+  "title": "HOW TO SELL BOOKS WITH PUBLISHER ROCKET: DEMO",
+  "extracted_at": "2026-02-18T23:32:53.013199",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 19677,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 4
+  },
+  "tactics": [
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Use Publisher Rocket to identify keywords with low competition and sufficient search volume for better rankings.",
+      "steps": [
+        "Input target keywords (e.g., 'funny mysteries')",
+        "Analyze generated keywords for competitive score and search volume",
+        "Select keywords with competitive score <65 and search volume >200"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "amazon_searches"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 65,
+        "amazon_searches_min": 200
+      },
+      "caveats": [
+        "Software data may lag behind real-time Amazon rankings"
+      ],
+      "example_niches": [
+        "mystery",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "a good framework to keep in mind... anything under 65 or even anything under 60 would be great"
+      ],
+      "id": "0ea3a01f-af92-470b-bf48-5c3a19df3001",
+      "type": "tactic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:05.176247",
+      "last_seen": "2026-02-18T23:31:05.176247"
+    },
+    {
+      "name": "Category Sales Analysis",
+      "description": "Use Publisher Rocket to identify categories with lower sales thresholds for top bestseller ranks.",
+      "steps": [
+        "Input keywords like 'mystery' to generate category options",
+        "Check sales needed to reach #1 and #10 rankings",
+        "Prioritize categories requiring fewer sales for visibility"
+      ],
+      "signals_used": [
+        "BSR",
+        "sales_threshold"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 348,
+        "sales_max": 141
+      },
+      "caveats": [
+        "Avoid irrelevant categories to prevent Amazon penalties"
+      ],
+      "example_niches": [
+        "cozy mystery",
+        "erotica mystery"
+      ],
+      "source_quotes": [
+        "it takes 141 sales to reach number 10"
+      ],
+      "id": "634a3843-6214-43da-a447-c38bc1d065e2",
+      "type": "tactic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:16.315120",
+      "last_seen": "2026-02-18T23:32:16.315120"
+    },
+    {
+      "name": "Keyword Campaign Compilation",
+      "description": "Generate Amazon ad keywords using Publisher Rocket filters",
+      "steps": [
+        "Define niche (e.g., funny mysteries)",
+        "Apply category filters",
+        "Export keyword lists"
+      ],
+      "signals_used": [
+        "category",
+        "search_results"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "keywords_min": 1000
+      },
+      "caveats": [
+        "Filtering requires domain knowledge"
+      ],
+      "example_niches": [
+        "paperback books"
+      ],
+      "source_quotes": [
+        "compile lists for your amazon ads"
+      ],
+      "id": "69dbca5d-9780-4c06-8985-665b48160c4e",
+      "type": "tactic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:53.012658",
+      "last_seen": "2026-02-18T23:32:53.012658"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitive Score Threshold",
+      "condition": "If competitive score <65 then prioritize keyword",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 65
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "a good framework to keep in mind... anything under 65 or even anything under 60 would be great"
+      ],
+      "id": "9bae821e-f6ca-4bba-9ad8-b085eabd4d30",
+      "type": "heuristic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:05.176247",
+      "last_seen": "2026-02-18T23:31:05.176247"
+    },
+    {
+      "name": "Competitive Score Filter",
+      "condition": "If competitive score > 85 then penalize keyword",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "gt",
+        "value": 85
+      },
+      "action": "penalize",
+      "weight": 0.6,
+      "source_quotes": [
+        "'it's super competitive it has an 85 score'"
+      ],
+      "id": "491a7e15-8ecf-4f63-9d63-63c2884103d3",
+      "type": "heuristic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:43.212691",
+      "last_seen": "2026-02-18T23:31:43.212691"
+    },
+    {
+      "name": "Low-Barrier Categories",
+      "condition": "If a category requires <200 sales to reach #10, prioritize it",
+      "machine_rule": {
+        "field": "sales_threshold",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it takes 141 sales to reach number 10"
+      ],
+      "id": "b15297d1-d346-4a29-90e8-475a775f8e7e",
+      "type": "heuristic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:16.315120",
+      "last_seen": "2026-02-18T23:32:16.315120"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "keep in mind these are daily sales"
+      ],
+      "id": "35f95327-7ab7-4430-9941-cb1a71a9b71a",
+      "type": "heuristic",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:53.012658",
+      "last_seen": "2026-02-18T23:32:53.012658"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket was formerly known as KDP Rocket",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this piece of software was formerly known as kdp rocket"
+      ],
+      "id": "8381f258-0c5d-4ab8-a37f-811c5bafd98b",
+      "type": "claim",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:05.176247",
+      "last_seen": "2026-02-18T23:31:05.176247"
+    },
+    {
+      "statement": "KDP allows 7 keywords per format and 10 total categories",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'kdp allows you to have 10 i'm sorry a kdp allows seven keywords'"
+      ],
+      "id": "5e55e0aa-de5a-4d2f-9cf5-1b4edf8e11a2",
+      "type": "claim",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:43.212691",
+      "last_seen": "2026-02-18T23:31:43.212691"
+    },
+    {
+      "statement": "Amazon may remove books from irrelevant categories due to strict rules",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "amazon is kind of strict with some of their rules"
+      ],
+      "id": "b14bdaf0-dd6c-4d96-8c70-97e52bc97f91",
+      "type": "claim",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:16.315120",
+      "last_seen": "2026-02-18T23:32:16.315120"
+    },
+    {
+      "statement": "Amazon category rankings require daily sales thresholds",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you need to sell over 5 000 books per day"
+      ],
+      "id": "0ae19c66-130b-40ba-96d6-ff46606fff44",
+      "type": "claim",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:53.012658",
+      "last_seen": "2026-02-18T23:32:53.012658"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "GENRE + TONE + SUBGENRE",
+      "example": "mystery + gritty + witty",
+      "description": "Target specific reader preferences by combining genre, tone, and subgenre",
+      "why_it_works": "Creates niche differentiation while maintaining searchability",
+      "signals": [
+        "low competitive scores",
+        "specific keyword variations"
+      ],
+      "source_quotes": [
+        "my books are witty and a little bit gritty"
+      ],
+      "id": "9ed7eb8d-88e2-4013-953f-6af6291be7b4",
+      "type": "niche_pattern",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:05.176247",
+      "last_seen": "2026-02-18T23:31:05.176247"
+    },
+    {
+      "pattern_template": "GENRE + SPECIFIC_ATTRIBUTE",
+      "example": "mystery + gritty",
+      "description": "Target niche markets by combining broad genres with specific attributes to reduce competition",
+      "why_it_works": "Creates unique keyword opportunities with lower competition",
+      "signals": [
+        "low competitive_score",
+        "moderate monthly_searches"
+      ],
+      "source_quotes": [
+        "'gritty mystery has a pretty good decent number of amazon searches'"
+      ],
+      "id": "2e45118a-aa17-49e8-8423-555d8956fe69",
+      "type": "niche_pattern",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:31:43.212691",
+      "last_seen": "2026-02-18T23:31:43.212691"
+    },
+    {
+      "pattern_template": "LANGUAGE + GENRE + SUBGENRE",
+      "example": "Chinese + crime thriller + mystery",
+      "description": "Target niche markets with specific language/genre combinations",
+      "why_it_works": "Lower competition in specialized categories",
+      "signals": [
+        "low sales thresholds",
+        "BSR 45-348"
+      ],
+      "source_quotes": [
+        "foreign languages chinese crime thriller and mystery category"
+      ],
+      "id": "59f4019e-e607-4aba-aa9f-06f782996f32",
+      "type": "niche_pattern",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:16.315120",
+      "last_seen": "2026-02-18T23:32:16.315120"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "women's fiction + mystery + thriller",
+      "description": "Combine genre identifiers with sub-genre constraints",
+      "why_it_works": "Targets specific audience segments",
+      "signals": [
+        "low review counts",
+        "high BSR competition"
+      ],
+      "source_quotes": [
+        "category not worth targeting"
+      ],
+      "id": "0b6f8677-2488-41c9-900a-d4c5316c477b",
+      "type": "niche_pattern",
+      "provenance": [
+        "ZrnRqllRrrk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:32:53.012658",
+      "last_seen": "2026-02-18T23:32:53.012658"
+    }
+  ]
+}

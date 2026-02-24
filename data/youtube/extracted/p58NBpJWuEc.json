@@ -1,0 +1,343 @@
+{
+  "source_type": "youtube",
+  "video_id": "p58NBpJWuEc",
+  "title": "i made $100,000 from selling 1 book on Amazon KDP...",
+  "extracted_at": "2026-02-19T00:09:16.345690",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 25958,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Automatic Campaign Testing",
+      "description": "Launch multiple automatic campaigns with varying bid amounts to evaluate book performance before manual targeting.",
+      "steps": [
+        "Start with 10 cent, 50 cent, 75 cent bids",
+        "Monitor cost per click reduction",
+        "Transition to manual campaigns after proving automatic success"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires patience for cost optimization"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I set up three automatic campaigns... start at like 10 cent, one for 50 cent, one for 75 cent."
+      ],
+      "id": "8dce43b9-f182-4d9c-9e7f-46fcb6c58572",
+      "type": "tactic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:07:39.105921",
+      "last_seen": "2026-02-19T00:07:39.105921"
+    },
+    {
+      "name": "automatic_campaign_first",
+      "description": "Prioritize automatic campaigns to gather data before manual targeting",
+      "steps": [
+        "Run automatic campaigns for 1 month",
+        "Analyze advertising stats",
+        "Decide if book is worth manual campaign investment"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When conversion rates are poor"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I only enter into this kind of testing phase... after we've collected enough information from running the automatic campaigns"
+      ],
+      "id": "55dc2735-f87c-440c-bc0e-12f7f8663a6c",
+      "type": "tactic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:08:10.938109",
+      "last_seen": "2026-02-19T00:08:10.938109"
+    },
+    {
+      "name": "AI-Assisted Book Creation",
+      "description": "Using AI tools to accelerate high-quality book production with illustrators",
+      "steps": [
+        "Use AI for initial concept guidance",
+        "Collaborate with illustrator for final artwork",
+        "Allocate 5 hours for book cover creation"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "AI tools"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Over-reliance on AI may reduce uniqueness"
+      ],
+      "example_niches": [
+        "coloring books"
+      ],
+      "source_quotes": [
+        "We're using AI as a tool... final version versus these three, which are direct outputs."
+      ],
+      "id": "36d11e80-d688-4167-bd32-df609df7423f",
+      "type": "tactic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:08:41.725479",
+      "last_seen": "2026-02-19T00:08:41.725479"
+    },
+    {
+      "name": "Unique Title & Content Creation",
+      "description": "Create distinct titles and content within established niches to differentiate from competitors",
+      "steps": [
+        "Identify proven niches (e.g., cozy friends)",
+        "Add unique twists (e.g., 'cozy dinosaur friends')",
+        "Prioritize high-quality visuals and copy"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "AI"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires avoiding saturated sub-niches"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "'What can I offer that is somewhat similar to this?'"
+      ],
+      "id": "4b34284b-d7e0-477b-8562-e55dac91c937",
+      "type": "tactic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:09:16.345552",
+      "last_seen": "2026-02-19T00:09:16.345552"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Targeting",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You need to bring something new or better to the marketplace... fewer reviews and a higher price."
+      ],
+      "id": "08232987-a8af-4076-8132-be58e5fd9c2e",
+      "type": "heuristic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:07:39.105921",
+      "last_seen": "2026-02-19T00:07:39.105921"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I found that even if you have bad conversions... the low cost per click will make up for that"
+      ],
+      "id": "9e63c61f-6588-4dd4-94fb-70b936be6297",
+      "type": "heuristic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:08:10.938109",
+      "last_seen": "2026-02-19T00:08:10.938109"
+    },
+    {
+      "name": "Low-Review Niche Targeting",
+      "condition": "If a niche has low review counts, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "We didn't use keyword tools... just searched Amazon's search bar"
+      ],
+      "id": "cad23fbe-0ef0-4508-ab95-544c58de3efa",
+      "type": "heuristic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:08:41.725479",
+      "last_seen": "2026-02-19T00:08:41.725479"
+    },
+    {
+      "name": "Review-Insensitive Optimization",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'collecting reviews... makes absolutely no difference'"
+      ],
+      "id": "bc97b168-557c-41e1-9ee0-aebdb61aa052",
+      "type": "heuristic",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:09:16.345552",
+      "last_seen": "2026-02-19T00:09:16.345552"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Organic sales dominate over advertising spend for successful KDP books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Massively, massively, most of these sales are coming organically versus the advertising spend"
+      ],
+      "id": "7235a77f-e3dd-4d11-be73-4fb7ca0d52bd",
+      "type": "claim",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:07:39.105921",
+      "last_seen": "2026-02-19T00:07:39.105921"
+    },
+    {
+      "statement": "Automatic campaigns can achieve cost per click as low as 13 cents",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we got our cost per click down to 14 cent, 13 cent, and 18 cent"
+      ],
+      "id": "3006fcdb-b5dc-46b4-8d47-c084c065f658",
+      "type": "claim",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:08:10.938109",
+      "last_seen": "2026-02-19T00:08:10.938109"
+    },
+    {
+      "statement": "Keyword research is becoming obsolete due to AI and BSR changes",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Keyword and niche research is going to be completely useless"
+      ],
+      "id": "48992a1c-5289-4045-9dde-77e0d25782b1",
+      "type": "claim",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:08:41.725479",
+      "last_seen": "2026-02-19T00:08:41.725479"
+    },
+    {
+      "statement": "KDP sales success does not require initial reviews",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'organic sales from zero reviews... no difference'"
+      ],
+      "id": "44c1d1f5-94ac-436b-a027-cec708953ccb",
+      "type": "claim",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:09:16.345552",
+      "last_seen": "2026-02-19T00:09:16.345552"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target underserved niches with specific constraints to avoid competition",
+      "why_it_works": "Leverages low review counts and higher price points for niche visibility",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Target similar books in a niche that have fewer reviews and a higher price"
+      ],
+      "id": "dfe9e07c-3d59-4be7-891b-fde49055c932",
+      "type": "niche_pattern",
+      "provenance": [
+        "p58NBpJWuEc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:07:39.105921",
+      "last_seen": "2026-02-19T00:07:39.105921"
+    }
+  ]
+}

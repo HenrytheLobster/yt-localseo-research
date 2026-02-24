@@ -1,0 +1,233 @@
+{
+  "source_type": "youtube",
+  "video_id": "VkeN5y9cjss",
+  "title": "\ud83d\udd25 How to get your competitors Keywords and Rank on Amazon KDP for low content books",
+  "extracted_at": "2026-02-18T21:41:03.057445",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15435,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Competitor Keyword Extraction",
+      "description": "Identify top-selling books in your niche by targeting non-sponsored products with high sales and low competition.",
+      "steps": [
+        "Search Amazon for top sellers in your niche (e.g., 'Christmas coloring books').",
+        "Avoid sponsored books by checking for 'sponsored' labels.",
+        "Extract keywords from product details and ASINs using Helium 10."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Free plan limits to 2 searches/day for keyword research."
+      ],
+      "example_niches": [
+        "adult coloring books"
+      ],
+      "source_quotes": [
+        "you should be targeting books that are e on nich maybe this ones and on the first page"
+      ],
+      "id": "90edff63-cb6c-4e38-89bf-20d9c1ccf8f9",
+      "type": "tactic",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:01.730704",
+      "last_seen": "2026-02-18T21:40:01.730704"
+    },
+    {
+      "name": "Competitor Keyword Analysis",
+      "description": "Use Publisher Rocket to extract competitors' keywords and filter by search volume and competition",
+      "steps": [
+        "Use free plan to compile keywords",
+        "Export data to Excel for manual filtering",
+        "Prioritize keywords with high search volume and low competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Frankenstein tool"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Free plan limits daily searches"
+      ],
+      "example_niches": [
+        "adult coloring books"
+      ],
+      "source_quotes": [
+        "they filtered over 4,077 keywords for our competitors"
+      ],
+      "id": "e320f1de-e57f-4856-8239-dbb7f48e0ffb",
+      "type": "tactic",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:31.083122",
+      "last_seen": "2026-02-18T21:40:31.083122"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are below 200, prioritize books with lower competition.",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you should not Target is books that are sponsored"
+      ],
+      "id": "38a84e8b-a184-4d60-8d82-2f2e8940ddae",
+      "type": "heuristic",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:01.730704",
+      "last_seen": "2026-02-18T21:40:01.730704"
+    },
+    {
+      "name": "Review Volume Filter",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "search volume is important to me"
+      ],
+      "id": "aea85445-c9b3-40f6-9cd4-80f5d9932b44",
+      "type": "heuristic",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:31.083122",
+      "last_seen": "2026-02-18T21:40:31.083122"
+    },
+    {
+      "name": "Review-Driven Keyword Optimization",
+      "condition": "If median_reviews is less than 200, prioritize keywords with higher search volume",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "struggling we trying to open it okay so it's here"
+      ],
+      "id": "142547eb-89e4-4e16-983f-35a70839c789",
+      "type": "heuristic",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:41:03.057336",
+      "last_seen": "2026-02-18T21:41:03.057336"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Sponsored books on Amazon have artificially inflated Best Seller Rank.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "don't even Target because it's sponsored and the ranking is not accurate"
+      ],
+      "id": "b5b30c93-f1b5-4c64-a2e4-b8604282b3ff",
+      "type": "claim",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:01.730704",
+      "last_seen": "2026-02-18T21:40:01.730704"
+    },
+    {
+      "statement": "Organic keywords for a book can reach 3,787 with proper analysis",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "organic keywords are like 3787"
+      ],
+      "id": "2d1181b2-93d4-4aea-b8a6-2e5df8bf79c5",
+      "type": "claim",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:31.083122",
+      "last_seen": "2026-02-18T21:40:31.083122"
+    },
+    {
+      "statement": "Amazon takes three months to index new books for ranking",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon will take three months to index your books"
+      ],
+      "id": "87964254-78ae-46c0-9918-9ce0e951bea4",
+      "type": "claim",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:41:03.057336",
+      "last_seen": "2026-02-18T21:41:03.057336"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "adult coloring books + high price point + low competition",
+      "description": "Target niche markets with specific constraints to reduce competition.",
+      "why_it_works": "Limits keyword saturation and improves ranking potential.",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "we look at books that has lowest VSR ranks"
+      ],
+      "id": "8c17c0e2-4e4f-4b3e-9a12-2afb2b5bbcfa",
+      "type": "niche_pattern",
+      "provenance": [
+        "VkeN5y9cjss"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:40:01.730704",
+      "last_seen": "2026-02-18T21:40:01.730704"
+    }
+  ]
+}

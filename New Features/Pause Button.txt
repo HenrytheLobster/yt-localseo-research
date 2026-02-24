@@ -1,0 +1,52 @@
+“Pause button” without a GUI (recommended)
+
+You can add a pauseresume mechanism with no GUI, just a file flag.
+
+Feature Pause flag file
+
+If file exists datapause.flag
+workers stop after finishing the current item.
+
+Resume by deleting the file.
+
+This gives you
+
+safe stopping point
+
+no lost progress
+
+no UI work
+
+Feature Signal handling (even better)
+
+Handle
+
+SIGINT (Ctrl-C) stop after current item and flush state
+
+SIGTERM same behavior (Task Scheduler friendly)
+
+This is “pause button” behavior using the console.
+
+Minimal spec you can hand to Claude (no GUI)
+
+Goal graceful interrupt + pauseresume
+
+Add a PauseController that checks for datapause.flag
+
+Every loop iteration
+
+before starting a new video check pause flag
+
+if paused sleep and re-check
+
+Add signal handler
+
+on Ctrl-C set shutdown_requested=True
+
+finish current item, flush, exit with clean status
+
+Ensure writes are atomic
+
+append-only JSONL, flush after each item
+
+for rewrite operations write to temp file then os.replace()

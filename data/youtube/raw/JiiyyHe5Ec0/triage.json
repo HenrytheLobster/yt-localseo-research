@@ -1,0 +1,23 @@
+{
+  "video_id": "JiiyyHe5Ec0",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "kindle",
+    "amazon",
+    "niche",
+    "keyword",
+    "publisher rocket",
+    "low content",
+    "category",
+    "competition",
+    "coloring book",
+    "planner"
+  ],
+  "transcript_word_count": 2403,
+  "triaged_at": "2026-02-18T19:50:07.530184"
+}

@@ -1,0 +1,28 @@
+Extracting video 37 / 164
+Avg time per video: 2m 43s
+Estimated remaining: 5h 12m
+
+
+Bigger Architectural Insight (Important)
+
+This is exactly why you eventually want:
+
+Stage-aware worker caps
+
+ETA calculation
+
+Or at minimum: a “progress X / Y” indicator
+
+Right now you’re blind mid-run.
+
+If you’d like, next we can design:
+
+A live ETA estimator
+that prints:
+
+Extracting video 37 / 164
+Avg time per video: 2m 43s
+Estimated remaining: 5h 12m
+
+
+That’s about 20 lines of code and will remove this uncertainty forever.

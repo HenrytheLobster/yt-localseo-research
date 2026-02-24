@@ -1,0 +1,18 @@
+{
+  "subreddits": [
+    "KDP",
+    "selfpublish"
+  ],
+  "sorts": [
+    "new",
+    "hot",
+    "top"
+  ],
+  "time_filters": [
+    "day",
+    "week"
+  ],
+  "min_score": 3,
+  "min_comments": 5,
+  "max_age_days": 30
+}

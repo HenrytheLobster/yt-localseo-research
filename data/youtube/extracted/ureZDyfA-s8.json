@@ -1,0 +1,118 @@
+{
+  "source_type": "youtube",
+  "video_id": "ureZDyfA-s8",
+  "title": "How to Assign Category and Browse Terms to Your Amazon Listings - E-commerce Tutorials",
+  "extracted_at": "2026-02-18T04:21:56.297486",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2955,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Assign Correct Category and Browse Terms",
+      "description": "Properly label product categories and browse terms to improve search visibility and buy box chances.",
+      "steps": [
+        "Use the Browse Tree Guide (BTG) to find valid item type keywords",
+        "Check data definitions tab for field requirements",
+        "Enter up to 50 characters per search term field"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Browse Tree Guide"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Category mislabeling reduces search visibility"
+      ],
+      "example_niches": [
+        "movie shirts"
+      ],
+      "source_quotes": [
+        "when you label your category correctly you surely will have a better chance of appearing of the search results"
+      ],
+      "id": "3a63e4cc-18bf-401d-9364-7b88925d2b21",
+      "type": "tactic",
+      "provenance": [
+        "ureZDyfA-s8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:21:56.297381",
+      "last_seen": "2026-02-18T04:21:56.297381"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Prioritize High-traffic Categories",
+      "condition": "If product category has high BSR and review count, prioritize optimization",
+      "machine_rule": {
+        "field": "bsr_max",
+        "op": "lt",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Amazon customers find products through search and browse each category"
+      ],
+      "id": "af3fc5c2-4979-4d7c-aadc-e22cf4fff439",
+      "type": "heuristic",
+      "provenance": [
+        "ureZDyfA-s8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:21:56.297381",
+      "last_seen": "2026-02-18T04:21:56.297381"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's category structure allows customers to refine searches through subcategories",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "each category is divided into sub categories in amazon.com when customer browse"
+      ],
+      "id": "796f44a4-693e-4f47-85a2-e06f20fc932d",
+      "type": "claim",
+      "provenance": [
+        "ureZDyfA-s8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:21:56.297381",
+      "last_seen": "2026-02-18T04:21:56.297381"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "PRODUCT + USAGE + CONTEXT",
+      "example": "movie shirt + fashion accessory + casual wear",
+      "description": "Combine product type with usage scenarios and contextual categories for better browse term optimization",
+      "why_it_works": "Targets specific customer intent within broader categories",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "when you label your category correctly you surely will have a better chance of appearing of the search results"
+      ],
+      "id": "2686d236-252d-42cb-aed5-b5cf9f4686b8",
+      "type": "niche_pattern",
+      "provenance": [
+        "ureZDyfA-s8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:21:56.297381",
+      "last_seen": "2026-02-18T04:21:56.297381"
+    }
+  ]
+}

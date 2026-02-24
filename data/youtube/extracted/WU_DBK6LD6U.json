@@ -1,0 +1,445 @@
+{
+  "source_type": "youtube",
+  "video_id": "WU_DBK6LD6U",
+  "title": "Find Profitable Keywords FAST on KDP",
+  "extracted_at": "2026-02-18T22:04:35.094427",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 23056,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 5,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "incognito keyword research",
+      "description": "Use incognito mode with keyword tools to eliminate search bias and uncover hidden keywords",
+      "steps": [
+        "Open Amazon in incognito mode",
+        "Install and enable Keywords Everywhere, AMZ Suggestion Expander, and Publisher Rocket in incognito",
+        "Browse alphabetically through search terms",
+        "Capture keywords with search volume and niche potential"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition_level"
+      ],
+      "tools_mentioned": [
+        "Keywords Everywhere",
+        "AMZ Suggestion Expander",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 610,
+        "competition_max": 9900
+      },
+      "caveats": [
+        "Avoid overly competitive terms like 'adult coloring book'"
+      ],
+      "example_niches": [
+        "book talk journal",
+        "gratitude journal for kids"
+      ],
+      "source_quotes": [
+        "Using an incognito window wipes that slate clean and it's as if you're going to Amazon for the first time"
+      ],
+      "id": "bf4b750c-180c-413d-a2a4-1d8b12b7dda0",
+      "type": "tactic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:02:52.166227",
+      "last_seen": "2026-02-18T22:02:52.166227"
+    },
+    {
+      "name": "Alphabetical Keyword Niche Down",
+      "description": "Generate keywords by systematically exploring each letter of the alphabet to identify low-competition, high-volume niches.",
+      "steps": [
+        "Type each letter of the alphabet into the search bar",
+        "Filter for keywords with 1,000+ monthly searches",
+        "Skip overly competitive terms like 'activity book for kids'",
+        "Repeat process for subsequent letters"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 1000,
+        "competitive_score_max": 50
+      },
+      "caveats": [
+        "Avoid trademarked terms like 'Disney'"
+      ],
+      "example_niches": [
+        "baby shower guest book",
+        "ABC letter tracing for preschools"
+      ],
+      "source_quotes": [
+        "\"You're going to come straight back to 'A'...\""
+      ],
+      "id": "bafc2cab-2f45-423c-a664-c93c87fda72c",
+      "type": "tactic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:03:25.253367",
+      "last_seen": "2026-02-18T22:03:25.253367"
+    },
+    {
+      "name": "keyword_niching",
+      "description": "Refine broad keywords into specific niches with higher search volume and moderate competition",
+      "steps": [
+        "Use Publisher Rocket to identify keyword variations",
+        "Filter by search volume > 500 and competition score < 50",
+        "Check Best Sellers Rank and monthly sales data"
+      ],
+      "signals_used": [
+        "BSR",
+        "competition_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "competition_max": 50
+      },
+      "caveats": [
+        "Avoid keywords with less than 100 monthly searches"
+      ],
+      "example_niches": [
+        "Valentine activity book for kids"
+      ],
+      "source_quotes": [
+        "'Valentine activity book for kids'... almost 600 searches'"
+      ],
+      "id": "284a0dca-8c35-4493-9703-3eb744c309db",
+      "type": "tactic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:01.044215",
+      "last_seen": "2026-02-18T22:04:01.044215"
+    },
+    {
+      "name": "Keyword Niche Down",
+      "description": "Refine broad keywords into specific niches with higher search volume and lower competition.",
+      "steps": [
+        "Identify base keyword",
+        "Add specific modifiers",
+        "Check BSR and competitive score"
+      ],
+      "signals_used": [
+        "BSR",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Keywords Everywhere"
+      ],
+      "thresholds": {
+        "bsr_max": 50000,
+        "competitive_score_max": 45
+      },
+      "caveats": [
+        "Avoid overly niche keywords with low search volume"
+      ],
+      "example_niches": [
+        "Easter coloring book Christian",
+        "anatomy coloring book EMT"
+      ],
+      "source_quotes": [
+        "'Easter coloring book Christian,' and that was 970.'"
+      ],
+      "id": "a32d2187-79cb-4543-aaef-4b4dd2d16b24",
+      "type": "tactic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:35.094188",
+      "last_seen": "2026-02-18T22:04:35.094188"
+    },
+    {
+      "name": "Market Expansion",
+      "description": "Test UK/DE markets by adjusting keyword spelling for regional variations.",
+      "steps": [
+        "Modify keywords for UK/DE spelling",
+        "Replicate US keyword research process",
+        "Validate BSR in new markets"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 100000
+      },
+      "caveats": [
+        "Requires separate account setup for UK/DE"
+      ],
+      "example_niches": [
+        "Easter colouring book for kids"
+      ],
+      "source_quotes": [
+        "'We'll just go ahead and switch over and we'll just type in, let's say, Easter.'"
+      ],
+      "id": "e7541cfc-9d60-4be8-b6d7-e7c9e45f7b79",
+      "type": "tactic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:35.094188",
+      "last_seen": "2026-02-18T22:04:35.094188"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "volume-based filtering",
+      "condition": "If search volume is below 1,000, prioritize for niche potential",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Easter coloring book\u20141,600 searches per month"
+      ],
+      "id": "89d72c23-cfc4-452b-ac47-95a361ff59b4",
+      "type": "heuristic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:02:52.166227",
+      "last_seen": "2026-02-18T22:02:52.166227"
+    },
+    {
+      "name": "Competitive Score Threshold",
+      "condition": "If competitive score is yellow (moderately competitive), prioritize for low-content books",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lte",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"Yellow is moderately competitive... totally okay for low-content books\""
+      ],
+      "id": "9cb6d5c4-d1bf-4c49-93df-5e3f3770fab3",
+      "type": "heuristic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:03:25.253367",
+      "last_seen": "2026-02-18T22:03:25.253367"
+    },
+    {
+      "name": "competition_filter",
+      "condition": "If competition score is below 20, prioritize for investigation",
+      "machine_rule": {
+        "field": "competition_score",
+        "op": "lt",
+        "value": 20
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'competitive score here, so this is definitely one that I'm going to want to check out'"
+      ],
+      "id": "04fbaaa4-4fd6-4f95-b1f5-e93c1f3911f9",
+      "type": "heuristic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:01.044215",
+      "last_seen": "2026-02-18T22:04:01.044215"
+    },
+    {
+      "name": "Competitive Score Filter",
+      "condition": "If competitive score is below 45, prioritize keyword",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 45
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'Competitive score: 45. Let's check that out.'"
+      ],
+      "id": "85649ac2-9316-4156-b742-932913edfe29",
+      "type": "heuristic",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:35.094188",
+      "last_seen": "2026-02-18T22:04:35.094188"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keywords Everywhere offers 100,000 credits for $10, cheaper than AMZ Suggestion Expander's $15/month",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Keywords Everywhere is just cheaper. You pay 10 bucks once..."
+      ],
+      "id": "e6d1a654-4cc4-4d51-8d75-c68cd6f742a7",
+      "type": "claim",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:02:52.166227",
+      "last_seen": "2026-02-18T22:02:52.166227"
+    },
+    {
+      "statement": "Publisher Rocket displays up to 1,200 competitors but first-page results are the only relevant metric",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"You're really only competing with the books that show up on the first page...\""
+      ],
+      "id": "faf78523-525a-413d-881c-4aa14aaaef36",
+      "type": "claim",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:03:25.253367",
+      "last_seen": "2026-02-18T22:03:25.253367"
+    },
+    {
+      "statement": "Books with Best Sellers Rank under 100,000 are considered strong performers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'Anything a hundred thousand or under is pretty good'"
+      ],
+      "id": "326def54-d17a-4ad4-87cb-835b71436ca7",
+      "type": "claim",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:01.044215",
+      "last_seen": "2026-02-18T22:04:01.044215"
+    },
+    {
+      "statement": "Trademark checks are recommended for keywords with potential market demand",
+      "category": "risk",
+      "confidence": "medium",
+      "source_quotes": [
+        "'make sure that there are no pending trademark applications'"
+      ],
+      "id": "f8d2cf14-60b5-4fdb-a2f0-5014a58c778d",
+      "type": "claim",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:01.044215",
+      "last_seen": "2026-02-18T22:04:01.044215"
+    },
+    {
+      "statement": "Publisher Rocket now supports UK and DE market analysis.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'Publisher Rocket recently added the German and the UK markets.'"
+      ],
+      "id": "d855165d-f8fe-4d2c-9682-a3c40d1faf1f",
+      "type": "claim",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:35.094188",
+      "last_seen": "2026-02-18T22:04:35.094188"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "trending_concept + specific_use_case",
+      "example": "book talk + journal",
+      "description": "Combine trending social media concepts with physical product use cases",
+      "why_it_works": "Captures niche demand from digital trends",
+      "signals": [
+        "low review counts",
+        "unique keyword combinations"
+      ],
+      "source_quotes": [
+        "Book talk journal is a place where you can record the different books that you have read"
+      ],
+      "id": "5ab94074-35d5-4292-bd5e-fd531f7f82dd",
+      "type": "niche_pattern",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:02:52.166227",
+      "last_seen": "2026-02-18T22:02:52.166227"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets specific demographics with unique challenges and limitations",
+      "why_it_works": "Balances search volume with niche specificity for lower competition",
+      "signals": [
+        "low_review_counts",
+        "specific_problem_keywords"
+      ],
+      "source_quotes": [
+        "\"Low-content books can be created very quickly...\""
+      ],
+      "id": "44e183e2-bdd3-49ad-8117-00404b7dea7f",
+      "type": "niche_pattern",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:03:25.253367",
+      "last_seen": "2026-02-18T22:03:25.253367"
+    },
+    {
+      "pattern_template": "HOLIDAY + AUDIENCE + THEME",
+      "example": "Easter + adults + Christian",
+      "description": "Combine seasonal relevance with specific audience and thematic elements",
+      "why_it_works": "Leverages timely demand with targeted demographics",
+      "signals": [
+        "low review counts",
+        "moderate competition"
+      ],
+      "source_quotes": [
+        "'Easter coloring book Christian'... competitive score: 45"
+      ],
+      "id": "517666d6-fbcf-4d4c-bd04-81adb74d7142",
+      "type": "niche_pattern",
+      "provenance": [
+        "WU_DBK6LD6U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:04:01.044215",
+      "last_seen": "2026-02-18T22:04:01.044215"
+    }
+  ]
+}

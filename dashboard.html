@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KDP Research Dashboard</title>
+  <style>
+    /* ── reset / base ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    /* ── layout ───────────────────────────────────────── */
+    .page-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 1.5rem; font-weight: 700; color: #f8fafc; }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: #1e40af;
+      color: #bfdbfe;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      letter-spacing: 0.05em;
+    }
+    .policy-meta {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+    .policy-meta span { margin-right: 16px; }
+
+    /* ── stat cards ───────────────────────────────────── */
+    .stats-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .stat-card {
+      background: #1e2130;
+      border: 1px solid #2d3550;
+      border-radius: 10px;
+      padding: 14px 20px;
+      flex: 1;
+      min-width: 140px;
+    }
+    .stat-card .label { font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; }
+    .stat-card .value { font-size: 1.6rem; font-weight: 700; color: #f8fafc; line-height: 1.2; margin-top: 4px; }
+    .stat-card .sub   { font-size: 0.75rem; color: #64748b; margin-top: 2px; }
+
+    /* ── table wrapper ────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid #2d3550;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    thead { background: #161927; }
+    thead th {
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      white-space: nowrap;
+      border-bottom: 1px solid #2d3550;
+    }
+    tbody tr {
+      border-bottom: 1px solid #1e2130;
+      transition: background 0.12s;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #1a1f30; }
+    tbody td {
+      padding: 12px 16px;
+      vertical-align: middle;
+    }
+    .topic-cell { max-width: 280px; }
+    .topic-name { font-weight: 500; color: #f1f5f9; }
+    .topic-id   { font-size: 0.7rem; color: #475569; margin-top: 2px; font-family: monospace; }
+
+    /* ── score pill ───────────────────────────────────── */
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      min-width: 52px;
+      text-align: center;
+    }
+    .pill-green  { background: #14532d; color: #86efac; }
+    .pill-yellow { background: #713f12; color: #fde68a; }
+    .pill-red    { background: #7f1d1d; color: #fca5a5; }
+    .pill-gray   { background: #1e293b; color: #94a3b8; }
+    .pill-blue   { background: #1e3a5f; color: #93c5fd; }
+
+    /* ── gap badge ────────────────────────────────────── */
+    .gap-yes { color: #4ade80; font-weight: 600; }
+    .gap-no  { color: #475569; }
+
+    /* ── tooltip system ───────────────────────────────── */
+    .th-tip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      cursor: default;
+      position: relative;
+    }
+    .tip-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #334155;
+      color: #94a3b8;
+      font-size: 9px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1;
+      cursor: help;
+      flex-shrink: 0;
+    }
+    /* Tooltip bubble */
+    .th-tip .tip-bubble {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 12px 14px;
+      width: 260px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      z-index: 100;
+      pointer-events: none;
+      transition: opacity 0.15s, visibility 0.15s;
+    }
+    .th-tip:hover .tip-bubble,
+    .th-tip:focus-within .tip-bubble {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* Arrow */
+    .tip-bubble::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #334155;
+    }
+    .tip-bubble::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #1e293b;
+    }
+    .tip-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 6px;
+    }
+    .tip-desc {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    .tip-threshold {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: #0f172a;
+      color: #7dd3fc;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    /* ── why cell ─────────────────────────────────────── */
+    .why-cell {
+      font-size: 0.75rem;
+      color: #64748b;
+      max-width: 300px;
+      line-height: 1.4;
+    }
+    .why-boost  { color: #4ade80; }
+    .why-penalty { color: #f87171; }
+
+    /* ── empty state ──────────────────────────────────── */
+    .empty {
+      text-align: center;
+      padding: 48px;
+      color: #475569;
+      font-size: 0.9rem;
+    }
+
+    /* ── section heading ──────────────────────────────── */
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 28px 0 12px;
+    }
+
+    /* ── threshold reference card ─────────────────────── */
+    .threshold-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .thr-card {
+      background: #1e2130;
+      border: 1px solid #2d3550;
+      border-radius: 8px;
+      padding: 10px 14px;
+      min-width: 150px;
+      flex: 1;
+    }
+    .thr-card .thr-label { font-size: 0.7rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; }
+    .thr-card .thr-value { font-size: 1rem; font-weight: 700; color: #7dd3fc; margin-top: 3px; font-family: monospace; }
+    .thr-card .thr-desc  { font-size: 0.68rem; color: #475569; margin-top: 3px; }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>KDP Research Dashboard</h1>
+    <span class="badge" id="policyVersion">Policy v—</span>
+  </div>
+  <p class="policy-meta">
+    <span id="metaVideos">—</span>
+    <span id="metaRules">—</span>
+    <span id="metaDate">—</span>
+  </p>
+
+  <!-- Stat cards -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="label">Active Boost Rules</div>
+      <div class="value" id="statBoost">—</div>
+      <div class="sub">from KDP expert videos</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Penalty Rules</div>
+      <div class="value" id="statPenalty">—</div>
+      <div class="sub">applied to filter bad niches</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Opp Threshold</div>
+      <div class="value" id="statOpp">—</div>
+      <div class="sub">opportunity score target</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Review Cap</div>
+      <div class="value" id="statReviews">—</div>
+      <div class="sub">max median reviews (low comp.)</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Min Demand</div>
+      <div class="value" id="statDemand">—</div>
+      <div class="sub">keyword searches / month</div>
+    </div>
+  </div>
+
+  <!-- Threshold reference -->
+  <div class="section-title">Expert-Derived Thresholds</div>
+  <div class="threshold-grid" id="thresholdGrid">
+    <div class="empty">Loading thresholds…</div>
+  </div>
+
+  <!-- Cluster table -->
+  <div class="section-title">Cluster Scoring — Example Output</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Topic</th>
+
+          <!-- Opp column with tooltip -->
+          <th>
+            <span class="th-tip" tabindex="0">
+              Opp
+              <i class="tip-icon">?</i>
+              <div class="tip-bubble">
+                <div class="tip-title">Opportunity Score</div>
+                <div class="tip-desc">
+                  Composite market opportunity rating (0–10) that combines Amazon
+                  Best Seller Rank, review count, and competition level.
+                  A higher score means less competition with stronger sales signals.
+                </div>
+                <span class="tip-threshold" id="tipOppThresh">target ≥ 7.8</span>
+              </div>
+            </span>
+          </th>
+
+          <!-- Demand column with tooltip -->
+          <th>
+            <span class="th-tip" tabindex="0">
+              Demand
+              <i class="tip-icon">?</i>
+              <div class="tip-bubble">
+                <div class="tip-title">Demand Score</div>
+                <div class="tip-desc">
+                  Estimated monthly search volume for the niche keyword. Reflects
+                  how many buyers are actively searching for this topic on Amazon.
+                  Higher = more organic traffic potential.
+                </div>
+                <span class="tip-threshold" id="tipDemandThresh">target ≥ 1,000 / month</span>
+              </div>
+            </span>
+          </th>
+
+          <!-- Gap column with tooltip -->
+          <th>
+            <span class="th-tip" tabindex="0">
+              Gap
+              <i class="tip-icon">?</i>
+              <div class="tip-bubble">
+                <div class="tip-title">Market Gap</div>
+                <div class="tip-desc">
+                  Indicates whether existing titles are missing modifier terms that
+                  target an underserved audience segment (e.g. age group, profession,
+                  constraint). A gap means you can differentiate and capture
+                  uncontested search traffic with a more specific title.
+                </div>
+                <span class="tip-threshold">✔ gap = opportunity to differentiate</span>
+              </div>
+            </span>
+          </th>
+
+          <!-- Reviews column with tooltip -->
+          <th>
+            <span class="th-tip" tabindex="0">
+              Reviews
+              <i class="tip-icon">?</i>
+              <div class="tip-bubble">
+                <div class="tip-title">Median Reviews</div>
+                <div class="tip-desc">
+                  Median review count across the top competing titles in this niche.
+                  Low review counts signal low competition — easier to rank with a
+                  new title. Expert-derived target: ≤ 200 reviews.
+                </div>
+                <span class="tip-threshold" id="tipReviewThresh">target ≤ 200 reviews</span>
+              </div>
+            </span>
+          </th>
+
+          <!-- BSR column with tooltip -->
+          <th>
+            <span class="th-tip" tabindex="0">
+              BSR
+              <i class="tip-icon">?</i>
+              <div class="tip-bubble">
+                <div class="tip-title">Best Seller Rank</div>
+                <div class="tip-desc">
+                  Median Amazon Best Seller Rank across existing titles in this niche.
+                  Lower BSR = more active sales. A niche is considered viable when
+                  top titles are selling well (low BSR number).
+                </div>
+                <span class="tip-threshold" id="tipBsrThresh">target ≤ 50,000</span>
+              </div>
+            </span>
+          </th>
+
+          <!-- Policy Score column with tooltip -->
+          <th>
+            <span class="th-tip" tabindex="0">
+              Score
+              <i class="tip-icon">?</i>
+              <div class="tip-bubble">
+                <div class="tip-title">Policy Score</div>
+                <div class="tip-desc">
+                  Overall niche score (0–1) after applying all active boost and
+                  penalty rules from the research-derived scoring policy. Rules are
+                  extracted from KDP expert YouTube videos and weighted by how often
+                  they appear across sources. Higher = better.
+                </div>
+                <span class="tip-threshold">range 0.00 – 1.00 (higher = better)</span>
+              </div>
+            </span>
+          </th>
+
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody id="clusterBody">
+        <tr><td colspan="8" class="empty">Loading cluster data…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    // ── helpers ──────────────────────────────────────────────────────────────
+    function fmt(n, decimals = 0) {
+      if (n == null) return "—";
+      return Number(n).toLocaleString(undefined, { maximumFractionDigits: decimals });
+    }
+
+    function scorePill(val, low, high) {
+      if (val == null) return `<span class="pill pill-gray">—</span>`;
+      const cls = val >= high ? "pill-green" : val >= low ? "pill-yellow" : "pill-red";
+      return `<span class="pill ${cls}">${Number(val).toFixed(2)}</span>`;
+    }
+
+    function reviewPill(val, cap) {
+      if (val == null) return `<span class="pill pill-gray">—</span>`;
+      const cls = val <= cap ? "pill-green" : val <= cap * 2 ? "pill-yellow" : "pill-red";
+      return `<span class="pill ${cls}">${fmt(val)}</span>`;
+    }
+
+    function bsrPill(val, cap) {
+      if (val == null) return `<span class="pill pill-gray">—</span>`;
+      const cls = val <= cap ? "pill-green" : val <= cap * 2 ? "pill-yellow" : "pill-red";
+      return `<span class="pill ${cls}">${fmt(val)}</span>`;
+    }
+
+    function oppPill(val, thresh) {
+      if (val == null) return `<span class="pill pill-gray">—</span>`;
+      const cls = val >= thresh ? "pill-green" : val >= thresh * 0.7 ? "pill-yellow" : "pill-red";
+      return `<span class="pill ${cls}">${Number(val).toFixed(1)}</span>`;
+    }
+
+    function demandPill(val, thresh) {
+      if (val == null) return `<span class="pill pill-gray">—</span>`;
+      const cls = val >= thresh ? "pill-green" : val >= thresh * 0.5 ? "pill-yellow" : "pill-red";
+      return `<span class="pill ${cls}">${fmt(val)}</span>`;
+    }
+
+    function gapCell(val) {
+      return val
+        ? `<span class="gap-yes">✔ Gap</span>`
+        : `<span class="gap-no">—</span>`;
+    }
+
+    function whyCell(adjustments) {
+      if (!adjustments || adjustments.length === 0) return `<span style="color:#475569">base score</span>`;
+      return adjustments.map(a => {
+        const cls = a.type === "boost" ? "why-boost" : "why-penalty";
+        const sign = a.type === "boost" ? "+" : "";
+        return `<span class="${cls}">${a.rule} (${sign}${a.delta})</span>`;
+      }).join("<br>");
+    }
+
+    // ── load policy ───────────────────────────────────────────────────────────
+    async function loadPolicy() {
+      try {
+        const res = await fetch("config/scoring_policy.json");
+        if (!res.ok) throw new Error("not found");
+        return await res.json();
+      } catch {
+        return null;
+      }
+    }
+
+    // ── render thresholds ──────────────────────────────────────────────────────
+    function renderThresholds(thresholds) {
+      const defs = [
+        { key: "opportunity_score", label: "Opportunity Score", desc: "Target ≥ for viable niche", fmt: v => v.toFixed(1) },
+        { key: "median_reviews",    label: "Max Reviews",       desc: "Low competition signal",   fmt: v => "≤ " + fmt(v) },
+        { key: "bsr_rank",          label: "Max BSR",           desc: "Viable sales activity",    fmt: v => "≤ " + fmt(v) },
+        { key: "keyword_volume",    label: "Min Demand",        desc: "Min searches per month",   fmt: v => "≥ " + fmt(v) },
+        { key: "search_volume",     label: "Search Volume",     desc: "Broader keyword demand",   fmt: v => "≥ " + fmt(v) },
+        { key: "competitive_score", label: "Comp. Score",       desc: "Max competition score",    fmt: v => "≤ " + v },
+        { key: "cerebro_iq",        label: "Cerebro IQ",        desc: "Min keyword quality score",fmt: v => "≥ " + v },
+        { key: "sales_to_top_10",   label: "Sales to Top 10",   desc: "Daily sales needed",       fmt: v => "≥ " + v },
+      ];
+
+      const grid = document.getElementById("thresholdGrid");
+      const cards = defs
+        .filter(d => thresholds[d.key] != null)
+        .map(d => `
+          <div class="thr-card">
+            <div class="thr-label">${d.label}</div>
+            <div class="thr-value">${d.fmt(thresholds[d.key])}</div>
+            <div class="thr-desc">${d.desc}</div>
+          </div>
+        `).join("");
+      grid.innerHTML = cards || `<div class="empty">No threshold data.</div>`;
+    }
+
+    // ── render cluster rows ────────────────────────────────────────────────────
+    function renderClusters(clusters, thresholds) {
+      const tbody = document.getElementById("clusterBody");
+      if (!clusters || clusters.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="empty">
+          No cluster data available.<br>
+          Run <code>engine.annotate_for_dashboard(clusters)</code> and pass the
+          result to this dashboard.
+        </td></tr>`;
+        return;
+      }
+
+      const revCap = thresholds.median_reviews ?? 200;
+      const bsrCap = thresholds.bsr_rank       ?? 50000;
+      const oppMin = thresholds.opportunity_score ?? 7.8;
+      const demMin = thresholds.keyword_volume    ?? 1000;
+
+      tbody.innerHTML = clusters.map(c => `
+        <tr>
+          <td class="topic-cell">
+            <div class="topic-name">${c.topic ?? "—"}</div>
+            <div class="topic-id">${c.cluster_id ?? ""}</div>
+          </td>
+          <td>${oppPill(c.opportunity_score, oppMin)}</td>
+          <td>${demandPill(c.search_volume ?? c.keyword_volume, demMin)}</td>
+          <td>${gapCell(c.has_modifier_gap)}</td>
+          <td>${reviewPill(c.median_reviews, revCap)}</td>
+          <td>${bsrPill(c.median_bsr, bsrCap)}</td>
+          <td>${scorePill(c.score, 0.5, 0.7)}</td>
+          <td class="why-cell">${whyCell(c.policy_adjustments)}</td>
+        </tr>
+      `).join("");
+    }
+
+    // ── example data (shown when no live data is injected) ────────────────────
+    const EXAMPLE_CLUSTERS = [
+      {
+        cluster_id: "ex_001",
+        topic: "gratitude journal for teen girls",
+        opportunity_score: 8.2,
+        search_volume: 3400,
+        has_modifier_gap: true,
+        median_reviews: 42,
+        median_bsr: 18500,
+        score: 0.81,
+        policy_adjustments: [
+          { type: "boost",   rule: "low_review_boost",        delta: 0.07 },
+          { type: "boost",   rule: "modifier_gap_boost",      delta: 0.05 },
+        ],
+      },
+      {
+        cluster_id: "ex_002",
+        topic: "ADHD planner for adults",
+        opportunity_score: 7.5,
+        search_volume: 5800,
+        has_modifier_gap: false,
+        median_reviews: 187,
+        median_bsr: 22000,
+        score: 0.68,
+        policy_adjustments: [
+          { type: "boost",   rule: "low_review_boost",        delta: 0.07 },
+        ],
+      },
+      {
+        cluster_id: "ex_003",
+        topic: "generic coloring book adults",
+        opportunity_score: 4.1,
+        search_volume: 890,
+        has_modifier_gap: false,
+        median_reviews: 4500,
+        median_bsr: 3200,
+        score: 0.31,
+        policy_adjustments: [
+          { type: "penalty", rule: "competition_filter",      delta: -0.05 },
+          { type: "penalty", rule: "competitive_score_filter",delta: -0.05 },
+        ],
+      },
+      {
+        cluster_id: "ex_004",
+        topic: "Christian devotional journal for women over 50",
+        opportunity_score: 9.1,
+        search_volume: 2100,
+        has_modifier_gap: true,
+        median_reviews: 28,
+        median_bsr: 41000,
+        score: 0.88,
+        policy_adjustments: [
+          { type: "boost",   rule: "low_review_boost",        delta: 0.07 },
+          { type: "boost",   rule: "modifier_gap_boost",      delta: 0.05 },
+          { type: "boost",   rule: "Review Count Threshold",  delta: 0.06 },
+        ],
+      },
+      {
+        cluster_id: "ex_005",
+        topic: "nurse appreciation gift notebook",
+        opportunity_score: 6.8,
+        search_volume: 1250,
+        has_modifier_gap: true,
+        median_reviews: 155,
+        median_bsr: 29000,
+        score: 0.64,
+        policy_adjustments: [
+          { type: "boost",   rule: "low_review_boost",        delta: 0.07 },
+          { type: "boost",   rule: "modifier_gap_boost",      delta: 0.05 },
+        ],
+      },
+    ];
+
+    // ── init ───────────────────────────────────────────────────────────────────
+    async function init() {
+      const policy = await loadPolicy();
+      const thresholds = policy?.recommended_thresholds ?? {};
+
+      // Header meta
+      document.getElementById("policyVersion").textContent =
+        `Policy v${policy?.version ?? "—"}`;
+      document.getElementById("metaVideos").textContent =
+        `${policy?.based_on_video_count ?? "—"} source videos`;
+      document.getElementById("metaRules").textContent =
+        `${policy?.boost_rules?.length ?? "—"} boost / ${policy?.penalty_rules?.length ?? "—"} penalty rules`;
+      document.getElementById("metaDate").textContent =
+        `Generated: ${policy?.generated_at?.slice(0,10) ?? "—"}`;
+
+      // Stat cards
+      document.getElementById("statBoost").textContent   = policy?.boost_rules?.length   ?? "—";
+      document.getElementById("statPenalty").textContent = policy?.penalty_rules?.length ?? "—";
+      document.getElementById("statOpp").textContent     = thresholds.opportunity_score ?? "—";
+      document.getElementById("statReviews").textContent = thresholds.median_reviews    ?? "—";
+      document.getElementById("statDemand").textContent  =
+        (thresholds.keyword_volume ?? thresholds.search_volume ?? "—").toLocaleString?.() ??
+        thresholds.keyword_volume ?? "—";
+
+      // Patch tooltip thresholds from live policy data
+      if (thresholds.opportunity_score) {
+        document.getElementById("tipOppThresh").textContent =
+          `target ≥ ${thresholds.opportunity_score}`;
+      }
+      if (thresholds.keyword_volume || thresholds.search_volume) {
+        const v = thresholds.keyword_volume ?? thresholds.search_volume;
+        document.getElementById("tipDemandThresh").textContent =
+          `target ≥ ${Number(v).toLocaleString()} / month`;
+      }
+      if (thresholds.median_reviews) {
+        document.getElementById("tipReviewThresh").textContent =
+          `target ≤ ${thresholds.median_reviews} reviews`;
+      }
+      if (thresholds.bsr_rank) {
+        document.getElementById("tipBsrThresh").textContent =
+          `target ≤ ${Number(thresholds.bsr_rank).toLocaleString()}`;
+      }
+
+      // Render sections
+      renderThresholds(thresholds);
+
+      // Use window.CLUSTER_DATA if injected by server, else fall back to examples
+      const clusters = window.CLUSTER_DATA ?? EXAMPLE_CLUSTERS;
+      renderClusters(clusters, thresholds);
+    }
+
+    init();
+  </script>
+</body>
+</html>

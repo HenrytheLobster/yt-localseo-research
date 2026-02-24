@@ -1,0 +1,253 @@
+{
+  "source_type": "youtube",
+  "video_id": "jVfnrO3DJGs",
+  "title": "These 5 Amazon KDP Keyword Mistakes Are Killing Your Book Sales",
+  "extracted_at": "2026-02-18T04:17:12.571962",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8874,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Avoid Banned Keywords",
+      "description": "Amazon KDP prohibits specific keywords like quality claims, time-sensitive terms, Amazon program names, and misrepresentation.",
+      "steps": [
+        "Exclude words like 'best', 'new', 'Kindle Unlimited', or other brand names"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Misrepresentation risks account suspension"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "You can't use the word book. And probably most importantly, you can't use any sort of misrepresentation."
+      ],
+      "id": "a5b305dc-383e-49d7-a703-bedc7958a5e3",
+      "type": "tactic",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:16:40.783037",
+      "last_seen": "2026-02-18T04:16:40.783037"
+    },
+    {
+      "name": "Use Unique Keywords",
+      "description": "Avoid repeating keywords in title/subtitle and keyword slots to maximize real estate.",
+      "steps": [
+        "Use distinct keywords in title, subtitle, and seven keyword slots"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "Redundancy wastes keyword slots"
+      ],
+      "example_niches": [
+        "fitness planner"
+      ],
+      "source_quotes": [
+        "If your book title is gratitude journal for women, there's no reason to use the words gratitude or journal in any of your seven keyword slots."
+      ],
+      "id": "41510d92-611a-464d-a77a-26eb6c1173bf",
+      "type": "tactic",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:16:40.783037",
+      "last_seen": "2026-02-18T04:16:40.783037"
+    },
+    {
+      "name": "Target Long-Tail Keywords",
+      "description": "Replace broad keywords with specific, niche terms to improve discoverability.",
+      "steps": [
+        "Replace 'planner' with 'fitness planner for busy moms'"
+      ],
+      "signals_used": [
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Too broad keywords dilute targeting"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "If you're not being as narrow as you possibly can with your keywords, Amazon really will have no idea who to serve up your particular book to."
+      ],
+      "id": "c89cd34c-a5d0-492b-96f0-72a5981726e7",
+      "type": "tactic",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:16:40.783037",
+      "last_seen": "2026-02-18T04:16:40.783037"
+    },
+    {
+      "name": "maximize_keyword_real_estate",
+      "description": "Fill every character in keyword slots with relevant keywords, even if they seem unrelated, to maximize Amazon's keyword crawling efficiency.",
+      "steps": [
+        "Use all available characters in each keyword slot",
+        "Combine longtail keywords with additional relevant terms",
+        "Prioritize real keywords over filler"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Irrelevant keywords may dilute effectiveness"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "If you've got a keyword slot and you've got your even if it's a longtail keyword in there and you've still got half a slot left, put additional keywords in the back end..."
+      ],
+      "id": "6c87c044-0ffb-4d3c-b02b-62fa1a722adf",
+      "type": "tactic",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:12.571846",
+      "last_seen": "2026-02-18T04:17:12.571846"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Validate Keyword Demand",
+      "condition": "If a keyword lacks search volume data, penalize its use",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt",
+        "value": 3000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "It's no good if only one or two people are searching for that keyword."
+      ],
+      "id": "9836798f-03e0-45e2-8aa1-8e84672422d1",
+      "type": "heuristic",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:16:40.783037",
+      "last_seen": "2026-02-18T04:16:40.783037"
+    },
+    {
+      "name": "boost_low_review_books",
+      "condition": "If median reviews are below 200, prioritize keyword optimization to improve visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "they were books that hadn't made sales in months and then they all started to sell again"
+      ],
+      "id": "74c76297-a097-48b6-b087-3e8186639993",
+      "type": "heuristic",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:12.571846",
+      "last_seen": "2026-02-18T04:17:12.571846"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon KDP bans keywords like 'bestseller' and 'Kindle Unlimited'",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You can't say things like new, on sale, or available now. You can't talk about any Amazon program names."
+      ],
+      "id": "d80a68cd-766b-4937-90df-08ff5f1449a4",
+      "type": "claim",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:16:40.783037",
+      "last_seen": "2026-02-18T04:16:40.783037"
+    },
+    {
+      "statement": "Amazon's algorithm crawls all keywords in slots, including unrelated terms, to index content for search",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon is just going to crawl through each one of those slots and it's just going to pick up every single keyword"
+      ],
+      "id": "2a0b661b-a6c1-4ace-ad19-60829155955b",
+      "type": "claim",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:12.571846",
+      "last_seen": "2026-02-18T04:17:12.571846"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine audience identity, specific needs, and unique constraints for targeted keywords",
+      "why_it_works": "Narrow targeting improves discoverability and relevance",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Think of how many types of planners exist on Amazon. If you're not being as narrow as you possibly can with your keywords..."
+      ],
+      "id": "9595143d-8135-4f4d-80ac-cca161845def",
+      "type": "niche_pattern",
+      "provenance": [
+        "jVfnrO3DJGs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:16:40.783037",
+      "last_seen": "2026-02-18T04:16:40.783037"
+    }
+  ]
+}

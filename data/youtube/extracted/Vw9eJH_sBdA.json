@@ -1,0 +1,230 @@
+{
+  "source_type": "youtube",
+  "video_id": "Vw9eJH_sBdA",
+  "title": "Amazon KDP Professional Analyzing competitors step by step",
+  "extracted_at": "2026-02-18T04:26:15.592956",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9304,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Page Length Analysis",
+      "description": "Evaluate competitor books' page counts to identify correlations with earnings",
+      "steps": [
+        "Check page numbers",
+        "Compare page length to sales performance"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Competition Analyzer"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Page length alone doesn't guarantee success"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "a lot of very well performing books they all are 102 pages long"
+      ],
+      "id": "db897e07-f21d-41b5-b314-ae456c26a3c6",
+      "type": "tactic",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:38.959494",
+      "last_seen": "2026-02-18T04:25:38.959494"
+    },
+    {
+      "name": "Price Point Optimization",
+      "description": "Analyze competitor pricing strategies within niches",
+      "steps": [
+        "Compare price points across top-performing books",
+        "Identify profitable price ranges"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Competition Analyzer"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Pricing must balance competitiveness and profitability"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "books that earn a lot they are between let's say 100 and 110 Pages"
+      ],
+      "id": "c8f418d2-242f-4a4e-8f80-c8e9dde48393",
+      "type": "tactic",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:38.959494",
+      "last_seen": "2026-02-18T04:25:38.959494"
+    },
+    {
+      "name": "Dynamic Pricing Strategy",
+      "description": "Start with a competitive price range and incrementally increase pricing based on sales performance to maximize earnings.",
+      "steps": [
+        "Set initial price at the upper end of the competitor range (e.g., $7.99)",
+        "Increase price by $0.50 increments after consistent sales",
+        "Stop increasing when earnings per book start to decline"
+      ],
+      "signals_used": [
+        "BSR",
+        "sales_rank"
+      ],
+      "tools_mentioned": [
+        "Competition Analyzer"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Price increases may reduce sales volume if overdone"
+      ],
+      "example_niches": [
+        "diet journaling",
+        "planning guides"
+      ],
+      "source_quotes": [
+        "I would just go with the highest of those which in my case would be 7.99"
+      ],
+      "id": "52a9ddc9-1034-4f60-a79f-4c95477fae90",
+      "type": "tactic",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:15.592799",
+      "last_seen": "2026-02-18T04:26:15.592799"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Page Length Correlation",
+      "condition": "If median page length correlates with higher earnings, prioritize similar lengths",
+      "machine_rule": {
+        "field": "median_pages",
+        "op": "eq",
+        "value": 102
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "three books which have exactly the same amount of pages"
+      ],
+      "id": "b6afb157-4dc8-48c9-a397-fea61a3e78e4",
+      "type": "heuristic",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:38.959494",
+      "last_seen": "2026-02-18T04:25:38.959494"
+    },
+    {
+      "name": "BSR Threshold Check",
+      "condition": "If the top book's BSR exceeds 10,000, the niche may have poor sales potential",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "gt",
+        "value": 10000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "the top book in that Niche has a bestseller rank of less than 10,000"
+      ],
+      "id": "9f62ac4d-0360-4028-86db-92529c69e16b",
+      "type": "heuristic",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:15.592799",
+      "last_seen": "2026-02-18T04:26:15.592799"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Books around 102 pages demonstrate higher earnings potential in analyzed niches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "three books which have exactly the same amount of pages"
+      ],
+      "id": "acbe0d41-e451-4771-bf44-a4585d334e8d",
+      "type": "claim",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:38.959494",
+      "last_seen": "2026-02-18T04:25:38.959494"
+    },
+    {
+      "statement": "A niche's success is indicated by the top book's BSR being below 10,000",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the top book in that Niche has a bestseller rank of less than 10,000"
+      ],
+      "id": "7a206fff-89e1-43c9-a188-8aad382fe06a",
+      "type": "claim",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:26:15.592799",
+      "last_seen": "2026-02-18T04:26:15.592799"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Identify underserved sub-niches with specific constraints",
+      "why_it_works": "Targets niche markets with unmet needs",
+      "signals": [
+        "low review counts",
+        "BSR rankings"
+      ],
+      "source_quotes": [
+        "what we really do is we create a product that a customer wants to buy"
+      ],
+      "id": "68093b16-79e4-4742-85a2-20e6add36f42",
+      "type": "niche_pattern",
+      "provenance": [
+        "Vw9eJH_sBdA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:38.959494",
+      "last_seen": "2026-02-18T04:25:38.959494"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "source_type": "youtube",
+  "video_id": "Rm_6khE_YjQ",
+  "title": "Publisher Rocket Tutorial: Step-by-Step Amazon KDP Research Tutorial | Sell more books on Amazon",
+  "extracted_at": "2026-02-18T22:45:39.912062",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 22741,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 4,
+    "claims": 5,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Use Publisher Rocket to analyze keyword performance, competitors, and market trends for Amazon KDP books.",
+      "steps": [
+        "Search for keywords (e.g., 'cozy mystery')",
+        "Review data on average pages, competitors, average price, and estimated monthly earnings",
+        "Filter keywords based on market demand and competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Keyword data changes frequently; avoid rigid strategies"
+      ],
+      "example_niches": [
+        "mystery",
+        "cozy mystery"
+      ],
+      "source_quotes": [
+        "You need to remember that Amazon actually has like rules for their keywords...",
+        "Estimated Amazon searches per month is the most important thing"
+      ],
+      "id": "6ad8728d-6549-4ef4-b081-a32fa7acaa13",
+      "type": "tactic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:04.072920",
+      "last_seen": "2026-02-18T22:44:04.072920"
+    },
+    {
+      "name": "Evaluate Keyword Competition",
+      "description": "Assess keyword viability using Publisher Rocket's competitive score and competitor count metrics",
+      "steps": [
+        "Check estimated Amazon searches per month",
+        "Analyze competitor count and color-coded competitive score (red = high competition)",
+        "Compare against thresholds for actionable insights"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "competitor_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitor_count": 3000,
+        "search_volume": 1000
+      },
+      "caveats": [
+        "Avoid keywords with red competitive score and high competitor count"
+      ],
+      "example_niches": [
+        "mystery romance",
+        "Christmas books"
+      ],
+      "source_quotes": [
+        "this keyword is like so competitive for you I think this is done based on the distribution of this and this"
+      ],
+      "id": "a82b7d0a-0e8c-453d-8fd8-4fc5458636d1",
+      "type": "tactic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:36.785970",
+      "last_seen": "2026-02-18T22:44:36.785970"
+    },
+    {
+      "name": "category_analysis",
+      "description": "Identify high-ranking categories for keyword relevance",
+      "steps": [
+        "Check categories books rank in",
+        "Compare with target audience"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Categories may not align with target audience"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the most important thing for me in this list is actually this the categories"
+      ],
+      "id": "345ed922-4e0b-4480-9800-22778c5e00f7",
+      "type": "tactic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:45:08.118255",
+      "last_seen": "2026-02-18T22:45:08.118255"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitor-Search Balance",
+      "condition": "If competitors exceed 5000 and estimated searches are below 100, avoid keyword",
+      "machine_rule": {
+        "field": "competitors",
+        "op": "gt",
+        "value": 5000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "If you have like okay let's imagine a scenario where there's um 5000 competitors... it would be ridiculous to like join Dallas and complete cell"
+      ],
+      "id": "3dfd4185-4129-4954-b664-7fbff779bc2f",
+      "type": "heuristic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:04.072920",
+      "last_seen": "2026-02-18T22:44:04.072920"
+    },
+    {
+      "name": "Penalize High Competition Keywords",
+      "condition": "If competitor count exceeds 3000 and search volume below 1000, penalize keyword viability",
+      "machine_rule": {
+        "field": "competitor_count",
+        "op": "gt",
+        "value": 3000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "this keyword is not worth it because it's 1176 sheet number of searches and 24 191 books as ah Computing for this keyword"
+      ],
+      "id": "83bbb876-1970-4f86-ab44-ffc39af44a59",
+      "type": "heuristic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:36.785970",
+      "last_seen": "2026-02-18T22:44:36.785970"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if the book description does not work for them they'll leave"
+      ],
+      "id": "6f64ca5c-8faf-45f4-8491-84221cbaae09",
+      "type": "heuristic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:45:08.118255",
+      "last_seen": "2026-02-18T22:45:08.118255"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median_reviews is below 200, prioritize niches with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If you want to do ads...at least five books out"
+      ],
+      "id": "c8adf59b-ca2a-4d71-b1d0-4d9defc6dc2f",
+      "type": "heuristic",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:45:39.911946",
+      "last_seen": "2026-02-18T22:45:39.911946"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon prohibits using program names (e.g., 'Kindle Unlimited') in keyword boxes",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You can't use keywords like this with your books because Amazon doesn't allow you to put program names in your keyword boxes"
+      ],
+      "id": "608f08f2-6eba-4340-ae7b-575b1452ba82",
+      "type": "claim",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:04.072920",
+      "last_seen": "2026-02-18T22:44:04.072920"
+    },
+    {
+      "statement": "Average pages of top-ranking books are not a reliable metric for formatting decisions",
+      "category": "formatting",
+      "confidence": "medium",
+      "source_quotes": [
+        "It's not even really reliable like that... I wouldn't do that because this is just a keyword"
+      ],
+      "id": "19a5e918-1991-43e4-b7cd-156f6a5270da",
+      "type": "claim",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:04.072920",
+      "last_seen": "2026-02-18T22:44:04.072920"
+    },
+    {
+      "statement": "High competitor count keywords are less likely to achieve top rankings on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is like so competitive for you I think this is done based on the distribution of this and this"
+      ],
+      "id": "b69446b6-fca5-4542-a807-a16a42275d5c",
+      "type": "claim",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:36.785970",
+      "last_seen": "2026-02-18T22:44:36.785970"
+    },
+    {
+      "statement": "Categories influence book visibility and audience targeting",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we don't want to be in the wrong category"
+      ],
+      "id": "e227e770-a577-492e-870b-e2375519ef88",
+      "type": "claim",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:45:08.118255",
+      "last_seen": "2026-02-18T22:45:08.118255"
+    },
+    {
+      "statement": "Some authors derive 80-90% of their income from KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I make around 80 of my income..."
+      ],
+      "id": "409091c5-f6d9-4c69-b05b-ae391516eafb",
+      "type": "claim",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:45:39.911946",
+      "last_seen": "2026-02-18T22:45:39.911946"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific niches with clear identity, problem, and constraint parameters",
+      "why_it_works": "Narrower niches often have lower competition and higher search intent",
+      "signals": [
+        "low review counts",
+        "specific keyword clusters"
+      ],
+      "source_quotes": [
+        "You need to remember that Amazon actually has like rules for their keywords..."
+      ],
+      "id": "ad2a8275-51e1-499a-b4ce-5e407beddb53",
+      "type": "niche_pattern",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:04.072920",
+      "last_seen": "2026-02-18T22:44:04.072920"
+    },
+    {
+      "pattern_template": "IDENTITY + SEASONAL_TREND",
+      "example": "mystery + Christmas",
+      "description": "Combine niche with seasonal demand to capture temporary search spikes",
+      "why_it_works": "Seasonal keywords can have high search volume during specific periods",
+      "signals": [
+        "search_volume_spike",
+        "low_review_counts"
+      ],
+      "source_quotes": [
+        "this will be very competitive especially during this period because it's November"
+      ],
+      "id": "0182e3e5-e930-4929-9e67-ca8e7085b38e",
+      "type": "niche_pattern",
+      "provenance": [
+        "Rm_6khE_YjQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:44:36.785970",
+      "last_seen": "2026-02-18T22:44:36.785970"
+    }
+  ]
+}

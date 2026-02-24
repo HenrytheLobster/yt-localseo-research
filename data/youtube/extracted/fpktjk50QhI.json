@@ -1,0 +1,397 @@
+{
+  "source_type": "youtube",
+  "video_id": "fpktjk50QhI",
+  "title": "Top 10 Amazon KDP Beginner Mistakes To AVOID",
+  "extracted_at": "2026-02-18T04:19:19.588083",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 17540,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Title Matching",
+      "description": "Ensure the book title in KDP exactly matches the cover text to avoid rejection.",
+      "steps": [
+        "Verify title matches cover word-for-word",
+        "Test variations if exact match fails"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Strict reviewers may require exact cover text"
+      ],
+      "example_niches": [
+        "puzzle books"
+      ],
+      "source_quotes": [
+        "Amazon really wants that to match exactly what is on the cover"
+      ],
+      "id": "63ddb9d8-bbba-4209-afae-30939a64c7f6",
+      "type": "tactic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:51.517982",
+      "last_seen": "2026-02-18T04:17:51.517982"
+    },
+    {
+      "name": "Subtitle Keyword Avoidance",
+      "description": "Avoid using 'Free' or 'Best Seller' in subtitles to prevent flags.",
+      "steps": [
+        "Remove 'Free' from subtitles",
+        "Avoid repeating title keywords"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "Subtle use of 'free' may still trigger flags"
+      ],
+      "example_niches": [
+        "educational books"
+      ],
+      "source_quotes": [
+        "Amazon does not want you to use specific keywords in your subtitle"
+      ],
+      "id": "99a92a29-5a8d-4a2b-a9a4-268def9c6c59",
+      "type": "tactic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:51.517982",
+      "last_seen": "2026-02-18T04:17:51.517982"
+    },
+    {
+      "name": "Cover Margins",
+      "description": "Extend background color beyond cover edges to prevent printing errors.",
+      "steps": [
+        "Ensure background covers entire edge",
+        "Check for white gaps"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "Partial coverage may cause print defects"
+      ],
+      "example_niches": [
+        "children's books"
+      ],
+      "source_quotes": [
+        "Your color of the background needs to go all the way past the edge"
+      ],
+      "id": "1cd607bd-528b-454a-b3c0-5da479d2011e",
+      "type": "tactic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:51.517982",
+      "last_seen": "2026-02-18T04:17:51.517982"
+    },
+    {
+      "name": "cover_design_with_bookbolt",
+      "description": "Use Book Bolt software to ensure cover elements stay within cutoff lines and avoid white space issues",
+      "steps": [
+        "Use Book Bolt to design covers",
+        "Check all elements are within dotted green cutoff line",
+        "Avoid white space in printed books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Software may not be familiar to all users"
+      ],
+      "example_niches": [
+        "educational_materials",
+        "children_books"
+      ],
+      "source_quotes": [
+        "This is called Book Bolt, I will put a link to it down in the description below."
+      ],
+      "id": "65f19393-7163-4a3e-bdfc-3a00643d7c25",
+      "type": "tactic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:18:27.461871",
+      "last_seen": "2026-02-18T04:18:27.461871"
+    },
+    {
+      "name": "niche-specific content",
+      "description": "Create books in underserved niches with high search volume but low competition to rank organically",
+      "steps": [
+        "Identify small niches like 'horse word search books'",
+        "Publish multiple books in those niches"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent niche discovery efforts"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you find these smaller niches...they are just organically going to show up on the first page"
+      ],
+      "id": "b09d65ba-c463-4972-9b4d-a511b1d183df",
+      "type": "tactic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:18:54.124325",
+      "last_seen": "2026-02-18T04:18:54.124325"
+    },
+    {
+      "name": "free_course",
+      "description": "Offer free resources to beginners without charging for a course",
+      "steps": [
+        "provide free course materials"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "free. I'm not charging you anything in a course for them"
+      ],
+      "id": "01508c82-11da-4369-bb2c-7e1a8f84cd82",
+      "type": "tactic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:19:19.587963",
+      "last_seen": "2026-02-18T04:19:19.587963"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median_reviews is less than 200, boost optimization efforts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "This does not happen all the time. It just sometimes happens"
+      ],
+      "id": "54a54a12-bee5-4f40-a3c3-6d966154431d",
+      "type": "heuristic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:51.517982",
+      "last_seen": "2026-02-18T04:17:51.517982"
+    },
+    {
+      "name": "author_name_rejection",
+      "condition": "If author name is already registered or trademarked, change it",
+      "machine_rule": {
+        "field": "author_name",
+        "op": "lt"
+      },
+      "action": "flag",
+      "weight": 0.7,
+      "source_quotes": [
+        "If your book is getting kicked back for an author name..."
+      ],
+      "id": "a5d04648-2a8f-4465-bd8b-74b135682955",
+      "type": "heuristic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:18:27.461871",
+      "last_seen": "2026-02-18T04:18:27.461871"
+    },
+    {
+      "name": "avoid_analysis_paralysis",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "having paralysis by analysis...don't get started"
+      ],
+      "id": "c042d815-9d7d-4b21-a7c8-51b9e6a48812",
+      "type": "heuristic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:18:54.124325",
+      "last_seen": "2026-02-18T04:18:54.124325"
+    },
+    {
+      "name": "review_threshold",
+      "condition": "If median_reviews is below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "free. I'm not charging you anything in a course for them"
+      ],
+      "id": "9f58c2eb-fb7e-462c-a50a-566d4b35404c",
+      "type": "heuristic",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:19:19.587963",
+      "last_seen": "2026-02-18T04:19:19.587963"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon flags 'Free' in subtitles even if not indicating free pricing.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon sometimes flags this because the word 'free' is in it"
+      ],
+      "id": "78c5a0fe-a98a-4b9e-ac98-9a4cf8f24327",
+      "type": "claim",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:51.517982",
+      "last_seen": "2026-02-18T04:17:51.517982"
+    },
+    {
+      "statement": "Authors can use different author names for each book on Amazon KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You don't have to use the same author name for every book on Amazon."
+      ],
+      "id": "01995810-42be-43f0-96a1-1b12556befbe",
+      "type": "claim",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:18:27.461871",
+      "last_seen": "2026-02-18T04:18:27.461871"
+    },
+    {
+      "statement": "Low/medium content books outperform high content books for new authors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "these are not the types of books to create...low and medium content books"
+      ],
+      "id": "a4610006-3f51-4fbe-a9ca-aae33d4db50f",
+      "type": "claim",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:18:54.124325",
+      "last_seen": "2026-02-18T04:18:54.124325"
+    },
+    {
+      "statement": "Publisher Rocket is a tool mentioned for KDP analysis",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Publisher Rocket"
+      ],
+      "id": "33884818-72df-4dc0-953a-060219ff8f7d",
+      "type": "claim",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:19:19.587963",
+      "last_seen": "2026-02-18T04:19:19.587963"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche targeting specific demographics with unique constraints.",
+      "why_it_works": "Leverages low competition and targeted keywords",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "This is not always the case, but if your book is not getting approved..."
+      ],
+      "id": "d08e4f50-b7b3-4837-b52c-6d7d5c2dfe05",
+      "type": "niche_pattern",
+      "provenance": [
+        "fpktjk50QhI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:17:51.517982",
+      "last_seen": "2026-02-18T04:17:51.517982"
+    }
+  ]
+}

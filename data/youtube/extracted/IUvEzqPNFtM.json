@@ -1,0 +1,284 @@
+{
+  "source_type": "youtube",
+  "video_id": "IUvEzqPNFtM",
+  "title": "6 Tips to Choose the Right Title & Subtitle for Your Self Published Book on Amazon KDP",
+  "extracted_at": "2026-02-18T04:43:10.119721",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4190,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "descriptive titles",
+      "description": "help potential readers understand the book's content and improve searchability",
+      "steps": [
+        "include keywords to improve searchability",
+        "clarify the book's purpose"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "if the title is too vague, it may not attract the right audience"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "a descriptive title and subtitle can make your book stand out..."
+      ],
+      "id": "89ec39c5-6626-45db-8261-c1cdde901325",
+      "type": "tactic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    },
+    {
+      "name": "simple language",
+      "description": "avoid complex terms to ensure clarity and reduce confusion",
+      "steps": [
+        "use straightforward phrasing",
+        "focus on core themes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "complex language may deter readers"
+      ],
+      "example_niches": [
+        "self-help guides"
+      ],
+      "source_quotes": [
+        "using complex or obscure language may be confusing..."
+      ],
+      "id": "4058a2cd-3710-4fa4-917a-f88b9700ce10",
+      "type": "tactic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    },
+    {
+      "name": "memorable phrasing",
+      "description": "create titles that are easy to recall and distinguish from competitors",
+      "steps": [
+        "incorporate rhyme or alliteration",
+        "use unique descriptors"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "overly creative titles may confuse readers"
+      ],
+      "example_niches": [
+        "Christian fiction"
+      ],
+      "source_quotes": [
+        "memorable title and subtitle can help grab attention..."
+      ],
+      "id": "12d0106a-2a16-4970-8067-2c0f157cb722",
+      "type": "tactic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    },
+    {
+      "name": "audience alignment",
+      "description": "tailor titles to resonate with the target demographic's interests",
+      "steps": [
+        "research audience preferences",
+        "use relevant jargon"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "misaligned titles may repel niche audiences"
+      ],
+      "example_niches": [
+        "ADHD resources"
+      ],
+      "source_quotes": [
+        "important to consider your audience and make sure that they appeal to this audience..."
+      ],
+      "id": "eae7ca7b-ed89-4fb1-b756-aad962d553d0",
+      "type": "tactic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    },
+    {
+      "name": "keyword integration",
+      "description": "optimize titles for search visibility using relevant terms",
+      "steps": [
+        "identify high-traffic keywords",
+        "balance keywords with clarity"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "overstuffing keywords may reduce readability"
+      ],
+      "example_niches": [
+        "teen self-help"
+      ],
+      "source_quotes": [
+        "using keywords can help potential readers find your book more easily..."
+      ],
+      "id": "7ec6b3c3-e466-44b8-ba89-f0b060ef2b45",
+      "type": "tactic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    },
+    {
+      "name": "brand integration",
+      "description": "embed personal or brand identity to build recognition",
+      "steps": [
+        "include author name or brand tagline",
+        "maintain consistency across titles"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "brand names may limit title flexibility"
+      ],
+      "example_niches": [
+        "personal development series"
+      ],
+      "source_quotes": [
+        "using your brand can help establish your book as part of your overall brand..."
+      ],
+      "id": "6d0d0185-3fe5-4b7e-9e19-a96c5ff01c58",
+      "type": "tactic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "boost low-review titles",
+      "condition": "If median_reviews is less than 200, then boost keyword relevance",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "using keywords can help potential readers find your book more easily..."
+      ],
+      "id": "f91f23ad-2a5e-4933-8986-ce0d0e8fb1ed",
+      "type": "heuristic",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Titles and subtitles are often the first elements readers encounter, influencing click-through rates",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the title and subtitle are often the first things that potential readers will see..."
+      ],
+      "id": "9e0044b0-658d-4c48-8cb7-597153da0625",
+      "type": "claim",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "targets specific demographics with clear needs and limitations",
+      "why_it_works": "combines identity, problem, and constraint to narrow search intent",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "important to consider your audience and make sure that they appeal to this audience..."
+      ],
+      "id": "e000e388-8422-4815-a2db-37ead5af4323",
+      "type": "niche_pattern",
+      "provenance": [
+        "IUvEzqPNFtM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:43:10.119489",
+      "last_seen": "2026-02-18T04:43:10.119489"
+    }
+  ]
+}

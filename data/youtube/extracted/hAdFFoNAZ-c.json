@@ -1,0 +1,154 @@
+{
+  "source_type": "youtube",
+  "video_id": "hAdFFoNAZ-c",
+  "title": "Find Low-Competition Keywords for Amazon KDP",
+  "extracted_at": "2026-02-18T04:33:49.473544",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2712,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Search Bar",
+      "description": "Use Amazon's auto-suggestions to find real keywords buyers are searching for.",
+      "steps": [
+        "Go to Amazon.com and type a keyword related to your book idea",
+        "Write down auto-suggested phrases",
+        "Check search result counts for competitiveness",
+        "Analyze top page one books for quality signals"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon search bar"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May not account for keyword volume accurately"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Amazon will automatically suggest phrases. These are real keywords real buyers are searching for."
+      ],
+      "id": "13c7880c-d105-4753-9539-13624e45ed3c",
+      "type": "tactic",
+      "provenance": [
+        "hAdFFoNAZ-c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:33:49.473398",
+      "last_seen": "2026-02-18T04:33:49.473398"
+    },
+    {
+      "name": "First Page Analysis",
+      "description": "Evaluate competition quality by analyzing top-ranking books.",
+      "steps": [
+        "Click first five books on page one",
+        "Check review counts (under 100 is good)",
+        "Assess cover quality and title/description quality"
+      ],
+      "signals_used": [
+        "review_count",
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Subjective quality assessment may vary"
+      ],
+      "example_niches": [
+        "journal for teens"
+      ],
+      "source_quotes": [
+        "If the top books look weak, that's a green light. Competition is not just about numbers, it's about quality."
+      ],
+      "id": "0bab17b8-5d87-4789-8e5b-517bfd6f87e3",
+      "type": "tactic",
+      "provenance": [
+        "hAdFFoNAZ-c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:33:49.473398",
+      "last_seen": "2026-02-18T04:33:49.473398"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If review count is below 200, prioritize keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Avoid single word keywords like journal, copying bestsellers without research."
+      ],
+      "id": "4ab71922-68ec-4af8-bc23-9a74db6b724f",
+      "type": "heuristic",
+      "provenance": [
+        "hAdFFoNAZ-c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:33:49.473398",
+      "last_seen": "2026-02-18T04:33:49.473398"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Low competition keywords allow beginners to avoid competing with big brands",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "This is where beginners win. You don't want to compete with 10,000 books."
+      ],
+      "id": "2a908f3d-5347-45c6-9dc6-3121feb4c05b",
+      "type": "claim",
+      "provenance": [
+        "hAdFFoNAZ-c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:33:49.473398",
+      "last_seen": "2026-02-18T04:33:49.473398"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific niches with clear demand and weak competition",
+      "why_it_works": "Combines identity (target audience), problem (specific need), and constraint (narrow search)",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Avoid choosing keywords based on excitement, not data. Amazon KDP is a business, not gambling."
+      ],
+      "id": "762c2a00-c56d-4f3a-a74f-2a53ab145b85",
+      "type": "niche_pattern",
+      "provenance": [
+        "hAdFFoNAZ-c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:33:49.473398",
+      "last_seen": "2026-02-18T04:33:49.473398"
+    }
+  ]
+}

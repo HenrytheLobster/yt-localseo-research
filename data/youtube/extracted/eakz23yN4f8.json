@@ -1,0 +1,195 @@
+{
+  "source_type": "youtube",
+  "video_id": "eakz23yN4f8",
+  "title": "KDP Keyword Research - How to Choose an SEO-Optimized Title for Your Book",
+  "extracted_at": "2026-02-18T13:45:51.364307",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8654,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "keyword optimization",
+      "description": "Focus on long-tail keywords with lower competition and higher conversion potential",
+      "steps": [
+        "Research high-volume keywords",
+        "Identify niche-specific long-tail variations",
+        "Balance search volume with competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May miss broader audience segments"
+      ],
+      "example_niches": [
+        "teen planner",
+        "dog food recipes"
+      ],
+      "source_quotes": [
+        "if your book sells well chances are that Amazon is going to increase the rank of your book even for the main keywords"
+      ],
+      "id": "69a6b2f4-e9bd-46f3-91a6-aca98465186a",
+      "type": "tactic",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:09.535990",
+      "last_seen": "2026-02-18T13:45:09.535990"
+    },
+    {
+      "name": "long_tail_keywords",
+      "description": "Using long-tail keywords in book titles to target specific audiences and improve search visibility",
+      "steps": [
+        "Research high-volume long-tail keywords",
+        "Integrate keywords into title for relevance",
+        "Align title with target audience interests"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if keyword is overly competitive or irrelevant"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "only a very small percentage of all searches comes from short tail keywords... roughly 70 percent come from long tail keywords"
+      ],
+      "id": "362388f4-71c9-420a-8088-bd4c3b30d80f",
+      "type": "tactic",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:51.364197",
+      "last_seen": "2026-02-18T13:45:51.364197"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competition avoidance",
+      "condition": "If short-tail keywords have high competition, prioritize long-tail variations",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "gte",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "there is way less competition and we actually have chances to rank higher"
+      ],
+      "id": "8b9741e8-66dd-4a0d-adca-1a7dffa44c65",
+      "type": "heuristic",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:09.535990",
+      "last_seen": "2026-02-18T13:45:09.535990"
+    },
+    {
+      "name": "low_review_threshold",
+      "condition": "If median reviews are below 200, prioritize boosting title optimization",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "only a very small percentage of all searches comes from short tail keywords"
+      ],
+      "id": "dee9df4f-d1dd-46a4-8e70-cf131b5bbb7b",
+      "type": "heuristic",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:51.364197",
+      "last_seen": "2026-02-18T13:45:51.364197"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon ranks products based on metadata relevance including title, subtitle, and keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon makes a ranking based on many data of course sales... considering the metadata of each product"
+      ],
+      "id": "64b9da88-1daa-4800-8a8f-a47f5de0e886",
+      "type": "claim",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:09.535990",
+      "last_seen": "2026-02-18T13:45:09.535990"
+    },
+    {
+      "statement": "70% of searches on KDP come from long-tail keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "roughly 70 percent come from long tail keywords"
+      ],
+      "id": "5aa7d0fc-1d84-4b42-8c33-c9b0abbf2772",
+      "type": "claim",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:51.364197",
+      "last_seen": "2026-02-18T13:45:51.364197"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combines target audience identity with specific problem and unique constraint for niche targeting",
+      "why_it_works": "Creates highly specific long-tail keywords with lower competition",
+      "signals": [
+        "low review counts",
+        "specific problem keywords"
+      ],
+      "source_quotes": [
+        "the problem of doing a good keyword research on KDP is basically just the problem of finding a good title"
+      ],
+      "id": "0c061c91-648c-42e2-af88-3c60dd0e30db",
+      "type": "niche_pattern",
+      "provenance": [
+        "eakz23yN4f8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:45:09.535990",
+      "last_seen": "2026-02-18T13:45:09.535990"
+    }
+  ]
+}

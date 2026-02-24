@@ -1,0 +1,368 @@
+{
+  "source_type": "youtube",
+  "video_id": "1V2RKuI5msA",
+  "title": "This LOW COMPETITION KDP Word Search Niche is EASY to Make",
+  "extracted_at": "2026-02-18T21:48:28.697257",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 18661,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "language_niche",
+      "description": "Target word searches in specific languages with low competition",
+      "steps": [
+        "Research first-page rankings for language-specific word searches",
+        "Use software like Instant Puzzle Generator to create puzzles",
+        "Monitor sales rankings and review counts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Instant Puzzle Generator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires software investment for non-designers"
+      ],
+      "example_niches": [
+        "spanish_word_searches"
+      ],
+      "source_quotes": [
+        "there's much less competition than there is with your typical english word searches"
+      ],
+      "id": "4451b5b0-79d5-4258-bb05-cfcdb4f5909d",
+      "type": "tactic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:46:48.882932",
+      "last_seen": "2026-02-18T21:46:48.882932"
+    },
+    {
+      "name": "theme-specific-spanish-wordsearches",
+      "description": "Create word searches with niche themes like food or quotes to differentiate products",
+      "steps": [
+        "Use Helium 10 for keyword research on 'spanish word search large print'",
+        "Translate words via Google for language-specific content",
+        "Generate puzzles with 100-200 searches per book using software"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "InstantPuzzleGenerator.com",
+        "Google"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Require high-quality content to avoid low ratings"
+      ],
+      "example_niches": [
+        "spanish food word searches",
+        "spanish inspirational quotes"
+      ],
+      "source_quotes": [
+        "People are actively searching for large print spanish word searches"
+      ],
+      "id": "385f7242-8214-4c49-909a-5d4e22d07ba8",
+      "type": "tactic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:21.358895",
+      "last_seen": "2026-02-18T21:47:21.358895"
+    },
+    {
+      "name": "bulk_puzzle_generation",
+      "description": "Create multiple word search puzzles quickly using a generator tool",
+      "steps": [
+        "Prepare a list of words in Notepad with spacing between batches",
+        "Save the file and upload to puzzle generator software",
+        "Customize grid size, fonts, colors, and word placement",
+        "Download puzzles as PDFs for Amazon listings"
+      ],
+      "signals_used": [
+        "low_competition",
+        "customization"
+      ],
+      "tools_mentioned": [
+        "puzzle_generator",
+        "notepad"
+      ],
+      "thresholds": {
+        "puzzles_min": 50,
+        "words_per_puzzle": 15
+      },
+      "caveats": [
+        "Requires reliable generator software"
+      ],
+      "example_niches": [
+        "spanish_vocabulary",
+        "kdp_niche"
+      ],
+      "source_quotes": [
+        "you can get so many of these puzzles out there really really quickly"
+      ],
+      "id": "6a8af46b-7b3e-4c8f-b155-8bec877b1497",
+      "type": "tactic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:52.102959",
+      "last_seen": "2026-02-18T21:47:52.102959"
+    },
+    {
+      "name": "Automated Word Search Generation",
+      "description": "Use software to quickly create and customize word search puzzles for KDP.",
+      "steps": [
+        "Download puzzle templates via software",
+        "Customize puzzle settings (e.g., 1 solution per page)",
+        "Export to PDF for Amazon listings"
+      ],
+      "signals_used": [
+        "low_competition"
+      ],
+      "tools_mentioned": [
+        "word search software"
+      ],
+      "thresholds": {
+        "reviews_max": 100,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Requires niche-specific content creation"
+      ],
+      "example_niches": [
+        "Spanish word searches",
+        "Italian word searches"
+      ],
+      "source_quotes": [
+        "This is the software to go for if you're doing word searches"
+      ],
+      "id": "5a7017b2-0e43-42b2-be5f-940636118947",
+      "type": "tactic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:48:28.697117",
+      "last_seen": "2026-02-18T21:48:28.697117"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize this niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the first few books on this page they have really low amounts of reviews"
+      ],
+      "id": "22ae5659-4bb6-4eba-bd64-5eb39afc53f2",
+      "type": "heuristic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:46:48.882932",
+      "last_seen": "2026-02-18T21:46:48.882932"
+    },
+    {
+      "name": "review-based-boost",
+      "condition": "If median_reviews < 200 then boost product visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You don't have to put all your time into making a word search that has like a thousand words"
+      ],
+      "id": "32cffaf2-9817-4a31-91cc-b3690972e36f",
+      "type": "heuristic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:21.358895",
+      "last_seen": "2026-02-18T21:47:21.358895"
+    },
+    {
+      "name": "scale_customization",
+      "condition": "If puzzle customization options are available, then boost niche potential",
+      "machine_rule": {
+        "field": "customization_options",
+        "op": "contains",
+        "value": "font_color_grid"
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "you can change all the sizes you can change the font type here"
+      ],
+      "id": "a8812cbb-a01b-49e6-99c4-101f86e95bbe",
+      "type": "heuristic",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:52.102959",
+      "last_seen": "2026-02-18T21:47:52.102959"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Instant Puzzle Generator costs $47 for lifetime access",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it costs i think it's 47 and it's a one-time payment"
+      ],
+      "id": "a071c366-53e8-4922-99a6-9a8957aeee72",
+      "type": "claim",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:46:48.882932",
+      "last_seen": "2026-02-18T21:46:48.882932"
+    },
+    {
+      "statement": "KDP requires investment in puzzle-generating software for competitive word search niches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You have to put money into this business because you are not allowed to use the free generators"
+      ],
+      "id": "ad11bb4c-46be-490c-8277-5f7f2cfe0843",
+      "type": "claim",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:21.358895",
+      "last_seen": "2026-02-18T21:47:21.358895"
+    },
+    {
+      "statement": "KDP allows direct PDF downloads of customized word search puzzles",
+      "category": "platform_behavior",
+      "confidence": "high",
+      "source_quotes": [
+        "download and then we can choose the pdf which can go straight into our amazon listings"
+      ],
+      "id": "d0c30c6c-b47f-4798-beec-bebd6cf1ce32",
+      "type": "claim",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:52.102959",
+      "last_seen": "2026-02-18T21:47:52.102959"
+    },
+    {
+      "statement": "Word search niche products can achieve low competition with proper tooling.",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "This LOW COMPETITION KDP Word Search Niche is EASY to Make"
+      ],
+      "id": "2bcf7382-eff8-4643-b975-cca0af23b766",
+      "type": "claim",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:48:28.697117",
+      "last_seen": "2026-02-18T21:48:28.697117"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "language_word_searches + low_competition + software_dependency",
+      "description": "Exploit underserved language markets with design tools",
+      "why_it_works": "Combines low competition with accessible creation tools",
+      "signals": [
+        "low review counts",
+        "high BSR rankings"
+      ],
+      "source_quotes": [
+        "there's much less competition than there is with your typical english word searches"
+      ],
+      "id": "5060d4e1-06e1-497c-9928-9e8b4a9753af",
+      "type": "niche_pattern",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:46:48.882932",
+      "last_seen": "2026-02-18T21:46:48.882932"
+    },
+    {
+      "pattern_template": "LANGUAGE + PRACTICE + LOW_COMPETITION",
+      "example": "spanish_language + vocabulary_practice + kdp_niche",
+      "description": "Target language learners with low-competition educational puzzles",
+      "why_it_works": "Combines targeted practice with minimal market saturation",
+      "signals": [
+        "low_competition",
+        "educational_content"
+      ],
+      "source_quotes": [
+        "this low competition kdp word search niche is easy to make"
+      ],
+      "id": "1ebcd102-1c91-4145-a34f-fee4429c9843",
+      "type": "niche_pattern",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:47:52.102959",
+      "last_seen": "2026-02-18T21:47:52.102959"
+    },
+    {
+      "pattern_template": "LANGUAGE + Niche",
+      "example": "Spanish word searches",
+      "description": "Target specific language niches for word search products.",
+      "why_it_works": "Language-specific content reduces competition and appeals to targeted audiences.",
+      "signals": [
+        "low_review_counts"
+      ],
+      "source_quotes": [
+        "Spanish was the most popular... you can look at things like the Italian word touches"
+      ],
+      "id": "84b3cdd1-9c45-44a0-91a9-a08d0bbd822a",
+      "type": "niche_pattern",
+      "provenance": [
+        "1V2RKuI5msA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:48:28.697117",
+      "last_seen": "2026-02-18T21:48:28.697117"
+    }
+  ]
+}

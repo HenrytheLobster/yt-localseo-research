@@ -1,0 +1,396 @@
+{
+  "source_type": "youtube",
+  "video_id": "a4IWQopgi8o",
+  "title": "My ULTIMATE GUIDE to Keyword Ads on Amazon KDP",
+  "extracted_at": "2026-02-18T13:29:38.027275",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 19154,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "manual_keyword_targeting",
+      "description": "Use manual targeting to select specific keywords for ad campaigns",
+      "steps": [
+        "Create a sponsored products campaign",
+        "Select manual targeting",
+        "Enter niche keywords from Amazon search suggestions",
+        "Set custom bids for cost control"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "amazon ads"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition keywords may require higher bids"
+      ],
+      "example_niches": [
+        "christmas coloring books for adults"
+      ],
+      "source_quotes": [
+        "if you can find results that are under a thousand there's a chance of ranking for that search term"
+      ],
+      "id": "15b3c77a-0ed4-4ea1-9877-7a32f8cd49e3",
+      "type": "tactic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:27:59.932055",
+      "last_seen": "2026-02-18T13:27:59.932055"
+    },
+    {
+      "name": "Match Type Selection",
+      "description": "Choose exact match for specific keywords and phrase match for broader variations to balance targeting and reach.",
+      "steps": [
+        "Add 5 search terms to keyword ads",
+        "Disable broad match for precise targeting",
+        "Enable phrase match for related keyword variations",
+        "Use negative keywords to exclude irrelevant terms"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Ads"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Suggested bids may not guarantee ad serving"
+      ],
+      "example_niches": [
+        "adult coloring books"
+      ],
+      "source_quotes": [
+        "'exact match type is great for ranking for a specific keyword string'"
+      ],
+      "id": "b2389318-323d-4e05-8e58-5d3ec55d5b6a",
+      "type": "tactic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:28:37.493308",
+      "last_seen": "2026-02-18T13:28:37.493308"
+    },
+    {
+      "name": "Bid Adjustment Strategy",
+      "description": "Adjust bids for top-of-search placements to compete for higher visibility.",
+      "steps": [
+        "Set base bid (e.g., 50 cents)",
+        "Increase bid by 50% for top-of-search placements",
+        "Maintain zero adjustment for rest-of-search and product pages"
+      ],
+      "signals_used": [
+        "conversion_rate"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {},
+      "caveats": [
+        "Higher bids may not guarantee top placement"
+      ],
+      "example_niches": [
+        "holiday-themed books"
+      ],
+      "source_quotes": [
+        "'many of the sales come from those top of search placements'"
+      ],
+      "id": "6bcdd34f-f7c1-4293-a4a2-3da497cba234",
+      "type": "tactic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:28:37.493308",
+      "last_seen": "2026-02-18T13:28:37.493308"
+    },
+    {
+      "name": "Break-Even ACOS Calculation",
+      "description": "Determine the minimum ACOS threshold for profitability using royalty divided by book price",
+      "steps": [
+        "Divide royalty by book price",
+        "Multiply result by 100 to get percentage",
+        "Set campaign bid to match calculated ACOS"
+      ],
+      "signals_used": [
+        "ACOS"
+      ],
+      "tools_mentioned": [
+        "Amazon Ads platform"
+      ],
+      "thresholds": {
+        "acos_max": 24.4
+      },
+      "caveats": [
+        "Ads may not show immediate profitability but aid organic rankings"
+      ],
+      "example_niches": [
+        "Seasonal coloring books"
+      ],
+      "source_quotes": [
+        "we need to find out what the break even cost... 24.4% acos"
+      ],
+      "id": "6cfe26a2-4d57-44b7-b206-5467d60e1f42",
+      "type": "tactic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:06.465161",
+      "last_seen": "2026-02-18T13:29:06.465161"
+    },
+    {
+      "name": "launch_phase_ads",
+      "description": "Use keyword ads during book launches to capitalize on new product visibility and ranking potential",
+      "steps": [
+        "Set a budget for ads",
+        "Adjust bids daily/weekly based on performance",
+        "Prioritize high-competition search terms during launch"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Less effective for highly competitive terms without sufficient sales"
+      ],
+      "example_niches": [
+        "coloring books",
+        "planners"
+      ],
+      "source_quotes": [
+        "using keyword ads even if I just make a few sales... ranks on that first page"
+      ],
+      "id": "f741031c-308f-4408-b6ed-f3f4b3234d44",
+      "type": "tactic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:38.027148",
+      "last_seen": "2026-02-18T13:29:38.027148"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "niched_keyword_selection",
+      "condition": "If search volume is under 1,000 results, prioritize these keywords",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we need to keep going and having a little look at some different keywords here"
+      ],
+      "id": "b4782987-8250-425d-bed4-395166908b57",
+      "type": "heuristic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:27:59.932055",
+      "last_seen": "2026-02-18T13:27:59.932055"
+    },
+    {
+      "name": "Negative Keyword Optimization",
+      "condition": "If niche-specific terms exist, use negative keywords to exclude irrelevant searches",
+      "machine_rule": {
+        "field": "review_count",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'put two negative keywords which are Christmas coloring book for kids'"
+      ],
+      "id": "91b8db18-9ef8-48f1-930f-ffa7e51edb1a",
+      "type": "heuristic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:28:37.493308",
+      "last_seen": "2026-02-18T13:28:37.493308"
+    },
+    {
+      "name": "Bid Optimization Rule",
+      "condition": "If ACOS is below break-even threshold, increase bids for more impressions",
+      "machine_rule": {
+        "field": "acos",
+        "op": "lt",
+        "value": 24.4
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if your AOS is beneath that break even acos... increase your bid"
+      ],
+      "id": "6bde8296-88d6-4346-81c9-c7e137a330f1",
+      "type": "heuristic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:06.465161",
+      "last_seen": "2026-02-18T13:29:06.465161"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize ad spend",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you might need to make 100 or so sales... you might only need to make say 10 sales"
+      ],
+      "id": "17268cfd-12d5-43d6-8af7-ad48d1dc5c6e",
+      "type": "heuristic",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:38.027148",
+      "last_seen": "2026-02-18T13:29:38.027148"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keyword ads help achieve organic rankings for niche search terms",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if I hadn't have used Amazon ads to launch this book it wouldn't be ranking for those search terms"
+      ],
+      "id": "e538098e-a769-4e6a-b681-3ecc5aa13a8c",
+      "type": "claim",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:27:59.932055",
+      "last_seen": "2026-02-18T13:27:59.932055"
+    },
+    {
+      "statement": "Amazon Ads displays sales figures but not the actual royalty amount per sale.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'you don't receive all of that $417 if you did that book would be almost break even'"
+      ],
+      "id": "9983f707-49e6-4d4f-932c-11353ce2bc85",
+      "type": "claim",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:28:37.493308",
+      "last_seen": "2026-02-18T13:28:37.493308"
+    },
+    {
+      "statement": "Amazon Ads may not use full daily budget, only a portion of it",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon doesn't generally use the whole of your budget"
+      ],
+      "id": "87787910-5165-43f0-966d-bf5ca0d19eaf",
+      "type": "claim",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:06.465161",
+      "last_seen": "2026-02-18T13:29:06.465161"
+    },
+    {
+      "statement": "Keyword ads are one of the most important tools for self-publishers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "they're one of the most important tools for me as a self-publisher"
+      ],
+      "id": "5b9b3df3-278b-4d4a-adbf-287f6e55be10",
+      "type": "claim",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:38.027148",
+      "last_seen": "2026-02-18T13:29:38.027148"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "christmas coloring books + simple design + adult audience",
+      "description": "Target specific audience needs with constrained search parameters",
+      "why_it_works": "Reduces competition while maintaining search volume",
+      "signals": [
+        "low competition keywords",
+        "specific audience descriptors"
+      ],
+      "source_quotes": [
+        "we need to keep going and having a little look at some different keywords here"
+      ],
+      "id": "08c991ce-09a0-498d-970a-ae0094d84865",
+      "type": "niche_pattern",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:27:59.932055",
+      "last_seen": "2026-02-18T13:27:59.932055"
+    },
+    {
+      "pattern_template": "IDENTITY + SEASONAL + Niche",
+      "example": "Adult coloring books + Christmas + Educational",
+      "description": "Target specific seasonal niches with constrained search terms",
+      "why_it_works": "Seasonal demand creates temporary market opportunities",
+      "signals": [
+        "Low competition keywords"
+      ],
+      "source_quotes": [
+        "we're going to run it up to Christmas Eve"
+      ],
+      "id": "d173761b-f386-4087-ac39-7a3273baeac1",
+      "type": "niche_pattern",
+      "provenance": [
+        "a4IWQopgi8o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:29:06.465161",
+      "last_seen": "2026-02-18T13:29:06.465161"
+    }
+  ]
+}

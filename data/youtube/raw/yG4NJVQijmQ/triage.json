@@ -1,0 +1,24 @@
+{
+  "video_id": "yG4NJVQijmQ",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "low content",
+    "paperback",
+    "category",
+    "competition",
+    "profitable",
+    "journal",
+    "interior"
+  ],
+  "transcript_word_count": 4812,
+  "triaged_at": "2026-02-18T19:48:09.617793"
+}

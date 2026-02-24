@@ -1,0 +1,228 @@
+{
+  "source_type": "youtube",
+  "video_id": "vinXgGNxEzk",
+  "title": "How to Fill in Your 7 Kindle Keywords: 2024 UPDATE!",
+  "extracted_at": "2026-02-18T04:23:02.069185",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10224,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Density Optimization",
+      "description": "Filling keyword boxes with multiple words to index more phrases, though this may lower initial rankings.",
+      "steps": [
+        "Input multiple relevant keywords per box",
+        "Use combinations of words for broader indexing"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Adding more words may reduce initial rankings for specific phrases"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Amazon takes all the combinations of the words in the box and indexes you for them"
+      ],
+      "id": "84298041-9d1e-4fc5-9424-66e997cb5023",
+      "type": "tactic",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:22:26.953555",
+      "last_seen": "2026-02-18T04:22:26.953555"
+    },
+    {
+      "name": "Target High-Value Keywords",
+      "description": "Prioritize specific, descriptive phrases with high search volume and low competition for top rankings.",
+      "steps": [
+        "Use Publisher Rocket to identify phrases with good monthly searches and competitive status",
+        "Select 3 boxes for top phrases",
+        "Fill remaining boxes with related terms and category keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires accurate keyword research tool"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you have a specific phrase... you will initially rank better for that phrase"
+      ],
+      "id": "d6d017c8-0792-42bb-9d7b-97bc6419ee8e",
+      "type": "tactic",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:02.068996",
+      "last_seen": "2026-02-18T04:23:02.068996"
+    },
+    {
+      "name": "Category Keyword Optimization",
+      "description": "Ensure category placement by using category-specific keywords to avoid Amazon's automatic categorization.",
+      "steps": [
+        "Use Publisher Rocket's category feature for keyword suggestions",
+        "Fill 2 boxes with category-relevant terms",
+        "Use filler keywords if category keywords are insufficient"
+      ],
+      "signals_used": [
+        "category_placement"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "category_keywords": 2
+      },
+      "caveats": [
+        "Without tools, guessing is required"
+      ],
+      "example_niches": [
+        "Christian fiction"
+      ],
+      "source_quotes": [
+        "Amazon really will remove you... use certain keywords to ensure you stay in it"
+      ],
+      "id": "54c952fe-c214-44f6-936d-e89b2e8caf54",
+      "type": "tactic",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:02.068996",
+      "last_seen": "2026-02-18T04:23:02.068996"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median reviews are below 200, prioritize boosting keyword relevance",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you rank number one for a keyword you can expect that 27% of the people who type in that keyword will click on your book"
+      ],
+      "id": "1b794e16-9f47-4369-986f-23daa9399f6c",
+      "type": "heuristic",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:22:26.953555",
+      "last_seen": "2026-02-18T04:22:26.953555"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize boosting visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you don't have publisher rocket... you're going to have to kind of take a guess"
+      ],
+      "id": "b89bcac3-ebcf-46d0-b0b7-a706e4dbcc3f",
+      "type": "heuristic",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:02.068996",
+      "last_seen": "2026-02-18T04:23:02.068996"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon uses Kindle keywords to determine book categories and rankings.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon uses the keywords in your seven Kindle keyword boxes to decide if you should be in that category"
+      ],
+      "id": "764adac8-2e11-4866-94a1-f4a60ad7bdfd",
+      "type": "claim",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:22:26.953555",
+      "last_seen": "2026-02-18T04:22:26.953555"
+    },
+    {
+      "statement": "Amazon automatically re-categorizes books based on keyword usage.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon really will remove you from the categories you choose"
+      ],
+      "id": "5c8772f7-03c9-45e6-88a4-a3667afe78d4",
+      "type": "claim",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:02.068996",
+      "last_seen": "2026-02-18T04:23:02.068996"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets specific audience segments with unique constraints for higher specificity.",
+      "why_it_works": "Narrower niches often have lower competition and higher conversion rates.",
+      "signals": [
+        "low review counts",
+        "specific keyword phrases"
+      ],
+      "source_quotes": [
+        "Amazon won't rank you for a madeup word or word they don't think is a searchable phrase"
+      ],
+      "id": "2c6cf48d-4e21-4cde-a5a8-9402a01b0fb4",
+      "type": "niche_pattern",
+      "provenance": [
+        "vinXgGNxEzk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:22:26.953555",
+      "last_seen": "2026-02-18T04:22:26.953555"
+    }
+  ]
+}

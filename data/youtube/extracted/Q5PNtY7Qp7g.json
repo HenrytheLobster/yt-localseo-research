@@ -1,0 +1,331 @@
+{
+  "source_type": "youtube",
+  "video_id": "Q5PNtY7Qp7g",
+  "title": "How To Do Amazon Keyword Research With Helium-10 | Full Tutorial 2025",
+  "extracted_at": "2026-02-18T12:46:21.647398",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 14149,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "Magnet Keyword Research",
+      "description": "Use Helium-10's Magnet tool to aggregate related keywords by applying filters like search volume, competing products, and word count.",
+      "steps": [
+        "Enter a product keyword (e.g., 'gym timer')",
+        "Filter by search volume (minimum 500)",
+        "Filter by competing products",
+        "Filter by word count (minimum 2 words)",
+        "Save high-value keywords to a list"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competing_products"
+      ],
+      "tools_mentioned": [
+        "Helium-10",
+        "Magnet"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "word_count_min": 2
+      },
+      "caveats": [
+        "Avoid brand-specific keywords like 'Rogue Fitness'"
+      ],
+      "example_niches": [
+        "gym timer",
+        "digital wall clock"
+      ],
+      "source_quotes": [
+        "70% of Amazon Shoppers never click past the first page of search results"
+      ],
+      "id": "9072b520-c77f-4fc7-bb0c-12e66ff40e9b",
+      "type": "tactic",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:14.810169",
+      "last_seen": "2026-02-18T12:45:14.810169"
+    },
+    {
+      "name": "Competitor Keyword Spying",
+      "description": "Use Cerebro to analyze competitors' keywords and identify high-performing terms",
+      "steps": [
+        "Copy competitor ASIN into Cerebro",
+        "Filter keywords ranked on page 1 (positions 1-60)",
+        "Exclude keywords with <500 monthly searches",
+        "Sort remaining keywords by IQ score"
+      ],
+      "signals_used": [
+        "organic_rank",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Cerebro"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "organic_rank_max": 60
+      },
+      "caveats": [
+        "Requires valid competitor ASINs"
+      ],
+      "example_niches": [
+        "fitness gadgets"
+      ],
+      "source_quotes": [
+        "we want to find keywords that he is ranked for on pages one only"
+      ],
+      "id": "5b095868-112b-4316-b4df-d15d7cf226fa",
+      "type": "tactic",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:49.640613",
+      "last_seen": "2026-02-18T12:45:49.640613"
+    },
+    {
+      "name": "Keyword Folder Management",
+      "description": "Organize keywords into folders to avoid duplication",
+      "steps": [
+        "Create new keyword folder in Helium-10",
+        "Import keywords via Magnet",
+        "Let Cerebro auto-deduplicate during analysis"
+      ],
+      "signals_used": [
+        "keyword_volume"
+      ],
+      "tools_mentioned": [
+        "Magnet",
+        "Cerebro"
+      ],
+      "thresholds": {
+        "keywords_per_folder": 150
+      },
+      "caveats": [
+        "Manual cleanup needed for large datasets"
+      ],
+      "example_niches": [
+        "time tracking devices"
+      ],
+      "source_quotes": [
+        "it'll take out the duplicates so you don't have to worry about that"
+      ],
+      "id": "ccc45cd5-6302-439d-92f6-b178438c1789",
+      "type": "tactic",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:49.640613",
+      "last_seen": "2026-02-18T12:45:49.640613"
+    },
+    {
+      "name": "Keyword List Validation",
+      "description": "Use Helium-10 to compile and validate keywords by checking product images and metrics",
+      "steps": [
+        "Add keywords to a list via Helium-10",
+        "Copy keywords to clipboard",
+        "Use Product Launchpad to analyze search volume, sales, and competition"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competing_products",
+        "keyword_sales"
+      ],
+      "tools_mentioned": [
+        "Helium-10",
+        "Product Launchpad"
+      ],
+      "thresholds": {
+        "competing_products_max": 50000
+      },
+      "caveats": [
+        "Ensure keywords align with product relevance"
+      ],
+      "example_niches": [
+        "gym timer"
+      ],
+      "source_quotes": [
+        "hover your mouse over the keyword phrase and it'll show you the product images on page one"
+      ],
+      "id": "fa6c7926-2d9c-4843-b4d5-212700715919",
+      "type": "tactic",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:21.647233",
+      "last_seen": "2026-02-18T12:46:21.647233"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Magnet IQ Score Prioritization",
+      "condition": "If a keyword has a high Magnet IQ score (search volume vs. competition), prioritize it for listings",
+      "machine_rule": {
+        "field": "magnet_iq",
+        "op": "gt",
+        "value": 10000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "High Magnet IQ score means high search volume compared to competitors"
+      ],
+      "id": "9a23ad86-d94e-4294-87a8-ba26f5e78916",
+      "type": "heuristic",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:14.810169",
+      "last_seen": "2026-02-18T12:45:14.810169"
+    },
+    {
+      "name": "Competitor Filtering Rule",
+      "condition": "If competitor has <300 reviews and >$5k/month sales, prioritize",
+      "machine_rule": {
+        "field": "review_count",
+        "op": "lt",
+        "value": 300
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "find competitors who are relatively new don't have a ton of reviews"
+      ],
+      "id": "8fbe3383-cf23-4509-aff0-900bf2933ef1",
+      "type": "heuristic",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:49.640613",
+      "last_seen": "2026-02-18T12:45:49.640613"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "70% of Amazon shoppers never click past the first page of search results",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "70% of Amazon Shoppers never click past the first page of search results"
+      ],
+      "id": "f17c8d37-0fae-4d13-9abd-29478293c31b",
+      "type": "claim",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:14.810169",
+      "last_seen": "2026-02-18T12:45:14.810169"
+    },
+    {
+      "statement": "Cerebro reveals both organic and sponsored keywords competitors are using",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "keywords that they are sponsored for AKA Amazon ads"
+      ],
+      "id": "f6c5c345-455b-47e3-a210-0f0adb8c17e3",
+      "type": "claim",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:49.640613",
+      "last_seen": "2026-02-18T12:45:49.640613"
+    },
+    {
+      "statement": "Helium-10's Product Launchpad provides insights into potential product ideas by analyzing keyword metrics",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Product Launchpad is one of the coolest tools to validate product ideas"
+      ],
+      "id": "a149a063-5590-4681-90f2-94b3aac11c09",
+      "type": "claim",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:21.647233",
+      "last_seen": "2026-02-18T12:46:21.647233"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "PRODUCT + SPECIFICATION",
+      "example": "gym timer + digital",
+      "description": "Target specific product variations with long-tailed keywords",
+      "why_it_works": "Long-tailed keywords reduce competition and align with buyer intent",
+      "signals": [
+        "search_volume",
+        "competing_products"
+      ],
+      "source_quotes": [
+        "Longer search phrases (3-5 words) are more niche and specific"
+      ],
+      "id": "d1faf2b9-d5f7-4b6f-ab5b-dc13db84c8c8",
+      "type": "niche_pattern",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:14.810169",
+      "last_seen": "2026-02-18T12:45:14.810169"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "gym timer + time management + portable",
+      "description": "Target specific audience needs with product constraints",
+      "why_it_works": "Balances product functionality with buyer limitations",
+      "signals": [
+        "low_review_threshold",
+        "high_search_volume"
+      ],
+      "source_quotes": [
+        "find competitors who are relatively new don't have a ton of reviews"
+      ],
+      "id": "6d5431c2-6b77-43bf-acde-fc205dacefe1",
+      "type": "niche_pattern",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:45:49.640613",
+      "last_seen": "2026-02-18T12:45:49.640613"
+    },
+    {
+      "pattern_template": "PRODUCT + NICHES",
+      "example": "gym timer + fitness equipment",
+      "description": "Target specific product categories with tailored keyword analysis",
+      "why_it_works": "Focuses on high-relevance keywords with manageable competition",
+      "signals": [
+        "search_volume",
+        "competing_products"
+      ],
+      "source_quotes": [
+        "these products are similar to my gym timer"
+      ],
+      "id": "16467012-060d-4a77-b1c6-001b7b7a5a3b",
+      "type": "niche_pattern",
+      "provenance": [
+        "Q5PNtY7Qp7g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:21.647233",
+      "last_seen": "2026-02-18T12:46:21.647233"
+    }
+  ]
+}

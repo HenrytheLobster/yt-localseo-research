@@ -1,0 +1,444 @@
+{
+  "source_type": "youtube",
+  "video_id": "xdqsHch0nw8",
+  "title": "Publisher Rocket: How to use the KEYWORD function",
+  "extracted_at": "2026-02-18T23:38:52.637056",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 22687,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 4
+  },
+  "tactics": [
+    {
+      "name": "keyword research focus",
+      "description": "Prioritize reader search terms over author intent when selecting keywords",
+      "steps": [
+        "Search for keywords using Publisher Rocket",
+        "Filter out sponsored listings",
+        "Check keyword presence in titles/subtitles"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Sponsored listings are not reliable indicators"
+      ],
+      "example_niches": [
+        "mafia romance"
+      ],
+      "source_quotes": [
+        "it's about you as a reader not you as an author",
+        "just because somebody searched it does not mean it will fit in your keyword search bar"
+      ],
+      "id": "07426176-19cd-4a90-bf67-1002d74995ab",
+      "type": "tactic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:36:49.634725",
+      "last_seen": "2026-02-18T23:36:49.634725"
+    },
+    {
+      "name": "Avoid High Competitive Scores",
+      "description": "New authors should avoid keywords with competitive scores over 48 to maximize visibility.",
+      "steps": [
+        "Check competitive score",
+        "Avoid keywords with over 32k competitors"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "KU earnings calculations are unreliable"
+      ],
+      "example_niches": [
+        "Mafia romance"
+      ],
+      "source_quotes": [
+        "if you are a new author... stay away from anything that is over 45 48"
+      ],
+      "id": "cedbaddf-bc33-427d-9305-147821efaa15",
+      "type": "tactic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:37:40.918269",
+      "last_seen": "2026-02-18T23:37:40.918269"
+    },
+    {
+      "name": "Optimize Keyword Placement",
+      "description": "Position keywords in titles/subtitles to improve competitive score and visibility.",
+      "steps": [
+        "Place keyword in title/subtitle",
+        "Use precise keyword variations"
+      ],
+      "signals_used": [
+        "keyword_position",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires strong author following for KU success"
+      ],
+      "example_niches": [
+        "dark Italian mafia romance"
+      ],
+      "source_quotes": [
+        "keyword is in the title or subtitle... determines competitive score"
+      ],
+      "id": "8baf5205-12c4-4da2-a823-d686fbc89db0",
+      "type": "tactic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:37:40.918269",
+      "last_seen": "2026-02-18T23:37:40.918269"
+    },
+    {
+      "name": "Keyword Placement in Titles/Subtitles",
+      "description": "Prioritize keywords in titles and subtitles for better visibility, especially for free or Kindle Unlimited books.",
+      "steps": [
+        "Drop keywords in title/subtitle",
+        "Avoid including 'Kindle Unlimited' in subject line"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Keywords may not align with book content"
+      ],
+      "example_niches": [
+        "Mafia romance",
+        "paranormal romance"
+      ],
+      "source_quotes": [
+        "she's got 18 books that's where it's judging the popularity 18 book she's putting everything Mafia..."
+      ],
+      "id": "5635138d-5998-4676-9368-124b525c513c",
+      "type": "tactic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:17.089255",
+      "last_seen": "2026-02-18T23:38:17.089255"
+    },
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Evaluate keywords using Publisher Rocket to balance search volume and competition.",
+      "steps": [
+        "Check competitive score and search volume",
+        "Prioritize moderate competition with reasonable searches",
+        "Test niche keywords like 'paranormal romance shifter'"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competitive scores may not align with actual market dynamics"
+      ],
+      "example_niches": [
+        "paranormal romance shifter"
+      ],
+      "source_quotes": [
+        "the market for paranormal um shifter books is highly less competitive"
+      ],
+      "id": "0f4a95b8-ba49-401a-854c-3608135b72d9",
+      "type": "tactic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:52.636875",
+      "last_seen": "2026-02-18T23:38:52.636875"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "keyword specificity",
+      "condition": "If keyword search returns too many results, refine search terms",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you're too vague it's gonna give you a lot and that's not necessarily a bad thing um if you want to look through things"
+      ],
+      "id": "4979f161-373b-4c7f-bab4-9f19a91277c7",
+      "type": "heuristic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:36:49.634725",
+      "last_seen": "2026-02-18T23:36:49.634725"
+    },
+    {
+      "name": "Low Review Boost",
+      "condition": "If review count is below 200, prioritize niche",
+      "machine_rule": {
+        "field": "review_count",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "34 reviews but he says Mafia romance... number 21 free in Kindle store"
+      ],
+      "id": "e5e8f600-5c4e-490b-ba5a-d22d9ccf71cf",
+      "type": "heuristic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:37:40.918269",
+      "last_seen": "2026-02-18T23:37:40.918269"
+    },
+    {
+      "name": "Low Competition Boost",
+      "condition": "If competition score is low, prioritize keywords with high search volume",
+      "machine_rule": {
+        "field": "competition_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "free paranormal romance Kindle... 85 competitive score..."
+      ],
+      "id": "cd85c27e-347b-41c2-ba89-7199c0e80909",
+      "type": "heuristic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:17.089255",
+      "last_seen": "2026-02-18T23:38:17.089255"
+    },
+    {
+      "name": "Review-Driven Niche Selection",
+      "condition": "If median reviews are below 200, prioritize niche keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "reviews are low on a lot of these"
+      ],
+      "id": "c1b87f25-4f2d-4bf2-b3b6-e2d84042eb8c",
+      "type": "heuristic",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:52.636875",
+      "last_seen": "2026-02-18T23:38:52.636875"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keywords in titles/subtitles improve search visibility",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I'm really big on authors having their subtitle being the genre or the Trope"
+      ],
+      "id": "f418ec6b-2692-4370-ae22-e7eb27dc72a4",
+      "type": "claim",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:36:49.634725",
+      "last_seen": "2026-02-18T23:36:49.634725"
+    },
+    {
+      "statement": "KU earnings calculations assume download = sales, which may overstate revenue",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "system is thinking she sold the 399 book... in reality didn't make that much"
+      ],
+      "id": "58435255-89fc-4826-ab20-a9c7d9632a8f",
+      "type": "claim",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:37:40.918269",
+      "last_seen": "2026-02-18T23:37:40.918269"
+    },
+    {
+      "statement": "Books with low review counts can rank high if keywords align with search intent",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "she's got 25 ratings and she's reading 97 000 in the Kindle Store..."
+      ],
+      "id": "72867a42-9b0a-4e9f-ae7b-c997ee186503",
+      "type": "claim",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:17.089255",
+      "last_seen": "2026-02-18T23:38:17.089255"
+    },
+    {
+      "statement": "Paranormal shifter romance has lower competition than Mafia-themed niches",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "the market for paranormal um shifter books is highly less competitive"
+      ],
+      "id": "5baba2ec-b886-4aca-9156-bc9dbb9ae07a",
+      "type": "claim",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:52.636875",
+      "last_seen": "2026-02-18T23:38:52.636875"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "GENRE + TROPE + POPULARITY",
+      "example": "mafia romance + arranged marriage + popular",
+      "description": "Leverage popular genres with specific tropes for keyword targeting",
+      "why_it_works": "Popular genres with defined tropes generate consistent search volume",
+      "signals": [
+        "high BSR",
+        "keyword repetition in titles"
+      ],
+      "source_quotes": [
+        "Mafia romance is very popular",
+        "most of them have Mafia somewhere in there"
+      ],
+      "id": "cba05cd8-78fd-48ce-8e15-d2fc06ee26da",
+      "type": "niche_pattern",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:36:49.634725",
+      "last_seen": "2026-02-18T23:36:49.634725"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche combinations with specific constraints yield better keyword rankings",
+      "why_it_works": "Limits competition while maintaining keyword relevance",
+      "signals": [
+        "low review counts",
+        "specific keyword placement"
+      ],
+      "source_quotes": [
+        "keyword is in the title or subtitle... determines competitive score"
+      ],
+      "id": "968ccccf-46d5-4534-9db7-0a03b91d913e",
+      "type": "niche_pattern",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:37:40.918269",
+      "last_seen": "2026-02-18T23:37:40.918269"
+    },
+    {
+      "pattern_template": "GENRE + PLATFORM + CONSTRAINT",
+      "example": "Mafia romance + Kindle Unlimited + free",
+      "description": "Combine genre-specific keywords with platform constraints (e.g., free or Kindle Unlimited) to target niche audiences",
+      "why_it_works": "Leverages keyword overlap between genre, platform, and pricing models",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "if this had been another book that had looked like a mafia romance..."
+      ],
+      "id": "f3443ee1-a6f0-494d-94e9-d9bb5e3a0430",
+      "type": "niche_pattern",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:17.089255",
+      "last_seen": "2026-02-18T23:38:17.089255"
+    },
+    {
+      "pattern_template": "GENRE + SUBGENRE + NICHES",
+      "example": "paranormal romance + shifter + fan fiction",
+      "description": "Combine broad genres with subgenres and niche markets for lower competition",
+      "why_it_works": "Leverages specific keyword variations with lower review counts",
+      "signals": [
+        "low review counts",
+        "BSR thresholds"
+      ],
+      "source_quotes": [
+        "shifters is in here paranormal shifter romance"
+      ],
+      "id": "3626a7bb-1e5d-46c0-b13e-2d96903d8d2e",
+      "type": "niche_pattern",
+      "provenance": [
+        "xdqsHch0nw8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:38:52.636875",
+      "last_seen": "2026-02-18T23:38:52.636875"
+    }
+  ]
+}

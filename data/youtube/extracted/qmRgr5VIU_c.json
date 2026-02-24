@@ -1,0 +1,349 @@
+{
+  "source_type": "youtube",
+  "video_id": "qmRgr5VIU_c",
+  "title": "6 Low-Content KDP Niches Making $100/Day (COPY THIS!)",
+  "extracted_at": "2026-02-18T04:42:00.233626",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 13087,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "low_content_niche",
+      "description": "Publish books with minimal content using templates like clip art or spreadsheets",
+      "steps": [
+        "Create simple templates",
+        "Use Canva for design",
+        "Focus on niche-specific formats"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Canva",
+        "lital.ai"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition in popular niches"
+      ],
+      "example_niches": [
+        "low-income savings challenge",
+        "blood sugar log"
+      ],
+      "source_quotes": [
+        "These pages are super duper basic. It's literally just like clip art..."
+      ],
+      "id": "7f0046e2-b371-43c3-b34c-ef1caede0bdd",
+      "type": "tactic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:50.426152",
+      "last_seen": "2026-02-18T04:40:50.426152"
+    },
+    {
+      "name": "template_driven_publishing",
+      "description": "Leverage pre-existing templates to create log books or word searches",
+      "steps": [
+        "Use spreadsheet templates",
+        "Design with Canva",
+        "Publish as printable guides"
+      ],
+      "signals_used": [
+        "BSR",
+        "average_revenue"
+      ],
+      "tools_mentioned": [
+        "Canva",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 100,
+        "bsr_max": 100000
+      },
+      "caveats": [
+        "Requires strong cover art differentiation"
+      ],
+      "example_niches": [
+        "diabetic blood sugar log",
+        "christian word search"
+      ],
+      "source_quotes": [
+        "Most of these books are actually just the same... create this inside of Canva"
+      ],
+      "id": "44885992-c0d9-4d25-bbed-7c6a56961b6b",
+      "type": "tactic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:50.426152",
+      "last_seen": "2026-02-18T04:40:50.426152"
+    },
+    {
+      "name": "AI Word Search Book",
+      "description": "Automate book creation using AI tools for niche-specific word searches",
+      "steps": [
+        "Set theme and page count",
+        "Generate word list",
+        "Format pages with AI",
+        "Export PNGs and answer keys"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Lit Pal.io"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires niche-specific word selection"
+      ],
+      "example_niches": [
+        "Christian word search"
+      ],
+      "source_quotes": [
+        "Lit Pal is the only word search generator on the entire internet for KDP that not only will find the entire word list for you, but also format everything for you."
+      ],
+      "id": "76fb8980-3f75-4e76-ae80-130bdcde44aa",
+      "type": "tactic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:41:29.041467",
+      "last_seen": "2026-02-18T04:41:29.041467"
+    },
+    {
+      "name": "Canva Template Journal",
+      "description": "Create low-effort journals using free Canva templates",
+      "steps": [
+        "Search Canva for niche templates",
+        "Copy/paste templates into KDP",
+        "Publish as printable book"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Templates may lack uniqueness"
+      ],
+      "example_niches": [
+        "Mood tracker journal"
+      ],
+      "source_quotes": [
+        "If you guys want to create a mood tracker book super quickly with Canva and publish it to KDP, you could do so like literally today."
+      ],
+      "id": "6bd4da12-be77-44d6-b59b-7e390600ef70",
+      "type": "tactic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:41:29.041467",
+      "last_seen": "2026-02-18T04:41:29.041467"
+    },
+    {
+      "name": "simple_low_content_books",
+      "description": "Create basic books with minimal text and interactive elements like check boxes and writing spaces",
+      "steps": [
+        "Design simple pages with check boxes",
+        "Add writing spaces for days of the week",
+        "Publish via Canva on KDP"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Canva",
+        "lital.ai"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail in saturated niches"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "really, really simple pages. All we have is some basic like little check boxes, some like little writing spaces like the day of the week"
+      ],
+      "id": "338b7440-2060-4439-b604-9de7983432bc",
+      "type": "tactic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:42:00.233375",
+      "last_seen": "2026-02-18T04:42:00.233375"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_competition_boost",
+      "condition": "If niche has low review counts and high BSR, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Kip Scout's AI has determined this niche is super profitable"
+      ],
+      "id": "e66ea32c-72a9-485b-bc8a-c46e1fd0cbf8",
+      "type": "heuristic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:50.426152",
+      "last_seen": "2026-02-18T04:40:50.426152"
+    },
+    {
+      "name": "Low Effort Content Rule",
+      "condition": "If median reviews < 200 and BSR > 50,000 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "These books are actually really, really easy to create"
+      ],
+      "id": "bc5de196-e682-4256-8b5c-9af19f21ddaf",
+      "type": "heuristic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:41:29.041467",
+      "last_seen": "2026-02-18T04:41:29.041467"
+    },
+    {
+      "name": "evergreen_niche_boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "these books are actually evergreen. So, a lot of these will actually sell all year round"
+      ],
+      "id": "a40c3c04-c4ce-4881-a1ef-b026918b3107",
+      "type": "heuristic",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:42:00.233375",
+      "last_seen": "2026-02-18T04:42:00.233375"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Kip Scout's AI analyzes BSR and sales data to identify profitable niches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Kip Scout's AI has scanned the entire page... determined this niche is profitable"
+      ],
+      "id": "748b2efd-7296-4e81-a71f-f119ff94f694",
+      "type": "claim",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:50.426152",
+      "last_seen": "2026-02-18T04:40:50.426152"
+    },
+    {
+      "statement": "Lit Pal.io is the only KDP word search generator that automates both content creation and formatting",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Lit Pal is the only word search generator on the entire internet for KDP that not only will find the entire word list for you, but also format everything for you."
+      ],
+      "id": "850e4138-e963-4267-991d-ca8e8ce56160",
+      "type": "claim",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:41:29.041467",
+      "last_seen": "2026-02-18T04:41:29.041467"
+    },
+    {
+      "statement": "Low-content books in specific niches can achieve consistent sales year-round",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "these books are actually evergreen. So, a lot of these will actually sell all year round"
+      ],
+      "id": "b1d14c61-4905-494b-a2cb-d8f416b5f608",
+      "type": "claim",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:42:00.233375",
+      "last_seen": "2026-02-18T04:42:00.233375"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "diabetics + blood sugar tracking + printable format",
+      "description": "Target specific demographics with low-content solutions",
+      "why_it_works": "Minimal creation effort with high repeat purchase potential",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "These guys all self-published. Doing good. Good."
+      ],
+      "id": "11f394b3-3049-42af-a9d4-461ebfc95e31",
+      "type": "niche_pattern",
+      "provenance": [
+        "qmRgr5VIU_c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:50.426152",
+      "last_seen": "2026-02-18T04:40:50.426152"
+    }
+  ]
+}

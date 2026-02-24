@@ -1,0 +1,318 @@
+{
+  "source_type": "youtube",
+  "video_id": "EkkVq3vlNxg",
+  "title": "How to do Amazon Keyword Research With Helium 10 | Full Beginner Tutorial 2025",
+  "extracted_at": "2026-02-18T13:16:05.926116",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15692,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "Helium 10 Magnet Tool",
+      "description": "Keyword research using Helium 10's Magnet tool to identify high-volume, low-competition keywords for Amazon products.",
+      "steps": [
+        "Input a seed keyword (e.g., 'chair headrest attachment')",
+        "Filter by search volume (minimum 500, maximum 10,000)",
+        "Remove irrelevant or branded keywords",
+        "Prioritize two-word keywords for beginners"
+      ],
+      "signals_used": [
+        "search_volume",
+        "magnet_iq_score"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Magnet",
+        "Helium 10 Cerebro"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "search_volume_max": 10000
+      },
+      "caveats": [
+        "Avoid one-word keywords for beginners due to high competition"
+      ],
+      "example_niches": [
+        "chair headrest",
+        "ergonomic pillow"
+      ],
+      "source_quotes": [
+        "\"I recommend starting with two-word keywords... until 10,000 volume.\""
+      ],
+      "id": "31835c52-7416-4d5b-8944-b9a90a00919c",
+      "type": "tactic",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:39.974208",
+      "last_seen": "2026-02-18T13:14:39.974208"
+    },
+    {
+      "name": "Filter Branded Keywords",
+      "description": "Remove branded terms from keyword lists to focus on non-branded, competitive keywords.",
+      "steps": [
+        "Identify branded keywords like 'Herman Miller'",
+        "Exclude them from the keyword list"
+      ],
+      "signals_used": [
+        "search_volume",
+        "cpr_score"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Magnet Tool"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "cpr_max": 28
+      },
+      "caveats": [
+        "May miss niche branded terms with high search volume"
+      ],
+      "example_niches": [
+        "office chairs",
+        "ergonomic seating"
+      ],
+      "source_quotes": [
+        "Remove everything that you that you know are branded keywords."
+      ],
+      "id": "e1ed03d7-b06e-481d-9a64-96c50fa1748b",
+      "type": "tactic",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:15:16.837591",
+      "last_seen": "2026-02-18T13:15:16.837591"
+    },
+    {
+      "name": "Competitor Keyword Analysis",
+      "description": "Analyze competitor ASINs to identify high-traffic keywords they rank for.",
+      "steps": [
+        "Select top 5 competitors by revenue",
+        "Use Cerebra tool to extract keywords",
+        "Filter by competitor count and rank"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competitor_count",
+        "cpr_score"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Cerebra Tool",
+        "Amazon Product Research X-Ray"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "competitor_count_min": 3,
+        "cpr_max": 28
+      },
+      "caveats": [
+        "Requires accurate ASIN input for reliable results"
+      ],
+      "example_niches": [
+        "ergonomic chairs",
+        "office furniture"
+      ],
+      "source_quotes": [
+        "Put the asins of my top five competitors here"
+      ],
+      "id": "3c43c491-fb16-403f-b109-7e421af02643",
+      "type": "tactic",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:15:16.837591",
+      "last_seen": "2026-02-18T13:15:16.837591"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Volume Prioritization",
+      "condition": "If search volume is below 10,000, prioritize for beginners",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt",
+        "value": 10000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"For beginners... start with keywords until 10,000 volume.\""
+      ],
+      "id": "18c1fd20-58d4-4d2d-834c-447e4912cf04",
+      "type": "heuristic",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:39.974208",
+      "last_seen": "2026-02-18T13:14:39.974208"
+    },
+    {
+      "name": "Prioritize High CPR Keywords",
+      "condition": "If CPR score is below 28, prioritize the keyword",
+      "machine_rule": {
+        "field": "cpr_score",
+        "op": "lt",
+        "value": 28
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "The lower the number the better. I usually want to see here numbers below 28"
+      ],
+      "id": "0663bbcd-bde4-4f48-ba69-c6c1291d9280",
+      "type": "heuristic",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:15:16.837591",
+      "last_seen": "2026-02-18T13:15:16.837591"
+    },
+    {
+      "name": "Keyword Volume Prioritization",
+      "condition": "If keyword volume is high/medium/low, prioritize accordingly",
+      "machine_rule": {
+        "field": "volume",
+        "op": "gte",
+        "value": 500
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "focus on high volume, medium volume and low volume keywords"
+      ],
+      "id": "126b4ba0-29cd-4947-a22f-31a8c417985a",
+      "type": "heuristic",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:16:05.925998",
+      "last_seen": "2026-02-18T13:16:05.925998"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Helium 10 offers 35% off for the first six months.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"They have this offer 35% off for the first six months.\""
+      ],
+      "id": "81052dd3-f973-4ae5-a923-0e280a9e86f9",
+      "type": "claim",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:39.974208",
+      "last_seen": "2026-02-18T13:14:39.974208"
+    },
+    {
+      "statement": "Exporting keyword data to Excel enables manual sorting by search volume",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Export this data as a CSV file or Excel file"
+      ],
+      "id": "1e3f391a-691f-48c2-a68b-692a29a59d5f",
+      "type": "claim",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:15:16.837591",
+      "last_seen": "2026-02-18T13:15:16.837591"
+    },
+    {
+      "statement": "Chat GPT can analyze competitor product pages to identify optimal search terms for Amazon listings",
+      "category": "research_method",
+      "confidence": "medium",
+      "source_quotes": [
+        "I tell CHP to tell me the top 20 to 30 search terms... based on my competitors"
+      ],
+      "id": "1506334d-8e3a-4e0e-a055-6c81537229a9",
+      "type": "claim",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:16:05.925998",
+      "last_seen": "2026-02-18T13:16:05.925998"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "PRODUCT + FUNCTION + CONTEXT",
+      "example": "chair headrest + ergonomic + office",
+      "description": "Targets specific use cases within broader product categories.",
+      "why_it_works": "Narrows competition while maintaining search volume",
+      "signals": [
+        "search_volume",
+        "relevance"
+      ],
+      "source_quotes": [
+        "\"You need to delete those that are not relevant to your product.\""
+      ],
+      "id": "f9516f07-e2d2-4326-b109-c3deb5c16753",
+      "type": "niche_pattern",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:14:39.974208",
+      "last_seen": "2026-02-18T13:14:39.974208"
+    },
+    {
+      "pattern_template": "PRODUCT + FUNCTION + BUDGET",
+      "example": "office chair + ergonomic + budget",
+      "description": "Targets specific functional needs within price constraints",
+      "why_it_works": "Balances search volume with affordability for buyers",
+      "signals": [
+        "search_volume_above_5000",
+        "low_price_range"
+      ],
+      "source_quotes": [
+        "Choose the ones that are most relevant"
+      ],
+      "id": "6e48355e-1c3e-4f29-a242-3febe2ce8b3a",
+      "type": "niche_pattern",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:15:16.837591",
+      "last_seen": "2026-02-18T13:15:16.837591"
+    },
+    {
+      "pattern_template": "PRODUCT + FUNCTIONALITY + USAGE_CONTEXT",
+      "example": "chair attachment + adjustable + office",
+      "description": "Targets specific use cases within a product category",
+      "why_it_works": "Captures intent-driven search terms",
+      "signals": [
+        "search_volume",
+        "competition_level"
+      ],
+      "source_quotes": [
+        "I'm preparing a search term list for my chair address attachment product..."
+      ],
+      "id": "fd93048a-45e0-4a40-b70a-2fab1fd15876",
+      "type": "niche_pattern",
+      "provenance": [
+        "EkkVq3vlNxg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:16:05.925998",
+      "last_seen": "2026-02-18T13:16:05.925998"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "video_id": "633Pp9mAFP4",
+  "decision": "skip",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "amazon",
+    "bsr",
+    "niche",
+    "helium",
+    "category",
+    "competition"
+  ],
+  "transcript_word_count": 1589,
+  "triaged_at": "2026-02-18T20:03:17.863607"
+}

@@ -1,0 +1,118 @@
+{
+  "source_type": "youtube",
+  "video_id": "-tIgtAEu6G8",
+  "title": "Amazon BSR Explained | Best Seller Rank on Amazon",
+  "extracted_at": "2026-02-19T00:17:11.151881",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4009,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "BSR & Review Analysis",
+      "description": "Evaluate BSR and review counts to identify profitable keywords",
+      "steps": [
+        "Check first six books in keyword search",
+        "Track BSR changes hourly",
+        "Analyze niche-specific BSR thresholds"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "BSR thresholds are niche-dependent"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "a hundred thousand is gonna be a really really profitable keyword"
+      ],
+      "id": "292fd8e1-23f3-40ae-bd9e-0bd9837a7b19",
+      "type": "tactic",
+      "provenance": [
+        "-tIgtAEu6G8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:11.151707",
+      "last_seen": "2026-02-19T00:17:11.151707"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it's all relative and it changes based on the niche"
+      ],
+      "id": "cf8cdcf2-a46c-4199-af2c-f4ac4f6f562b",
+      "type": "heuristic",
+      "provenance": [
+        "-tIgtAEu6G8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:11.151707",
+      "last_seen": "2026-02-19T00:17:11.151707"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR under 100,000 is considered profitable but varies by niche",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "anything from zero to a hundred thousand as what's deemed a profitable keyword"
+      ],
+      "id": "d1885da9-3058-46ad-91ed-ac24eb22cfb3",
+      "type": "claim",
+      "provenance": [
+        "-tIgtAEu6G8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:11.151707",
+      "last_seen": "2026-02-19T00:17:11.151707"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche-specific BSR thresholds require lower review counts in smaller markets",
+      "why_it_works": "Smaller niches have lower demand thresholds",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "a hundred thousand might not be a very profitable keyword at all"
+      ],
+      "id": "44dbecd7-a798-4e21-bb3d-869a9a3c0671",
+      "type": "niche_pattern",
+      "provenance": [
+        "-tIgtAEu6G8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:17:11.151707",
+      "last_seen": "2026-02-19T00:17:11.151707"
+    }
+  ]
+}

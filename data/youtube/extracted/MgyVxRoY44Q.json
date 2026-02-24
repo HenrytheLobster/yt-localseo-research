@@ -1,0 +1,197 @@
+{
+  "source_type": "youtube",
+  "video_id": "MgyVxRoY44Q",
+  "title": "How I Create Amazon Ads Using Publisher Rocket",
+  "extracted_at": "2026-02-18T22:41:57.988563",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8462,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Publisher Rocket Keyword Research",
+      "description": "Use Publisher Rocket to identify high-performing keywords for Amazon ads",
+      "steps": [
+        "Access AMS keyword search tool in Publisher Rocket",
+        "Select target regions (USA, UK, Germany)",
+        "Filter by ebook/physical book type",
+        "Analyze keyword performance metrics"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires careful keyword selection to avoid irrelevant searches"
+      ],
+      "example_niches": [
+        "romance books",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "You can use other author names and other author books."
+      ],
+      "id": "7fa02e8d-aef1-42cf-9b93-c4be5210470c",
+      "type": "tactic",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:15.005729",
+      "last_seen": "2026-02-18T22:41:15.005729"
+    },
+    {
+      "name": "keyword_match_types",
+      "description": "Prioritize broad and phrase match keywords over exact match for Amazon Ads to balance cost and relevance.",
+      "steps": [
+        "Use Publisher Rocket to identify suggested keywords",
+        "Add profitable keywords as positive matches",
+        "Add negative exact keywords for specific phrases",
+        "Exclude irrelevant terms like 'free' or 'mafia'"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Exact match keywords may be too costly and restrictive"
+      ],
+      "example_niches": [
+        "romance box sets"
+      ],
+      "source_quotes": [
+        "I don't usually bother with exact because that basically means someone has to search that exact term"
+      ],
+      "id": "26db4d20-79d1-4e27-a7c9-8cb13af9add0",
+      "type": "tactic",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:57.988436",
+      "last_seen": "2026-02-18T22:41:57.988436"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Daily Budget Optimization",
+      "condition": "If median reviews are below 200, boost ad spend",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You can use as little as \u00a32 per day."
+      ],
+      "id": "b64aa70d-eded-4b66-a930-f9efeb5afed7",
+      "type": "heuristic",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:15.005729",
+      "last_seen": "2026-02-18T22:41:15.005729"
+    },
+    {
+      "name": "review_based_budgeting",
+      "condition": "If median reviews are less than 200, prioritize boosting high-potential keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I delete anything that says free because the book is not free"
+      ],
+      "id": "425cb6e9-8ca1-4a09-b10a-c856d64f8587",
+      "type": "heuristic",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:57.988436",
+      "last_seen": "2026-02-18T22:41:57.988436"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon ads can generate consistent book sales for new authors",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "2020 is really the year where I really started to go ham on Amazon ads."
+      ],
+      "id": "a314ebeb-03ae-4617-9bbf-87dd4952654f",
+      "type": "claim",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:15.005729",
+      "last_seen": "2026-02-18T22:41:15.005729"
+    },
+    {
+      "statement": "Amazon Ads campaigns can be optimized using Publisher Rocket for keyword research and negative keyword targeting.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I'm going to add this as a negative exact keyword"
+      ],
+      "id": "76106be0-1165-4d8b-aac6-64fa8ce37801",
+      "type": "claim",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:57.988436",
+      "last_seen": "2026-02-18T22:41:57.988436"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "romance books + steamy content + no free content",
+      "description": "Target specific niches with clear content constraints",
+      "why_it_works": "Avoids irrelevant searches while maintaining price competitiveness",
+      "signals": [
+        "low review counts",
+        "specific genre constraints"
+      ],
+      "source_quotes": [
+        "If I didn't want my book to come up when someone searched this..."
+      ],
+      "id": "37e2b8f0-cfc6-40a0-a1f0-b0bfb664f9b0",
+      "type": "niche_pattern",
+      "provenance": [
+        "MgyVxRoY44Q"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:41:15.005729",
+      "last_seen": "2026-02-18T22:41:15.005729"
+    }
+  ]
+}

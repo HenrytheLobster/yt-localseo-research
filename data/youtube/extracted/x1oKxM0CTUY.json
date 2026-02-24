@@ -1,0 +1,364 @@
+{
+  "source_type": "youtube",
+  "video_id": "x1oKxM0CTUY",
+  "title": "How to EASILY Find Hidden Profitable Niches on Amazon KDP...without any software",
+  "extracted_at": "2026-02-18T14:04:04.567332",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 39187,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "narrow-niche-research",
+      "description": "Identify profitable niches by drilling down from broad genres to specific subniches and target audiences.",
+      "steps": [
+        "Define broad niche (e.g., cooking)",
+        "Identify subniche (e.g., sushi cookbook)",
+        "Determine target audience (e.g., beginners)"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid overly broad niches with low demand"
+      ],
+      "example_niches": [
+        "sushi cookbook for beginners"
+      ],
+      "source_quotes": [
+        "If you don't do the right niche, it's kind of like you have a house and you're just building it on quicksand."
+      ],
+      "id": "37e3ba0e-5ff0-4eb1-bbac-46c4e8fefed4",
+      "type": "tactic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:24.830110",
+      "last_seen": "2026-02-18T14:02:24.830110"
+    },
+    {
+      "name": "narrow-niche-validation",
+      "description": "Identify niche, subniche, and target audience through iterative narrowing",
+      "steps": [
+        "Define broad niche (e.g., relationships)",
+        "Narrow to subniche (e.g., dating)",
+        "Specify target audience (e.g., divorced men)"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "whiteboard"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "search result counts are irrelevant"
+      ],
+      "example_niches": [
+        "how to draw animals for kids"
+      ],
+      "source_quotes": [
+        "We can do this for men, for women, for old people, for seniors."
+      ],
+      "id": "224cfc32-38d0-4cb9-b6a8-a43ba313d215",
+      "type": "tactic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:57.971047",
+      "last_seen": "2026-02-18T14:02:57.971047"
+    },
+    {
+      "name": "Validate Niche with Page 1 Competitors",
+      "description": "Focus on books ranked 1-2 in search results that are actively selling, not irrelevant or non-selling books on later pages.",
+      "steps": [
+        "Search Amazon for the niche",
+        "Filter to books on page 1-2",
+        "Check sales numbers and review counts",
+        "Identify relevant competitors in the same subniche"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "If only 1-2 books are selling, competition may be higher"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Most of the books are on page two and beyond... only the books on page one are actually considered your competitors."
+      ],
+      "id": "80b3fcd4-e13a-4ac5-be73-04fd7f49961d",
+      "type": "tactic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:03:31.208511",
+      "last_seen": "2026-02-18T14:03:31.208511"
+    },
+    {
+      "name": "sales_range_analysis",
+      "description": "Evaluate niche viability by analyzing sales ranges of existing books",
+      "steps": [
+        "Check search results for niche keywords",
+        "Identify books with varying sales (1-100/day)",
+        "Assess competition levels and sales potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon search",
+        "Chrome extensions"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Irrelevant search results on deeper pages"
+      ],
+      "example_niches": [
+        "how to draw animal for kids"
+      ],
+      "source_quotes": [
+        "If I publish my book and it's good enough to compete... I know that I can probably make a sale at least a minimum one sale a day"
+      ],
+      "id": "19cf8549-9723-436e-9d10-4cae01fc455e",
+      "type": "tactic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:04:04.567205",
+      "last_seen": "2026-02-18T14:04:04.567205"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "demand-validation",
+      "condition": "If a niche lacks sufficient review volume or BSR ranking, it may not be profitable",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "We want a niche that can give us money."
+      ],
+      "id": "071188aa-f424-4230-a920-7a03da91c282",
+      "type": "heuristic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:24.830110",
+      "last_seen": "2026-02-18T14:02:24.830110"
+    },
+    {
+      "name": "ignore-search-volume",
+      "condition": "If search result counts are cited, disregard their relevance",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "lt"
+      },
+      "action": "flag",
+      "weight": 0.5,
+      "source_quotes": [
+        "This does not mean I have 15,000 competitors."
+      ],
+      "id": "38522436-0e3d-47db-b234-5197db98fdf1",
+      "type": "heuristic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:57.971047",
+      "last_seen": "2026-02-18T14:02:57.971047"
+    },
+    {
+      "name": "Sales Diversity Signal",
+      "condition": "If multiple books in the niche have varying sales volumes, it indicates market opportunity",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "This guy might be selling seven copies a day... this guy might be selling 101 copies a day."
+      ],
+      "id": "db5b8cac-f6f3-4f01-b677-55bc5b3b9b03",
+      "type": "heuristic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:03:31.208511",
+      "last_seen": "2026-02-18T14:03:31.208511"
+    },
+    {
+      "name": "sales_variation_heuristic",
+      "condition": "If niche shows sales variation (1-100/day) then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "We have books selling one copy a day all the way up to 100 copies a day"
+      ],
+      "id": "1edddd96-2920-4d90-8aab-b110dc10e537",
+      "type": "heuristic",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:04:04.567205",
+      "last_seen": "2026-02-18T14:04:04.567205"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Profitability on Amazon KDP depends on niche demand, not just book quality",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "It doesn't matter how good your book is... if you found a niche and you're publishing in a niche that can't be profitable..."
+      ],
+      "id": "1bf74588-a48b-46cf-86c5-5e64dcab1286",
+      "type": "claim",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:24.830110",
+      "last_seen": "2026-02-18T14:02:24.830110"
+    },
+    {
+      "statement": "Amazon KDP validation focuses on review counts and BSR rather than search volume",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Who cares how many search results is in your niche."
+      ],
+      "id": "186f3063-7631-4e8e-88b4-4441142e256e",
+      "type": "claim",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:57.971047",
+      "last_seen": "2026-02-18T14:02:57.971047"
+    },
+    {
+      "statement": "Search result volume is irrelevant for competition analysis",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "This does not mean... it doesn't work. Nothing like that."
+      ],
+      "id": "d9dadc1c-3827-4e94-98d1-170b7343671a",
+      "type": "claim",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:03:31.208511",
+      "last_seen": "2026-02-18T14:03:31.208511"
+    },
+    {
+      "statement": "Niche with no sales data indicates no market demand",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "If you go in the niche and you can't find any books that are selling... there is no market for that book"
+      ],
+      "id": "2cec81f2-1377-4e63-94d9-114173152acb",
+      "type": "claim",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:04:04.567205",
+      "last_seen": "2026-02-18T14:04:04.567205"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "GENRE + SPECIFIC_TOPIC + AUDIENCE",
+      "example": "cooking + sushi + beginners",
+      "description": "Combine broad genre with specific subniche and target audience for targeted profitability",
+      "why_it_works": "Limits competition while maintaining enough search volume for sales",
+      "signals": [
+        "low review counts",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "We need to figure out who our target audience is."
+      ],
+      "id": "b99ee1c5-60ce-46ab-9372-1e2bc830ac1b",
+      "type": "niche_pattern",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:24.830110",
+      "last_seen": "2026-02-18T14:02:24.830110"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "divorced men + dating challenges + low confidence",
+      "description": "Combine audience identity with specific problems and limitations",
+      "why_it_works": "Creates hyper-targeted niches with unmet needs",
+      "signals": [
+        "low review counts",
+        "specific BSR ranges"
+      ],
+      "source_quotes": [
+        "We're only doing a dating book. We're not doing a grieving book."
+      ],
+      "id": "ac9f131e-b56c-409a-9cfa-fe3e19df2b96",
+      "type": "niche_pattern",
+      "provenance": [
+        "x1oKxM0CTUY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:02:57.971047",
+      "last_seen": "2026-02-18T14:02:57.971047"
+    }
+  ]
+}

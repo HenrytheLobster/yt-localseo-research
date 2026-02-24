@@ -1,0 +1,445 @@
+C:\Users\naylo\Downloads>whisper niche.mp4 --model base --fp16 False --output_format txt
+Detecting language using up to the first 30 seconds. Use `--language` to specify the language
+Detected language: English
+[00:00.000 --> 00:07.680]  Welcome to the Nishikami lesson in this specific lesson. We are going very very fast and I'm going to show you some of the tricks
+[00:07.680 --> 00:14.160]  You can use immediately in order to start your first book topic that we know is going to be profitable, right apart from
+[00:14.160 --> 00:19.400]  Showing you some of the tactics. I'm going to also reveal to you one of my favorite ways to find topics
+[00:19.920 --> 00:24.000]  And yeah, let's go through it. I want to start immediately with a very cool image
+[00:24.000 --> 00:29.560]  It that is about Jeff Bezos and it's kind of our company model in the sense that
+[00:30.000 --> 00:37.680]  We only sell book the people books that people want. So we are not focusing on stuff that we like or that
+[00:37.680 --> 00:44.960]  We assume all the people can like, but we only want to sell books that people want to read. That's the most important thing
+[00:44.960 --> 00:53.120]  Okay, so this is one of the main core about this lesson and I'm sure you're going to understand why. So as an introduction
+[00:53.120 --> 00:58.320]  We're going to to cover how to find a profitable book topic in less than five days
+[00:58.320 --> 01:04.160]  We're going to see that the method that we have is one of the fastest to find the best topic. There is in the market
+[01:04.160 --> 01:10.160]  I'm going to show exactly how you can do that the most effective ways to find a topic because there is plenty of ways
+[01:10.160 --> 01:16.880]  But I want to show my favorites and the one that I think are the best for you how to predict our monthly a yearly revenue
+[01:17.760 --> 01:24.480]  Even before creating the book. So even before we want to put out our books. We want to make sure that it's going to bring profits
+[01:25.040 --> 01:32.400]  And if yes, how much of them how much profits we can make with our topics and then of course the difference from between
+[01:32.400 --> 01:38.960]  Faceless and personal brand. So right now you maybe a person that have a company or maybe have his own voice
+[01:38.960 --> 01:42.720]  His own personal brand. So you have a clear image of what you want to publish
+[01:43.760 --> 01:50.240]  But yeah, we also teach you how to publish faceless. So it's not the book is not directly connected to your name
+[01:50.320 --> 01:58.640]  But like I always use with pen names, right? So I want to show you the exact difference and what to follow based on the strategy
+[01:59.760 --> 02:04.080]  So let's dive into it guys. This is the most important video in the entire course
+[02:04.240 --> 02:06.800]  Watch entire video. Don't skip don't fast don't fast forward
+[02:07.360 --> 02:10.400]  And protect watch the video as always in 1.5 speed
+[02:10.800 --> 02:15.360]  And I want to show you this very short clip about this interview with Tim Cook, which is the
+[02:16.080 --> 02:21.440]  Sea of Apple where you talk about the strategy that they have a apple. Okay, let me let me play for you
+[02:22.480 --> 02:26.240]  Well, our objective is never to be first. Our objective is to be best
+[02:27.520 --> 02:31.520]  So the main goal that they have doesn't matter which product it is
+[02:32.080 --> 02:36.320]  That their objective is not to be the first our objective is to be the best
+[02:36.720 --> 02:42.160]  And we want to have a very very similar approach in the market and this is exactly what I mean
+[02:42.560 --> 02:50.640]  By different strategy for example apple decided to go directly when making a product much better compare for example to
+[02:51.200 --> 02:56.240]  Facebook and meta. This is Zuckerberg when basically released the first meta quest 3
+[02:57.040 --> 03:03.520]  Is a rudimentary product compared to apple vision plot that basically came out in the market two three years later
+[03:03.760 --> 03:07.600]  If I'm not wrong for sure two years and I remember that we by the way
+[03:08.240 --> 03:09.280]  A couple of years ago
+[03:09.280 --> 03:11.840]  We we give this to Nick as a present
+[03:12.160 --> 03:16.880]  And yeah, it was like pretty cool because all the people want when I had said right to stay in the meta version
+[03:17.680 --> 03:20.320]  Of course was one of the best trends at the time
+[03:20.720 --> 03:26.160]  But then apple recognized that of course is something that there could be a lot of potential in the future
+[03:26.800 --> 03:32.240]  There was already a very strong demand because they saw the sales about about meta and about the product
+[03:32.480 --> 03:37.040]  And then of course they decides to come in the market two three years later with a much much better
+[03:37.680 --> 03:40.800]  Quality product that of course nobody can deny that right
+[03:42.160 --> 03:46.080]  And yeah, this is our main thing when it comes to topic as well
+[03:46.400 --> 03:47.360]  Okay
+[03:47.360 --> 03:51.360]  Let's other figure out what the market wants and see what works and make it better
+[03:51.760 --> 03:57.680]  This is the main strategy doesn't matter if you come in the market now doesn't matter if you come in the market in five years from now
+[03:57.920 --> 04:02.560]  The most important thing you realize that there is a a demand we want other people to
+[04:03.120 --> 04:09.680]  Testify and certify this demand for us and come in the market even later with a much much better product because we know
+[04:10.160 --> 04:16.240]  That will be the man even in the future. Okay, the market will ignore everything that isn't what they want
+[04:16.480 --> 04:21.680]  It's very very important this thing and doesn't matter if you want to publish a book in a topic that you don't know about
+[04:21.840 --> 04:25.280]  Doesn't matter if you want to publish a book in a topic you're passionate about
+[04:25.920 --> 04:30.320]  The most important thing you realize that the mark will ignore everything that isn't what they want
+[04:30.640 --> 04:35.280]  Keep him and this throughout your journey and I can guarantee that you will thrive in this business. Okay
+[04:36.240 --> 04:38.880]  Now amateurs forget the goal
+[04:39.520 --> 04:46.560]  Proves don't never so if as the first step if you want to take it like one of the main thing that we always want to look
+[04:46.800 --> 04:49.440]  About the thing that we are going to do in the market
+[04:49.760 --> 04:54.720]  We don't want something that is not profitable. We want profitability. Right. That's exactly why we are here
+[04:54.720 --> 04:59.040]  So we want to find a highly profitable a book topic with an undeniable proving the man
+[04:59.280 --> 05:05.120]  And one thing that I truly want to stress about the profitability is there a lot of people think that if something is
+[05:05.280 --> 05:07.840]  profitable no necessarily is useful for other people
+[05:08.240 --> 05:11.600]  That's exactly the opposite if it's something is profitable
+[05:11.680 --> 05:16.880]  It means that a lot of people want that product and therefore is willing to pay you instantly for that product
+[05:17.120 --> 05:23.360]  Meaning that you're basically an asset for the market if you are going to publish it is something that is already profitable
+[05:23.680 --> 05:25.680]  And of course we want to be sure that
+[05:26.160 --> 05:28.160]  We're going that in the market, right?
+[05:28.480 --> 05:33.120]  So same thing as the seconds that we want to make sure that something is scalable
+[05:33.440 --> 05:37.920]  We are looking for a topic that can give us a fat net profit for each copy sold
+[05:38.560 --> 05:42.080]  There is no virtue in no making money selling your product
+[05:42.320 --> 05:48.320]  This is another myth that there is that we need to have a product that other people take for free. No most people
+[05:49.280 --> 05:52.160]  They're not even consumer product is if it's free
+[05:52.320 --> 05:57.360]  So it's very important even the pricing in this equation that we're going to cover in the lack of lessons
+[05:57.520 --> 06:00.240]  And then as the third step there is the longevity
+[06:00.800 --> 06:06.560]  So we want something that can bring profits not only in the short time not only in the next month not only in the
+[06:07.280 --> 06:13.200]  Before the end of the year, but we want something even the make money potential in years from now from the first publication
+[06:13.520 --> 06:19.360]  So one of the things that I told you even the in the previous lesson about our method is that once you finish the process
+[06:19.600 --> 06:24.640]  After we choose the topic we produce the book and then we publish it. This is a one-time process
+[06:25.120 --> 06:32.160]  So if it's a one-time process we want to make sure that we do with the best quality ever and also with the best intentions in order to make
+[06:32.560 --> 06:39.920]  Profits potentially for years, right and also simplicity a topic that can be produced with a relative ease and speed
+[06:40.160 --> 06:45.760]  There is no point in going unless you want to and unless you are in something that you're truly passionate about
+[06:46.640 --> 06:51.760]  Especially at the beginning there is no point in going into put yourself in a very complicated topic
+[06:51.840 --> 06:54.800]  You just need to choose something simple and it and it is
+[06:55.200 --> 07:01.520]  Relatively easy to produce and then you go in the market with something fast that people want and you can monetize it
+[07:01.760 --> 07:06.480]  Of course, we don't have to publish a stupid book. We still want to have a high quality book
+[07:06.880 --> 07:12.480]  Something that it's very easy to produce and can be done very fast. It's much better, right?
+[07:14.080 --> 07:20.320]  Let's go down in the rabbit hole to show you exactly what are the best method to find these topics right now in the market
+[07:21.280 --> 07:27.680]  So how do I know what is working right now in the market guys the first step you have to remember is that
+[07:28.480 --> 07:30.800]  We have to go on Amazon right now, so I'm gonna share my screen
+[07:30.800 --> 07:32.000]  I'm gonna share some stuff
+[07:32.240 --> 07:34.880]  But the main thing you have to understand is the best set rank
+[07:34.960 --> 07:43.120]  So if you go on Amazon right now doesn't matter which topic doesn't matter which book there is Amazon that allow us to check how many sales even the profit
+[07:43.520 --> 07:49.600]  Every book is making in the platform doesn't matter if it's from an author doesn't matter if it's from a publisher like us
+[07:50.320 --> 07:57.200]  Always we can see the profits and the sales they're making even years before or or even projection in the future, right?
+[07:57.440 --> 08:04.800]  So remember you have always to find a competitor at the BSR this basically this number that Amazon gives to all the book
+[08:05.200 --> 08:07.200]  That is lower than one hundred thousand
+[08:07.760 --> 08:12.400]  Um in the topic of course you're about to choose. Okay, let me show you how okay, perfect
+[08:12.400 --> 08:15.920]  We are on Amazon very simple very straight. You just need to go on Amazon.com
+[08:16.400 --> 08:21.360]  All we have to do right now before starting our search is to select here in the categories
+[08:21.360 --> 08:25.360]  There is a lot of categories, right? We want to make sure to choose books, right?
+[08:25.360 --> 08:31.120]  Because that's exactly what we want to search and then always select a Amazon postcode
+[08:31.360 --> 08:34.240]  So in general always select a new york postcode
+[08:34.880 --> 08:35.920]  Right
+[08:35.920 --> 08:38.480]  So and the reason is simple guys the majority
+[08:39.120 --> 08:44.160]  The searches will be much more accurate and the majority of the sales that you're gonna make will come from the US
+[08:44.240 --> 08:49.520]  So that's why we want to start the search from there and then of course is one of the most profitable markets
+[08:49.520 --> 08:52.720]  There is in the world, right? So again, we select again books
+[08:53.680 --> 08:57.040]  And then we search a topic so just for the sake of this example
+[08:57.600 --> 09:00.080]  Let's search mediterranean diet
+[09:01.200 --> 09:05.440]  Cookbook, okay, it's just an example that I want to make you with a with a precise topic
+[09:05.840 --> 09:09.520]  And of course when we search automatically we see some stuff, right?
+[09:09.600 --> 09:13.760]  Don't care about this is just an extension. I'm gonna show you later why so powerful
+[09:14.080 --> 09:17.440]  But yeah, let's start for example with this book. Oh, let's take this one
+[09:18.160 --> 09:24.240]  So as you can see if I click the book Amazon open the page and there is other stuff like for example
+[09:24.240 --> 09:26.720]  The price of the paperback, which is the physical version
+[09:26.880 --> 09:28.720]  There is the Kindle version as well
+[09:28.800 --> 09:32.640]  And then there is this is the title. This is the book cover of the of the book
+[09:32.800 --> 09:35.280]  Then if we scroll down all the book
+[09:35.600 --> 09:41.200]  Have his own basically product detailed section, right? Which is this one where you can find all these numbers
+[09:41.520 --> 09:44.560]  And as you can see two things are very important right now
+[09:44.880 --> 09:51.840]  The first one is that is an independently published book right and also there is the BSR the best seller rank
+[09:52.240 --> 09:58.560]  So this book is less than one hundred thousand because of course is a thousand right if this was one million
+[09:58.640 --> 10:03.920]  Was not profitable if it's less than one hundred thousand then it's probably I'm going to anticipate to you
+[10:03.920 --> 10:07.280]  That is very profitable this book and to know exactly
+[10:08.080 --> 10:14.960]  It for free to check how much money is making we just need to go on Google and search book beam sales calculator
+[10:14.960 --> 10:18.000]  We go here, which is the the first results in general
+[10:18.480 --> 10:22.640]  And then we are ready to select our BSR right so we copy here
+[10:23.600 --> 10:25.600]  Just make sure there is no
+[10:25.920 --> 10:27.200]  any other
+[10:27.200 --> 10:32.560]  Yeah, exactly any comma or dots and then we select the marketplace. I remember we are in the amazon.com
+[10:33.360 --> 10:39.120]  So you can select the profile the profitability of other markets, but I'm explaining to you that later
+[10:39.440 --> 10:42.080]  So right now we just to make sure that is amazon.com
+[10:42.240 --> 10:45.200]  Select box because what we just selected over here
+[10:45.920 --> 10:53.760]  Is the paperback version so the paperback is is intended as box and the kindle is intended as kindle right
+[10:54.080 --> 10:56.320]  So we estimate the sales
+[10:56.320 --> 11:02.240]  So we know automatically that is making between 81 and 115 sales per day
+[11:02.240 --> 11:06.240]  Of course is an estimate same thing for the monthly is making between
+[11:06.880 --> 11:10.960]  2,400 and 3,400 sales per month
+[11:11.760 --> 11:16.000]  So one book you want format in just one format is making between
+[11:16.720 --> 11:23.520]  400 and 3,400 sales if we take something in the middle let's say if we take I don't know let's take 3000
+[11:23.840 --> 11:30.000]  Okay, so if we make 3000 how much is the price of this 13 dollars. So if we make
+[11:31.440 --> 11:32.640]  um
+[11:32.640 --> 11:34.880]  3000 sales
+[11:34.880 --> 11:42.640]  Multiply for 13 dollars is basically 40,000 dollars look at the 60 reviews and yeah is making
+[11:43.120 --> 11:46.000]  39,000 dollars per month with a one book okay
+[11:46.880 --> 11:52.240]  Now if it scroll down specifically for the kindle is selling also in the kindle so it's 13,000
+[11:52.240 --> 11:54.240]  So we just need to go again here
+[11:54.880 --> 12:02.480]  Type here the best seller rank we eliminate the comma we type kindle always Amazon dot com and is making yeah exactly between
+[12:03.680 --> 12:07.200]  Between 16 sales and 20 sales per day and between
+[12:07.680 --> 12:12.880]  480 and 600 sales per month. So if we take the price of the kindle right now
+[12:13.600 --> 12:20.640]  Of course guys these are sales, but I'm gonna show you in just a second how to convert them in the net profits are making per month
+[12:20.720 --> 12:26.560]  Okay, but just follow me because you understand how much volumes you can generate with some books the people want
+[12:26.720 --> 12:31.360]  Okay, and I can guarantee you that the the marching that the the guy have is pretty high, okay?
+[12:31.760 --> 12:36.720]  So let's type right now the kindle marching so if you're going to take the
+[12:37.520 --> 12:44.160]  The price of the kindle so as you can see zero dollars, but it zero is zero dollars for kindle unlimited subscribe
+[12:44.160 --> 12:49.840]  Meaning that people that pay a monthly fee can take the book basically for free, but we still get the royalties
+[12:49.920 --> 12:56.080]  Okay, but yeah in general if we take consider the price of course we are going to take this royalty
+[12:56.080 --> 13:04.560]  So if you take 299 multiplied for the copy sod per per month, okay, we'll go here. We take life. Let's take 500
+[13:06.080 --> 13:13.760]  500 sales per month is making an extra 1500 dollars from the Kindle version
+[13:14.400 --> 13:19.120]  Okay, so two formats is making a huge amount of money just because there is an incentive amount of
+[13:19.760 --> 13:26.000]  The man of course the book is probably well very well done, right and yeah, but this is how simple could be
+[13:26.800 --> 13:30.400]  Go in the market with a product that people want to buy so
+[13:31.040 --> 13:34.800]  This is the first step, okay, let me go again in the other slide
+[13:35.760 --> 13:39.440]  So now the next step of course is another method to
+[13:39.920 --> 13:43.440]  Realize and to find multiple in the same page multiple
+[13:44.080 --> 13:48.000]  Best seller box is to go of course in the Amazon best seller list in that way
+[13:48.240 --> 13:55.200]  We can have a sort of proof that other people are really making money in specific topics and we can of course see what works
+[13:55.680 --> 14:01.760]  So Amazon in suggesting the real time what people want through a list with all the best selling books of the moment
+[14:02.160 --> 14:06.000]  Can you make any of these ideas better and I want to show you right away?
+[14:06.720 --> 14:11.680]  Okay, there is some lagging over here, but yeah if I type for example Amazon best seller list
+[14:12.480 --> 14:13.600]  best
+[14:13.600 --> 14:15.280]  seller list
+[14:15.280 --> 14:22.720]  Automatically you're going to see that Amazon give it as an instrument right to see all the best sell book of the moment
+[14:23.040 --> 14:26.240]  Of course while you scroll on these pages are going to find a lot of
+[14:26.800 --> 14:31.280]  Guru's book. I don't know you can even find Eddie Potter right or even very famous book
+[14:31.840 --> 14:39.120]  About authors and all the people now one of the thing of course is to go immediately and check a category that you think
+[14:39.520 --> 14:43.440]  That could be cool stuff right inside or maybe even a category that you may like right
+[14:43.760 --> 14:48.720]  So in general, let's say that I go from this example here in Alten fitness
+[14:50.000 --> 14:54.800]  And then when we click and when we click on on the category you can literally decide if you want to go more
+[14:54.880 --> 14:58.480]  Probe so you're gonna see that if you stay here on the major category
+[14:58.560 --> 15:03.920]  You're gonna find a lot of best sellers, but I'm sure you find some patterns right on the books that
+[15:04.400 --> 15:08.320]  Probably older publisher publishing the same topic or a very similar one, right?
+[15:08.640 --> 15:11.680]  In general, I like to go even more deeper that you're gonna see there is
+[15:12.400 --> 15:17.280]  sub categories that you can go so let's say for a second that I want to go in nutrition
+[15:17.440 --> 15:21.200]  And then you're going to see that there are more and more titles. Of course you can even find
+[15:21.840 --> 15:25.600]  Other titles as you can see this is what this one is the our cover version
+[15:26.000 --> 15:29.680]  This one is the audiobook version of the same title so make sure that
+[15:30.320 --> 15:33.680]  You don't mistake that there is shoe publication for example in the same topic
+[15:34.640 --> 15:36.640]  But in the reality is the same book
+[15:37.440 --> 15:41.520]  Uh, let's see for example, there is a lot of topic over here
+[15:41.920 --> 15:46.000]  Carnival diet cookbook is just an example that we found right now
+[15:46.480 --> 15:50.800]  Another one is anti inflammatory. Let's see if we can find other
+[15:51.440 --> 15:53.440]  topics
+[15:53.440 --> 15:55.440]  Other books in the same topic
+[15:55.920 --> 16:00.800]  Scroll down there is a lot of stuff that you can you can find information from
+[16:02.080 --> 16:04.080]  Let's go in the second page
+[16:07.440 --> 16:15.200]  To to to another carnival diet book right so people that want to cook meat and they completely love with meat and they want to cook meat
+[16:15.840 --> 16:16.960]  Um
+[16:16.960 --> 16:25.680]  Yeah another carnival like so let's say for a second. Okay, probably this one could be a nice book a nice topic because I've seen three bestseller book in
+[16:26.640 --> 16:31.520]  In two pages. Let me see if I can find something similar. So let's go for a second here
+[16:32.480 --> 16:37.040]  I want to take the first book which is this one. I don't know if it's from a publisher or not
+[16:37.040 --> 16:39.280]  Yeah, it's a self-publish as you can see this guys
+[16:39.680 --> 16:43.920]  Uh, I'm gonna show you which tool it is this one later. I don't know if you some of you already know it
+[16:44.160 --> 16:46.160]  But yeah, it's amazing, right?
+[16:46.400 --> 16:51.120]  Let me go here and of course it's pretty simple daddy in all the cases that we find till now
+[16:52.000 --> 16:54.000]  Even in the second page
+[16:54.800 --> 16:57.680]  Just like in a little bit. Oh, yeah, here we are
+[16:58.640 --> 17:03.520]  So even in the second page there is always the carnival
+[17:04.640 --> 17:07.280]  Code in this case and there is diet cookbook
+[17:07.840 --> 17:13.280]  So in in two times two times there is carnival diet cookbook and
+[17:14.160 --> 17:17.760]  Uh, this one is a little I think it's from a guru as you can see from the reviews
+[17:18.480 --> 17:22.960]  Uh, and yeah, this one is one hundred percent of publishers. So carnival diet cookbook
+[17:22.960 --> 17:27.440]  So let's type carnival diet cookbook. We stay in line with our first search
+[17:28.160 --> 17:37.040]  As you can see this is probably a profitable topic because I've seen already some some books in the bestseller list there are profitable
+[17:37.600 --> 17:43.040]  I see here that other books are very profitable. So there is a proof of demand
+[17:43.600 --> 17:45.600]  Uh, for sure in the category
+[17:46.160 --> 17:51.360]  And yeah, uh, I think it's pretty clear that there is demand around this topic and for me
+[17:51.760 --> 17:56.080]  It's not of course a statement. It's not like okay. This is profit. I'm going to publish here
+[17:56.320 --> 18:02.400]  There is other things that I have to check right but this is one of the main thing one of the main method that allow us to
+[18:02.720 --> 18:09.440]  To stay basically in front of the competition to choose exactly what people already want to buy right
+[18:09.440 --> 18:11.600]  We have a just a confirmation from the market
+[18:12.400 --> 18:19.040]  And to go straight away on the on the next step is of course checking the Google trends
+[18:19.040 --> 18:25.120]  So what Google is saying about this specific topic right? So this is our market rather
+[18:25.120 --> 18:30.080]  So after with we of course we understand that a topic is profitable that in in this case guys
+[18:30.240 --> 18:32.240]  I didn't even check if the
+[18:33.120 --> 18:37.600]  BSI is profitable or not simply because I had the tool right so here automatically
+[18:37.680 --> 18:43.680]  I know that the book is making money just because I have a tool and later I'm gonna show exactly how to check it
+[18:43.680 --> 18:48.880]  If in in this moment you don't have the tool you just need to click on the book and do the same exact process
+[18:49.040 --> 18:51.040]  I show you before you scroll down
+[18:51.840 --> 18:54.160]  I look how organized it is the book pretty cool
+[18:54.960 --> 19:00.320]  But yeah here there is the BSR you just you just need to repeat the the process with the sales calculator
+[19:01.120 --> 19:03.920]  But yeah, let's say in this case that I go
+[19:04.800 --> 19:09.840]  Back on the slide and of course after I checked that the best seller rank is profitable is under one and a thousand
+[19:10.160 --> 19:13.920]  I also check on the best seller list that the book is is profitable
+[19:13.920 --> 19:18.880]  So I use the best seller list to check if other people are really making profits with this
+[19:19.280 --> 19:23.680]  Now I go in Google trends to check if the keyword is seasonal
+[19:23.680 --> 19:28.240]  So if I want to make sure that the topic is not only profitable in these months
+[19:28.240 --> 19:32.640]  But potentially can be profitable every time of the year. So I just go here
+[19:33.280 --> 19:35.680]  I'm gonna type Google trends
+[19:37.040 --> 19:38.560]  Right
+[19:38.560 --> 19:42.240]  And of course over here in general you are located to your own nation
+[19:42.320 --> 19:44.880]  I always suggest to select either
+[19:45.440 --> 19:48.480]  Worldwide or US in this case. I'm gonna select US
+[19:49.440 --> 19:54.160]  Okay, and then I'm gonna search here the keyword so carnivore
+[19:54.800 --> 20:00.320]  Diet, let's say carnivore diet only I don't need to put necessarily cookbook because it's actually the same thing
+[20:00.640 --> 20:05.920]  Now of course, this is the only the past day, but if we extend for example in the next 12 months
+[20:06.720 --> 20:10.240]  We're gonna see that there is always a spike maybe
+[20:10.800 --> 20:17.280]  Doing December right because there is a season but in general there is a kind of constant type of
+[20:19.040 --> 20:23.360]  Need for the topic right? So let's say in the past five years to have a better even better look of the
+[20:23.440 --> 20:29.200]  So in this case, it's pretty clear that the topic is pretty new. There is not a cost and demand for a lot of years
+[20:29.440 --> 20:34.480]  Which is not necessarily bad. I mean as you can see spikes like this is exactly what we want to see
+[20:34.640 --> 20:37.600]  Meaning that people are searching and stuff like that
+[20:37.680 --> 20:43.360]  And yeah, I don't know why in December probably some youtube videos about carnivore diet some tiktok went viral
+[20:43.440 --> 20:47.040]  But yeah, in general to give you an even better example. I prepare for you a
+[20:47.920 --> 20:49.280]  This image
+[20:49.360 --> 20:57.040]  And I take for example the gardening as a topic. You're gonna see that there is a clear pattern or when the book is basically
+[20:57.360 --> 20:59.360]  Moss search and most wanted
+[21:00.080 --> 21:03.760]  From the market right as you can see there is a peak of profitability doing
+[21:04.240 --> 21:11.280]  May and June so we want to be sure not to publish here. The probably I don't know is around December and November or generally
+[21:11.600 --> 21:17.920]  Want to be sure to publish here. So probably March April right so we want to anticipate the moment of
+[21:18.400 --> 21:24.480]  Major searches online just because we know that we have the best boats and people are more interested in the topic
+[21:24.640 --> 21:31.600]  Okay, so keep in mind always these before choosing your topic. Let me go straight into into the next step. Okay
+[21:32.560 --> 21:38.320]  So let's go again our slide and then yes, the next step of course guys. It's about bookbim
+[21:39.120 --> 21:45.360]  And yeah bookbim is basically the tools that you've saw till now that basically summarized the amount of sales that a book is making even
+[21:45.840 --> 21:51.040]  Without clicking in the book and losing time and going in in the bestseller link and putting the sales calculator
+[21:51.360 --> 21:56.480]  But bookbim is an extension that allows us to see immediately the amount of money is making per day
+[21:56.560 --> 21:59.520]  And of course projecting how much money is making per month, right?
+[21:59.760 --> 22:06.160]  So this tool is a game changer when it comes to predict how much money a book can generate in months or even years from now
+[22:06.720 --> 22:11.360]  By accessing to real Amazon data and guys, I want to give an example that of course
+[22:12.320 --> 22:17.680]  This is the the power of bookbim allows you to see the sales. So if I go for a second here
+[22:18.080 --> 22:20.080]  That type of current newer diet
+[22:20.640 --> 22:22.640]  book
+[22:22.880 --> 22:24.640]  Apart from telling me
+[22:25.360 --> 22:26.880]  Apart from telling me
+[22:26.880 --> 22:33.600]  Immediately how much money each book is making. I can have a pretty nice idea pretty fast. So now everything is going even the sales
+[22:34.160 --> 22:38.400]  And if I click and that's something that I truly love. Let's say if there is a book
+[22:39.920 --> 22:45.680]  Let's click on this one. Okay, so I don't know when it yeah has been published basically the last year
+[22:45.760 --> 22:49.520]  So we don't have too much story data, but I want to share a very cool tool
+[22:49.920 --> 22:51.920]  So automatically
+[22:52.080 --> 22:57.920]  So you're gonna see that the bookbim is this one. So this one is the is extension that you will have and
+[22:58.720 --> 23:04.080]  When you is a pay tool by the way, but it's very very cheap in general. I always suggest to download it
+[23:05.520 --> 23:09.520]  You see the sales history of the of the book. So you're gonna see that
+[23:10.080 --> 23:13.280]  You can go back even old time. I don't know why in this account. I don't have it
+[23:13.280 --> 23:16.400]  But yeah, of course, I suggest to unlock the old time
+[23:16.480 --> 23:20.240]  But even though it's not it's not like something mandatory
+[23:20.400 --> 23:25.920]  But even if you go back only one year you can't see that the book is selling as you can see the BSI is 21,000
+[23:26.880 --> 23:30.320]  You see that it's profitable the book even in negus is profitable
+[23:30.800 --> 23:33.600]  The book even in September is profitable very profitable
+[23:33.920 --> 23:39.360]  The book is profitable even in November even in December look at this look in December
+[23:39.440 --> 23:42.160]  The sales go down of course December is I season is always
+[23:42.720 --> 23:46.480]  Making a lot of money like generally if you have a book in I season
+[23:46.800 --> 23:49.920]  Which is of course October November December which is q4
+[23:50.800 --> 23:55.600]  They're always selling a lot, but yeah, let's understand as well. That's why bookbim is so powerful
+[23:56.240 --> 23:59.280]  Even how much money is making the past and also another data
+[23:59.840 --> 24:04.080]  Also the price look at this the price in this case has been pretty constant $16
+[24:04.640 --> 24:06.640]  $17
+[24:06.640 --> 24:10.720]  Yeah, so even give you glimps of the pricing strategy as well
+[24:10.720 --> 24:14.720]  That's why we always suggest to to have it and to give an example
+[24:14.720 --> 24:17.280]  I want to dive a little bit deeper on bookbim and now to
+[24:17.920 --> 24:23.920]  Make your first subscription and we actually have a very cool thing with bookbim because if you click our link below
+[24:24.080 --> 24:26.880]  And I think it's the best suggestion to have the maximum
+[24:27.200 --> 24:30.000]  Discompossible you click our link below when it comes to bookbim
+[24:30.480 --> 24:36.720]  And then of course when you open the page you're gonna go and get started and doesn't matter if you want the Arnold doesn't
+[24:36.800 --> 24:42.800]  If you want the monthly of course the best value and the most money save this if you make directly the Arnold version
+[24:43.120 --> 24:48.000]  So allows you to save the most money to start making your search right away same stuff for the monthly
+[24:48.000 --> 24:49.600]  Of course, but you have slightly less
+[24:50.160 --> 24:55.200]  This count code percentage you just need to type nespolla 50 right you apply the code
+[24:55.200 --> 24:58.400]  You're gonna see that you can have up to 44% discount
+[24:59.520 --> 25:04.640]  So I think it's a pretty good deal and yeah, we always suggest to everybody to to start bookbim because it's basically
+[25:04.880 --> 25:08.640]  One of the best tool ever done and yeah now very cool once you create your account
+[25:09.040 --> 25:12.080]  And I'm sure exactly what it looked like from inside
+[25:12.320 --> 25:14.320]  once you create your account you have a lot of
+[25:14.720 --> 25:18.640]  Very good thing for example to track competitor books and not to be always
+[25:19.200 --> 25:21.840]  Present in the market and see all the market changes and
+[25:22.880 --> 25:29.360]  Which topic is more profit on which not so here all you need to do is to literally choose the amount of BSR
+[25:29.360 --> 25:32.720]  The range of BSR you want to see in your search for example
+[25:32.720 --> 25:36.960]  Of course like we say before we want to stay with a BSR that is
+[25:38.000 --> 25:44.320]  Less than one on the thousand so it's maximum one on the thousand and of course we don't want five thousand reviews for our books
+[25:44.320 --> 25:46.960]  That we are searching because probably there are some gurus or very
+[25:48.000 --> 25:52.320]  Very famous books that is very hard to compete with books that have like five thousand reviews, right?
+[25:52.880 --> 26:00.320]  Not always, but I mean you can of course make more sales than book them have five thousand reviews, but to let you understand that is better if we choose
+[26:01.120 --> 26:06.000]  uh even one hundred right just one hundred reviews maximum or under rating sorry
+[26:06.400 --> 26:10.880]  And yeah, we want to make the search in that range so book being can find all our
+[26:11.760 --> 26:14.400]  Book topics in the range, but even better
+[26:14.720 --> 26:20.640]  We can even directly select that we want only self-published book meaning that they're not publishing houses
+[26:20.640 --> 26:25.440]  They're not big publishers by our just people that open our Amazon Kiripe account
+[26:25.680 --> 26:29.600]  They are published like us and they published a book by themselves right
+[26:29.600 --> 26:38.000]  So it's even another let's say pattern of success that we can find here directly with the with the bookbim subscription
+[26:38.400 --> 26:43.840]  And then yeah another thing that I like to add and this this one. I think is one of my secret weapon
+[26:44.080 --> 26:46.960]  Right, it's very it's very cool. You can even type
+[26:47.600 --> 26:51.760]  Based on this criteria right also include for example for beginners
+[26:52.400 --> 26:58.880]  So automatically book me is gonna find me all the books that are also the word for beginners inside that in general
+[26:59.360 --> 27:06.000]  Is a lot of non-fiction books have for beginners inside so automatically if I search your book
+[27:08.320 --> 27:10.320]  Okay
+[27:10.320 --> 27:16.640]  Yeah, because I'm recording the the screen is a little bit laggy and as you can see you see all the books that
+[27:16.880 --> 27:21.520]  Potentially you can't consider to start your to start making your
+[27:22.320 --> 27:26.960]  Topic selection, right? Yeah, so many other topics that you can find and yeah
+[27:27.040 --> 27:31.520]  And my best suggestion is have fun have fun you're gonna see that there is a lot of topic
+[27:32.080 --> 27:35.600]  That you can choose from and yeah, I go again here on our slide
+[27:36.640 --> 27:38.640]  and yeah, so
+[27:38.640 --> 27:40.640]  Bookbim highly highly recommended
+[27:41.360 --> 27:48.560]  And then the most important part after we choose the topic and we find the topic because doesn't mean if we find a topic in that way
+[27:49.120 --> 27:53.440]  Is basically proven and it is perfectly in our standards
+[27:53.680 --> 28:00.560]  We can also use the publishing or as main metrics which are the amount of profitable books there are in the page
+[28:00.800 --> 28:07.600]  Right that in general we always look for three profitable independently published book in the main keyword
+[28:07.600 --> 28:14.800]  We are going to target right and we want to make sure that also in the specific keyword there is less than three thousand results
+[28:15.280 --> 28:17.040]  And even cooler
+[28:17.040 --> 28:21.040]  We find the net margin of the book that each book is more than five dollars
+[28:21.120 --> 28:23.680]  So just to give an example if I go on Amazon
+[28:24.560 --> 28:31.200]  Again, okay, and I type for example, I want to go in the carnivore that cookbook again
+[28:31.760 --> 28:33.760]  exactly let's say the book is
+[28:34.720 --> 28:43.120]  69 dollar and 97 and I'm showing you this to calculate exactly the net the net margin that this publisher is making and now we calculate our
+[28:44.080 --> 28:49.840]  More than five dollars net margin in order to have a very fat royalty based on each copy that we sell right
+[28:50.080 --> 28:51.840]  So in this case
+[28:51.840 --> 29:00.240]  Our net the net profit the 60% net profit of this publisher is around 10 dollars because the 60% is probably around 10 dollars
+[29:00.560 --> 29:06.240]  And if we multiplied for the amount of sales that he made that I don't remember if I go here again
+[29:07.680 --> 29:10.000]  Sorry, let me go in book sales calculator
+[29:11.840 --> 29:13.840]  So it's calculator
+[29:14.000 --> 29:15.440]  And I want to check again with you
+[29:15.440 --> 29:17.440]  So you become a little bit more
+[29:18.400 --> 29:21.680]  Familiar with the old process of calculating the net margins
+[29:22.720 --> 29:24.720]  So if we say if we go here
+[29:25.440 --> 29:28.000]  We say to the sales calculator, okay
+[29:29.040 --> 29:38.160]  5,000 is the amount of sales that is making from the paperback in the dot com market we estimate we take always the
+[29:39.120 --> 29:43.120]  Demido so it's like let's say 800, okay, let's say 800
+[29:43.840 --> 29:46.480]  So yeah, we put 10 dollars which is our net
+[29:47.920 --> 29:52.800]  Net royalties for each copy sold in this specific book multiplied for 800 which is
+[29:53.520 --> 29:58.960]  $8,000 that is making net profits from the from the paperback a version alone
+[29:59.120 --> 30:05.520]  So in that case is perfect because the 10 dollars of net royalties for each copy sold is more than five dollars
+[30:05.520 --> 30:11.200]  So we want to be sure that we have at least five dollars which is pretty pretty easy to find I would say, okay
+[30:12.000 --> 30:16.960]  At least in non-fiction book. That's why we love non-fiction books. We can price them much much higher
+[30:17.440 --> 30:25.680]  In the case for example of the Kindle version right instead of having 60% of net royalties for each copy sold in the Kindle
+[30:25.680 --> 30:29.840]  We have 70% so we have even more net royalties even though it's not
+[30:30.080 --> 30:33.840]  Fundamental that the Kindle version of each book is more than five dollars. We don't care
+[30:34.080 --> 30:39.280]  We only care for the paperback version right because for Amazon ads. We are going to run Amazon ads
+[30:39.360 --> 30:42.000]  And we want to have more high-end margins
+[30:42.240 --> 30:44.240]  Yeah, you just need to calculate the
+[30:44.800 --> 30:48.800]  70% so let's say in this case the 70% of 10 is seven dollars
+[30:49.600 --> 30:55.920]  Just for the simple math. Let's say that it's selling to under copies. Yeah, it's making 1400 dollars per month
+[30:55.920 --> 31:00.400]  Of course, it's just an example that I'm making we only care about the net margins
+[31:00.400 --> 31:06.000]  I'm going to go again here about the net margins as you see again of the paperback, okay?
+[31:06.880 --> 31:14.400]  Anonymous publisher versus personal brand now guys very important the anonymous publisher is a guy that for example me
+[31:14.400 --> 31:17.680]  I define myself anonymous publisher if you search my name online
+[31:18.240 --> 31:23.040]  You will never find a book connected to my name simply because I don't want that other people
+[31:23.680 --> 31:30.320]  Potentially can go in my niche and publish books and I don't want literally my asset be so exposed to competitors
+[31:30.800 --> 31:37.680]  And also I'm not an expert in the field. So there is no sense to adapt to attach my real name to the topic
+[31:37.680 --> 31:43.840]  So in that case here we don't have any perfect topics as long as the topic is profitable and ethical
+[31:44.240 --> 31:46.960]  We can produce it and sell it without using the real name
+[31:47.760 --> 31:54.240]  Our real our real name but by using pen names. So pen names as I always like to say even beyond say
+[31:54.800 --> 31:58.800]  Madonna, they're not the real name of the singer, but they can use them
+[31:59.680 --> 32:03.760]  As a creative name, it's very common in publishing. It's very common even in YouTube
+[32:03.760 --> 32:08.240]  You don't have to name your YouTube channel to your real name. That's why we like to use
+[32:09.040 --> 32:13.120]  pen names and of course be anonymous publisher or on the other hand
+[32:13.600 --> 32:19.680]  You can use personal brand. So in this case we want to be we want to specifically publish in topics that are connected
+[32:20.080 --> 32:23.600]  To our passion and our main business or our main thing, right?
+[32:23.920 --> 32:26.400]  So here you can make book sales on Amazon
+[32:26.400 --> 32:30.080]  Increased brand authority and make much more leads for your business
+[32:30.080 --> 32:37.200]  So imagine that books are perfect to increase your authority and to make whether an extra stream of income for your own company
+[32:37.200 --> 32:40.640]  And at the same time getting leads. It's an absolute machine
+[32:40.640 --> 32:46.240]  So you don't need to choose from the two and say, okay, what is best for me? No, you already know what is best for you
+[32:47.280 --> 32:48.960]  If you're at the beginning, we always
+[32:49.760 --> 32:55.120]  Suggest you to go into be an anonymous publisher simply because you are much more flexible
+[32:55.360 --> 32:59.520]  But doesn't mean that you can make even much more money into creating your personal brand
+[32:59.600 --> 33:02.880]  As you know are two two different complete games, right?
+[33:02.960 --> 33:05.440]  So my suggestion at the beginning go with the
+[33:06.000 --> 33:09.280]  Will be an anonymous publisher, but again if you have your own thing
+[33:10.000 --> 33:12.000]  Go personal brand 100% okay
+[33:12.800 --> 33:18.880]  And then yeah, make your own choice in any case remember the more the market wants what the market wants
+[33:19.600 --> 33:22.080]  Okay, so doesn't change the rule of the game
+[33:23.440 --> 33:26.640]  So what are the next step? First a little note
+[33:27.200 --> 33:32.560]  This lesson was a quick introduction to some of the ways to find book topics in the next module
+[33:32.560 --> 33:35.760]  Which is the night in the niche counting system? You will love it
+[33:36.080 --> 33:41.680]  You have all the tools to easily spot six figure a year topics and we go much much more in detail
+[33:42.240 --> 33:48.400]  On how to find and how to spot them and of course here's just a beginning to let you go immediately in the field
+[33:48.640 --> 33:54.400]  Start experimenting by yourself and start having fun because I can guarantee that you find some good topics that you like
+[33:55.120 --> 34:00.880]  Then the next step is to start today exactly get your familiar with the BSR bestseller list and Amazon in general
+[34:01.200 --> 34:07.440]  Start to search some book topics or keywords. We like to call them keywords because that's technically what book topics are
+[34:08.080 --> 34:13.760]  And yeah practice big theory every single time then of course as the third step
+[34:14.400 --> 34:17.520]  Book me guys. We highly suggest to start using book me
+[34:17.680 --> 34:20.080]  It will massively speed up the topic research
+[34:20.480 --> 34:22.480]  Apply or this can code to get our
+[34:22.960 --> 34:26.880]  44% discount you can click the link below here the video
+[34:27.280 --> 34:29.040]  And then yeah, the guide topic selection
+[34:29.120 --> 34:31.360]  So it's very important guys if you like
+[34:32.000 --> 34:34.720]  If you want the guide topic selection with the Nespola experts
+[34:35.120 --> 34:39.600]  Just fill our form below that you can always find below this video to see if you qualify
+[34:39.680 --> 34:45.760]  Basically what we do is that we check together and we make sure that we find a very profitable topic together
+[34:45.840 --> 34:47.840]  So you have this extra support, right?
+[34:48.240 --> 34:53.600]  And yeah, we get back to you in 24 48 hours to see if you can apply in general
+[34:53.760 --> 34:56.400]  Only if you're an unknown member you can get access to this
+[34:56.880 --> 35:01.600]  But it's very limited in general this spot. So if you want to get access to the guide topic selection
+[35:01.600 --> 35:08.160]  We suggest you to directly upgrade to Anno or you can even see if you can if you are accepted in the next
+[35:08.560 --> 35:10.560]  24 48 hours, okay?
+[35:10.800 --> 35:16.880]  And then there is the other resources that you can always find here below in all the resources that you can find
+[35:17.120 --> 35:19.280]  That include of course the keyword shit
+[35:19.760 --> 35:22.800]  Which is that a shit that really it's so cool because
+[35:23.360 --> 35:26.480]  Based on the results and the pricing and other
+[35:27.120 --> 35:30.320]  Data that you're gonna implement you're gonna you're gonna see that it's very easy to feel
+[35:30.640 --> 35:33.280]  You're gonna see immediately if a topic is profitable or not
+[35:33.920 --> 35:35.920]  And then of course you always find the
+[35:35.920 --> 35:39.200]  207 initials where you can find our selected
+[35:39.680 --> 35:43.280]  Needs the most profitable niche that you can start your publishing journey and you can
+[35:43.920 --> 35:45.840]  See the first
+[35:45.840 --> 35:49.760]  Topics you can potentially publish on okay. Everything will be down below guys
+[35:50.800 --> 35:56.160]  Very happy very happy to finish this lesson because of course you have much more information out to proceed with the business
+[35:56.480 --> 36:04.000]  See you in the next lesson to understand even more how to navigate through Amazon out to start publishing as soon as possible, okay?
+[36:04.000 --> 36:06.000]  So on the next lesson

@@ -1,0 +1,250 @@
+{
+  "source_type": "youtube",
+  "video_id": "pTdlRsxg2Oc",
+  "title": "5 KDP Puzzle Book Niches You Can Make With AI (FREE TEMPLATES)",
+  "extracted_at": "2026-02-18T14:14:15.351000",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9499,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "pocket-size word searches",
+      "description": "Smaller dimension puzzle books designed for portability with lower printing costs",
+      "steps": [
+        "Use 10x10 or 15x15 grid sizes",
+        "Format for 5x8 inch dimensions",
+        "Generate 50 pages via AI tool",
+        "Export pages and answer keys to Canva"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "lital.ai",
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual formatting for print-ready files"
+      ],
+      "example_niches": [
+        "pocket-sized word searches"
+      ],
+      "source_quotes": [
+        "These are word search books that have smaller dimensions... fit in your pocket"
+      ],
+      "id": "ece31ad6-e3d0-4715-b4bb-c3bd89d1b66a",
+      "type": "tactic",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:43.374369",
+      "last_seen": "2026-02-18T14:13:43.374369"
+    },
+    {
+      "name": "jumbo print word searches",
+      "description": "Large print puzzle books targeting niche markets with lower competition",
+      "steps": [
+        "Focus on 'jumbo print' keyword instead of 'large print'",
+        "Generate high-visibility puzzle grids",
+        "Optimize for readability in large formats"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 100,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Higher production costs may impact margins"
+      ],
+      "example_niches": [
+        "jumbo print word searches"
+      ],
+      "source_quotes": [
+        "jumbo print is used slightly less than large print... making over $200 a day"
+      ],
+      "id": "8d15e789-6d21-445f-a6a8-4f281e8544f2",
+      "type": "tactic",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:43.374369",
+      "last_seen": "2026-02-18T14:13:43.374369"
+    },
+    {
+      "name": "AI-Generated Puzzle Book",
+      "description": "Combine AI-generated word searches and coloring pages into a single activity book for seniors or kids.",
+      "steps": [
+        "Use Lip Pal AI to generate coloring pages and word searches",
+        "Create a Canva template for book formatting",
+        "Merge activities into one publication",
+        "Publish on Amazon KDP"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Lip Pal AI",
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "AI-generated content may lack engagement without human editing"
+      ],
+      "example_niches": [
+        "senior activity books",
+        "kids word search puzzles"
+      ],
+      "source_quotes": [
+        "This self-publisher making over $13 a day from their book."
+      ],
+      "id": "9bcbb0d4-73c0-47b2-bcc8-bfb72891dacf",
+      "type": "tactic",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:15.350879",
+      "last_seen": "2026-02-18T14:14:15.350879"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "future-themed niches",
+      "condition": "If niche is tied to a future date (e.g. 2026), prioritize early entry",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "2026 word searches... already making $55 a day... get ahead of the competition"
+      ],
+      "id": "84359271-d7d6-4aae-98c5-e9589b17aea2",
+      "type": "heuristic",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:43.374369",
+      "last_seen": "2026-02-18T14:13:43.374369"
+    },
+    {
+      "name": "Low-Competition Niche Targeting",
+      "condition": "If a niche has low review counts but high BSR potential, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "This is actually an undertapped niche on KDP."
+      ],
+      "id": "745d09d9-9da0-40d0-817e-5afe5a5d1751",
+      "type": "heuristic",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:15.350879",
+      "last_seen": "2026-02-18T14:14:15.350879"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Pocket-sized word search niche has low competition and high demand",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "Kipc Scout has rated this niche as profitable... very low competition"
+      ],
+      "id": "24fd99a8-e035-477a-a71f-d0228e77c50e",
+      "type": "claim",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:43.374369",
+      "last_seen": "2026-02-18T14:13:43.374369"
+    },
+    {
+      "statement": "Memory activity books for seniors show consistent royalty earnings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Memory activity book for seniors... making over $100 a day"
+      ],
+      "id": "e5bc3490-c709-4292-9b8b-a6b9f5be0506",
+      "type": "claim",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:43.374369",
+      "last_seen": "2026-02-18T14:13:43.374369"
+    },
+    {
+      "statement": "Word search for kids niches can be highly profitable with age-specific targeting",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "word search for kids niche is immediately a profitable search term"
+      ],
+      "id": "69fdd91a-fc93-4d02-aa25-abd5d8c72cb4",
+      "type": "claim",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:15.350879",
+      "last_seen": "2026-02-18T14:14:15.350879"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "seniors + cognitive stimulation + portability",
+      "description": "Target aging population with accessible puzzle formats",
+      "why_it_works": "Meets specific needs with physical constraints",
+      "signals": [
+        "low review counts",
+        "specific keywords"
+      ],
+      "source_quotes": [
+        "memory activity book for seniors... making over $100 a day"
+      ],
+      "id": "7efd2012-d522-4dd8-8f7e-e2c5856547c7",
+      "type": "niche_pattern",
+      "provenance": [
+        "pTdlRsxg2Oc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:43.374369",
+      "last_seen": "2026-02-18T14:13:43.374369"
+    }
+  ]
+}

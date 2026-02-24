@@ -1,0 +1,283 @@
+{
+  "source_type": "youtube",
+  "video_id": "ZStvSfokyJY",
+  "title": "Amazon KDP Keyword Research For Beginners Tutorial 3: Using Google",
+  "extracted_at": "2026-02-18T12:51:34.581040",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7735,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 1,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Google Suggested Keywords",
+      "description": "Use Google's autocomplete suggestions to find relevant keywords by typing a base keyword and appending letters of the alphabet.",
+      "steps": [
+        "Use incognito mode to avoid search history interference",
+        "Adjust language/region settings for target marketplace",
+        "Type base keyword (e.g., 'graph paper notebook')",
+        "Append each letter of the alphabet to the keyword",
+        "Capture autocomplete suggestions in Excel"
+      ],
+      "signals_used": [],
+      "tools_mentioned": [
+        "Google",
+        "Excel"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "Suggestions may include non-Amazon search intent"
+      ],
+      "example_niches": [
+        "graph paper notebook"
+      ],
+      "source_quotes": [
+        "Google users are often in discovery mode, seeking information and answers."
+      ],
+      "id": "5216ad6e-942b-45d6-8ee3-e116bc2674b2",
+      "type": "tactic",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:58.910685",
+      "last_seen": "2026-02-18T12:50:58.910685"
+    },
+    {
+      "name": "Related Searches Section",
+      "description": "Identify new keywords by analyzing Google's 'Related Searches' section on product search results.",
+      "steps": [
+        "Search for a product term (e.g., 'Graph Paper Notebook')",
+        "Scroll to the bottom of the Google Search Results Page",
+        "Analyze 'Related Searches' for keyword variations",
+        "Prioritize low-competition phrases like 'large graph paper notebooks'"
+      ],
+      "signals_used": [],
+      "tools_mentioned": [
+        "Google"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "Results may include non-Amazon search intent"
+      ],
+      "example_niches": [
+        "graph paper notebook"
+      ],
+      "source_quotes": [
+        "Some people search for 'large graph paper notebooks' when looking to buy on Amazon."
+      ],
+      "id": "d1f3926b-3c89-43a7-8164-099293ad39f7",
+      "type": "tactic",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:58.910685",
+      "last_seen": "2026-02-18T12:50:58.910685"
+    },
+    {
+      "name": "Image Search Keywords",
+      "description": "Discover product-related keywords by analyzing Google Images search results.",
+      "steps": [
+        "Search for a product term (e.g., 'Graph Paper Notebook')",
+        "Navigate to the 'Images' section",
+        "Capture related terms displayed above image results"
+      ],
+      "signals_used": [],
+      "tools_mentioned": [
+        "Google"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "Terms may lack search volume data"
+      ],
+      "example_niches": [
+        "graph paper notebook"
+      ],
+      "source_quotes": [
+        "Consider this area a hidden gold mine that Google provides."
+      ],
+      "id": "976e8ad5-00fc-427a-84dd-ddb45ff6fa21",
+      "type": "tactic",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:58.910685",
+      "last_seen": "2026-02-18T12:50:58.910685"
+    },
+    {
+      "name": "Check Compare Section",
+      "description": "Identify relevant keywords by reviewing other brands in the 'Compare with similar items' section.",
+      "steps": [
+        "Check Google Keyword Planner results for other brands",
+        "Filter and record relevant keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Google Keyword Planner"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual verification to avoid irrelevant keywords"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Google Keyword Planner may show you some other brand\u2019s name as a keyword"
+      ],
+      "id": "98854561-c72c-4f3f-adcb-9c1f1fcf91b1",
+      "type": "tactic",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:51:34.580855",
+      "last_seen": "2026-02-18T12:51:34.580855"
+    },
+    {
+      "name": "Reverse Engineer Top Products",
+      "description": "Analyze high-ranking Amazon products in Google search results to identify optimization strategies.",
+      "steps": [
+        "Search target keyword on Google",
+        "Check top Amazon product pages",
+        "Analyze title, pricing, and reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Google"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires detailed product page analysis"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Reverse engineering products that are already ranked at the top of Google search results"
+      ],
+      "id": "0621c6da-3348-4662-9367-b9a47f3d68a8",
+      "type": "tactic",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:51:34.580855",
+      "last_seen": "2026-02-18T12:51:34.580855"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are below 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "five powerful methods for uncovering low-competition keywords"
+      ],
+      "id": "8680e6c6-0f16-4f13-951b-ef1dcffb7ba9",
+      "type": "heuristic",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:51:34.580855",
+      "last_seen": "2026-02-18T12:51:34.580855"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "60% of US online shoppers start product searches on Amazon",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "over 60% of US online shoppers start their product search on Amazon."
+      ],
+      "id": "062bfccc-5bd3-4f57-a546-3664536a0f8e",
+      "type": "claim",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:58.910685",
+      "last_seen": "2026-02-18T12:50:58.910685"
+    },
+    {
+      "statement": "Google Keyword Planner provides estimated search volumes for keywords",
+      "category": "research_method",
+      "confidence": "medium",
+      "source_quotes": [
+        "Google\u2019s Keyword Planner is a free tool that provides estimated search volumes for any word or phrase."
+      ],
+      "id": "09efc792-5fe4-47e2-8142-89aaa7acb373",
+      "type": "claim",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:58.910685",
+      "last_seen": "2026-02-18T12:50:58.910685"
+    },
+    {
+      "statement": "Additional free keyword research methods will be revealed in future videos.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "upcoming videos of this Amazon KDP Keyword Research Tutorial Series"
+      ],
+      "id": "39e95ffc-d388-40f7-8930-9ed5360edb19",
+      "type": "claim",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:51:34.580855",
+      "last_seen": "2026-02-18T12:51:34.580855"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific niches with unique constraints for keyword optimization.",
+      "why_it_works": "Focuses on underserved markets with lower competition",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "create a separate video dedicated solely to this topic"
+      ],
+      "id": "4029be60-9260-4175-950f-56be21c78336",
+      "type": "niche_pattern",
+      "provenance": [
+        "ZStvSfokyJY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:51:34.580855",
+      "last_seen": "2026-02-18T12:51:34.580855"
+    }
+  ]
+}

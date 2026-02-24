@@ -1,0 +1,212 @@
+{
+  "source_type": "youtube",
+  "video_id": "EwUhMJJgDLw",
+  "title": "Best Keyword Research Tool for Amazon Authors - Publisher Rocket",
+  "extracted_at": "2026-02-18T23:35:37.523945",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8332,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Use Publisher Rocket to analyze keyword competition, sales, and rankings across Amazon regions",
+      "steps": [
+        "Log in to Publisher Rocket",
+        "Use keyword search feature",
+        "Check competition analyzer results",
+        "Export data for analysis"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When keyword search fails to return results"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "this software will help you to maximize your earnings potential and uncover so many keywords"
+      ],
+      "id": "1970aba6-dde2-4bc3-8c7a-4cf2e7a09ed2",
+      "type": "tactic",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:03.644154",
+      "last_seen": "2026-02-18T23:35:03.644154"
+    },
+    {
+      "name": "Keyword Analysis with Publisher Rocket",
+      "description": "Use Publisher Rocket to analyze keywords, check competitor data, and export metrics for Amazon book performance.",
+      "steps": [
+        "Type a keyword into the search bar (e.g., 'how to sell on Amazon')",
+        "Review related categories and competitor titles",
+        "Export data to desktop for detailed analysis"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When category growth trends decline"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "type in a keyword um let's just see how to sell on Amazon and let's leave it at a booms"
+      ],
+      "id": "7c6f9d18-4f0d-4789-8252-75ef0579be3a",
+      "type": "tactic",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:37.523633",
+      "last_seen": "2026-02-18T23:35:37.523633"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "when I typed in how to make money online in 2023 it did not return any result"
+      ],
+      "id": "7b2729d1-a076-4ebc-b920-c08399a08daf",
+      "type": "heuristic",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:03.644154",
+      "last_seen": "2026-02-18T23:35:03.644154"
+    },
+    {
+      "name": "Boost Low-Review Niche Products",
+      "condition": "If median_reviews is below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this software is really really good and since I purchased this software it has been helping me to even find out things that I do not know about"
+      ],
+      "id": "a167ffb0-1c45-4edf-bce6-4b2fa2ee89a5",
+      "type": "heuristic",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:37.523633",
+      "last_seen": "2026-02-18T23:35:37.523633"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides lifetime access with automatic upgrades",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "once you purchase it you get access to it for life"
+      ],
+      "id": "b0707395-9f14-4a65-a092-a931f825d17d",
+      "type": "claim",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:03.644154",
+      "last_seen": "2026-02-18T23:35:03.644154"
+    },
+    {
+      "statement": "Publisher Rocket provides 30-day money-back guarantee",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "once you purchase it uh it comes with a 30-day money-back a guarantee"
+      ],
+      "id": "7f6740f8-cc92-435b-bb98-edd6e363b96a",
+      "type": "claim",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:37.523633",
+      "last_seen": "2026-02-18T23:35:37.523633"
+    },
+    {
+      "statement": "Publisher Rocket helps authors sell on multiple platforms",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this software will help you to even sell on other platforms"
+      ],
+      "id": "c7385701-ce7e-44e1-882c-f0b99c730151",
+      "type": "claim",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:37.523633",
+      "last_seen": "2026-02-18T23:35:37.523633"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints",
+      "why_it_works": "Leverages low review counts and niche categorization",
+      "signals": [
+        "low review counts",
+        "specific categories"
+      ],
+      "source_quotes": [
+        "this software is not only for Amazon for me it's okay because I sell on other platforms"
+      ],
+      "id": "d339e738-9c54-437d-9260-e5b2ee51ef9c",
+      "type": "niche_pattern",
+      "provenance": [
+        "EwUhMJJgDLw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:35:03.644154",
+      "last_seen": "2026-02-18T23:35:03.644154"
+    }
+  ]
+}

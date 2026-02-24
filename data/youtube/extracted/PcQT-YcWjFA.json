@@ -1,0 +1,121 @@
+{
+  "source_type": "youtube",
+  "video_id": "PcQT-YcWjFA",
+  "title": "Amazon KDP Book Research 2025 | Find Profitable Niches & Keywords (Beginner Friendly)",
+  "extracted_at": "2026-02-18T21:03:45.314584",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4191,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Best Sellers + Royalties Calculator",
+      "description": "Identify trending books by checking Amazon's bestseller list and validating sales data with the royalties calculator.",
+      "steps": [
+        "Go to Amazon books best sellers and select a category.",
+        "Scroll to find a bestseller with a low BSR (e.g., #236).",
+        "Use Amazon royalties calculator to confirm daily sales (e.g., 438 books/day).",
+        "Check keyword competition (avoid >2,000 competitors)."
+      ],
+      "signals_used": [
+        "BSR",
+        "sales_volume"
+      ],
+      "tools_mentioned": [
+        "Amazon royalties calculator"
+      ],
+      "thresholds": {
+        "bsr_max": 50000,
+        "sales_volume_min": 100
+      },
+      "caveats": [
+        "Avoid outdated books with high competition"
+      ],
+      "example_niches": [
+        "cookbooks",
+        "health and fitness"
+      ],
+      "source_quotes": [
+        "\"This book has 438 books per day being sold.\""
+      ],
+      "id": "537be8e7-c969-473e-a7a9-b9f979866ed0",
+      "type": "tactic",
+      "provenance": [
+        "PcQT-YcWjFA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:03:45.314425",
+      "last_seen": "2026-02-18T21:03:45.314425"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Keyword Competition Filter",
+      "condition": "If keyword competition exceeds 2,000, avoid the niche.",
+      "machine_rule": {
+        "field": "competition",
+        "op": "gt",
+        "value": 2000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"Always be sure that any book you're going for doesn't have a competition of more than 1,000 or 2,000 people.\""
+      ],
+      "id": "f3599e58-5b12-4a5e-b3d7-cea445e5aba3",
+      "type": "heuristic",
+      "provenance": [
+        "PcQT-YcWjFA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:03:45.314425",
+      "last_seen": "2026-02-18T21:03:45.314425"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "A book ranked #236 on Amazon's bestseller list sells 438 books per day.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"This book has 438 books per day being sold.\""
+      ],
+      "id": "10133d81-afa9-40b2-b8ce-d264fd636472",
+      "type": "claim",
+      "provenance": [
+        "PcQT-YcWjFA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:03:45.314425",
+      "last_seen": "2026-02-18T21:03:45.314425"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "CATEGORY + Niche Problem",
+      "example": "cookbooks + gluten-free recipes",
+      "description": "Combine broad categories with specific audience pain points.",
+      "why_it_works": "Leverages existing bestseller trends with targeted solutions.",
+      "signals": [
+        "low competition",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "\"Choose whichever one you want to go with. You might want to write cookbooks, health and fitness, anyone you want.\""
+      ],
+      "id": "b204530e-6b02-4858-8cfe-d131429dc2a9",
+      "type": "niche_pattern",
+      "provenance": [
+        "PcQT-YcWjFA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:03:45.314425",
+      "last_seen": "2026-02-18T21:03:45.314425"
+    }
+  ]
+}

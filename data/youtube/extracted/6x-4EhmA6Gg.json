@@ -1,0 +1,273 @@
+{
+  "source_type": "youtube",
+  "video_id": "6x-4EhmA6Gg",
+  "title": "The FASTEST Way to Find Profitable KDP Niches in 2025 (Step-by-Step)",
+  "extracted_at": "2026-02-18T14:07:02.419576",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15954,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "bsr_and_reviews",
+      "description": "Identify niches with low competition using BSR and review counts",
+      "steps": [
+        "Check BSR of existing books (target 35k-50k)",
+        "Look for niches with <300 reviews per book",
+        "Prioritize evergreen niches over seasonal ones"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Manual verification needed for accuracy"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "If you have too many competition out there, then will be very hard for you to make sales in that niche."
+      ],
+      "id": "2fb9a28e-ca26-4d07-9017-d1e309d793f1",
+      "type": "tactic",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:05:54.736151",
+      "last_seen": "2026-02-18T14:05:54.736151"
+    },
+    {
+      "name": "Niche Scout Filtering",
+      "description": "Use Niche Scout to rapidly identify profitable niches with customizable filters",
+      "steps": [
+        "Select book type (e.g., paperback)",
+        "Define category filters (e.g., exclude activity books)",
+        "Set price range ($6.99-$100)",
+        "Apply BSR thresholds (max 50,000)",
+        "Filter by review counts (30-400)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "price_trend"
+      ],
+      "tools_mentioned": [
+        "Niche Scout"
+      ],
+      "thresholds": {
+        "reviews_max": 400,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May require refinement for niche-specific content"
+      ],
+      "example_niches": [
+        "guided journals",
+        "medium-content cookbooks"
+      ],
+      "source_quotes": [
+        "I implemented a tool called Niche Scout where you can find thousands of niches in a couple of minutes"
+      ],
+      "id": "a0d9946f-5fe0-4951-a045-70e884bee181",
+      "type": "tactic",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:06:30.736297",
+      "last_seen": "2026-02-18T14:06:30.736297"
+    },
+    {
+      "name": "guided journal series",
+      "description": "create a series of books within a niche by expanding on a successful product",
+      "steps": [
+        "research existing niches",
+        "select a niche with multiple book opportunities",
+        "develop a series with variations"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "requires ongoing content creation"
+      ],
+      "example_niches": [
+        "guided journal for mothers",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "he has a series of these kind of guided journals with mom... he makes a lot of money"
+      ],
+      "id": "4881c040-4d30-4905-ae9e-414a64318673",
+      "type": "tactic",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:07:02.419466",
+      "last_seen": "2026-02-18T14:07:02.419466"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are less than 200, then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Books with only 10 or 20 reviews are ranking on page one..."
+      ],
+      "id": "f09d4fed-3b5b-483f-abfa-01af373ac551",
+      "type": "heuristic",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:05:54.736151",
+      "last_seen": "2026-02-18T14:05:54.736151"
+    },
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are below 200, prioritize niches",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "We will select this to 400 and the minimum should be around 30"
+      ],
+      "id": "d0756d12-cb91-4961-94bf-99340142e74f",
+      "type": "heuristic",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:06:30.736297",
+      "last_seen": "2026-02-18T14:06:30.736297"
+    },
+    {
+      "name": "low competition signal",
+      "condition": "if median reviews are below 200, prioritize the niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "there are a lot of types of guided journals that are below 30,000... crushing it also on Amazon"
+      ],
+      "id": "4af46e36-bc49-4b01-b5ba-4b134e7c9434",
+      "type": "heuristic",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:07:02.419466",
+      "last_seen": "2026-02-18T14:07:02.419466"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR determines if a book is making sales",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "The BSR is the best sellers rank and it determines if a book is making sales or not."
+      ],
+      "id": "6c3eee7f-315b-47b9-a0b4-ba9eb8c7445a",
+      "type": "claim",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:05:54.736151",
+      "last_seen": "2026-02-18T14:05:54.736151"
+    },
+    {
+      "statement": "Pricing strategy significantly impacts daily royalties",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "$20 is good and he's making a lot of money... $33... making twice as much"
+      ],
+      "id": "55c9e14c-f01d-422f-8327-ab3e1d8be6b7",
+      "type": "claim",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:06:30.736297",
+      "last_seen": "2026-02-18T14:06:30.736297"
+    },
+    {
+      "statement": "guided journals can achieve top Amazon rankings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "he was number one on Amazon pretty long time"
+      ],
+      "id": "817afa51-f6f1-4600-8c8c-71e645593806",
+      "type": "claim",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:07:02.419466",
+      "last_seen": "2026-02-18T14:07:02.419466"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific audience identities with problems and constraints",
+      "why_it_works": "Creates niche specificity with low competition",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "If books with only 10 or 20 reviews are ranking on page one..."
+      ],
+      "id": "4867e353-62ff-4ca3-940f-52880ca1990a",
+      "type": "niche_pattern",
+      "provenance": [
+        "6x-4EhmA6Gg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:05:54.736151",
+      "last_seen": "2026-02-18T14:05:54.736151"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "source_type": "youtube",
+  "video_id": "XQLGOxprmIs",
+  "title": "Beginners Guide to KDP Niche Research",
+  "extracted_at": "2026-02-18T03:49:38.491825",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15235,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "demand_check",
+      "description": "Evaluate niche demand by analyzing top 10 books' bestseller rank and review counts",
+      "steps": [
+        "Check first 10 books' bestseller rank (BSR) on Amazon",
+        "Verify average BSR is between 3,000-45,000",
+        "Ensure minimum reviews for top 10 books is 3,000"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 3000,
+        "bsr_max": 45000
+      },
+      "caveats": [
+        "Niche with BSR below 100,000 lacks demand"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "If the first 10 books... averaging bestseller rank of between 3,000 to 45,000... niche doesn't have enough demand"
+      ],
+      "id": "0b17f16e-339c-4344-bfb9-7c2608930b69",
+      "type": "tactic",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:48:43.495587",
+      "last_seen": "2026-02-18T03:48:43.495587"
+    },
+    {
+      "name": "kdp_publisher_check",
+      "description": "Identify KDP-published authors by checking the publisher field to avoid competing with traditional publishers.",
+      "steps": [
+        "Check the publisher field in book details"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail in highly saturated niches"
+      ],
+      "example_niches": [
+        "teen_planner"
+      ],
+      "source_quotes": [
+        "check the publisher...independently published author"
+      ],
+      "id": "5702b38e-5249-4231-b1d1-2e62231f51b7",
+      "type": "tactic",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:49:11.006873",
+      "last_seen": "2026-02-18T03:49:11.006873"
+    },
+    {
+      "name": "price_and_entry_barrier",
+      "description": "Focus on niches with high prices and high barriers to entry to ensure profitability",
+      "steps": [
+        "Evaluate niche price points",
+        "Assess creation difficulty"
+      ],
+      "signals_used": [
+        "bsr_max",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with low price points and low barriers"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "If you sell 200 books... make over $1,000"
+      ],
+      "id": "7b3aabec-f4e9-4af0-8c8e-2c52ad6711a3",
+      "type": "tactic",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:49:38.491701",
+      "last_seen": "2026-02-18T03:49:38.491701"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competition_filter",
+      "condition": "If median reviews for top 10 books are below 3,000, niche is less competitive",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 3000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Minimum between the first 10 books... minimum reviews you have is 3,000"
+      ],
+      "id": "c3222a22-15f1-46dd-9f83-e1c9301b4c11",
+      "type": "heuristic",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:48:43.495587",
+      "last_seen": "2026-02-18T03:48:43.495587"
+    },
+    {
+      "name": "price_point_heuristic",
+      "condition": "If median reviews in a niche are below 200, prioritize niches with higher price points",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average price...$15 and above"
+      ],
+      "id": "84655499-e9a2-40ea-8cad-43f0a1a785cf",
+      "type": "heuristic",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:49:11.006873",
+      "last_seen": "2026-02-18T03:49:11.006873"
+    },
+    {
+      "name": "review_threshold_boost",
+      "condition": "If median reviews are below 200, prioritize niches with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If you sell 200 books... barely even make up to $100"
+      ],
+      "id": "cdd4b9d9-785a-47aa-808d-0d5c5c9d682e",
+      "type": "heuristic",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:49:38.491701",
+      "last_seen": "2026-02-18T03:49:38.491701"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's bestseller rank reflects actual purchasing behavior in a niche",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon actually makes that the books that are selling very well is what they put at the first page"
+      ],
+      "id": "75a4b601-f4bf-4a13-aee5-9cbb597f92a2",
+      "type": "claim",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:48:43.495587",
+      "last_seen": "2026-02-18T03:48:43.495587"
+    },
+    {
+      "statement": "Trend-based niches are temporary and require constant chasing of new trends",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "trends always come and go...chasing trend over and over"
+      ],
+      "id": "0667ce6c-a241-4d75-80f2-2824aa7dc050",
+      "type": "claim",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:49:11.006873",
+      "last_seen": "2026-02-18T03:49:11.006873"
+    },
+    {
+      "statement": "Book covers significantly impact click-through rates on Amazon KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Your book cover is very, very, very important"
+      ],
+      "id": "082928e6-c5a1-4e14-a9f2-9d816c343b0c",
+      "type": "claim",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:49:38.491701",
+      "last_seen": "2026-02-18T03:49:38.491701"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific identity, problem, and constraint to create niche with lower competition",
+      "why_it_works": "Targets underserved sub-niches with lower review counts",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "the minimum between the first 10 books that are ranking in that particular keyword, the minimum reviews you have is 3,000"
+      ],
+      "id": "47d8dfaf-3316-485a-8707-afb2905da18f",
+      "type": "niche_pattern",
+      "provenance": [
+        "XQLGOxprmIs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:48:43.495587",
+      "last_seen": "2026-02-18T03:48:43.495587"
+    }
+  ]
+}

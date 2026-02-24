@@ -1,0 +1,290 @@
+{
+  "source_type": "youtube",
+  "video_id": "w_9g36ktVzA",
+  "title": "I Found The Best Amazon KDP Niches For Beginners (Hint: It Isn't Low Content)",
+  "extracted_at": "2026-02-18T04:14:18.472858",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 19246,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Bestseller Category Scanning",
+      "description": "Identify profitable niches by analyzing Amazon's bestseller categories and filtering for low-competition, high-demand topics.",
+      "steps": [
+        "Use Amazon's bestseller categories with a US zip code filter",
+        "Scroll through subcategories to find self-published books",
+        "Collect 100+ potential topics for validation"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon categories",
+        "spreadsheet"
+      ],
+      "thresholds": {
+        "reviews_max": 250,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with >10 competition books"
+      ],
+      "example_niches": [
+        "gluten-free crock-pot cookbook"
+      ],
+      "source_quotes": [
+        "We want to find cookbooks, fitness books... scroll through these categories and find some potential topics."
+      ],
+      "id": "c9d8354e-58f0-461a-bee1-aa5044f6405f",
+      "type": "tactic",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:08.828645",
+      "last_seen": "2026-02-18T04:13:08.828645"
+    },
+    {
+      "name": "bsr_review_ratio",
+      "description": "Prioritize niches with more books selling (proof) than competitive books, using BSR and review counts to identify low-competition opportunities",
+      "steps": [
+        "Check BSR for top-selling books in a niche",
+        "Compare review counts between competitive and non-competitive books",
+        "Focus on niches where 80%+ of books have <250 reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with 8+ competitive books and <2 books with proof"
+      ],
+      "example_niches": [
+        "five-ingredient keto diet cookbook",
+        "gluten-free crock-pot cookbook"
+      ],
+      "source_quotes": [
+        "There's more proof that a book with lower reviews will sell than a book that is very competitive with a lot of reviews",
+        "If somebody is searching up gluten-free Crock-Pot cookbook for beginners, they're not going to buy a normal gluten-free cookbook"
+      ],
+      "id": "5cadb432-70a0-4c67-8772-d074f8e3989b",
+      "type": "tactic",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:51.645147",
+      "last_seen": "2026-02-18T04:13:51.645147"
+    },
+    {
+      "name": "prep_for_reviews",
+      "description": "Use Book Bounty to gather review currency before launching to ensure 100+ reviews",
+      "steps": [
+        "Download Book Bounty",
+        "Collect review currency during book creation"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Bounty"
+      ],
+      "thresholds": {
+        "reviews_max": 100
+      },
+      "caveats": [
+        "Requires advance preparation"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Getting reviews is only difficult if you publish your book and then ask yourself..."
+      ],
+      "id": "9e7e0062-9a82-4d64-b92b-de1ea23f4f92",
+      "type": "tactic",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:14:18.472688",
+      "last_seen": "2026-02-18T04:14:18.472688"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Proof vs Competition Balance",
+      "condition": "If a niche has 3+ proof books (low reviews/BSR) and <4 competition books (high reviews/BSR), it's viable",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 250
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Ideally, I want at least three [proof books]... we really don't want more than three or four [competition books]"
+      ],
+      "id": "782d543a-1889-4871-92c2-d68320b1fbff",
+      "type": "heuristic",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:08.828645",
+      "last_seen": "2026-02-18T04:13:08.828645"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median_reviews < 200, then boost the niche's potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "It's more likely you will actually sell with low reviews than you won't"
+      ],
+      "id": "cb7c244d-216c-441b-b59a-555c8701fe92",
+      "type": "heuristic",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:51.645147",
+      "last_seen": "2026-02-18T04:13:51.645147"
+    },
+    {
+      "name": "boost_low_review_niches",
+      "condition": "If median reviews are below 200, boost niche potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If you prep beforehand...you're just setting yourself up for success"
+      ],
+      "id": "56cac608-136d-46de-8c39-2339ff5f243e",
+      "type": "heuristic",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:14:18.472688",
+      "last_seen": "2026-02-18T04:14:18.472688"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "A niche with 3+ proof books (reviews <250, BSR <30,000) and <4 competition books (reviews >600) is viable",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "There's one book that has less than 250 reviews selling, and there's 12 plus books that have over 600 reviews selling well."
+      ],
+      "id": "f23f8a37-17b2-4750-a34a-cbefe86aa160",
+      "type": "claim",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:08.828645",
+      "last_seen": "2026-02-18T04:13:08.828645"
+    },
+    {
+      "statement": "Amazon prioritizes book quality over authorship method (AI vs human writers)",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon just cares about the quality of its books, not how it's written"
+      ],
+      "id": "f514f12d-eea1-4b22-afe7-64b0edfcd5c6",
+      "type": "claim",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:51.645147",
+      "last_seen": "2026-02-18T04:13:51.645147"
+    },
+    {
+      "statement": "High-quality books with unique angles have higher success potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Have that unique angle...and you're going to set yourself up for success"
+      ],
+      "id": "f78ced8e-efb7-47c3-937a-ac17e1b6663a",
+      "type": "claim",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:14:18.472688",
+      "last_seen": "2026-02-18T04:14:18.472688"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "SPECIFIC DIET + COOKBOOK TYPE",
+      "example": "gluten-free + crock-pot cookbook",
+      "description": "Target niche audiences with specific dietary needs and product formats",
+      "why_it_works": "Combines low-competition constraints with targeted demand",
+      "signals": [
+        "low review counts",
+        "specific format"
+      ],
+      "source_quotes": [
+        "Gluten-free cookbook... gluten-free crock-pot cookbook for beginners"
+      ],
+      "id": "c7d23152-f844-4b00-9155-c6449574d563",
+      "type": "niche_pattern",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:08.828645",
+      "last_seen": "2026-02-18T04:13:08.828645"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "beginner + gluten-free diet + crock-pot recipes",
+      "description": "Specific problem-solution combinations with clear constraints that drive targeted searches",
+      "why_it_works": "Aligns with exact search terms while maintaining low competition",
+      "signals": [
+        "low review counts",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "They want the Crock-Pot. They just bought it. They're gluten-free. They need recipes"
+      ],
+      "id": "d1992ec5-97cc-4d95-a7d4-8fa4df195970",
+      "type": "niche_pattern",
+      "provenance": [
+        "w_9g36ktVzA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:13:51.645147",
+      "last_seen": "2026-02-18T04:13:51.645147"
+    }
+  ]
+}

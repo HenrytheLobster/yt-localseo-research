@@ -1,0 +1,448 @@
+{
+  "source_type": "youtube",
+  "video_id": "HZwmuLXEAqI",
+  "title": "Top 7 KDP Keyword Research Tools for Low Content Books and No Content Books",
+  "extracted_at": "2026-02-18T05:00:28.447183",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 17438,
+  "counts": {
+    "tactics": 7,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Amazon Keyword Research",
+      "description": "Use Amazon's search bar to find keyword ideas and analyze competitor titles for keyword optimization.",
+      "steps": [
+        "Enter a keyword into Amazon's search bar to retrieve related keyword suggestions.",
+        "Analyze competitor book titles and subtitles for keyword ideas.",
+        "Compile keywords into a spreadsheet for further analysis."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Free tools require more time to gather data compared to paid tools."
+      ],
+      "example_niches": [
+        "teacher notebook"
+      ],
+      "source_quotes": [
+        "Keywords are important because they determine whether your books get found on Amazon."
+      ],
+      "id": "9fd6c23f-7247-41b5-9806-714730cbba06",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:58:28.842722",
+      "last_seen": "2026-02-18T04:58:28.842722"
+    },
+    {
+      "name": "spreadsheet_keyword_tracking",
+      "description": "Create a spreadsheet to manually list and organize keywords found during research.",
+      "steps": [
+        "Create an Excel or Google Sheets document",
+        "List keywords as they are discovered"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Google Sheets",
+        "Excel"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual effort for keyword curation"
+      ],
+      "example_niches": [
+        "teacher gifts"
+      ],
+      "source_quotes": [
+        "teacher appreciation teacher gift and what I recommend you're doing is is creating a spreadsheet"
+      ],
+      "id": "004c32dd-9efe-4c70-8f5d-9de89c73a4aa",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:59:24.814893",
+      "last_seen": "2026-02-18T04:59:24.814893"
+    },
+    {
+      "name": "amz_suggestion_expander",
+      "description": "Use a Chrome plugin to expand Amazon search suggestions into keyword ideas.",
+      "steps": [
+        "Install the plugin",
+        "Input search terms like 'teacher gift' to generate related keywords"
+      ],
+      "signals_used": [
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Amz Suggestion Expander"
+      ],
+      "thresholds": {
+        "search_volume_min": 1000
+      },
+      "caveats": [
+        "Limited to Amazon's suggestion data"
+      ],
+      "example_niches": [
+        "music teacher gifts"
+      ],
+      "source_quotes": [
+        "this is what am said the amz suggestion expander does"
+      ],
+      "id": "91d75836-673c-4e6e-9fa2-c7502012ce3f",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:59:24.814893",
+      "last_seen": "2026-02-18T04:59:24.814893"
+    },
+    {
+      "name": "keywords_everywhere",
+      "description": "A paid Chrome plugin for keyword research with Google search volume data.",
+      "steps": [
+        "Purchase $10 credit pack",
+        "Input keywords to analyze search volume and related terms"
+      ],
+      "signals_used": [
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Keywords Everywhere"
+      ],
+      "thresholds": {
+        "credits_used": 33000
+      },
+      "caveats": [
+        "Search volume data is Google-based, not Amazon-specific"
+      ],
+      "example_niches": [
+        "teacher notebooks"
+      ],
+      "source_quotes": [
+        "these are not Amazon's search numbers these are search numbers on Google"
+      ],
+      "id": "969c8004-1748-4a3f-821d-c7e095050077",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:59:24.814893",
+      "last_seen": "2026-02-18T04:59:24.814893"
+    },
+    {
+      "name": "Free Tool Keyword Export",
+      "description": "Use free keyword tools to generate keyword lists and filter for relevance",
+      "steps": [
+        "Search for keywords",
+        "Export to spreadsheet",
+        "Manually filter irrelevant terms"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon search",
+        "Magnet"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual filtering for niche relevance"
+      ],
+      "example_niches": [
+        "teacher gifts"
+      ],
+      "source_quotes": [
+        "not all of them are going to be relevant"
+      ],
+      "id": "3eb391ea-7abf-45fd-a55e-3be1b03fb5cc",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:01.124216",
+      "last_seen": "2026-02-18T05:00:01.124216"
+    },
+    {
+      "name": "Cerebro Competitor Analysis",
+      "description": "Analyze competitor books to identify high-ranking keywords",
+      "steps": [
+        "Find bestseller ASINs",
+        "Input into Cerebro",
+        "Review keyword rankings"
+      ],
+      "signals_used": [
+        "BSR",
+        "keyword_rank"
+      ],
+      "tools_mentioned": [
+        "Cerebro"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires existing bestseller data"
+      ],
+      "example_niches": [
+        "teacher appreciation gifts"
+      ],
+      "source_quotes": [
+        "it's giving you keywords that this book is optimized for"
+      ],
+      "id": "81cfddb4-f7ad-41d6-b213-9ab0fe569677",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:01.124216",
+      "last_seen": "2026-02-18T05:00:01.124216"
+    },
+    {
+      "name": "Publisher Rocket Analysis",
+      "description": "Analyzes keyword popularity and competitor data using BSR and review metrics",
+      "steps": [
+        "Input keywords",
+        "Analyze competitor books",
+        "Export data",
+        "Sort by popularity"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When it fails to provide accurate sales data"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "it gives you an idea of popularity"
+      ],
+      "id": "dae0460e-9ceb-4e6a-a845-e51ed5131f05",
+      "type": "tactic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:28.447067",
+      "last_seen": "2026-02-18T05:00:28.447067"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "credit_threshold_heuristic",
+      "condition": "If keyword research credits exceed 50% of purchased amount, prioritize tool usage",
+      "machine_rule": {
+        "field": "credits_used",
+        "op": "lte",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "that ten dollars is going to last you quite a while"
+      ],
+      "id": "79ea0f3b-2f85-4beb-904e-ce9dcc6a75e3",
+      "type": "heuristic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:59:24.814893",
+      "last_seen": "2026-02-18T04:59:24.814893"
+    },
+    {
+      "name": "Competitor Keyword Filtering",
+      "condition": "If keyword has high search volume but excessive competitors, filter out",
+      "machine_rule": {
+        "field": "competitor_count",
+        "op": "gt",
+        "value": 100
+      },
+      "action": "flag",
+      "weight": 0.7,
+      "source_quotes": [
+        "you'll find it's quite a large list of keywords again you'd have to go through them to find the relevant ones"
+      ],
+      "id": "4045f9d6-826b-4fc4-9769-5cbfaa6b43e5",
+      "type": "heuristic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:01.124216",
+      "last_seen": "2026-02-18T05:00:01.124216"
+    },
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it's important because it's a vital component"
+      ],
+      "id": "202e60f7-6bca-46d4-90f5-3bbeeeda4d12",
+      "type": "heuristic",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:28.447067",
+      "last_seen": "2026-02-18T05:00:28.447067"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keywords determine whether books get found on Amazon and directly impact sales.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "If your book appears when they put in those keywords, there's a good chance they will see your book and make a sale."
+      ],
+      "id": "7e7c96d4-a964-40e0-867d-0161f7632017",
+      "type": "claim",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:58:28.842722",
+      "last_seen": "2026-02-18T04:58:28.842722"
+    },
+    {
+      "statement": "Keywords Everywhere provides Google search volume data rather than Amazon-specific search numbers.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "these are not Amazon's search numbers these are search numbers on Google"
+      ],
+      "id": "863a0c52-2f94-46b0-868c-f7c3a7591d80",
+      "type": "claim",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:59:24.814893",
+      "last_seen": "2026-02-18T04:59:24.814893"
+    },
+    {
+      "statement": "Publisher Rocket estimates Amazon search volume using proprietary algorithms",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it gives you an idea of Amazon searches per month"
+      ],
+      "id": "5d008ea1-544e-4340-8bd8-1054297a51a1",
+      "type": "claim",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:01.124216",
+      "last_seen": "2026-02-18T05:00:01.124216"
+    },
+    {
+      "statement": "Keyword research is vital for Amazon book discovery",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's a vital component of getting your books found"
+      ],
+      "id": "31014cf3-a067-4f3e-961e-c6e9c9376a09",
+      "type": "claim",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:28.447067",
+      "last_seen": "2026-02-18T05:00:28.447067"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + OCCASION + PRODUCT",
+      "example": "teacher + Valentine's Day + gift book",
+      "description": "Target specific gift-giving scenarios with product type",
+      "why_it_works": "Creates highly targeted keyword opportunities",
+      "signals": [
+        "low review counts",
+        "specific occasions"
+      ],
+      "source_quotes": [
+        "teacher gift Valentine's Day"
+      ],
+      "id": "079fe075-0878-40a5-ad66-7f655c0ad8b9",
+      "type": "niche_pattern",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:01.124216",
+      "last_seen": "2026-02-18T05:00:01.124216"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets specific audience segments with unique constraints",
+      "why_it_works": "Leverages low review counts and niche BSR positions",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "it's important because it's a vital component"
+      ],
+      "id": "279a8953-9436-4ccf-889d-9311aa11b5cc",
+      "type": "niche_pattern",
+      "provenance": [
+        "HZwmuLXEAqI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T05:00:28.447067",
+      "last_seen": "2026-02-18T05:00:28.447067"
+    }
+  ]
+}

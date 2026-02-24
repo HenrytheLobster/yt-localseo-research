@@ -1,0 +1,322 @@
+{
+  "source_type": "youtube",
+  "video_id": "S2cSekPuRI8",
+  "title": "The Best KDP Keyword Software I Use to Get Books Ranked on Amazon",
+  "extracted_at": "2026-02-18T04:29:48.160930",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 13360,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "amazon_search",
+      "description": "Use Amazon's search bar and suggestions to identify customer search terms and competition levels",
+      "steps": [
+        "Enter a general search term like 'adult coloring book'",
+        "Note the number of search results (competition indicator)",
+        "Click on suggestions to expand keyword list"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "amazon_search"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Amazon can give us a lot of important information if we know where to look"
+      ],
+      "id": "612d9fe3-f4d5-4034-948a-e8a3c84dfb46",
+      "type": "tactic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:28:47.469513",
+      "last_seen": "2026-02-18T04:28:47.469513"
+    },
+    {
+      "name": "amz_suggestion_expander",
+      "description": "Expand keyword lists using Chrome plugin with Amazon search suggestions",
+      "steps": [
+        "Install free plugin for real-time suggestions",
+        "Use Pro version to download keyword spreadsheets",
+        "Check Google search volume metrics"
+      ],
+      "signals_used": [
+        "google_search_volume"
+      ],
+      "tools_mentioned": [
+        "amz_suggestion_expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [],
+      "example_niches": [
+        "adult coloring book"
+      ],
+      "source_quotes": [
+        "AMZ suggestion Expander Pro gives us the approximate number of Google searches per month"
+      ],
+      "id": "0d0368e8-f69a-4639-b238-1848a432b97d",
+      "type": "tactic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:28:47.469513",
+      "last_seen": "2026-02-18T04:28:47.469513"
+    },
+    {
+      "name": "Amazon Search Volume Analysis",
+      "description": "Use tools to determine monthly Amazon search volume for keywords",
+      "steps": [
+        "Purchase search credits for SearchBlox",
+        "Input keywords into Publisher Rocket or Helium 10",
+        "Analyze search volume and competition metrics"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires paid subscription for detailed Amazon data"
+      ],
+      "example_niches": [
+        "teen planner",
+        "adult coloring book"
+      ],
+      "source_quotes": [
+        "knowing the actual number of searches per month on Amazon for a particular keyword"
+      ],
+      "id": "b79e1dd1-96ff-4f72-8685-eb04638f63e0",
+      "type": "tactic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:18.224424",
+      "last_seen": "2026-02-18T04:29:18.224424"
+    },
+    {
+      "name": "Start Simple with Keywords",
+      "description": "Begin with basic Amazon search tools before advanced keyword software.",
+      "steps": [
+        "Use Amazon search bar",
+        "Add keywords via AMZ suggestion expander"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid comparing numbers between tools"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "keep it simple. Just start with the basic Amazon search bar... then start to use those tools"
+      ],
+      "id": "43b3d07e-01cf-4b3e-8539-72718dbd5e57",
+      "type": "tactic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:48.160643",
+      "last_seen": "2026-02-18T04:29:48.160643"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "google_volume_heuristic",
+      "condition": "If a keyword has high Google search volume, it indicates popularity",
+      "machine_rule": {
+        "field": "google_search_volume",
+        "op": "gt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you find that keyword does have a lot of Google searches per month, it can give that keyword a bit of extra strength"
+      ],
+      "id": "16094f92-62a1-4235-8606-f8b8bbd2d884",
+      "type": "heuristic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:28:47.469513",
+      "last_seen": "2026-02-18T04:28:47.469513"
+    },
+    {
+      "name": "Low Review Niche Targeting",
+      "condition": "If median_reviews < 200 then boost niche potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "teen boys + ADHD + Christian"
+      ],
+      "id": "b7944983-4969-4be9-9563-5796bc34a00e",
+      "type": "heuristic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:18.224424",
+      "last_seen": "2026-02-18T04:29:18.224424"
+    },
+    {
+      "name": "Prioritize Tool Consistency",
+      "condition": "If comparing search volume numbers between tools, focus on internal tool data",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gte",
+        "value": 0
+      },
+      "action": "skip",
+      "weight": 0.5,
+      "source_quotes": [
+        "don't compare the numbers you get from each keyword tool"
+      ],
+      "id": "981ce663-9343-48eb-bc4a-12bab60d15eb",
+      "type": "heuristic",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:48.160643",
+      "last_seen": "2026-02-18T04:29:48.160643"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Keyword research saves time by providing customer search insights before publishing",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "keyword research saves us a lot of time rather than just publishing a book using trial and error"
+      ],
+      "id": "d4218226-3d02-478f-9f41-859a36e5bb4d",
+      "type": "claim",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:28:47.469513",
+      "last_seen": "2026-02-18T04:28:47.469513"
+    },
+    {
+      "statement": "SearchBlox costs $1/month for 100k search credits",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "do have to pay for search credits here for a hundred thousand search credits, it's $1 a month"
+      ],
+      "id": "ca2a57d1-eee1-4353-af58-e8127b9623c6",
+      "type": "claim",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:18.224424",
+      "last_seen": "2026-02-18T04:29:18.224424"
+    },
+    {
+      "statement": "Keyword tools like Helium 10 and Publisher Rocket use different algorithms for search volume estimates",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Helium 10 maybe for adult coloring book says there's 50,000 searches... Publisher Rocket says there's 30,000"
+      ],
+      "id": "c24143bb-046c-44e4-8bc2-f3333ba19d60",
+      "type": "claim",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:48.160643",
+      "last_seen": "2026-02-18T04:29:48.160643"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM",
+      "example": "teen boys + ADHD",
+      "description": "Target specific audience identities with targeted problems",
+      "why_it_works": "Creates focused niche markets with lower competition",
+      "signals": [
+        "low_review_counts"
+      ],
+      "source_quotes": [
+        "we want to find out what customers are actually searching for on Amazon"
+      ],
+      "id": "a7659a41-2d96-4991-9d80-71d56ba2c9a0",
+      "type": "niche_pattern",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:28:47.469513",
+      "last_seen": "2026-02-18T04:28:47.469513"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combines specific audience identity with unique problems and constraints for niche targeting",
+      "why_it_works": "Creates highly specific search terms with lower competition",
+      "signals": [
+        "low review counts",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "teen boys + ADHD + Christian"
+      ],
+      "id": "7680d08b-fb14-4b53-8e8d-b9895cf7258e",
+      "type": "niche_pattern",
+      "provenance": [
+        "S2cSekPuRI8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:29:18.224424",
+      "last_seen": "2026-02-18T04:29:18.224424"
+    }
+  ]
+}

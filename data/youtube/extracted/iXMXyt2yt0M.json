@@ -1,0 +1,351 @@
+{
+  "source_type": "youtube",
+  "video_id": "iXMXyt2yt0M",
+  "title": "Amazon's Best Sellers Rank (BSR) - Best Tips to Increase Sales by Improving Best Sellers Rank",
+  "extracted_at": "2026-02-19T00:28:28.455434",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8488,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Boost Sales Volume",
+      "description": "Increase sales through marketing, promotions, and Amazon campaigns to improve BSR.",
+      "steps": [
+        "Run targeted ads",
+        "Offer discounts",
+        "Participate in Amazon promotions"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [],
+      "example_niches": [
+        "baby products"
+      ],
+      "source_quotes": [
+        "a good BSR is between 1 and 10K"
+      ],
+      "id": "a9e3cbba-7660-494b-9767-fbbe3e82b805",
+      "type": "tactic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:27:09.866914",
+      "last_seen": "2026-02-19T00:27:09.866914"
+    },
+    {
+      "name": "Targeted Advertising",
+      "description": "Run ads, discounts, and Amazon promotions to boost visibility and sales.",
+      "steps": [
+        "Run targeted ad campaigns",
+        "Offer discounts",
+        "Participate in Lightning Deals or Deals of the Day"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "appeagle",
+        "feed visor"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if budget is insufficient"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "running targeted advertisement campaigns offering discounts or participating in Amazon's promotional programs like lightening deals or deals of the day"
+      ],
+      "id": "5b8d9bf7-d8a5-4d7a-a9f9-07bb7b862a85",
+      "type": "tactic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    },
+    {
+      "name": "Competitive Pricing",
+      "description": "Adjust prices to match competitors using automated tools.",
+      "steps": [
+        "Research comparable product prices",
+        "Use Amazon's automated pricing or repricing software"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "appeagle",
+        "feed visor"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Risk of price undercutting"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "research comparable products and their prices you can use Amazon's automated pricing features or repricing software like appeagle, feed visor and many more"
+      ],
+      "id": "343037e0-7f43-4476-8d21-f931e035422e",
+      "type": "tactic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    },
+    {
+      "name": "Optimize Listing Copy",
+      "description": "Enhance searchability and conversion rates with keyword-rich content.",
+      "steps": [
+        "Write compelling titles",
+        "Include relevant keywords in bullet points and descriptions"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Irrelevant keywords may harm rankings"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "optimize your listing copy write compelling content titles bullet points and description with relevant keywords"
+      ],
+      "id": "17ba1af1-2498-47ee-9100-c73379b8341d",
+      "type": "tactic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    },
+    {
+      "name": "Improve Visuals",
+      "description": "Use high-quality images/videos to highlight product features and drive conversions.",
+      "steps": [
+        "Ensure images show product details",
+        "Create videos demonstrating benefits"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Poor visuals may reduce click-through rates"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "imagine you are going to a physical store to buy a t-shirt there you can check and see the real product and trial it as well before purchasing the item also if you'll find some staff or salesman who is actually giving some information about the products actually they highlighting some important features about that product which help you to make buying decisions but in the online marketplaces customers are not able to see or touch the product so they\u2026"
+      ],
+      "id": "8caed6d6-baff-48b7-85a1-f29d39333a36",
+      "type": "tactic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    },
+    {
+      "name": "FBA Fulfillment",
+      "description": "Leverage Amazon FBA for Prime eligibility and faster shipping.",
+      "steps": [
+        "Use Amazon FBA for fulfillment"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Higher costs for FBA setup"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you use Amazon's fulfillment service FBA it can positively impact your BSR FBA listings often receive preferential treatment in terms of shipping speed and Prime eligibility which can attract more buyers and ultimately increase the Basel"
+      ],
+      "id": "7aba3c1d-dffb-4fec-8b7b-fd8699666369",
+      "type": "tactic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review and BSR Threshold",
+      "condition": "If median_reviews < 200 then boost sales",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "sales are better indicator of an item's popularity"
+      ],
+      "id": "11fbc1ca-313a-43e0-9069-c2f6c43429cb",
+      "type": "heuristic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:27:09.866914",
+      "last_seen": "2026-02-19T00:27:09.866914"
+    },
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median reviews are below 200, prioritize boosting BSR",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "research comparable products and their prices you can use Amazon's automated pricing features or repricing software like appeagle, feed visor and many more"
+      ],
+      "id": "52e07840-c50a-4e7a-945a-22173b8db8e6",
+      "type": "heuristic",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR is updated hourly based on current and historical sales.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "BSR is updated hourly"
+      ],
+      "id": "11690836-272c-4aa1-a628-9a430499a093",
+      "type": "claim",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:27:09.866914",
+      "last_seen": "2026-02-19T00:27:09.866914"
+    },
+    {
+      "statement": "FBA listings receive preferential treatment for shipping speed and Prime eligibility.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if you use Amazon's fulfillment service FBA it can positively impact your BSR FBA listings often receive preferential treatment in terms of shipping speed and Prime eligibility which can attract more buyers and ultimately increase the Basel"
+      ],
+      "id": "e6ebe56f-da8d-4e2f-b665-eb8a91e8857d",
+      "type": "claim",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "High Demand + Low Competition",
+      "example": "baby playpens",
+      "description": "Products in subcategories with fewer competitors achieve higher BSR.",
+      "why_it_works": "Subcategories have less competition, making top rankings easier.",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "subcategories have less competition"
+      ],
+      "id": "6f0e6759-51b6-4058-a0ee-f8cccc940f37",
+      "type": "niche_pattern",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:27:09.866914",
+      "last_seen": "2026-02-19T00:27:09.866914"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen planners + organizational needs + school",
+      "description": "Target specific niches with clear pain points and constraints to improve BSR.",
+      "why_it_works": "Niche audiences with defined needs are more likely to convert and leave reviews.",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "imagine you are going to a physical store to buy a t-shirt there you can check and see the real product and trial it as well before purchasing the item also if you'll find some staff or salesman who is actually giving some information about the products actually they highlighting some important features about that product which help you to make buying decisions but in the online marketplaces customers are not able to see or touch the product so they\u2026"
+      ],
+      "id": "b4837aaf-fbca-49a2-ae1d-5614c2cd9eb8",
+      "type": "niche_pattern",
+      "provenance": [
+        "iXMXyt2yt0M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:28:28.455292",
+      "last_seen": "2026-02-19T00:28:28.455292"
+    }
+  ]
+}

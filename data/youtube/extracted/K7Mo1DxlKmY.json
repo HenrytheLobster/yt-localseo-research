@@ -1,0 +1,355 @@
+{
+  "source_type": "youtube",
+  "video_id": "K7Mo1DxlKmY",
+  "title": "I Found a PROFITABLE LOW CONTENT KDP Niche with Book Bolt",
+  "extracted_at": "2026-02-18T14:25:40.110231",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 29497,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "BSR & Reviews Filter",
+      "description": "Use BookBolt's advanced search to identify low-content niches with high BSR and low review counts for easy competition.",
+      "steps": [
+        "Log into BookBolt and navigate to product search",
+        "Set BSR threshold to 50,000",
+        "Filter reviews below 200",
+        "Analyze seasonal trends like Q4 advent calendars"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "BookBolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Seasonal niches may have limited year-round demand"
+      ],
+      "example_niches": [
+        "Murder mystery advent calendar"
+      ],
+      "source_quotes": [
+        "BSR of 50,000... reviews below 200 which is very beatable"
+      ],
+      "id": "cf267e16-b8e1-4a26-b689-c3cce459eecb",
+      "type": "tactic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:00.352405",
+      "last_seen": "2026-02-18T14:24:00.352405"
+    },
+    {
+      "name": "Seasonal Puzzle Niche",
+      "description": "Leverage evergreen puzzle categories with seasonal updates to maintain relevance and higher royalty rates",
+      "steps": [
+        "Use Book Bolt to identify low-review, high-BSR puzzle niches",
+        "Create seasonal variations (e.g., Christmas memory games)",
+        "Add trivia/educational content to increase perceived value"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "price_point"
+      ],
+      "tools_mentioned": [
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires content creation support for complex puzzles"
+      ],
+      "example_niches": [
+        "Memory games for seniors",
+        "NFL themed coloring books"
+      ],
+      "source_quotes": [
+        "This is actually what I call an evergreen puzzle book kind of niche"
+      ],
+      "id": "048fc817-4064-4626-9f9f-7b6dbbc8662d",
+      "type": "tactic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:34.285891",
+      "last_seen": "2026-02-18T14:24:34.285891"
+    },
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Verify niche viability by checking competition scores and BSR metrics",
+      "steps": [
+        "Use BookBolt's keyword research tab to identify potential niches",
+        "Check competition scores (target A/B ratings)",
+        "Verify ideas on Amazon by analyzing BSR and review counts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "competition_score"
+      ],
+      "tools_mentioned": [
+        "BookBolt keyword research",
+        "Amazon product listings"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Scores may not reflect real-time market saturation"
+      ],
+      "example_niches": [
+        "teen planner",
+        "advent calendar"
+      ],
+      "source_quotes": [
+        "check the competition score... want this to be super high. A or least possible B",
+        "verify the idea on Amazon... see how competitive is"
+      ],
+      "id": "0442b183-8654-4d55-afb5-62709121195c",
+      "type": "tactic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:25:08.104298",
+      "last_seen": "2026-02-18T14:25:08.104298"
+    },
+    {
+      "name": "AI Story Generator",
+      "description": "Create children's books using Book Bolt Studio's AI tool to generate stories with customizable parameters.",
+      "steps": [
+        "Select trim size (e.g., 8.5x8.5)",
+        "Set page count (e.g., 36 pages)",
+        "Choose story template (e.g., bedtime story)",
+        "Define character traits (e.g., self-confidence)",
+        "Generate and edit story content"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Bolt Studio"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Edit to avoid 'AI generated' tag"
+      ],
+      "example_niches": [
+        "children's bedtime stories"
+      ],
+      "source_quotes": [
+        "\"You can actually make a book and read it to your children...\""
+      ],
+      "id": "02f99e54-8269-4162-85f0-c9f71cec28fb",
+      "type": "tactic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:25:40.110067",
+      "last_seen": "2026-02-18T14:25:40.110067"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are below 200, prioritize niches with high BSR",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "reviews below 200 which is very beatable"
+      ],
+      "id": "4f3f0ec3-e011-4e2a-b2cf-e06e56c6b2f8",
+      "type": "heuristic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:00.352405",
+      "last_seen": "2026-02-18T14:24:00.352405"
+    },
+    {
+      "name": "Review Count Filter",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Typically I would pick an activity book right because there's more you can do there"
+      ],
+      "id": "d245450d-ba5b-4345-a07a-73cf6b05ca66",
+      "type": "heuristic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:34.285891",
+      "last_seen": "2026-02-18T14:24:34.285891"
+    },
+    {
+      "name": "Low Review Niche Boost",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "most of you guys always ask me what is the keywords? How do you do research?",
+        "look at what we actually found through the product research stage"
+      ],
+      "id": "38f504ce-abd3-48d2-9e5e-c44f1123059a",
+      "type": "heuristic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:25:08.104298",
+      "last_seen": "2026-02-18T14:25:08.104298"
+    },
+    {
+      "name": "AI Content Optimization",
+      "condition": "If median reviews are below 200, prioritize AI-assisted content",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"Make sure to select AI assisted, not AI generated.\""
+      ],
+      "id": "992bdf97-4330-465d-937c-7d16fc624059",
+      "type": "heuristic",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:25:40.110067",
+      "last_seen": "2026-02-18T14:25:40.110067"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BookBolt's data is directly connected to Amazon KDP sales metrics",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "books amazing uh data point is actually connected straight to Amazon KDP"
+      ],
+      "id": "c5fabc18-09ab-4fe6-8623-d20e4d558f2d",
+      "type": "claim",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:00.352405",
+      "last_seen": "2026-02-18T14:24:00.352405"
+    },
+    {
+      "statement": "Seasonal products in puzzle categories can achieve BSR rankings below 5,000",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "This book probably going to go down to like say maybe 3,000 4,000 by the time we actually get to Christmas"
+      ],
+      "id": "ad93f874-f2fe-4609-857c-cc6503de76ae",
+      "type": "claim",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:34.285891",
+      "last_seen": "2026-02-18T14:24:34.285891"
+    },
+    {
+      "statement": "BookBolt's keyword research tool provides competition scoring metrics",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "here it actually tells you the competition score",
+        "amazing feature for the keyword research"
+      ],
+      "id": "6f1f9649-46ea-4773-bd7c-aa63871d72dc",
+      "type": "claim",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:25:08.104298",
+      "last_seen": "2026-02-18T14:25:08.104298"
+    },
+    {
+      "statement": "Book Bolt Studio reduces children's book creation costs compared to Fiverr freelancers.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"It shouldn't make you cost you that much...\""
+      ],
+      "id": "b0b3a563-36d9-439d-aa51-035796ad4d2d",
+      "type": "claim",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:25:40.110067",
+      "last_seen": "2026-02-18T14:25:40.110067"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Children + Bedtime Story + Low Content",
+      "description": "Target underserved markets with simple content formats that require minimal production effort",
+      "why_it_works": "Seasonal demand combined with low competition creates quick profit opportunities",
+      "signals": [
+        "low review counts",
+        "seasonal relevance"
+      ],
+      "source_quotes": [
+        "cost is too high... make children's bedtime story book"
+      ],
+      "id": "5fce40c4-c889-4a8d-ae10-fcdb415578f9",
+      "type": "niche_pattern",
+      "provenance": [
+        "K7Mo1DxlKmY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:24:00.352405",
+      "last_seen": "2026-02-18T14:24:00.352405"
+    }
+  ]
+}

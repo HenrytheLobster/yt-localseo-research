@@ -1,0 +1,195 @@
+{
+  "source_type": "youtube",
+  "video_id": "jQstoAwidMk",
+  "title": "How to Fill in The 7 Backend Keywords on KDP for Maximum Sales (Most Do it Wrong)",
+  "extracted_at": "2026-02-18T04:24:04.530601",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10777,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Box Mixing",
+      "description": "KDP combines keywords in the same box into multiple ranking combinations.",
+      "steps": [
+        "Avoid repeating title/subtitle keywords",
+        "Avoid metadata manipulation terms (free, bestseller, etc.)",
+        "Use mixed keyword combinations in single boxes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Overstuffing boxes may dilute ranking strength"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "KDP actually mix and match keywords in the same box"
+      ],
+      "id": "23064f18-3e00-45a5-8054-bb10ecdd3e85",
+      "type": "tactic",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:32.892002",
+      "last_seen": "2026-02-18T04:23:32.892002"
+    },
+    {
+      "name": "Keyword Box Optimization",
+      "description": "Balance single keyword boxes for strong ranking and grouped keyword boxes for broader reach",
+      "steps": [
+        "Use single keywords for high-priority terms",
+        "Group less critical keywords in shared boxes",
+        "Combine 3-4 keywords per box when appropriate"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Amazon Search Suggestion Expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid exact competitor phrases like 'keto diet'"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "ranking strength is stronger if you only have one keyword",
+        "you should balance both meaning you should probably use three to four boxes"
+      ],
+      "id": "cb77f3dd-6fe0-4d87-ac1d-a0849771ed40",
+      "type": "tactic",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:04.530487",
+      "last_seen": "2026-02-18T04:24:04.530487"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Single Keyword Optimization",
+      "condition": "If median reviews < 200, prioritize single keyword boxes",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "You will rank higher if you only have one keyword in that box"
+      ],
+      "id": "b99da3ba-693b-43b3-8aec-7d4279ea1552",
+      "type": "heuristic",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:32.892002",
+      "last_seen": "2026-02-18T04:23:32.892002"
+    },
+    {
+      "name": "Conversion-Driven Keyword Selection",
+      "condition": "If keywords show green in Publisher Rocket (best conversion), prioritize them",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the ones that shows green are the ones that converts the best"
+      ],
+      "id": "b248dc97-7a9d-4fbf-94f4-f2b378f5037a",
+      "type": "heuristic",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:04.530487",
+      "last_seen": "2026-02-18T04:24:04.530487"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP algorithm creates ranking combinations from mixed keywords in single boxes",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon does mix and match different combinations"
+      ],
+      "id": "adb41269-94dc-4ca2-88d9-68c2ea304826",
+      "type": "claim",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:32.892002",
+      "last_seen": "2026-02-18T04:23:32.892002"
+    },
+    {
+      "statement": "KDP backend keywords can be optimized by mixing single and grouped keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you should do both you should mix it up"
+      ],
+      "id": "7b77c089-7c20-442a-bcc7-d6da316ba51e",
+      "type": "claim",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:04.530487",
+      "last_seen": "2026-02-18T04:24:04.530487"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets specific audience segments with unique constraints",
+      "why_it_works": "Leverages low competition niches with clear search intent",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Teen planner is an example of a niche with specific targeting"
+      ],
+      "id": "9790ee7a-0c46-462e-b142-2ed379fcdf3a",
+      "type": "niche_pattern",
+      "provenance": [
+        "jQstoAwidMk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:23:32.892002",
+      "last_seen": "2026-02-18T04:23:32.892002"
+    }
+  ]
+}

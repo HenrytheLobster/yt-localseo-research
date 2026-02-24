@@ -1,0 +1,25 @@
+{
+  "video_id": "yeWeuyftobE",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.9,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "low content",
+    "reviews",
+    "competition",
+    "profitable",
+    "coloring book",
+    "journal",
+    "activity book",
+    "interior"
+  ],
+  "transcript_word_count": 4370,
+  "triaged_at": "2026-02-18T19:51:46.052634"
+}

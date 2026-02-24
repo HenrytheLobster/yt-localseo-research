@@ -1,0 +1,234 @@
+{
+  "source_type": "youtube",
+  "video_id": "KSBY85qVwoU",
+  "title": "Amazon KDP Niche Research for Low Content Books | Low Content Books #5",
+  "extracted_at": "2026-02-18T20:40:39.059927",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9312,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Competitive Pricing Strategy",
+      "description": "Set prices slightly below competitors to gain edge while maintaining profitability",
+      "steps": [
+        "Check Publisher Rocket for estimated searches",
+        "Analyze top sellers' pricing",
+        "Set price 1-2 cents lower than lowest competitor"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Create Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid pricing below cost of production"
+      ],
+      "example_niches": [
+        "accounting ledger book",
+        "italian fashion coloring book"
+      ],
+      "source_quotes": [
+        "i would advise that your price at 5.97 because i don't see any 597 here",
+        "if you run an ad you should definitely get some clicks and hopefully some sales because your price is lower than the rest"
+      ],
+      "id": "3b01d7de-d0d1-4494-8073-8bbeb7c91659",
+      "type": "tactic",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:06.102427",
+      "last_seen": "2026-02-18T20:40:06.102427"
+    },
+    {
+      "name": "Use Publisher Rocket for Niche Analysis",
+      "description": "Identify low-competition niches using Publisher Rocket's BSR and review data",
+      "steps": [
+        "Search niches on Publisher Rocket",
+        "Filter by BSR and review thresholds",
+        "Analyze top-selling titles"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When niches have high price points but low demand"
+      ],
+      "example_niches": [
+        "autism planner workbook",
+        "alphabet coloring book"
+      ],
+      "source_quotes": [
+        "autism planner workbook it has just 856 results and going to publish a rocket it has 1 620 amazon searches per month"
+      ],
+      "id": "39964de0-0d3b-44f4-a1dc-ac4bd50946ac",
+      "type": "tactic",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:39.059804",
+      "last_seen": "2026-02-18T20:40:39.059804"
+    },
+    {
+      "name": "Modify Book Covers for Niche Fit",
+      "description": "Customize book covers using design tools to align with target niches",
+      "steps": [
+        "Use templates from Creative Fabrica",
+        "Edit text for niche relevance",
+        "Add title and branding"
+      ],
+      "signals_used": [
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica",
+        "image editing software"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "Requires design skills or access to premium templates"
+      ],
+      "example_niches": [
+        "alphabet coloring book",
+        "autism planner workbook"
+      ],
+      "source_quotes": [
+        "grab one from vexels if you don't know how to make a cover"
+      ],
+      "id": "4aaa1fb8-32fe-4bd7-b598-1bb19be5a951",
+      "type": "tactic",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:39.059804",
+      "last_seen": "2026-02-18T20:40:39.059804"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Niche Targeting",
+      "condition": "If niche has high barrier to entry, then prioritize",
+      "machine_rule": {
+        "field": "competition_level",
+        "op": "gt",
+        "value": 80
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "any book that has a higher barrier to entry... gives you the advantage to go in for that niche"
+      ],
+      "id": "7b308cb8-a118-466b-b48e-b1a163151e1e",
+      "type": "heuristic",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:06.102427",
+      "last_seen": "2026-02-18T20:40:06.102427"
+    },
+    {
+      "name": "Low Review Niche Boost",
+      "condition": "If median reviews are below 200, prioritize niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "autism planner workbook it has just 856 results"
+      ],
+      "id": "64f687e6-c3e6-4edb-98a8-66fb9067a4cd",
+      "type": "heuristic",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:39.059804",
+      "last_seen": "2026-02-18T20:40:39.059804"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP niches with foreign language content show lower competition",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "if you publish your book into a foreign market... many people will shy away from it"
+      ],
+      "id": "282f45be-4114-4e74-b058-ab05037dc680",
+      "type": "claim",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:06.102427",
+      "last_seen": "2026-02-18T20:40:06.102427"
+    },
+    {
+      "statement": "Autism planner workbooks show high sales potential with low competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "15 000 wow that is something it's really encouraging"
+      ],
+      "id": "61e11178-656e-46a8-964e-67756aa42bb4",
+      "type": "claim",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:39.059804",
+      "last_seen": "2026-02-18T20:40:39.059804"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "girls + coloring book + foreign language",
+      "description": "Niche with unique constraint creates competitive advantage",
+      "why_it_works": "Higher barrier to entry reduces competition while appealing to niche markets",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "if you publish your book into a foreign market... many people will shy away from it",
+        "we should have less competition there"
+      ],
+      "id": "4a0ce15a-3ecd-4a8e-a214-96781edc9c48",
+      "type": "niche_pattern",
+      "provenance": [
+        "KSBY85qVwoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:40:06.102427",
+      "last_seen": "2026-02-18T20:40:06.102427"
+    }
+  ]
+}

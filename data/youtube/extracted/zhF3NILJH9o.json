@@ -1,0 +1,118 @@
+{
+  "source_type": "youtube",
+  "video_id": "zhF3NILJH9o",
+  "title": "Amazon Market Research Tool for Authors - Publisher Rocket Reverse ASIN",
+  "extracted_at": "2026-02-18T22:55:43.016415",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4717,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Reverse ASIN Lookup",
+      "description": "Analyze keywords used by top-performing books to identify high-converting terms",
+      "steps": [
+        "Find a book's ASIN/ISBN",
+        "Input into Publisher Rocket's Reverse ASIN tool",
+        "Export keywords with search volume/competition data"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Monthly lookup limit of 50"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Publisher Rocket doesn't want it to be used for evil"
+      ],
+      "id": "b584a882-58a6-4286-a1d2-94e413fc9589",
+      "type": "tactic",
+      "provenance": [
+        "zhF3NILJH9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:55:43.016209",
+      "last_seen": "2026-02-18T22:55:43.016209"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Keyword Volume Prioritization",
+      "condition": "If keywords show high search volume and low competition",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gt",
+        "value": 100
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "These are good ones by the way green with low numbers of competition"
+      ],
+      "id": "0b9aacd5-eebf-408e-b991-24d32e0e18f7",
+      "type": "heuristic",
+      "provenance": [
+        "zhF3NILJH9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:55:43.016209",
+      "last_seen": "2026-02-18T22:55:43.016209"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket's Reverse ASIN reveals all keywords Amazon ranks a book for, not just the seven KDP keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "It's the words Amazon has ranked for that book"
+      ],
+      "id": "45acee0d-4cae-49aa-957b-18cb3005b41f",
+      "type": "claim",
+      "provenance": [
+        "zhF3NILJH9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:55:43.016209",
+      "last_seen": "2026-02-18T22:55:43.016209"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints",
+      "why_it_works": "Creates hyper-targeted keyword opportunities",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "I would use their new feature to choose your seven KDP keywords"
+      ],
+      "id": "c54e4af7-13d3-4fac-9ca9-bd23fc09391e",
+      "type": "niche_pattern",
+      "provenance": [
+        "zhF3NILJH9o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:55:43.016209",
+      "last_seen": "2026-02-18T22:55:43.016209"
+    }
+  ]
+}

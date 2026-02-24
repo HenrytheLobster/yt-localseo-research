@@ -1,0 +1,27 @@
+{
+  "video_id": "9BqtXHpvDG8",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.5,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "keyword",
+    "low content",
+    "self publish",
+    "self-publish",
+    "category",
+    "reviews",
+    "competition",
+    "profitable",
+    "passive income",
+    "coloring book",
+    "journal",
+    "interior"
+  ],
+  "transcript_word_count": 3858,
+  "triaged_at": "2026-02-17T22:19:17.313740"
+}

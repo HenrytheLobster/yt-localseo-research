@@ -1,0 +1,411 @@
+{
+  "source_type": "youtube",
+  "video_id": "xCIHLH5HMSg",
+  "title": "Amazon KDP High-Content Keyword Research (My Proven Method)",
+  "extracted_at": "2026-02-18T13:39:01.267171",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 34943,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Single Keyword Focus",
+      "description": "Identify one high-demand keyword with minimal competition by analyzing Amazon's page one search results and filtering out irrelevant variations.",
+      "steps": [
+        "Find a keyword with strong search volume",
+        "Validate by checking page one search results",
+        "Filter out irrelevant keyword variations"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with excessive dead books"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we want to focus on one place to actually accurately predict the keyword's validity"
+      ],
+      "id": "41fe36fe-7a54-479f-90fb-b397a91a4672",
+      "type": "tactic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:22.578117",
+      "last_seen": "2026-02-18T13:37:22.578117"
+    },
+    {
+      "name": "Avoid Blob Effect",
+      "description": "Steer clear of oversaturated keywords where many similar books compete, leading to poor visibility.",
+      "steps": [
+        "Identify low-review books with high BSR",
+        "Avoid authority figures and dead books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Does not account for cover quality or niche specificity"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you publish in these topics your books just going to get slapped right here"
+      ],
+      "id": "e4a1b773-bd61-4c82-934b-e84eb0e03c4f",
+      "type": "tactic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:56.124586",
+      "last_seen": "2026-02-18T13:37:56.124586"
+    },
+    {
+      "name": "Demand Outnumbers Supply",
+      "description": "Target keywords where customer demand exceeds book supply, ensuring easier ranking.",
+      "steps": [
+        "Find low search volume (1,000-5,000)",
+        "Ensure low competition and low BSR"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition",
+        "bsr"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "search_volume_max": 5000,
+        "competition_min": 0.3
+      },
+      "caveats": [
+        "Requires time-intensive keyword research"
+      ],
+      "example_niches": [
+        "emotional intelligence"
+      ],
+      "source_quotes": [
+        "the demand outnumbers to supply there are more customers than there are books to supply them"
+      ],
+      "id": "2841f83b-f95f-42aa-8d88-eebd2ef21921",
+      "type": "tactic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:56.124586",
+      "last_seen": "2026-02-18T13:37:56.124586"
+    },
+    {
+      "name": "Deep Sea Keyword Targeting",
+      "description": "Focus on niche topics with low competition and high demand by analyzing BSR rankings and review counts",
+      "steps": [
+        "Use Book Beam to check BSR history",
+        "Validate topic consistency across top books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Beam"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if topic is too broad or saturated"
+      ],
+      "example_niches": [
+        "emotional intelligence"
+      ],
+      "source_quotes": [
+        "if you find this type of keyword where there's only a handful of relevant books but all those relevant books are actually doing well then you found the gold"
+      ],
+      "id": "d6111815-07ec-444d-8b2c-2c0bd33620b2",
+      "type": "tactic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:38:30.261439",
+      "last_seen": "2026-02-18T13:38:30.261439"
+    },
+    {
+      "name": "Surface Level Avoidance",
+      "description": "Avoid oversaturated niches with many existing books",
+      "steps": [
+        "Filter out keywords with excessive competition",
+        "Prioritize unique subgenres"
+      ],
+      "signals_used": [
+        "review_count",
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 1000,
+        "bsr_max": 10000
+      },
+      "caveats": [
+        "Hard to stand out with ads in these niches"
+      ],
+      "example_niches": [
+        "strength training for seniors"
+      ],
+      "source_quotes": [
+        "99% of new Publishers are going to stay here and publish books here"
+      ],
+      "id": "c975a5ae-6847-40b2-b27e-b8c8ec1220e7",
+      "type": "tactic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:38:30.261439",
+      "last_seen": "2026-02-18T13:38:30.261439"
+    },
+    {
+      "name": "Deep Keyword Validation",
+      "description": "Identify low-competition, high-demand keywords with limited winning books and low review counts.",
+      "steps": [
+        "Adjust metrics to focus on deep search keywords",
+        "Filter for topics with few winning books and low BSR",
+        "Check for subgenres with untapped traffic"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid overly niche keywords with no search volume"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you want the demand to outpace the supply"
+      ],
+      "id": "2e5a35c3-e449-4464-8786-4ed4365fabc1",
+      "type": "tactic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:39:01.267055",
+      "last_seen": "2026-02-18T13:39:01.267055"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Threshold",
+      "condition": "If median_reviews is less than 200, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "there's less than 100 reviews on them and they have a BSR of less than 50,000"
+      ],
+      "id": "8433e996-ef2e-4d3e-b11b-10fc683fcafe",
+      "type": "heuristic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:22.578117",
+      "last_seen": "2026-02-18T13:37:22.578117"
+    },
+    {
+      "name": "Low Review Filter",
+      "condition": "If median_reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "low reviewed books with high bsrs but they forget that the keyboard also has 10 authority figures"
+      ],
+      "id": "677aac6c-d1ff-4b0c-8ce6-7ddba4acc7ea",
+      "type": "heuristic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:56.124586",
+      "last_seen": "2026-02-18T13:37:56.124586"
+    },
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are below 200, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if these books don't have a lot of reviews and maybe it might just be an anomaly"
+      ],
+      "id": "9cd33f5a-bba7-4773-abd6-b59236432d96",
+      "type": "heuristic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:38:30.261439",
+      "last_seen": "2026-02-18T13:38:30.261439"
+    },
+    {
+      "name": "Review Threshold Rule",
+      "condition": "If median_reviews < 200, then boost keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you can almost validate pretty much 90% of them but they're hard to actually succeed in"
+      ],
+      "id": "0e76830f-acaf-4acb-8af1-d10dfe7ba0bc",
+      "type": "heuristic",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:39:01.267055",
+      "last_seen": "2026-02-18T13:39:01.267055"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "A single high-quality keyword can generate thousands of dollars in sales",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "one strong keyboard in search term can generate thousands of dollars"
+      ],
+      "id": "1a4bbfb7-8304-40b8-9f9f-a6d3985e0b02",
+      "type": "claim",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:22.578117",
+      "last_seen": "2026-02-18T13:37:22.578117"
+    },
+    {
+      "statement": "High BSR books with low reviews are trapped in the blob effect, reducing visibility.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "if you publish in these topics your books just going to get slapped right here"
+      ],
+      "id": "1da0699a-947d-45a7-b555-99fb0d81998e",
+      "type": "claim",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:56.124586",
+      "last_seen": "2026-02-18T13:37:56.124586"
+    },
+    {
+      "statement": "Niche keywords with few relevant books have higher ranking potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the chances of us ranking on this first page is extremely high"
+      ],
+      "id": "4c9373aa-e9e3-4d20-bd6f-7911d852355b",
+      "type": "claim",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:38:30.261439",
+      "last_seen": "2026-02-18T13:38:30.261439"
+    },
+    {
+      "statement": "Surface level keywords have high competition and poor success rates due to oversaturation.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "people find these surface level keywords where on paper... and they wonder why they don't have success"
+      ],
+      "id": "7b177266-0989-476a-a3af-edd116261378",
+      "type": "claim",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:39:01.267055",
+      "last_seen": "2026-02-18T13:39:01.267055"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints to reduce competition",
+      "why_it_works": "Limits competition while maintaining search relevance",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "if we can't make money from one keyword why do we expect to make money ranking for 100 of them"
+      ],
+      "id": "70b218dc-0087-49e6-9596-2daf55127fb7",
+      "type": "niche_pattern",
+      "provenance": [
+        "xCIHLH5HMSg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T13:37:22.578117",
+      "last_seen": "2026-02-18T13:37:22.578117"
+    }
+  ]
+}

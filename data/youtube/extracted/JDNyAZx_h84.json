@@ -1,0 +1,194 @@
+{
+  "source_type": "youtube",
+  "video_id": "JDNyAZx_h84",
+  "title": "How to Rank Your Book Higher on Amazon - Updated Kindle Publishing Keyword Ranking Strategy!",
+  "extracted_at": "2026-02-18T04:25:03.215232",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7469,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Specific Keywords Per Box",
+      "description": "Use highly specific, non-competitive keywords in separate boxes to maximize ranking potential.",
+      "steps": [
+        "Find 1-3 specific keyword phrases relevant to your book",
+        "Input one keyword per box",
+        "Check competition score using Publisher Rocket",
+        "Ensure keywords are not overly competitive"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Fails if keywords are too competitive or irrelevant"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the more specific you get in the keywords within the box the higher it ranks"
+      ],
+      "id": "07f46251-ceae-4cb1-bf74-33608f329a5e",
+      "type": "tactic",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:36.607548",
+      "last_seen": "2026-02-18T04:24:36.607548"
+    },
+    {
+      "name": "Keyword Box Optimization",
+      "description": "Use one highly specific keyword per box for primary targeting, then fill remaining boxes with related keywords for broader ranking.",
+      "steps": [
+        "Use Publisher Rocket to find keyword ideas",
+        "Assign one exact keyword per box",
+        "Fill remaining boxes with relevant keyword combinations"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Tool may fail to identify long-tail keywords"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "use only one keyword per box for the exact keyword phrase"
+      ],
+      "id": "0f37f516-43b1-40bf-bd89-c954f7933c59",
+      "type": "tactic",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:03.215061",
+      "last_seen": "2026-02-18T04:25:03.215061"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median reviews are below 200, prioritize keywords with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if the keyword is too competitive even if you just put that single keyword in a box doesn't mean you can 100% for sure rank for it"
+      ],
+      "id": "9b2a4009-ce08-4914-bf8c-6aa0477c4c2f",
+      "type": "heuristic",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:36.607548",
+      "last_seen": "2026-02-18T04:24:36.607548"
+    },
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median reviews are below 200, prioritize boosting visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "use publisher rockets keyword search tool"
+      ],
+      "id": "7d2780ff-f2e4-49be-bdc0-87ad7a1abb70",
+      "type": "heuristic",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:03.215061",
+      "last_seen": "2026-02-18T04:25:03.215061"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon rearranges and indexes keywords from the seven keywords box for individual keyword rankings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon does rearrange each of those keywords and your book will be showing up on those combinations"
+      ],
+      "id": "02855d47-7d61-4d7a-9e4b-57051fb12dd2",
+      "type": "claim",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:36.607548",
+      "last_seen": "2026-02-18T04:24:36.607548"
+    },
+    {
+      "statement": "Publisher Rocket's keyword search tool provides competitive score analysis for Amazon ranking optimization",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "use publisher rockets keyword search tool"
+      ],
+      "id": "3de07244-10a0-41e1-8b2d-42c3eb7db9d8",
+      "type": "claim",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:25:03.215061",
+      "last_seen": "2026-02-18T04:25:03.215061"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Targets underserved niches with specific audience constraints",
+      "why_it_works": "Leverages low competition and high specificity for better rankings",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "if you put the same keywords that is already in the title in the seven keywords section would that help with the algorithm with that you know rank your book in the keyword better and the answer is no it doesn't really help"
+      ],
+      "id": "75ff4f9e-3eae-4b20-b081-6609d0f80927",
+      "type": "niche_pattern",
+      "provenance": [
+        "JDNyAZx_h84"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:24:36.607548",
+      "last_seen": "2026-02-18T04:24:36.607548"
+    }
+  ]
+}

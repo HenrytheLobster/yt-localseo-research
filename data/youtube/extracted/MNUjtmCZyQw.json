@@ -1,0 +1,407 @@
+{
+  "source_type": "youtube",
+  "video_id": "MNUjtmCZyQw",
+  "title": "The Best KDP Keyword Research Tool For Beginners [2024]",
+  "extracted_at": "2026-02-18T12:50:03.570494",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 18085,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Free Keyword Mining",
+      "description": "Use Seller Sprite's keyword mining tool to identify high-demand, low-competition keywords for Amazon KDP.",
+      "steps": [
+        "Create a free Seller Sprite account",
+        "Navigate to Keyword Sprite > Keyword Mining",
+        "Input main keywords (e.g., 'unicorn coloring book')",
+        "Analyze metrics like monthly searches and SPR score"
+      ],
+      "signals_used": [
+        "monthly_searches",
+        "SPR_score"
+      ],
+      "tools_mentioned": [
+        "Seller Sprite",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "daily_searches_min": 500,
+        "spr_max": 100
+      },
+      "caveats": [
+        "Free data may lack granularity compared to paid tools"
+      ],
+      "example_niches": [
+        "unicorn coloring books",
+        "kids planner"
+      ],
+      "source_quotes": [
+        "'the lower number you have the better it's going to be for you'"
+      ],
+      "id": "304c9f0a-53c5-48e5-8e60-7e967e70e94a",
+      "type": "tactic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:13.409924",
+      "last_seen": "2026-02-18T12:48:13.409924"
+    },
+    {
+      "name": "DSR Analysis",
+      "description": "Evaluate keyword opportunity using demand to supply ratio (DSR) to balance search volume and competition",
+      "steps": [
+        "Calculate DSR by dividing search volume by product count",
+        "Prioritize keywords with DSR > 0.8",
+        "Compare with BSR to assess ranking potential"
+      ],
+      "signals_used": [
+        "DSR",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "dsr_min": 0.8,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Free version limits data access",
+        "Avoid keywords with declining search trends"
+      ],
+      "example_niches": [
+        "unicorn coloring book"
+      ],
+      "source_quotes": [
+        "higher DSR number is the better opportunity"
+      ],
+      "id": "f2c9b49d-cedb-416c-89af-95bd408b72ef",
+      "type": "tactic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:58.368473",
+      "last_seen": "2026-02-18T12:48:58.368473"
+    },
+    {
+      "name": "Competitor Reverse ASIN",
+      "description": "Analyze competitor keywords by reverse ASIN lookup to identify high-performing terms",
+      "steps": [
+        "Input competitor ASIN",
+        "Extract keywords from their backend titles/keywords",
+        "Filter by monthly search volume"
+      ],
+      "signals_used": [
+        "monthly_searches",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "searches_min": 200,
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Requires KDP books for accurate data",
+        "Free tier limits lookup frequency"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "look at your competitors's books and see what keywords they're using"
+      ],
+      "id": "261269dd-5da3-4dd1-831a-a47ce9f4dbcc",
+      "type": "tactic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:58.368473",
+      "last_seen": "2026-02-18T12:48:58.368473"
+    },
+    {
+      "name": "Competitor ASIN Analysis",
+      "description": "Use free keyword research tools to analyze competitors' books by inputting their ASIN and reviewing organic/paid keyword data",
+      "steps": [
+        "Verify book is KDP published",
+        "Copy ASIN from product page",
+        "Input ASIN into keyword research tool",
+        "Review organic/paid keyword metrics",
+        "Filter keywords by relevance and search volume"
+      ],
+      "signals_used": [
+        "BSR",
+        "organic_searches"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Free version excludes paid ad data"
+      ],
+      "example_niches": [
+        "unicorn coloring books"
+      ],
+      "source_quotes": [
+        "I don't think it includes all of the data here because as you can see it says there's organically 31 keywords"
+      ],
+      "id": "e8d5a2db-1415-4035-add7-1f218a86dce0",
+      "type": "tactic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:49:35.306879",
+      "last_seen": "2026-02-18T12:49:35.306879"
+    },
+    {
+      "name": "Free Keyword Research Tool",
+      "description": "Best free keyword research software for Amazon KDP in 2024",
+      "steps": [
+        "Use for keyword research strategies"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When it fails"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "this is all as I say entirely free so a really good piece of keyword research software"
+      ],
+      "id": "e1653b0b-190a-4723-a279-0cb7a3d9dee0",
+      "type": "tactic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:03.570379",
+      "last_seen": "2026-02-18T12:50:03.570379"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Demand vs Competition Balance",
+      "condition": "If daily searches exceed 500 and SPR score is below 100, prioritize keyword",
+      "machine_rule": {
+        "field": "daily_searches",
+        "op": "gt",
+        "value": 500
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'you want to have high demand and you want to have low competition'"
+      ],
+      "id": "f3ba2cc3-974d-459c-af7c-16c0e735e311",
+      "type": "heuristic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:13.409924",
+      "last_seen": "2026-02-18T12:48:13.409924"
+    },
+    {
+      "name": "DSR Threshold Rule",
+      "condition": "If DSR > 0.8 and BSR < 50,000, then boost keyword opportunity",
+      "machine_rule": {
+        "field": "dsr",
+        "op": "gt",
+        "value": 0.8
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "higher DSR number is the better opportunity"
+      ],
+      "id": "178400a1-67d8-4d46-8ac1-849a5ad4c530",
+      "type": "heuristic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:58.368473",
+      "last_seen": "2026-02-18T12:48:58.368473"
+    },
+    {
+      "name": "Keyword Trend Prioritization",
+      "condition": "If a keyword has high monthly searches but low competition, prioritize it for targeting",
+      "machine_rule": {
+        "field": "monthly_searches",
+        "op": "gt",
+        "value": 10000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "unicorn coloring book is the one that drives most of the traffic it's the highest line here monthly searches at one point got to 33,000"
+      ],
+      "id": "b22a2f28-125f-485f-b503-e94c77d13e3d",
+      "type": "heuristic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:49:35.306879",
+      "last_seen": "2026-02-18T12:49:35.306879"
+    },
+    {
+      "name": "Boost Low-Review Niches",
+      "condition": "If median_reviews then boost (human readable)",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you do want a full tutorial of how to use every single tool within this"
+      ],
+      "id": "8b81dece-e888-46b8-9ce1-2a7f902a50e2",
+      "type": "heuristic",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:03.570379",
+      "last_seen": "2026-02-18T12:50:03.570379"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Seller Sprite provides free keyword research metrics including monthly searches and SPR scores.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'this is entirely free so we're just going to go for the last 30 days'"
+      ],
+      "id": "33ec11b8-2bb8-4c83-86dd-b70751e416c0",
+      "type": "claim",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:13.409924",
+      "last_seen": "2026-02-18T12:48:13.409924"
+    },
+    {
+      "statement": "DSR (Demand to Supply Ratio) indicates keyword opportunity by comparing search volume to product count",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "DSR products metric... divides the search volume by the number of items"
+      ],
+      "id": "a1976775-40b7-4ae4-8f48-a7c8bbd6a7cf",
+      "type": "claim",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:58.368473",
+      "last_seen": "2026-02-18T12:48:58.368473"
+    },
+    {
+      "statement": "Free keyword research tools provide partial data compared to premium versions",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's not quite as good as the paid pieces but it still gives you a really good bit of information"
+      ],
+      "id": "81f867cc-a0d5-4ae2-8e29-cb6d439052fb",
+      "type": "claim",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:49:35.306879",
+      "last_seen": "2026-02-18T12:49:35.306879"
+    },
+    {
+      "statement": "Publisher Rocket is the best free keyword research software for Amazon KDP in 2024",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is all as I say entirely free so a really good piece of keyword research software"
+      ],
+      "id": "ea863ed1-738c-454b-b475-490c39787ef0",
+      "type": "claim",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:50:03.570379",
+      "last_seen": "2026-02-18T12:50:03.570379"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + Niche + Age Range",
+      "example": "girls + coloring book + 3-5 years",
+      "description": "Target specific demographics with age-based keyword variations",
+      "why_it_works": "Captures niche demand while maintaining search volume",
+      "signals": [
+        "daily_searches",
+        "low_competition"
+      ],
+      "source_quotes": [
+        "'unicorn coloring book for girls 3 to 5'"
+      ],
+      "id": "6f4e8dab-3932-40be-a96e-37c916f4e056",
+      "type": "niche_pattern",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:13.409924",
+      "last_seen": "2026-02-18T12:48:13.409924"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine specific audience identity with problem-solving need and unique constraint for niche targeting",
+      "why_it_works": "Balances demand with low competition through targeted constraints",
+      "signals": [
+        "low review counts",
+        "specific age ranges"
+      ],
+      "source_quotes": [
+        "if you're publishing in a niche that is generally demand is going down"
+      ],
+      "id": "40e16136-ae7b-45f6-b350-32b18ef0e526",
+      "type": "niche_pattern",
+      "provenance": [
+        "MNUjtmCZyQw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:48:58.368473",
+      "last_seen": "2026-02-18T12:48:58.368473"
+    }
+  ]
+}

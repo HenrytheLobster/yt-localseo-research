@@ -1,0 +1,258 @@
+{
+  "source_type": "youtube",
+  "video_id": "Ml48j-ftphw",
+  "title": "4 Profitable Amazon KDP Keywords: Workbook Low Competition High Demand #KDP #KDPKeywords",
+  "extracted_at": "2026-02-18T21:28:25.096263",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10417,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "chrome_extension_analysis",
+      "description": "Use free Chrome extensions to evaluate keyword profitability metrics",
+      "steps": [
+        "Install Tight Self-Publishing Titans and Amazon Scout Pro",
+        "Check keyword new score and total results",
+        "Analyze BSR, price, and review data"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "keyword_new_score"
+      ],
+      "tools_mentioned": [
+        "Tight Self-Publishing Titans",
+        "Amazon Scout Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 500000
+      },
+      "caveats": [
+        "Avoid AI-generated content without disclosure"
+      ],
+      "example_niches": [
+        "teen CBT workbook",
+        "adult social anxiety workbook"
+      ],
+      "source_quotes": [
+        "keyword new score of 84 which is amazing"
+      ],
+      "id": "2157ecd4-f622-474f-b365-4614b7c77bcc",
+      "type": "tactic",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:27:50.700987",
+      "last_seen": "2026-02-18T21:27:50.700987"
+    },
+    {
+      "name": "Target Specific CBT Niches",
+      "description": "Focus on\u7ec6\u5206 markets like teens or adults with specific anxiety types to leverage low competition and high demand.",
+      "steps": [
+        "Research CBT therapy methods",
+        "Create targeted workbooks (e.g., for anxious teens)",
+        "Add value with introductions and journal prompts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "price"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro",
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 500000
+      },
+      "caveats": [
+        "Avoid generic keywords with high competition"
+      ],
+      "example_niches": [
+        "teen planner",
+        "adult OCD workbook"
+      ],
+      "source_quotes": [
+        "CBT workbook for anxious teens... high price for the average reviews"
+      ],
+      "id": "99b3d87b-a4c0-49e7-b9f9-66292cc85459",
+      "type": "tactic",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:28:25.096085",
+      "last_seen": "2026-02-18T21:28:25.096085"
+    },
+    {
+      "name": "Enhance Content Value",
+      "description": "Add extra pages like introductions, tables of contents, and note sections to improve perceived value.",
+      "steps": [
+        "Include CBT therapy explanations",
+        "Add journal prompts",
+        "Customize layouts with Canva"
+      ],
+      "signals_used": [
+        "total_results",
+        "content_type"
+      ],
+      "tools_mentioned": [
+        "Canva",
+        "PDF editing"
+      ],
+      "thresholds": {
+        "total_results": 1000
+      },
+      "caveats": [
+        "Avoid overcomplicating layouts"
+      ],
+      "example_niches": [
+        "CBT anxiety journal"
+      ],
+      "source_quotes": [
+        "the more value that you're able to provide the better it would"
+      ],
+      "id": "0bfaf22a-2576-45d4-a297-ddc55551531c",
+      "type": "tactic",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:28:25.096085",
+      "last_seen": "2026-02-18T21:28:25.096085"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_competition_filter",
+      "condition": "If total results are under 1000 and BSR under 300,000 then prioritize",
+      "machine_rule": {
+        "field": "total_results",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "total results are under 1000 which is ideal"
+      ],
+      "id": "93629bec-1c98-41cf-bba9-744005c36190",
+      "type": "heuristic",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:27:50.700987",
+      "last_seen": "2026-02-18T21:27:50.700987"
+    },
+    {
+      "name": "Prioritize High-Scoring Keywords",
+      "condition": "If keyword score > 70 and total results < 1000, prioritize for content creation",
+      "machine_rule": {
+        "field": "keyword_score",
+        "op": "gt",
+        "value": 70
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "feeling better CBT workbook for teens... keyword names score of 84"
+      ],
+      "id": "c9f738c0-53d1-4d06-ae18-06de002ea993",
+      "type": "heuristic",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:28:25.096085",
+      "last_seen": "2026-02-18T21:28:25.096085"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon KDP allows non-medical therapeutic content with proper disclaimers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "include disclaimer stating not a physician/therapist"
+      ],
+      "id": "a98b8ffc-ca95-41ff-8dab-2bf6e8d2e3ae",
+      "type": "claim",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:27:50.700987",
+      "last_seen": "2026-02-18T21:27:50.700987"
+    },
+    {
+      "statement": "CBT workbooks targeting specific demographics (e.g., teens) show higher profitability due to lower competition.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "CBT workbook for anxious teens... high price for the average reviews"
+      ],
+      "id": "b008141b-0ea9-4cf2-a606-721a0784af7f",
+      "type": "claim",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:28:25.096085",
+      "last_seen": "2026-02-18T21:28:25.096085"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "THERAPY_TYPE + TARGET_AUDIENCE + CONTENT_FORMAT",
+      "example": "CBT + teens + workbook",
+      "description": "Combines therapeutic approach with specific audience and content type",
+      "why_it_works": "Leverages low competition niches with high demand for self-help tools",
+      "signals": [
+        "low review counts",
+        "specific therapeutic focus"
+      ],
+      "source_quotes": [
+        "CBT workbook for teens is our first keyword for the day"
+      ],
+      "id": "8bb51a44-19a7-427f-81fe-a66f599222f3",
+      "type": "niche_pattern",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:27:50.700987",
+      "last_seen": "2026-02-18T21:27:50.700987"
+    },
+    {
+      "pattern_template": "MENTAL_HEALTH_CONDITION + DEMOGRAPHIC",
+      "example": "anxiety + teens",
+      "description": "Target specific mental health issues combined with age groups for lower competition and higher demand.",
+      "why_it_works": "Niche specificity reduces competition while maintaining search volume",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "CBT workbook for anxious teens... total results are under 1000"
+      ],
+      "id": "7ecbea14-1a38-4466-b1c8-6dd03953908a",
+      "type": "niche_pattern",
+      "provenance": [
+        "Ml48j-ftphw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:28:25.096085",
+      "last_seen": "2026-02-18T21:28:25.096085"
+    }
+  ]
+}

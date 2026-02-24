@@ -1,0 +1,289 @@
+{
+  "source_type": "youtube",
+  "video_id": "0r6mA9UAPiQ",
+  "title": "What is BSR on Amazon? [Best Sellers Rank]",
+  "extracted_at": "2026-02-19T00:30:36.187398",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 12083,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "BSR Analysis for Product Research",
+      "description": "Use BSR to evaluate product competitiveness and identify top sellers by analyzing rank positions and review counts.",
+      "steps": [
+        "Use Chrome extensions like Helium 10 or DS Quickview to populate BSR data on search results",
+        "Compare BSR rankings across timeframes to track sales velocity",
+        "Prioritize products with high review counts and lower BSR numbers"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10",
+        "DS Quickview"
+      ],
+      "thresholds": {
+        "reviews_max": 5000,
+        "bsr_max": 13000
+      },
+      "caveats": [
+        "Suppression issues cause blank BSR entries requiring immediate action"
+      ],
+      "example_niches": [
+        "gift boxes for women"
+      ],
+      "source_quotes": [
+        "this is a great technique to use during product research because you can tell what is the top seller"
+      ],
+      "id": "50d05ef9-731a-4219-96fe-3791f4094d5d",
+      "type": "tactic",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:02.914682",
+      "last_seen": "2026-02-19T00:29:02.914682"
+    },
+    {
+      "name": "Monitor BSR and Adjust Category",
+      "description": "Track BSR performance and switch categories if sales are stagnant.",
+      "steps": [
+        "Check BSR for blank or low rankings",
+        "Identify mismatched categories",
+        "Request category change via Brand Registry"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Brand Registry"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Category changes may not immediately boost sales"
+      ],
+      "example_niches": [
+        "skincare sets"
+      ],
+      "source_quotes": [
+        "BSRs are not equal they are different based on the category they are in"
+      ],
+      "id": "014bb813-02c3-48f3-b613-257bd3b2146b",
+      "type": "tactic",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:44.511810",
+      "last_seen": "2026-02-19T00:29:44.511810"
+    },
+    {
+      "name": "bsr_algorithm",
+      "description": "Understanding BSR factors beyond unit sales",
+      "steps": [
+        "Analyze conversion rates",
+        "Track dollar value generated"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Algorithm remains opaque"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "it's a combination factor of a bunch of things including that ctr conversion rate unit count and profit"
+      ],
+      "id": "32beac01-389d-4199-b9c8-e61edab329d9",
+      "type": "tactic",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:30:36.186819",
+      "last_seen": "2026-02-19T00:30:36.186819"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold Heuristic",
+      "condition": "If median reviews are below 200, prioritize boosting product visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the ones with high reviews also are pretty good signal and indication"
+      ],
+      "id": "53bfbec1-dcfe-4045-b352-5ca3e49002f1",
+      "type": "heuristic",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:02.914682",
+      "last_seen": "2026-02-19T00:29:02.914682"
+    },
+    {
+      "name": "Category Impact Threshold",
+      "condition": "If BSR is above 50,000, category impact on sales is minimal",
+      "machine_rule": {
+        "field": "bsr_rank",
+        "op": "gte",
+        "value": 50000
+      },
+      "action": "skip",
+      "weight": 0.7,
+      "source_quotes": [
+        "if you're in like the hundreds and it wouldn't matter which category you're in"
+      ],
+      "id": "30e16605-37f0-428d-80c6-be44228073bc",
+      "type": "heuristic",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:44.511810",
+      "last_seen": "2026-02-19T00:29:44.511810"
+    },
+    {
+      "name": "review_threshold",
+      "condition": "If median_reviews less than 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it's a combination factor of a bunch of things including that ctr conversion rate unit count and profit"
+      ],
+      "id": "cf026f9d-c4a0-42f2-8587-34705ca1ea6d",
+      "type": "heuristic",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:30:36.186819",
+      "last_seen": "2026-02-19T00:30:36.186819"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR rankings exhibit exponential differences in sales velocity",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the closer you get to the top of the bsr those lower numbers the more exponential the cell's velocity becomes"
+      ],
+      "id": "1962da3b-b9a0-49f0-a492-cebfd84d147b",
+      "type": "claim",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:02.914682",
+      "last_seen": "2026-02-19T00:29:02.914682"
+    },
+    {
+      "statement": "BSR varies significantly by category",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "home goods versus 100 000 in grocery without a doubt the home goods one is moving significantly faster"
+      ],
+      "id": "b00ac046-d9a3-4fc0-8cce-984e6749de38",
+      "type": "claim",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:44.511810",
+      "last_seen": "2026-02-19T00:29:44.511810"
+    },
+    {
+      "statement": "BSR considers conversion rates and profit alongside sales volume",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's not purely based on just units being turned"
+      ],
+      "id": "605469f3-f4c1-4193-b522-46e7dcbc3018",
+      "type": "claim",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:30:36.186819",
+      "last_seen": "2026-02-19T00:30:36.186819"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "gift boxes for women + low BSR + high competition",
+      "description": "Identify niches where products face exponential sales velocity challenges despite low BSR rankings",
+      "why_it_works": "Highlights the need for targeted pricing and SEO optimization in highly competitive categories",
+      "signals": [
+        "low review counts",
+        "exponential BSR differences"
+      ],
+      "source_quotes": [
+        "the difference between say 50 000 and twenty five thousand totally different"
+      ],
+      "id": "a064deb3-1f69-416a-b529-238df4aee997",
+      "type": "niche_pattern",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:02.914682",
+      "last_seen": "2026-02-19T00:29:02.914682"
+    },
+    {
+      "pattern_template": "Product + Sales Struggle + Category Mismatch",
+      "example": "skincare set + stagnant sales + misclassified category",
+      "description": "Products in low-performing categories struggle to gain BSR traction",
+      "why_it_works": "Category-specific BSR dynamics create competitive advantages",
+      "signals": [
+        "low BSR",
+        "category misalignment"
+      ],
+      "source_quotes": [
+        "my item is not doing well at all in its current category"
+      ],
+      "id": "64b40a0e-3b7c-4acb-bc10-4d56d48b4ee7",
+      "type": "niche_pattern",
+      "provenance": [
+        "0r6mA9UAPiQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:29:44.511810",
+      "last_seen": "2026-02-19T00:29:44.511810"
+    }
+  ]
+}

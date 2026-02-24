@@ -1,0 +1,120 @@
+{
+  "source_type": "youtube",
+  "video_id": "-JjkVe9ZPgQ",
+  "title": "*NEW* Category Feature Publisher Rocket Tutorial",
+  "extracted_at": "2026-02-19T00:01:39.963098",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 3452,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Niche Category Selection",
+      "description": "Choose specific subcategories over broad niches to reduce competition and improve ranking potential",
+      "steps": [
+        "Select a niche (e.g., business and money)",
+        "Filter to specific categories (e.g., management and leadership)",
+        "Verify category relevance to book content"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid misrepresenting category relevance to avoid Amazon penalties"
+      ],
+      "example_niches": [
+        "business and money",
+        "management and leadership"
+      ],
+      "source_quotes": [
+        "instead of business and money you can select the management and leadership category"
+      ],
+      "id": "04502d97-eff3-4382-825a-d12de12c4720",
+      "type": "tactic",
+      "provenance": [
+        "-JjkVe9ZPgQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:01:39.962977",
+      "last_seen": "2026-02-19T00:01:39.962977"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Sales Target Benchmarking",
+      "condition": "If category sales targets are excessively high, prioritize alternative niches",
+      "machine_rule": {
+        "field": "sales_to_number_one",
+        "op": "gt",
+        "value": 2000
+      },
+      "action": "flag",
+      "weight": 0.7,
+      "source_quotes": [
+        "two thousand six hundred ninety seven copies of e-books to reach number one"
+      ],
+      "id": "14b0fd6f-d0a1-4ec7-8b6e-fc24fb530d35",
+      "type": "heuristic",
+      "provenance": [
+        "-JjkVe9ZPgQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:01:39.962977",
+      "last_seen": "2026-02-19T00:01:39.962977"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP rankings require 2,697 ebook sales to achieve #1 in the business and money category",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "two thousand six hundred ninety seven eBook copies sold in order to take that number one spot"
+      ],
+      "id": "6cb3702d-d80a-4ed7-8779-c82feea0d726",
+      "type": "claim",
+      "provenance": [
+        "-JjkVe9ZPgQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:01:39.962977",
+      "last_seen": "2026-02-19T00:01:39.962977"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "NICHES + COMPETITION + SALES_THRESHOLD",
+      "example": "business and money + high competition + 2,697 sales",
+      "description": "Identify niches with clear sales targets for ranking strategy",
+      "why_it_works": "Quantifies ranking difficulty for targeted publishing strategies",
+      "signals": [
+        "sales_to_number_one",
+        "bsr_max"
+      ],
+      "source_quotes": [
+        "two thousand six hundred ninety seven eBook copies sold"
+      ],
+      "id": "8f957973-e8ce-499b-bf23-b2cde57c2158",
+      "type": "niche_pattern",
+      "provenance": [
+        "-JjkVe9ZPgQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:01:39.962977",
+      "last_seen": "2026-02-19T00:01:39.962977"
+    }
+  ]
+}

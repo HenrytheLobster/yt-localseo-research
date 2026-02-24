@@ -1,0 +1,289 @@
+{
+  "source_type": "youtube",
+  "video_id": "3DZ30j4nxZo",
+  "title": "Find Your Most Profitable Category or Niche with the New Publisher Rocket Update!",
+  "extracted_at": "2026-02-18T23:00:31.236275",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 11781,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "category_insights_analysis",
+      "description": "Evaluate categories using Publisher Rocket's new insights tab to identify profitable niches with low competition and high growth potential.",
+      "steps": [
+        "Filter categories by Kindle/Audible",
+        "Check average indie price and publisher distribution",
+        "Analyze historical sales trends and category growth",
+        "Compare competition levels between large vs indie publishers"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count",
+        "category_growth"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 5000
+      },
+      "caveats": [
+        "Data may lag behind real-time market changes"
+      ],
+      "example_niches": [
+        "early learning children's ebooks"
+      ],
+      "id": "44640f5e-4883-4c46-80b0-9d7eb349d5ac",
+      "type": "tactic",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:20.267415",
+      "last_seen": "2026-02-18T22:59:20.267415"
+    },
+    {
+      "name": "Historical Sales Analysis",
+      "description": "Use Publisher Rocket to analyze monthly sales trends and category performance over time",
+      "steps": [
+        "Search for categories like children's picture books",
+        "Compare monthly sales data (e.g., 199 vs 194 sales)",
+        "Identify uptrends or declines in sales patterns"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Data may be speculative during holiday periods"
+      ],
+      "example_niches": [
+        "children's picture books",
+        "activity books"
+      ],
+      "source_quotes": [
+        "look at this it looks like it might be coming back up"
+      ],
+      "id": "dbd39287-b87f-45a9-a8b9-4f5b626c8f92",
+      "type": "tactic",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:58.436372",
+      "last_seen": "2026-02-18T22:59:58.436372"
+    },
+    {
+      "name": "review threshold filtering",
+      "description": "identify niches with low review counts and high BSR for profitability",
+      "steps": [
+        "filter niches by review count",
+        "check BSR thresholds"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "when it fails to account for seasonal trends"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "be you're not ready for it yet then check out this video"
+      ],
+      "id": "7bf07681-5647-431c-b9a7-16afaa6eb270",
+      "type": "tactic",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:00:31.235897",
+      "last_seen": "2026-02-18T23:00:31.235897"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competition_filter",
+      "condition": "If a category has >85% large publisher dominance, it's highly competitive",
+      "machine_rule": {
+        "field": "large_publisher_percent",
+        "op": "gt",
+        "value": 85
+      },
+      "action": "penalize",
+      "weight": 0.8,
+      "source_quotes": [
+        "87 percent are large Publishers"
+      ],
+      "id": "d0798478-4a20-40fa-a912-db4a8c7229d3",
+      "type": "heuristic",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:20.267415",
+      "last_seen": "2026-02-18T22:59:20.267415"
+    },
+    {
+      "name": "Sales Trend Boost",
+      "condition": "If sales show a recent uptick despite overall decline, prioritize the niche",
+      "machine_rule": {
+        "field": "sales_trend",
+        "op": "gt",
+        "value": -10
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this might be the time to jump into this Niche"
+      ],
+      "id": "d2d15f82-f549-4dcf-9157-e395142f3941",
+      "type": "heuristic",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:58.436372",
+      "last_seen": "2026-02-18T22:59:58.436372"
+    },
+    {
+      "name": "review density heuristic",
+      "condition": "If median_reviews is less than 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "YouTube says is right up your alley"
+      ],
+      "id": "b481bcc3-1c1d-4c68-baf9-9f19230730ef",
+      "type": "heuristic",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:00:31.235897",
+      "last_seen": "2026-02-18T23:00:31.235897"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket now shows average indie book prices in categories",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average indie price"
+      ],
+      "id": "613461dd-246d-4ef9-a76f-31910a22c60e",
+      "type": "claim",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:20.267415",
+      "last_seen": "2026-02-18T22:59:20.267415"
+    },
+    {
+      "statement": "Categories with lower book age show better month-over-month sales",
+      "category": "platform_behavior",
+      "confidence": "high",
+      "source_quotes": [
+        "average amount of days since publication"
+      ],
+      "id": "ec20cbc7-c7bd-4ae8-9d4d-2d38958c6980",
+      "type": "claim",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:20.267415",
+      "last_seen": "2026-02-18T22:59:20.267415"
+    },
+    {
+      "statement": "Publisher Rocket provides historical sales data for KDP categories",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we now do in Publisher rocket"
+      ],
+      "id": "17a0815c-1549-4c04-a121-686dc41f20da",
+      "type": "claim",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:58.436372",
+      "last_seen": "2026-02-18T22:59:58.436372"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "EDUCATION + DEVELOPMENT + ACCESSIBILITY",
+      "example": "early learning children's ebooks",
+      "description": "Niche combining educational content with accessible formats for target audiences",
+      "why_it_works": "Balances high demand with lower competition from large publishers",
+      "signals": [
+        "kindle_unlimited_eligibility",
+        "low_large_publisher_percent"
+      ],
+      "source_quotes": [
+        "'Early learning children's ebooks... 49% are large Publishers'"
+      ],
+      "id": "d4df818a-65fd-482a-94ef-74a3cf059386",
+      "type": "niche_pattern",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:20.267415",
+      "last_seen": "2026-02-18T22:59:20.267415"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "children's picture books + basic concepts + holiday season",
+      "description": "Identify niches with specific educational themes and seasonal trends",
+      "why_it_works": "Combines targeted content with temporary demand spikes",
+      "signals": [
+        "low review counts",
+        "seasonal sales patterns"
+      ],
+      "source_quotes": [
+        "children's picture books for you know basic concepts"
+      ],
+      "id": "60953e29-6e5f-4981-b277-f77148b1ee83",
+      "type": "niche_pattern",
+      "provenance": [
+        "3DZ30j4nxZo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:59:58.436372",
+      "last_seen": "2026-02-18T22:59:58.436372"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "mGrq_Errnzs",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "low content",
+    "self-publish",
+    "paperback",
+    "category",
+    "competition"
+  ],
+  "transcript_word_count": 782,
+  "triaged_at": "2026-02-18T03:31:54.704046"
+}

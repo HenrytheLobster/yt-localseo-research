@@ -1,0 +1,221 @@
+{
+  "source_type": "youtube",
+  "video_id": "F_3J6pzMLBE",
+  "title": "How To Do KDP Keyword Research Using Publisher Rocket - Find Profitable Keywords EASILY",
+  "extracted_at": "2026-02-18T22:32:32.225894",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8775,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "publisher_rockets_keyword_search",
+      "description": "Use Publisher Rocket to identify high-value keywords with estimated searches and competitive metrics",
+      "steps": [
+        "Select target market (USA/UK/GERMANY)",
+        "Choose book format (physical books)",
+        "Enter broad keyword seed (e.g. 'riddle')",
+        "Analyze metrics: estimated searches, competitive score"
+      ],
+      "signals_used": [
+        "estimated_searches",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "estimated_searches_min": 855,
+        "competitive_score_max": 50
+      },
+      "caveats": [
+        "Conversion rates affect keyword viability"
+      ],
+      "example_niches": [
+        "riddles for kids",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "it will color code it and do all the maths and kind of the thinking for you"
+      ],
+      "id": "1e6accb7-729a-47f2-a9de-45b3047497b8",
+      "type": "tactic",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:59.006225",
+      "last_seen": "2026-02-18T22:31:59.006225"
+    },
+    {
+      "name": "Target Age-Specific Keywords",
+      "description": "Prioritize keywords with age ranges to narrow audience and improve conversion rates.",
+      "steps": [
+        "Use Publisher Rocket to filter keywords by age demographics",
+        "Focus on keywords with green/yellow color indicators",
+        "Combine main keyword with secondary related terms for SEO"
+      ],
+      "signals_used": [
+        "conversion_rate",
+        "competition_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competition_score": 60,
+        "search_volume": 500
+      },
+      "caveats": [
+        "Avoid overly broad keywords with high competition"
+      ],
+      "example_niches": [
+        "children's riddles",
+        "teen brain teasers"
+      ],
+      "source_quotes": [
+        "'riddles for kids ages 12 to 14' is a better target than generic riddles'"
+      ],
+      "id": "de2e6e44-a0af-4556-9b89-ad57a952fd92",
+      "type": "tactic",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:32:32.225784",
+      "last_seen": "2026-02-18T22:32:32.225784"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "color_code_priority",
+      "condition": "If keyword shows green color code, prioritize for publishing",
+      "machine_rule": {
+        "field": "color_code",
+        "op": "eq",
+        "value": "green"
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "green obviously meaning good"
+      ],
+      "id": "9ba8086f-7897-4a87-993c-41c06111b548",
+      "type": "heuristic",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:59.006225",
+      "last_seen": "2026-02-18T22:31:59.006225"
+    },
+    {
+      "name": "Color-Coded Keyword Selection",
+      "condition": "If keyword has green/yellow color coding, prioritize for SEO",
+      "machine_rule": {
+        "field": "color_code",
+        "op": "lt",
+        "value": [
+          "green",
+          "yellow"
+        ]
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'don't worry about raw numbers, go off the color'"
+      ],
+      "id": "28978388-deed-46ab-9dfe-0bef365851c4",
+      "type": "heuristic",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:32:32.225784",
+      "last_seen": "2026-02-18T22:32:32.225784"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket costs $97 for one-time payment",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it is just a one-time 97 payment"
+      ],
+      "id": "3e9c9a1f-8d0a-4f1b-ab37-0633d845abac",
+      "type": "claim",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:59.006225",
+      "last_seen": "2026-02-18T22:31:59.006225"
+    },
+    {
+      "statement": "Publisher Rocket accounts for conversion rates in keyword analysis",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'Publisher Rocket does take into account the conversion rate'"
+      ],
+      "id": "bfa4dc1e-d908-4c85-8d11-1393123f037b",
+      "type": "claim",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:32:32.225784",
+      "last_seen": "2026-02-18T22:32:32.225784"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "CONTENT_TYPE + AUDIENCE + NICHED_TOPIC",
+      "example": "riddles book + kids ages 12-14 + Christian themes",
+      "description": "Combine broad keywords with specific audience constraints",
+      "why_it_works": "Balances search volume with conversion potential",
+      "signals": [
+        "estimated_searches",
+        "conversion_rate"
+      ],
+      "source_quotes": [
+        "books ranking for the keyword riddles for kids don't convert as well"
+      ],
+      "id": "894da8bc-3e77-4690-a258-cd57f846c2f6",
+      "type": "niche_pattern",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:31:59.006225",
+      "last_seen": "2026-02-18T22:31:59.006225"
+    },
+    {
+      "pattern_template": "AGE_RANGE + CONTENT_TYPE + EDUCATIONAL_FOCUS",
+      "example": "12-14 years + riddles + problem-solving",
+      "description": "Target specific age groups with educational content for better conversion",
+      "why_it_works": "Narrows audience while maintaining search volume",
+      "signals": [
+        "low competition",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "'riddles for kids age 12 to 14' is a better target than generic riddles"
+      ],
+      "id": "c96e4446-9e95-489e-8648-9a56659ca1e6",
+      "type": "niche_pattern",
+      "provenance": [
+        "F_3J6pzMLBE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:32:32.225784",
+      "last_seen": "2026-02-18T22:32:32.225784"
+    }
+  ]
+}

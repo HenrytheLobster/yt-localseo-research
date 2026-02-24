@@ -1,0 +1,254 @@
+{
+  "source_type": "youtube",
+  "video_id": "dHRJJAvrT5k",
+  "title": "Amazon KDP Keyword Research (Book Bolt Tutorial 2023)",
+  "extracted_at": "2026-02-18T12:47:27.755589",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10314,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Book Bolt Keyword Filtering",
+      "description": "Use Book Bolt to identify keywords with high search volume and low competition by skipping to lower search volume pages (e.g., ~4,000) and analyzing Amazon competition results.",
+      "steps": [
+        "Search Book Bolt with broad keywords (e.g., 'coloring book')",
+        "Filter to pages with ~4,000 monthly search volume",
+        "Check Amazon competition results for low competition",
+        "Analyze top sellers for title/description trends"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition_score",
+        "BSR"
+      ],
+      "tools_mentioned": [
+        "Book Bolt",
+        "Amazon"
+      ],
+      "thresholds": {
+        "search_volume_min": 4000,
+        "competition_max": 1000
+      },
+      "caveats": [
+        "High search volume keywords may still face intense competition"
+      ],
+      "example_niches": [
+        "snake coloring book",
+        "flower-themed planners"
+      ],
+      "source_quotes": [
+        "'anything above 5 6,000 sometimes the competition can be really really crazy'"
+      ],
+      "id": "75463bd2-deec-46a9-aff9-503af8ca420c",
+      "type": "tactic",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:54.103620",
+      "last_seen": "2026-02-18T12:46:54.103620"
+    },
+    {
+      "name": "Competitor Analysis",
+      "description": "Analyze similar products using Publisher Rocket to identify keyword trends and competition",
+      "steps": [
+        "Search for keywords in the 'products' section",
+        "Check keyword counts and related keywords",
+        "Review product descriptions and A+ content"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "When keyword competition is too high"
+      ],
+      "example_niches": [
+        "coloring books",
+        "puzzle books"
+      ],
+      "source_quotes": [
+        "you can put in the keyword and the category so again uh snake into there for coloring book"
+      ],
+      "id": "b61315e6-bfb9-4ea5-bb8b-1fefbf235a82",
+      "type": "tactic",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:47:27.755489",
+      "last_seen": "2026-02-18T12:47:27.755489"
+    },
+    {
+      "name": "Niche Review Analysis",
+      "description": "Evaluate customer feedback to identify content preferences and avoid common pitfalls",
+      "steps": [
+        "Check reviews for recurring themes",
+        "Note what buyers appreciate",
+        "Identify features to avoid"
+      ],
+      "signals_used": [
+        "review_count",
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Biased reviews may skew insights"
+      ],
+      "example_niches": [
+        "educational coloring books"
+      ],
+      "source_quotes": [
+        "look at the reviews because the reviews is going to give you what people like about the book"
+      ],
+      "id": "b0ae90a4-852b-454e-a85f-82df5ad03408",
+      "type": "tactic",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:47:27.755489",
+      "last_seen": "2026-02-18T12:47:27.755489"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Search Volume vs. Competition Balance",
+      "condition": "If search volume exceeds 4,000 and competition is under 1,000, prioritize the keyword",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gte",
+        "value": 4000
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'you can probably compete for this'"
+      ],
+      "id": "5141382e-93fd-44ba-827c-c32222e40ce8",
+      "type": "heuristic",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:54.103620",
+      "last_seen": "2026-02-18T12:46:54.103620"
+    },
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median reviews are below 200, prioritize keywords with high engagement",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "people always tend to Reby them whether it's Coloring Books"
+      ],
+      "id": "8378953c-6cb5-4f43-b685-1b2b98edd3da",
+      "type": "heuristic",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:47:27.755489",
+      "last_seen": "2026-02-18T12:47:27.755489"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Top-selling coloring books often include 'flowers' in titles despite not being strictly flower-themed",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "'you're seeing a lot of colorful stuff'"
+      ],
+      "id": "b3a2b323-2291-4397-8304-5337f0c74e26",
+      "type": "claim",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:54.103620",
+      "last_seen": "2026-02-18T12:46:54.103620"
+    },
+    {
+      "statement": "Medium-content books generate passive income through repeat purchases",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it turns to passive income which is I think what we're all kind of after here"
+      ],
+      "id": "ff2b688c-a785-4f02-97a9-1f90da8e73a5",
+      "type": "claim",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:47:27.755489",
+      "last_seen": "2026-02-18T12:47:27.755489"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "THRESHOLD + TREND + NICHING",
+      "example": "coloring books + flower motifs + specific demographics",
+      "description": "Leverage trending terms (e.g., 'flowers') in niche markets with lower competition",
+      "why_it_works": "Combines broad search volume with specific audience targeting",
+      "signals": [
+        "low review counts",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "'see a lot of these are including flowers in the title'"
+      ],
+      "id": "5778bb08-1060-4eef-9d0e-7688f1fd97ae",
+      "type": "niche_pattern",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:46:54.103620",
+      "last_seen": "2026-02-18T12:46:54.103620"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with unique constraints",
+      "why_it_works": "Niche constraints create underserved markets",
+      "signals": [
+        "low review counts",
+        "specific BSR ranges"
+      ],
+      "source_quotes": [
+        "people will Reby the same type of book from someone else as long as it's good"
+      ],
+      "id": "2d2052ce-112a-4cea-bc1d-3168f4f11dbe",
+      "type": "niche_pattern",
+      "provenance": [
+        "dHRJJAvrT5k"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:47:27.755489",
+      "last_seen": "2026-02-18T12:47:27.755489"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "source_type": "youtube",
+  "video_id": "ncvSjt5k3Pc",
+  "title": "How To Use Helium 10 To Find Keywords For KDP Low Content Books",
+  "extracted_at": "2026-02-18T22:24:20.324935",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 13829,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Helium 10 X-ray Analysis",
+      "description": "Use Helium 10's X-ray tool to analyze competitor products and extract keywords for KDP low content books.",
+      "steps": [
+        "Install Helium 10 Chrome extension and sign in",
+        "Use X-ray tool to research Amazon products",
+        "Analyze BSR, price, reviews, and ACIN data"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10",
+        "Cerebro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Free version limits async requests to 2/day"
+      ],
+      "example_niches": [
+        "weight loss planner"
+      ],
+      "source_quotes": [
+        "it gives you the total revenue for that particular keyword all those products the average revenue the average bsr the average price the average reviews"
+      ],
+      "id": "87852750-454d-41cc-93c8-f98d7cee68b7",
+      "type": "tactic",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:21:43.031943",
+      "last_seen": "2026-02-18T22:21:43.031943"
+    },
+    {
+      "name": "Bulk Keyword Search with Helium 10",
+      "description": "Use Helium 10's bulk search feature to identify high-volume, low-competition keywords for KDP books.",
+      "steps": [
+        "Log into Helium 10 and run multiple keyword searches simultaneously.",
+        "Filter results by search volume (minimum 100) and competition (under 1,000).",
+        "Exclude trademarked terms using the 'exclude' feature.",
+        "Analyze organic rank and cerebral score for keyword relevance."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Verify trademarks via Helium 10's trademark database"
+      ],
+      "example_niches": [
+        "weight loss planners",
+        "diabetes tracking journals"
+      ],
+      "source_quotes": [
+        "we want a search volume of a minimum of a hundred and then we can also go to advanced searches and we don't want to see any competing products of more than a thousand"
+      ],
+      "id": "815cc26a-a5e2-4417-bb9f-934c79d3479c",
+      "type": "tactic",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:23:47.297108",
+      "last_seen": "2026-02-18T22:23:47.297108"
+    },
+    {
+      "name": "Keyword Niche Subdivision",
+      "description": "Identify specific niches within broad categories by combining different tracking aspects like calories, carbs, or fasting.",
+      "steps": [
+        "Filter keywords by competition and search volume",
+        "Adjust thresholds for minimum search volume and competing products",
+        "Create sub-niches based on tracking goals"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual adjustment of filters for optimal results"
+      ],
+      "example_niches": [
+        "weight loss journal and planner 2021",
+        "keto logs"
+      ],
+      "source_quotes": [
+        "you can niche frost niche sub niche niche write down all the different ways"
+      ],
+      "id": "36894b49-ae86-48d8-9f59-1bd6f14972f8",
+      "type": "tactic",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:24:20.324796",
+      "last_seen": "2026-02-18T22:24:20.324796"
+    },
+    {
+      "name": "Competitor Product Analysis",
+      "description": "Evaluate competing products to identify gaps and opportunities for unique keyword targeting.",
+      "steps": [
+        "Check competing products for keyword variations",
+        "Look for untapped niches like undated calendars",
+        "Combine keywords with specific tracking goals"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May require additional market research for validation"
+      ],
+      "example_niches": [
+        "daily workout journal",
+        "blood pressure tracker"
+      ],
+      "source_quotes": [
+        "you could put an undated calendar or diary in there"
+      ],
+      "id": "e4b152d6-e6d8-4970-8289-95b0e4086bdf",
+      "type": "tactic",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:24:20.324796",
+      "last_seen": "2026-02-18T22:24:20.324796"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we can actually see now so the beauty of using helium 10 is one of the tools that we're going to look at today"
+      ],
+      "id": "509aa285-2b2b-4b8f-9b74-81656d47daf1",
+      "type": "heuristic",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:21:43.031943",
+      "last_seen": "2026-02-18T22:21:43.031943"
+    },
+    {
+      "name": "Competitor Threshold Rule",
+      "condition": "If competition is less than 1,000, prioritize keywords",
+      "machine_rule": {
+        "field": "competition",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we don't want to see any competing products of more than a thousand"
+      ],
+      "id": "d4cb1a20-df1a-49f3-87ff-32dfb6f0b371",
+      "type": "heuristic",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:23:47.297108",
+      "last_seen": "2026-02-18T22:23:47.297108"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP low content books cannot compete with hardcover books on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we can't do hardback as of yet nor can we do like this moleskin look"
+      ],
+      "id": "1552415d-c42f-4b3d-b59d-c23e676cb389",
+      "type": "claim",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:21:43.031943",
+      "last_seen": "2026-02-18T22:21:43.031943"
+    },
+    {
+      "statement": "New KDP books can achieve high cerebral scores and search volumes",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it is a new book because this came out 30th of december of 2020 and then there's 69 sponsored keywords again is recommending different books that frequently brought together and that's the one we've just had a look at again word frequency so we've got 655 words to go through again there's a lot of competition on some of these five thousand three thousand five six that one's not got a lot and it's also got a high cerebral score\u2026"
+      ],
+      "id": "c2742064-22ea-456f-ae68-f2b5e0b7cd63",
+      "type": "claim",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:23:47.297108",
+      "last_seen": "2026-02-18T22:23:47.297108"
+    },
+    {
+      "statement": "Helium 10 can be used for KDP keyword research, though compatibility with KDP is still being tested.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "i don't know if you can use with keto er keita with kdp yet"
+      ],
+      "id": "bb4a7468-9ba6-43db-a4e6-60429e486e55",
+      "type": "claim",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:24:20.324796",
+      "last_seen": "2026-02-18T22:24:20.324796"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific demographics with niche constraints for low-content book sales",
+      "why_it_works": "Leverages evergreen niches with seasonal search volume fluctuations",
+      "signals": [
+        "low review counts",
+        "seasonal search trends"
+      ],
+      "source_quotes": [
+        "weight loss is an evergreen product it has peaks and troughs"
+      ],
+      "id": "e0afc9ab-6967-4219-9a4e-6c1ed2576d9a",
+      "type": "niche_pattern",
+      "provenance": [
+        "ncvSjt5k3Pc"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:21:43.031943",
+      "last_seen": "2026-02-18T22:21:43.031943"
+    }
+  ]
+}

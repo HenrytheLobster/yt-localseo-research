@@ -1,0 +1,192 @@
+{
+  "source_type": "youtube",
+  "video_id": "hUfEjDQxD8U",
+  "title": "I Tried Amazon KDP For 30 Days\u2026 Here\u2019s How Much I Made",
+  "extracted_at": "2026-02-18T04:47:20.815006",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10957,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Sub-Niche Focus",
+      "description": "Prioritize specific sub-niches to avoid competition and leverage targeted audiences.",
+      "steps": [
+        "Upload 3 books/day initially due to KDP's spam prevention limit",
+        "Wait 30 days for organic ranking before expecting sales",
+        "Publish 7+ books in a single niche to build momentum"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competition spikes when niche becomes popular"
+      ],
+      "example_niches": [
+        "word search puzzles"
+      ],
+      "source_quotes": [
+        "'You need to go into sub niches... you can't just create big general things'"
+      ],
+      "id": "7c03c4ee-9a7e-489c-9e93-0489d9b27966",
+      "type": "tactic",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:46:47.245477",
+      "last_seen": "2026-02-18T04:46:47.245477"
+    },
+    {
+      "name": "underserved_niche_research",
+      "description": "Identify niches with high search volume and low competition using Amazon search data tools",
+      "steps": [
+        "Use Book Bolt to gather Amazon search data",
+        "Filter results by competition score (A-rated)",
+        "Check monthly search volume and estimated sales"
+      ],
+      "signals_used": [
+        "competition_score",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Book Bolt"
+      ],
+      "thresholds": {
+        "competition_score": "A",
+        "search_volume_min": 2000
+      },
+      "caveats": [
+        "Requires ongoing market validation"
+      ],
+      "example_niches": [
+        "Alaska-themed word searches",
+        "Army-themed word searches"
+      ],
+      "source_quotes": [
+        "You can't just create big general things on marketplaces... competing with a ton of people."
+      ],
+      "id": "33b19693-8e75-4ba8-b972-646670bd86de",
+      "type": "tactic",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:47:20.814832",
+      "last_seen": "2026-02-18T04:47:20.814832"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competition_score_heuristic",
+      "condition": "If competition score is A-rated then prioritize",
+      "machine_rule": {
+        "field": "competition_score",
+        "op": "eq",
+        "value": "A"
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "This is an underserved niche because it has an A-rated competition score."
+      ],
+      "id": "0389c558-caeb-4422-871e-ceaafc3a5de5",
+      "type": "heuristic",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:47:20.814832",
+      "last_seen": "2026-02-18T04:47:20.814832"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP accounts require 30+ days of organic ranking before generating measurable sales",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'we only actually got one sale' in first 30 days"
+      ],
+      "id": "e849252f-230a-4f47-9b28-996750d7dfb6",
+      "type": "claim",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:46:47.245477",
+      "last_seen": "2026-02-18T04:46:47.245477"
+    },
+    {
+      "statement": "General product categories like blank notebooks face high competition on Amazon",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "Everyone else who's a seller on that platform has already thought of that idea..."
+      ],
+      "id": "a54e93e1-eb8f-4aaa-bffd-88fac1ad1bff",
+      "type": "claim",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:47:20.814832",
+      "last_seen": "2026-02-18T04:47:20.814832"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "word search puzzles + educational needs + niche audience",
+      "description": "Target specific sub-niches with low competition and high search volume",
+      "why_it_works": "Reduces competition while maintaining search visibility",
+      "signals": [
+        "low review counts",
+        "rising BSR"
+      ],
+      "source_quotes": [
+        "'this is just such a strong niche'"
+      ],
+      "id": "ac539193-11eb-4b1b-804f-b9044a197da7",
+      "type": "niche_pattern",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:46:47.245477",
+      "last_seen": "2026-02-18T04:46:47.245477"
+    },
+    {
+      "pattern_template": "THRESHOLD_THEME + PRODUCT_TYPE",
+      "example": "Alaska-themed word searches",
+      "description": "Combine specific geographic themes with popular product formats",
+      "why_it_works": "Creates unique intersections with low existing competition",
+      "signals": [
+        "low_review_counts",
+        "high_search_volume"
+      ],
+      "source_quotes": [
+        "Alaska-themed word searches... almost 4,000 people per month searching"
+      ],
+      "id": "3a72bc42-a8b8-489f-a6ca-f936caf41b8a",
+      "type": "niche_pattern",
+      "provenance": [
+        "hUfEjDQxD8U"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:47:20.814832",
+      "last_seen": "2026-02-18T04:47:20.814832"
+    }
+  ]
+}

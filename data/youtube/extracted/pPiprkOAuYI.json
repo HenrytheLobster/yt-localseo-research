@@ -1,0 +1,222 @@
+{
+  "source_type": "youtube",
+  "video_id": "pPiprkOAuYI",
+  "title": "\ud83d\udd25 Hot 5 KDP DOG BREED Niches - Amazon KDP Niche research for low content books \u201cKDP\" (Amazon)",
+  "extracted_at": "2026-02-18T20:11:51.392470",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9543,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "dog breed coloring books",
+      "description": "Create niche-specific coloring books targeting specific dog breeds with branded covers and simple interiors.",
+      "steps": [
+        "Use free images from pixabay.com for dog breed visuals",
+        "Focus on keywords like 'bulldog coloring book' in titles",
+        "Repurpose the same interior layout across multiple breed niches",
+        "Publish 100+ books per month for maximum exposure"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "pixabay.com"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Books may not sell immediately but could gain traction later"
+      ],
+      "example_niches": [
+        "bulldog",
+        "beagle",
+        "boxer",
+        "maltese"
+      ],
+      "source_quotes": [
+        "you can put them inside and that makes it the book that makes it a coloring book",
+        "you can use one interior to do all this and take a different nature and get different edges"
+      ],
+      "id": "1e1ab271-a5db-4dbf-986b-57534a40709d",
+      "type": "tactic",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:21.105834",
+      "last_seen": "2026-02-18T20:11:21.105834"
+    },
+    {
+      "name": "multi-niche interior reuse",
+      "description": "Use a single interior layout across multiple niches with different covers to maximize content reuse",
+      "steps": [
+        "Create one interior",
+        "Target different niches",
+        "Use varied covers for each niche"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Pixabay",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid duplicate covers for same book"
+      ],
+      "example_niches": [
+        "wild dog coloring books",
+        "maltese notebook"
+      ],
+      "source_quotes": [
+        "you can use one interior to publish up to ten thousand"
+      ],
+      "id": "193362c7-f4a5-4342-b358-e1cd8b1011b8",
+      "type": "tactic",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:51.392345",
+      "last_seen": "2026-02-18T20:11:51.392345"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low review niche targeting",
+      "condition": "If a niche has low review counts but high BSR potential, prioritize it",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you may do a book which is not selling this year for two years the book may not sell and it will pick up in the next 10 year"
+      ],
+      "id": "f3a7b41d-1b10-43ba-b3b9-5d4fa27e2a99",
+      "type": "heuristic",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:21.105834",
+      "last_seen": "2026-02-18T20:11:21.105834"
+    },
+    {
+      "name": "low review boost",
+      "condition": "If a niche has low review counts, prioritize boosting its visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you can do clarion books coloring pages for this"
+      ],
+      "id": "9e342365-5b1e-4eed-a49a-a5c83c00328c",
+      "type": "heuristic",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:51.392345",
+      "last_seen": "2026-02-18T20:11:51.392345"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP niches with minimal competition can achieve profitability through consistent content creation",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "niches that people don't even think about they exist that you can publish and make some more income"
+      ],
+      "id": "a4ded7c2-03fa-4b6f-bb98-fb518a27aa72",
+      "type": "claim",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:21.105834",
+      "last_seen": "2026-02-18T20:11:21.105834"
+    },
+    {
+      "statement": "Same interior can be used for 10,000+ books with different covers",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can use one interior to publish up to ten thousand"
+      ],
+      "id": "abef51ad-0f9b-44a3-9e58-0fd9cd87309e",
+      "type": "claim",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:51.392345",
+      "last_seen": "2026-02-18T20:11:51.392345"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "dog breed + lack of existing content + niche-specific demand",
+      "description": "Target underserved dog breeds with minimal competition through branded content products",
+      "why_it_works": "Combines emotional appeal of pets with low-content creation barriers",
+      "signals": [
+        "low review counts",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "niches that people don't even think about they exist that you can publish and make some more income"
+      ],
+      "id": "2ab1a98f-20f3-4bbc-8c53-44c9f68d291c",
+      "type": "niche_pattern",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:21.105834",
+      "last_seen": "2026-02-18T20:11:21.105834"
+    },
+    {
+      "pattern_template": "IDENTITY + PRODUCT + PRICE POINT",
+      "example": "wild dog + coloring book + $9.99",
+      "description": "Target specific dog breeds with premium-priced coloring books",
+      "why_it_works": "Niche specificity reduces competition while allowing higher pricing",
+      "signals": [
+        "low review counts",
+        "high price points"
+      ],
+      "source_quotes": [
+        "it's quite selling at a high price 9.99"
+      ],
+      "id": "016e484c-37ed-4263-82bc-06d5492a22ec",
+      "type": "niche_pattern",
+      "provenance": [
+        "pPiprkOAuYI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:11:51.392345",
+      "last_seen": "2026-02-18T20:11:51.392345"
+    }
+  ]
+}

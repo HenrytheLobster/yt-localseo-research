@@ -1,0 +1,119 @@
+{
+  "source_type": "youtube",
+  "video_id": "SoTFSysZnoU",
+  "title": "How to Analyze the Book Competition for your Niche and Keyword",
+  "extracted_at": "2026-02-18T22:17:19.286632",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 4548,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Competition Search Analysis",
+      "description": "Use KDP Rocket to identify top-ranking books for a keyword and assess competitiveness",
+      "steps": [
+        "Click competition search buttons in KDP Rocket",
+        "Analyze top books ranked for the keyword",
+        "Evaluate factors like BSR, reviews, and pricing"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDP Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Results may differ from Amazon due to lack of account/geo data"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Amazon bestseller rank or ABSR is one of the strongest indications of competitiveness"
+      ],
+      "id": "b51ac12d-6c8e-4b04-9d1f-ce6282aa7446",
+      "type": "tactic",
+      "provenance": [
+        "SoTFSysZnoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:17:19.286389",
+      "last_seen": "2026-02-18T22:17:19.286389"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Threshold",
+      "condition": "If median reviews are below 200, prioritize the keyword",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "If you see lots of books that are older than a year but have Amazon bestseller ranks better than 90-thousand then you know they've got a stronghold in the market"
+      ],
+      "id": "384569f7-1201-4ffb-aab6-570316db349d",
+      "type": "heuristic",
+      "provenance": [
+        "SoTFSysZnoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:17:19.286389",
+      "last_seen": "2026-02-18T22:17:19.286389"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP Rocket provides a pure list of top-ranking books without account-specific data",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "KDP Rocket isn't attached to any particular account or geolocation"
+      ],
+      "id": "9b2aad48-cda7-4da0-abeb-2d3172ff6ac3",
+      "type": "claim",
+      "provenance": [
+        "SoTFSysZnoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:17:19.286389",
+      "last_seen": "2026-02-18T22:17:19.286389"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target underserved niches with specific identity, problem, and constraint combinations",
+      "why_it_works": "Creates unique value propositions with lower competition",
+      "signals": [
+        "low review counts",
+        "age of books"
+      ],
+      "source_quotes": [
+        "If you notice that none of the books in this list have your keyword in them but have a lot of sales then this too could mean that the book has a popular author"
+      ],
+      "id": "0ae629cb-44c2-480f-b303-f9bd2519ddfe",
+      "type": "niche_pattern",
+      "provenance": [
+        "SoTFSysZnoU"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:17:19.286389",
+      "last_seen": "2026-02-18T22:17:19.286389"
+    }
+  ]
+}

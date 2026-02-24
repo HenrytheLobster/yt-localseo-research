@@ -1,0 +1,121 @@
+{
+  "source_type": "youtube",
+  "video_id": "HobPWVVyDCo",
+  "title": "Publisher Rocket Reviews: Unveiling the Ultimate Book Marketing Tool for KDP Authors",
+  "extracted_at": "2026-02-18T22:46:15.006408",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2826,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Niche Competition Analysis",
+      "description": "Use Publisher Rocket to evaluate niches by competition score, monthly searches, and sales data to identify lucrative markets",
+      "steps": [
+        "Input keywords like sci-fi fantasy",
+        "Analyze competition scores and estimated monthly searches",
+        "Review sales figures and pricing strategies",
+        "Check publication dates and page counts for competitiveness"
+      ],
+      "signals_used": [
+        "competition_score",
+        "monthly_searches"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "monthly_searches_min": 1000,
+        "competition_score_max": 50000
+      },
+      "caveats": [
+        "Data may not reflect real-time market changes"
+      ],
+      "example_niches": [
+        "sci-fi short stories",
+        "sci-fi alien romance"
+      ],
+      "source_quotes": [
+        "'if you were number one how much you could be making every month'"
+      ],
+      "id": "59687a53-116b-4405-a4eb-69bec859d309",
+      "type": "tactic",
+      "provenance": [
+        "HobPWVVyDCo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:46:15.006261",
+      "last_seen": "2026-02-18T22:46:15.006261"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Boost",
+      "condition": "If niche has fewer than 10 competitors, prioritize it",
+      "machine_rule": {
+        "field": "competitor_count",
+        "op": "lt",
+        "value": 10
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "'only two competitors to be beat to get in the top ten'"
+      ],
+      "id": "7fe20aad-9ff9-4bd1-af8b-a83c67bd305a",
+      "type": "heuristic",
+      "provenance": [
+        "HobPWVVyDCo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:46:15.006261",
+      "last_seen": "2026-02-18T22:46:15.006261"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket provides one-time purchase access to niche analysis tools",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'it's a one-time fee to buy it'"
+      ],
+      "id": "723bc3ed-7263-47fb-83cd-b7c6ab1e69da",
+      "type": "claim",
+      "provenance": [
+        "HobPWVVyDCo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:46:15.006261",
+      "last_seen": "2026-02-18T22:46:15.006261"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "GENRE + NICHED_SUBTOPIC + MARKET_SIGNAL",
+      "example": "sci-fi + alien romance + low competition",
+      "description": "Target specific subgenres with demonstrated market potential and minimal competition",
+      "why_it_works": "Balances audience demand with achievable ranking potential",
+      "signals": [
+        "low competition_score",
+        "moderate monthly_searches"
+      ],
+      "source_quotes": [
+        "'sci-fi alien Romance um what are people making here'"
+      ],
+      "id": "b8888c25-cf62-42b1-ab71-30c5020f329f",
+      "type": "niche_pattern",
+      "provenance": [
+        "HobPWVVyDCo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:46:15.006261",
+      "last_seen": "2026-02-18T22:46:15.006261"
+    }
+  ]
+}

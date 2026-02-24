@@ -1,0 +1,203 @@
+{
+  "source_type": "youtube",
+  "video_id": "mcfi_KR0fj4",
+  "title": "Struggling With Niche Research? Try This Free KDP Tool!",
+  "extracted_at": "2026-02-18T14:21:02.203158",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 10960,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Niche Research Tracker",
+      "description": "A free tool to filter profitable niches using sales rank, reviews, and earnings data from KD Spy and Publisher Rocket",
+      "steps": [
+        "Download the niche resource tracker from global self-publishing.com/resources",
+        "Input niche keywords into KD Spy and Publisher Rocket",
+        "Apply filters for sales rank <150,000, reviews <150, earnings >$1,000",
+        "Color-code results based on competitive score (green <50, yellow 50-75, red >75)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "earnings",
+        "competitive_score"
+      ],
+      "tools_mentioned": [
+        "KD Spy",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 150,
+        "bsr_max": 150000,
+        "earnings_min": 1000
+      },
+      "caveats": [
+        "Tools may not detect niche saturation accurately"
+      ],
+      "example_niches": [
+        "Death Planner",
+        "Teen Planner"
+      ],
+      "source_quotes": [
+        "we're looking at the number of books with under let's go this one first. Under 150 reviews"
+      ],
+      "id": "b0ffb139-10d1-43f1-8b35-9607371419f1",
+      "type": "tactic",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:30.162989",
+      "last_seen": "2026-02-18T14:20:30.162989"
+    },
+    {
+      "name": "keyword tracking",
+      "description": "use Publisher Rocket and KD Spy to gather data on niche keywords",
+      "steps": [
+        "search keywords on KD Spy and Publisher Rocket",
+        "filter results by sales rank and review count",
+        "exclude outliers in sales rank data",
+        "record average monthly earnings and competitive scores"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "KD Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 150,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "discrepancies between tools require manual verification"
+      ],
+      "example_niches": [
+        "death planner",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "we're looking for under 150 reviews"
+      ],
+      "id": "52152a82-5568-44f0-b972-7d7062fd31bb",
+      "type": "tactic",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:21:02.203003",
+      "last_seen": "2026-02-18T14:21:02.203003"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Competitive Score Filter",
+      "condition": "If competitive score >75 then penalize",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "gt",
+        "value": 75
+      },
+      "action": "penalize",
+      "weight": 0.6,
+      "source_quotes": [
+        "competitive score, we're aiming for 50 or under"
+      ],
+      "id": "b4e8faac-1701-4387-91ff-3851994627f9",
+      "type": "heuristic",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:30.162989",
+      "last_seen": "2026-02-18T14:20:30.162989"
+    },
+    {
+      "name": "review filter heuristic",
+      "condition": "If median reviews are less than 200, prioritize keywords",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we're looking for under 150 reviews"
+      ],
+      "id": "67fdb6b1-cdd3-4245-8238-1357da2c1f5a",
+      "type": "heuristic",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:21:02.203003",
+      "last_seen": "2026-02-18T14:21:02.203003"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket and KD Spy can identify niches with >$1,000 monthly earnings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average monthly earnings for Publisher Rocket, we want um greater than $1,000 per month"
+      ],
+      "id": "9751b0a2-71de-4179-81c9-934588674035",
+      "type": "claim",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:30.162989",
+      "last_seen": "2026-02-18T14:20:30.162989"
+    },
+    {
+      "statement": "Incognito mode prevents previous search results from affecting current research",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "remember to always use incognito mode"
+      ],
+      "id": "e34dcc29-033d-4f72-b63d-c07ca16f6c39",
+      "type": "claim",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:21:02.203003",
+      "last_seen": "2026-02-18T14:21:02.203003"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combines target audience identity with specific problems and constraints for niche viability",
+      "why_it_works": "Limits competition by adding specific constraints to broad identities",
+      "signals": [
+        "low review counts",
+        "specific problem keywords"
+      ],
+      "source_quotes": [
+        "we could comp potentially compete with books with under 150 reviews"
+      ],
+      "id": "877a17c1-9445-4ee2-a1af-8a75dadbafda",
+      "type": "niche_pattern",
+      "provenance": [
+        "mcfi_KR0fj4"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:30.162989",
+      "last_seen": "2026-02-18T14:20:30.162989"
+    }
+  ]
+}

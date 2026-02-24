@@ -1,0 +1,18 @@
+{
+  "video_id": "Q5PNtY7Qp7g",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.5,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "amazon",
+    "niche",
+    "keyword",
+    "helium",
+    "reviews",
+    "competition"
+  ],
+  "transcript_word_count": 2803,
+  "triaged_at": "2026-02-18T12:32:31.409327"
+}

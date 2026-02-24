@@ -1,0 +1,429 @@
+{
+  "source_type": "youtube",
+  "video_id": "g7g6IxXmAkI",
+  "title": "\ud83d\ude80 28 Profitable Notebooks + Workbooks KDP Keywords (Low Competition & High Demand!)",
+  "extracted_at": "2026-02-18T21:39:29.424353",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 83825,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Bible Study Notebook",
+      "description": "Create a notebook targeting Bible study and journaling with low competition and high demand.",
+      "steps": [
+        "Design a creative cover with floral elements, greenery, and gold/silver accents.",
+        "Use lined sheets or journaling prompts focused on Bible study themes.",
+        "Leverage faith-based niches like Christian, Catholic, or Islamic for keyword variations."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica",
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 500000
+      },
+      "caveats": [
+        "Requires niche-specific design to avoid saturation"
+      ],
+      "example_niches": [
+        "Christian scripture journaling"
+      ],
+      "source_quotes": [
+        "'it has a keyword new score of 40 by S publishing Titans... average price is $10.93'"
+      ],
+      "id": "2be8fb8c-5a1e-4f03-a58d-e339014069cd",
+      "type": "tactic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:37:41.704338",
+      "last_seen": "2026-02-18T21:37:41.704338"
+    },
+    {
+      "name": "Bird Watching Journal",
+      "description": "Target adult bird watching journals with moderate competition.",
+      "steps": [
+        "Focus on specific bird species or habitats for niche appeal.",
+        "Use high-quality visuals and structured prompts for observation.",
+        "Optimize for low-competition keywords like 'bird watching journal for adults'."
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout",
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 100000
+      },
+      "caveats": [
+        "May require additional value-adds like 30-day study guides"
+      ],
+      "example_niches": [
+        "bird watching for beginners"
+      ],
+      "source_quotes": [
+        "'bird watching journal for adults has a keyword new score 36... not super profitable yet'"
+      ],
+      "id": "2ca858e1-e80e-40c3-a1b9-ee061ae29303",
+      "type": "tactic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:37:41.704338",
+      "last_seen": "2026-02-18T21:37:41.704338"
+    },
+    {
+      "name": "subniching",
+      "description": "create books for specific subcategories within broader niches to improve sales potential",
+      "steps": [
+        "identify a main niche (e.g. bird watching journals)",
+        "subdivide by demographics (adults, genders, ages)",
+        "add thematic elements (vintage, minimalistic, educational)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "some subniches may not perform due to low demand"
+      ],
+      "example_niches": [
+        "bird watching for adults",
+        "nature journaling for kids"
+      ],
+      "source_quotes": [
+        "you can cut down on it by subn"
+      ],
+      "id": "0aba63aa-6c5c-468b-8163-b96ba6701a7b",
+      "type": "tactic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:15.960770",
+      "last_seen": "2026-02-18T21:38:15.960770"
+    },
+    {
+      "name": "nature_journaling_books",
+      "description": "Create step-by-step guides for teaching nature journaling to kids and adults with activity-based content",
+      "steps": [
+        "Develop a beginner's guide for educators/caregivers",
+        "Include 30-60 nature-based activities",
+        "Split into kid/adult focused parts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "price"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High BSR may require additional optimization"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "you could create a comprehensive book that goes step by step for beginners how to teach nature journaling"
+      ],
+      "id": "44522970-1986-4fb1-a0fb-c9eba49ecf42",
+      "type": "tactic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:53.647299",
+      "last_seen": "2026-02-18T21:38:53.647299"
+    },
+    {
+      "name": "gaslighting_workbook",
+      "description": "Develop trauma/recovery workbooks with journal prompts and activities for niche audiences",
+      "steps": [
+        "Target gaslighting recovery niche",
+        "Combine journal prompts with therapeutic activities",
+        "Use trauma recovery as a secondary theme"
+      ],
+      "signals_used": [
+        "total_results",
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 600,
+        "bsr_max": 500000
+      },
+      "caveats": [
+        "Contradictory niche scores require cross-tool validation"
+      ],
+      "example_niches": [
+        "gaslighting recovery"
+      ],
+      "source_quotes": [
+        "this is a very profitable niche... highly recommend you make a book or two about this keyword"
+      ],
+      "id": "c198a274-8e4c-470d-864d-2e61d005a7a9",
+      "type": "tactic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:53.647299",
+      "last_seen": "2026-02-18T21:38:53.647299"
+    },
+    {
+      "name": "Keyword Niche Targeting",
+      "description": "Leverage low competition keywords with specific demographics and product types",
+      "steps": [
+        "Use AI tools like Chat GBT for generating prompts",
+        "Create comprehensive workbooks with journal prompts and activities",
+        "Resize designs using Canva Pro for aesthetic notebooks",
+        "Develop part-two series for extended content"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "total_results"
+      ],
+      "tools_mentioned": [
+        "Self-Publishing Titans",
+        "Amazon Scout Pro",
+        "Grammarly.com"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 300000
+      },
+      "caveats": [
+        "Low keyword score may require content diversification"
+      ],
+      "example_niches": [
+        "Gaslighting Recovery Workbook",
+        "Composition Notebook for Girls 8-12"
+      ],
+      "source_quotes": [
+        "you could also use chat gbt as inspiration not to copy and paste but just go over ahead to chat gbt... ask that you are wanting to create a recovery workbook"
+      ],
+      "id": "7cf01cf9-45fd-4ff1-b8d4-2765d03bc273",
+      "type": "tactic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:39:29.424149",
+      "last_seen": "2026-02-18T21:39:29.424149"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If median reviews are below 200, prioritize keywords with lower BSR",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'average reviews average of 1,35... lower the better it is'"
+      ],
+      "id": "ba64c5b9-49a8-4d26-a5b6-cbcaae50eb67",
+      "type": "heuristic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:37:41.704338",
+      "last_seen": "2026-02-18T21:37:41.704338"
+    },
+    {
+      "name": "review_threshold_heuristic",
+      "condition": "If average reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average reviews are 588"
+      ],
+      "id": "5179af11-c0c2-4ed5-a3d5-6fa8c9a823d9",
+      "type": "heuristic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:15.960770",
+      "last_seen": "2026-02-18T21:38:15.960770"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are less than 200, then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average reviews are 1,428... average price is $14.89"
+      ],
+      "id": "ea3a80e6-6c13-4849-9d4b-3022f2272682",
+      "type": "heuristic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:53.647299",
+      "last_seen": "2026-02-18T21:38:53.647299"
+    },
+    {
+      "name": "Niche Validation Rule",
+      "condition": "If total results are under 1,000 and BSR under 300,000 then prioritize",
+      "machine_rule": {
+        "field": "total_results",
+        "op": "lt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "total results being under 1,000 and the average best seller rank being under 300,000 which is ideal"
+      ],
+      "id": "f5b41116-f02c-4cb5-be6a-f5bf2d6ef111",
+      "type": "heuristic",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:39:29.424149",
+      "last_seen": "2026-02-18T21:39:29.424149"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Combining Bible study with journaling creates a low-competition, high-demand keyword niche",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'it has a keyword new score of 40... total results are sitting at 1,091'"
+      ],
+      "id": "8a8d0b2a-9613-47d9-b6f7-3bea7922ceae",
+      "type": "claim",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:37:41.704338",
+      "last_seen": "2026-02-18T21:37:41.704338"
+    },
+    {
+      "statement": "subniching can improve bestseller rank for underperforming keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you never know when a book will sell"
+      ],
+      "id": "d8a862cb-9420-42c1-b2c0-317d3c4be860",
+      "type": "claim",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:15.960770",
+      "last_seen": "2026-02-18T21:38:15.960770"
+    },
+    {
+      "statement": "Workbooks with low BSR and high review counts show profitability",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average bestseller rank is under 300,000... average reviews are 1,428"
+      ],
+      "id": "cf45afbc-b5b9-4b73-afca-482f44d5f7fc",
+      "type": "claim",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:38:53.647299",
+      "last_seen": "2026-02-18T21:38:53.647299"
+    },
+    {
+      "statement": "Aesthetic notebooks for school with 8.5*11 sizing have low competition and high niche potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "aesthetic notebooks for school college ruled U 8.5 * 11 so this is basically a notebook keyword that revols around the aesthetic designs... total results under 1,000"
+      ],
+      "id": "6f06c059-0ce1-4120-ab9c-e3dd45262c04",
+      "type": "claim",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:39:29.424149",
+      "last_seen": "2026-02-18T21:39:29.424149"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Bible study + journaling prompts + Christian faith",
+      "description": "Target specific faith-based niches with tailored content",
+      "why_it_works": "Leverages low-competition keywords while satisfying niche demand",
+      "signals": [
+        "low review counts",
+        "BSR under 500k"
+      ],
+      "source_quotes": [
+        "'create a Christian... keyword as part of your seven keyword slots'"
+      ],
+      "id": "37f1b073-3bd3-4b0e-a554-b911b9b5c795",
+      "type": "niche_pattern",
+      "provenance": [
+        "g7g6IxXmAkI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:37:41.704338",
+      "last_seen": "2026-02-18T21:37:41.704338"
+    }
+  ]
+}

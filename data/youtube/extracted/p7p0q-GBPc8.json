@@ -1,0 +1,272 @@
+{
+  "source_type": "youtube",
+  "video_id": "p7p0q-GBPc8",
+  "title": "A $5,000 Per Month Niche for Children's Books on Amazon KDP | Niche Research Session",
+  "extracted_at": "2026-02-18T14:13:01.010607",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15209,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Publisher Rocket",
+      "description": "Analyze niche keywords using Publisher Rocket to assess market potential and competition",
+      "steps": [
+        "Use Incognito mode for unbiased Amazon search results",
+        "Identify top-performing children's book niches",
+        "Check keyword rankings and sales data",
+        "Evaluate competitive scores (green/amber/red)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Rankings may not always load reliably"
+      ],
+      "example_niches": [
+        "plane activity book"
+      ],
+      "source_quotes": [
+        "I'll have a look at the description find out what activities are involved"
+      ],
+      "id": "b3da3337-6e85-4ff9-b390-6eab2daa4ef5",
+      "type": "tactic",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:58.683011",
+      "last_seen": "2026-02-18T14:11:58.683011"
+    },
+    {
+      "name": "BSR & Reviews Filter",
+      "description": "Filter niches by sales rank and review count to identify viable opportunities",
+      "steps": [
+        "Use KD Spy to search niches",
+        "Sort by sales rank and remove outliers",
+        "Focus on BSR < 150,000 and reviews < 200"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KD Spy",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with high competition colors (red/yellow)"
+      ],
+      "example_niches": [
+        "dental hygiene books for kids"
+      ],
+      "source_quotes": [
+        "we want an average sales rank of 150,000 or less"
+      ],
+      "id": "f72a33a9-d32d-44c0-a97c-42bf313dc2f7",
+      "type": "tactic",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:12:29.563129",
+      "last_seen": "2026-02-18T14:12:29.563129"
+    },
+    {
+      "name": "Keyword Niche Validation",
+      "description": "Use Publisher Rocket to identify high-search, moderate-competition children's book niches",
+      "steps": [
+        "Search for dentist-related keywords",
+        "Filter by competitive score",
+        "Analyze top-ranking books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competing with established brands like Sesame Street"
+      ],
+      "example_niches": [
+        "dentist books for toddlers",
+        "personal hygiene for teens"
+      ],
+      "source_quotes": [
+        "Amazon searches is very high competitive score is moderate"
+      ],
+      "id": "42cf6e72-dc75-46a1-8f17-be3ce18f19af",
+      "type": "tactic",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:01.010367",
+      "last_seen": "2026-02-18T14:13:01.010367"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize niches with lower competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "there under 100 searches per month but good monthly uh earnings"
+      ],
+      "id": "c823617e-01fb-43f7-9042-df1a07072456",
+      "type": "heuristic",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:58.683011",
+      "last_seen": "2026-02-18T14:11:58.683011"
+    },
+    {
+      "name": "Review Threshold Rule",
+      "condition": "If median reviews are below 200, prioritize the niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we want to be competing with books of 150 reviews or 200 reviews or less"
+      ],
+      "id": "d9d0f291-6361-44cd-875f-e705b6ce3a92",
+      "type": "heuristic",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:12:29.563129",
+      "last_seen": "2026-02-18T14:12:29.563129"
+    },
+    {
+      "name": "Moderate Competition Boost",
+      "condition": "If competitive score is moderate then boost niche potential",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "competitive score is moderate"
+      ],
+      "id": "1cb97d54-3359-4ee9-9aaa-34da7e15a291",
+      "type": "heuristic",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:01.010367",
+      "last_seen": "2026-02-18T14:13:01.010367"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon search results can be influenced by previous search history",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's just important to use Incognito"
+      ],
+      "id": "7c230f55-b80c-4a60-8728-99e8f022d285",
+      "type": "claim",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:58.683011",
+      "last_seen": "2026-02-18T14:11:58.683011"
+    },
+    {
+      "statement": "KDP niches with BSR < 150,000 and reviews < 200 show potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we want an average sales rank of 150,000 or less"
+      ],
+      "id": "a1923674-95f9-4c59-88a3-1fbba7aac74a",
+      "type": "claim",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:12:29.563129",
+      "last_seen": "2026-02-18T14:12:29.563129"
+    },
+    {
+      "statement": "Dental health is an underserved niche in children's books",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's probably an area of Health that tends to be forgotten about but is highly important"
+      ],
+      "id": "c68572ae-64e1-4e74-a46c-3dc4fbaefdbf",
+      "type": "claim",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:13:01.010367",
+      "last_seen": "2026-02-18T14:13:01.010367"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "children + educational content + long shelf life",
+      "description": "Target specific audience needs with durable content",
+      "why_it_works": "Avoids seasonal trends by focusing on evergreen themes",
+      "signals": [
+        "low review counts",
+        "high BSR rankings"
+      ],
+      "source_quotes": [
+        "you'd rather have a book that has long-term uh capabilities"
+      ],
+      "id": "5a8a474a-980e-435b-a0ff-8f6f66aff29c",
+      "type": "niche_pattern",
+      "provenance": [
+        "p7p0q-GBPc8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:58.683011",
+      "last_seen": "2026-02-18T14:11:58.683011"
+    }
+  ]
+}

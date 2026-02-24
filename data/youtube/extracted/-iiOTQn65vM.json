@@ -1,0 +1,503 @@
+{
+  "source_type": "youtube",
+  "video_id": "-iiOTQn65vM",
+  "title": "9 Profitable Amazon KDP Keywords for the Factbook Niche | Low Competition + High Demand Ideas",
+  "extracted_at": "2026-02-18T21:01:59.770553",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 19101,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 4,
+    "claims": 5,
+    "niche_patterns": 4
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research with Tools",
+      "description": "Use Chrome extensions to analyze keyword performance and identify low competition, high demand keywords for KDP.",
+      "steps": [
+        "Install and configure Amazon Scout Pro and Publisher Rocket",
+        "Analyze keyword BSR, review counts, and keyword scores",
+        "Filter results based on competition and demand thresholds"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "keyword_score"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires accurate tool configuration for reliable data"
+      ],
+      "example_niches": [
+        "coding factbooks",
+        "children's coding books"
+      ],
+      "source_quotes": [
+        "we're going to use a total of four free Chrome extensions to analyze the results"
+      ],
+      "id": "06d255a0-591a-4d1a-ac29-eb809f88c200",
+      "type": "tactic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:00.272510",
+      "last_seen": "2026-02-18T21:00:00.272510"
+    },
+    {
+      "name": "Content Segmentation Strategy",
+      "description": "Create targeted content by dividing topics into age-specific or skill-level categories.",
+      "steps": [
+        "Identify target audience (e.g., children 8-12, beginners)",
+        "Structure content around sub-niches (e.g., Python, Linux)",
+        "Include educational value with tips/tricks"
+      ],
+      "signals_used": [
+        "BSR",
+        "content_type"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "bsr_max": 100000
+      },
+      "caveats": [
+        "Requires market validation of sub-niche demand"
+      ],
+      "example_niches": [
+        "coding for kids",
+        "beginner Python guides"
+      ],
+      "source_quotes": [
+        "we can make the book for children we can make the book for adults"
+      ],
+      "id": "bc5ecf51-fa8d-4602-85cd-e7b1c14a595a",
+      "type": "tactic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:00.272510",
+      "last_seen": "2026-02-18T21:00:00.272510"
+    },
+    {
+      "name": "Subniche Targeting",
+      "description": "Focus on specific age groups (children 8-12, adults) within the factbook niche to differentiate content structure and audience.",
+      "steps": [
+        "Define target audience",
+        "Adjust content layout",
+        "Select age-appropriate topics"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "niche_score"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires content customization for subniche"
+      ],
+      "example_niches": [
+        "children's environmental facts",
+        "adult tech facts"
+      ],
+      "source_quotes": [
+        "the best age is to start from 8 to 12 years old"
+      ],
+      "id": "86713c92-2312-42af-9893-e2664b3cc8f0",
+      "type": "tactic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:34.892712",
+      "last_seen": "2026-02-18T21:00:34.892712"
+    },
+    {
+      "name": "Long-Tail Keyword Optimization",
+      "description": "Leverage specific keywords with lower competition and higher demand for factbook niches.",
+      "steps": [
+        "Identify long-tail keywords",
+        "Use as subtitle for main title",
+        "Match target audience"
+      ],
+      "signals_used": [
+        "niche_score",
+        "total_results"
+      ],
+      "tools_mentioned": [
+        "Amazon Scout Pro"
+      ],
+      "thresholds": {
+        "total_results": 1000,
+        "niche_score": 6
+      },
+      "caveats": [
+        "Avoid sponsored books in analysis"
+      ],
+      "example_niches": [
+        "unknown facts for kids",
+        "coding basics for children"
+      ],
+      "source_quotes": [
+        "beautiful long tail keyword that has everything we need to know"
+      ],
+      "id": "2142f317-f9f3-452b-88d4-8af59993309c",
+      "type": "tactic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:34.892712",
+      "last_seen": "2026-02-18T21:00:34.892712"
+    },
+    {
+      "name": "keyword diversification",
+      "description": "Create multiple books within a niche to diversify sales and reduce reliance on single keywords",
+      "steps": [
+        "Identify a core keyword with strong metrics",
+        "Develop complementary products (workbooks, activity books)",
+        "Leverage free trial resources for cover/interior assets"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "keyword_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Amazon SC Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid over-optimization for single keywords"
+      ],
+      "example_niches": [
+        "kids' educational books"
+      ],
+      "source_quotes": [
+        "create a book that fulfills the promise of the title and move on to creating the next book"
+      ],
+      "id": "e47e5d47-4edf-4120-b79e-f9c6f72d8995",
+      "type": "tactic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:07.795551",
+      "last_seen": "2026-02-18T21:01:07.795551"
+    },
+    {
+      "name": "Leverage Existing Factbook Titles",
+      "description": "Add high-demand keywords to existing factbook titles or create new books targeting niche topics with low competition.",
+      "steps": [
+        "Add the keyword to the seven keyword slots of existing factbook titles",
+        "Create a new book featuring the exact topic (e.g., '100 things to know about planet Earth')",
+        "Opt for Kindle Select to enable royalty earnings without print costs"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent content quality to maintain engagement"
+      ],
+      "example_niches": [
+        "factbook"
+      ],
+      "source_quotes": [
+        "you can adapt the same strategies that I've talked about which includes if you currently have any sort of Factbook in your KDP portfolio go ahead and add this to the seven keyword slots"
+      ],
+      "id": "63471bfb-3e65-4419-a846-be86fa9b9c9f",
+      "type": "tactic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:59.770415",
+      "last_seen": "2026-02-18T21:01:59.770415"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Signal",
+      "condition": "If keyword BSR is below 100,000 and review count under 200, prioritize",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "lt",
+        "value": 100000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "total results under 1,000 BSR is also within that 400,000 range"
+      ],
+      "id": "29aeec67-96fe-4041-8ce3-9614bcbc1a01",
+      "type": "heuristic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:00.272510",
+      "last_seen": "2026-02-18T21:00:00.272510"
+    },
+    {
+      "name": "BSR-Review Correlation",
+      "condition": "If BSR exceeds 100,000 but reviews are above $200, prioritize content quality over ranking",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "gt",
+        "value": 100000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the best seller rank is 4269 54 which is within that 400,000 range"
+      ],
+      "id": "a046b9a3-5eee-4687-b275-f43bfcceaa4b",
+      "type": "heuristic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:34.892712",
+      "last_seen": "2026-02-18T21:00:34.892712"
+    },
+    {
+      "name": "review_volume_heuristic",
+      "condition": "If median reviews are less than 200, prioritize keywords with higher review counts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average reviews are 1,845 which are much more larger than the total reviews"
+      ],
+      "id": "1f8430f2-763a-46f9-9121-3aa1eedc3493",
+      "type": "heuristic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:07.795551",
+      "last_seen": "2026-02-18T21:01:07.795551"
+    },
+    {
+      "name": "Review-Driven Optimization",
+      "condition": "If median reviews are below 200, prioritize keywords with high engagement potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average reviews are whooping 358 because the engagement for these kinds of high content books are quite high"
+      ],
+      "id": "26aa9cf8-00e2-47e5-ab3b-9f13b7a39746",
+      "type": "heuristic",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:59.770415",
+      "last_seen": "2026-02-18T21:01:59.770415"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The keyword '100 things to know about coding' has a keyword score of 9/10 on Amazon Scout Pro",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we have a really good keyword new score of Number Nine by Amazon SC program extension"
+      ],
+      "id": "f0dbb0b9-d2f5-488a-b5ef-9a169c7cfa2e",
+      "type": "claim",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:00.272510",
+      "last_seen": "2026-02-18T21:00:00.272510"
+    },
+    {
+      "statement": "Books in the 'scratch coding for kids' niche average $13.61",
+      "category": "platform_behavior",
+      "confidence": "high",
+      "source_quotes": [
+        "average price is $13.61"
+      ],
+      "id": "0f12a501-c07f-4d35-a409-72365ed1f701",
+      "type": "claim",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:00.272510",
+      "last_seen": "2026-02-18T21:00:00.272510"
+    },
+    {
+      "statement": "Factbook niches with 100+ topic structures show consistent sales patterns",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "three books not sponsored ranking with a really good BSR with consistent sales"
+      ],
+      "id": "c3b8fdb5-7b6f-487d-9034-cefead1edcf6",
+      "type": "claim",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:34.892712",
+      "last_seen": "2026-02-18T21:00:34.892712"
+    },
+    {
+      "statement": "The keyword 'dinosaur fact book for kids 5 to 7' has a BSR under 400,000 and 1,887 reviews",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average bestseller rank is also under 400,000 and it is averaging 149,9 and the average reviews are ring 1,887"
+      ],
+      "id": "a154e780-d34a-49ab-b472-2a765e3f5c67",
+      "type": "claim",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:07.795551",
+      "last_seen": "2026-02-18T21:01:07.795551"
+    },
+    {
+      "statement": "High-content factbook titles with 350+ reviews demonstrate strong engagement patterns on KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average reviews are whooping 358 because the engagement for these kinds of high content books are quite high"
+      ],
+      "id": "9bf232a3-314a-4ff5-b152-cc27f535aca9",
+      "type": "claim",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:59.770415",
+      "last_seen": "2026-02-18T21:01:59.770415"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "SUBJECT + AUDIENCE + FORMAT",
+      "example": "coding + children 8-12 + factbook",
+      "description": "Target specific age groups with educational content formats",
+      "why_it_works": "Combines low competition with high demand for educational materials",
+      "signals": [
+        "low review counts",
+        "BSR under 100,000"
+      ],
+      "source_quotes": [
+        "second keyword is scratch coding books for kids 8 to 12"
+      ],
+      "id": "64d3a522-35fd-4cde-a96b-b5719752e377",
+      "type": "niche_pattern",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:00.272510",
+      "last_seen": "2026-02-18T21:00:00.272510"
+    },
+    {
+      "pattern_template": "AGE_GROUP + TOPIC + FORMAT",
+      "example": "children 8-12 + environmental facts + illustrated workbook",
+      "description": "Combines demographic targeting with content type for differentiated offerings",
+      "why_it_works": "Leverages low competition while maintaining high demand",
+      "signals": [
+        "low review counts",
+        "specific age targeting"
+      ],
+      "source_quotes": [
+        "the best age is to start from 8 to 12 years old"
+      ],
+      "id": "8ebe6d63-8080-46a2-9472-d7dfd4b1c42f",
+      "type": "niche_pattern",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:00:34.892712",
+      "last_seen": "2026-02-18T21:00:34.892712"
+    },
+    {
+      "pattern_template": "AGE_RANGE + CONTENT_TYPE + AUDIENCE",
+      "example": "kids 5-7 + fact book + educational",
+      "description": "Target specific age groups with content that meets developmental needs",
+      "why_it_works": "Combines low competition with high demand for educational materials",
+      "signals": [
+        "low review counts",
+        "BSR under 100,000"
+      ],
+      "source_quotes": [
+        "scrolling down we want to aim to find at least three books that have a best seller rank on the first page of $100,000"
+      ],
+      "id": "4cbc7388-dabf-4a9b-a12c-9b8cfc6aa0e1",
+      "type": "niche_pattern",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:07.795551",
+      "last_seen": "2026-02-18T21:01:07.795551"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "factbook + low competition + high demand",
+      "description": "Target niche topics with minimal competition while maintaining broad market appeal",
+      "why_it_works": "Balances low entry barriers with consistent year-round demand",
+      "signals": [
+        "low review counts",
+        "high BSR potential"
+      ],
+      "source_quotes": [
+        "this has a uh qord Niche score by Amazon SC Pro number six categorizing this is a nice niche"
+      ],
+      "id": "4f8de245-2b86-4f9c-8b1c-7d508aa91592",
+      "type": "niche_pattern",
+      "provenance": [
+        "-iiOTQn65vM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:01:59.770415",
+      "last_seen": "2026-02-18T21:01:59.770415"
+    }
+  ]
+}

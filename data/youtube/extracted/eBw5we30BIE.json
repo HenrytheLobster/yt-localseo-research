@@ -1,0 +1,217 @@
+{
+  "source_type": "youtube",
+  "video_id": "eBw5we30BIE",
+  "title": "Start Your KDP Niche Research Like This - Low and Medium Content Books",
+  "extracted_at": "2026-02-18T14:42:39.840687",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 8433,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Broad Search and Idea Gathering",
+      "description": "Start with general categories on Amazon to collect niche ideas.",
+      "steps": [
+        "Visit Amazon.com homepage",
+        "Use best sellers list to identify broad categories",
+        "Scroll through results to note non-written book formats"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Google Sheets"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with potential trademark issues"
+      ],
+      "example_niches": [
+        "activity book",
+        "coloring book"
+      ],
+      "source_quotes": [
+        "\"We want to start really broad... look for those books that basically aren't written books.\""
+      ],
+      "id": "341e2e59-7914-4f62-8d7b-374974e06ead",
+      "type": "tactic",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:07.562058",
+      "last_seen": "2026-02-18T14:42:07.562058"
+    },
+    {
+      "name": "narrow_search_terms",
+      "description": "Iteratively refine search terms by adding specificity to identify high-potential niches",
+      "steps": [
+        "Start with broad terms like 'activity book'",
+        "Add modifiers to narrow scope (e.g., 'maze book')",
+        "Analyze BSR and review data for refined terms"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon search bar"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Trademark risks with certain niches like 'I Spy'"
+      ],
+      "example_niches": [
+        "maze book",
+        "dinosaur activity book"
+      ],
+      "source_quotes": [
+        "I avoid the I spy niche cause I think that has the potential for trademark issues"
+      ],
+      "id": "965b3b89-61f2-440e-a61d-fb8e09cd8291",
+      "type": "tactic",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:39.840476",
+      "last_seen": "2026-02-18T14:42:39.840476"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low-Content Format Focus",
+      "condition": "If books are non-written formats, prioritize them",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"Logbooks are huge... they're relatively easy to create\""
+      ],
+      "id": "406edf03-eda5-45aa-84c9-08fb037269b2",
+      "type": "heuristic",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:07.562058",
+      "last_seen": "2026-02-18T14:42:07.562058"
+    },
+    {
+      "name": "review_volume_filter",
+      "condition": "If search term has high result volume but low review counts, prioritize",
+      "machine_rule": {
+        "field": "review_count",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "activity book had 70,000 results but maze book only 7,000"
+      ],
+      "id": "aa3c4db9-aef7-4d7f-8e69-c21b23ab9866",
+      "type": "heuristic",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:39.840476",
+      "last_seen": "2026-02-18T14:42:39.840476"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "80% of KDP sales occur in the US market",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"About 80% are sold in the UK...\""
+      ],
+      "id": "c0fc4f01-d027-4473-b4f8-c5defb292f9d",
+      "type": "claim",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:07.562058",
+      "last_seen": "2026-02-18T14:42:07.562058"
+    },
+    {
+      "statement": "Targeted niche research outperforms random book creation for KDP success",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can be more targeted in your approach rather than...create random books"
+      ],
+      "id": "efa24327-ef27-4c8a-9594-a52a19b8b07f",
+      "type": "claim",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:39.840476",
+      "last_seen": "2026-02-18T14:42:39.840476"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "FORMAT + AUDIENCE + PURPOSE",
+      "example": "journal + teens + productivity",
+      "description": "Target low-content books with specific audience needs",
+      "why_it_works": "Evergreen demand with minimal creation effort",
+      "signals": [
+        "low review counts",
+        "BSR rankings"
+      ],
+      "source_quotes": [
+        "\"Logbooks are... have this really strong evergreen market\""
+      ],
+      "id": "6415178a-9254-454b-aa64-a355b54d324b",
+      "type": "niche_pattern",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:07.562058",
+      "last_seen": "2026-02-18T14:42:07.562058"
+    },
+    {
+      "pattern_template": "CONTENT_TYPE + AGE + THEME",
+      "example": "maze book + kids 4-8 + space theme",
+      "description": "Combine content type with demographic and thematic modifiers for specificity",
+      "why_it_works": "Balances broad appeal with niche differentiation",
+      "signals": [
+        "low review counts",
+        "specific age ranges"
+      ],
+      "source_quotes": [
+        "mazes for kids four to eight"
+      ],
+      "id": "7dd29626-91a5-45a9-b436-377e2dabc6b2",
+      "type": "niche_pattern",
+      "provenance": [
+        "eBw5we30BIE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:42:39.840476",
+      "last_seen": "2026-02-18T14:42:39.840476"
+    }
+  ]
+}

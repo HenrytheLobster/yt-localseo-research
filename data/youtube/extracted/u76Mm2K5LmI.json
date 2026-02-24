@@ -1,0 +1,238 @@
+{
+  "source_type": "youtube",
+  "video_id": "u76Mm2K5LmI",
+  "title": "Amazon KDP Niche Research: Find Profitable Keywords & Niches",
+  "extracted_at": "2026-02-18T20:07:26.943521",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 13369,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Keyword Rank Analysis",
+      "description": "Evaluate keyword demand using bestseller rank and product count",
+      "steps": [
+        "Identify target audience",
+        "Brainstorm keyword phrases",
+        "Check Amazon search results for product count and average rank",
+        "Use Publisher Rocket for automated analysis"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "DS Amazon Quickview"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competitive niches below 10,000 BSR require stronger differentiation"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I like to see a rank of anywhere between 10,000 to 100,000",
+        "products plus average rank equals relevant keywords"
+      ],
+      "id": "27ab72de-3388-4157-a07a-9afdc141b7f6",
+      "type": "tactic",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:14.057687",
+      "last_seen": "2026-02-18T20:06:14.057687"
+    },
+    {
+      "name": "keyword stem creation",
+      "description": "combines overlapping keywords into a longtail keyword for backend use",
+      "steps": [
+        "identify root keywords",
+        "use autosuggest to find overlapping terms",
+        "build keyword stem under 50 characters"
+      ],
+      "signals_used": [
+        "bsr_max",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "avoid redundant title/subtitle keywords"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I try to find any keyword that has some type of overlap"
+      ],
+      "id": "a5907275-5e82-47a3-831b-72627fe19218",
+      "type": "tactic",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:43.330738",
+      "last_seen": "2026-02-18T20:06:43.330738"
+    },
+    {
+      "name": "author_name_research",
+      "description": "Select a relatable author name targeting a specific age demographic by combining popular names and testing for uniqueness.",
+      "steps": [
+        "Look up popular names from a specific decade (e.g., 2000s) for target audience resonance",
+        "Test name combinations via Google search to avoid existing authors",
+        "Use pen name generator tools when stuck on last names"
+      ],
+      "tools_mentioned": [
+        "Google",
+        "Read Z pen name generator"
+      ],
+      "example_niches": [
+        "twenties self-help"
+      ],
+      "id": "3d6b91f4-4c01-41a4-8c4b-861a0dee310f",
+      "type": "tactic",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:07:26.943367",
+      "last_seen": "2026-02-18T20:07:26.943367"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Count Filter",
+      "condition": "If median reviews are less than 200, prioritize niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "low review counts indicate underserved niches"
+      ],
+      "id": "386aebb3-13f9-4ae3-9bf2-3b3431cd3c45",
+      "type": "heuristic",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:14.057687",
+      "last_seen": "2026-02-18T20:06:14.057687"
+    },
+    {
+      "name": "exact match prioritization",
+      "condition": "If keyword has high specificity then boost",
+      "machine_rule": {
+        "field": "exact_match",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "one two three of your keyword phrases... should be an exact match"
+      ],
+      "id": "292753c6-6808-4587-9b59-963d1b88bb3c",
+      "type": "heuristic",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:43.330738",
+      "last_seen": "2026-02-18T20:06:43.330738"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon KDP bestseller rank thresholds between 10,000-100,000 indicate viable niches",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I like to see a rank of anywhere between 10,000 to 100,000"
+      ],
+      "id": "a20a9074-b17e-4b02-97f8-f700812bd19f",
+      "type": "claim",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:14.057687",
+      "last_seen": "2026-02-18T20:06:14.057687"
+    },
+    {
+      "statement": "Authors can use pen names to avoid brand dilution",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I'm not gonna use my own name... to avoid muddying my brand"
+      ],
+      "id": "100803cd-9bd8-49fd-8f3b-ab6e41a4d1e7",
+      "type": "claim",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:43.330738",
+      "last_seen": "2026-02-18T20:06:43.330738"
+    },
+    {
+      "statement": "Read Z provides a pen name generator tool for author name creation.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I ended up going over to the fine folks of read Z they actually have a pen name generator"
+      ],
+      "id": "f4e830e9-23a8-4abd-ae17-df9428cab446",
+      "type": "claim",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:07:26.943367",
+      "last_seen": "2026-02-18T20:07:26.943367"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combine demographic identity with specific problem and unique constraint",
+      "why_it_works": "Creates hyper-targeted niches with clear demand signals",
+      "signals": [
+        "low review counts",
+        "specific BSR thresholds"
+      ],
+      "source_quotes": [
+        "if you try to write for everyone you write for no one",
+        "compile a list of common keyword phrases"
+      ],
+      "id": "7e620dc6-e8a2-4252-94ad-13d04d0b75a7",
+      "type": "niche_pattern",
+      "provenance": [
+        "u76Mm2K5LmI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:06:14.057687",
+      "last_seen": "2026-02-18T20:06:14.057687"
+    }
+  ]
+}

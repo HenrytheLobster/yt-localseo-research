@@ -1,0 +1,427 @@
+{
+  "source_type": "youtube",
+  "video_id": "6TUm5WoJipQ",
+  "title": "Don\u2019t Publish Yet! Watch Me Research Amazon KDP Niches First",
+  "extracted_at": "2026-02-18T14:20:00.921663",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 24608,
+  "counts": {
+    "tactics": 6,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "keyword_expansion",
+      "description": "Use Amz Expander to generate keyword variations for niche research",
+      "steps": [
+        "Input a base keyword into Amz Expander",
+        "Analyze generated keywords and their search volume",
+        "Cross-reference with Katie Spy for competition analysis"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amz Expander",
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires manual validation of keyword relevance"
+      ],
+      "example_niches": [
+        "poetry prompts for men",
+        "teens poetry writing prompts"
+      ],
+      "source_quotes": [
+        "Amz Expander automatically gives you keywords people are searching for"
+      ],
+      "id": "9f99572f-45f2-4cc4-94e8-35815129f862",
+      "type": "tactic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:16.286449",
+      "last_seen": "2026-02-18T14:18:16.286449"
+    },
+    {
+      "name": "Series-Based Niche Expansion",
+      "description": "Leverage niche subcategories by creating a series of books around a specific theme or audience (e.g., poetry prompts for twins, daily writing prompts).",
+      "steps": [
+        "Identify undersaturated niches using Amazon Suggestion Expander",
+        "Create a series format (workbook, journal, daily prompts)",
+        "Optimize for first page rankings through strategic keywords"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Suggestion Expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent marketing efforts"
+      ],
+      "example_niches": [
+        "poetry prompts for twins",
+        "one poem a day journal"
+      ],
+      "source_quotes": [
+        "You can easily compete here for a first page ranking",
+        "Think in terms of how can you grab one niche and maybe turn it into uh something like this"
+      ],
+      "id": "03204e00-b09b-4326-8cb0-ce5528c4bdb5",
+      "type": "tactic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:50.970570",
+      "last_seen": "2026-02-18T14:18:50.970570"
+    },
+    {
+      "name": "research_low_popularity_niches",
+      "description": "Identify niches with low keyword popularity but healthy competition for potential profitability",
+      "steps": [
+        "Use Katie Spy to analyze keyword rankings",
+        "Check competition levels",
+        "Evaluate revenue potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Katie Spy",
+        "AMZ Expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent content quality to overcome low initial visibility"
+      ],
+      "example_niches": [
+        "parenting angry kids",
+        "gentle reminders for men"
+      ],
+      "source_quotes": [
+        "\"This is an opportunity for you to explore this niche\""
+      ],
+      "id": "8838fa29-e657-4378-95d8-abb2acae51b7",
+      "type": "tactic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:19:23.638463",
+      "last_seen": "2026-02-18T14:19:23.638463"
+    },
+    {
+      "name": "target_technology_related_anxieties",
+      "description": "Focus on niches where tech dependency correlates with specific behavioral issues",
+      "steps": [
+        "Identify tech-dependent demographics",
+        "Map anxiety triggers to device reliance",
+        "Validate with keyword research"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competition"
+      ],
+      "tools_mentioned": [
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "competition": "healthy"
+      },
+      "caveats": [
+        "Requires understanding of generational tech habits"
+      ],
+      "example_niches": [
+        "iPad kids anxiety",
+        "screen dependency in children"
+      ],
+      "source_quotes": [
+        "\"iPad kids show immense amounts of anxiety...\""
+      ],
+      "id": "29711e26-463e-42d4-a5c7-46c9f227dd03",
+      "type": "tactic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:19:23.638463",
+      "last_seen": "2026-02-18T14:19:23.638463"
+    },
+    {
+      "name": "subniche validation",
+      "description": "Verify subniches within broader categories by analyzing search volume and competition",
+      "steps": [
+        "research subniches via keyword conversations",
+        "check BSR and review counts",
+        "assess revenue potential"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "subniches may have lower search volume"
+      ],
+      "example_niches": [
+        "how to get a girlfriend",
+        "dating a narcissist"
+      ],
+      "source_quotes": [
+        "this is a subniche and this is why I wanted to show you this"
+      ],
+      "id": "42fdbff3-7bce-467c-b7fb-7224421faac8",
+      "type": "tactic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:00.921547",
+      "last_seen": "2026-02-18T14:20:00.921547"
+    },
+    {
+      "name": "religious niche exploration",
+      "description": "Identify opportunities in faith-based subniches with specific audience needs",
+      "steps": [
+        "target Christian dating themes",
+        "focus on singleness challenges",
+        "create devotional content"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 400,
+        "bsr_max": 5000
+      },
+      "caveats": [
+        "requires authentic spiritual insight"
+      ],
+      "example_niches": [
+        "Christian dating",
+        "waiting with God"
+      ],
+      "source_quotes": [
+        "Christian dating books. Okay. So, what we're going to do is we're going to click on Katie Spy Christ centered uh Christian dating"
+      ],
+      "id": "cbf221eb-194f-499c-b0c8-7f49bf140e28",
+      "type": "tactic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:00.921547",
+      "last_seen": "2026-02-18T14:20:00.921547"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_competition_opportunity",
+      "condition": "If niche has low review counts but healthy competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "This niche isn't popular but has potential for revenue"
+      ],
+      "id": "817f409c-eb02-4acc-a79d-6733c92c9ccc",
+      "type": "heuristic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:16.286449",
+      "last_seen": "2026-02-18T14:18:16.286449"
+    },
+    {
+      "name": "Low-Review Niche Optimization",
+      "condition": "If a niche has low popularity but first page ranking potential, prioritize it",
+      "machine_rule": {
+        "field": "review_count",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Potential for revenue is rather low, but the competition it says you can rank on the first page"
+      ],
+      "id": "fad7930c-aad0-4b25-97b9-1b9094a6f580",
+      "type": "heuristic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:50.970570",
+      "last_seen": "2026-02-18T14:18:50.970570"
+    },
+    {
+      "name": "prioritize_healthy_competition",
+      "condition": "If niche has low popularity but healthy competition, then it's a viable opportunity",
+      "machine_rule": {
+        "field": "competition",
+        "op": "eq",
+        "value": "healthy"
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"This is an opportunity for you to explore this niche\""
+      ],
+      "id": "71de05f5-a929-41b1-bb33-2192cd377b04",
+      "type": "heuristic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:19:23.638463",
+      "last_seen": "2026-02-18T14:19:23.638463"
+    },
+    {
+      "name": "competition health check",
+      "condition": "If niche has 836-20000 BSR range with moderate competition, it's a viable opportunity",
+      "machine_rule": {
+        "field": "bsr_range",
+        "op": "lt",
+        "value": [
+          "836",
+          "20000"
+        ]
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "potential for revenue looks very good. Hey, competition is strong"
+      ],
+      "id": "455175d5-3eac-40b5-a2c3-9555ef4e032b",
+      "type": "heuristic",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:00.921547",
+      "last_seen": "2026-02-18T14:20:00.921547"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "First page rankings are critical for visibility in KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You want to rank on the first page"
+      ],
+      "id": "06aed531-c876-4bf0-8748-268d5a917684",
+      "type": "claim",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:16.286449",
+      "last_seen": "2026-02-18T14:18:16.286449"
+    },
+    {
+      "statement": "Undersaturated niches with series potential can achieve profitability through strategic formatting and marketing",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "If you do it correctly, if you do it in the form of a series, you can bring in some sales"
+      ],
+      "id": "55e54443-2934-43a8-8a74-2a004e1120f3",
+      "type": "claim",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:50.970570",
+      "last_seen": "2026-02-18T14:18:50.970570"
+    },
+    {
+      "statement": "Niche profitability can exist even with low keyword popularity if competition is healthy",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "\"That series of books... had healthy competition... but I am selling those books\""
+      ],
+      "id": "f1626d29-d454-49a8-a8fd-f4be23d052a6",
+      "type": "claim",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:19:23.638463",
+      "last_seen": "2026-02-18T14:19:23.638463"
+    },
+    {
+      "statement": "Niche subcategories like 'dating a narcissist' show strong revenue potential with healthy competition",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "potential for revenue looks very good. Guess what? Competition is healthy"
+      ],
+      "id": "c040e696-fa6d-40a8-9bc9-d9eb2e5b029f",
+      "type": "claim",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:20:00.921547",
+      "last_seen": "2026-02-18T14:20:00.921547"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teens + writing challenges + educational",
+      "description": "Target underserved audiences with specific needs",
+      "why_it_works": "Combines niche identity with problem-solving potential",
+      "signals": [
+        "low review counts",
+        "healthy competition"
+      ],
+      "source_quotes": [
+        "Books for teens tend to do really well"
+      ],
+      "id": "e292319a-5f36-4802-97fb-5490f5dbc0d2",
+      "type": "niche_pattern",
+      "provenance": [
+        "6TUm5WoJipQ"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:18:16.286449",
+      "last_seen": "2026-02-18T14:18:16.286449"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "source_type": "youtube",
+  "video_id": "swSMoc_9ugw",
+  "title": "Amazon KDP Niche Research Session: Choose the Right Book Niche!",
+  "extracted_at": "2026-02-18T14:11:25.246500",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 24488,
+  "counts": {
+    "tactics": 7,
+    "heuristics": 4,
+    "claims": 5,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Subniche Targeting by Age Groups",
+      "description": "Identify subniches within broader topics by focusing on specific demographics like teens, tween girls, or married men.",
+      "steps": [
+        "Research broad niches",
+        "Drill down into age-specific subniches",
+        "Compare book covers and reviews"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competition may still exist even with targeted subniches"
+      ],
+      "example_niches": [
+        "teen girls spiritual warfare",
+        "pre-teen boys devotions"
+      ],
+      "source_quotes": [
+        "'Look on Amazon and see what's working... differentiate by age groups.'"
+      ],
+      "id": "f5908a57-490e-453d-953c-cc1d8008e339",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:09:42.548425",
+      "last_seen": "2026-02-18T14:09:42.548425"
+    },
+    {
+      "name": "tool-assisted storytelling",
+      "description": "Use AI tools to generate story content and visuals for niche children's books",
+      "steps": [
+        "Identify niche keywords",
+        "Input prompts to AI tool",
+        "Generate story and images"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Ohanashi AI"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 100
+      },
+      "caveats": [
+        "Requires effective prompting for optimal results"
+      ],
+      "example_niches": [
+        "bilingual spiritual books for kids"
+      ],
+      "source_quotes": [
+        "Ohanashi AI um is a great tool that you can use that can easily generate the actual images to the story that you want to come up with"
+      ],
+      "id": "653210e2-df2f-4071-ac74-0c67317308df",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:18.242554",
+      "last_seen": "2026-02-18T14:10:18.242554"
+    },
+    {
+      "name": "niche segmentation",
+      "description": "Break down broad niches into specific age groups and subcategories",
+      "steps": [
+        "Select base niche",
+        "Add age demographics",
+        "Specify gender or religious focus"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 500,
+        "bsr_max": 5000
+      },
+      "caveats": [
+        "May require additional market research validation"
+      ],
+      "example_niches": [
+        "Catholic teen girls"
+      ],
+      "source_quotes": [
+        "Think about ages... for kids ages 4 to six or maybe 7 to nine"
+      ],
+      "id": "0a201790-bdb9-4e91-9607-f02c6522a73d",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:18.242554",
+      "last_seen": "2026-02-18T14:10:18.242554"
+    },
+    {
+      "name": "Target Specific Demographics",
+      "description": "Focus on niche audiences with defined characteristics and needs",
+      "steps": [
+        "Identify specific identity groups",
+        "Pinpoint their unique problems",
+        "Highlight constraints they face"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid generic advice that competes with expert-authored books"
+      ],
+      "example_niches": [
+        "Catholic twin girls",
+        "women of faith"
+      ],
+      "source_quotes": [
+        "target those markets for books",
+        "targeting a specific group of people"
+      ],
+      "id": "ff29c4bc-5feb-4e8e-84cb-d54dd3d58ecf",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:49.377809",
+      "last_seen": "2026-02-18T14:10:49.377809"
+    },
+    {
+      "name": "Leverage Spiritual Warfare Themes",
+      "description": "Create content around spiritual battles with practical applications",
+      "steps": [
+        "Research existing books on spiritual darkness",
+        "Identify gaps in content",
+        "Develop devotional formats"
+      ],
+      "signals_used": [
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Avoid direct competition with clinical resources"
+      ],
+      "example_niches": [
+        "spiritual depression",
+        "overcoming darkness"
+      ],
+      "source_quotes": [
+        "overcoming spiritual darkness",
+        "spiritual warfare prayers"
+      ],
+      "id": "33033d95-7a1a-4c75-b260-2ce1f926ea28",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:49.377809",
+      "last_seen": "2026-02-18T14:10:49.377809"
+    },
+    {
+      "name": "target_specific_age_groups",
+      "description": "Focus on precise demographics to improve search visibility and relevance",
+      "steps": [
+        "Use Katie Spy to analyze keyword competition",
+        "Create content tailored to specific age ranges",
+        "Link to related content like podcasts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Katie Spy",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent content creation"
+      ],
+      "example_niches": [
+        "penmanship practice for kids ages 10-12"
+      ],
+      "source_quotes": [
+        "target a specific age group. When you're buying something, especially when it's educational..."
+      ],
+      "id": "64026c29-d50b-4bb3-baa1-0e3b0f4b6794",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:25.246390",
+      "last_seen": "2026-02-18T14:11:25.246390"
+    },
+    {
+      "name": "leverage_niche_experiences",
+      "description": "Write about personal or relatable struggles within a niche",
+      "steps": [
+        "Identify common pain points",
+        "Share personal anecdotes",
+        "Connect to therapeutic or practical solutions"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Katie Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires authentic storytelling"
+      ],
+      "example_niches": [
+        "overcoming overwhelm as a college student"
+      ],
+      "source_quotes": [
+        "How do you overcome it? Every time those waves of overwhelm come and crash on you."
+      ],
+      "id": "65c3c28f-be81-4c90-bf7d-2991d58830d4",
+      "type": "tactic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:25.246390",
+      "last_seen": "2026-02-18T14:11:25.246390"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Signal",
+      "condition": "If a niche has low review counts and moderate BSR rankings, it indicates potential for ranking",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'Potential for revenue looks average and competition is healthy'"
+      ],
+      "id": "c6292a17-75c1-41da-9476-025ba7febdbc",
+      "type": "heuristic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:09:42.548425",
+      "last_seen": "2026-02-18T14:09:42.548425"
+    },
+    {
+      "name": "low-competition targeting",
+      "condition": "If BSR under 500 and review count under 200, prioritize niche",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "lt",
+        "value": 5000
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "competition it says you can easily compete here for a first page ranking"
+      ],
+      "id": "4d9aee0c-583e-4b2f-8c18-5ac024be32e1",
+      "type": "heuristic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:18.242554",
+      "last_seen": "2026-02-18T14:10:18.242554"
+    },
+    {
+      "name": "Low Review Competition",
+      "condition": "If niche has low review counts but healthy competition, prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "potential for revenue looks rather low, but the competition is healthy"
+      ],
+      "id": "7e2717ea-cf55-4e72-bdbb-35e44a46a254",
+      "type": "heuristic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:49.377809",
+      "last_seen": "2026-02-18T14:10:49.377809"
+    },
+    {
+      "name": "boost_low_review_niches",
+      "condition": "If median_reviews is less than 200, prioritize niches with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "potential for revenue looks low... but there's barely any competition"
+      ],
+      "id": "d5faea50-1a8c-4f6b-9356-0cb45c6f76e2",
+      "type": "heuristic",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:25.246390",
+      "last_seen": "2026-02-18T14:11:25.246390"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP niches with specific age targeting (e.g., teen boys, tween girls) show potential for revenue despite competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'There is potential for revenue and again, there is a lot of competition'"
+      ],
+      "id": "78370ffb-b994-4842-a4e9-8434a07cbbf6",
+      "type": "claim",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:09:42.548425",
+      "last_seen": "2026-02-18T14:09:42.548425"
+    },
+    {
+      "statement": "Bilingual Christian books for toddlers have 285 active listings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "bilingual Christian books for toddlers. Look at the results, guys. It's 285"
+      ],
+      "id": "c4dca0f3-ff9e-476e-85dc-af5d958923d4",
+      "type": "claim",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:18.242554",
+      "last_seen": "2026-02-18T14:10:18.242554"
+    },
+    {
+      "statement": "Niche niches with low popularity can still have healthy competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's not a very popular keyword... competition is healthy"
+      ],
+      "id": "ce40ab55-8cd2-42f9-ac37-3e60b2e95383",
+      "type": "claim",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:49.377809",
+      "last_seen": "2026-02-18T14:10:49.377809"
+    },
+    {
+      "statement": "Narcissism-related keywords show average revenue potential but high competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "potential for revenue looks average but competition is great"
+      ],
+      "id": "e11c43c8-5557-4c87-8baf-e3cb9de13042",
+      "type": "claim",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:25.246390",
+      "last_seen": "2026-02-18T14:11:25.246390"
+    },
+    {
+      "statement": "Penmanship practice for kids 10-12 has low competition and high visibility",
+      "category": "market_dynamics",
+      "confidence": "high",
+      "source_quotes": [
+        "competition is healthy... you can still compete here"
+      ],
+      "id": "6fe233c0-cee2-48c1-b222-2be0684f249f",
+      "type": "claim",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:11:25.246390",
+      "last_seen": "2026-02-18T14:11:25.246390"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen girls + spiritual warfare + anxiety",
+      "description": "Combine demographic identity with specific problems (e.g., anxiety) and religious constraints (e.g., Christian context) for niche targeting",
+      "why_it_works": "Addresses specific pain points within a defined audience",
+      "signals": [
+        "low review counts",
+        "specific subniche keywords"
+      ],
+      "source_quotes": [
+        "'Teenage girls... dealing with a lot of stress, which is causing a lot of anxiety'"
+      ],
+      "id": "2cb29326-94a2-427a-b94e-c8ca44d26d8c",
+      "type": "niche_pattern",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:09:42.548425",
+      "last_seen": "2026-02-18T14:09:42.548425"
+    },
+    {
+      "pattern_template": "IDENTITY + RELIGIOUS_FOCUS + AGE_GROUP",
+      "example": "Catholic girls + Christian devotional + 9-12",
+      "description": "Combine specific religious identities with age-targeted spiritual content",
+      "why_it_works": "Balances niche specificity with existing market demand",
+      "signals": [
+        "low review counts",
+        "specific age ranges"
+      ],
+      "source_quotes": [
+        "books for Catholic teen girls... there are people out there looking for books for their Catholic teen girls"
+      ],
+      "id": "6d27a0c2-093d-461b-a944-9ef91196cb92",
+      "type": "niche_pattern",
+      "provenance": [
+        "swSMoc_9ugw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:10:18.242554",
+      "last_seen": "2026-02-18T14:10:18.242554"
+    }
+  ]
+}

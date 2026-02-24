@@ -1,0 +1,197 @@
+{
+  "source_type": "youtube",
+  "video_id": "L4AY_aleW-8",
+  "title": "Amazon KDP Publishing Tutorial 2022 - I Found 7 Low Competition KDP NICHES Under 12 Minutes!",
+  "extracted_at": "2026-02-18T22:19:42.356809",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7219,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Low Competition Niche Identification",
+      "description": "Using BSR and search result counts to identify undersaturated niches",
+      "steps": [
+        "Use cloud tool with default filters",
+        "Search notebook category with broad keywords",
+        "Filter by BSR and monthly sales",
+        "Analyze search result counts for competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_result_count"
+      ],
+      "tools_mentioned": [
+        "cloud"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Filters may miss niche variations"
+      ],
+      "example_niches": [
+        "password logbook",
+        "composition notebook cute"
+      ],
+      "source_quotes": [
+        "this is very low competition"
+      ],
+      "id": "f802286d-d3dc-439d-a556-71ff9a4771c9",
+      "type": "tactic",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:10.389812",
+      "last_seen": "2026-02-18T22:19:10.389812"
+    },
+    {
+      "name": "bsr_and_sales_check",
+      "description": "Identify low competition niches by analyzing BSR and average monthly sales",
+      "steps": [
+        "Search keywords using Publisher Rocket",
+        "Check BSR and average monthly sales",
+        "Note niches with BSR under 50,000 and sales under 300"
+      ],
+      "signals_used": [
+        "BSR",
+        "average_monthly_sales"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000,
+        "average_monthly_sales_max": 300
+      },
+      "caveats": [
+        "May miss niches with higher sales but lower competition"
+      ],
+      "example_niches": [
+        "lab notebook for graduate students",
+        "birthday reminder book"
+      ],
+      "source_quotes": [
+        "bsr is 46 000 and the average monthly sales at 280"
+      ],
+      "id": "1712b291-9c31-403d-85aa-cc1c8e8d931a",
+      "type": "tactic",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:42.356652",
+      "last_seen": "2026-02-18T22:19:42.356652"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Search Volume Benchmark",
+      "condition": "If search results exceed 2000, prioritize niche",
+      "machine_rule": {
+        "field": "search_result_count",
+        "op": "gt",
+        "value": 2000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "2000 search results for this exact keyword phrase"
+      ],
+      "id": "a3142d54-94ff-4671-969d-e0e06df055d6",
+      "type": "heuristic",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:10.389812",
+      "last_seen": "2026-02-18T22:19:10.389812"
+    },
+    {
+      "name": "low_review_niche_boost",
+      "condition": "If median reviews are less than 200, then boost niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "four thousand and if we niches uh niche it down by month"
+      ],
+      "id": "c02283ef-98ff-47b1-bd35-23ddf7721a75",
+      "type": "heuristic",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:42.356652",
+      "last_seen": "2026-02-18T22:19:42.356652"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Password logbook niches show low competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is another password book organizer"
+      ],
+      "id": "f60f0170-dcaf-4d62-8432-fd27829af34e",
+      "type": "claim",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:10.389812",
+      "last_seen": "2026-02-18T22:19:10.389812"
+    },
+    {
+      "statement": "Niche competition can be low when BSR is under 50,000 and average monthly sales are under 300",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "bsr is 46 000 and the average monthly sales at 280"
+      ],
+      "id": "67321782-990e-445e-a1eb-63067be5b1cb",
+      "type": "claim",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:42.356652",
+      "last_seen": "2026-02-18T22:19:42.356652"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "password logbook + password management + low competition",
+      "description": "Combines specific identity with problem-solving constraint",
+      "why_it_works": "Balances niche specificity with market demand",
+      "signals": [
+        "low review counts",
+        "high search result counts"
+      ],
+      "source_quotes": [
+        "this is very low competition"
+      ],
+      "id": "41a01b71-b568-4c64-93d0-67bb6039c8c5",
+      "type": "niche_pattern",
+      "provenance": [
+        "L4AY_aleW-8"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:19:10.389812",
+      "last_seen": "2026-02-18T22:19:10.389812"
+    }
+  ]
+}

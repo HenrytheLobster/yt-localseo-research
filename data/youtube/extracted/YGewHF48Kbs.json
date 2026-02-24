@@ -1,0 +1,150 @@
+{
+  "source_type": "youtube",
+  "video_id": "YGewHF48Kbs",
+  "title": "Amazon BSR Explained: What Your Book Rank REALLY Means for Sales",
+  "extracted_at": "2026-02-18T04:40:14.630824",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 3523,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "bsr_sales_estimation",
+      "description": "Use BSR calculators to estimate daily sales by inputting BSR and format",
+      "steps": [
+        "Input BSR number",
+        "Select book format (ebook/paperback/hardcover)"
+      ],
+      "signals_used": [
+        "BSR",
+        "format"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Seasonal fluctuations may skew results"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "A book ranked around 30,000 might still be selling a few copies a day"
+      ],
+      "id": "4c0457fc-51a5-49ff-9464-cca8905abf7c",
+      "type": "tactic",
+      "provenance": [
+        "YGewHF48Kbs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:14.630706",
+      "last_seen": "2026-02-18T04:40:14.630706"
+    },
+    {
+      "name": "consistency_over_rank",
+      "description": "Focus on daily sales consistency rather than chasing high BSR rankings",
+      "steps": [
+        "Track daily sales trends",
+        "Multiply sales across multiple books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Requires long-term data tracking"
+      ],
+      "example_niches": [
+        "Christian nonfiction"
+      ],
+      "source_quotes": [
+        "One book selling one to three copies per day may not feel exciting"
+      ],
+      "id": "63f689b8-89c1-49b3-8338-5cb056f725aa",
+      "type": "tactic",
+      "provenance": [
+        "YGewHF48Kbs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:14.630706",
+      "last_seen": "2026-02-18T04:40:14.630706"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_reviews_boost",
+      "condition": "If median_reviews < 200 then boost optimization efforts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Books with boring BSR numbers sell consistently every day"
+      ],
+      "id": "850b5966-c4fe-4a9d-b730-cac08145867b",
+      "type": "heuristic",
+      "provenance": [
+        "YGewHF48Kbs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:14.630706",
+      "last_seen": "2026-02-18T04:40:14.630706"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR is a rolling sales metric that updates based on recent performance",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "BSR is not a lifetime metric. It is a rolling indicator"
+      ],
+      "id": "dcc8f2a7-da26-4939-962e-3385f8a29056",
+      "type": "claim",
+      "provenance": [
+        "YGewHF48Kbs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:14.630706",
+      "last_seen": "2026-02-18T04:40:14.630706"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints",
+      "why_it_works": "Creates focused marketing opportunities",
+      "signals": [
+        "low review counts",
+        "specific BSR thresholds"
+      ],
+      "source_quotes": [
+        "Books with boring BSR numbers sell consistently every day"
+      ],
+      "id": "4204efc8-bf05-40c3-8e5d-08cb5be39e2e",
+      "type": "niche_pattern",
+      "provenance": [
+        "YGewHF48Kbs"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:40:14.630706",
+      "last_seen": "2026-02-18T04:40:14.630706"
+    }
+  ]
+}

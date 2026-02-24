@@ -1,0 +1,368 @@
+{
+  "source_type": "youtube",
+  "video_id": "kfJ5uX0mW3A",
+  "title": "Helium 10 Keyword Research Tutorial 2024 - Amazon KDP",
+  "extracted_at": "2026-02-18T04:54:47.312910",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 24512,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Keyword Investment Analysis",
+      "description": "Calculating ROI for keyword research software by comparing sales volume to subscription costs",
+      "steps": [
+        "Estimate monthly royalties",
+        "Calculate break-even sales",
+        "Compare keyword effectiveness"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent sales growth"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "I literally need to make 26 additional sales to make my money back on this investment"
+      ],
+      "id": "e5fdabcd-cecd-4263-8ba5-3d93561b4d1c",
+      "type": "tactic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:07.907508",
+      "last_seen": "2026-02-18T04:53:07.907508"
+    },
+    {
+      "name": "keyword_filtering",
+      "description": "Use Helium 10 Magnet tool to identify related keywords with filters for search volume, competition, and keyword length.",
+      "steps": [
+        "Input targeted keywords into Helium 10 Magnet",
+        "Apply filters like IQ score, word count, and competing products",
+        "Optimize listings using Frankenstein tool"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competing_products"
+      ],
+      "tools_mentioned": [
+        "Helium 10 Magnet",
+        "Frankenstein"
+      ],
+      "thresholds": {
+        "word_count_max": 3,
+        "competing_products_max": 1000
+      },
+      "caveats": [
+        "Requires paid membership for full data access"
+      ],
+      "example_niches": [
+        "mandala coloring books"
+      ],
+      "source_quotes": [
+        "put in your best... keyword... magnet will show you all related keywords"
+      ],
+      "id": "b50a7c1b-99a5-43d8-a356-f40fbf0b9c9d",
+      "type": "tactic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:41.427631",
+      "last_seen": "2026-02-18T04:53:41.427631"
+    },
+    {
+      "name": "Filter by Search Volume and Competition",
+      "description": "Use Helium 10 to filter keywords by search volume and competing products to identify less saturated, high-potential keywords.",
+      "steps": [
+        "Apply search volume filter to prioritize commonly searched terms",
+        "Use competing products filter to eliminate overly saturated keywords",
+        "Compile remaining keywords into a spreadsheet for further analysis"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competing_products"
+      ],
+      "tools_mentioned": [
+        "Helium 10"
+      ],
+      "thresholds": {
+        "search_volume_min": 500,
+        "competing_products_max": 5000
+      },
+      "caveats": [
+        "Avoid misleading keywords that don't align with product content"
+      ],
+      "example_niches": [
+        "mandala coloring books"
+      ],
+      "source_quotes": [
+        "use this competing products number here and I will generally go for nothing more than 5 000 competing products for a keyword"
+      ],
+      "id": "f431b44c-0875-41e9-acc9-57da3cc3a8c3",
+      "type": "tactic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:54:13.518456",
+      "last_seen": "2026-02-18T04:54:13.518456"
+    },
+    {
+      "name": "reverse_product_lookup",
+      "description": "Use Cerebro to analyze competing books' keywords and filter for high-performing, relevant terms",
+      "steps": [
+        "Search Amazon for main keyword (e.g., 'mandala coloring book for adults')",
+        "Select books with BSR under 50,000",
+        "Extract ASINs of top-performing books",
+        "Run reverse product lookup in Cerebro",
+        "Filter keywords by search volume and competition"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_volume",
+        "competition"
+      ],
+      "tools_mentioned": [
+        "Cerebro (Helium 10)"
+      ],
+      "thresholds": {
+        "bsr_max": 50000,
+        "competition_max": 5000
+      },
+      "caveats": [
+        "May miss niche long-tail keywords without additional filtering"
+      ],
+      "example_niches": [
+        "mandala coloring book for adults"
+      ],
+      "source_quotes": [
+        "a good performing book generally I will say anything under 50 000 in the UK is it generally a good performing book"
+      ],
+      "id": "439e29d8-7186-489b-b524-8a2f364475d5",
+      "type": "tactic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:54:47.312794",
+      "last_seen": "2026-02-18T04:54:47.312794"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Sales Volume Benchmark",
+      "condition": "If median reviews are less than 200, boost keyword optimization efforts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I need to sell less than one book per day extra from Helium 10 to make this a good return"
+      ],
+      "id": "64176280-c9ea-43d7-aa2f-bf882847b5ba",
+      "type": "heuristic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:07.907508",
+      "last_seen": "2026-02-18T04:53:07.907508"
+    },
+    {
+      "name": "short_tail_filter",
+      "condition": "If keyword contains fewer than 3 words, prioritize for higher search volume",
+      "machine_rule": {
+        "field": "word_count",
+        "op": "lt",
+        "value": 3
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "short tail keyword... maximum of keywords... one word in the phrase"
+      ],
+      "id": "a1fb0a66-57e1-4ecc-bf84-9853a97cc037",
+      "type": "heuristic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:41.427631",
+      "last_seen": "2026-02-18T04:53:41.427631"
+    },
+    {
+      "name": "Prioritize Low Competition Keywords",
+      "condition": "If competing products are below 5,000, prioritize the keyword",
+      "machine_rule": {
+        "field": "competing_products",
+        "op": "lte",
+        "value": 5000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "press apply filter here and you simply filtered down quite a few keywords here"
+      ],
+      "id": "3764b6f9-4274-4b1d-ac35-fa16e3ad25eb",
+      "type": "heuristic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:54:13.518456",
+      "last_seen": "2026-02-18T04:54:13.518456"
+    },
+    {
+      "name": "filter_by_competition",
+      "condition": "If competition threshold is below 5,000, prioritize keywords",
+      "machine_rule": {
+        "field": "competition",
+        "op": "lte",
+        "value": 5000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "press apply filters and you can see we've lost almost half of these keywords which is still good news for us"
+      ],
+      "id": "1bb61528-b3fc-44b7-b9c9-a73b49366fc2",
+      "type": "heuristic",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:54:47.312794",
+      "last_seen": "2026-02-18T04:54:47.312794"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Paid keyword research tools like Helium 10 provide significantly better keyword data than free alternatives",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Free versions just are nowhere near as good as the paid versions"
+      ],
+      "id": "b1bfb2ca-d010-489b-a981-b36f0e0dd1ea",
+      "type": "claim",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:07.907508",
+      "last_seen": "2026-02-18T04:53:07.907508"
+    },
+    {
+      "statement": "Selling 7,500 units in a single month is achievable with effective keyword research.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "sold seven and a half thousand units in a single month"
+      ],
+      "id": "a432f9d9-ae89-4e5a-a55b-7390603dd142",
+      "type": "claim",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:41.427631",
+      "last_seen": "2026-02-18T04:53:41.427631"
+    },
+    {
+      "statement": "Keywords with high search volume and low competition are ideal for Amazon KDP listings",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "generally anything over 500 per month in my opinion is a decent search volume"
+      ],
+      "id": "7e8f287d-2b02-4f75-a31d-3937775015c1",
+      "type": "claim",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:54:13.518456",
+      "last_seen": "2026-02-18T04:54:13.518456"
+    },
+    {
+      "statement": "Cerebro is the best reverse product lookup tool for extracting accurate, high-performing keywords",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "cerebro is by far the best in terms of you get so many more keywords for your searches"
+      ],
+      "id": "af0bb58a-a377-49f2-9735-c7c7b03e7b41",
+      "type": "claim",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:54:47.312794",
+      "last_seen": "2026-02-18T04:54:47.312794"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints",
+      "why_it_works": "Creates highly targeted keyword opportunities",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "I get three dollars per sale I literally only need to make 26 additional sales"
+      ],
+      "id": "5a4658e8-ed51-4b56-b0ba-b68e98feac19",
+      "type": "niche_pattern",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:07.907508",
+      "last_seen": "2026-02-18T04:53:07.907508"
+    },
+    {
+      "pattern_template": "TARGETED_NICHES + SPECIFIC_USE_CASE",
+      "example": "adult coloring books + stress relief",
+      "description": "Combine niche-specific keywords with functional benefits to capture search intent",
+      "why_it_works": "Aligns with buyer intent for targeted audience segments",
+      "signals": [
+        "search_volume",
+        "competing_products"
+      ],
+      "source_quotes": [
+        "mandala coloring book for adults... related keywords"
+      ],
+      "id": "b26ba07f-8f0e-47d6-8b01-84f6074c1f65",
+      "type": "niche_pattern",
+      "provenance": [
+        "kfJ5uX0mW3A"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:53:41.427631",
+      "last_seen": "2026-02-18T04:53:41.427631"
+    }
+  ]
+}

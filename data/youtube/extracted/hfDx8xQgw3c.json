@@ -1,0 +1,326 @@
+{
+  "source_type": "youtube",
+  "video_id": "hfDx8xQgw3c",
+  "title": "5 Amazon KDP Keywords Low Competition High Demand #kdp  #kdpkeywords  #makemoneyonline",
+  "extracted_at": "2026-02-18T22:00:24.177141",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 12209,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "value-added coloring book creation",
+      "description": "create coloring books with additional educational content or design elements to increase perceived value",
+      "steps": [
+        "add airplane type information/architectural drawings",
+        "design engaging covers for target age groups",
+        "use creative fabrica for custom coloring sheet designs"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "price"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica",
+        "Self-Publishing Titans",
+        "Amazon Scout Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "requires creative design skills"
+      ],
+      "example_niches": [
+        "airplane coloring books for adults",
+        "kids 4-8 airplane coloring"
+      ],
+      "source_quotes": [
+        "try to add as much as value for this keyword"
+      ],
+      "id": "1718d333-3ebd-4d6f-8dd2-b0e8aa81d2b1",
+      "type": "tactic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:20.238943",
+      "last_seen": "2026-02-18T21:59:20.238943"
+    },
+    {
+      "name": "add_value_content",
+      "description": "Enhance product value by including additional pages like doodling sheets or line art to justify pricing",
+      "steps": [
+        "Add 30-50 unique coloring sheets",
+        "Insert line art pages between colorings",
+        "Include flashcards or activity sheets"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid overcomplicating for toddlers"
+      ],
+      "example_niches": [
+        "kids coloring books"
+      ],
+      "source_quotes": [
+        "the more paid coloring sheets you add the better it is"
+      ],
+      "id": "16e84efa-8640-4ec2-b5a4-f580f5805ce3",
+      "type": "tactic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:54.919929",
+      "last_seen": "2026-02-18T21:59:54.919929"
+    },
+    {
+      "name": "optimize_pricing",
+      "description": "Adjust pricing based on Amazon's algorithm updates to maximize profitability",
+      "steps": [
+        "Check current pricing",
+        "Compare with competitors",
+        "Implement price changes before next month's update"
+      ],
+      "signals_used": [
+        "average_price"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "average_price": "gte 6.70"
+      },
+      "caveats": [
+        "Monitor BSR after price changes"
+      ],
+      "example_niches": [
+        "educational activity books"
+      ],
+      "source_quotes": [
+        "average price is 6.70 a little bit too low"
+      ],
+      "id": "d8d13d21-a216-491e-9da6-699ec169b144",
+      "type": "tactic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:54.919929",
+      "last_seen": "2026-02-18T21:59:54.919929"
+    },
+    {
+      "name": "ignore_low_niche_score",
+      "description": "Prioritize keyword profitability over low niche scores from tools like Pasta Publishing",
+      "steps": [
+        "Verify keyword potential via Amazon's Car Pro tool",
+        "Check BSR and price competitiveness"
+      ],
+      "signals_used": [
+        "BSR",
+        "average_price"
+      ],
+      "tools_mentioned": [
+        "Amazon's Car Pro"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May conflict with traditional niche scoring metrics"
+      ],
+      "example_niches": [
+        "airplane activity books for kids"
+      ],
+      "source_quotes": [
+        "I would personally ignore the keyword Niche score given by pasta publishing"
+      ],
+      "id": "f28e65bf-f019-47aa-b50b-d4e6129a6cff",
+      "type": "tactic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:00:24.176989",
+      "last_seen": "2026-02-18T22:00:24.176989"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low competition boost",
+      "condition": "If keyword has BSR < 50000 and review count < 200, prioritize",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "total results below 1 000"
+      ],
+      "id": "78eafff8-1c11-4b44-be45-2a8e40779824",
+      "type": "heuristic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:20.238943",
+      "last_seen": "2026-02-18T21:59:20.238943"
+    },
+    {
+      "name": "review_count_threshold",
+      "condition": "If product has fewer than 200 reviews, prioritize boosting visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "see how you can improve on that see how you can make a better version"
+      ],
+      "id": "a9cd4de5-90f5-4c5e-8a07-fea76ac94b1a",
+      "type": "heuristic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:54.919929",
+      "last_seen": "2026-02-18T21:59:54.919929"
+    },
+    {
+      "name": "boost_high_bsr_keywords",
+      "condition": "If average bestseller rank is below 50000, prioritize keyword",
+      "machine_rule": {
+        "field": "bsr",
+        "op": "lt",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "average bestseller rank is 234"
+      ],
+      "id": "ff13a616-072f-48e1-842f-09dd7b5c9e76",
+      "type": "heuristic",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:00:24.176989",
+      "last_seen": "2026-02-18T22:00:24.176989"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "airplane coloring book for adults has BSR 483,443 and 932 reviews",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "average price is nine dollars and three cents"
+      ],
+      "id": "91a870d9-fa3d-4461-b20c-67f6b40d2541",
+      "type": "claim",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:20.238943",
+      "last_seen": "2026-02-18T21:59:20.238943"
+    },
+    {
+      "statement": "Airplane coloring book for kids ages 2-4 has a BSR of 145,825",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "seller rank is super low sitting at 145 825"
+      ],
+      "id": "c63335d5-e248-4ce0-98cb-e1d7b547053b",
+      "type": "claim",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:54.919929",
+      "last_seen": "2026-02-18T21:59:54.919929"
+    },
+    {
+      "statement": "Amazon's Car Pro tool provides more reliable niche scoring than Pasta Publishing",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon's Car Pro gives us a number nine green light"
+      ],
+      "id": "2e95240f-1648-4542-bb90-1e990c6fd9ed",
+      "type": "claim",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:00:24.176989",
+      "last_seen": "2026-02-18T22:00:24.176989"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "COLORING_BOOK + AGE_GROUP + VALUE_ADDITION",
+      "example": "airplane coloring book for kids 4-8 + fun facts + sketch pages",
+      "description": "combines specific target demographics with content enhancements",
+      "why_it_works": "low competition with high demand for educational/creative content",
+      "signals": [
+        "low review counts",
+        "specific age targeting"
+      ],
+      "source_quotes": [
+        "create covers designed for kids in this age group"
+      ],
+      "id": "a049ed9f-9f1b-4849-8101-69ee01ae52c8",
+      "type": "niche_pattern",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:20.238943",
+      "last_seen": "2026-02-18T21:59:20.238943"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "kids + coloring book + low competition",
+      "description": "Target underserved niches with high demand and low saturation",
+      "why_it_works": "Balances profitability with marketability",
+      "signals": [
+        "low review counts",
+        "high niche score"
+      ],
+      "source_quotes": [
+        "the keyword Niche score of number seven"
+      ],
+      "id": "f74df93b-1927-45ab-a186-12222b72254c",
+      "type": "niche_pattern",
+      "provenance": [
+        "hfDx8xQgw3c"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:59:54.919929",
+      "last_seen": "2026-02-18T21:59:54.919929"
+    }
+  ]
+}

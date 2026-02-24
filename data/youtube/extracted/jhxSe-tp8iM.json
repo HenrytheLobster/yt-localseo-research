@@ -1,0 +1,305 @@
+{
+  "source_type": "youtube",
+  "video_id": "jhxSe-tp8iM",
+  "title": "How I Search for Profitable KDP Niches in 2026",
+  "extracted_at": "2026-02-18T14:15:58.787401",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 16016,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "reverse_engineering_niche_selection",
+      "description": "Prioritize back-end profitability by calculating net royalty after ad costs",
+      "steps": [
+        "Calculate total royalty using KDP print cost calculator",
+        "Estimate ad cost per click ($1-$150+ depending on niche)",
+        "Compare net royalty (royalty - ad cost) to determine viability"
+      ],
+      "signals_used": [
+        "bsr",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDP print cost calculator"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Fails when ad costs exceed royalty margins"
+      ],
+      "example_niches": [
+        "crosswords puzzles"
+      ],
+      "source_quotes": [
+        "your total royalty minus your ad expense. The net royalty is going to be your take-home profit"
+      ],
+      "id": "267d14d3-ddff-43f2-9b3a-11f21c4d7dd5",
+      "type": "tactic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:50.448728",
+      "last_seen": "2026-02-18T14:14:50.448728"
+    },
+    {
+      "name": "Price and Review Filter",
+      "description": "Filter books by price range and review count to identify profitable niches",
+      "steps": [
+        "Set price range between $15.99-$36",
+        "Filter books with 0-200 reviews",
+        "Use Book Beam niche finder for automated filtering"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Beam"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May miss niche opportunities with higher review counts"
+      ],
+      "example_niches": [
+        "Blackstone griddle recipe book",
+        "Mediterranean diet cookbook"
+      ],
+      "source_quotes": [
+        "Anything below that, it don't make any sense to me"
+      ],
+      "id": "87d9fe65-bff4-4ad4-b419-09cbe45a0e95",
+      "type": "tactic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:20.868304",
+      "last_seen": "2026-02-18T14:15:20.868304"
+    },
+    {
+      "name": "profitability_check",
+      "description": "Calculate book profitability by comparing royalty rates to ad costs per click",
+      "steps": [
+        "Calculate ad cost per click (CPC) and royalty rates",
+        "Determine number of clicks needed to break even",
+        "Assess if royalty rate provides sufficient margin"
+      ],
+      "signals_used": [
+        "royalty_rate",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Book Beam"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Low royalty rates (<$8) create risk if conversion rates are poor"
+      ],
+      "example_niches": [
+        "Mediterranean diet cookbook for seniors"
+      ],
+      "source_quotes": [
+        "$120 per click, you've only got about six to seven clicks until you start losing money"
+      ],
+      "id": "59cd6a2f-e177-4b23-933e-a44487b8a366",
+      "type": "tactic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:58.787117",
+      "last_seen": "2026-02-18T14:15:58.787117"
+    },
+    {
+      "name": "review_verification",
+      "description": "Validate niche viability by analyzing Amazon review data",
+      "steps": [
+        "Check Amazon review counts for competitive books",
+        "Assess difficulty of achieving similar review volume",
+        "Evaluate content creation feasibility"
+      ],
+      "signals_used": [
+        "review_count",
+        "bsr"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High review counts may indicate saturated markets"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Can you actually beat this many reviews?"
+      ],
+      "id": "15a12f13-0c21-47cf-82cb-43074c8a9150",
+      "type": "tactic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:58.787117",
+      "last_seen": "2026-02-18T14:15:58.787117"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "low_review_niche_boost",
+      "condition": "If median reviews are below 200, prioritize niches with high content value",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "low content books... the math just doesn't make any sense"
+      ],
+      "id": "51c76487-c522-4d43-b0ed-c1d67188a45b",
+      "type": "heuristic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:50.448728",
+      "last_seen": "2026-02-18T14:14:50.448728"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize niches with low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "0 to 200 reviews... very easy to make"
+      ],
+      "id": "fa65b4fc-e3ec-4340-a70e-84a568af2c6b",
+      "type": "heuristic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:20.868304",
+      "last_seen": "2026-02-18T14:15:20.868304"
+    },
+    {
+      "name": "review_based_boost",
+      "condition": "If median reviews are less than 200, boost niche viability",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Focus on one or two books that you can be super super profitable"
+      ],
+      "id": "b384ea19-dc42-4539-acc1-05a1cc7813fe",
+      "type": "heuristic",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:58.787117",
+      "last_seen": "2026-02-18T14:15:58.787117"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Total royalty is calculated as retail price minus print cost",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "your total royalty... price your retail price of the book minus print cost"
+      ],
+      "id": "a212ef1d-7ee8-4c1c-ad38-8cfa2219ea8b",
+      "type": "claim",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:50.448728",
+      "last_seen": "2026-02-18T14:14:50.448728"
+    },
+    {
+      "statement": "Low content books have lower profitability due to limited royalty potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Low content books... just doesn't make any sense"
+      ],
+      "id": "08c028ea-5c44-4e75-a957-2e0ff9fb5957",
+      "type": "claim",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:20.868304",
+      "last_seen": "2026-02-18T14:15:20.868304"
+    },
+    {
+      "statement": "Low content books with $4 royalty and $1 CPC are unprofitable",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I don't do low content books because obviously the $4 royalty, $1 CPC, it just simply for me maths don't work"
+      ],
+      "id": "0efec1e7-2b03-407f-b53e-e90c6f2d5073",
+      "type": "claim",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:15:58.787117",
+      "last_seen": "2026-02-18T14:15:58.787117"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific identity groups with unique problems and constraints",
+      "why_it_works": "Creates niche demand with low competition",
+      "signals": [
+        "low review counts",
+        "high content creation cost"
+      ],
+      "source_quotes": [
+        "crosswords puzzle book... errorfree content"
+      ],
+      "id": "9540ffcd-87b0-41d6-9b96-3204ac990202",
+      "type": "niche_pattern",
+      "provenance": [
+        "jhxSe-tp8iM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T14:14:50.448728",
+      "last_seen": "2026-02-18T14:14:50.448728"
+    }
+  ]
+}

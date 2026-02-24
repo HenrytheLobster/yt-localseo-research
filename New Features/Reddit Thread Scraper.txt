@@ -1,0 +1,42 @@
+### Saved Note — Reddit Threads: What to Extract + Why It Matters
+
+**Core insight:**
+Reddit adds a *trust + incentive* layer that YouTube doesn’t. YouTube content skews toward monetized funnels (tools, courses, affiliate-driven recommendations like Publisher Rocket). Reddit surfaces skepticism, peer validation, and detailed real-world workflows.
+
+**What the Reddit thread reveals:**
+
+* The KDP ecosystem is split between:
+
+  * **Endorsement** (“amazing,” “genuinely helpful,” “deep in KDP daily”)
+  * **Skepticism** (“all marketing,” “trust-me-bro,” unverifiable income claims, course funnel economics)
+* Reddit provides high-signal operator details (e.g., Airtable metadata tracking, standardized trim size, font choices, simplified templates, cover dimensions) that are often missing or polished away on YouTube.
+
+**Recommendation for the Reddit Agent (new extraction targets):**
+
+1. **Workflow specifics**
+
+   * Trim size, fonts, page count strategy, cover dimensions, metadata storage, publishing sequence, proof copy habits.
+2. **Trust / incentive signals**
+
+   * Mentions of affiliate bias, course funneling, unverifiable income claims, “guru” skepticism, revenue-model speculation.
+3. **Operator vs educator cues**
+
+   * Indicators someone is doing the work vs selling education (e.g., “selling every month” vs “join my Skool/course”).
+
+**Schema upgrade to add: `ecosystem_meta`**
+Track meta-level signals that help weight advice later:
+
+* `income_claim_unverifiable`
+* `affiliate_incentive_bias`
+* `guru_course_revenue_model`
+* `operator_vs_educator_divergence`
+* `transparency_skepticism`
+
+**Add lightweight Reddit metadata flags per extract:**
+
+* `trust_signal`: skeptical | endorsing | neutral
+* `monetization_reference`: true/false
+* `workflow_detail_density`: 0–5
+
+**Why this matters later:**
+These fields enable future “propose → test → approve” policy updates by weighting extracted tactics based on **trust + incentive context**, not just frequency.

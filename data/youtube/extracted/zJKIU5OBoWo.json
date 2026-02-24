@@ -1,0 +1,215 @@
+{
+  "source_type": "youtube",
+  "video_id": "zJKIU5OBoWo",
+  "title": "Amazon KDP 2025: 10 Free Tools You MUST Use to Make Money! (No Budget Needed!)",
+  "extracted_at": "2026-02-18T12:58:39.808025",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 2877,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Autosuggest",
+      "description": "Use Amazon's search bar to find popular keywords for SEO",
+      "steps": [
+        "Go to amazon.com",
+        "Type a keyword like 'coloring pages'",
+        "Check drop-down search queries"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon Autosuggest"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Less effective for niche markets"
+      ],
+      "example_niches": [
+        "coloring books for kids"
+      ],
+      "source_quotes": [
+        "Amazon autosuggest. This is the foundation of smart SEO."
+      ],
+      "id": "b8f5e4ad-f3bf-4389-b3ff-7aa6621fccbb",
+      "type": "tactic",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    },
+    {
+      "name": "Google Trends",
+      "description": "Compare search interest and seasonal patterns for keywords",
+      "steps": [
+        "Go to Google Trends",
+        "Compare phrases like 'coloring pages' vs 'coloring book for kids'"
+      ],
+      "signals_used": [
+        "seasonal_patterns"
+      ],
+      "tools_mentioned": [
+        "Google Trends"
+      ],
+      "thresholds": [],
+      "caveats": [
+        "Requires manual analysis of trends"
+      ],
+      "example_niches": [
+        "coloring books for adults"
+      ],
+      "source_quotes": [
+        "Compare it to coloring book for kids or coloring book for adults."
+      ],
+      "id": "120261d4-6541-473b-b1d5-95a78fc0330b",
+      "type": "tactic",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    },
+    {
+      "name": "Chat GPT Keyword Generator",
+      "description": "Generate low-competition keywords using AI",
+      "steps": [
+        "Use Chat GPT",
+        "Prompt with 'list 10 low competition keywords for coloring book for kids'"
+      ],
+      "signals_used": [
+        "keyword_difficulty"
+      ],
+      "tools_mentioned": [
+        "Chat GPT"
+      ],
+      "thresholds": [],
+      "caveats": [
+        "Depends on AI accuracy"
+      ],
+      "example_niches": [
+        "self-help guides"
+      ],
+      "source_quotes": [
+        "Prompt it with list 10 low competition Amazon KDP keyword for coloring book for kids."
+      ],
+      "id": "a01e4611-3a22-47fd-b176-bfa8da9299cc",
+      "type": "tactic",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    },
+    {
+      "name": "Canva Free Design",
+      "description": "Create professional-looking book covers and interiors for free",
+      "steps": [
+        "Use Canva's free plan",
+        "Add fonts, grids, and assets"
+      ],
+      "signals_used": [
+        "visual_quality"
+      ],
+      "tools_mentioned": [
+        "Canva"
+      ],
+      "thresholds": [],
+      "caveats": [
+        "Limited customization options"
+      ],
+      "example_niches": [
+        "children's stories"
+      ],
+      "source_quotes": [
+        "Use Canvas's free plan. Choose a free font and add text..."
+      ],
+      "id": "ca204244-0876-40df-ac70-0981e52060c2",
+      "type": "tactic",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Review Boost",
+      "condition": "If a book has low review counts, prioritize boosting its visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Grammarly free version. It catches grammar and spelling issues. Is essential for children's books."
+      ],
+      "id": "c172eeec-48de-414a-93e0-a241bab507bb",
+      "type": "heuristic",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Free tools can be used for KDP research, design, and publishing",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "We're talking research, design, formatting, and publishing, all without spending a single dollar on software."
+      ],
+      "id": "ba6b3ee9-fb2d-4140-9dd3-d77642fcd6c4",
+      "type": "claim",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "children's books + low competition + free tools",
+      "description": "Target underserved niches with minimal competition using free resources",
+      "why_it_works": "Leverages free tools to create high-quality products without upfront costs",
+      "signals": [
+        "low review counts",
+        "seasonal demand"
+      ],
+      "source_quotes": [
+        "For imagery-driven books like planners or children's stories, Pinterest is a gold mine."
+      ],
+      "id": "5d82fc75-c4ba-4917-a91f-afdaecbd1b4a",
+      "type": "niche_pattern",
+      "provenance": [
+        "zJKIU5OBoWo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T12:58:39.807865",
+      "last_seen": "2026-02-18T12:58:39.807865"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "source_type": "youtube",
+  "video_id": "RqAbikyvKjg",
+  "title": "Mastering KDP Niche Research for Publishers | Niche Research Weekly | Session 1",
+  "extracted_at": "2026-02-18T03:51:17.656306",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 16051,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "BSR + Review Analysis",
+      "description": "Identify trending niches by analyzing bestseller rankings (BSR) and review counts using Publisher Rocket",
+      "steps": [
+        "Browse Amazon KDP bestsellers for trending topics",
+        "Filter by categories with low BSR thresholds",
+        "Evaluate review counts for content quality signals"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May miss niche-specific longtail keywords"
+      ],
+      "example_niches": [
+        "vision boards",
+        "figure drawing"
+      ],
+      "source_quotes": [
+        "we can see inside it here we scroll down they've done a really good description"
+      ],
+      "id": "78ae4c58-36aa-46e4-82c3-63c4d933c3a7",
+      "type": "tactic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:10.383669",
+      "last_seen": "2026-02-18T03:50:10.383669"
+    },
+    {
+      "name": "category_analysis",
+      "description": "Evaluate niche competitiveness using BSR and review counts with Publisher Rocket",
+      "steps": [
+        "Search keywords like 'learn how to draw'",
+        "Filter categories with BSR < 50,000",
+        "Check average sales and review counts",
+        "Use KDP Spy to analyze top-ranking books"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "KDP Spy"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition in broad categories like 'drawing for kids'"
+      ],
+      "example_niches": [
+        "learn to draw for kids 9-12"
+      ],
+      "source_quotes": [
+        "we're looking for something that is probably around about 50 or less if possible"
+      ],
+      "id": "f7de47b8-acc4-41cb-ae1c-f67982341197",
+      "type": "tactic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:44.043140",
+      "last_seen": "2026-02-18T03:50:44.043140"
+    },
+    {
+      "name": "Keyword Filtering",
+      "description": "Refine keywords by removing outliers and focusing on niches with manageable competition",
+      "steps": [
+        "Use KD Spy to identify keywords",
+        "Remove books with excessive reviews",
+        "Analyze remaining books' sales ranks and monthly sales"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KD Spy",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Competing with books having 4,000+ reviews is challenging"
+      ],
+      "example_niches": [
+        "how to draw animals for kids"
+      ],
+      "source_quotes": [
+        "we want to see if there's any books with 150 reviews or less"
+      ],
+      "id": "de8ec483-63b5-4809-9c99-20c18c77fd20",
+      "type": "tactic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:51:17.656194",
+      "last_seen": "2026-02-18T03:51:17.656194"
+    },
+    {
+      "name": "Category Analysis",
+      "description": "Evaluate Amazon categories for niche opportunities using insights tools",
+      "steps": [
+        "Check selectable categories in Publisher Rocket",
+        "Analyze category performance with Insights tool",
+        "Identify categories with steady demand"
+      ],
+      "signals_used": [
+        "category_performance"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket",
+        "Insights tool"
+      ],
+      "thresholds": {},
+      "caveats": [
+        "Ghost categories may require careful selection"
+      ],
+      "example_niches": [
+        "craft for children"
+      ],
+      "source_quotes": [
+        "you can have a look at the different selectable categories"
+      ],
+      "id": "abca82c0-e81b-4dc6-9209-c0a6443b4899",
+      "type": "tactic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:51:17.656194",
+      "last_seen": "2026-02-18T03:51:17.656194"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review Threshold Boost",
+      "condition": "If median reviews < 200 then boost niche potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we can see inside it here we scroll down they've done a really good description"
+      ],
+      "id": "44cf2aa6-c19a-48b1-ad9a-6cb3cd8c3939",
+      "type": "heuristic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:10.383669",
+      "last_seen": "2026-02-18T03:50:10.383669"
+    },
+    {
+      "name": "review_based_niche_selection",
+      "condition": "If median reviews < 200, prioritize niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we want to see the uh reviews so we can compete with books maybe with about 150 reviews"
+      ],
+      "id": "690cee99-5491-4900-ba5d-67bceef99b97",
+      "type": "heuristic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:44.043140",
+      "last_seen": "2026-02-18T03:50:44.043140"
+    },
+    {
+      "name": "Low Review Targeting",
+      "condition": "If median reviews are below 200, prioritize this niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we can compete with books with 150 reviews or less"
+      ],
+      "id": "47f132ef-5860-4133-a8f0-a058ca7a2fd3",
+      "type": "heuristic",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:51:17.656194",
+      "last_seen": "2026-02-18T03:51:17.656194"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP authors should avoid publishing in niches they research to maintain focus",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "I'm not going to be publishing more books of my own into these particular niches"
+      ],
+      "id": "0fb56a31-326d-4cb3-9741-ac173f861191",
+      "type": "claim",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:10.383669",
+      "last_seen": "2026-02-18T03:50:10.383669"
+    },
+    {
+      "statement": "KDP prioritizes books with BSR < 50,000 and 150+ reviews for visibility",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "anything about 150,000 or thereabouts is a good book to pursue"
+      ],
+      "id": "a3e5b567-7173-4e9b-b5f7-bbd5026b795c",
+      "type": "claim",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:44.043140",
+      "last_seen": "2026-02-18T03:50:44.043140"
+    },
+    {
+      "statement": "Amazon allows direct category placement for books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can place your book directly into this categories of placement"
+      ],
+      "id": "274f8191-d547-41a2-9d9d-7c65290ad2c3",
+      "type": "claim",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:51:17.656194",
+      "last_seen": "2026-02-18T03:51:17.656194"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Combines target audience identity with specific problems and constraints for niche differentiation",
+      "why_it_works": "Creates unique content opportunities with lower competition",
+      "signals": [
+        "low review counts",
+        "specificity in categories"
+      ],
+      "source_quotes": [
+        "there might be a niche that we find today that you'd like to publish in and become an expert in that particular Niche"
+      ],
+      "id": "51b4381e-df79-4d72-bada-802cde473f46",
+      "type": "niche_pattern",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:10.383669",
+      "last_seen": "2026-02-18T03:50:10.383669"
+    },
+    {
+      "pattern_template": "IDENTITY + AGE_GROUP + SKILL",
+      "example": "kids 9-12 + drawing + step-by-step",
+      "description": "Break down broad niches into specific age groups and skill levels",
+      "why_it_works": "Reduces competition while maintaining market size",
+      "signals": [
+        "low review counts",
+        "specific age targeting"
+      ],
+      "source_quotes": [
+        "learn how to draw for kids 9 to 12"
+      ],
+      "id": "6109cfda-8be4-4411-a9c0-ee0f9d838cf2",
+      "type": "niche_pattern",
+      "provenance": [
+        "RqAbikyvKjg"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T03:50:44.043140",
+      "last_seen": "2026-02-18T03:50:44.043140"
+    }
+  ]
+}

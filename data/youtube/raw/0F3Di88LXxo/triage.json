@@ -1,0 +1,19 @@
+{
+  "video_id": "0F3Di88LXxo",
+  "decision": "skip",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 1.0,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "self publish",
+    "self-publish",
+    "paperback"
+  ],
+  "transcript_word_count": 539,
+  "triaged_at": "2026-02-18T20:03:23.229317"
+}

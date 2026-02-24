@@ -1,0 +1,325 @@
+{
+  "source_type": "youtube",
+  "video_id": "P-fxo6vQz1o",
+  "title": "Amazon KDP Niche Research - finding book ideas",
+  "extracted_at": "2026-02-18T20:14:55.860295",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15445,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Category Analysis",
+      "description": "Browse Amazon's book categories to identify trending niches and bestselling titles for inspiration",
+      "steps": [
+        "Navigate to Amazon's book category",
+        "Filter by subcategories like children's books or cookbooks",
+        "Check bestseller rankings and featured products",
+        "Analyze cover designs and niche variations"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Amazon",
+        "tangent templates"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High competition in broad niches"
+      ],
+      "example_niches": [
+        "motivational coloring books",
+        "blank comic books"
+      ],
+      "source_quotes": [
+        "we're really looking at these kind of categories here which is business and investing children's books cookbooks even maybe so let's just click on children's books"
+      ],
+      "id": "78cc7a84-78ff-4949-b186-40df0011c461",
+      "type": "tactic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:43.276490",
+      "last_seen": "2026-02-18T20:13:43.276490"
+    },
+    {
+      "name": "analyze_bestsellers",
+      "description": "Identify trending niches by reviewing Amazon bestseller lists and categories",
+      "steps": [
+        "Browse children's sections for coloring books",
+        "Check holiday-themed books for seasonal opportunities"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid copying existing successful titles"
+      ],
+      "example_niches": [
+        "children's confidence-building coloring books",
+        "blank recipe books for kids"
+      ],
+      "source_quotes": [
+        "Books that deal with the ocean... seem to be very popular with children"
+      ],
+      "id": "e952d5e3-ae48-46f2-8b6a-e357919519fd",
+      "type": "tactic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:18.156752",
+      "last_seen": "2026-02-18T20:14:18.156752"
+    },
+    {
+      "name": "create_low_content_books",
+      "description": "Develop simple, repetitive content books like workbooks or journals",
+      "steps": [
+        "Design gratitude journal templates",
+        "Format blank recipe book layouts"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Ensure originality to avoid copyright issues"
+      ],
+      "example_niches": [
+        "learn-to-write workbooks",
+        "anime drawing guides"
+      ],
+      "source_quotes": [
+        "Good Days Start with Gratitude... is a simple low content book"
+      ],
+      "id": "469168da-0218-479b-be5d-24e6ebdc53f8",
+      "type": "tactic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:18.156752",
+      "last_seen": "2026-02-18T20:14:18.156752"
+    },
+    {
+      "name": "analyze_existing_books",
+      "description": "Study successful books in a niche for design and content inspiration",
+      "steps": [
+        "Observe cover design elements (colors, images, photography)",
+        "Review interior content quality and structure",
+        "Note recurring themes and formatting patterns"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid direct copying of content"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "look at the ideas and the niches but also have a look at how they design their covers",
+        "read the reviews that people leave on other books"
+      ],
+      "id": "de9dc1ab-9ed9-4b44-bb47-909374c70905",
+      "type": "tactic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:55.860081",
+      "last_seen": "2026-02-18T20:14:55.860081"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Cover Design Signal",
+      "condition": "If a niche has low review counts but high visual appeal, prioritize it",
+      "machine_rule": {
+        "field": "review_count",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "i would expect this to do better if you had a really colorful cover"
+      ],
+      "id": "9927109d-b5dc-4dd2-93ba-c91975099b49",
+      "type": "heuristic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:43.276490",
+      "last_seen": "2026-02-18T20:13:43.276490"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If a niche has low review counts, it may indicate untapped potential",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Books that deal with the ocean... seem to be very popular with children"
+      ],
+      "id": "9ebea82d-6071-4fc1-98fd-cbb1f001f4ac",
+      "type": "heuristic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:18.156752",
+      "last_seen": "2026-02-18T20:14:18.156752"
+    },
+    {
+      "name": "content_quality_heuristic",
+      "condition": "If median reviews are below 200, prioritize content quality over quantity",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you can't really build a business on that on amazon anymore",
+        "make better books make better quality books"
+      ],
+      "id": "5bdbdf78-3bb7-41ff-a2a5-bb1be8a0403d",
+      "type": "heuristic",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:55.860081",
+      "last_seen": "2026-02-18T20:14:55.860081"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Niche-specific cover designs significantly impact sales performance in children's books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "colors always work really well for that kind of niche"
+      ],
+      "id": "1eda4fbe-60c6-49c1-befc-1b6245547f52",
+      "type": "claim",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:43.276490",
+      "last_seen": "2026-02-18T20:13:43.276490"
+    },
+    {
+      "statement": "Low-content books like gratitude journals can achieve high sales with simple formats",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Good Days Start with Gratitude... is a simple low content book"
+      ],
+      "id": "41d05f89-fdd6-4b6b-be6a-6d6a62a0fd7c",
+      "type": "claim",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:18.156752",
+      "last_seen": "2026-02-18T20:14:18.156752"
+    },
+    {
+      "statement": "Notebooks still sell but require strong niche positioning",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "notebooks are still selling",
+        "you have to really create a really good niche"
+      ],
+      "id": "30f849b1-ec8b-40a1-b9c7-9464ae63601c",
+      "type": "claim",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:55.860081",
+      "last_seen": "2026-02-18T20:14:55.860081"
+    },
+    {
+      "statement": "Low-content books are less profitable than higher-content alternatives",
+      "category": "market_dynamics",
+      "confidence": "high",
+      "source_quotes": [
+        "stay away from no content and go into low content and then into higher content",
+        "you can still practice with low content and no content if you are a beginner"
+      ],
+      "id": "5b2bdbc7-2e56-4913-b553-0f2eba263cc8",
+      "type": "claim",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:14:55.860081",
+      "last_seen": "2026-02-18T20:14:55.860081"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "children's books + bedtime stories + motivational themes",
+      "description": "Combine target audience with specific use cases and design constraints",
+      "why_it_works": "Balances broad appeal with niche differentiation through functional constraints",
+      "signals": [
+        "low review counts",
+        "visual design potential"
+      ],
+      "source_quotes": [
+        "bedtime stories are very popular"
+      ],
+      "id": "d5476c33-eeb5-47f0-a9f3-1177017ee2aa",
+      "type": "niche_pattern",
+      "provenance": [
+        "P-fxo6vQz1o"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:43.276490",
+      "last_seen": "2026-02-18T20:13:43.276490"
+    }
+  ]
+}

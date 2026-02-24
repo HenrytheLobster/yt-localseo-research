@@ -1,0 +1,392 @@
+{
+  "source_type": "youtube",
+  "video_id": "A39nkSQ-_Fk",
+  "title": "Keywords, Research and Low Competition Live Chat",
+  "extracted_at": "2026-02-18T21:23:26.720298",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 40025,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "low_competition_niche_research",
+      "description": "Use keyword tools to identify undersaturated niches with moderate search volume",
+      "steps": [
+        "Input broad categories like 'activity book'",
+        "Filter out branded terms (e.g., Paw Patrol, Minecraft)",
+        "Prioritize specific niches (e.g., Ramadan activity books)",
+        "Check Amazon search volume and BSR rankings"
+      ],
+      "signals_used": [
+        "search_volume",
+        "bsr_rank"
+      ],
+      "tools_mentioned": [
+        "BookBub",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid overly specific terms with extremely low search volume"
+      ],
+      "example_niches": [
+        "Ramadan activity books",
+        "couples activity books"
+      ],
+      "source_quotes": [
+        "we're looking for things where you're not going to be competing against three thousand other people",
+        "we don't want to use a keyword that has like ten searches a month"
+      ],
+      "id": "16473ffc-638f-44c7-9b1d-68d515e8c012",
+      "type": "tactic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:21:54.385009",
+      "last_seen": "2026-02-18T21:21:54.385009"
+    },
+    {
+      "name": "keyword research + product replication",
+      "description": "Identify low-competition keywords with high search volume and replicate successful product structures",
+      "steps": [
+        "Use Publisher Rocket to find keywords with <200 results",
+        "Analyze top-ranking products for review counts and BSR trends",
+        "Create similar products with slightly modified content/illustrations"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires original content creation to avoid infringement"
+      ],
+      "example_niches": [
+        "Ramadan activity books"
+      ],
+      "source_quotes": [
+        "this book has 59 reviews it's priced at 595 but the book is only 30-something pages"
+      ],
+      "id": "1474b3c5-43d0-44b5-af15-1c5c3e848e8b",
+      "type": "tactic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:24.181825",
+      "last_seen": "2026-02-18T21:22:24.181825"
+    },
+    {
+      "name": "simple_line_art",
+      "description": "Create low-cost line art illustrations for KDP books using outsourced artists",
+      "steps": [
+        "Use line art instead of colored illustrations",
+        "Outsource to illustrators for $2-10 per image",
+        "Prioritize simple designs that take 1-2 minutes to create"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Upwork"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Poor execution leads to low BSR"
+      ],
+      "example_niches": [
+        "geology_activity_books"
+      ],
+      "source_quotes": [
+        "they should all be you know fairly cheap to have created if you are outsourcing"
+      ],
+      "id": "911a9034-7ac5-4e4b-a985-32667855f7a4",
+      "type": "tactic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:54.327095",
+      "last_seen": "2026-02-18T21:22:54.327095"
+    },
+    {
+      "name": "low_competition_niche_hunting",
+      "description": "Identify niches with low BSR and minimal competition by filtering for specific keywords and age ranges",
+      "steps": [
+        "Search for niche keywords like 'kids coloring book'",
+        "Filter results by BSR and review count thresholds",
+        "Test variations like 'adult coloring book' or 'couples activity book'",
+        "Prioritize niches with unique content requirements (e.g. scratch-off pages)"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid copyrighted imagery (e.g. Yoda) to prevent account bans"
+      ],
+      "example_niches": [
+        "teen planner",
+        "couples adventure book"
+      ],
+      "source_quotes": [
+        "there's not that many there's what two books that might even be competing"
+      ],
+      "id": "e5a58b1f-139b-49c3-8767-e93241bb538e",
+      "type": "tactic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:23:26.720140",
+      "last_seen": "2026-02-18T21:23:26.720140"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "volume_based_niche_selection",
+      "condition": "If search volume is between 200-1000 and BSR <50,000, then prioritize",
+      "machine_rule": {
+        "field": "search_volume",
+        "op": "gte",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "we want the keywords that you're targeting to have searched for so I don't know if you've picked up on this but there's a lot of things for cup Bulls on here"
+      ],
+      "id": "e459adb9-7717-4260-99ff-1f8843457ca4",
+      "type": "heuristic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:21:54.385009",
+      "last_seen": "2026-02-18T21:21:54.385009"
+    },
+    {
+      "name": "low review boost",
+      "condition": "If median reviews < 200 then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this book has 53 reviews so still doing well"
+      ],
+      "id": "4da7a8f5-5f96-4c30-ac51-4d7d47ec0a21",
+      "type": "heuristic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:24.181825",
+      "last_seen": "2026-02-18T21:22:24.181825"
+    },
+    {
+      "name": "low_review_boost",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this one has a really bad sales rank right yeah it's it's it's bad"
+      ],
+      "id": "8f4bc247-f3b9-440c-b9af-157fe2108d13",
+      "type": "heuristic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:54.327095",
+      "last_seen": "2026-02-18T21:22:54.327095"
+    },
+    {
+      "name": "review_count_threshold",
+      "condition": "If a niche has fewer than 200 reviews, it's a high-potential target",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "132,000 it's only fifty three pages long"
+      ],
+      "id": "d288dcc0-d8fe-41ab-9568-3e7cb58ec8a8",
+      "type": "heuristic",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:23:26.720140",
+      "last_seen": "2026-02-18T21:23:26.720140"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Branded terms like Paw Patrol and Minecraft have excessively high competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "stay away from if you see a word you know paw Patrol you don't know what it is"
+      ],
+      "id": "c3f705a9-f1a4-429f-842c-cf2387278035",
+      "type": "claim",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:21:54.385009",
+      "last_seen": "2026-02-18T21:21:54.385009"
+    },
+    {
+      "statement": "Books with 5,000 BSR can generate $500+ monthly",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this book is making at least $500 bucks"
+      ],
+      "id": "3339cd7c-40de-4f49-91f7-9784f6ca0bd3",
+      "type": "claim",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:24.181825",
+      "last_seen": "2026-02-18T21:22:24.181825"
+    },
+    {
+      "statement": "KDP allows easy creation of illustrated books with low competition",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "AMS thing is huge I need to do some but EMS on KDP super easy"
+      ],
+      "id": "aa7bd039-8d89-429c-89ca-50ce0dbd1c0a",
+      "type": "claim",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:54.327095",
+      "last_seen": "2026-02-18T21:22:54.327095"
+    },
+    {
+      "statement": "Adult coloring books typically command higher prices than children's books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "adult let's see here's another one that's not even the same niche"
+      ],
+      "id": "69999eff-95f5-4d48-ae39-edfea925282d",
+      "type": "claim",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:23:26.720140",
+      "last_seen": "2026-02-18T21:23:26.720140"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "specific_holiday + activity_type",
+      "example": "Ramadan + activity book",
+      "description": "Leverage niche holidays with specific activity formats",
+      "why_it_works": "Combines cultural specificity with low competition",
+      "signals": [
+        "low_review_counts",
+        "specific_holiday_terms"
+      ],
+      "source_quotes": [
+        "Ramadan activity book... probably one that you know we don't really talk about or think about that much"
+      ],
+      "id": "277c7ef6-fd2a-4a2d-acec-bd14a1faaaab",
+      "type": "niche_pattern",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:21:54.385009",
+      "last_seen": "2026-02-18T21:21:54.385009"
+    },
+    {
+      "pattern_template": "HOLIDAY + ACTIVITY + SIMPLE_CONTENT",
+      "example": "Ramadan + fasting activity book + basic drawings",
+      "description": "Leverage seasonal keywords with minimal production complexity",
+      "why_it_works": "Combines consistent search volume with low creation barriers",
+      "signals": [
+        "low review counts",
+        "basic graphics"
+      ],
+      "source_quotes": [
+        "these graphics here are very basic"
+      ],
+      "id": "a113b285-6e5c-45ca-b6e6-6ad9aa915efa",
+      "type": "niche_pattern",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:24.181825",
+      "last_seen": "2026-02-18T21:22:24.181825"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "geology_enthusiasts + educational_needs + low_competition",
+      "description": "Target niches with specific learning goals and minimal competition",
+      "why_it_works": "Combines targeted content with low review counts and poor execution examples",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "there's not that many first of all there's other 400 results"
+      ],
+      "id": "545ac84f-f946-4f19-a2ea-559d08a2fed3",
+      "type": "niche_pattern",
+      "provenance": [
+        "A39nkSQ-_Fk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:22:54.327095",
+      "last_seen": "2026-02-18T21:22:54.327095"
+    }
+  ]
+}

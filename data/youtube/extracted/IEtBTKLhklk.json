@@ -1,0 +1,117 @@
+{
+  "source_type": "youtube",
+  "video_id": "IEtBTKLhklk",
+  "title": "KDP SALES RANK BUT NO SALES!! WHY?",
+  "extracted_at": "2026-02-19T00:18:14.541453",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 3599,
+  "counts": {
+    "tactics": 1,
+    "heuristics": 1,
+    "claims": 1,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "BSR & Reviews Correlation",
+      "description": "Link KDP sales rank to customer activity metrics like search visibility and page visits, not direct sales figures.",
+      "steps": [
+        "Monitor BSR alongside review counts",
+        "Track customer activity signals"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "May fail if book has no activity despite low BSR"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Sales ranking doesn't mean you've sold any books"
+      ],
+      "id": "71373dbe-736c-4307-ac73-8a2559c41e21",
+      "type": "tactic",
+      "provenance": [
+        "IEtBTKLhklk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:18:14.541222",
+      "last_seen": "2026-02-19T00:18:14.541222"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median_reviews < 200 then boost visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Customer activity includes search appearances"
+      ],
+      "id": "3dd9b5d1-f2f5-4272-8958-8d48595023b1",
+      "type": "heuristic",
+      "provenance": [
+        "IEtBTKLhklk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:18:14.541222",
+      "last_seen": "2026-02-19T00:18:14.541222"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "KDP sales rank reflects customer activity (searches/visits) not direct sales",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Best seller rankings are based on customer activity"
+      ],
+      "id": "2875f497-e090-45c4-8b0a-18dc028a8167",
+      "type": "claim",
+      "provenance": [
+        "IEtBTKLhklk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:18:14.541222",
+      "last_seen": "2026-02-19T00:18:14.541222"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with low competition niches",
+      "why_it_works": "Low review counts and BSR thresholds align with niche demand signals",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "Activity includes book page visits"
+      ],
+      "id": "62a40e9b-cdef-40f9-a817-b3af6a28d7a5",
+      "type": "niche_pattern",
+      "provenance": [
+        "IEtBTKLhklk"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:18:14.541222",
+      "last_seen": "2026-02-19T00:18:14.541222"
+    }
+  ]
+}

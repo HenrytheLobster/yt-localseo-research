@@ -1,0 +1,269 @@
+{
+  "source_type": "youtube",
+  "video_id": "2OkvrRVcjZM",
+  "title": "Crazy Low Competition KDP Niche + FREE Keywords",
+  "extracted_at": "2026-02-18T21:20:41.513800",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 13190,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "BSR Validation",
+      "description": "Verify niche viability by checking best sellers ranks on Amazon",
+      "steps": [
+        "Search Amazon with root keyword",
+        "Use DS Amazon Quick View plugin",
+        "Identify 3+ books with BSR <300,000"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "DS Amazon Quick View",
+        "Helium 10"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires consistent sales tracking"
+      ],
+      "example_niches": [
+        "Spot the Difference"
+      ],
+      "source_quotes": [
+        "I look for three or more books on the first page with best sellers ranks of less than 300,000"
+      ],
+      "id": "e85f381a-fd56-4295-b7f7-27154901ad11",
+      "type": "tactic",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:19:36.940267",
+      "last_seen": "2026-02-18T21:19:36.940267"
+    },
+    {
+      "name": "Keyword Competition Check",
+      "description": "Analyze Amazon search results to identify low-competition niches with sales potential",
+      "steps": [
+        "Extract keywords from Amazon search suggestions",
+        "Use AMZ Suggestion Expander for additional terms",
+        "Check Amazon search result counts (target 1000 or less)",
+        "Cross-reference with Google monthly search volume"
+      ],
+      "signals_used": [
+        "BSR",
+        "search_volume"
+      ],
+      "tools_mentioned": [
+        "AMZ Suggestion Expander"
+      ],
+      "thresholds": {
+        "search_results_max": 1000
+      },
+      "caveats": [
+        "Requires SEO optimization beyond keyword inclusion"
+      ],
+      "example_niches": [
+        "Spot the Difference Art"
+      ],
+      "source_quotes": [
+        "I look for search results of 1000 or less",
+        "we can see here from the best sellers rank, this one here, 59,087,000 151,000"
+      ],
+      "id": "8f70a199-6ab2-4e62-953b-91b878b02208",
+      "type": "tactic",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:20:13.306845",
+      "last_seen": "2026-02-18T21:20:13.306845"
+    },
+    {
+      "name": "public_domain_images",
+      "description": "Use free public domain images from the Met Museum for Spot the Difference books",
+      "steps": [
+        "Check if images are public domain via metmuseum.org",
+        "Verify with Google reverse image search"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Google reverse image search"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Images may require additional verification"
+      ],
+      "example_niches": [
+        "Spot the Difference arts masterpieces"
+      ],
+      "source_quotes": [
+        "There's plenty of images out there and it's not worth getting stressed..."
+      ],
+      "id": "22d191a2-b860-4777-89a1-f21a1fe04794",
+      "type": "tactic",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:20:41.513673",
+      "last_seen": "2026-02-18T21:20:41.513673"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "BSR Averaging",
+      "condition": "If average BSR of first page results is below 50,000, prioritize niche",
+      "machine_rule": {
+        "field": "median_bsr",
+        "op": "lt",
+        "value": 50000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Work out the average best sellers rank on the first page of search results"
+      ],
+      "id": "0f33e7c8-8aba-48e7-8cd1-f9a35df86340",
+      "type": "heuristic",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:19:36.940267",
+      "last_seen": "2026-02-18T21:19:36.940267"
+    },
+    {
+      "name": "Low Competition Filter",
+      "condition": "If search results are 1000 or less then boost keyword potential",
+      "machine_rule": {
+        "field": "search_results",
+        "op": "lte",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I look for search results of 1000 or less"
+      ],
+      "id": "2a8cbbdc-104f-4ddc-b731-b3b7fb8dcf51",
+      "type": "heuristic",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:20:13.306845",
+      "last_seen": "2026-02-18T21:20:13.306845"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Medium content books receive free ISBNs from KDP",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "These books are medium content books, which means you do get a free ISBN from KDP"
+      ],
+      "id": "67fed31d-a174-49a0-86b2-f08c5a4a0498",
+      "type": "claim",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:19:36.940267",
+      "last_seen": "2026-02-18T21:19:36.940267"
+    },
+    {
+      "statement": "Low-competition niches with search results under 1000 can still have active sales",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "we can see here from the best sellers rank, this one here, 59,087,000 151,000"
+      ],
+      "id": "bde01df7-123e-4ab8-8182-a7a139133df2",
+      "type": "claim",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:20:13.306845",
+      "last_seen": "2026-02-18T21:20:13.306845"
+    },
+    {
+      "statement": "Met Museum images are often in the public domain",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "many of them, if not most of them, are in the public domain"
+      ],
+      "id": "b746ed5e-57e0-4369-96c1-780372822ce8",
+      "type": "claim",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:20:41.513673",
+      "last_seen": "2026-02-18T21:20:41.513673"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + CONSTRAINT",
+      "example": "Spot the Difference + Low Competition",
+      "description": "Combine niche identity with competitive constraints",
+      "why_it_works": "Leverages low competition while maintaining sales potential",
+      "signals": [
+        "low review counts",
+        "BSR <300,000"
+      ],
+      "source_quotes": [
+        "There's lots of interesting, very low competition sub niches within this overall niche"
+      ],
+      "id": "d956cc8f-5331-4f58-80f0-b4eff0315f09",
+      "type": "niche_pattern",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:19:36.940267",
+      "last_seen": "2026-02-18T21:19:36.940267"
+    },
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Spot the Difference arts masterpieces + low competition + free resources",
+      "description": "Leverage public domain images to create low-competition niche books",
+      "why_it_works": "Free resources reduce production costs and competition",
+      "signals": [
+        "low review counts",
+        "public domain availability"
+      ],
+      "source_quotes": [
+        "There's plenty of images out there and it's not worth getting stressed..."
+      ],
+      "id": "8e27bf98-ad2f-4790-b724-10bc95ec15f3",
+      "type": "niche_pattern",
+      "provenance": [
+        "2OkvrRVcjZM"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:20:41.513673",
+      "last_seen": "2026-02-18T21:20:41.513673"
+    }
+  ]
+}

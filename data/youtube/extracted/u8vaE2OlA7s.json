@@ -1,0 +1,192 @@
+{
+  "source_type": "youtube",
+  "video_id": "u8vaE2OlA7s",
+  "title": "KDP BSR  - What is it? Does it Matter? Should I Care? | KDP Low Content Books",
+  "extracted_at": "2026-02-18T04:05:29.434407",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9806,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "BSR Monitoring",
+      "description": "Track Best Seller Rank (BSR) fluctuations to understand sales performance and market positioning.",
+      "steps": [
+        "Use chrome extensions like DS Amazon to monitor BSR",
+        "Compare BSR across multiple books and timeframes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "DS Amazon",
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "BSR can fluctuate rapidly and daily checks may cause anxiety"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "the BSR can jump from being ranked at 50 000 down to 000"
+      ],
+      "id": "025a3993-1184-4915-bcca-ad8730edd2c3",
+      "type": "tactic",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:04:55.372981",
+      "last_seen": "2026-02-18T04:04:55.372981"
+    },
+    {
+      "name": "BSR Monitoring Strategy",
+      "description": "Avoid daily BSR checks and use data for marketing decisions",
+      "steps": [
+        "Check BSR every 3-4 days",
+        "Use BSR trends to trigger Amazon ads"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "BSR fluctuations are normal for low-content books"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "Avoid the addiction of daily checking... check it every third or fourth day"
+      ],
+      "id": "fe86a6ca-2c23-4235-9e71-e8fb8cd9bc5c",
+      "type": "tactic",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:05:29.434254",
+      "last_seen": "2026-02-18T04:05:29.434254"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median reviews are below 200, prioritize review generation",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this book created 1555..."
+      ],
+      "id": "39f5ad41-5e4a-4c79-a916-ffdefb3afc34",
+      "type": "heuristic",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:04:55.372981",
+      "last_seen": "2026-02-18T04:04:55.372981"
+    },
+    {
+      "name": "80/20 Income Distribution",
+      "condition": "If median_reviews < 200 then boost marketing efforts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "80 of those books would probably be in the millions... 20 of them would be your main income earners"
+      ],
+      "id": "28ce519b-3d68-4541-8be9-8ffb186ae538",
+      "type": "heuristic",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:05:29.434254",
+      "last_seen": "2026-02-18T04:05:29.434254"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "BSR is a ranking system comparing books to the top-selling title on Amazon",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the BSR is the best sellers rank so it is how your position compared to the number one book on that platform"
+      ],
+      "id": "f701157c-8779-4baa-ab84-85ea38f0990a",
+      "type": "claim",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:04:55.372981",
+      "last_seen": "2026-02-18T04:04:55.372981"
+    },
+    {
+      "statement": "BSR fluctuates significantly for low-content books",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "BSR can jump around so much... it's currently ranked at 827,000"
+      ],
+      "id": "40cf577c-45e8-4076-a31e-751008d50ae0",
+      "type": "claim",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:05:29.434254",
+      "last_seen": "2026-02-18T04:05:29.434254"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with niche constraints",
+      "why_it_works": "Creates focused marketing opportunities with defined market boundaries",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "the BSR can jump around a lot and it's important not to get too addicted to watching the BSR daily"
+      ],
+      "id": "b3f1164e-5f82-4dad-b947-d3cab8a5ac14",
+      "type": "niche_pattern",
+      "provenance": [
+        "u8vaE2OlA7s"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T04:04:55.372981",
+      "last_seen": "2026-02-18T04:04:55.372981"
+    }
+  ]
+}

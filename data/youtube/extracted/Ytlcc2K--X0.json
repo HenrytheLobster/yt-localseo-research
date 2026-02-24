@@ -1,0 +1,290 @@
+{
+  "source_type": "youtube",
+  "video_id": "Ytlcc2K--X0",
+  "title": "Amazon Best Seller Rank Explained for Authors | The Heidi Thorne Show | Episode 231",
+  "extracted_at": "2026-02-19T00:58:26.063620",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 17358,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 2,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Author Profile Setup",
+      "description": "Claim and configure Amazon Author Central to access sales data and customer reviews.",
+      "steps": [
+        "Verify identity and book titles",
+        "Create author profile page",
+        "Access BSR and NPD Bookscan reports"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Author Central"
+      ],
+      "caveats": [
+        "BSR fluctuations are inevitable due to hourly updates"
+      ],
+      "example_niches": [
+        "self-help",
+        "nonfiction"
+      ],
+      "source_quotes": [
+        "Your book's best seller rank is a constantly moving target."
+      ],
+      "id": "b098df89-0edf-4916-824b-44ee95edd6ea",
+      "type": "tactic",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:53.805465",
+      "last_seen": "2026-02-19T00:56:53.805465"
+    },
+    {
+      "name": "Monitor Sales Rank",
+      "description": "Track BSR changes over time to understand market dynamics.",
+      "steps": [
+        "Check historical sales rank via Author Central",
+        "Compare rank across formats (Kindle, paperback, audiobook)"
+      ],
+      "signals_used": [
+        "BSR",
+        "historical_rank"
+      ],
+      "tools_mentioned": [
+        "Author Central"
+      ],
+      "caveats": [
+        "BSR does not correlate with actual sales volume"
+      ],
+      "example_niches": [
+        "business",
+        "marketing"
+      ],
+      "source_quotes": [
+        "The Amazon Best Sellers calculation is updated hourly."
+      ],
+      "id": "544e1852-77f0-41a2-ae58-6b39d3cde4b6",
+      "type": "tactic",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:53.805465",
+      "last_seen": "2026-02-19T00:56:53.805465"
+    },
+    {
+      "name": "Monitor Category Rankings",
+      "description": "Track your book's performance within specific genres or topics rather than overall Best Seller Rank.",
+      "steps": [
+        "Check your book's product page on Amazon",
+        "Scroll to Product Details to view category rankings",
+        "Compare rankings to other books in your genre/topic"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Rankings fluctuate hourly and are algorithm-driven"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "This is where you'll see how your book ranks in comparison to other books in your genre or topic."
+      ],
+      "id": "b0331e2d-794d-4837-9ca7-c506d54068b9",
+      "type": "tactic",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:57:40.766063",
+      "last_seen": "2026-02-19T00:57:40.766063"
+    },
+    {
+      "name": "Niche Subcategory Ranking",
+      "description": "Target niche subcategories for temporary top rankings",
+      "steps": [
+        "Focus on niche subcategory rankings rather than overall BSR"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Temporary rankings may not reflect sustained success"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "your chances as a new or niche author in the Top 100 overall would be miraculous"
+      ],
+      "id": "dcb241e9-1640-42f5-a099-8b7198fd1805",
+      "type": "tactic",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:12.990239",
+      "last_seen": "2026-02-19T00:58:12.990239"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Boost Low-Review Titles",
+      "condition": "If a book has low review counts, prioritize visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Your chances as a new or niche author in the Top 100 overall would be miraculous."
+      ],
+      "id": "1c65fd4a-ab3c-4bdd-a8ca-d0ec934eaf1f",
+      "type": "heuristic",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:57:40.766063",
+      "last_seen": "2026-02-19T00:57:40.766063"
+    },
+    {
+      "name": "Review Count Threshold",
+      "condition": "If median reviews are below 200, prioritize boosting visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "NPD Bookscan estimates they report 85 percent of all retail print book sales"
+      ],
+      "id": "82d30f21-3423-4a9b-bae1-f22eb0702dec",
+      "type": "heuristic",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:12.990239",
+      "last_seen": "2026-02-19T00:58:12.990239"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon Best Seller Rank does not indicate the number of books sold.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Your book's best seller rank tells you nothing about the number of books sold."
+      ],
+      "id": "9e8deb38-6d15-4b79-aca4-8b79e306acc1",
+      "type": "claim",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:53.805465",
+      "last_seen": "2026-02-19T00:56:53.805465"
+    },
+    {
+      "statement": "BSR is influenced by both recent and historical sales data across all Amazon products.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Best Seller Rank is a calculation based on both recent and historical sales in comparison to other books."
+      ],
+      "id": "33aa046b-8b00-4f0c-bba8-0060564df1ea",
+      "type": "claim",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:56:53.805465",
+      "last_seen": "2026-02-19T00:56:53.805465"
+    },
+    {
+      "statement": "Amazon's algorithm can place books in unrelated categories based on buyer interest data.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon and their algorithm robots are constantly matching up buyer interests with products... putting products in front of buyers with high potential for a sale."
+      ],
+      "id": "09dc830e-2e5d-4a9a-bd72-caafbd4eb4ae",
+      "type": "claim",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:57:40.766063",
+      "last_seen": "2026-02-19T00:57:40.766063"
+    },
+    {
+      "statement": "NPD Bookscan reports 85% of print book sales across retail channels",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "NPD Bookscan estimates they report 85 percent of all retail print book sales"
+      ],
+      "id": "daa0509b-3385-4a74-abad-489271eb482b",
+      "type": "claim",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:12.990239",
+      "last_seen": "2026-02-19T00:58:12.990239"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints to differentiate offerings",
+      "why_it_works": "Niche constraints reduce competition and align with algorithmic categorization",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "I was surprised one day to see that my book on promotional products had ranked in accounting..."
+      ],
+      "id": "5f87e6b7-665c-4143-8e1a-fb84e8071698",
+      "type": "niche_pattern",
+      "provenance": [
+        "Ytlcc2K--X0"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:57:40.766063",
+      "last_seen": "2026-02-19T00:57:40.766063"
+    }
+  ]
+}

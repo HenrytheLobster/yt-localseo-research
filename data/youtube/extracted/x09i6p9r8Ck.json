@@ -1,0 +1,254 @@
+{
+  "source_type": "youtube",
+  "video_id": "x09i6p9r8Ck",
+  "title": "2021 How to Use Publisher Rocket: Finding Profitable Keywords",
+  "extracted_at": "2026-02-18T23:28:16.411842",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7630,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "AMS Keyword Search",
+      "description": "Use Publisher Rocket to extract Amazon keyword suggestions for book marketing",
+      "steps": [
+        "Enter keyword (e.g. 'ketogenic diet')",
+        "Filter results by category/author/ASIN",
+        "Export to Excel spreadsheet",
+        "Remove duplicate keywords",
+        "Add keywords to Amazon ad campaigns"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "once you've entered your keyword...press add keywords right and then save"
+      ],
+      "id": "93fb479f-fd6b-42fd-84a9-28db50464811",
+      "type": "tactic",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:41.209541",
+      "last_seen": "2026-02-18T23:27:41.209541"
+    },
+    {
+      "name": "Competition Analyzer",
+      "description": "Evaluate book profitability using sales data and competition metrics",
+      "steps": [
+        "Input keyword (e.g. 'ketogenic diet')",
+        "Review daily/monthly sales metrics",
+        "Analyze competition score (0-100 scale)",
+        "Check search volume and revenue estimates"
+      ],
+      "signals_used": [
+        "sales_volume",
+        "competition_score"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competition_score": 42
+      },
+      "caveats": [
+        "Requires accurate Amazon data feed"
+      ],
+      "example_niches": [
+        "health coaching"
+      ],
+      "source_quotes": [
+        "this book in particular is obviously extremely profitable...eleven thousand in daily sales"
+      ],
+      "id": "d971c0dc-4329-42e2-8827-f6e8fc2a85f0",
+      "type": "tactic",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:41.209541",
+      "last_seen": "2026-02-18T23:27:41.209541"
+    },
+    {
+      "name": "Keyword Competition Analysis",
+      "description": "Use Publisher Rocket to identify keywords with low competition and high profitability by comparing search volume, competitive scores, and monthly earnings.",
+      "steps": [
+        "Input keywords into Publisher Rocket's keyword search tool",
+        "Filter by competitive score (e.g., <50) and search volume",
+        "Compare monthly earnings and competitor counts"
+      ],
+      "signals_used": [
+        "competitive_score",
+        "search_volume",
+        "monthly_earnings"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "competitive_score_max": 50,
+        "search_volume_min": 500
+      },
+      "caveats": [
+        "Requires up-to-date keyword data for accuracy"
+      ],
+      "example_niches": [
+        "keto cookbooks",
+        "specialty kitchen tools"
+      ],
+      "source_quotes": [
+        "'this has a competitive score of 42 which is a lot easier to compete for'"
+      ],
+      "id": "bc8336a3-b777-48fa-8365-c9521937ec8c",
+      "type": "tactic",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:28:16.411599",
+      "last_seen": "2026-02-18T23:28:16.411599"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Low Competition Targeting",
+      "condition": "If competition score is below 50, prioritize keyword",
+      "machine_rule": {
+        "field": "competition_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this has a competitive score of 42 which is a lot easier"
+      ],
+      "id": "15e0bc4c-e74a-4c2e-9f21-19f0acb9ddce",
+      "type": "heuristic",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:41.209541",
+      "last_seen": "2026-02-18T23:27:41.209541"
+    },
+    {
+      "name": "Low Competition High Profit",
+      "condition": "If a keyword has low competitive score and higher monthly earnings than search volume",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 50
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "'strangely enough this makes more money on average per month'"
+      ],
+      "id": "ec361c6f-32c6-489f-863e-0319b0157d32",
+      "type": "heuristic",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:28:16.411599",
+      "last_seen": "2026-02-18T23:28:16.411599"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Publisher Rocket is a one-time purchase with lifetime access",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "it's a one-time purchase...any future updates...are completely free"
+      ],
+      "id": "3544618e-0ae2-4340-8186-7a61052f31e7",
+      "type": "claim",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:41.209541",
+      "last_seen": "2026-02-18T23:27:41.209541"
+    },
+    {
+      "statement": "Publisher Rocket's keyword search tool helps identify profitable Amazon niches by analyzing competition and earnings data.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "'I primarily use publisher rocket for the AMS keyword search feature'"
+      ],
+      "id": "eb2fa8ec-75aa-49e6-8950-749a49c89d3e",
+      "type": "claim",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:28:16.411599",
+      "last_seen": "2026-02-18T23:28:16.411599"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "ketogenic diet + weight loss + low-carb",
+      "description": "Target specific audience needs with content constraints",
+      "why_it_works": "Balances keyword demand with niche specificity",
+      "signals": [
+        "low review counts",
+        "high search volume"
+      ],
+      "source_quotes": [
+        "this keyword search query term...1324 search queries...$625 per month"
+      ],
+      "id": "558c4e9f-387d-4cba-81d9-aa247aa29d90",
+      "type": "niche_pattern",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:27:41.209541",
+      "last_seen": "2026-02-18T23:27:41.209541"
+    },
+    {
+      "pattern_template": "Niche + Longtail Keyword",
+      "example": "keto diet + ketogenic air fryer cookbook",
+      "description": "Broad keywords with specific longtail variations reduce competition while maintaining search volume.",
+      "why_it_works": "Balances search volume with lower competition for higher profitability",
+      "signals": [
+        "competitive_score",
+        "search_volume"
+      ],
+      "source_quotes": [
+        "'this is a very vague and broad longtail oh sorry short tail keyword'"
+      ],
+      "id": "4c4450ba-e137-4282-923e-447b8ffc92d6",
+      "type": "niche_pattern",
+      "provenance": [
+        "x09i6p9r8Ck"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T23:28:16.411599",
+      "last_seen": "2026-02-18T23:28:16.411599"
+    }
+  ]
+}

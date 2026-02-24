@@ -1,0 +1,21 @@
+{
+  "video_id": "BeqPOZtfts8",
+  "decision": "extract",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.5,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "kindle",
+    "amazon",
+    "niche",
+    "keyword",
+    "self publish",
+    "category",
+    "reviews",
+    "profitable"
+  ],
+  "transcript_word_count": 711,
+  "triaged_at": "2026-02-18T19:52:00.647195"
+}

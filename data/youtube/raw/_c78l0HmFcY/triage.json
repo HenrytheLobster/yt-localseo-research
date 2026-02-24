@@ -1,0 +1,23 @@
+{
+  "video_id": "_c78l0HmFcY",
+  "decision": "filter",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "helium",
+    "low content",
+    "self publish",
+    "self-publish",
+    "competition",
+    "coloring book"
+  ],
+  "transcript_word_count": 1685,
+  "triaged_at": "2026-02-18T19:53:18.503934"
+}

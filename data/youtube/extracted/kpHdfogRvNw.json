@@ -1,0 +1,218 @@
+{
+  "source_type": "youtube",
+  "video_id": "kpHdfogRvNw",
+  "title": "Low vs High Competition Keywords For Low-Content Publishing",
+  "extracted_at": "2026-02-18T22:20:56.048956",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9703,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "search_volume_competition_balance",
+      "description": "Prioritize keywords with high monthly search volume and low search results by analyzing their relationship",
+      "steps": [
+        "Use Publisher Rocket to check monthly search volume and Amazon search results",
+        "Identify keywords with at least 1,000 searches/month and 2,000+ results",
+        "Select 1-2 main keywords meeting these criteria for your title/keywords"
+      ],
+      "signals_used": [
+        "search_volume",
+        "search_results"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_min": 1000,
+        "search_results_min": 2000
+      },
+      "caveats": [
+        "Requires significant keyword research effort"
+      ],
+      "example_niches": [
+        "camping journal",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "it's not enough to have a high search volume if you've got a keyword with the search volume of 20,000 searches per month but there are also just as many results"
+      ],
+      "id": "ae878a08-0b0b-40a8-9bac-778a8f883bde",
+      "type": "tactic",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:15.370012",
+      "last_seen": "2026-02-18T22:20:15.370012"
+    },
+    {
+      "name": "Keyword Competitive Score Analysis",
+      "description": "Evaluate keywords using Publisher Rocket's competitive score metric to prioritize low-competition options.",
+      "steps": [
+        "Check search volume (target <100 searches/month)",
+        "Analyze competitor count (target <13,000 competitors)",
+        "Review competitive score (target 60-65 range)"
+      ],
+      "signals_used": [
+        "search_volume",
+        "competitor_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "search_volume_max": 100,
+        "competitor_count_max": 13000
+      },
+      "caveats": [
+        "Avoid keywords with >40 competitive score for fiction/nonfiction"
+      ],
+      "example_niches": [
+        "camping journal logbook"
+      ],
+      "source_quotes": [
+        "competitive score of a hundred I'm not going to go anywhere near that",
+        "probably one of the best ones out of this entire list"
+      ],
+      "id": "c4849970-0075-457c-9bf2-a31280f762d3",
+      "type": "tactic",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:56.048716",
+      "last_seen": "2026-02-18T22:20:56.048716"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "competitor_count_filter",
+      "condition": "If competitor count exceeds 5,000, avoid keyword",
+      "machine_rule": {
+        "field": "competitor_count",
+        "op": "gte",
+        "value": 5000
+      },
+      "action": "penalize",
+      "weight": 0.7,
+      "source_quotes": [
+        "34,000 competitors... that is not looking good"
+      ],
+      "id": "85bf2bbb-fd23-458f-a4b4-b7eaaee7ce02",
+      "type": "heuristic",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:15.370012",
+      "last_seen": "2026-02-18T22:20:15.370012"
+    },
+    {
+      "name": "Competitive Score Threshold",
+      "condition": "If competitive score is below 65, prioritize for low-content publishing",
+      "machine_rule": {
+        "field": "competitive_score",
+        "op": "lt",
+        "value": 65
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "I'd really like the competitive score to probably be around 60 or 65"
+      ],
+      "id": "87414688-4ebf-4bd6-b81b-3503c7a56b6d",
+      "type": "heuristic",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:56.048716",
+      "last_seen": "2026-02-18T22:20:56.048716"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Finding keywords with both high search volume and low competition is extremely difficult",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is actually really really difficult"
+      ],
+      "id": "6f05239d-5e22-4013-bd38-2713737b3956",
+      "type": "claim",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:15.370012",
+      "last_seen": "2026-02-18T22:20:15.370012"
+    },
+    {
+      "statement": "Fiction/nonfiction books require stricter competitive score thresholds (<40) due to higher content creation risk",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the person who created publisher rocket he recommends not going above a competitive score of 40"
+      ],
+      "id": "307873a3-660a-43dd-bf64-1dd4be68dcaa",
+      "type": "claim",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:56.048716",
+      "last_seen": "2026-02-18T22:20:56.048716"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Target specific audience segments with unique constraints",
+      "why_it_works": "Creates niche markets with lower competition",
+      "signals": [
+        "low review counts",
+        "specific constraints"
+      ],
+      "source_quotes": [
+        "how big the competition is in terms of how many reviews they have"
+      ],
+      "id": "da6a1a75-921e-41dd-86d6-16d920923819",
+      "type": "niche_pattern",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:15.370012",
+      "last_seen": "2026-02-18T22:20:15.370012"
+    },
+    {
+      "pattern_template": "IDENTITY + NICHED_PROBLEM",
+      "example": "camping + trip planning journal",
+      "description": "Combine broad interests with specific low-content solutions",
+      "why_it_works": "Balances search volume with manageable competition",
+      "signals": [
+        "low review counts",
+        "specific keyword variations"
+      ],
+      "source_quotes": [
+        "we've got close to a thousand searches per month",
+        "camping journal logbook"
+      ],
+      "id": "fe36c20d-0d0c-4c1d-9f1d-22ea73a2d917",
+      "type": "niche_pattern",
+      "provenance": [
+        "kpHdfogRvNw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T22:20:56.048716",
+      "last_seen": "2026-02-18T22:20:56.048716"
+    }
+  ]
+}

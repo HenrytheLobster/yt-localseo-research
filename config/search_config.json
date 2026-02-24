@@ -1,0 +1,32 @@
+{
+  "_comment": "Edit this file to control what youtube_discover.py searches for. Run 'python manage_search.py list' to view, or use manage_search.py subcommands to edit safely.",
+  "queries": [
+    "KDP keyword research",
+    "KDP niche research",
+    "find low competition keywords KDP",
+    "Publisher Rocket tutorial",
+    "KDP BSR explained",
+    "KDP low content niche research",
+    "how to choose book topics Amazon KDP",
+    "KDP categories browse nodes",
+    "rank for Kindle keywords",
+    "KDP competitor analysis",
+    "Amazon KDP profitable niches",
+    "low content book research strategy",
+    "KDP income breakdown",
+    "how I made money on KDP",
+    "KDP monthly earnings",
+    "KDP case study",
+    "self publishing mistake",
+    "KDP failure",
+    "Amazon KDP experiment",
+    "how I test book niches",
+    "low content book test results"
+  ],
+  "negative_keywords": [
+    "publisher rocket",
+    "book bolt",
+    "helium 10"
+  ],
+  "channels": []
+}

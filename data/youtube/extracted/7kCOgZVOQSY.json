@@ -1,0 +1,201 @@
+{
+  "source_type": "youtube",
+  "video_id": "7kCOgZVOQSY",
+  "title": "EASY AND FREE Amazon KDP Niche Research for No and Low Content Books | Amazon KDP for Beginners",
+  "extracted_at": "2026-02-18T20:13:05.768604",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 9289,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Amazon Bestsellers Analysis",
+      "description": "Identify trending niches by examining Amazon's bestseller categories and subcategories",
+      "steps": [
+        "Navigate to Amazon.com > Bestsellers > Books",
+        "Explore top-level categories like 'Children's Books'",
+        "Drill down into subcategories like 'Activities Crafts and Games'",
+        "Analyze BSR rankings and book themes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "KDP Research Chrome Extension",
+        "KDP Keyword Expander"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "High BSR books may be too competitive"
+      ],
+      "example_niches": [
+        "Children's Activity Books"
+      ],
+      "source_quotes": [
+        "Amazon is basically telling you which books are selling well"
+      ],
+      "id": "0fc9411b-9761-4b12-baa8-003a605b5e73",
+      "type": "tactic",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:12:23.505501",
+      "last_seen": "2026-02-18T20:12:23.505501"
+    },
+    {
+      "name": "Keyword Niche Analysis",
+      "description": "Build a list of niches and keywords using Excel/Google Docs with data from KDP Chrome extension",
+      "steps": [
+        "Download keywords from self-publishing titans (paid)",
+        "Create manual keyword list in spreadsheet",
+        "Use KDP Chrome extension to extract niche score, results, average BSR",
+        "Analyze ad presence and book pricing data"
+      ],
+      "signals_used": [
+        "BSR",
+        "niche_score",
+        "ad_count"
+      ],
+      "tools_mentioned": [
+        "KDP Chrome extension",
+        "Google Docs"
+      ],
+      "thresholds": {
+        "bsr_max": 500000,
+        "ad_count_min": 3
+      },
+      "caveats": [
+        "Requires manual data entry without paid tools"
+      ],
+      "example_niches": [
+        "workbook for kids with dyslexia",
+        "spanish english workbooks for kids"
+      ],
+      "source_quotes": [
+        "the easiest way to have done this would have been to download the keywords here but only paid subscribers...",
+        "this is why the download of the kdp chrome research extension is important"
+      ],
+      "id": "25ac7652-a7f2-4730-97e9-572c1584582d",
+      "type": "tactic",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:05.768419",
+      "last_seen": "2026-02-18T20:13:05.768419"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Keyword Expansion Heuristic",
+      "condition": "If keyword expansion reveals multiple niche variations, prioritize niches with moderate BSR and review counts",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "Using the keyword expander gives us a lot of niche ideas"
+      ],
+      "id": "1ea3aad4-c609-4699-b083-cb23b14caea8",
+      "type": "heuristic",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:12:23.505501",
+      "last_seen": "2026-02-18T20:12:23.505501"
+    },
+    {
+      "name": "Niche Score Threshold",
+      "condition": "If niche score >= 60 then prioritize",
+      "machine_rule": {
+        "field": "niche_score",
+        "op": "gte",
+        "value": 60
+      },
+      "action": "boost",
+      "weight": 0.0,
+      "source_quotes": [
+        "anything from 60 um or 50 plus is a great niche to go for"
+      ],
+      "id": "091b02d3-5c7c-42c5-ba40-d06d72a7feef",
+      "type": "heuristic",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:05.768419",
+      "last_seen": "2026-02-18T20:13:05.768419"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Amazon's bestseller list indicates current market demand",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon is basically telling you which books are selling well"
+      ],
+      "id": "6dc9ad0a-44f0-40f9-8e0d-f31e463df455",
+      "type": "claim",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:12:23.505501",
+      "last_seen": "2026-02-18T20:12:23.505501"
+    },
+    {
+      "statement": "Niche scores of 60+ indicate strong market potential",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "anything from 60 um or 50 plus is a great niche to go for"
+      ],
+      "id": "511b23fb-3471-4b93-b67c-1759bdb941e0",
+      "type": "claim",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:13:05.768419",
+      "last_seen": "2026-02-18T20:13:05.768419"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Children + Halloween Themes + Age Range",
+      "description": "Target specific demographics with themed content and age targeting",
+      "why_it_works": "Combines seasonal demand with age-specific market segments",
+      "signals": [
+        "low review counts",
+        "BSR rankings"
+      ],
+      "source_quotes": [
+        "Looking for common themes in the books"
+      ],
+      "id": "f686f766-1def-4524-90d7-e286d53f897b",
+      "type": "niche_pattern",
+      "provenance": [
+        "7kCOgZVOQSY"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:12:23.505501",
+      "last_seen": "2026-02-18T20:12:23.505501"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "source_type": "youtube",
+  "video_id": "zotwdYhiD9g",
+  "title": "This KDP Niche Is Unpopular, But It Sells All Year Long",
+  "extracted_at": "2026-02-18T20:35:46.938977",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 20313,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "low_competition_niche",
+      "description": "Identify niches with low search results and high niche scores, leveraging evergreen demand.",
+      "steps": [
+        "Search for specific niches like 'ADHD cleaning planner' to find low competition",
+        "Analyze BSR and review counts to validate demand"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Ensure content differentiation to avoid saturation"
+      ],
+      "example_niches": [
+        "ADHD cleaning planner",
+        "home cleaning checklist"
+      ],
+      "source_quotes": [
+        "Total results very, very low at 400... niche score, we see an 82"
+      ],
+      "id": "f929a431-ea37-410a-a511-93476175cfcb",
+      "type": "tactic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:33:41.451294",
+      "last_seen": "2026-02-18T20:33:41.451294"
+    },
+    {
+      "name": "template_automation",
+      "description": "Use pre-made editable templates to streamline planner creation and reduce manual work.",
+      "steps": [
+        "Search Creative Fabrica for KDP-compatible templates",
+        "Select Canva-editable templates with relevant content",
+        "Customize and export templates for KDP publishing"
+      ],
+      "signals_used": [
+        "page_count",
+        "price"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica",
+        "Canva"
+      ],
+      "thresholds": {
+        "pages_min": 100,
+        "price_max": 15
+      },
+      "caveats": [
+        "Requires commercial rights for template use"
+      ],
+      "example_niches": [
+        "ADHD cleaning planners"
+      ],
+      "source_quotes": [
+        "You can use pre-made editable templates that do most of the heavy lifting for you."
+      ],
+      "id": "8177846a-f9a1-4e3a-ac64-0e66e5f8bb5b",
+      "type": "tactic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:34:19.756198",
+      "last_seen": "2026-02-18T20:34:19.756198"
+    },
+    {
+      "name": "Canva Template Customization",
+      "description": "Modify existing Canva templates to avoid KDP duplication issues by altering fonts, colors, and layout elements.",
+      "steps": [
+        "Duplicate pages for easy editing",
+        "Replace generic elements with niche-specific visuals (e.g., cleaning supplies)",
+        "Adjust fonts, colors, and effects for uniqueness",
+        "Rearrange layouts and add custom graphics"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Canva"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Over-editing may reduce visual coherence"
+      ],
+      "example_niches": [
+        "cleaning planner"
+      ],
+      "source_quotes": [
+        "You can easily duplicate these pages by just hitting duplicate right there."
+      ],
+      "id": "4b980882-73c5-4cb7-a45e-e0522094e8ae",
+      "type": "tactic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:35:14.875022",
+      "last_seen": "2026-02-18T20:35:14.875022"
+    },
+    {
+      "name": "template_customization",
+      "description": "Modify book templates by adjusting colors, fonts, and layouts to align with a cohesive theme",
+      "steps": [
+        "Remove existing elements",
+        "Add theme-appropriate content",
+        "Adjust font sizes and styles",
+        "Apply color contrasts",
+        "Group and reposition design elements"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [],
+      "example_niches": [
+        "ADHD cleaning planner"
+      ],
+      "source_quotes": [
+        "this is a lot easier than starting from scratch"
+      ],
+      "id": "c4055649-5393-4ea2-b340-edcf0c4d27e6",
+      "type": "tactic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:35:46.938858",
+      "last_seen": "2026-02-18T20:35:46.938858"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "boost_low_review_niches",
+      "condition": "If median_reviews is less than 200, then boost the niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "552 to 828 copies per month... bestsellers rank of 11,284"
+      ],
+      "id": "4e0f24be-fc6e-45cf-9cbf-f72b4b3786c4",
+      "type": "heuristic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:33:41.451294",
+      "last_seen": "2026-02-18T20:33:41.451294"
+    },
+    {
+      "name": "year_round_demand",
+      "condition": "If a book maintains consistent sales across seasons with minimal price changes, it indicates year-round demand",
+      "machine_rule": {
+        "field": "seasonality_score",
+        "op": "gte",
+        "value": 0.7
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "This book sells year round. There are moments... but for the most part, you can see this book is going to sell consistently year after year."
+      ],
+      "id": "f02b2dae-9c54-4dc7-afd9-c1d1fbc2f409",
+      "type": "heuristic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:34:19.756198",
+      "last_seen": "2026-02-18T20:34:19.756198"
+    },
+    {
+      "name": "Low-Review Niche Optimization",
+      "condition": "If median reviews are below 200, prioritize template customization",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "This KDP niche Is Unpopular, But It Sells All Year Long"
+      ],
+      "id": "1e32d25b-0f52-4bc5-ac3d-6bfcc9a8b8df",
+      "type": "heuristic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:35:14.875022",
+      "last_seen": "2026-02-18T20:35:14.875022"
+    },
+    {
+      "name": "review_based_boost",
+      "condition": "If median_reviews is less than 200, then boost",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "you don't have to start from scratch"
+      ],
+      "id": "5fc5d302-ef21-4fd7-b55d-54bee0aa8a43",
+      "type": "heuristic",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:35:46.938858",
+      "last_seen": "2026-02-18T20:35:46.938858"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "ADHD cleaning planners have 400 Amazon search results with a niche score of 82.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Total results very, very low at 400... niche score, we see an 82"
+      ],
+      "id": "6411f118-48d1-4f24-b66a-a2406dd7f75a",
+      "type": "claim",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:33:41.451294",
+      "last_seen": "2026-02-18T20:33:41.451294"
+    },
+    {
+      "statement": "ADHD cleaning planners demonstrate consistent year-round sales despite niche unpopularity",
+      "category": "market_dynamics",
+      "confidence": "medium",
+      "source_quotes": [
+        "This book sells year round... you can see this book is going to sell consistently year after year."
+      ],
+      "id": "4b0b1181-26b7-44ac-a5cf-bb3004cc5372",
+      "type": "claim",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:34:19.756198",
+      "last_seen": "2026-02-18T20:34:19.756198"
+    },
+    {
+      "statement": "KDP enforces originality checks for cover and interior content",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "You don't want to get in trouble with Amazon KDP"
+      ],
+      "id": "071399a5-029b-409c-9adb-b16f9714db9a",
+      "type": "claim",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:35:14.875022",
+      "last_seen": "2026-02-18T20:35:14.875022"
+    },
+    {
+      "statement": "The ADHD cleaning planner niche remains consistent year-round due to evergreen demand for organization and cleaning solutions",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "cleaning and organization never go out of season"
+      ],
+      "id": "1ffad7bd-1cdc-4d3c-b58c-488352f953d0",
+      "type": "claim",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:35:46.938858",
+      "last_seen": "2026-02-18T20:35:46.938858"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "ADHD + cleaning disorder + structured planning",
+      "description": "Target underserved audiences with specific challenges requiring tailored solutions.",
+      "why_it_works": "Combines niche identity with a universal problem, creating demand for specialized tools.",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "This niche is actually wide open... people need it in January just as much as they need it in July"
+      ],
+      "id": "769dbe9a-2300-48ef-a385-6d496df26b2d",
+      "type": "niche_pattern",
+      "provenance": [
+        "zotwdYhiD9g"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T20:33:41.451294",
+      "last_seen": "2026-02-18T20:33:41.451294"
+    }
+  ]
+}

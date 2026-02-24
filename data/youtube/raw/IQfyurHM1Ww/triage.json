@@ -1,0 +1,21 @@
+{
+  "video_id": "IQfyurHM1Ww",
+  "decision": "filter",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 1.0,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "kdp",
+    "amazon",
+    "bsr",
+    "niche",
+    "keyword",
+    "helium",
+    "book topic",
+    "category",
+    "profitable"
+  ],
+  "transcript_word_count": 2036,
+  "triaged_at": "2026-02-19T00:54:14.624867"
+}

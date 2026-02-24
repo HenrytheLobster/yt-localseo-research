@@ -1,0 +1,380 @@
+{
+  "source_type": "youtube",
+  "video_id": "yeWeuyftobE",
+  "title": "5 Amazon KDP Keywords HOT Niches Low Competition Keyword #KDP #KDPKeywords",
+  "extracted_at": "2026-02-18T21:12:29.966083",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 22242,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 4,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "low_competition_keyword_research",
+      "description": "Identify niches with high keyword scores and low competition using tools like Creative Fabrica for design.",
+      "steps": [
+        "Check keyword niche scores (target 45+)",
+        "Analyze BSR and average price analytics",
+        "Use Creative Fabrica for interior design templates"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Requires minimal design skills for interiors"
+      ],
+      "example_niches": [
+        "Retail Sales Inventory Log Book"
+      ],
+      "source_quotes": [
+        "this has a great keyword Niche score of 59"
+      ],
+      "id": "51faac8e-4f48-4c2b-a029-e7a4fd506f66",
+      "type": "tactic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:05:36.822099",
+      "last_seen": "2026-02-18T21:05:36.822099"
+    },
+    {
+      "name": "category_selection_based_on_ranking",
+      "description": "Choose categories by analyzing existing books' rankings and selecting high-performing niches.",
+      "steps": [
+        "Analyze top-ranking books in target niches",
+        "Match your book's content to those categories",
+        "Manually select categories during upload"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with negative reviews about style or execution"
+      ],
+      "example_niches": [
+        "small business bookkeeping",
+        "inventory sales logbook"
+      ],
+      "source_quotes": [
+        "you want to keep that in mind when you are choosing the categories for your book"
+      ],
+      "id": "a03e3a69-f1f8-46a3-b4ec-76cb39d2c576",
+      "type": "tactic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:06:15.611799",
+      "last_seen": "2026-02-18T21:06:15.611799"
+    },
+    {
+      "name": "look_inside_optimization",
+      "description": "Enhance conversion by showcasing the book's interior through the 'Look Inside' feature.",
+      "steps": [
+        "Design interiors with clear tables of contents",
+        "Include copyright sections concisely",
+        "Add visuals and formatting to preview pages"
+      ],
+      "signals_used": [
+        "review_count",
+        "BSR"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200
+      },
+      "caveats": [
+        "Ensure previews align with customer expectations to avoid negative feedback"
+      ],
+      "example_niches": [
+        "finance guides",
+        "office equipment manuals"
+      ],
+      "source_quotes": [
+        "have a look at the books interior before purchasing"
+      ],
+      "id": "bdb5e052-9ef2-474f-8c61-d734b0ce0262",
+      "type": "tactic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:06:15.611799",
+      "last_seen": "2026-02-18T21:06:15.611799"
+    },
+    {
+      "name": "keyword_validation",
+      "description": "Verify keywords using look inside features and book interiors to avoid mismatches",
+      "steps": [
+        "Check book interior for keyword alignment",
+        "Validate BSR rankings against keyword scores"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid relying solely on keyword scores without content verification"
+      ],
+      "example_niches": [
+        "365 Christian Journal",
+        "Duck Hunting Log Book Journal"
+      ],
+      "source_quotes": [
+        "this could have been easily prevented using the look inside feature"
+      ],
+      "id": "7b15c723-5ac6-4d36-b0bd-fe8fdceeb1eb",
+      "type": "tactic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:11:56.374019",
+      "last_seen": "2026-02-18T21:11:56.374019"
+    },
+    {
+      "name": "Keyword Niche Selection",
+      "description": "Prioritize keywords with niche scores above 40 and analyze bestsellers for content gaps.",
+      "steps": [
+        "Check BSR rankings of top-selling books",
+        "Review comment sections for improvement ideas",
+        "Use Creative Fabrica for interior templates"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Creative Fabrica"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Avoid niches with saturation beyond 50000 BSR"
+      ],
+      "example_niches": [
+        "duck hunting logbook"
+      ],
+      "source_quotes": [
+        "this book belongs to a section for notes...left that Space Blank for describing..."
+      ],
+      "id": "450d8194-6cf7-498d-9716-dac05b54ebd1",
+      "type": "tactic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:12:29.965890",
+      "last_seen": "2026-02-18T21:12:29.965890"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "boost_low_review_niches",
+      "condition": "If median reviews are below 200 and BSR under 50,000, prioritize the niche",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "the majority of the books are independently published"
+      ],
+      "id": "0b89f2cf-5998-42d7-890a-c8e40fa07ba6",
+      "type": "heuristic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:05:36.822099",
+      "last_seen": "2026-02-18T21:05:36.822099"
+    },
+    {
+      "name": "low_review_threshold",
+      "condition": "If a niche has fewer than 200 reviews, it may indicate low competition",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "this book is currently ranking in finance and small business bookkeeping"
+      ],
+      "id": "3b82b8f2-45ca-493e-bdb4-cd24bd28510a",
+      "type": "heuristic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:06:15.611799",
+      "last_seen": "2026-02-18T21:06:15.611799"
+    },
+    {
+      "name": "low_competition_boost",
+      "condition": "If keyword score is above 40, prioritize niches with low review counts",
+      "machine_rule": {
+        "field": "keyword_score",
+        "op": "gt",
+        "value": 40
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "anything 40 and above is great"
+      ],
+      "id": "6a4fdde8-e6f9-4ae3-a8c9-a7488ce4baf0",
+      "type": "heuristic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:11:56.374019",
+      "last_seen": "2026-02-18T21:11:56.374019"
+    },
+    {
+      "name": "Review-Driven Optimization",
+      "condition": "If median reviews are less than 200, prioritize keywords with comment-section improvement suggestions",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "they could have one thing is as an improvement...write their notes and Reflections"
+      ],
+      "id": "96a120ae-81c7-46c6-8669-b7ab5f3b3c2d",
+      "type": "heuristic",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:12:29.965890",
+      "last_seen": "2026-02-18T21:12:29.965890"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Retail Sales Inventory Log Book niche has low competition and high keyword scores",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "this is a great Niche because apart from the keyword new scoring"
+      ],
+      "id": "528c9099-ed14-4a57-aef4-650f0336725f",
+      "type": "claim",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:05:36.822099",
+      "last_seen": "2026-02-18T21:05:36.822099"
+    },
+    {
+      "statement": "Books can rank in multiple categories if their content aligns with the category definitions.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "you can manually select them as you are uploading your book"
+      ],
+      "id": "89149d31-e690-4b3d-870f-d0db9b9d99e7",
+      "type": "claim",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:06:15.611799",
+      "last_seen": "2026-02-18T21:06:15.611799"
+    },
+    {
+      "statement": "365 Christian Journal has 2605 total results and an average price of $11.26",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "the total results of 2605 and the average price is 11.26"
+      ],
+      "id": "b7f4abc3-c424-445a-aa5c-c47858f32f47",
+      "type": "claim",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:11:56.374019",
+      "last_seen": "2026-02-18T21:11:56.374019"
+    },
+    {
+      "statement": "KDP allows unlimited use of Creative Fabrica templates with active subscriptions",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "complete access of everything that's there...as long as I have the subscription active"
+      ],
+      "id": "cc5d618f-ef00-46dd-85bf-6830dc966294",
+      "type": "claim",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:12:29.965890",
+      "last_seen": "2026-02-18T21:12:29.965890"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "Retail Sales Inventory Log Book + small business record-keeping + low competition",
+      "description": "Target specific business needs with minimal design requirements",
+      "why_it_works": "Combines practical utility with easy content creation",
+      "signals": [
+        "low review counts",
+        "high BSR"
+      ],
+      "source_quotes": [
+        "it's super super easy to create content and Interiors for this Niche"
+      ],
+      "id": "52ddc529-b165-4cf4-b6ae-f58b2ba698a5",
+      "type": "niche_pattern",
+      "provenance": [
+        "yeWeuyftobE"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-18T21:05:36.822099",
+      "last_seen": "2026-02-18T21:05:36.822099"
+    }
+  ]
+}

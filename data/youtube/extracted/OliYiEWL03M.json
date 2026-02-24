@@ -1,0 +1,244 @@
+{
+  "source_type": "youtube",
+  "video_id": "OliYiEWL03M",
+  "title": "Kindle Publishing 2019 - How Does Amazon Rank Your Books? - Amazon Algorithm Explained",
+  "extracted_at": "2026-02-19T00:59:38.866215",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 11094,
+  "counts": {
+    "tactics": 3,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "metadata alignment",
+      "description": "Align book metadata (title, keywords, categories) with target keywords to improve relevance and conversion rates",
+      "steps": [
+        "Match title to search terms",
+        "Use relevant keywords in metadata",
+        "Ensure category alignment"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "Publisher Rocket"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Keyword stuffing may reduce relevance"
+      ],
+      "example_niches": [
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if your book title is ketogenic diet it's relevant... if your book title is Paleo diet it doesn't really make sense"
+      ],
+      "id": "ebd75479-09fd-4a5d-9c6b-ff29027b0bb0",
+      "type": "tactic",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:56.873398",
+      "last_seen": "2026-02-19T00:58:56.873398"
+    },
+    {
+      "name": "Keyword Alignment",
+      "description": "Ensure title, subtitle, and seven keywords are relevant and congruent to target specific niches.",
+      "steps": [
+        "Use relevant keywords in title/subtitle",
+        "Avoid irrelevant keywords like 'vegan' for a 'ketogenic diet' book"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [
+        "double your Kindle sales course"
+      ],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Keyword stuffing with irrelevant terms may harm relevance"
+      ],
+      "example_niches": [
+        "ketogenic diet",
+        "teen planner"
+      ],
+      "source_quotes": [
+        "if you're making a ketogenic diet book you want to probably put like low carb high protein... in the seven keywords section"
+      ],
+      "id": "ff5b294a-4974-4f23-afbf-0319743563f6",
+      "type": "tactic",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:59:38.865838",
+      "last_seen": "2026-02-19T00:59:38.865838"
+    },
+    {
+      "name": "Consistent Sales Strategy",
+      "description": "Prioritize slow, steady sales over sudden spikes to maintain long-term visibility.",
+      "steps": [
+        "Focus on daily consistent sales",
+        "Avoid relying on short-term traffic spikes"
+      ],
+      "signals_used": [
+        "BSR",
+        "review_count"
+      ],
+      "tools_mentioned": [],
+      "thresholds": {
+        "reviews_max": 200,
+        "bsr_max": 50000
+      },
+      "caveats": [
+        "Sudden spikes may cause temporary drops in rankings"
+      ],
+      "example_niches": [
+        "self-help",
+        "coaching"
+      ],
+      "source_quotes": [
+        "it's better to have slow consistent sales rather than sudden spikes"
+      ],
+      "id": "a9cd7309-049c-443f-9bc5-fc7050cd92bc",
+      "type": "tactic",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:59:38.865838",
+      "last_seen": "2026-02-19T00:59:38.865838"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "review threshold boost",
+      "condition": "If median reviews are below 200, prioritize boosting",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "conversion rate... everything must be aligned"
+      ],
+      "id": "5d8c0831-7a95-4876-a878-0ce2fda731a9",
+      "type": "heuristic",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:56.873398",
+      "last_seen": "2026-02-19T00:58:56.873398"
+    },
+    {
+      "name": "Review-Driven Boost",
+      "condition": "If median reviews are below 200, prioritize boosting visibility",
+      "machine_rule": {
+        "field": "median_reviews",
+        "op": "lt",
+        "value": 200
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "it's better to have consistent sales ish I had books... stuck on page one for a really really long time"
+      ],
+      "id": "a7dd156e-3e34-4082-b252-49f328a0097a",
+      "type": "heuristic",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:59:38.865838",
+      "last_seen": "2026-02-19T00:59:38.865838"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "New books receive a 30-day ranking boost",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "new books gets a boost... 30 days after the book is released"
+      ],
+      "id": "923fb60b-c752-46a6-9f6c-7374aa6fa893",
+      "type": "claim",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:56.873398",
+      "last_seen": "2026-02-19T00:58:56.873398"
+    },
+    {
+      "statement": "Amazon prioritizes customer relevance over publisher preferences.",
+      "category": "platform_behavior",
+      "confidence": "medium",
+      "source_quotes": [
+        "Amazon cares about customers way more than publishers"
+      ],
+      "id": "1b240cc3-c870-46dc-8203-d531057b9ae0",
+      "type": "claim",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:59:38.865838",
+      "last_seen": "2026-02-19T00:59:38.865838"
+    },
+    {
+      "statement": "Consistent sales outperform sudden spikes in long-term rankings.",
+      "category": "platform_behavior",
+      "confidence": "high",
+      "source_quotes": [
+        "it's better to have slow consistent sales rather than sudden spikes"
+      ],
+      "id": "62fee0a1-7ea1-414b-8762-b285387cff69",
+      "type": "claim",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:59:38.865838",
+      "last_seen": "2026-02-19T00:59:38.865838"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
+      "example": "teen boys + ADHD + Christian",
+      "description": "Niche targeting combines specific audience identity with problem and constraint for better market focus",
+      "why_it_works": "Leverages low competition and targeted relevance",
+      "signals": [
+        "low review counts"
+      ],
+      "source_quotes": [
+        "people who search for vegan diet are looking for vegan diet... they're not gonna buy your ketogenic diet books"
+      ],
+      "id": "77c40e2f-d5cd-4d81-9fac-47eed82a4597",
+      "type": "niche_pattern",
+      "provenance": [
+        "OliYiEWL03M"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-19T00:58:56.873398",
+      "last_seen": "2026-02-19T00:58:56.873398"
+    }
+  ]
+}
