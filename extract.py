@@ -159,7 +159,10 @@ def chunk_transcript(text: str, chunk_size: int = CHUNK_SIZE, max_chunks: int = 
 
 # call_ollama imported from utils (has retry + backoff built in)
 
-EXTRACTION_PROMPT = """You are a KDP market research analyst extracting knowledge from a YouTube transcript.
+EXTRACTION_PROMPT = """You are a Local SEO specialist extracting location page best practices from a YouTube transcript.
+
+FOCUS: Extract TACTICS, ELEMENTS, PATTERNS, and BEST PRACTICES for WordPress location pages.
+SKIP: Tools, case studies, objections, controversies.
 
 VIDEO TITLE: {title}
 VIDEO ID: {video_id}
@@ -173,14 +176,15 @@ Return ONLY a valid JSON object — no preamble, no markdown fences, no trailing
 {{
   "tactics": [
     {{
-      "name": "short name",
-      "description": "what this tactic is",
-      "steps": ["step 1"],
-      "signals_used": ["BSR", "review_count"],
-      "tools_mentioned": ["Publisher Rocket"],
-      "thresholds": {{"reviews_max": 200, "bsr_max": 50000}},
-      "caveats": ["when it fails"],
-      "example_niches": ["teen planner"],
+      "name": "short name (e.g. 'Schema Markup for LocalBusiness')",
+      "description": "what this tactic is and why it matters",
+      "steps": ["step 1", "step 2"],
+      "elements": ["JSON-LD schema", "geo coordinates", "LocalBusiness type"],
+      "signals_used": ["ranking factor", "SERP feature"],
+      "tools_mentioned": ["schema generator"],
+      "templates": {{"url_pattern": "/locations/[city]/", "title_template": "[Service] in [City], [State]"}},
+      "caveats": ["when it may not work"],
+      "example_locations": ["plumber in Austin TX"],
       "source_quotes": ["short verbatim quote under 80 words"]
     }}
   ],
@@ -188,27 +192,27 @@ Return ONLY a valid JSON object — no preamble, no markdown fences, no trailing
     {{
       "name": "short name",
       "condition": "If X then Y (human readable)",
-      "machine_rule": {{"field": "median_reviews", "op": "lt", "value": 200}},
+      "machine_rule": {{"field": "has_schema_markup", "op": "eq", "value": true}},
       "action": "boost",
-      "weight": 0.7,
+      "weight": 0.8,
       "source_quotes": ["short verbatim quote"]
     }}
   ],
   "claims": [
     {{
-      "statement": "declarative fact about KDP",
-      "category": "platform_behavior",
-      "confidence": "medium",
+      "statement": "declarative fact about local SEO or location pages",
+      "category": "ranking_factor",
+      "confidence": "high",
       "source_quotes": ["short verbatim quote"]
     }}
   ],
   "niche_patterns": [
     {{
-      "pattern_template": "IDENTITY + PROBLEM + CONSTRAINT",
-      "example": "teen boys + ADHD + Christian",
-      "description": "what this pattern is",
-      "why_it_works": "reason",
-      "signals": ["low review counts"],
+      "pattern_name": "e.g. Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "what this pattern is and when to use it",
+      "why_it_works": "reason (e.g. user intent)",
+      "signals": ["low competition", "high intent"],
       "source_quotes": ["short verbatim quote"]
     }}
   ]
@@ -217,7 +221,7 @@ Return ONLY a valid JSON object — no preamble, no markdown fences, no trailing
 Valid values:
 - machine_rule.op: lt | gt | lte | gte | eq | contains
 - action: boost | penalize | flag | skip
-- category: market_dynamics | platform_behavior | formatting | risk | research_method
+- category: ranking_factor | content | technical | user_experience | risk
 - confidence: high | medium | low
 - Empty sections: []
 - Extract 0–6 items per section. Only include things explicitly stated in this chunk.

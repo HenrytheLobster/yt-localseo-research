@@ -1,8 +1,8 @@
-# KDP YouTube Research Agent
+# Local SEO Location Pages YouTube Research Agent
 
-An autonomous system that watches YouTube for KDP topic research tutorials,
-extracts structured knowledge, and feeds scoring rules back into your
-Kindle topic discovery pipeline.
+An autonomous system that watches YouTube for Local SEO location page tutorials,
+extracts structured knowledge (tactics, elements, patterns, best practices),
+and feeds research insights into WordPress location page plugin design.
 
 ---
 
