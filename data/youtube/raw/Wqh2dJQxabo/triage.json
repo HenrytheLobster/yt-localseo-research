@@ -1,0 +1,24 @@
+{
+  "video_id": "Wqh2dJQxabo",
+  "decision": "filter",
+  "reason": "heuristic pass + phi3:mini confirmed",
+  "confidence": 0.95,
+  "stage": "llm",
+  "model_used": "phi3:mini",
+  "kdp_term_hits": [
+    "location page",
+    "location pages",
+    "city page",
+    "service page",
+    "service pages",
+    "local seo",
+    "local business",
+    "google business profile",
+    "testimonials",
+    "title tag",
+    "h1",
+    "google business profile"
+  ],
+  "transcript_word_count": 2761,
+  "triaged_at": "2026-02-25T03:00:18.019894"
+}

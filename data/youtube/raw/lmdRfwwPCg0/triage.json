@@ -1,0 +1,10 @@
+{
+  "video_id": "lmdRfwwPCg0",
+  "decision": "skip",
+  "reason": "Insufficient local-SEO signal (0 terms)",
+  "confidence": 1.0,
+  "stage": "heuristic",
+  "kdp_term_hits": [],
+  "transcript_word_count": 1303,
+  "triaged_at": "2026-02-25T03:00:08.333069"
+}

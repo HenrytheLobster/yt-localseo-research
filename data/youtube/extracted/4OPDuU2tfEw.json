@@ -1,0 +1,231 @@
+{
+  "source_type": "youtube",
+  "video_id": "4OPDuU2tfEw",
+  "title": "Service Area Pages for Local SEO, Explained (2024)",
+  "extracted_at": "2026-02-25T03:07:25.675888",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 2,
+  "transcript_chars": 7101,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 3,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Schema Markup for LocalBusiness",
+      "description": "Structuring location data with schema markup helps search engines understand and prioritize location-specific content for rankings.",
+      "steps": [
+        "Create JSON-LD schema for LocalBusiness type",
+        "Include geo coordinates and service-specific details"
+      ],
+      "elements": [
+        "JSON-LD schema",
+        "geo coordinates",
+        "LocalBusiness type"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "SERP feature"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "example_locations": [
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "this page and the pages like it are specifically optimized through a whole wide range of techniques we use to rank in search engines"
+      ],
+      "id": "3b0b9ca8-1043-45ba-9d8e-4b9893aea1a4",
+      "type": "tactic",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:06:38.885305",
+      "last_seen": "2026-02-25T03:06:38.885305"
+    },
+    {
+      "name": "Google Business Profile Optimization",
+      "description": "Prioritize Google Business Profile to enhance local visibility and provide essential contact info like hours and phone number",
+      "steps": [
+        "Create and verify Google Business Profile",
+        "Add service areas and contact details"
+      ],
+      "elements": [
+        "Hours of operation",
+        "Phone number",
+        "Service area map indicator"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "SERP feature"
+      ],
+      "tools_mentioned": [],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Avoid displaying physical address for service-based businesses"
+      ],
+      "example_locations": [
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "your company will be displayed and this is actually a service area business profile"
+      ],
+      "id": "9f96bcc9-89da-4e0b-b3aa-44ada16dcb01",
+      "type": "tactic",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:07:25.675747",
+      "last_seen": "2026-02-25T03:07:25.675747"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Schema Markup Boost",
+      "condition": "If a page has schema markup, it should be prioritized for ranking",
+      "machine_rule": {
+        "field": "has_schema_markup",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "this page and the pages like it are specifically optimized through a whole wide range of techniques we use to rank in search engines"
+      ],
+      "id": "91d59816-4391-4c61-b4bb-458295e2b735",
+      "type": "heuristic",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:06:38.885305",
+      "last_seen": "2026-02-25T03:06:38.885305"
+    },
+    {
+      "name": "Schema Markup Presence",
+      "condition": "If a page has schema markup then boost ranking",
+      "machine_rule": {
+        "field": "has_schema_markup",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "your company will be displayed and this is actually a service area business profile"
+      ],
+      "id": "d57e5a6e-669d-4010-ac63-8223ef1c4eab",
+      "type": "heuristic",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:07:25.675747",
+      "last_seen": "2026-02-25T03:07:25.675747"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Service area pages require 3+ months of optimization to show organic rankings",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "these landing pages here we're looking at are only about 3 months old so only half of them have actually started to rank on Google"
+      ],
+      "id": "d7a897d5-713a-4173-8441-85b679ab31d0",
+      "type": "claim",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:06:38.885305",
+      "last_seen": "2026-02-25T03:06:38.885305"
+    },
+    {
+      "statement": "Google Business profiles outrank organic landing pages in local search",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "this is 20 centuries profile here this will be your number one marketing tool to Market your services locally"
+      ],
+      "id": "52d2dc6f-a423-4fb3-9e1d-b22d5379450c",
+      "type": "claim",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:06:38.885305",
+      "last_seen": "2026-02-25T03:06:38.885305"
+    },
+    {
+      "statement": "Prioritizing Google Business Profile improves local search visibility",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "prioritize your Google business profile first"
+      ],
+      "id": "05160b94-366b-41a8-8e42-d7c6ad469394",
+      "type": "claim",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:07:25.675747",
+      "last_seen": "2026-02-25T03:07:25.675747"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "Targeting specific services in defined geographic areas aligns with user intent for localized solutions",
+      "why_it_works": "High intent queries with lower competition for niche location-based keywords",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "if we scroll down a little further we don't we don't come up right away right I don't see 20th century roofings landing page yet"
+      ],
+      "id": "18b2dc4c-7123-41a7-8693-ba135b4a6a9e",
+      "type": "niche_pattern",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:06:38.885305",
+      "last_seen": "2026-02-25T03:06:38.885305"
+    },
+    {
+      "pattern_name": "Service Area Map Indicator",
+      "example": "plumbing services in Austin TX",
+      "description": "Use visual indicators to show service areas instead of physical addresses",
+      "why_it_works": "Signals service-based business intent and geographic coverage",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "they actually um show up in a range of areas rather than just one city"
+      ],
+      "id": "e851ba0b-7b57-4e3b-8eb3-86006b4fed1e",
+      "type": "niche_pattern",
+      "provenance": [
+        "4OPDuU2tfEw"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:07:25.675747",
+      "last_seen": "2026-02-25T03:07:25.675747"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "source_type": "youtube",
+  "video_id": "eXfOydh6Xio",
+  "title": "It\u2019s New 2/2: Google AI reports, no comment on volatility, endorsements on Google Ads, ChatGPT ads",
+  "extracted_at": "2026-02-25T03:26:29.014476",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 11705,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 2,
+    "claims": 2,
+    "niche_patterns": 2
+  },
+  "tactics": [
+    {
+      "name": "Schema Markup for LocalBusiness",
+      "description": "Implement structured data to enhance visibility in local search results and SERP features.",
+      "steps": [
+        "Create JSON-LD schema for LocalBusiness type",
+        "Include geo coordinates and business details"
+      ],
+      "elements": [
+        "JSON-LD schema",
+        "geo coordinates",
+        "LocalBusiness type"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "SERP feature"
+      ],
+      "tools_mentioned": [],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Requires consistent NAP (Name, Address, Phone) across platforms"
+      ],
+      "example_locations": [
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "\"John Mueller said the web is dynamic... recommend digging deep into details.\""
+      ],
+      "id": "9793995d-4cd8-4be5-806f-1bd266140c7d",
+      "type": "tactic",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:09:20.139822",
+      "last_seen": "2026-02-25T03:09:20.139822"
+    },
+    {
+      "name": "Local Pack Ad Optimization",
+      "description": "Prioritize high-intent keywords for local pack ads to capitalize on increased ad visibility and user engagement.",
+      "steps": [
+        "Target seasonal keywords with high local search volume",
+        "Optimize for time-sensitive queries"
+      ],
+      "elements": [
+        "Seasonal keywords",
+        "Local intent signals"
+      ],
+      "signals_used": [
+        "SERP feature"
+      ],
+      "tools_mentioned": [],
+      "templates": {
+        "url_pattern": "/locations/[city]/[service]",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Avoid over-optimization leading to spammy results"
+      ],
+      "example_locations": [
+        "plumber in Austin TX",
+        "restaurant in New York NY"
+      ],
+      "source_quotes": [
+        "\"There was a pretty outrageous chart... January of 22% of those keywords had ads in the local pack.\""
+      ],
+      "id": "c840da9e-8134-4782-a32b-7f7c72e8a800",
+      "type": "tactic",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:25:52.704239",
+      "last_seen": "2026-02-25T03:25:52.704239"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Schema Markup Presence Check",
+      "condition": "If schema markup exists for LocalBusiness, then boost relevance",
+      "machine_rule": {
+        "field": "has_schema_markup",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "\"Nothing in search is ever permanent... things are always changing.\""
+      ],
+      "id": "5e0b50ba-36b1-45fa-9828-2c2232b0a5ec",
+      "type": "heuristic",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:09:20.139822",
+      "last_seen": "2026-02-25T03:09:20.139822"
+    },
+    {
+      "name": "Local Intent Signal Check",
+      "condition": "If a keyword shows a 15%+ increase in local pack ads, prioritize it for location pages",
+      "machine_rule": {
+        "field": "local_ad_volume",
+        "op": "gte",
+        "value": 15
+      },
+      "action": "boost",
+      "weight": 0.7,
+      "source_quotes": [
+        "\"There was a pretty outrageous chart... January of 22% of those keywords had ads in the local pack.\""
+      ],
+      "id": "18e21a59-2db2-4b9e-b51a-2a1e6f37e609",
+      "type": "heuristic",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:25:52.704239",
+      "last_seen": "2026-02-25T03:25:52.704239"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Schema markup for LocalBusiness is a ranking factor for local SEO",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "\"Google has no comment on volatility... but schema is critical.\""
+      ],
+      "id": "67f337e9-ab0e-416e-b1a6-983f42da4c7d",
+      "type": "claim",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:09:20.139822",
+      "last_seen": "2026-02-25T03:09:20.139822"
+    },
+    {
+      "statement": "Local pack ad visibility increased from 6.5% to 22% of keywords between July 2024 and January 2025",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "\"There was a pretty outrageous chart... January of 22% of those keywords had ads in the local pack.\""
+      ],
+      "id": "522331d3-6aa7-4b29-a554-074a1db64f8d",
+      "type": "claim",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:25:52.704239",
+      "last_seen": "2026-02-25T03:25:52.704239"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "Target specific services with hyper-local keywords to align with user intent",
+      "why_it_works": "High intent queries with low competition for niche location keywords",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "\"Endorsements in ads may boost CTR... but location specificity is key.\""
+      ],
+      "id": "921b0038-3fbd-42f4-a7c1-09b24820c7f1",
+      "type": "niche_pattern",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:09:20.139822",
+      "last_seen": "2026-02-25T03:09:20.139822"
+    },
+    {
+      "pattern_name": "Seasonal Service + Location",
+      "example": "plumbing services in Austin TX during winter",
+      "description": "Combine location-based keywords with seasonal intent to capture time-sensitive local searches",
+      "why_it_works": "Aligns with Google's increased local pack ad visibility for high-intent queries",
+      "signals": [
+        "seasonal intent",
+        "local competition"
+      ],
+      "source_quotes": [
+        "\"There was a pretty outrageous chart... January of 22% of those keywords had ads in the local pack.\""
+      ],
+      "id": "f161b773-5de4-4e22-8c67-6caac3c54b39",
+      "type": "niche_pattern",
+      "provenance": [
+        "eXfOydh6Xio"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:25:52.704239",
+      "last_seen": "2026-02-25T03:25:52.704239"
+    }
+  ]
+}

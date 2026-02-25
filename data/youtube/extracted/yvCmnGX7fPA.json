@@ -1,0 +1,173 @@
+{
+  "source_type": "youtube",
+  "video_id": "yvCmnGX7fPA",
+  "title": "Local SEO: Creating Location Pages for Higher Rankings! \ud83c\udf0d\ud83d\ude80",
+  "extracted_at": "2026-02-25T03:05:38.862377",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 1,
+  "transcript_chars": 5057,
+  "counts": {
+    "tactics": 2,
+    "heuristics": 1,
+    "claims": 2,
+    "niche_patterns": 1
+  },
+  "tactics": [
+    {
+      "name": "Location Page Hub + Cluster Structure",
+      "description": "Create a central hub page listing all target locations and build individual pages for high-traffic areas to improve local rankings and traffic.",
+      "steps": [
+        "Build a hub page listing all service areas",
+        "Develop detailed location pages for high-traffic locations"
+      ],
+      "elements": [
+        "service area list",
+        "location-specific content",
+        "internal linking"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "SERP feature"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Prioritize high-traffic locations over low-volume ones"
+      ],
+      "example_locations": [
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "they've built out Pages for some of them but not all of them"
+      ],
+      "id": "774239b8-6666-4cf5-ba42-e8b6ca5264e5",
+      "type": "tactic",
+      "provenance": [
+        "yvCmnGX7fPA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:05:38.862231",
+      "last_seen": "2026-02-25T03:05:38.862231"
+    },
+    {
+      "name": "Local Landmark Mentions",
+      "description": "Boost local relevance by referencing specific landmarks or local businesses in location pages.",
+      "steps": [
+        "Identify recognizable local landmarks",
+        "Integrate them naturally into page content"
+      ],
+      "elements": [
+        "local business names",
+        "landmark references",
+        "geo-specific keywords"
+      ],
+      "signals_used": [
+        "ranking factor"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/[landmark]/",
+        "title_template": "[Service] Near [Landmark] in [City]"
+      },
+      "caveats": [
+        "Avoid forced mentions"
+      ],
+      "example_locations": [
+        "plumbing near Southern Oaks Golf Club"
+      ],
+      "source_quotes": [
+        "mentioning local landmarks... boost your local relevance"
+      ],
+      "id": "25150935-65a3-4036-ad21-025ce2f7cdbf",
+      "type": "tactic",
+      "provenance": [
+        "yvCmnGX7fPA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:05:38.862231",
+      "last_seen": "2026-02-25T03:05:38.862231"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Schema Markup for LocalBusiness",
+      "condition": "If a location page includes schema markup, it should boost rankings",
+      "machine_rule": {
+        "field": "has_schema_markup",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "this is optimized specifically for the city of Fort Worth"
+      ],
+      "id": "d9e6e703-c897-4ac6-94e1-6e398c7fe6ab",
+      "type": "heuristic",
+      "provenance": [
+        "yvCmnGX7fPA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:05:38.862231",
+      "last_seen": "2026-02-25T03:05:38.862231"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Mentioning local landmarks improves local relevance",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "mentioning local landmarks... boost your local relevance"
+      ],
+      "id": "77d67cd7-a69e-494b-b0cf-1e2e808fecf5",
+      "type": "claim",
+      "provenance": [
+        "yvCmnGX7fPA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:05:38.862231",
+      "last_seen": "2026-02-25T03:05:38.862231"
+    },
+    {
+      "statement": "Internal linking between location pages improves rankings",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "internally link to relevant content"
+      ],
+      "id": "a7de5d4c-bac8-455d-99ce-015a92d0a085",
+      "type": "claim",
+      "provenance": [
+        "yvCmnGX7fPA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:05:38.862231",
+      "last_seen": "2026-02-25T03:05:38.862231"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "Target specific geographic areas with service keywords to capture local search intent",
+      "why_it_works": "Combines service intent with location-based search queries",
+      "signals": [
+        "high intent",
+        "low competition"
+      ],
+      "source_quotes": [
+        "you're going to want to Target people in areas that aren't necessarily within the confines of your headquarters City"
+      ],
+      "id": "ac1e28ee-3288-4ed5-ae10-e2902bc2d6ce",
+      "type": "niche_pattern",
+      "provenance": [
+        "yvCmnGX7fPA"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:05:38.862231",
+      "last_seen": "2026-02-25T03:05:38.862231"
+    }
+  ]
+}

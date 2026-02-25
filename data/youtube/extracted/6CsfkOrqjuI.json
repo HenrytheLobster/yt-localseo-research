@@ -1,0 +1,369 @@
+{
+  "source_type": "youtube",
+  "video_id": "6CsfkOrqjuI",
+  "title": "Building A Lot Of Location Pages For Local SEO - Will It Help?",
+  "extracted_at": "2026-02-25T03:04:25.501118",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 3,
+  "transcript_chars": 15696,
+  "counts": {
+    "tactics": 4,
+    "heuristics": 3,
+    "claims": 4,
+    "niche_patterns": 3
+  },
+  "tactics": [
+    {
+      "name": "Location Page Hub Structure",
+      "description": "Create a central hub page linking to multiple location-specific pages to expand local relevance and visibility.",
+      "steps": [
+        "Build a hub page aggregating all location pages",
+        "Develop unique content and images for each location page"
+      ],
+      "elements": [
+        "Hub page with location links",
+        "Unique city/state targeting in URLs",
+        "Localized service descriptions"
+      ],
+      "signals_used": [
+        "Local search visibility",
+        "Map listing relevance"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Avoid duplicate content across pages"
+      ],
+      "example_locations": [
+        "asphalt paving Saratoga, California"
+      ],
+      "source_quotes": [
+        "We built out a bunch of location pages... on a hub page right here"
+      ],
+      "id": "cf6a08cd-0186-4ea1-ada4-deb3a20de4b4",
+      "type": "tactic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:01:58.850368",
+      "last_seen": "2026-02-25T03:01:58.850368"
+    },
+    {
+      "name": "Location-Specific Keyword Targeting",
+      "description": "Create pages targeting exact keyword phrases combining service and location (e.g., 'asphalt paving Jansville, Wisconsin') to capture local search intent.",
+      "steps": [
+        "Copy homepage template and add new location page",
+        "Use WordPress/Elementor to build page structure",
+        "Generate SEO title/meta description with keyword variations"
+      ],
+      "elements": [
+        "service + location keyword",
+        "city/state specificity",
+        "Google Business listing connection"
+      ],
+      "signals_used": [
+        "local search ranking factor",
+        "SERP feature visibility"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Low traffic for niche location searches"
+      ],
+      "example_locations": [
+        "Jansville, Wisconsin",
+        "Canton, Georgia"
+      ],
+      "source_quotes": [
+        "\"Somebody typed in dumpster rental, Jansville, Wisconsin... their page probably shows up here.\""
+      ],
+      "id": "6b02b627-8a62-43eb-b336-0a8a2f94efa8",
+      "type": "tactic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:03:09.930699",
+      "last_seen": "2026-02-25T03:03:09.930699"
+    },
+    {
+      "name": "Location-Specific Content Templates",
+      "description": "Use templates to create city-specific content for location pages, ensuring slight variations to avoid duplication while maintaining relevance.",
+      "steps": [
+        "Create a base template with placeholders for city/state",
+        "Modify content, questions, and call-to-action for each location"
+      ],
+      "elements": [
+        "city-specific content",
+        "revised call-to-action",
+        "localized service descriptions"
+      ],
+      "signals_used": [
+        "ranking factor"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Avoid over-optimization that could trigger penalties"
+      ],
+      "example_locations": [
+        "Asphalt paving Gilroy",
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "Change this line to focus in on this city, which would be Seaside, California."
+      ],
+      "id": "1abe4496-459e-4127-a612-c0033f4a4361",
+      "type": "tactic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:04:25.500917",
+      "last_seen": "2026-02-25T03:04:25.500917"
+    },
+    {
+      "name": "Image Renaming for Local Context",
+      "description": "Rename images to reflect location-specific services to improve relevance and avoid duplication penalties.",
+      "steps": [
+        "Re-upload images with location-based filenames",
+        "Ensure images align with localized service offerings"
+      ],
+      "elements": [
+        "location-based image filenames",
+        "service-specific visuals"
+      ],
+      "signals_used": [
+        "ranking factor"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/[service]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Ensure images are relevant to the location's services"
+      ],
+      "example_locations": [
+        "Asphalt paving Gilroy",
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "I re-upload pictures again for some of these services."
+      ],
+      "id": "4107a4bf-f7ac-496c-91d2-379392c0cb36",
+      "type": "tactic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:04:25.500917",
+      "last_seen": "2026-02-25T03:04:25.500917"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Location Page Density",
+      "condition": "If multiple location pages exist with unique content, then boost local search visibility",
+      "machine_rule": {
+        "field": "location_pages_count",
+        "op": "gt",
+        "value": 10
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "We built it on a hub page... 40 45 pages"
+      ],
+      "id": "2b905eeb-a6e3-432d-8d69-280813c4f9b1",
+      "type": "heuristic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:01:58.850368",
+      "last_seen": "2026-02-25T03:01:58.850368"
+    },
+    {
+      "name": "Schema Markup Integration",
+      "condition": "If a location page has explicit service + location keywords, boost its visibility",
+      "machine_rule": {
+        "field": "has_service_location_keyword",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "\"Connect specific location pages to specific Google Business listings.\""
+      ],
+      "id": "63509fe0-a300-4137-810f-2d37defbf6f3",
+      "type": "heuristic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:03:09.930699",
+      "last_seen": "2026-02-25T03:03:09.930699"
+    },
+    {
+      "name": "Hub Page Link Strategy",
+      "condition": "If location pages are created, link them from a service hub page to avoid menu clutter.",
+      "machine_rule": {
+        "field": "has_hub_page_links",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "Add it to the service hub page, service area hub page."
+      ],
+      "id": "85079f57-ccb7-440d-9399-1cb4b833829c",
+      "type": "heuristic",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:04:25.500917",
+      "last_seen": "2026-02-25T03:04:25.500917"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Google's algorithm recognizes businesses operating in multiple locations through location pages",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "Google's algorithm... know that he's doing business in all of those locations"
+      ],
+      "id": "1581d4fd-b936-4ebc-8a7e-b97cdc4c6b03",
+      "type": "claim",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:01:58.850368",
+      "last_seen": "2026-02-25T03:01:58.850368"
+    },
+    {
+      "statement": "Location pages with service + location keywords outperform generic pages in local searches",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "\"Nobody else is even thinking about this kind of stuff...\""
+      ],
+      "id": "49044d90-7547-403a-96d3-a8339718b164",
+      "type": "claim",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:03:09.930699",
+      "last_seen": "2026-02-25T03:03:09.930699"
+    },
+    {
+      "statement": "Location pages can rank in organic search for specific city-based queries.",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "Asphalt paving Gilroy. It's number four in the organic search."
+      ],
+      "id": "99d7806a-93da-4998-87c3-2682c8be41e5",
+      "type": "claim",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:04:25.500917",
+      "last_seen": "2026-02-25T03:04:25.500917"
+    },
+    {
+      "statement": "Creating multiple location pages is not harmful if menus remain uncluttered.",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "I just don't see the harm in it. As long as that menu doesn't look all cluttered."
+      ],
+      "id": "dbe1f27a-dc0d-42be-9aef-c38125128f54",
+      "type": "claim",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:04:25.500917",
+      "last_seen": "2026-02-25T03:04:25.500917"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "dumpster rental in Beaver Dam, Wisconsin",
+      "description": "Target specific geographic queries with high intent for localized services",
+      "why_it_works": "Captures users searching for exact location-based services",
+      "signals": [
+        "Low competition for niche locations",
+        "High intent for service delivery"
+      ],
+      "source_quotes": [
+        "If somebody types in... asphalt paving Saratoga, California"
+      ],
+      "id": "ea08b09b-d62b-4d11-808e-936b74401b54",
+      "type": "niche_pattern",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:01:58.850368",
+      "last_seen": "2026-02-25T03:01:58.850368"
+    },
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "asphalt paving Canton, Georgia",
+      "description": "Target hyper-local intent by combining service type with specific city/state",
+      "why_it_works": "Captures high-intent searches with low competition",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "\"People don't really go to these organics anymore... but some by chance...\""
+      ],
+      "id": "5a43015f-315f-42ff-942c-f602bc32a6a2",
+      "type": "niche_pattern",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:03:09.930699",
+      "last_seen": "2026-02-25T03:03:09.930699"
+    },
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "Target specific user intent by combining service keywords with city/state locations.",
+      "why_it_works": "High intent queries with potential for low competition.",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "some off chance somebody types in Asphalt Pavian Gilroy"
+      ],
+      "id": "be817417-5267-48fe-b484-39a4666fbab4",
+      "type": "niche_pattern",
+      "provenance": [
+        "6CsfkOrqjuI"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T03:04:25.500917",
+      "last_seen": "2026-02-25T03:04:25.500917"
+    }
+  ]
+}

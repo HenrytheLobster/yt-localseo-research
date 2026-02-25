@@ -1,0 +1,453 @@
+{
+  "source_type": "youtube",
+  "video_id": "VJknYf96uyo",
+  "title": "How to Create SEO Location Pages For Your Website (That Actually RANK!)",
+  "extracted_at": "2026-02-25T01:40:20.451149",
+  "model_used": "qwen3:8b",
+  "chunks_processed": 4,
+  "transcript_chars": 31242,
+  "counts": {
+    "tactics": 5,
+    "heuristics": 4,
+    "claims": 5,
+    "niche_patterns": 4
+  },
+  "tactics": [
+    {
+      "name": "Keyword Research for Location Prioritization",
+      "description": "Identify high-demand locations using keyword data to prioritize pages that align with user intent and market size.",
+      "steps": [
+        "Conduct keyword research to assess search volume and demand for specific locations",
+        "Focus on winnable keywords rather than just high-volume terms"
+      ],
+      "elements": [
+        "keyword volume data",
+        "location-specific search terms"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "user intent"
+      ],
+      "tools_mentioned": [],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "caveats": [
+        "Avoid overextending to low-priority markets"
+      ],
+      "example_locations": [
+        "HVAC in Salt Lake City",
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "Keyword research can help you prioritize which location pages to build."
+      ],
+      "id": "b1ef2121-26ed-4fb1-81fd-dcece99e6a0d",
+      "type": "tactic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:19:02.230915",
+      "last_seen": "2026-02-25T01:19:02.230915"
+    },
+    {
+      "name": "Keyword Variation Strategy",
+      "description": "Use multiple keyword variations on a single location page to capture diverse search intent while maintaining low competition.",
+      "steps": [
+        "Research location-specific keywords with search volume between 20-100",
+        "Prioritize keywords with KD difficulty below 40 for local businesses"
+      ],
+      "elements": [
+        "keyword variations",
+        "location-specific keywords",
+        "KD difficulty metric"
+      ],
+      "signals_used": [
+        "low competition",
+        "high intent"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "example_locations": [
+        "HVAC repair in Ogden, Utah"
+      ],
+      "source_quotes": [
+        "You might want to include that keyword on your list of keywords for that location page that you're making just to try and capture all the traffic that you can."
+      ],
+      "id": "901542c1-de65-4a57-bd45-01ce1ba6c1c9",
+      "type": "tactic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:20:05.205289",
+      "last_seen": "2026-02-25T01:20:05.205289"
+    },
+    {
+      "name": "Title Structure with Service + Location",
+      "description": "Use a clear, keyword-rich title format to signal location intent and improve rankings",
+      "steps": [
+        "Format title as [Service] in [City], [State]",
+        "Include brand name if relevant"
+      ],
+      "elements": [
+        "Service keyword",
+        "City/state location",
+        "Brand name (optional)"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "SERP feature"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "example_locations": [
+        "plumber in Austin TX",
+        "RV park in St. George"
+      ],
+      "source_quotes": [
+        "Your title follows the format of the main service or main keyword plus the location you're offering it in."
+      ],
+      "id": "0c9a20bd-fd70-4c68-8eb3-ff5e5223e7f7",
+      "type": "tactic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:23:23.990154",
+      "last_seen": "2026-02-25T01:23:23.990154"
+    },
+    {
+      "name": "Local Context in Introduction",
+      "description": "Highlight location-specific services and unique offerings early to signal local relevance and expertise.",
+      "steps": [
+        "Identify location-specific services or attractions",
+        "Create a section explaining how services differ by location"
+      ],
+      "elements": [
+        "location-specific keywords",
+        "unique local amenities",
+        "service differentiation"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "SERP feature"
+      ],
+      "templates": {
+        "url_pattern": "/locations/[city]/",
+        "title_template": "[Service] in [City], [State]"
+      },
+      "example_locations": [
+        "RV park in St. George",
+        "plumber in Austin TX"
+      ],
+      "source_quotes": [
+        "putting that near the top of the page is also going to be something important"
+      ],
+      "id": "ce1e7185-8983-44da-b598-cfd0c2d8c92f",
+      "type": "tactic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:40:20.450908",
+      "last_seen": "2026-02-25T01:40:20.450908"
+    },
+    {
+      "name": "Service Section with Local Keywords",
+      "description": "List core services with location-specific keyword variations to reinforce local intent.",
+      "steps": [
+        "Create a section for core services",
+        "Incorporate location names into service titles (e.g., 'Utah Local SEO')"
+      ],
+      "elements": [
+        "service categories",
+        "location-modified keywords",
+        "internal links to service pages"
+      ],
+      "signals_used": [
+        "ranking factor",
+        "commercial intent"
+      ],
+      "example_locations": [
+        "Utah Local SEO",
+        "St. George RV Park"
+      ],
+      "source_quotes": [
+        "we do local SEO for Utah companies"
+      ],
+      "id": "78575d00-5202-44ba-952f-b1f900febe9e",
+      "type": "tactic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:40:20.450908",
+      "last_seen": "2026-02-25T01:40:20.450908"
+    }
+  ],
+  "heuristics": [
+    {
+      "name": "Prioritize High-Demand Locations",
+      "condition": "If a location shows high search volume for service terms, then allocate resources to create a page",
+      "machine_rule": {
+        "field": "keyword_volume",
+        "op": "gt",
+        "value": 1000
+      },
+      "action": "boost",
+      "weight": 0.9,
+      "source_quotes": [
+        "Focus on locations with enough demand to justify the cost of creating that page."
+      ],
+      "id": "994c38ea-6687-4cfc-be80-b250997aa50b",
+      "type": "heuristic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:19:02.230915",
+      "last_seen": "2026-02-25T01:19:02.230915"
+    },
+    {
+      "name": "Unique Content Requirement",
+      "condition": "If a location page contains duplicated or generic content, penalize",
+      "machine_rule": {
+        "field": "content_uniqueness",
+        "op": "eq",
+        "value": false
+      },
+      "action": "penalize",
+      "weight": 0.8,
+      "source_quotes": [
+        "Each location page for SEO that you make has to be unique and it has to deliver on what makes your company special..."
+      ],
+      "id": "fd38f545-7ebe-44ee-a27b-9801f94b3f9a",
+      "type": "heuristic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:20:05.205289",
+      "last_seen": "2026-02-25T01:20:05.205289"
+    },
+    {
+      "name": "Single H1 per Page",
+      "condition": "If a page has multiple H1 tags, prioritize the primary location keyword",
+      "machine_rule": {
+        "field": "has_single_h1",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "You only want one of those per page. Every other heading you have on this page will be an H2 or an H3 structure."
+      ],
+      "id": "06696bf8-4d5d-469e-b1c4-557131d562a5",
+      "type": "heuristic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:23:23.990154",
+      "last_seen": "2026-02-25T01:23:23.990154"
+    },
+    {
+      "name": "Location-Specific Service Prioritization",
+      "condition": "If a service is offered in a specific location, prioritize it in the service section",
+      "machine_rule": {
+        "field": "has_location_specific_service",
+        "op": "eq",
+        "value": true
+      },
+      "action": "boost",
+      "weight": 0.8,
+      "source_quotes": [
+        "you can see right here we have a list of kind of our main services"
+      ],
+      "id": "99dd6667-aa60-4d8b-b4b2-47a56dccda88",
+      "type": "heuristic",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:40:20.450908",
+      "last_seen": "2026-02-25T01:40:20.450908"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Location pages help Google understand service-area context for local businesses",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "Creating a location-specific page on your website is one of the most concrete ways to build context with Google."
+      ],
+      "id": "a0e44a29-c273-4368-be2b-f76ce8ff919c",
+      "type": "claim",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:19:02.230915",
+      "last_seen": "2026-02-25T01:19:02.230915"
+    },
+    {
+      "statement": "Local businesses benefit from lower competition when targeting location-specific keywords",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "The difficulty is going to be lower just by nature of you even doing this at all. You're going to have a major advantage on your competitors."
+      ],
+      "id": "bac3d81e-22fd-4ee5-a859-3f66eb41736f",
+      "type": "claim",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:20:05.205289",
+      "last_seen": "2026-02-25T01:20:05.205289"
+    },
+    {
+      "statement": "National companies can benefit from local location pages when targeting specific markets",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "Even though we're a national company, we went ahead and made some local pages for it."
+      ],
+      "id": "b639f89b-f350-4cfa-b049-9ac73f3ecd1d",
+      "type": "claim",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:23:23.990154",
+      "last_seen": "2026-02-25T01:23:23.990154"
+    },
+    {
+      "statement": "Including location-specific services in the introduction improves local search rankings",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "this gives additional context to Google about who you are"
+      ],
+      "id": "b271258a-2ba8-4280-9747-9cd8b2f03434",
+      "type": "claim",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:40:20.450908",
+      "last_seen": "2026-02-25T01:40:20.450908"
+    },
+    {
+      "statement": "Internal linking between location pages and service pages strengthens SEO authority",
+      "category": "research_method",
+      "confidence": "high",
+      "source_quotes": [
+        "these pages are in fact important"
+      ],
+      "id": "7b490c69-d74b-47f8-a8cb-6a4d312c2d8d",
+      "type": "claim",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:40:20.450908",
+      "last_seen": "2026-02-25T01:40:20.450908"
+    }
+  ],
+  "niche_patterns": [
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "Target specific services in defined geographic areas to align with user search intent",
+      "why_it_works": "Combines service intent with location-based queries, reducing competition while increasing relevance",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "Focus on the actual search terms that you can win rather than just the highest search volume keywords."
+      ],
+      "id": "35e5e664-56ea-4bdb-8057-b6d9a4bd9995",
+      "type": "niche_pattern",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:19:02.230915",
+      "last_seen": "2026-02-25T01:19:02.230915"
+    },
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "HVAC repair in St. George",
+      "description": "Target specific service-location combinations to capture hyper-local intent",
+      "why_it_works": "Users searching for service + location combinations have clear intent and lower competition",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "HVAC St. George. This is interesting. Let's say my company is in Salt Lake City... St. George is actually in southern Utah..."
+      ],
+      "id": "9ab67193-7998-4df5-a9bf-4bfab6b62dc5",
+      "type": "niche_pattern",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:20:05.205289",
+      "last_seen": "2026-02-25T01:20:05.205289"
+    },
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "SEO services in Utah",
+      "description": "Target specific services in geographic locations to capture local intent",
+      "why_it_works": "Aligns with user search behavior for localized services",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "These are all extremely relevant terms to us."
+      ],
+      "id": "effe0d1e-8046-455a-b3a6-bc027ffc9aac",
+      "type": "niche_pattern",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:23:23.990154",
+      "last_seen": "2026-02-25T01:23:23.990154"
+    },
+    {
+      "pattern_name": "Service + Location Combination",
+      "example": "plumbing + Austin TX",
+      "description": "Combine service type with specific location to target hyper-local intent",
+      "why_it_works": "Matches user intent for location-specific services with high commercial value",
+      "signals": [
+        "low competition",
+        "high intent"
+      ],
+      "source_quotes": [
+        "we do local SEO for Utah companies"
+      ],
+      "id": "1bbdcea2-2540-4811-bc97-26e187fa6e09",
+      "type": "niche_pattern",
+      "provenance": [
+        "VJknYf96uyo"
+      ],
+      "support_count": 1,
+      "first_seen": "2026-02-25T01:40:20.450908",
+      "last_seen": "2026-02-25T01:40:20.450908"
+    }
+  ]
+}

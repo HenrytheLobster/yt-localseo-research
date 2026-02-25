@@ -38,16 +38,18 @@ TRIAGE_MODEL = "phi3:mini"
 FALLBACK_MODEL = "qwen3:4b"
 
 MIN_WORDS = 300
-TERM_THRESHOLD = 3
+TERM_THRESHOLD = 1
 SKIP_THRESHOLD = 3
 
-KDP_TERMS = [
-    "kdp", "kindle", "amazon", "bsr", "niche", "keyword", "royalty",
-    "publisher rocket", "helium", "low content", "self publish",
-    "self-publish", "book topic", "paperback", "book idea", "acos",
-    "category", "browse node", "reviews", "competition", "profitable",
-    "passive income", "book sales", "coloring book", "journal", "planner",
-    "workbook", "activity book", "interior", "cover design",
+LOCAL_SEO_TERMS = [
+    "location page", "location pages", "city page", "city pages", "service page",
+    "service pages", "local seo", "local SEO", "localbusiness", "local business",
+    "NAP", "schema", "schema markup", "localbusiness schema", "google my business",
+    "google business profile", "map pack", "local pack", "map pack", "internal linking",
+    "citations", "local citations", "reviews", "testimonials", "geo coordinates",
+    "embedded map", "location-specific faq", "title tag", "h1", "url structure",
+    "service area page", "SAB", "service area business", "google maps",
+    "google business profile", "rich snippets", "structured data", "schema.org",
 ]
 SKIP_TERMS = [
     "motivational", "vlog", "day in my life", "morning routine",
@@ -64,15 +66,15 @@ def heuristic_triage(transcript: str, title: str = "") -> tuple[str, str, list[s
     if len(words) < MIN_WORDS:
         return "skip", f"Too short ({len(words)} words)", []
 
-    kdp_hits = [t for t in KDP_TERMS if t in text_lower]
+    seo_hits = [t for t in LOCAL_SEO_TERMS if t in text_lower]
     skip_hits = [t for t in SKIP_TERMS if t in text_lower]
 
-    if len(kdp_hits) < TERM_THRESHOLD:
-        return "skip", f"Insufficient KDP signal ({len(kdp_hits)} terms)", kdp_hits
+    if len(seo_hits) < TERM_THRESHOLD:
+        return "skip", f"Insufficient local-SEO signal ({len(seo_hits)} terms)", seo_hits
     if len(skip_hits) >= SKIP_THRESHOLD:
-        return "skip", f"Off-topic signals: {skip_hits[:3]}", kdp_hits
+        return "skip", f"Off-topic signals: {skip_hits[:3]}", seo_hits
 
-    return "extract", f"{len(kdp_hits)} KDP terms matched", kdp_hits
+    return "extract", f"{len(seo_hits)} local-SEO terms matched", seo_hits
 
 
 # ─── LLM confirmation ────────────────────────────────────────────────────────
